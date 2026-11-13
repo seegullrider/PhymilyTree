@@ -1,0 +1,7 @@
+# Georgia Tech：化学与生物化学系（历史任职）
+
+[[院校 - Georgia Tech|返回学校]]
+
+仅收录已按人物资料核实的记录，不表示单位已查全。
+- [[人员 - Georgia Tech - Jean-Luc Brédas — 已离开 Georgia Tech - cfd18ff0|Jean-Luc Brédas — 已离开 Georgia Tech]] — [来源](https://cbc.arizona.edu/person/jean-luc-bredas)
+- [[人员 - Georgia Tech - Carlos Silva Acuña - 7101d823|Carlos Silva Acuña]] — [来源](https://silvascience.org/chair/)

@@ -1,0 +1,21 @@
+const fs=require('node:fs'),path=require('node:path');
+const root=path.resolve(__dirname,'..');
+const read=p=>fs.readFileSync(path.join(root,p),'utf8');
+const write=(p,s)=>fs.writeFileSync(path.join(root,p),s,'utf8');
+const add=(p,line)=>{const s=read(p);if(!s.includes(line))write(p,s.replace(/\s*$/,'')+'\n'+line+'\n')};
+const id='7d2e48ab',unit='University of Michigan, Ann Arbor',who=`人员 - ${unit} - Liang Qi - ${id}`;
+const ju='人员 - MIT - Ju Li - 19f48cca',school=`院校 - ${unit}`,dept=`已核实单位 - ${unit} - 材料科学与工程系`,topic='已核实方向 - 计算材料科学';
+const bio='https://micde.umich.edu/member/liang-qi/',history='https://michengupdates.engin.umich.edu/2015-03/',cv='https://li.mit.edu/A/Papers/cv.pdf',grant='https://dmref.org/projects/355';
+for(const f of [`人物/${ju}.md`,`院校与机构/${school}.md`,`已核实院系/${dept}.md`,`已核实方向/${topic}.md`,`${unit}逐人复核记录.md`,'师承关系索引.md'])if(!fs.existsSync(path.join(root,f)))throw Error('缺少目标: '+f);
+const m=JSON.parse(read('graph-manifest.json'));const conflict=m.nodes.filter(n=>n.id===id||(n.unit===unit&&/^liang\s+qi$/i.test(n.name)));
+if(conflict.length&&!(conflict.length===1&&conflict[0].id===id&&conflict[0].filename===who))throw Error('重复或标识冲突');
+if(!fs.existsSync(path.join(root,`人物/${who}.md`)))write(`人物/${who}.md`,`# Liang Qi\n\n> [!info] 补录：计算材料与原子尺度材料物理相邻方向\n> 与 Stanford 理论物理教师 Xiao-Liang Qi 是不同人物。当前招生情况待核。\n\n## 所在学校或机构\n\n- [[${school}|University of Michigan, Ann Arbor]]\n\n## 院系与研究方向核验（2026-11-06）\n\n- 院系：[[${dept}|材料科学与工程系]]；[Michigan 计算研究所](${bio})列 Associate Professor。\n- 方向：[[${topic}|计算材料科学]]；第一性原理和原子尺度模拟、材料缺陷与界面、结构及功能材料的电子和力学机制；主要是材料物理相邻方向，不将其笼统标为量子材料 PI。[Michigan 研究所](${bio})；[项目](${grant})。\n\n## 师承\n\n- 博士导师：[[${ju}|Ju Li]]。[Ju Li 本人 CV](${cv})的 PhD adviser 名单列 Liang Qi（Penn MSE, August 2009）；[Michigan 工程学院入职介绍](${history})确认该人物 Penn 材料博士、Ohio State 硕士与 Tsinghua 学士，与 Li CV 的博士及硕士指导记录一致。关系类型可信度：高。\n- 博士后导师：[[${ju}|Ju Li]]。[Ju Li 本人 CV](${cv})的 Postdoctoral adviser 名单列 Liang Qi（2009 年 9 月至 2012 年 8 月）；学校资料确认 2009 年 Penn 博士与随后 2012–2014 Berkeley 任职，研究及时间匹配。关系类型可信度：高。\n- 核查边界：Li 的 CV 在本轮早前已直接读取，后续重读时暂时超时；其他可能导师及具体博士后分段待查。2012–2014 Berkeley assistant project scientist 不自动视作博士后。\n`);
+if(!conflict.length){m.nodes.push({id,filename:who,name:'Liang Qi',unit,kind:'美国'});write('graph-manifest.json',JSON.stringify(m,null,2)+'\n')}
+add(`人物/${ju}.md`,`- 博士生与博士后受指导者：[[${who}|Liang Qi]]。[Ju Li 本人 CV](${cv})分别在 PhD adviser 名单列 Penn MSE 2009 年博士 Liang Qi，在 Postdoctoral adviser 名单列其 2009 年 9 月至 2012 年 8 月；[Michigan 入职介绍](${history})匹配 Penn 博士、OSU 硕士。`);
+add(`院校与机构/${school}.md`,`- [[${who}|Liang Qi]]`);
+add(`已核实院系/${dept}.md`,`- [[${who}|Liang Qi]] — [Michigan 计算研究所](${bio})`);
+add(`已核实方向/${topic}.md`,`- [[${who}|Liang Qi · University of Michigan, Ann Arbor]] — [Michigan 计算研究所](${bio})`);
+add(`${unit}逐人复核记录.md`,`| [[${who}|Liang Qi]] | 材料科学与工程系；计算材料科学、原子尺度缺陷与界面（相邻方向） | Ju Li（博士导师） | Ju Li（博士后导师） | [Michigan 研究所](${bio})；[Michigan 入职介绍](${history})；[Ju Li CV](${cv}) |`);
+add('师承关系索引.md',`- [[${who}|Liang Qi]] → 博士导师：[[${ju}|Ju Li]]；博士后导师：[[${ju}|Ju Li]]。[Ju Li CV](${cv})分别在 PhD adviser 和 Postdoctoral adviser 名单列 Penn 2009 博士 Liang Qi；[Michigan 入职介绍](${history})匹配 Penn 博士与 Ohio State 硕士。可信度：高。`);
+const e={audit_id:'20261106_7d2e48ab_liang_qi_michigan',record_id:id,aspects:{identity:{status:'confirmed',note:'Michigan 工程入职介绍列 Penn 材料博士与 Ohio State 硕士，匹配 Ju Li CV 列 Liang Qi 的同一学位及时间；与 Stanford Xiao-Liang Qi 区分。',sources:[history,cv]},affiliation:{status:'confirmed',note:'Michigan 计算研究所列材料科学与工程系 associate professor。',sources:[bio]},research:{status:'confirmed',note:'Michigan 研究所列第一性原理、原子模拟、材料缺陷界面及电子机制，属于计算材料物理相邻方向。',sources:[bio]},phd:{status:'confirmed_advisor',note:'Ju Li CV PhD adviser 名单明确列 Liang Qi，Penn MSE，2009 年 8 月。',sources:[cv,history]},postdoc:{status:'confirmed_advisor',note:'Ju Li CV Postdoctoral adviser 名单列 Liang Qi 2009 年 9 月至 2012 年 8 月；本轮早前直接读取该 CV。',sources:[cv,history]}},followup_required:true,next_step:'查本人 Penn 博士论文及各博士后阶段、可能共同导师；Ju Li CV 本轮后续读取超时，按退避重读。'};
+write('自动化/本轮核查-Liang-Qi-20261106.json',JSON.stringify(e,null,2)+'\n');console.log('已补录 Liang Qi，待 sync、人工事件和检索。');

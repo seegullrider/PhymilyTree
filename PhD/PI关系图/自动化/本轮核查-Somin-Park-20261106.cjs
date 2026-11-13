@@ -1,0 +1,13 @@
+const fs=require('node:fs'),path=require('node:path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'));
+const row=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('110958a3');
+if(!row)throw Error('缺少已有人工事件');
+const e=JSON.parse(row.details_json);
+e.audit_id='20261106_110958a3_uky_thesis_orcid';
+e.aspects.identity={status:'confirmed',note:'Kentucky 博士论文档案的 So Min Park 与 NUS 教师页 Somin Park 使用同一 ORCID；学位时间和研究方向一致。',sources:['https://uknowledge.uky.edu/cme_etds/126/','https://chemistry.nus.edu.sg/people/park-somin/']};
+e.aspects.phd={status:'group_or_candidate',note:'Graham 组新闻称其留组攻读博士；Kentucky 2020 博士论文档案将 Graham、Cheng 和 Beck 列为 Faculty，未写明各人的论文指导职衔。',sources:['https://graham.as.uky.edu/blog.html','https://graham.as.uky.edu/people.html','https://uknowledge.uky.edu/cme_etds/126/']};
+e.aspects.postdoc.note+=' NUS 化学系入职介绍证实其在 Toronto/Northwestern 与 Sargent 博后共事；本人 CV 本轮无法重读，人物页既有正式导师记录保留，台账沿用此前的组属状态。';
+e.aspects.postdoc.sources=[...new Set([...e.aspects.postdoc.sources,'https://chemistry.nus.edu.sg/welcome-to-assistant-professor-park-somin/'])];
+e.followup_required=true;
+e.next_step='查 Kentucky 原始论文全文以核实正式博士导师及可能的共同指导者；本人 CV 本轮无法重读，按失败退避后再核。';
+fs.writeFileSync(path.join(__dirname,'本轮核查-Somin-Park-20261106.json'),JSON.stringify(e,null,2)+'\n','utf8');db.close();

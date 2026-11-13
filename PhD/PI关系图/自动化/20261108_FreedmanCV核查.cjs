@@ -1,0 +1,15 @@
+const fs=require('node:fs'),path=require('node:path');
+const {DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});
+const row=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('b5c07133');if(!row)throw Error('缺少原事件');
+const a=JSON.parse(row.details_json),cv='https://bpb-us-e1.wpmucdn.com/sites.northwestern.edu/dist/6/32/files/2020/02/Freedman-CV-2019-2-28-20-website.pdf',mit='https://chemistry.mit.edu/profile/danna-freedman/';
+a.audit_id='20261108_freedman_cv_direct';
+a.aspects.identity={status:'confirmed',note:'本人 Northwestern 履历列 Berkeley 化学博士与 MIT 博后，MIT 院系页对应同名和分子量子材料研究。',sources:[cv,mit]};
+a.aspects.affiliation={status:'confirmed',note:'MIT 化学系本人页面列 Frederick George Keyes Professor of Chemistry。',sources:[mit]};
+a.aspects.research={status:'confirmed',note:'MIT 院系研究介绍列分子量子自旋与高压合成新材料。',sources:[mit]};
+a.aspects.phd={status:'confirmed_advisor',note:'本人 CV 明确 Berkeley 2009 无机化学博士 Advisor: Prof. Jeffrey R. Long。',sources:[cv]};
+a.aspects.postdoc={status:'confirmed_advisor',note:'本人 CV 在 MIT 博后教育经历下明确 Advisor: Prof. Daniel G. Nocera；履历列该职位 2009–2012。',sources:[cv]};
+a.followup_required=false;a.next_step='两阶段导师及 MIT 院系研究已核；未来随公开信息更新任职与招生。';
+const rel=[{event_id:'20261108_freedman_long_cv',record_id:'b5c07133',stage:'phd',mentor_filename:'人员 - UC Berkeley - Jeffrey R. Long - dcbb0150',kind:'advisor',source_audit_id:a.audit_id,evidence:'本人履历在 Berkeley 2009 博士条目直接列 Advisor: Prof. Jeffrey R. Long。',sources:[cv]},{event_id:'20261108_freedman_nocera_cv',record_id:'b5c07133',stage:'postdoc',mentor_filename:'师承人物 - Daniel G. Nocera',kind:'advisor',source_audit_id:a.audit_id,evidence:'本人履历在 MIT 博后条目直接列 Advisor: Prof. Daniel G. Nocera；职位为 2009–2012。',sources:[cv]}];
+for(const [name,obj] of [['人工核查-20261108-Freedman-CV.json',a],['结构化-20261108-Freedman-CV.json',rel]])fs.writeFileSync(path.join(__dirname,name),JSON.stringify(obj,null,2)+'\n',{encoding:'utf8',flag:'wx'});
+db.close();

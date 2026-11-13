@@ -1,0 +1,33 @@
+const fs = require('node:fs');
+const path = require('node:path');
+const { DatabaseSync } = require('node:sqlite');
+const root = path.resolve(__dirname, '..');
+const who = '人员 - Stanford - Aaron Lindenberg - b85b2726';
+const mentor = '师承人物 - Roger W. Falcone';
+const aps = 'https://physics.aps.org/story/v4/st33';
+const profile = 'https://profiles.stanford.edu/aaron-lindenberg';
+const evidence = `[APS 1999 年报道](${aps})称 Falcone 的研究生是 Aaron Lindenberg；[Stanford 本人资料](${profile})列其 2001 年 Berkeley 博士，研究主题与同期报道一致。该文未列论文正式导师，仍需论文或本人履历确认；研究生关系可信度：高。`;
+function replaceLine(file, match, replacement) {
+  const p = path.join(root, file);
+  const s = fs.readFileSync(p, 'utf8');
+  const lines = s.split(/\r?\n/);
+  const matches = lines.map((line, i) => match(line) ? i : -1).filter(i => i >= 0);
+  if (matches.length !== 1) throw new Error(`Expected one line in ${file}, found ${matches.length}`);
+  lines[matches[0]] = replacement(lines[matches[0]]);
+  fs.writeFileSync(p, lines.join('\n'));
+}
+replaceLine(`人物/${who}.md`, l => l.startsWith('- 博士导师候选：') && l.includes(mentor), () => `- 博士阶段研究师长、正式博士导师候选：[[${mentor}|Roger W. Falcone]]。${evidence}`);
+replaceLine(`人物/${mentor}.md`, l => l.startsWith('- 博士生候选：') && l.includes(who), () => `- 博士阶段研究生：[[${who}|Aaron Lindenberg]]。${evidence}`);
+replaceLine('师承关系索引.md', l => l.includes(who) && l.includes('博士导师候选：') && l.includes(mentor), () => `- [[${who}|Aaron Lindenberg]] → 博士阶段研究师长、正式博士导师候选：[[${mentor}|Roger W. Falcone]]。${evidence}`);
+replaceLine('Stanford逐人复核记录.md', l => l.startsWith('| [['+who+'|'), l => l.replace(' | 待核 | 待核 |', ` | Roger W. Falcone（研究生关系；正式博士导师待核） | 待核 |`).replace(`[来源](${profile})`, `[Stanford](${profile})；[APS](${aps})`));
+const db = new DatabaseSync(path.join(__dirname, '检索队列.sqlite'));
+const old = db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('b85b2726');
+if (!old) throw Error('missing audit event');
+const event = JSON.parse(old.details_json);
+event.audit_id = '20261106_b85b2726_APS_grad_student';
+event.aspects.phd = {status:'group_or_candidate', note:'APS 1999 年报道称 Aaron Lindenberg 为 Berkeley 的 Roger Falcone 的研究生；Stanford 本人资料列 2001 年 Berkeley 博士，研究主题一致。阶段研究师长已证，正式论文导师待核。', sources:[aps, profile]};
+event.followup_required = true;
+event.next_step = '查 Berkeley 博士论文或本人 CV 中 thesis advisor 字段，以及 2001–2003 Berkeley 博后 fellowship 导师。';
+fs.writeFileSync(path.join(__dirname,'本轮核查-Aaron-Lindenberg-20261106.json'), JSON.stringify(event,null,2)+'\n');
+db.close();
+console.log('已更新人物、反向边、索引、学校表并生成待登记事件。');

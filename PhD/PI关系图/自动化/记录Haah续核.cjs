@@ -1,0 +1,10 @@
+const {DatabaseSync}=require('node:sqlite');
+const d=new DatabaseSync('检索队列.sqlite');
+const id='bb3d5f3c';
+const a=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id).details_json);
+a.audit_id='20261109_bb3d5f3c_caltech';
+a.aspects.phd={status:'confirmed_advisor',note:'Caltech 学位目录列 2013 物理博士论文 Lattice Quantum Codes and Exotic Topological Phases of Matter，Advisor 字段为 John P. Preskill。',sources:['https://thesis.caltech.edu/7763/']};
+a.next_step='追查 MIT Pappalardo 博士后经历的具体指导者，不据 fellowship 推断。';
+a.followup_required=true;
+d.prepare('insert or ignore into manual_audit_events(audit_id,record_id,recorded_at,details_json) values(?,?,?,?)').run(a.audit_id,id,new Date().toISOString(),JSON.stringify(a));
+d.close();

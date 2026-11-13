@@ -1,0 +1,10 @@
+const fs=require('fs'),path=require('path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});const ev=JSON.parse(db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('5e81032f').details_json);db.close();
+const bio='https://research-hub.nlr.gov/en/persons/steven-spurgeon/',pnnl='https://www.pnnl.gov/news-media/crafting-complex-materials-solve-mystery-magnetism',group='https://engineering.jhu.edu/dcg/people/steven-spurgeon/';
+ev.audit_id='20261107_5e81032f_cross_school_postdoc';
+ev.aspects.identity={status:'confirmed',note:'NLR 履历同时列 UW 2021–2024、Boulder 2024 起以及 PNNL 2015–2017 博后；Taheri 组列其 Drexel 材料博士和 PNNL，支持两校属记录同一人。',sources:[bio,group]};
+ev.aspects.affiliation={status:'confirmed',note:'NLR 履历列 Boulder RASEI research fellow 与 Colorado School of Mines joint faculty；Boulder 独立 PI 和招生资格仍需核查。',sources:[bio]};
+ev.aspects.research={status:'confirmed',note:'NLR 本人履历列 AI 引导电子显微、材料数据科学和功能材料界面。',sources:[bio]};
+ev.aspects.postdoc={status:'group_or_candidate',note:'PNNL 原始报道称博士后 Steven Spurgeon 的 mentor 是 Scott Chambers，NLR 履历列 PNNL 2015–2017 博后；研究师长关系明确，正式 advisor 职衔未注明。',sources:[pnnl,bio]};
+ev.followup_required=true;ev.next_step='核查博士后正式指导职衔、Boulder 指导与招生权限；保留 UW 与 Boulder 校属记录。';
+fs.writeFileSync(path.join(__dirname,'本轮核查-Spurgeon跨校-20261107.json'),JSON.stringify(ev,null,2),'utf8');console.log('已准备 Spurgeon Boulder 人工事件');

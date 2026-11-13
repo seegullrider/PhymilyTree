@@ -1,0 +1,23 @@
+const fs=require('fs'),path=require('path');const root=path.resolve(__dirname,'..');
+const id='a3f24027',p='师承人物 - Yi Cui',lieber='师承人物 - Charles M. Lieber',paul='人员 - University of Chicago - Paul Alivisatos - 9209cf4f';
+const units=['材料科学与工程系','能源科学与工程系','化学系（兼任）'].map(x=>'已核实单位 - Stanford - '+x),directions=['纳米材料与器件','二维材料','电化学储能'];
+const profile='https://profiles.stanford.edu/yi-cui',interview='https://onlinelibrary.wiley.com/doi/full/10.1002/cey2.4',stanford='https://energy.stanford.edu/news/stanford-names-cleantech-pioneer-yi-cui-new-director-its-precourt-institute-energy';
+const read=f=>fs.readFileSync(path.join(root,f),'utf8'),write=(f,v)=>fs.writeFileSync(path.join(root,f),v,'utf8'),m=JSON.parse(read('graph-manifest.json'));
+if(m.nodes.some(n=>n.id===id||(n.unit==='Stanford'&&n.name==='Yi Cui')))throw Error('人物或 id 已存在');
+const files=['人物/'+p+'.md','人物/'+lieber+'.md','人物/'+paul+'.md','院校与机构/院校 - Stanford.md','Stanford逐人复核记录.md','师承关系索引.md',...units.map(u=>'已核实院系/'+u+'.md'),...directions.map(d=>'已核实方向/已核实方向 - '+d+'.md')];
+for(const f of files)if(!fs.existsSync(path.join(root,f)))throw Error('缺少 '+f);
+function add(f,line){const s=read(f),marker='<!-- PI-AUTO-SEARCH:START -->';if(s.includes(line))return;write(f,s.includes(marker)?s.replace(marker,line+'\n\n'+marker):s.trimEnd()+'\n'+line+'\n')}
+let page=read('人物/'+p+'.md');const heading='## 师承';if(!page.includes(heading))throw Error('人物页锚点缺失');
+page=page.replace('> [!info] 师承扩展人物\n> 本节点依据可核查的师承关系建立；其他经历及现职需另核。',`> [!info] Stanford 校属记录\n> 保留原有师承扩展节点及链接，已按 Stanford 教师资料补入校属台账。与 2026 年 Chicago Alivisatos 组同名博士后不是同一人。`);
+page=page.replace(heading,`## 学校、院系与方向\n\n- [[院校 - Stanford|Stanford]] · [[${units[0]}|材料科学与工程系]] · [[${units[1]}|能源科学与工程系]] · [[${units[2]}|化学系（兼任）]]。[Stanford 本人档案](${profile})列三项任职与 SLAC 光子科学教授。\n- [[已核实方向 - 纳米材料与器件|纳米材料与器件]] · [[已核实方向 - 二维材料|二维材料]] · [[已核实方向 - 电化学储能|电化学储能]]。[本人档案](${profile})列电池、电催化、二维材料与冷冻电子显微等。\n\n${heading}\n\n- 博士导师：[[${lieber}|Charles M. Lieber]]。[本人 2019 年采访](${interview})明确称其为 Ph.D advisor；[Stanford 履历](${profile})列 2002 Harvard 博士。\n- 博士后导师：[[${paul}|A. Paul Alivisatos]]。[本人 2019 年采访](${interview})明确称其 postdoctoral mentor；[Stanford 回忆](${stanford})说明 Berkeley 博后时期与 Alivisatos 工作。\n- 区分本科阶段：不能将其本科论文指导者计为博士导师；Steven Chu 为职业方向的重要启发者，原采访不称其博士后导师。\n`);
+write('人物/'+p+'.md',page);
+add('人物/'+lieber+'.md',`- 博士生：[[${p}|Yi Cui]]。[Cui 本人 2019 采访](${interview})明确称 Lieber 为 Ph.D advisor；[Stanford](${profile})列 Harvard 2002 博士。`);
+add('人物/'+paul+'.md',`- 博士后研究者：[[${p}|Yi Cui]]。[Cui 本人 2019 采访](${interview})明确称 Alivisatos 为 postdoctoral mentor；[Stanford 回忆](${stanford})确认 Berkeley 阶段。`);
+for(const u of units)add('已核实院系/'+u+'.md',`- [[${p}|Yi Cui]] — [Stanford 本人档案](${profile})。`);
+for(const d of directions)add('已核实方向/已核实方向 - '+d+'.md',`- [[${p}|Yi Cui · Stanford]] — [Stanford 本人档案](${profile})。`);
+add('院校与机构/院校 - Stanford.md',`- [[${p}|Yi Cui]]`);
+add('Stanford逐人复核记录.md',`| [[${p}|Yi Cui]] | 材料、能源科学与工程、化学（兼任）；纳米材料、二维材料、储能 | Charles M. Lieber（本人称 Ph.D advisor） | A. Paul Alivisatos（本人称 postdoctoral mentor） | [Stanford](${profile}) · [本人采访](${interview}) |`);
+add('师承关系索引.md',`- [[${p}|Yi Cui · Stanford]] → 博士导师 [[${lieber}|Charles M. Lieber]]；博士后导师 [[${paul}|A. Paul Alivisatos]]。[本人 2019 采访](${interview})分称 Ph.D advisor 与 postdoctoral mentor。`);
+m.nodes.push({id,filename:p,name:'Yi Cui',unit:'Stanford',kind:'美国'});m.notes=m.nodes.length;m.units=new Set(m.nodes.map(x=>x.unit)).size;write('graph-manifest.json',JSON.stringify(m,null,2)+'\n');
+const ev={audit_id:'20261107_a3f24027_stanford',record_id:id,aspects:{identity:{status:'confirmed',note:'Stanford 档案与本人采访均为 Stanford 材料、能源研究者；区别 Chicago Alivisatos 组 2026 年起同名博士后。',sources:[profile,interview]},affiliation:{status:'confirmed',note:'Stanford 材料科学与工程及能源科学与工程教授、化学兼任，SLAC 光子科学。',sources:[profile]},research:{status:'confirmed',note:'纳米材料、电池、二维材料、能源及环境技术。',sources:[profile]},phd:{status:'confirmed_advisor',note:'本人 2019 年采访明确称 Charles Lieber 为 Ph.D advisor；Stanford 档案列 Harvard 2002 博士。',sources:[interview,profile]},postdoc:{status:'confirmed_advisor',note:'本人采访明确称 Paul Alivisatos 为 postdoctoral mentor；Stanford 回忆确认 Berkeley 博后阶段。Steven Chu 为启发者，未标为博后导师。',sources:[interview,stanford]}},followup_required:false,next_step:'若扩充其他职业阶段可另行核对；不将本科导师及研究启发者混为博士或博士后导师。'};
+write('自动化/本轮核查-YiCui-20261107.json',JSON.stringify(ev,null,2)+'\n');console.log('Stanford Yi Cui 已补入 manifest 并准备阶段核查事件');

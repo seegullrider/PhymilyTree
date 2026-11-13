@@ -1,0 +1,12 @@
+const fs=require('fs'),path=require('path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'));
+const row=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('321232ac');
+if(!row) throw Error('缺少人工台账');
+const ev=JSON.parse(row.details_json);
+ev.audit_id='20261106_collins_zettl_group_321232ac';
+ev.aspects.research={status:'confirmed',note:'UCI 物理与天文系将 Collins 列为实验凝聚态教师，研究单分子电子学和传感；本人作者简介亦确认碳纳米管电子性质。',sources:['https://www.physics.uci.edu/research/condmatter','https://pmc.ncbi.nlm.nih.gov/articles/PMC3750062/']};
+ev.aspects.phd={status:'group_or_candidate',note:'Zettl 组校友名单 Graduate Students 栏列 Phil Collins（UC Irvine）；本人作者简介确认 Berkeley 物理博士。组属明确，正式论文 advisor 职衔仍待论文核实。',sources:['https://www.ocf.berkeley.edu/~jode/people/previousgrads.html','https://pmc.ncbi.nlm.nih.gov/articles/PMC3750062/']};
+ev.aspects.postdoc={status:'unresolved',note:'本人作者简介列 IBM 和 Nanomix 工作，但未称博士后，经历及导师待核。',sources:['https://pmc.ncbi.nlm.nih.gov/articles/PMC3750062/']};
+ev.followup_required=true;
+ev.next_step='查 Berkeley 博士学位论文及本人 CV，确认正式论文导师；查 IBM 工作是否为博士后以及可能导师。注意排除 Brunel 同名土木工程研究者。';
+fs.writeFileSync(path.join(__dirname,'本轮核查-Philip-Collins-20261106.json'),JSON.stringify(ev,null,2)+'\n','utf8');

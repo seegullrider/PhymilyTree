@@ -1,0 +1,6 @@
+# Caltech：电气工程
+
+[[院校 - Caltech|返回学校]]
+
+仅收录已按人物资料核实的记录，不表示单位已查全。
+- [[人员 - Caltech - Mohammad Mirhosseini - d598d0c2|Mohammad Mirhosseini]] — [来源](https://qubit.caltech.edu/people)

@@ -1,0 +1,10 @@
+const fs=require('fs'),path=require('path');
+const {DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});
+const row=db.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get('32faeaab');
+if(!row)throw Error('missing prior audit');
+const data=JSON.parse(row.details_json);
+data.audit_id='steven_george_postdoc_bio_20261113';
+data.aspects.postdoc={status:'unresolved',note:'本人合著论文作者简介称 1983–1984 年在 Caltech 化工及 Exxon Corporate Research Labs 从事博士后工作；各处独立时间和具名指导者未列。',sources:['https://www.academia.edu/72008843/Thickness_dependence_of_sensor_response_for_CO_gas_sensing_by_tin_oxide_films_grown_using_atomic_layer_deposition','https://experts.colorado.edu/vitas/103289.pdf']};
+data.next_step='查 Berkeley 论文导师字段，追 Caltech 化工及 Exxon 博后任用与指导者。';data.followup_required=true;
+fs.writeFileSync(path.join(__dirname,'20261113-George博士后人工事件.json'),JSON.stringify(data,null,2));

@@ -1,0 +1,7 @@
+const fs=require('fs'),path=require('path'),{DatabaseSync}=require('node:sqlite'),{spawnSync}=require('child_process');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});
+const specs=[
+ ['81347a28','本人参与编辑的 Springer 图书页面在编者简介明确其 1963 Harvard 博士 under the supervision of Nicolaas Bloembergen；Berkeley 系页核对身份和年份。',['https://link.springer.com/book/10.1007/978-0-387-34727-1','https://physics.berkeley.edu/people/faculty/yuen-ron-shen'],'查 1963–1964 Harvard 博士后的正式指导者，不能推定博士导师继续担任此职。'],
+ ['27209b2d','本人 Columbia 履历教育栏明确其 1991 Rochester 光学博士论文 Advisor: Professor R. W. Boyd；Springer 编者简介核对 Boyd 全名。',['https://www.engineering.columbia.edu/sites/default/files/2025-07/gaeta_cv_4_25.pdf','https://link.springer.com/book/10.1007/978-0-387-34727-1'],'本人 CV 将 Rochester 博后列为 1990–1992，与 1991 博士年份重叠；核对具体日期和该阶段指导者。']
+];
+for(const [id,note,sources,next] of specs){const row=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get(id);if(!row)throw Error('缺少台账 '+id);const e=JSON.parse(row.details_json);e.audit_id='20261107_optics_cv_'+id;e.aspects.phd={status:'confirmed_advisor',note,sources};e.next_step=next;e.followup_required=true;const out=path.join(__dirname,'本轮核查-光学CV-'+id+'-20261107.json');fs.writeFileSync(out,JSON.stringify(e,null,2)+'\n');const x=spawnSync(process.execPath,[path.join(__dirname,'人工核查台账.cjs'),'record',out],{encoding:'utf8'});if(x.status!==0)throw Error(x.stderr);console.log(x.stdout.trim())}db.close();

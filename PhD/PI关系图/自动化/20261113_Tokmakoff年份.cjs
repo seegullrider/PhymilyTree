@@ -1,0 +1,7 @@
+const fs=require('node:fs'),path=require('node:path'),{DatabaseSync}=require('node:sqlite'),{execFileSync}=require('node:child_process');
+const sources=['https://web.stanford.edu/group/fayer/articles/209.pdf','https://web.mit.edu/spectroscopy/events/newsletter/news_v26_n2.pdf'];
+const proof='Tokmakoff 与 Fayer 1995 年合著文章的作者简介写 Stanford 1995 博士；MIT 2010 系刊亦记 1995 博士及研究生阶段受 Fayer 指导。Stanford 历史目录将同名条目列 1994 年 George，年代及角色不一致，不能排除目录错误或其他情况，待原始学位卷核。';
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});let a=JSON.parse(db.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get('be59d58f').details_json);db.close();
+a.audit_id='pi_20261113_tokmakoff_1995_primary';a.aspects.phd.note+=' '+proof;a.aspects.phd.sources=[...new Set([...a.aspects.phd.sources,...sources])];a.next_step='核 Stanford 博士学位论文原卷与历史目录 George 条目的身份和角色；继续核 Laubereau 博后正式指导职衔。';
+const out=path.join(__dirname,a.audit_id+'.json');fs.writeFileSync(out,JSON.stringify(a,null,2));execFileSync(process.execPath,['--no-warnings',path.join(__dirname,'人工核查台账.cjs'),'record',out],{stdio:'inherit'});
+const file=path.join(__dirname,'../人物/人员 - University of Chicago - Andrei Tokmakoff - be59d58f.md');let s=fs.readFileSync(file,'utf8');const line=`- 学位年代及目录冲突：${proof} [1995 年本人合著原刊](${sources[0]}) · [MIT 系刊](${sources[1]})\n`;if(!s.includes(line)){s=s.replace('## 师承\n','## 师承\n\n'+line);fs.writeFileSync(file,s)}

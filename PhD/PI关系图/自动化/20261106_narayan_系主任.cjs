@@ -1,0 +1,10 @@
+const fs=require('fs'),path=require('path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'));
+const row=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('ebfe7a89');if(!row)throw Error('缺少原台账');
+const ev=JSON.parse(row.details_json),url='https://campusdirectory.ucsc.edu/cd_detail?uid=onarayan';
+ev.audit_id='20261106_narayan_princeton_harvard_ebfe7a89';
+ev.aspects.affiliation={status:'confirmed',note:'UCSC 目录列 Physics Department Chair 和 Professor。',sources:[url]};
+ev.aspects.phd={status:'unresolved',note:'UCSC 1995 年报道确认 Princeton 物理博士，未列导师。',sources:['https://news.ucsc.edu/1995/04/sloan-foundation-recognizes-uc-santa-cruz-physicist/']};
+ev.aspects.postdoc={status:'unresolved',note:'UCSC 1995 年报道确认 Harvard Junior Fellow 身份但未明该职位类别及师长，Bell Labs 经历和导师待进一步核实。',sources:['https://news.ucsc.edu/1995/04/sloan-foundation-recognizes-uc-santa-cruz-physicist/']};
+ev.followup_required=true;ev.next_step='个人主页本轮 502，稍后查 Princeton 论文及 Harvard/Bell 博后原始履历，不从同期合著推断导师。';
+fs.writeFileSync(path.join(__dirname,'本轮核查-Onuttom-Narayan-20261106.json'),JSON.stringify(ev,null,2)+'\n','utf8');

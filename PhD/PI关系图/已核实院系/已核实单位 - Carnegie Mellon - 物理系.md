@@ -1,0 +1,30 @@
+# Carnegie Mellon：物理系
+
+[[院校 - Carnegie Mellon|返回学校]]
+
+仅收录已按人物资料核实的记录，不表示单位已查全。
+- [[人员 - Carnegie Mellon - Benjamin M. Hunt - 25b9e4ef|Benjamin M. Hunt]] — [来源](https://www.cmu.edu/physics/people/faculty/hunt.html)
+- [[人员 - Carnegie Mellon - Carlos Floyd（2027 年未来聘任） - 323c7311|Carlos Floyd（2027 年未来聘任）]] — [来源](https://research.phys.cmu.edu/biophysics/news/)
+- [[人员 - Carnegie Mellon - Grigory Tarnopolsky（Tarnopolskiy） - 41091e4c|Grigory Tarnopolsky（Tarnopolskiy）]] — [来源](https://www.cmu.edu/physics/people/faculty/tarnopolsky.html)
+- [[人员 - Carnegie Mellon - Juan Chamorro - 36b7db3f|Juan Chamorro]] — [来源](https://www.materials.cmu.edu/directory/bios/chamorro-juan.html)
+- [[人员 - Carnegie Mellon - Juan Chamorro — 申请路径补充 - 5cdc6dc2|Juan Chamorro — 申请路径补充]] — [来源](https://www.materials.cmu.edu/directory/bios/chamorro-juan.html)
+- [[人员 - Carnegie Mellon - Jyoti Katoch - 5d151f3e|Jyoti Katoch]] — [来源](https://www.cmu.edu/physics/people/faculty/katoch.html)
+- [[人员 - Carnegie Mellon - Luc Berger - 0dcf2ae6|Luc Berger]] — [来源](https://www.cmu.edu/physics/people/faculty/berger.html)
+- [[人员 - Carnegie Mellon - Marek Skowronski - b1363da8|Marek Skowronski]] — [来源](https://www.cmu.edu/engineering/materials/people/faculty/bios/skowronski.html)
+- [[人员 - Carnegie Mellon - Markus Deserno - df1cc514|Markus Deserno]] — [来源](https://www.cmu.edu/physics/people/faculty/deserno.html)
+- [[人员 - Carnegie Mellon - Michael Widom - c9bd1f50|Michael Widom]] — [来源](https://www.cmu.edu/physics/people/faculty/widom.html)
+- [[人员 - Carnegie Mellon - Mohammad F. Islam - 8e19cff1|Mohammad F. Islam]] — [来源](https://mse.engineering.cmu.edu/directory/bios/islam-mohammad.html)
+- [[人员 - Carnegie Mellon - Noa Marom - 439c2a45|Noa Marom]] — [来源](https://qcit.cmu.edu/directory/bios/marom-noa.html)
+- [[人员 - Carnegie Mellon - Rachel Kurchin - 7521e97c|Rachel Kurchin]] — [来源](https://acme-group-cmu.github.io/)
+- [[人员 - Carnegie Mellon - Randall Feenstra — 荣休 - 8688e0dd|Randall Feenstra — 荣休]] — [来源](https://www.andrew.cmu.edu/user/feenstra/)
+- [[人员 - Carnegie Mellon - Riccardo Penco - ae38b833|Riccardo Penco]] — [来源](https://www.cmu.edu/physics/people/faculty/penco.html)
+- [[人员 - Carnegie Mellon - Robert F. Sekerka - aa802dc8|Robert F. Sekerka]] — [来源](https://sekerkaweb.phys.cmu.edu/SekerkaCV2015.html)
+- [[人员 - Carnegie Mellon - Robert H. Swendsen（荣休） - 442bcc83|Robert H. Swendsen（荣休）]] — [来源](https://www.cmu.edu/physics/people/faculty/swendsen.html)
+- [[人员 - Carnegie Mellon - Robert M. Suter - e4db4ae6|Robert M. Suter]] — [来源](https://www.cmu.edu/physics/people/faculty/suter.html)
+- [[人员 - Carnegie Mellon - Sara A. Majetich - 0370fa14|Sara A. Majetich]] — [来源](https://www.cmu.edu/physics/people/faculty/majetich.html)
+- [[人员 - Carnegie Mellon - Shelley Anna - f7ff1244|Shelley Anna]] — [来源](https://www.meche.engineering.cmu.edu/directory/bios/anna-shelley.html)
+- [[人员 - Carnegie Mellon - Shubhayu Chatterjee - e182df12|Shubhayu Chatterjee]] — [来源](https://www.cmu.edu/physics/people/faculty/chatterjee.html)
+- [[人员 - Carnegie Mellon - Simranjeet Singh - 508a4a2c|Simranjeet Singh]] — [来源](https://www.cmu.edu/physics/people/faculty/singh.html)
+- [[人员 - Carnegie Mellon - Stephen Garoff - eb2c4405|Stephen Garoff]] — [来源](https://research.phys.cmu.edu/garoff/people/)
+- [[人员 - Carnegie Mellon - Sufei Shi - 78668aa9|Sufei Shi]] — [来源](https://www.cmu.edu/physics/people/faculty/shi.html)
+- [[人员 - Carnegie Mellon - Vladyslav Kozii - 9053a8b1|Vladyslav Kozii]] — [来源](https://www.cmu.edu/physics/people/faculty/kozii.html)

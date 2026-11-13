@@ -1,0 +1,14 @@
+const fs=require('fs'),path=require('path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'));
+const row=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('f232f519');
+if(!row) throw Error('缺少人工台账');
+const ev=JSON.parse(row.details_json);
+ev.audit_id='20261106_yee_jura_research_mentor_f232f519';
+ev.aspects.identity={status:'confirmed',note:'UCI 教师档案列 Albert Fan Yee、Berkeley 1971 化学博士；论文全文副本列同名、同校及同年博士论文。',sources:['https://www.faculty.uci.edu/profile/?facultyId=5442','https://www.academia.edu/50004201/Heat_capacity_of_iron_as_a_function_of_pressure_and_temperature']};
+ev.aspects.affiliation={status:'confirmed',note:'UCI 教师档案列化学工程与材料、化学及生物医学工程教授；Michigan 材料系另列其荣休教授。UCI 荣休状态尚待核。',sources:['https://www.faculty.uci.edu/profile/?facultyId=5442','https://mse.engin.umich.edu/people/afyee/']};
+ev.aspects.research={status:'confirmed',note:'UCI 教师档案列高分子材料、复合材料、微纳电子和光子器件相关图案化。',sources:['https://www.faculty.uci.edu/profile/?facultyId=5442']};
+ev.aspects.phd={status:'group_or_candidate',note:'1971 Berkeley 博士论文全文致谢明确感谢 George Jura 指导该工作；是博士阶段研究师长，论文签署页及其正式 advisor 职衔待核。',sources:['https://www.academia.edu/50004201/Heat_capacity_of_iron_as_a_function_of_pressure_and_temperature','https://www.faculty.uci.edu/profile/?facultyId=5442']};
+ev.aspects.postdoc={status:'unresolved',note:'现有本人资料未确认博士后阶段或导师，不能把研究科学家职位推定为博士后。',sources:['https://www.faculty.uci.edu/profile/?facultyId=5442']};
+ev.followup_required=true;
+ev.next_step='等 escholarship.org 主机退避结束后核原校论文签署页；另查 GE 任职经历是否为博士后以及 UCI 荣休状态。';
+fs.writeFileSync(path.join(__dirname,'本轮核查-Albert-Yee-20261106.json'),JSON.stringify(ev,null,2)+'\n','utf8');

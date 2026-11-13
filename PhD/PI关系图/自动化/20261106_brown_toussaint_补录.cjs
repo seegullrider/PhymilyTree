@@ -1,0 +1,33 @@
+const fs = require('fs'), path = require('path'), crypto = require('crypto');
+const root = path.resolve(__dirname, '..'), people = path.join(root, '人物');
+const rd = p => fs.readFileSync(path.join(root,p),'utf8');
+const wr = (p,s) => fs.writeFileSync(path.join(root,p),s,'utf8');
+function append(p,line) {let s=rd(p); if(!s.includes(line)) wr(p,s.replace(/\s*$/,'')+'\n'+line+'\n');}
+function mentor(p,line){let s=rd(p); if(s.includes(line)) return; const marker='\n<!-- PI-AUTO-SEARCH:START -->'; if(s.includes(marker)) s=s.replace(marker,'\n'+line+'\n'+marker); else s=s.replace(/\s*$/,'')+'\n'+line+'\n'; wr(p,s);}
+const who='人员 - Brown - Kimani C. Toussaint Jr - 6b81c702', id='6b81c702';
+const serg='人员 - Boston University - Alexander V. Sergienko - d667207f';
+const scher='人员 - University of Chicago - Norbert F. Scherer - d619b9f3';
+const cv='https://people.bu.edu/alexserg/SergienkoWebCV.pdf', bio='https://ibeam.brown.edu/people/kimani-toussaint', bc='https://vivo.brown.edu/docs/k/ktoussai_cv.pdf?dt=080415214', news='https://engineering.brown.edu/news/2019-12-16/kimani-toussaint', chi='https://chronicle.uchicago.edu/070510/accolades.shtml';
+const p=`人物/${who}.md`;
+if(!fs.existsSync(path.join(root,p))) wr(p,`# Kimani C. Toussaint Jr.\n\n> [!info] 由学校资料核实的补录人物\n> 招生资格、正式论文导师称谓和博士后指导职衔仍须核实。\n\n## 所在学校或机构\n\n- [[院校 - Brown|Brown University]]\n\n## 院系与研究方向核验（2026-11-06）\n\n- 院系／机构：[[已核实单位 - Brown - 工程学院|工程学院]]；2019 年学校报道列电气与计算机工程、生物医学工程、机械工程三个方向的聘任，现状仍需进一步核实。[学校报道](${news})\n- 研究方向：[[已核实方向 - 纳米光子学|纳米光子学]] · [[已核实方向 - 光子学|光子学]]；等离激元纳米天线、多光子显微与纳米加工。[Brown 个人页](${bio})\n- Brown 工程学院教授，领导 PROBE 实验室。[本人 CV](${bc})；[Brown 报道](${news})\n\n## 师承\n\n- 博士阶段研究指导：[[${serg}|Alexander V. Sergienko]]。[Sergienko 本人 CV](${cv})在“Degree students supervised: Ph.D.”列 Kimani C. Toussaint Jr.、2004 及 Brown 教授；[Toussaint 本人 CV](${bc})列 2004 年 BU 电气工程博士。来源明确博士阶段指导，尚未直接写论文正式 advisor，待取得论文核查；关系类型可信度：高。\n- 博士后阶段研究师长：[[${scher}|Norbert F. Scherer]]。[Chicago 2007 年校报](${chi})称 Toussaint 为 James Franck Institute 博士后并与 Scherer 共事；[本人 CV](${bc})列 2004–2007 博后，未见正式 advisor 称谓；关系类型可信度：高（阶段研究关联）。\n- 核查边界：继续查 BU 学位论文及 Chicago 博后档案，确认正式导师、可能的其他指导人及完整时间。\n`);
+const manifest=JSON.parse(rd('graph-manifest.json')); const match=manifest.nodes.filter(n=>n.id===id||(/toussaint/i.test(n.name)&&n.unit==='Brown')); if(match.length&&!(match.length===1&&match[0].id===id)) throw Error('校属记录冲突，停止'); if(!match.length){manifest.nodes.push({id,filename:who,name:'Kimani C. Toussaint Jr.',unit:'Brown',kind:'美国'});wr('graph-manifest.json',JSON.stringify(manifest,null,2)+'\n');}
+append('院校与机构/院校 - Brown.md',`- [[${who}|Kimani C. Toussaint Jr.]]`);
+append('已核实院系/已核实单位 - Brown - 工程学院.md',`- [[${who}|Kimani C. Toussaint Jr.]] — [来源](${news})`);
+for(const dir of ['纳米光子学','光子学']) append(`已核实方向/已核实方向 - ${dir}.md`,`- [[${who}|Kimani C. Toussaint Jr. · Brown]] — [来源](${bio})`);
+append('Brown逐人复核记录.md',`| [[${who}|Kimani C. Toussaint Jr.]] | 工程学院；纳米光子学、等离激元纳米天线、生物光子 | Alexander V. Sergienko（博士阶段研究指导，正式论文职衔待核） | Norbert F. Scherer（博士后阶段研究师长，正式职衔待核） | [来源](${bio})；[博士阶段](${cv})；[博士后](${chi}) |`);
+mentor(`人物/${serg}.md`,`- 博士阶段受指导者：[[${who}|Kimani C. Toussaint Jr.]]。[本人 CV](${cv})在博士阶段被指导学生名单列其 2004 年毕业及 Brown 任职；正式论文 advisor 职衔待论文核实。关系类型可信度：高。`);
+mentor(`人物/${scher}.md`,`- 博士后阶段研究者：[[${who}|Kimani C. Toussaint Jr.]]。[Chicago 校报](${chi})称其为 James Franck Institute 博士后并与 Scherer 共事；正式导师职衔待核。关系类型可信度：高（阶段关联）。`);
+const at='师承人物 - Mete Atatüre', im='师承人物 - A. Imamoglu', lab='https://www.sabanciuniv.edu/sites/default/files/2023-10/mete-atature-bio.pdf';
+mentor(`人物/${at}.md`,`- 博士阶段研究师长：[[${serg}|Alexander V. Sergienko]]。[讲座简介](${lab})称 Atatüre 在 BU 博士研究受 A. Sergienko、B. Saleh 和 M. Teich 指导；[Sergienko CV](${cv})将其列为博士被指导学生。正式论文导师和三人具体职衔待原始论文确认；关系类型可信度：高（研究指导）。`);
+mentor(`人物/${at}.md`,`- 博士后课题组负责人：[[${im}|A. Imamoglu]]。[讲座简介](${lab})称其在 ETH 加入 Imamoglu 组任博士后，未明确 advisor 职衔；关系类型可信度：高（组属）。`);
+mentor(`人物/${at}.md`,`- 核查边界：博士阶段另外两位研究师长为 B. Saleh 和 M. Teich，[2021 年讲座简介](${lab})明确列出三人；待确认正式导师分工。[Sergienko CV](${cv})列 2001，[讲座简介](${lab})列 2002，两项年份冲突待核。`);
+mentor(`人物/${serg}.md`,`- 博士阶段受指导者：[[${at}|Mete Atatüre]]。[讲座简介](${lab})称其 BU 博士研究受 Sergienko、Saleh、Teich 指导；[本人 CV](${cv})列其为被指导博士生；正式论文职衔与博士年份待核。关系类型可信度：高（研究指导）。`);
+mentor(`人物/${im}.md`,`- 博士后课题组成员：[[${at}|Mete Atatüre]]。[讲座简介](${lab})称其任 ETH 博后期间加入 Imamoglu 组；正式 advisor 职衔待核。关系类型可信度：高。`);
+const ol='师承人物 - Olga Minaeva', lee='师承人物 - Lee Goldstein', ob='https://www.bu.edu/cte/profile/olga-minaeva/';
+if(!fs.existsSync(path.join(people,ol+'.md')))wr(`人物/${ol}.md`,`# Olga Minaeva\n\n> [!info] 师承扩展人物；不表示已核实为独立 PI。\n\n## 师承\n\n- 博士共同导师：[[${serg}|Alexander V. Sergienko]]。[其本人 CV](${cv})在博士学生列表中明确标注 Minaeva (co-advisor)，[Minaeva 简介](${ob})列 2009 Moscow State Pedagogical University 物理博士及博士末两年与 Sergienko 共事。其他共同导师待核。关系类型可信度：高。\n- 博士后课题组负责人：[[${lee}|Lee Goldstein]]。[本人简介](${ob})称 2009 年 7 月加入其组任博士后研究员，未明正式 advisor 职衔。关系类型可信度：高（组属）。\n`);
+if(!fs.existsSync(path.join(people,lee+'.md')))wr(`人物/${lee}.md`,`# Lee Goldstein\n\n> [!info] 师承扩展人物；其他任职待核。\n\n## 师承\n\n- 博士后课题组成员：[[${ol}|Olga Minaeva]]。[Minaeva 本人简介](${ob})记其 2009 年 7 月加入 Goldstein 组任博士后，正式 advisor 职衔待核。关系类型可信度：高。\n`);
+mentor(`人物/${serg}.md`,`- 博士共同指导学生：[[${ol}|Olga Minaeva]]。[本人 CV](${cv})在博士生名单明确标注 co-advisor；[Minaeva 简介](${ob})说明其博士期间与 Sergienko 工作。关系类型可信度：高。`);
+for(const line of [`- [[${who}|Kimani C. Toussaint Jr.]] → 博士阶段研究指导：[[${serg}|Alexander V. Sergienko]]。[指导者本人 CV](${cv})列其受指导博士生；正式论文职衔待核。`,`- [[${who}|Kimani C. Toussaint Jr.]] → 博士后阶段研究师长：[[${scher}|Norbert F. Scherer]]。[Chicago 校报](${chi})将两人共事和博后职位并列，正式导师称谓待核。`,`- [[${at}|Mete Atatüre]] → 博士阶段研究师长：[[${serg}|Alexander V. Sergienko]]；博士后课题组负责人：[[${im}|A. Imamoglu]]。[讲座简介](${lab})明列博士研究指导和 ETH 博后组；导师正式职衔及博士年份仍待核。`,`- [[${ol}|Olga Minaeva]] → 博士共同导师：[[${serg}|Alexander V. Sergienko]]；博士后课题组负责人：[[${lee}|Lee Goldstein]]。[Sergienko CV](${cv})明确 co-advisor；[本人简介](${ob})明确 Goldstein 组博士后。`]) append('师承关系索引.md',line);
+const event={audit_id:'20261106_brown_toussaint_6b81c702',record_id:id,aspects:{identity:{status:'confirmed',note:'Brown 本人简历列全名、2004 BU 博士和 Brown 任职；Sergienko 同时列其博士学生及 Brown 任职。',sources:[bc,cv]},affiliation:{status:'confirmed',note:'Brown 工程学院报道及研究院教师页面确认工程学院教授；三方向聘任为 2019 历史记录。',sources:[news,bio]},research:{status:'confirmed',note:'Brown 研究院列纳米光子、等离激元纳米天线和生物光子等研究方向。',sources:[bio]},phd:{status:'group_or_candidate',note:'Sergienko CV 在 PhD 被指导学生列表列其姓名、2004 年与 Brown 任职；博士研究指导已证，正式论文 advisor 待核。',sources:[cv,bc]},postdoc:{status:'group_or_candidate',note:'Chicago 校报称 2007 年博士后与 Norbert Scherer 共事；正式导师职衔待核。',sources:[chi,bc]}},followup_required:true,next_step:'查 BU 博士学位论文和 Chicago 博后档案，确认正式指导职衔与其他导师。'};
+wr('自动化/本轮核查-Kimani-Toussaint-20261106.json',JSON.stringify(event,null,2)+'\n');
+console.log('已准备人物页、双向关系、目录、manifest 与人工事件；请运行 sync 和 record。');

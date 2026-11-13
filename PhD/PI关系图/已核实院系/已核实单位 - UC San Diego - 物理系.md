@@ -1,0 +1,32 @@
+# UC San Diego：物理系
+
+[[院校 - UC San Diego|返回学校]]
+
+仅收录已按人物资料核实的记录，不表示单位已查全。
+- [[人员 - UC San Diego - Alex Frañó - 295f9117|Alex Frañó]] — [来源](https://matsci.ucsd.edu/faculty/alex-frano)
+- [[人员 - UC San Diego - Chunhui (Rita) Du — 转至 Georgia Tech，UCSD 页面未更新 - ec833f2d|Chunhui (Rita) Du — 转至 Georgia Tech，UCSD 页面未更新]] — [来源](https://catalog.ucsd.edu/faculty/PHYS.html)
+- [[人员 - UC San Diego - Congjun Wu（UCSD 荣休） - 9e0468d5|Congjun Wu（UCSD 荣休）]] — [来源](https://wucj.lab.westlake.edu.cn/Appl/Wu_CV_2024_Aug.pdf)
+- [[人员 - UC San Diego - Daniel Eric Parker - 1727e479|Daniel Eric Parker]] — [来源](https://parkerlab.ucsd.edu/)
+- [[人员 - UC San Diego - Daniel P. Arovas - e6fe10ab|Daniel P. Arovas]] — [来源](https://revelle.ucsd.edu/about/faculty/faculty-fellows.html)
+- [[人员 - UC San Diego - Hongbo Zhao - e7a37bb6|Hongbo Zhao]] — [来源](https://zhaoresearchgroup.com/people/)
+- [[人员 - UC San Diego - Ivan K. Schuller - 20dc4163|Ivan K. Schuller]] — [来源](https://catalog.ucsd.edu/faculty/PHYS.html)
+- [[人员 - UC San Diego - Jérémie Palacci - 4913d3b6|Jérémie Palacci]] — [来源](https://www.ista.ac.at/en/research/palacci-group/)
+- [[人员 - UC San Diego - Joel Yuen-Zhou - da5fce64|Joel Yuen-Zhou]] — [来源](https://blavatnikawards.org/honorees/profile/joel-yuen-zhou/)
+- [[人员 - UC San Diego - John M. Goodkind - 8374a772|John M. Goodkind]] — [来源](https://profiles.ucsd.edu/john.goodkind)
+- [[人员 - UC San Diego - John McGreevy - 20e4af6b|John McGreevy]] — [来源](https://physics.aps.org/authors/john_mcgreevy)
+- [[人员 - UC San Diego - Jorge E. Hirsch - 1274072a|Jorge E. Hirsch]] — [来源](https://physics.ucsd.edu/people/faculty)
+- [[人员 - UC San Diego - Julio T. Barreiro - 8d652467|Julio T. Barreiro]] — [来源](https://jubarreiro.physics.ucsd.edu/)
+- [[人员 - UC San Diego - Leonid V. Butov - 3d06b9bd|Leonid V. Butov]] — [来源](https://butovgroup.ucsd.edu/openings.php)
+- [[人员 - UC San Diego - Lu J. Sham - 6c004af0|Lu J. Sham]] — [来源](https://catalog.ucsd.edu/faculty/PHYS.html)
+- [[人员 - UC San Diego - M. Brian Maple - bbe5869d|M. Brian Maple]] — [来源](https://today.ucsd.edu/story/adventures-in-superconductivity-story)
+- [[人员 - UC San Diego - Massimiliano Di Ventra - 11b951b9|Massimiliano Di Ventra]] — [来源](https://matsci.ucsd.edu/faculty/massimiliano-di-ventra)
+- [[人员 - UC San Diego - Mattia Serra - 60a70e05|Mattia Serra]] — [来源](https://www.mattiaserra.com/mserra)
+- [[人员 - UC San Diego - Michael M. Fogler - 88a1529a|Michael M. Fogler]] — [来源](https://fogler.physics.ucsd.edu/Fogler.htm)
+- [[人员 - UC San Diego - Monica T. Allen - 7dcca75a|Monica T. Allen]] — [来源](https://matsci.ucsd.edu/node/29)
+- [[人员 - UC San Diego - Monica T. Allen — 实验室机会补充 - 4456f372|Monica T. Allen — 实验室机会补充]] — [来源](https://matsci.ucsd.edu/node/29)
+- [[人员 - UC San Diego - Nigel Goldenfeld - f1f06c72|Nigel Goldenfeld]] — [来源](https://guava.physics.ucsd.edu/~nigel/Resume.html)
+- [[人员 - UC San Diego - Oleg Shpyrko - 2d2d30ae|Oleg Shpyrko]] — [来源](https://oleg.ucsd.edu/Oleg_Shpyrko_CV.pdf)
+- [[人员 - UC San Diego - Richard D. Averitt - 5fe30699|Richard D. Averitt]] — [来源](https://matsci.ucsd.edu/faculty/richard-averitt)
+- [[人员 - UC San Diego - Tarun Grover - b56af531|Tarun Grover]] — [来源](https://catalog.ucsd.edu/faculty/PHYS.html)
+- [[人员 - UC San Diego - Tenio Popmintchev - 945105b9|Tenio Popmintchev]] — [来源](https://profiles.ucsd.edu/tenio.popmintchev)
+- [[人员 - UC San Diego - Yi-Zhuang You - 085b7566|Yi-Zhuang You]] — [来源](https://everettyou.github.io/people/YZYou)

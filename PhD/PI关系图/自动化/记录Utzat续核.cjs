@@ -1,0 +1,11 @@
+const {DatabaseSync}=require('node:sqlite');
+const d=new DatabaseSync('检索队列.sqlite');
+const id='622fb7c8',u='https://www.utzatgroup.org/team/hendrik-utzat';
+const a=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id).details_json);
+a.audit_id='20261109_622fb7c8_lab';
+a.aspects.postdoc.note='本人组页称 Stanford 博后研究 with Jennifer Dionne；页面未明示正式 advisor 职衔。';
+a.aspects.postdoc.sources.push(u);
+a.next_step='查 Stanford 博后正式 advisor、起止日期；中心副主任 2021–2022 不自动等于博后完整任期。';
+a.followup_required=true;
+d.prepare('insert or ignore into manual_audit_events(audit_id,record_id,recorded_at,details_json) values(?,?,?,?)').run(a.audit_id,id,new Date().toISOString(),JSON.stringify(a));
+d.close();

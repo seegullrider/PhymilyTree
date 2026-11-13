@@ -1,0 +1,10 @@
+const fs=require('fs'),path=require('path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'));
+const row=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('18b45b4f');
+if(!row) throw Error('缺少人工台账');
+const ev=JSON.parse(row.details_json);
+ev.audit_id='20261106_dzyaloshinskii_lifshitz_candidate_18b45b4f';
+ev.aspects.phd={status:'group_or_candidate',note:'UC 讣告称其学生时期进入 Landau 学派；俄语维基百科科研指导者栏还列 Evgeny M. Lifshitz，但未说明具体学位阶段，现仅为候选，均不可据此确认为正式学位导师。',sources:['https://senate.universityofcalifornia.edu/in-memoriam/files/igor-dzyaloshinskii.html','https://ru.wikipedia.org/wiki/%D0%94%D0%B7%D1%8F%D0%BB%D0%BE%D1%88%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9,_%D0%98%D0%B3%D0%BE%D1%80%D1%8C_%D0%95%D1%85%D0%B8%D0%B5%D0%BB%D1%8C%D0%B5%D0%B2%D0%B8%D1%87']};
+ev.followup_required=true;
+ev.next_step='查 1957 年 кандидатская 学位档案及本人访谈，区分 Lifshitz 和 Landau 是否正式指导；核查博士后经历，不与 Ilya M. Lifshitz 混淆。';
+fs.writeFileSync(path.join(__dirname,'本轮核查-Dzyaloshinskii-20261106.json'),JSON.stringify(ev,null,2)+'\n','utf8');

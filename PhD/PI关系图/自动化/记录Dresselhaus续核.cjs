@@ -1,0 +1,14 @@
+const {DatabaseSync}=require('node:sqlite');
+const d=new DatabaseSync('检索队列.sqlite');
+const id='ff3e2c6a';
+const a=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id).details_json);
+a.audit_id='20261109_ff3e2c6a_slac';
+const u='https://faculty.slac.stanford.edu/person/leora-dresselhaus-marais';
+a.aspects.affiliation.note='SLAC 人物页列材料科学助理教授、机械工程 courtesy 和 SLAC 光子科学 term appointment。';
+a.aspects.affiliation.sources.push(u);
+a.aspects.research.note='SLAC 页描述材料缺陷动态、X 射线与光学显微及可持续金属加工研究。';
+a.aspects.research.sources.push(u);
+a.next_step='核 LLNL 博士后阶段 Eggert 正式职衔及其他阶段导师。';
+a.followup_required=true;
+d.prepare('insert or ignore into manual_audit_events(audit_id,record_id,recorded_at,details_json) values(?,?,?,?)').run(a.audit_id,id,new Date().toISOString(),JSON.stringify(a));
+d.close();

@@ -1,0 +1,13 @@
+const {DatabaseSync}=require('node:sqlite');
+const crypto=require('node:crypto');
+const d=new DatabaseSync('检索队列.sqlite');
+const id='1dc66a3e',u='https://research.tudelft.nl/en/publications/from-atomic-scale-imaging-to-quantum-fault-tolerance-with-spins-i/';
+const a=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id).details_json);
+a.audit_id='20261109_1dc66a3e_delft';
+a.aspects.phd={status:'confirmed_advisor',note:'TU Delft 学位目录列 2021-01-21 授位，Hanson 为 promotor、Taminiau 为 copromotor。',sources:[u]};
+a.next_step='核 Harvard Lukin 博士后正式指导职称。';
+a.followup_required=true;
+d.prepare('insert or ignore into manual_audit_events(audit_id,record_id,recorded_at,details_json) values(?,?,?,?)').run(a.audit_id,id,new Date().toISOString(),JSON.stringify(a));
+const id2='9e238119',url='https://repository.gatech.edu/bitstreams/37befc9c-b7a2-4d62-a835-f7dad0f2ae3b/download';
+if(!d.prepare('select id from pages where record_id=? and url=?').get(id2,url))d.prepare('insert into pages(id,record_id,job_id,url,state,attempts,error,retrieved) values(?,?,?,?,?,?,?,?)').run(crypto.createHash('sha256').update(id2+url).digest('hex').slice(0,24),id2,id2+':training',url,'retry',1,'网页工具无法访问，未取得原文',new Date().toISOString());
+d.close();

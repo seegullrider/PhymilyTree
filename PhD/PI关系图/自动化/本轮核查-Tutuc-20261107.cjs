@@ -1,0 +1,13 @@
+const fs=require('fs'),path=require('path'),{DatabaseSync}=require('node:sqlite'),{spawnSync}=require('child_process');
+const root=path.join(__dirname,'..'),id='4abf014b',ut='https://utw10854.utweb.utexas.edu/members/dr-emanuel-tutuc.html',bio='https://citeseerx.ist.psu.edu/document?doi=478f4a60ee44fdc159857e71a0fe392c72e7ac4c&repid=rep1&type=pdf';
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});let row=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get(id);if(!row)throw Error('缺少台账');const e=JSON.parse(row.details_json);db.close();
+e.audit_id='20261107_tutuc_ibm_primary_'+id;e.aspects.postdoc={status:'unresolved',note:'UT MURI 本人页与其 2009 论文作者简介明确 2004–2006 IBM Watson 博后，未命名博后导师；Princeton 2005 Shayegan 组会议摘要不证当时职位性质。',sources:[ut,bio]};e.next_step='查 Princeton 2004 博士论文与 IBM 2004–2006 博后导师；Princeton 同期是否另有博士后岗位仍待核。';e.followup_required=true;
+const out=path.join(__dirname,'本轮核查-Tutuc-'+id+'-20261107.json');fs.writeFileSync(out,JSON.stringify(e,null,2)+'\n');const r=spawnSync(process.execPath,[path.join(__dirname,'人工核查台账.cjs'),'record',out],{encoding:'utf8'});if(r.status!==0)throw Error(r.stderr);console.log(r.stdout.trim());
+function edit(rel,old,neu){const f=path.join(root,rel),s=fs.readFileSync(f,'utf8');if(s.split(old).length!==2)throw Error('不唯一 '+rel);fs.writeFileSync(f,s.replace(old,neu));}
+const note='人物/人员 - UT Austin - Emanuel Tutuc - 4abf014b.md';
+const old='- 核查边界：Academic Tree 将 Shayegan 列为 2004 年 Princeton 博士阶段师承，需论文原件进一步核实；2005 年 APS 会议将其列入 Shayegan 组，但学校仅称 Princeton 和 IBM 为研究岗位，未单独证实博士后身份。阶段和指导关系继续查原始履历。';
+edit(note,old,`- 博士后经历：2004–2006 年 [[机构 - IBM T. J. Watson Research Center|IBM T. J. Watson Research Center]] 博士后，导师姓名未列。[UT MURI 简介](${ut})；[2009 年作者简介](${bio})。\n- 核查边界：Academic Tree 将 Shayegan 列为 2004 年 Princeton 博士阶段师承，需论文原件进一步核实；2005 年 APS 会议将其列入 Shayegan 组，但未明确其 Princeton 阶段岗位性质，不能仅据此认定是博士后或正式导师。`);
+const inst=path.join(root,'院校与机构','机构 - IBM T. J. Watson Research Center.md');if(fs.existsSync(inst))throw Error('机构节点已存在，请手工合并');fs.writeFileSync(inst,`# IBM T. J. Watson Research Center\n\n## 已核实的博士后经历\n\n- [[人员 - UT Austin - Emanuel Tutuc - 4abf014b|Emanuel Tutuc]]：2004–2006 年博士后研究员；导师未具名。[UT MURI 简介](${ut})；[2009 年作者简介](${bio})。\n\n本表仅列本次已核实并链接的人物，不表示该机构在图谱中的全部相关人员。\n`);
+const oldrow='| Mansour Shayegan（博士导师候选） | Mansour Shayegan（2005 课题组，博士后阶段待核） | [来源](https://ece.utexas.edu/people/faculty/emanuel-tutuc) |';
+edit('UT Austin逐人复核记录.md',oldrow,`| Mansour Shayegan（博士导师候选） | IBM 2004–2006 博后导师未明；Mansour Shayegan（2005 Princeton 课题组，阶段待核） | [UT 院系](https://ece.utexas.edu/people/faculty/emanuel-tutuc)；[IBM 博后]( ${bio}) |`.replace('( https','(https'));
+console.log('本人经历、机构反链及学校表已更新');

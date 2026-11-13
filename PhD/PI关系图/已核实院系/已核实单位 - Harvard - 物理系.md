@@ -1,0 +1,30 @@
+# Harvard：物理系
+
+[[院校 - Harvard|返回学校]]
+
+仅收录已按人物资料核实的记录，不表示单位已查全。
+- [[人员 - Harvard - Susanne Yelin - 8444e259|Susanne Yelin]] — Professor of Physics in Residence。 [Harvard 物理系](https://www.physics.harvard.edu/people/facpages/yelin)
+- [[人员 - Harvard - Philip Kim - be1d4c3b|Philip Kim]] — [来源](https://www.physics.harvard.edu/people/facpages/kim)
+- [[人员 - Harvard - Subir Sachdev - a4367696|Subir Sachdev]] — [来源](https://www.physics.harvard.edu/people/facpages/sachdev)
+- [[人员 - Harvard - Amir Yacoby - 0369ddfc|Amir Yacoby]] — [来源](https://www.physics.harvard.edu/people/facpages/yacoby)
+- [[人员 - Harvard - Ashvin Vishwanath - 49dc4464|Ashvin Vishwanath]] — [来源](https://www.physics.harvard.edu/people/facpages/vishwanath)
+- [[人员 - Harvard - Bertrand Halperin - a4b7e1f4|Bertrand Halperin]] — [来源](https://www.aps.org/apsnews/2025/10/quiet-winner-nobel-prizes-science)
+- [[人员 - Harvard - David R. Nelson - 4c312119|David R. Nelson]] — [来源](https://www.physics.harvard.edu/people/facpages/nelson)
+- [[人员 - Harvard - David A. Weitz - 6d11ec29|David A. Weitz]] — [来源](https://history.aip.org/catalog/icos/46737.html)
+- [[人员 - Harvard - Efthimios Kaxiras - 186f1527|Efthimios Kaxiras]] — [来源](https://efthimioskaxiras.scholars.harvard.edu/people/efthimios-kaxiras)
+- [[人员 - Harvard - Eric Heller - cdb3f8be|Eric Heller]] — [来源](https://www.chemistry.harvard.edu/people/eric-heller)
+- [[人员 - Harvard - Eric Mazur - 4e174679|Eric Mazur]] — [来源](https://www.physics.harvard.edu/people/facpages/mazur)
+- [[人员 - Harvard - Eslam Khalaf - 8925b535|Eslam Khalaf]] — [来源](https://sites.harvard.edu/eslam-khalaf/)
+- [[人员 - Harvard - Hongkun Park - abdc86e2|Hongkun Park]] — [来源](https://www.chemistry.harvard.edu/people/hongkun-park)
+- [[人员 - Harvard - Jenny Hoffman - 2b60f033|Jenny Hoffman]] — [来源](https://www.physics.harvard.edu/people/facpages/hoffman)
+- [[人员 - Harvard - Julia Mundy - eb122f99|Julia Mundy]] — [来源](https://www.physics.harvard.edu/people/facpages/mundy)
+- [[人员 - Harvard - Kang-Kuen Ni - 668139e9|Kang-Kuen Ni]] — [来源](https://www.physics.harvard.edu/people/facpages/ni)
+- [[人员 - Harvard - L. Mahadevan - c70cf50f|L. Mahadevan]] — [来源](https://www.pims.math.ca/news/2012/06/pims-chats-l-mahadevan)
+- [[人员 - Harvard - Markus Greiner - fcd680b6|Markus Greiner]] — [来源](https://www.physics.harvard.edu/people/facpages/greiner)
+- [[人员 - Harvard - Matteo Mitrano - 6c782412|Matteo Mitrano]] — [来源](https://mitrano.physics.harvard.edu/people/matteo-mitrano)
+- [[人员 - Harvard - Michael P. Brenner - e1ddd20d|Michael P. Brenner]] — [来源](https://brennergroup.seas.harvard.edu/group)
+- [[人员 - Harvard - Mikhail Lukin - 310298e3|Mikhail Lukin]] — [来源](https://www.physics.harvard.edu/resource/lukin-cv)
+- [[人员 - Harvard - Norman Yao - 87e368dd|Norman Yao]] — [来源](https://yao.physics.harvard.edu/directory/norman-yao/)
+- [[人员 - Harvard - Robert Westervelt - 1f1887f8|Robert Westervelt]] — [来源](https://hqiopenhouse.hsites.harvard.edu/people/robert-westervelt)
+- [[人员 - Harvard - Sunghan Ro - 1e31d50c|Sunghan Ro]] — [来源](https://www.physics.harvard.edu/people/facpages/ro)
+- [[人员 - Harvard - Vinothan N. Manoharan - 3fd3d2d3|Vinothan N. Manoharan]] — [来源](https://www.huhousing.harvard.edu/community-events/graduate-commons-program-team)

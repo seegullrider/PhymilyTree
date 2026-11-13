@@ -1,0 +1,2 @@
+const {DatabaseSync}=require('node:sqlite'),path=require('path'),db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});
+let rows=db.prepare('select p.record_id,p.url,o.tool_output from pages p join page_observations o on o.page_id=p.id where p.url=?').all('https://commencement.stanford.edu/sites/g/files/sbiybj17666/files/media/file/commencement2023.pdf');for(let r of rows){console.log(r.record_id,r.tool_output.slice(0,850).replace(/\n/g,' '));}db.close();

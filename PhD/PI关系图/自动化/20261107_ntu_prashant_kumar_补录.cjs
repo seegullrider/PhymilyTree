@@ -1,0 +1,27 @@
+const fs = require('node:fs'), path = require('node:path'), crypto = require('node:crypto');
+const root = path.resolve(__dirname, '..');
+const read = p => fs.readFileSync(path.join(root, p), 'utf8');
+const write = (p, s) => fs.writeFileSync(path.join(root, p), s, 'utf8');
+const add = (p, line) => { const s = read(p); if (!s.includes(line)) write(p, s.replace(/\s*$/, '') + '\n' + line + '\n'); };
+const mentor = (p, line) => { let s = read(p); if (s.includes(line)) return; const tag = '\n<!-- PI-AUTO-SEARCH:START -->'; s = s.includes(tag) ? s.replace(tag, '\n' + line + '\n' + tag) : s.replace(/\s*$/, '') + '\n' + line + '\n'; write(p, s); };
+const id = crypto.createHash('sha256').update('NTU Prashant Kumar Minnesota 2018').digest('hex').slice(0, 8);
+const who = `人员 - NTU - Prashant Kumar - ${id}`, m1 = '人员 - University of Minnesota - Andre Mkhoyan - 949f6f03', m2 = '师承人物 - Michael Tsapatsis', m3 = '人员 - University of Michigan, Ann Arbor - Nicholas A. Kotov - 40c4051d';
+const school = '院校 - NTU', dept = '已核实单位 - NTU - 材料科学与工程学院';
+const topics = ['电子显微学', '纳米材料', '纳米材料自组装'];
+const bio = 'https://prashantksk.wixsite.com/kumar-atomic-lab/about-1', directory = 'https://www.ntu.edu.sg/mse/about-us/our-people/faculty-staff', seminar = 'https://www.ntu.edu.sg/mse/news-events/events/detail/2024/01/08/default-calendar/mse-seminar-dr-prashant-kumar-8jan2024', news = 'https://www.ntu.edu.sg/mse/news-events/news/detail/assistant-professor-prashant-kumar---honouree-of-the-mit-technology-review-tr35-asia-pacific-2024-award';
+for (const f of [`人物/${m1}.md`, `人物/${m3}.md`, `院校与机构/${school}.md`, `已核实院系/${dept}.md`, ...topics.map(t => `已核实方向/已核实方向 - ${t}.md`), 'NTU逐人复核记录.md', '师承关系索引.md']) if (!fs.existsSync(path.join(root, f))) throw Error('缺少目标文件：' + f);
+const manifest = JSON.parse(read('graph-manifest.json'));
+const conflicts = manifest.nodes.filter(n => n.id === id || n.unit === 'NTU' && /prashant\s+kumar/i.test(n.name));
+if (conflicts.length && !(conflicts.length === 1 && conflicts[0].id === id && conflicts[0].filename === who)) throw Error('人物 ID 或校属记录冲突');
+if (!fs.existsSync(path.join(root, `人物/${who}.md`))) write(`人物/${who}.md`, `# Prashant Kumar\n\n> [!info] NTU 材料学院补录\n> 此人为 Minnesota 2018 年材料博士，与 [[师承人物 - Prashant Kumar（Stanford 2020 博士）|Stanford 2020 年博士的同名理论物理研究者]]不同。具体招生安排以学校及本人信息为准。\n\n## 所在学校或机构\n\n- [[${school}|Nanyang Technological University]]\n\n## 院系与研究方向核验（2026-11-07）\n\n- 院系：[[${dept}|材料科学与工程学院]]。NTU 学院教师目录列 Assistant Professor；[学校目录](${directory})。\n- 方向：[[已核实方向 - 电子显微学|电子显微学]] · [[已核实方向 - 纳米材料|纳米材料]] · [[已核实方向 - 纳米材料自组装|纳米材料自组装]]；手性纳米结构、材料光学与自旋相关应用，属于凝聚态及材料物理相邻方向。[NTU 报道](${news})。\n\n## 师承\n\n- 博士导师：[[${m1}|K. Andre Mkhoyan]]、[[${m2}|Michael Tsapatsis]]。[本人实验室履历](${bio})明确在 Minnesota 2012–2018 PhD 条目列二人为 Advisors，并列博士论文题目；[NTU 讲座简介](${seminar})独立确认两人指导博士研究。关系类型可信度：高。\n- 博士后阶段研究师长：[[${m3}|Nicholas A. Kotov]]。[本人履历](${bio})列 Michigan 2018–2023 Post-doctoral Researcher，Mentor: Nicholas Kotov；[NTU 讲座](${seminar})亦称其博士后受 Kotov 指导。关系类型可信度：高；正式任命中的 advisor 职衔待核。\n- 核查边界：博士论文具体共同导师签署角色及其他经历待核。\n`);
+if (!fs.existsSync(path.join(root, `人物/${m2}.md`))) write(`人物/${m2}.md`, `# Michael Tsapatsis\n\n> [!info] 师承扩展人物；其他现职和经历另核。\n\n## 师承\n\n`);
+if (!conflicts.length) { manifest.nodes.push({id, filename: who, name: 'Prashant Kumar', unit: 'NTU', kind: '新加坡'}); manifest.notes = manifest.nodes.length; manifest.units = new Set(manifest.nodes.map(n => n.unit)).size; write('graph-manifest.json', JSON.stringify(manifest, null, 2) + '\n'); }
+add(`院校与机构/${school}.md`, `- [[${who}|Prashant Kumar]]`);
+add(`已核实院系/${dept}.md`, `- [[${who}|Prashant Kumar]] — [NTU 教师目录](${directory})`);
+for (const t of topics) add(`已核实方向/已核实方向 - ${t}.md`, `- [[${who}|Prashant Kumar · NTU]] — [NTU 报道](${news})`);
+add('NTU逐人复核记录.md', `| [[${who}|Prashant Kumar]] | 材料科学与工程学院；电子显微学、手性纳米材料、自组装（材料物理相邻方向） | K. Andre Mkhoyan、Michael Tsapatsis | Nicholas A. Kotov（博士后研究师长） | [学校目录](${directory})；[本人履历](${bio})；[学校讲座简介](${seminar}) |`);
+for (const [p, label] of [[m1, '博士生'], [m2, '博士生'], [m3, '博士后研究者']]) mentor(`人物/${p}.md`, `- ${label}：[[${who}|Prashant Kumar（Minnesota 2018 博士）]]。[本人履历](${bio})将 Mkhoyan、Tsapatsis 列为 2012–2018 博士 Advisors，Kotov 列为 2018–2023 博士后 Mentor；[NTU 讲座简介](${seminar})独立确认两阶段指导。博士后正式任命职衔待核。`);
+add('师承关系索引.md', `- [[${who}|Prashant Kumar]] → 博士导师：[[${m1}|K. Andre Mkhoyan]]、[[${m2}|Michael Tsapatsis]]；博士后阶段研究师长：[[${m3}|Nicholas A. Kotov]]。[本人履历](${bio})分别列 Minnesota 2012–2018 PhD Advisors 和 Michigan 2018–2023 Postdoctoral Mentor；[NTU 讲座简介](${seminar})佐证。博士后正式任命职衔待核。`);
+const e = {audit_id:`20261107_${id}_ntu_prashant_kumar`,record_id:id,aspects:{identity:{status:'confirmed',note:'本人履历及 NTU 讲座均列 Minnesota 材料博士和 Michigan Kotov 博后，NTU 教师目录与实验室职务相符；与 Stanford 2020 博士同名者区分。',sources:[bio,seminar,directory]},affiliation:{status:'confirmed',note:'NTU 材料科学与工程学院教师目录列该姓名为 Assistant Professor。',sources:[directory]},research:{status:'confirmed',note:'NTU 报道列电子显微、手性纳米材料及其光学、自旋应用，为材料物理相邻方向。',sources:[news]},phd:{status:'confirmed_advisor',note:'本人实验室履历明确列 Minnesota 2012–2018 博士 Advisors 为 K. Andre Mkhoyan、Michael Tsapatsis；NTU 讲座简介确认两人指导博士研究。',sources:[bio,seminar]},postdoc:{status:'confirmed_advisor',note:'本人履历将 Nicholas Kotov 列为 2018–2023 Michigan 博后 Mentor，NTU 简介独立确认研究指导；正式任命 advisor 职衔待核。',sources:[bio,seminar]}},followup_required:true,next_step:'追查 Minnesota 博士论文正式委员会分工及 Michigan 博士后正式任命职衔，持续核对其他经历。'};
+write('自动化/本轮核查-NTU-Prashant-Kumar-20261107.json', JSON.stringify(e, null, 2) + '\n');
+console.log(JSON.stringify({id, filename: who, event: '自动化/本轮核查-NTU-Prashant-Kumar-20261107.json'}));

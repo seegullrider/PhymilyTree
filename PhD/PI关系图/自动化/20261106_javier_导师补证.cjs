@@ -1,0 +1,10 @@
+const fs=require('fs'),path=require('path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'));
+const row=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('2e53c358');
+if(!row) throw Error('缺少人工台账');
+const ev=JSON.parse(row.details_json);
+ev.audit_id='20261106_javier_phd_cv_mit_2e53c358';
+ev.aspects.phd={status:'confirmed_advisor',note:'既有博士论文封面核查列 Jarillo-Herrero 为 thesis supervisor；本轮直接读取 Jarillo-Herrero 履历将 Javier 列为其受指导研究生，MIT 2015 学位论文清单在对应博士论文条目后列 P. Jarillo-Herrero。',sources:['https://bpb-us-e2.wpmucdn.com/faculty.sites.uci.edu/dist/0/762/files/2023/04/main-JDSY-links-optimized.pdf','https://adolfoplasencia.es/blog/wp-content/uploads/CV-Jarillo-Herrero-hasta-2012-incluido-1.pdf','https://mtlsites.mit.edu/annual_reports/2015/theses.pdf']};
+ev.followup_required=true;
+ev.next_step='保留已确认的博士导师；继续查 Harvard Lukin 与 MIT Jarillo-Herrero 两段博士后正式导师职衔。';
+fs.writeFileSync(path.join(__dirname,'本轮核查-Javier-Sanchez-20261106.json'),JSON.stringify(ev,null,2)+'\n','utf8');

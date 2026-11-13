@@ -1,0 +1,10 @@
+const {DatabaseSync}=require('node:sqlite');
+const d=new DatabaseSync('检索队列.sqlite');
+const id='d83d418e',u='https://thesis.caltech.edu/611/1/maboudian_r_1989.pdf';
+const a=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id).details_json);
+a.audit_id='20261109_d83d418e_thesis';
+a.aspects.phd={status:'confirmed_advisor',note:'Caltech 博士论文致谢明确 David Goodstein 为 advisor、Tom Tombrello 为 second advisor；目录 Bellan 字段冲突仍待核。',sources:[u]};
+a.next_step='核 Caltech 目录 Bellan 字段及 IBM 博士后阶段指导者；提交日期非授位日期。';
+a.followup_required=true;
+d.prepare('insert or ignore into manual_audit_events(audit_id,record_id,recorded_at,details_json) values(?,?,?,?)').run(a.audit_id,id,new Date().toISOString(),JSON.stringify(a));
+d.close();

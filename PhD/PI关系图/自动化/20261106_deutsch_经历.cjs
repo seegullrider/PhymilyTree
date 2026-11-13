@@ -1,0 +1,10 @@
+const fs=require('fs'),path=require('path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'));
+const row=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('1075f592');
+if(!row) throw Error('缺少原有台账');
+const ev=JSON.parse(row.details_json),fqxi='https://fqxi.org/about-us/our-team/',ucsc='https://campusdirectory.ucsc.edu/cd_detail?uid=josh';
+ev.audit_id='20261106_deutsch_fqxi_1075f592';
+ev.aspects.phd={status:'unresolved',note:'FQxI 本人团队简介列 Cambridge 博士，但未列导师。',sources:[fqxi,ucsc]};
+ev.aspects.postdoc={status:'unresolved',note:'FQxI 本人团队简介列 Cambridge 和 Santa Barbara 理论物理研究所博士后，未列导师或起止年。',sources:[fqxi,ucsc]};
+ev.followup_required=true;ev.next_step='查 Cambridge 学位论文、Cambridge 与 Santa Barbara 博后资料，核对两段导师。';
+fs.writeFileSync(path.join(__dirname,'本轮核查-Joshua-Deutsch-20261106.json'),JSON.stringify(ev,null,2)+'\n','utf8');

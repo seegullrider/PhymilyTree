@@ -1,0 +1,11 @@
+const {DatabaseSync}=require('node:sqlite');
+const d=new DatabaseSync('检索队列.sqlite');
+const id='f7564d45',u='https://www.bnl.gov/staff/frenkel';
+const a=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id).details_json);
+a.audit_id='20261109_f7564d45_bnl';
+a.aspects.phd={status:'confirmed_advisor',note:'Brookhaven 履历列 Tel Aviv University 1995 物理博士 advisor A. V. Voronel。',sources:[u]};
+a.aspects.postdoc={status:'confirmed_advisor',note:'Brookhaven 履历列 Washington 1995–1996 博后 advisor E. A. Stern。',sources:[u]};
+a.next_step='进一步核导师完整姓名；1987 硕士 advisor 单独记录，不归入博士。';
+a.followup_required=true;
+d.prepare('insert or ignore into manual_audit_events(audit_id,record_id,recorded_at,details_json) values(?,?,?,?)').run(a.audit_id,id,new Date().toISOString(),JSON.stringify(a));
+d.close();

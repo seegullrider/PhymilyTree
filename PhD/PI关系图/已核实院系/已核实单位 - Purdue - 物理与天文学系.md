@@ -1,0 +1,32 @@
+# Purdue：物理与天文学系
+
+[[院校 - Purdue|返回学校]]
+
+仅收录已按人物资料核实的记录，不表示单位已查全。
+- [[人员 - Purdue - Birgit Kaufmann - cda1bff4|Birgit Kaufmann]] — [来源](https://quantum.research.purdue.edu/directory/birgit-kaufmann/)
+- [[人员 - Purdue - Yihang Zeng - 2f3639e5|Yihang Zeng]] — [Purdue 物理系原档](https://www.physics.purdue.edu/news/2025/0113_yihangzeng_newfaculty.html)
+- [[人员 - Purdue - Claudio Chamon - c14bcfb7|Claudio Chamon]] — [来源](https://quantum.research.purdue.edu/directory/claudio-chamon/)
+- [[人员 - Purdue - Arnab Banerjee - a6c119be|Arnab Banerjee]] — [来源](https://www.physics.purdue.edu/people/faculty/arnabb.php)
+- [[人员 - Purdue - Chen-Lung Hung - c7d88398|Chen-Lung Hung]] — [来源](https://www.physics.purdue.edu/people/faculty/clhung.php)
+- [[人员 - Purdue - David D. Nolte - ed2022ef|David D. Nolte]] — [来源](https://research.purdue.edu/about/awards/mccoy-award/)
+- [[人员 - Purdue - Erica Carlson - 99e6611d|Erica Carlson]] — [来源](https://www.physics.purdue.edu/people/faculty/carlson.php)
+- [[人员 - Purdue - Gabor Csathy - e681be46|Gabor Csathy]] — [来源](https://www.physics.purdue.edu/people/faculty/csathy.php)
+- [[人员 - Purdue - Hadiseh Alaeian - 563a1d2a|Hadiseh Alaeian]] — [来源](https://quantum.research.purdue.edu/directory/hadiseh-alaeian/)
+- [[人员 - Purdue - Hadiseh Alaeian — 实验室机会补充 - d6283329|Hadiseh Alaeian — 实验室机会补充]] — [来源](https://quantum.research.purdue.edu/directory/hadiseh-alaeian/)
+- [[人员 - Purdue - Jonathan Hood - 4ac316df|Jonathan Hood]] — [来源](https://quantum.research.purdue.edu/directory/jonathan-hood/)
+- [[人员 - Purdue - Jukka Vayrynen - 8440cb91|Jukka Vayrynen]] — [来源](https://www.physics.purdue.edu/people/faculty/vayrynen.php)
+- [[人员 - Purdue - Laimei Nie - 7842d4e6|Laimei Nie]] — [来源](https://www.physics.purdue.edu/people/faculty/nie-laimei.php)
+- [[人员 - Purdue - Leonid Rokhinson - 76b1bd65|Leonid Rokhinson]] — [来源](https://www.physics.purdue.edu/people/faculty/leonid.php)
+- [[人员 - Purdue - Michael J. Manfra - a2b4730f|Michael J. Manfra]] — [来源](https://physics.gatech.edu/event/school-physics-fall-colloquium-series-dr-michael-j-manfra)
+- [[人员 - Purdue - Oana Malis - 47d1fad5|Oana Malis]] — [来源](https://www.physics.purdue.edu/people/faculty/malis.php)
+- [[人员 - Purdue - Shawn (Xingshan) Cui - 8b148809|Shawn (Xingshan) Cui]] — [来源](https://www.math.purdue.edu/~cui177/CV_ShawnCui.pdf)
+- [[人员 - Purdue - Ruichao（Alex）Ma - ae9cd920|Ruichao（Alex）Ma]] — [来源](https://www.physics.purdue.edu/people/faculty/ma.php)
+- [[人员 - Purdue - Qi Zhou - a5f40352|Qi Zhou]] — [来源](https://www.physics.purdue.edu/interactions/2026/features/qi_zhou.php)
+- [[人员 - Purdue - Stephen M. Durbin - ab56fd5a|Stephen M. Durbin]] — [来源](https://www.physics.purdue.edu/people/faculty/durbin.php)
+- [[人员 - Purdue - Tiancong Zhu - cdcc0659|Tiancong Zhu]] — [来源](https://www.physics.purdue.edu/news/2024/0226-zhu-newfaculty.html)
+- [[人员 - Purdue - Tongcang Li - c3560c41|Tongcang Li]] — [来源](https://www.physics.purdue.edu/people/faculty/tcli.php)
+- [[人员 - Purdue - Tyler Ellison - e9b987c0|Tyler Ellison]] — [来源](https://www.physics.purdue.edu/news/2025/tyler-ellison-joins-purdue-physics-and-astronomy-faculty.html)
+- [[人员 - Purdue - Valentin Walther - e4b06ce7|Valentin Walther]] — [来源](https://quantum.research.purdue.edu/directory/valentin-walther/)
+- [[人员 - Purdue - Yuli Lyanda-Geller - 63c00469|Yuli Lyanda-Geller]] — [来源](https://www.physics.purdue.edu/people/faculty/lyanda_geller.php)
+- [[人员 - Purdue - Yong P. Chen - a21b319c|Yong P. Chen]] — [来源](https://research.purdue.edu/about/awards/mccoy-award/)
+- [[人员 - Purdue - Rudro Rana Biswas - 972c2241|Rudro Rana Biswas]] — [历史院系任用核对](https://www.purdue.edu/newsroom/archive/purduetoday/releases/2015/Q3/newfac2015.pdf#page=11)

@@ -1,0 +1,25 @@
+const fs=require('node:fs'),path=require('node:path');
+const root=path.resolve(__dirname,'..');
+const read=p=>fs.readFileSync(path.join(root,p),'utf8');
+const write=(p,s)=>fs.writeFileSync(path.join(root,p),s,'utf8');
+const add=(p,line)=>{let s=read(p);if(!s.includes(line))write(p,s.replace(/\s*$/,'')+'\n'+line+'\n')};
+const id='ac7b25a6',unit='Ohio State',who=`人员 - ${unit} - Yanzhou Ji - ${id}`;
+const mentor='人员 - Penn State - Long-Qing Chen - d4abe130', school='院校 - Ohio State', dept='已核实单位 - Ohio State - 材料科学与工程系',topics=['已核实方向 - 相场模型','已核实方向 - 计算材料科学','已核实方向 - 二维材料'];
+const osu='https://mse.osu.edu/people/ji.730',thesis='https://etda-main.ulprod.k8s.libraries.psu.edu/?f%5Blast_name_ssi%5D%5B%5D=Ji&per_page=100&sort=relevance',psu='https://www.mri.psu.edu/faculty/welcome-chen-research-group-featured-works/group';
+for(const file of [`人物/${mentor}.md`,`院校与机构/${school}.md`,`已核实院系/${dept}.md`,...topics.map(x=>`已核实方向/${x}.md`),`${unit}逐人复核记录.md`,'师承关系索引.md'])if(!fs.existsSync(path.join(root,file)))throw Error('缺少目标 '+file);
+const manifest=JSON.parse(read('graph-manifest.json'));
+const conflict=manifest.nodes.filter(n=>n.id===id||(n.unit===unit&&/^yanzhou\s+ji$/i.test(n.name)));
+if(conflict.length&&!(conflict.length===1&&conflict[0].id===id&&conflict[0].filename===who))throw Error('记录冲突');
+if(!fs.existsSync(path.join(root,`人物/${who}.md`)))write(`人物/${who}.md`,`# Yanzhou Ji\n\n> [!info] 补录：计算材料物理相邻方向\n> Ohio State 材料科学与工程系 PI，研究相场、二维材料生长和微结构演化。\n\n## 所在学校或机构\n\n- [[${school}|Ohio State]]\n\n## 院系与研究方向核验（2026-11-06）\n\n- 院系：[[${dept}|材料科学与工程系]]助理教授。[Ohio State 官方简介](${osu})。\n- 方向：[[${topics[0]}|相场模型]]、[[${topics[1]}|计算材料科学]]、[[${topics[2]}|二维材料生长]]；此外研究材料微结构、氧化与能源材料。[Ohio State 官方简介](${osu})。\n\n## 师承\n\n- 博士导师：[[${mentor}|Long-Qing Chen]]。[Penn State 学位论文目录](${thesis})的 Ji, Yanzhou 条目列材料科学与工程博士论文及 Long-Qing Chen 为 Dissertation Advisor/Co-Advisor；[Ohio State 简介](${osu})确认 2018 年 Penn State 博士及研究领域。关系可信度：高。\n- 博士后导师候选：[[${mentor}|Long-Qing Chen]]。[Ohio State 简介](${osu})列 2019–2021 Penn State 博士后，[Penn State 研究所课题组页](${psu})列其后续为 Chen 组助理研究教授；同机构及前后课题组关系只是线索，尚不能证明该博士后阶段正式导师或组属，待任职档案或本人履历。\n`);
+if(!conflict.length){manifest.nodes.push({id,filename:who,name:'Yanzhou Ji',unit,kind:'美国'});write('graph-manifest.json',JSON.stringify(manifest,null,2)+'\n')}
+add(`人物/${mentor}.md`,`- 博士生：[[${who}|Yanzhou Ji]]。[Penn State 博士论文目录](${thesis})将 Long-Qing Chen 列为 Ji 的 Dissertation Advisor/Co-Advisor，身份与[Ohio State 简介](${osu})中的 Penn State 2018 年博士相符。博士导师可信度：高。`);
+add(`人物/${mentor}.md`,`- 博士后候选研究者：[[${who}|Yanzhou Ji]]。[Ohio State 简介](${osu})列 2019–2021 Penn State 博后，[Penn State 研究所组页](${psu})列其后续为该组助理研究教授；博后阶段是否直属本组和正式导师待核。`);
+add(`院校与机构/${school}.md`,`- [[${who}|Yanzhou Ji]]`);
+add(`已核实院系/${dept}.md`,`- [[${who}|Yanzhou Ji]] — [Ohio State 材料系](${osu})`);
+for(const topic of topics)add(`已核实方向/${topic}.md`,`- [[${who}|Yanzhou Ji · Ohio State]] — [Ohio State 材料系](${osu})`);
+add(`${unit}逐人复核记录.md`,`| [[${who}|Yanzhou Ji]] | 材料科学与工程系；相场模拟、微结构及二维材料生长 | Long-Qing Chen（博士论文 advisor/co-advisor） | Long-Qing Chen（候选；博后组属与正式导师待核） | [Ohio State](${osu})；[Penn State 论文目录](${thesis})；[Penn State 组页](${psu}) |`);
+add('师承关系索引.md',`- [[${who}|Yanzhou Ji]] → 博士导师：[[${mentor}|Long-Qing Chen]]。[Penn State 博士论文目录](${thesis})列 Chen 为 Dissertation Advisor/Co-Advisor；[Ohio State 简介](${osu})确认 2018 年 Penn State 博士。可信度：高。`);
+add('师承关系索引.md',`- [[${who}|Yanzhou Ji]] → 博士后导师候选：[[${mentor}|Long-Qing Chen]]。[Ohio State 简介](${osu})列 2019–2021 Penn State 博后，[Penn State 组页](${psu})列其后续为组内助理研究教授；博后是否直属此组及正式导师待核。`);
+const event={audit_id:'20261106_ac7b25a6_osu_yanzhou_ji',record_id:id,aspects:{identity:{status:'confirmed',note:'Ohio State 简介与 Penn State 档案均对应 2018 年材料科学博士 Yanzhou Ji，研究为相场模拟。',sources:[osu,thesis]},affiliation:{status:'confirmed',note:'Ohio State 材料科学与工程系助理教授。',sources:[osu]},research:{status:'confirmed',note:'相场与多尺度模拟、材料微结构演化、二维材料生长。',sources:[osu]},phd:{status:'confirmed_advisor',note:'Penn State 论文目录将 Long-Qing Chen 列为 Dissertation Advisor/Co-Advisor。',sources:[thesis,osu]},postdoc:{status:'group_or_candidate',note:'2019–2021 Penn State 博后，之后 Chen 组研究教授；Chen 是正式博后导师及博士后组属仍为候选。',sources:[osu,psu]}},followup_required:true,next_step:'查 Penn State 2019–2021 博士后任命及本人履历，确认是否在 Chen 组以及正式 advisor。'};
+write('自动化/本轮核查-Yanzhou-Ji-20261106.json',JSON.stringify(event,null,2)+'\n');
+console.log('已补录 Yanzhou Ji；需同步队列并登记人工事件。');

@@ -1,0 +1,11 @@
+const fs=require('node:fs'),path=require('node:path'),{DatabaseSync}=require('node:sqlite'),{execFileSync}=require('node:child_process');
+const url='https://biodesign.asu.edu/cxfel/research/',db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});
+const a=JSON.parse(db.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get('53e627d8').details_json);db.close();
+a.audit_id='pi_20261113_kaindl_current_role';
+a.aspects.affiliation.note='ASU CXFEL 项目研究页列 Kaindl 为 ASU 物理教授及项目研究者，Sandhu 为项目主任；Kaindl 曾任 Beus CXFEL 实验室主任，其当前具体管理职务待核。';
+a.aspects.affiliation.sources=[url,...a.aspects.affiliation.sources];a.next_step+=' 另核 ASU 本人页中当前用户运营职务与旧主任说明的时间。';
+const out=path.join(__dirname,a.audit_id+'.json');fs.writeFileSync(out,JSON.stringify(a,null,2));execFileSync(process.execPath,['--no-warnings',path.join(__dirname,'人工核查台账.cjs'),'record',out],{stdio:'inherit'});
+const note=path.join(__dirname,'../人物/人员 - Arizona State - Robert Kaindl - 53e627d8.md');let s=fs.readFileSync(note,'utf8');
+const before='- ASU 物理教授及 CXFEL 负责人，研究超快光谱与光驱动量子材料。 [来源](https://search.asu.edu/profile/3636506)';
+const after='- ASU 物理教授，研究超快光谱与光驱动量子材料。ASU CXFEL 研究页列 Sandhu 为项目主任、Kaindl 为项目研究者；Kaindl 曾任 Beus CXFEL 实验室主任，当前具体管理职务待核。 [ASU CXFEL 研究页](https://biodesign.asu.edu/cxfel/research/) · [较早履历](https://news.asu.edu/20221215-xray-vision-director-ambitious-cxfel-project-sees-potential-unlock-new-knowledge)';
+if(!s.includes(before))throw Error('人员页原文未匹配');fs.writeFileSync(note,s.replace(before,after));

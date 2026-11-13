@@ -1,0 +1,15 @@
+const fs=require('node:fs'),path=require('node:path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true}),id='b47a7f29';
+const row=db.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id);
+if(!row)throw Error('缺少人工事件');
+const a=JSON.parse(row.details_json),cv='https://suleymanzadelab.com/assets/pdfs/AS_CV.pdf',workshop='https://physics.berkeley.edu/sites/default/files/rising_star_brochure_final_sm_2.pdf',lukin='https://www.physics.harvard.edu/sites/g/files/omnuum6476/files/2025-06/Lukin_CV.pdf',faculty='https://physics.berkeley.edu/people/aziza-suleymanzade-0';
+a.audit_id='20261108_b47a7f29_workshop_cvs';
+a.aspects.identity={status:'confirmed',note:'本人 CV、Berkeley 教师页及 Berkeley 研讨会简介均列 Chicago 博士、Harvard 博后及量子系统方向。',sources:[cv,faculty,workshop]};
+a.aspects.affiliation={status:'confirmed',note:'Berkeley 物理系教师页与本人 CV 列其为物理系助理教授。',sources:[faculty,cv]};
+a.aspects.research={status:'confirmed',note:'Berkeley 教师页列 Rydberg 原子、超导电路和纳米光子的混合量子系统。',sources:[faculty]};
+a.aspects.phd={status:'confirmed_advisor',note:'Berkeley 2023 研讨会简介称 Chicago 博士 under supervision of Jonathan Simon 与 David Schuster；本人 CV 列两人为博士研究 PI。',sources:[workshop,cv]};
+a.aspects.postdoc={status:'confirmed_advisor',note:'Lukin CV 在 Postdoctoral advisor 名录列 Aziza Suleymanzade；本人 CV 列 Harvard 2021–2025 博后、PI Mikhail Lukin。',sources:[lukin,cv]};
+a.next_step='博士论文原文和 Harvard 博后具体入离职月份仍可核对；旧 INSPIRE 页面本次未重读。';a.followup_required=true;
+const specs=[['phd','人员 - Stanford - Jonathan Simon - 867b6d4b','Berkeley 研讨会简介称 Chicago 博士 under supervision of Simon 和 Schuster；本人 CV 列二人为博士研究 PI。',[workshop,cv]],['phd','人员 - Stanford - David Schuster - 71dab6c8','Berkeley 研讨会简介称 Chicago 博士 under supervision of Simon 和 Schuster；本人 CV 列二人为博士研究 PI。',[workshop,cv]],['postdoc','人员 - Harvard - Mikhail Lukin - 310298e3','Lukin CV 的 Postdoctoral advisor 名录列其姓名；本人 CV 列 Harvard 2021–2025 博后 PI 为 Lukin。',[lukin,cv]]];
+const rel=specs.map(([stage,mentor_filename,evidence,sources],i)=>({event_id:`20261108_b47a7f29_workshop_${i}`,record_id:id,stage,mentor_filename,kind:'advisor',source_audit_id:a.audit_id,evidence,sources}));
+fs.writeFileSync(path.join(__dirname,'人工-20261108-Suleymanzade.json'),JSON.stringify(a,null,2)+'\n');fs.writeFileSync(path.join(__dirname,'结构化-20261108-Suleymanzade.json'),JSON.stringify(rel,null,2)+'\n');db.close();

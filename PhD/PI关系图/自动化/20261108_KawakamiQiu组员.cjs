@@ -1,0 +1,17 @@
+const fs=require('node:fs'),path=require('node:path');
+const {DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});
+const old=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('0d7aa224');
+if(!old) throw Error('缺少旧人工事件');
+const a=JSON.parse(old.details_json);
+const berkeley='https://physics.berkeley.edu/node/2138', osu='https://ece.osu.edu/events/2023/03/prof.-roland-kawakami-seminar',ucsb='https://www.itst.ucsb.edu/itst/reports/2002/Researchers.htm';
+a.audit_id='20261108_kawakami_qiu_alumni';
+a.aspects.identity={status:'confirmed',note:'Qiu 组目录列 Roland K. Kawakami、PhD 1999、Ohio State；Ohio State 简介独立确认 1999 Berkeley 物理博士及任职。',sources:[berkeley,osu]};
+a.aspects.affiliation={status:'confirmed',note:'Ohio State ECE 讲座简介列其为 Ohio State 物理系教授。',sources:[osu]};
+a.aspects.research={status:'confirmed',note:'Ohio State 讲座简介介绍其磁性拓扑量子材料、二维材料和自旋输运研究。',sources:[osu]};
+a.aspects.phd={status:'group_or_candidate',note:'Berkeley 物理系 Qiu 组前成员名单列 Roland K. Kawakami、PhD 1999 和 Ohio State 去向；支持博士组属，未明确论文 advisor。',sources:[berkeley,osu]};
+a.aspects.postdoc={status:'group_or_candidate',note:'UCSB 名录把 Roland Kawakami 列于 Awschalom 名下 postgraduate researchers，Ohio State 简介确认 UCSB 博后；正式指导称谓待核。',sources:[ucsb,osu]};
+a.next_step='查 Berkeley 1999 博士论文签署页与 UCSB 博后任命，分别核实 Qiu 和 Awschalom 的正式指导称谓。';a.followup_required=true;
+const rel=[{event_id:'20261108_kawakami_qiu_group',record_id:'0d7aa224',stage:'phd',mentor_filename:'人员 - UC Berkeley - Zi Qiang Qiu - 3f0212d1',kind:'group_leader',source_audit_id:a.audit_id,evidence:'Berkeley 物理系 Qiu 组名录列 Roland K. Kawakami PhD 1999、Ohio State 去向；正式论文导师待核。',sources:[berkeley,osu]},{event_id:'20261108_kawakami_awschalom_group',record_id:'0d7aa224',stage:'postdoc',mentor_filename:'人员 - University of Chicago - David Awschalom - d5d8b990',kind:'group_leader',source_audit_id:a.audit_id,evidence:'UCSB 原始人员名录将 Kawakami 列在 Awschalom 下；Ohio State 简介确认 UCSB 博后，正式导师称谓待核。',sources:[ucsb,osu]}];
+for(const [name,obj] of [['人工核查-20261108-Kawakami-Qiu.json',a],['结构化-20261108-Kawakami-Qiu.json',rel]])fs.writeFileSync(path.join(__dirname,name),JSON.stringify(obj,null,2)+'\n',{encoding:'utf8',flag:'wx'});
+db.close();

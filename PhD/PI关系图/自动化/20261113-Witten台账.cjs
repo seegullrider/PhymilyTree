@@ -1,0 +1,11 @@
+const fs=require('fs'),path=require('path');
+const {DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});
+const row=db.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get('bd42a1b1');
+if(!row)throw Error('missing prior audit');
+const data=JSON.parse(row.details_json), url='https://history.aip.org/catalog/books/47144.html';
+data.audit_id='witten_aip_oral_history_20261113';
+data.aspects.phd={status:'group_or_candidate',note:'AIP 本人口述史目录称 UCSD 研究生工作受 Shang Ma 指导；学位论文正式导师签署字段待查。',sources:[url]};
+data.aspects.postdoc={status:'group_or_candidate',note:'AIP 口述史目录称 Princeton 博后与 John Hopfield 工作，正式 advisor 职称未列；Saclay 博后师长仍未知。',sources:[url,'https://ias.tau.ac.il/past-fellows-and-lecturers1']};
+data.next_step='查 UCSD 博士论文签署与 Princeton 博后任命，继续查 Saclay 博后师长。';data.followup_required=true;
+fs.writeFileSync(path.join(__dirname,'20261113-Witten人工事件.json'),JSON.stringify(data,null,2));

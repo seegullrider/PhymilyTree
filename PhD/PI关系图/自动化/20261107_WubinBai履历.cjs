@@ -1,0 +1,16 @@
+const fs = require('fs');
+const path = require('path');
+const { DatabaseSync } = require('node:sqlite');
+const db = new DatabaseSync(path.join(__dirname, '检索队列.sqlite'), { readOnly: true });
+const row = db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('163a32ed');
+if (!row) throw new Error('Wubin Bai 原核查事件不存在');
+const ev = JSON.parse(row.details_json);
+db.close();
+const cv = 'https://gcim2026.org/index.php?ACT=file_view&GP=pro%2Fspk_keynote&SH=NON&key=492&tag=pdf';
+ev.audit_id = '20261107_163a32ed_cv_advisors';
+ev.aspects.phd = { status: 'confirmed_advisor', note: '本人 2025 年履历 MIT 2016 博士学位条目明确列 Advisor Caroline A. Ross；MIT 2016 年报列同一论文及 Ross。', sources: [cv, 'https://mtlsites.mit.edu/annual_reports/2016/theses.pdf'] };
+ev.aspects.postdoc = { status: 'confirmed_advisor', note: '本人履历 Northwestern 2016–2020 博士后条目明确列 Advisor John A. Rogers；2016 年 Illinois 访问职位单列。', sources: [cv] };
+ev.followup_required = true;
+ev.next_step = '本人履历已确认两阶段导师；后续可核 MIT 博士论文原件和 UNC 职级更新。';
+fs.writeFileSync(path.join(__dirname, '本轮核查-WubinBai-20261107.json'), JSON.stringify(ev, null, 2), 'utf8');
+console.log('已准备 Wubin Bai 两阶段导师核查事件');

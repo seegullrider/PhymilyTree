@@ -1,0 +1,15 @@
+const fs = require('node:fs');
+const path = require('node:path');
+const {DatabaseSync} = require('node:sqlite');
+const db = new DatabaseSync(path.join(__dirname, '检索队列.sqlite'), {readOnly:true});
+const row = db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('c122d0a5');
+if (!row) throw Error('Missing prior review');
+const event = JSON.parse(row.details_json);
+event.audit_id = 'pi_20261113_sandhu_gopinath_thesis';
+const url = 'https://citeseerx.ist.psu.edu/document?doi=572f66068d2e03ea22bd9d0acea2eb869117e981&repid=rep1&type=pdf';
+event.aspects.phd.note += ' 另核 Gopinath 博士论文：作者在 Ravindrakumar 组开展实验并感谢 TIFR 的 Sandhu 等人；未说明 Sandhu 的组属或导师，不升级候选。';
+if (!event.aspects.phd.sources.includes(url)) event.aspects.phd.sources.push(url);
+event.followup_required = true;
+event.next_step += ' 继续追 Sandhu 本人 TIFR／Mumbai 学位论文签署页及 JILA 任命档案。';
+fs.writeFileSync(path.join(__dirname, '20261113_sandhu_论文复核.json'), JSON.stringify(event,null,2));
+db.close();

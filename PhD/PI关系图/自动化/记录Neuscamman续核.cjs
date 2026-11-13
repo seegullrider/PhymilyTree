@@ -1,0 +1,13 @@
+const {DatabaseSync}=require('node:sqlite');
+const d=new DatabaseSync('检索队列.sqlite');
+const id='83f4aeb0',u='https://neuscammanlab.com/wp-content/uploads/2020/03/eric_neuscamman_cv.pdf';
+const a=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id).details_json);
+a.audit_id='20261109_83f4aeb0_cv';
+a.aspects.identity.note='本人 CV 首行写 Eric Neuscamman (né Scamman)，且列 Berkeley、Cornell 理论化学博士经历。';
+a.aspects.identity.sources.push(u);
+a.aspects.phd={status:'confirmed_advisor',note:'本人 CV 列 Cornell 2011 理论化学博士 advisor Garnet Kin-Lic Chan。',sources:[u]};
+a.aspects.postdoc={status:'group_or_candidate',note:'本人 CV 列 Berkeley Miller fellow 2011–2014 host Martin Head-Gordon；LLNL Lawrence fellow 2014–2015 host Eric Schwegler，host 非正式导师确证。',sources:[u]};
+a.next_step='按旧姓核学位档案及 fellowship 两阶段的正式指导职称。';
+a.followup_required=true;
+d.prepare('insert or ignore into manual_audit_events(audit_id,record_id,recorded_at,details_json) values(?,?,?,?)').run(a.audit_id,id,new Date().toISOString(),JSON.stringify(a));
+d.close();

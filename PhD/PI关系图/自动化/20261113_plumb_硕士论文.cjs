@@ -1,0 +1,14 @@
+const fs = require('node:fs');
+const path = require('node:path');
+const {DatabaseSync} = require('node:sqlite');
+const db = new DatabaseSync(path.join(__dirname, '检索队列.sqlite'), {readOnly:true});
+const row = db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('d454c111');
+if (!row) throw Error('Missing prior review');
+const event = JSON.parse(row.details_json);
+event.audit_id = 'pi_20261113_plumb_masters_thesis_source';
+const url = 'https://central.bac-lac.gc.ca/.item?app=Library&id=TC-QMM-86726&oclc_number=1033184207&op=pdf';
+if (!event.aspects.identity.sources.includes(url)) event.aspects.identity.sources.push(url);
+event.next_step += ' 另核 McGill 2009 年硕士论文致谢，其硕士 supervisor 为 Maria Kilfoil；不将硕士关系计为 Toronto 博士导师。';
+event.followup_required = true;
+fs.writeFileSync(path.join(__dirname, '20261113_plumb_硕士论文.json'), JSON.stringify(event,null,2));
+db.close();

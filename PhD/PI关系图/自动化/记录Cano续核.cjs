@@ -1,0 +1,10 @@
+const {DatabaseSync}=require('node:sqlite');
+const d=new DatabaseSync('检索队列.sqlite');
+const id='bdc589a4',u='https://stonybrook.edu/commcms/physics/people/_profiles/_cvs/canoj.pdf';
+const a=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id).details_json);
+a.audit_id='20261109_bdc589a4_cv';
+a.aspects.phd={status:'confirmed_advisor',note:'本人 CV 列 2015 UCSB 博士 Advisor Chetan Nayak 及论文题目；Paul Fendley 在本科条目。',sources:[u]};
+a.next_step='追查 2015–2018 Princeton 博后正式导师，Bernevig 保留候选。';
+a.followup_required=true;
+d.prepare('insert or ignore into manual_audit_events(audit_id,record_id,recorded_at,details_json) values(?,?,?,?)').run(a.audit_id,id,new Date().toISOString(),JSON.stringify(a));
+d.close();

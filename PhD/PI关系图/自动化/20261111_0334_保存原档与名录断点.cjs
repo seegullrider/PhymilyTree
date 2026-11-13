@@ -1,0 +1,18 @@
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
+const archive='C:/Users/32187/.codex/visualizations/2026/11/01/01a19844-0920-7d62-8e33-7e52115a2a23';
+const hash=f=>crypto.createHash('sha256').update(fs.readFileSync(f)).digest('hex');
+const originals=JSON.parse(fs.readFileSync(path.join(archive,'20261111_0313_Stanford六篇论文前页原文.json'),'utf8'));
+const queue=JSON.parse(fs.readFileSync('20261111_0309_Stanford论文原件队列.json','utf8'));
+const index=queue.map(q=>{const orig=originals.find(x=>x.file==='20261111_'+q.name+'_Stanford.pdf');if(!orig)throw Error('missing '+q.record_id);const local=path.join(archive,orig.file),img=local.replace('.pdf','_p3.png');if(hash(local)!==orig.sha256||!fs.existsSync(img))throw Error('hash/image failed');return{record_id:q.record_id,source:q.url,local:local.replaceAll('\\','/'),sha256:orig.sha256,pdf_pages:orig.total_pages,text_layer_read:orig.pages.map(x=>x.pdf_page),visually_reviewed:[3],signature_image:img.replaceAll('\\','/'),raw_page_text:path.join(archive,'20261111_0313_Stanford六篇论文前页原文.json').replaceAll('\\','/')};});
+const mrpm=JSON.parse(fs.readFileSync('20261111_MRPM15人物原文.json','utf8')),mp=path.join(archive,'20261111_MRPM15.pdf');
+if(hash(mp)!==mrpm.sha256)throw Error('MRPM checksum');
+index.push({record_id:'e3f03b12',source:mrpm.source,local:mp.replaceAll('\\','/'),sha256:mrpm.sha256,pdf_pages:mrpm.pages,text_layer_read:mrpm.hits.map(x=>x.pdf_page),visually_reviewed:[50],signature_image:path.join(archive,'20261111_MRPM15_p50.png').replaceAll('\\','/'),raw_page_text:'20261111_MRPM15人物原文.json'});
+fs.writeFileSync('20261111_0334_原档本地核读索引.json',JSON.stringify(index,null,2),'utf8');
+const roster=JSON.parse(fs.readFileSync('20261111_Miller历届研究员比对回执.json','utf8'));
+const verified=new Set(['da6ae25a','597b55ed','b58a15e0','b9df5547']),excluded=new Set(['e3f03b12','71c8ac33']);
+const failed=new Set(['0210a4fa','d71af7c3','a444e328','46fe35b0','114ae273','f0b26075']);
+const out={...roster,updated_at:new Date().toISOString(),identity_verified:4,same_name_excluded:2,pending_identity_or_individual_source:24,note:'607 名原名录产生 30 个首尾姓名候选；只更新本轮逐人核实的 4 人。两项明确误配已排除，其余 24 项不因姓名或旧记录自动合并。博士后 Faculty Host 依原文与现行指导角色制度列阶段研究师长，未计作已明确博士后导师。',matches:roster.matches.map(x=>{const id=x.candidates[0].id;return{...x,review_state:verified.has(id)?'identity_verified_host_stage_mentor':excluded.has(id)?'same_name_excluded':'pending_identity_or_individual_source',last_attempt:failed.has(id)?'当前猜测个人页入口不可访问；改追本人 CV／年度原档，勿立即重试':null,evidence_receipt:verified.has(id)||excluded.has(id)?'20261111_0330_Miller角色与同名核对回执.json':null};})};
+const checkpoint='20261111_Miller历届研究员逐人核实断点.json';
+if(!fs.existsSync(checkpoint))fs.writeFileSync(checkpoint,JSON.stringify(out,null,2),'utf8');
+const saved=JSON.parse(fs.readFileSync(checkpoint,'utf8'));
+console.log(JSON.stringify({original_files:index.length,verified:saved.identity_verified,excluded:saved.same_name_excluded,pending:saved.pending_identity_or_individual_source}));

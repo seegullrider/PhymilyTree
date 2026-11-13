@@ -1,0 +1,11 @@
+const {DatabaseSync}=require('node:sqlite');
+const d=new DatabaseSync('检索队列.sqlite');
+const id='4303184a',u='https://mse.berkeley.edu/2013/07/jie-yao-joins-the-mse-faculty/';
+const a=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id).details_json);
+a.audit_id='20261109_4303184a_mse';
+a.aspects.phd={status:'confirmed_advisor',note:'Berkeley 材料系入职报道明确 2010 博士 under supervision of Xiang Zhang。',sources:[u]};
+a.aspects.postdoc={status:'group_or_candidate',note:'同一学校报道列 Stanford Yi Cui 课题组博士后，未明确正式 advisor 职称。',sources:[u]};
+a.next_step='核 Stanford 博后正式 advisor 职称及时间；注意区分其他同名 Jie Yao。';
+a.followup_required=true;
+d.prepare('insert or ignore into manual_audit_events(audit_id,record_id,recorded_at,details_json) values(?,?,?,?)').run(a.audit_id,id,new Date().toISOString(),JSON.stringify(a));
+d.close();

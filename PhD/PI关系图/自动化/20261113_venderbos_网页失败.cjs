@@ -1,0 +1,11 @@
+const path = require('node:path');
+const crypto = require('node:crypto');
+const { DatabaseSync } = require('node:sqlite');
+const db = new DatabaseSync(path.join(__dirname, '检索队列.sqlite'));
+const id = 'e2b344df';
+const url = 'https://web.sas.upenn.edu/rappe-lab/people/';
+const now = new Date().toISOString();
+const key = crypto.createHash('sha256').update(id + '\n' + url).digest('hex').slice(0, 24);
+const result = db.prepare('INSERT OR IGNORE INTO pages(id,record_id,job_id,url,state,attempts,error,retrieved) VALUES(?,?,?,?,?,1,?,?)').run(key, id, id + ':training', url, 'retry', '网页工具返回 502；搜索索引仅为线索，原页未核，至少退避 30 分钟并检查共享退避', now);
+if (result.changes) db.prepare('INSERT INTO events(job_id,level,detail,created) VALUES(?,?,?,?)').run(id + ':training', 'page_failure', url + ' 原页返回 502，尚未核实；至少退避 30 分钟', now);
+db.close();

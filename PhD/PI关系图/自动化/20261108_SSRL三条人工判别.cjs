@@ -1,0 +1,6 @@
+const fs=require('node:fs'),path=require('node:path'),f=path.join(__dirname,'SSRL1989人工判别.json'),a=JSON.parse(fs.readFileSync(f,'utf8'));
+const add=[
+{record_id:'1e06fc8c',source_line:3949,decision:'excluded_identity',evidence:'Penn 校方将此人全名列为 Alan T. (Charlie) Johnson Jr.、1990 年 Harvard 博士；与名录中的 A. L. Johnson、1986 年 Berkeley 条目在姓名首字母、学位学校和年份均不一致。',sources:['https://almanac.upenn.edu/archive/v41pdf/n11/110894.pdf','https://www.physics.harvard.edu/academics/phds1971-2000']},
+{record_id:'1546018f',source_line:4258,decision:'excluded_identity',evidence:'Yale 官方资料列 Cong Su 的 MIT 博士及其 2014 年研究生荣誉，与 1981 年 Stanford 目录中的 C.-Y. Su 不符。',sources:['https://engineering.yale.edu/research-and-faculty/faculty-directory/cong-su']},
+{record_id:'aeceb8fd',source_line:4265,decision:'excluded_identity',evidence:'Colorado Boulder 的 Robert H. Davis 本人履历列 1982 年 Stanford 化工博士及题目；与 1981 年 Berkeley 目录中的 R. F. Davis 姓名首字母、学校及论文题目不符。',sources:['https://experts.colorado.edu/vitas/105896.pdf']}
+];for(const x of add){if(a.some(y=>y.record_id===x.record_id&&y.source_line===x.source_line))throw Error('已有对应判断 '+x.record_id);a.push(x)}fs.writeFileSync(f,JSON.stringify(a,null,2)+'\n');console.log(JSON.stringify({added:add.length,total:a.length}));

@@ -1,0 +1,11 @@
+const {DatabaseSync}=require('node:sqlite');
+const d=new DatabaseSync('检索队列.sqlite');
+const id='13533c54',u='https://arkajitmandal.github.io/cv.html';
+const a=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id).details_json);
+a.audit_id='20261109_13533c54_cv';
+a.aspects.phd={status:'confirmed_advisor',note:'本人 CV 列 Rochester 2017-01 至 2021-10 博士 advisor Pengfei (Frank) Huo。',sources:[u]};
+a.aspects.postdoc={status:'confirmed_advisor',note:'本人 CV 列 2021-10 起 Columbia 博后 advisor David Reichman；旧网页结束日期仍写 Present。',sources:[u]};
+a.next_step='交叉核实 Columbia 博后结束时间；暑期实习 advisor 不归入博士阶段。';
+a.followup_required=true;
+d.prepare('insert or ignore into manual_audit_events(audit_id,record_id,recorded_at,details_json) values(?,?,?,?)').run(a.audit_id,id,new Date().toISOString(),JSON.stringify(a));
+d.close();

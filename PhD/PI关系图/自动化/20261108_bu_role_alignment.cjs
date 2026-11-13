@@ -1,0 +1,18 @@
+const fs=require('node:fs'),path=require('node:path'),{DatabaseSync}=require('node:sqlite');
+const root=path.resolve(__dirname,'..'), updates=new Map();
+function edit(rel,f){let p=path.join(root,rel),s=updates.has(p)?updates.get(p):fs.readFileSync(p,'utf8');updates.set(p,f(s));}
+function one(s,a,b){if(s.split(a).length!==2)throw Error('expected one: '+a);return s.replace(a,b)}
+const people=[
+ {id:'ff6644b0',name:'Xi Ling',file:'人员 - Boston University - Xi Ling - ff6644b0',relations:[['博士导师','博士阶段研究师长','师承人物 - Jin Zhang'],['博士导师','博士阶段研究师长','师承人物 - Zhongfan Liu'],['博士后导师','博士后阶段研究师长','师承人物 - Mildred Dresselhaus'],['博士后导师','博士后阶段研究师长','人员 - MIT - Jing Kong - dbecb6b6']]},
+ {id:'edf99e82',name:'Chuanhua Duan',file:'人员 - Boston University - Chuanhua Duan - edf99e82',relations:[['博士导师（supervisor）','博士阶段研究师长','师承人物 - Arun Majumdar']]},
+ {id:'c580a20d',name:'Kevin Smith',file:'人员 - Boston University - Kevin Smith - c580a20d',relations:[['博士后导师（supervisor）','博士后阶段研究师长','师承人物 - Stephen D. Kevan']]}
+];
+for(const p of people){
+ edit('人物/'+p.file+'.md',s=>{for(const [old,n,mentor] of p.relations)s=one(s,`- ${old}：[[${mentor}`,`- ${n}：[[${mentor}`);if(p.id==='ff6644b0')s=one(s,'博士论文正式导师职衔仍待核对，以下称谓保留原记录。','博士论文正式导师职衔与博士后岗位正式称谓仍待核对。');if(p.id==='edf99e82')s=one(s,'**机械工程与材料科学副教授。**','**机械工程与材料科学教授。**');return s});
+ edit('师承关系索引.md',s=>{for(const [old,n,mentor] of p.relations)s=one(s,`[[${p.file}|${p.name}]] → ${old}：[[${mentor}`,`[[${p.file}|${p.name}]] → ${n}：[[${mentor}`);return s});
+}
+const reverses=[['师承人物 - Jin Zhang','博士生','博士阶段受指导者','Xi Ling','ff6644b0'],['师承人物 - Zhongfan Liu','博士生','博士阶段受指导者','Xi Ling','ff6644b0'],['师承人物 - Mildred Dresselhaus','博士后研究者','博士后阶段受指导者','Xi Ling','ff6644b0'],['人员 - MIT - Jing Kong - dbecb6b6','博士后研究者','博士后阶段受指导者','Xi Ling','ff6644b0'],['师承人物 - Arun Majumdar','博士生','博士阶段受指导者','Chuanhua Duan','edf99e82']];
+for(const [mentor,a,b,name,id] of reverses){let person=people.find(x=>x.id===id);edit('人物/'+mentor+'.md',s=>one(s,`- ${a}：[[${person.file}|${name}]]`,`- ${b}：[[${person.file}|${name}]]`));}
+edit('Boston University逐人复核记录.md',s=>{s=one(s,'| Jin Zhang、Zhongfan Liu | Mildred Dresselhaus、Jing Kong | [来源](https://www.bu.edu/eng/2022/12/20/materials-grant-reimbursement-recipients/) |','| Jin Zhang、Zhongfan Liu（博士阶段研究师长；论文导师字段待核） | Mildred Dresselhaus、Jing Kong（博士后阶段研究师长；正式称谓待核） | [MIT 简介](https://risingstars-eecs.mit.edu/participants/xi-ling/)；[BU 化学系](https://www.bu.edu/chemistry/profile/xi-ling/) |');s=one(s,'Arun Majumdar（博士 supervisor；论文签署页待核）','Arun Majumdar（博士阶段研究师长；论文签署页待核）');s=one(s,'Stephen D. Kevan（博士后 supervisor）','Stephen D. Kevan（博士后阶段研究师长；正式称谓待核）');return s});
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});for(const p of people){let row=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get(p.id);if(!row)throw Error('missing audit');let a=JSON.parse(row.details_json);a.audit_id='20261108_bu_roles_'+p.id;a.followup_required=true;if(p.id==='ff6644b0')a.next_step='查北大学位论文正式导师字段及博后岗位正式称谓；核对 Dresselhaus 两个命名节点。';if(p.id==='edf99e82'){a.aspects.affiliation={status:'confirmed',note:'BU 工程学院现列机械工程与材料科学教授及机械工程本科项目副主任。',sources:['https://www.bu.edu/eng/profile/chuanhua-duan-ph-d/']};a.next_step='查 Berkeley 博士论文正式导师字段；保留两名明确博士后 advisor。';}if(p.id==='c580a20d')a.next_step='查 Yale 1988 博士论文正式导师并核对同名者；核博士后正式 advisor 职衔。';updates.set(path.join(__dirname,`人工-20261108-bu-roles-${p.id}.json`),JSON.stringify(a,null,2)+'\n');}db.close();
+for(const [p,s] of updates)fs.writeFileSync(p,s,'utf8');console.log('prepared '+updates.size+' files');

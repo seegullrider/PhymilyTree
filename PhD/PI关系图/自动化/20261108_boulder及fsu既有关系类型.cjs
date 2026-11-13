@@ -1,0 +1,18 @@
+// 已逐条复读原始论文、本人 CV、校方介绍与课题组名录；仅类型化已存在的正反关系。
+const fs=require('node:fs'),path=require('node:path'),{DatabaseSync}=require('node:sqlite'),root=path.resolve(__dirname,'..');
+const d=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});
+const zhou='师承人物 - Hong-Cai Zhou',bao='人员 - Stanford - Zhenan Bao - d573a8f0',clark='人员 - Colorado Boulder - Noel Clark - a8248211';
+const cfg=[
+ ['607405de','phd',zhou,'advisor','Stanford Bao 组 Jihye Park 本人页面明确 Texas A&M Chemistry 博士 PhD Advisor: Hong-Cai Zhou；Minnesota 本人组页确定同一人的历史及现职。',['https://baogroup.stanford.edu/people/jihye-park','https://park.chem.umn.edu/the-team']],
+ ['607405de','postdoc',bao,'group_leader','Minnesota 本人组页称其 Stanford 博后在 Zhenan Bao 实验室；正式 advisor 职称未见。',['https://park.chem.umn.edu/the-team']],
+ ['fc37087a','phd',zhou,'advisor','Stanford Bao 组页面列 Texas A&M 博士 Advisor Hong-Cai Zhou；Minnesota 本人组页核实同人。',['https://baogroup.stanford.edu/people/jihye-park','https://park.chem.umn.edu/the-team']],
+ ['fc37087a','postdoc',bao,'group_leader','Minnesota 本人组页称其 Stanford 博后在 Zhenan Bao 实验室；正式 advisor 职称未见。',['https://park.chem.umn.edu/the-team']],
+ ['88adecf9','phd','人员 - University of Chicago - Andrei Tokmakoff - be59d58f','advisor','MIT 学位库列 Joel David Eaves 2005 论文及 Advisor Andrei Tokmakoff；Colorado 化学系确认博士学校和任职。',['https://dspace.mit.edu/entities/publication/2fda40fc-4e8a-410a-ade3-ee4e69fdd193','https://www.colorado.edu/chemistry/joel-eaves']],
+ ['88adecf9','postdoc','人员 - Columbia - David R. Reichman - 38d42d59','group_leader','Reichman 组校友名录将 Joel Eaves 列为 2005–2009 Columbia 博后；未单独列正式 advisor。',['https://reichmangroup.chem.columbia.edu/directory']],
+ ['379470a8','phd',clark,'advisor','Noel Clark 本人 CV 的 Ph.D. THESES DIRECTED 栏列 Joseph E. Maclennan 的 1988 年 Colorado 博士论文；本人系页确认学校与年份。',['https://experts.colorado.edu/vitas/101947.pdf','https://www.colorado.edu/physics/joseph-maclennan']],
+ ['6ec780fc','phd',clark,'advisor','Noel Clark 本人 CV 的 Ph.D. THESES DIRECTED 栏列 Matthew A. Glaser 的 1991 年 Colorado 博士论文；本人系页匹配学校与年份。',['https://experts.colorado.edu/vitas/101947.pdf','https://www.colorado.edu/lab/betterton/matthew-glaser']],
+ ['b01ff339','phd',clark,'advisor','Noel Clark 本人 CV 的 Ph.D. THESES DIRECTED 栏列 David H. Van Winkle 的 1984 年 Colorado 博士论文；FSU 本人系页匹配学校与年份。',['https://experts.colorado.edu/vitas/101947.pdf','https://physics.fsu.edu/person/david-van-winkle']],
+ ['efcab0f7','phd','师承人物 - Erich P. Ippen','advisor','Juliet Tara Gopinath 的 MIT 博士论文题页、摘要和致谢均明确 Erich P. Ippen 为 Thesis Supervisor／advisor。',['https://web.mit.edu/cbegroup/www/InternalUse/Thesis/JulietGopinathPhDThesis.pdf','https://www.colorado.edu/faculty/juliet-gopinath/juliet-gopinath']]
+];
+let out=[];for(const [id,stage,mentor,kind,evidence,sources] of cfg){const r=d.prepare('select filename from records where id=?').get(id),a=d.prepare('select audit_id from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id);if(!r||!a)throw Error('缺人物或台账 '+id);const person=fs.readFileSync(path.join(root,'人物',r.filename+'.md'),'utf8'),ment=fs.readFileSync(path.join(root,'人物',mentor+'.md'),'utf8');if(!person.includes('[['+mentor+'|')||!ment.includes('[['+r.filename+'|'))throw Error('缺少双向链接 '+id+' '+mentor);out.push({event_id:`20261108_${id}_${stage}_primary_typed`,record_id:id,stage,mentor_filename:mentor,kind,source_audit_id:a.audit_id,evidence,sources});}
+d.close();fs.writeFileSync(path.join(__dirname,'结构化-20261108-boulder-fsu原始关系.json'),JSON.stringify(out,null,2)+'\n');console.log(JSON.stringify({relations:out.length,records:new Set(out.map(x=>x.record_id)).size,duplicate:'Park 两校记录为同一人'}));

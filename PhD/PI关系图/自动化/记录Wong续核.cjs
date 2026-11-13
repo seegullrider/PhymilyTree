@@ -1,0 +1,10 @@
+const {DatabaseSync}=require('node:sqlite');
+const d=new DatabaseSync('检索队列.sqlite');
+const id='27b18064';
+const a=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id).details_json);
+a.audit_id='20261109_27b18064_lehigh';
+a.aspects.phd={status:'confirmed_advisor',note:'Lehigh 工程学院报道明确 Marvin White 为指导 Wong 博士研究的 advisor，标其为 1988 年博士校友。',sources:['https://engineering.lehigh.edu/news/article/h-s-philip-wong-phd-88-elected-national-academy-engineering']};
+a.followup_required=true;
+a.next_step='查 IBM 任职性质和是否存在博士后经历，不由产业任职推断博后。';
+d.prepare('insert or ignore into manual_audit_events(audit_id,record_id,recorded_at,details_json) values(?,?,?,?)').run(a.audit_id,id,new Date().toISOString(),JSON.stringify(a));
+d.close();

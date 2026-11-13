@@ -1,0 +1,10 @@
+const fs=require('fs'),path=require('path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'));
+const row=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('46d46534');
+if(!row) throw Error('缺少原人工事件');
+const ev=JSON.parse(row.details_json),url='https://dornsife.usc.edu/profile/andrey-vilesov/';
+ev.audit_id='20261106_vilesov_gottingen_groups_46d46534';
+ev.aspects.postdoc={status:'unresolved',note:'本人 USC 履历写 1985 年博士及 1990 年起 Göttingen 在 Christoph Ottinger、J. Peter Toennies 两组研究，但不说明职位为博士后或正式导师称谓；毕业后组属已建图，博士后关系仍待核。',sources:[url]};
+ev.followup_required=true;
+ev.next_step='追查 St. Petersburg 1985 年博士论文及 1990 年 Göttingen 工作职位和两组研究的起止时间；不把毕业后组属当作博士后职位。';
+fs.writeFileSync(path.join(__dirname,'本轮核查-Vilesov-20261106.json'),JSON.stringify(ev,null,2)+'\n','utf8');

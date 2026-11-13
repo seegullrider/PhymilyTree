@@ -1,0 +1,1 @@
+const fs=require('fs');for(const f of ['C:/note/PhD/PI关系图/人物/人员 - Rice - Harris Pirie - 20ce1842.md','C:/note/PhD/PI关系图/师承关系索引.md']){const s=fs.readFileSync(f,'utf8'),t=s.replaceAll('博士后课题组候选：','博士后候选课题组：');if(s!==t)fs.writeFileSync(f,t)}

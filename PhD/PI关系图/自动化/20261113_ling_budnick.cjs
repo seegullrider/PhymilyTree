@@ -1,0 +1,10 @@
+const fs=require('node:fs'),path=require('node:path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});
+const row=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('bdba9ec4');
+if(!row)throw Error('Missing previous review');
+const e=JSON.parse(row.details_json),url='https://physics.uconn.edu/wp-content/uploads/sites/2234/2018/10/Physics-Newsletter-2001.pdf';
+e.audit_id='pi_20261113_ling_budnick_major_advisor';
+e.aspects.phd={status:'confirmed_advisor',note:'UConn 物理系 2001 系刊同一介绍称 X. S. (Sean) Ling 在 UConn 于 1992 年获博士，Joseph Budnick 为 major advisor；Brown 本人履历和研究说明核对身份及博士阶段。',sources:[url,'https://vivo.brown.edu/display/xling','https://digitalcommons.lib.uconn.edu/dissertations/AAI9300937/']};
+e.next_step='博士导师已由 UConn 系刊明确；继续核 NEC 1994–1996 博后个人指导及日期。';e.followup_required=true;
+fs.writeFileSync(path.join(__dirname,'20261113_ling_budnick_audit.json'),JSON.stringify(e,null,2));
+fs.writeFileSync(path.join(__dirname,'20261113_ling_budnick_typed.json'),JSON.stringify([{event_id:'pi_20261113_ling_budnick_advisor',record_id:'bdba9ec4',stage:'phd',mentor_filename:'人员 - University of Connecticut - Joseph Budnick - 84fb9601',kind:'advisor',source_audit_id:e.audit_id,evidence:'UConn 物理系 2001 系刊称 X. S. (Sean) Ling 于 1992 年获 UConn 博士，Joseph Budnick 为 major advisor。',sources:[url,'https://vivo.brown.edu/display/xling']}],null,2));db.close();

@@ -1,0 +1,35 @@
+const fs = require('node:fs');
+const path = require('node:path');
+const {DatabaseSync} = require('node:sqlite');
+const root = path.resolve(__dirname, '..');
+const person = '人员 - Carnegie Mellon - Mohammad F. Islam - 8e19cff1';
+const mentor = '师承人物 - H. Daniel Ou-Yang';
+const yodh = '人员 - UPenn - Arjun G. Yodh - ce45d684';
+const group = 'https://sites.google.com/lehigh.edu/influids/our-group';
+const degree = 'https://preserve.lehigh.edu/_flysystem/fedora/2023-12/digitalcollectionsuniversity-history_15008.pdf';
+const cv = 'https://live-sas-physics.pantheon.sas.upenn.edu/sites/default/files/2022-08/Yodh%20CV_0.pdf';
+const cmu = 'https://mse.engineering.cmu.edu/directory/bios/islam-mohammad.html';
+function replace(file, old, revised) {
+  const p = path.join(root, file), text = fs.readFileSync(p, 'utf8');
+  if (text.includes(revised)) return;
+  if (text.split(old).length !== 2) throw Error('无法唯一匹配：' + file);
+  fs.writeFileSync(p, text.replace(old, revised), 'utf8');
+}
+const mentorPath = path.join(root, '人物', mentor + '.md');
+if (!fs.existsSync(mentorPath)) fs.writeFileSync(mentorPath, `# H. Daniel Ou-Yang\n\n## 师承关系\n\n- 博士阶段课题组成员：[[${person}|Mohammad F. Islam]]。[Lehigh 课题组成员页](${group})列其姓名及博士论文题目；[Lehigh 2000 毕业典礼名册](${degree})列相同论文题目。正式论文导师头衔仍待核对论文原文。\n`, 'utf8');
+replace('人物/' + person + '.md', '- 博士后导师：[[' + yodh + '|Arjun G. Yodh]]。[来源](https://bpb-us-w2.wpmucdn.com/web.sas.upenn.edu/dist/b/502/files/2024/09/YODH-CV.09.10.24.pdf)\n- 核查边界：既有记录依据 Yodh 本人履历称其博士后，但该履历本轮不可访问，保留既有标签并待复读；[CMU 简介](' + cmu + ')确认 Lehigh 博士及 Penn 博士后但未列姓名。Lehigh 博士导师待查。另有同名 Texas A&M 博士、Michigan Solomon 组博士后，不能混同。', `- 博士阶段课题组负责人：[[${mentor}|H. Daniel Ou-Yang]]。[课题组成员页](${group})在前成员名单列 Mohammad F. Islam 和论文题目；[Lehigh 2000 年毕业典礼名册](${degree})列 Mohammad Ferdous Islam、物理博士及相同论文题目；[CMU 本人介绍](${cmu})确认 Lehigh 物理博士及该研究主题。组属与论文题目匹配，正式论文导师头衔仍待原论文确认。\n- 博士后导师：[[${yodh}|Arjun G. Yodh]]。[Yodh 本人 2022 CV](${cv})将 Mohammad Islam 列入“POST-DOC ADVISEES”，另记其 2005 年在纳米管会议代表课题组报告；[CMU 简介](${cmu})称 Islam 在 Penn 博后研究胶体和碳纳米管，两者身份与研究相符。Yodh CV 列在 Penn 最后一年 2006，确切在任日期待核。\n- 核查边界：Lehigh 博士论文正式导师和是否有其他指导者仍待查。另有同名 Texas A&M 博士、Michigan Solomon 组博士后，不能混同。`);
+replace('人物/' + yodh + '.md', '- 博士后研究者：[[' + person + '|Mohammad F. Islam]]。[来源](https://bpb-us-w2.wpmucdn.com/web.sas.upenn.edu/dist/b/502/files/2024/09/YODH-CV.09.10.24.pdf)', `- 博士后受指导者：[[${person}|Mohammad F. Islam]]。[本人 2022 CV](${cv})在博士后受指导者名单列 Mohammad Islam，并记其 2005 年作纳米管课题组报告；[CMU 简介](${cmu})证实其 Penn 博后研究方向。`);
+replace('Carnegie Mellon逐人复核记录.md', '| [['+person+'|Mohammad F. Islam]] | 材料科学与工程系、物理系；软物质、碳纳米管、纳米复合材料、光热性质 | 待核 | Arjun G. Yodh | [来源]('+cmu+') |', '| [['+person+'|Mohammad F. Islam]] | 材料科学与工程系、物理系；软物质、碳纳米管、纳米复合材料、光热性质 | H. Daniel Ou-Yang（博士课题组负责人；正式论文导师待核） | Arjun G. Yodh（博士后导师） | [CMU]('+cmu+') · [Lehigh 组]('+group+') · [Yodh CV]('+cv+') |');
+replace('师承关系索引.md', '- [['+person+'|Mohammad F. Islam]] → 博士后导师：[['+yodh+'|Arjun G. Yodh]]。[来源](https://bpb-us-w2.wpmucdn.com/web.sas.upenn.edu/dist/b/502/files/2024/09/YODH-CV.09.10.24.pdf)', `- [[${person}|Mohammad F. Islam]] → 博士阶段课题组负责人：[[${mentor}|H. Daniel Ou-Yang]]。[组成员及论文](${group})、[Lehigh 学位名册](${degree})；正式论文导师待核。\n- [[${person}|Mohammad F. Islam]] → 博士后导师：[[${yodh}|Arjun G. Yodh]]。[Yodh 本人 CV](${cv})将其列为博士后受指导者；[CMU 简介](${cmu})确认 Penn 博后方向。`);
+const db = new DatabaseSync(path.join(__dirname, '检索队列.sqlite'), {readOnly:true});
+const audit = JSON.parse(db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('8e19cff1').details_json);
+db.close();
+audit.audit_id = '20261108_islam_lehigh_yodh_primary';
+audit.aspects.phd = {status:'group_or_candidate',note:'Lehigh Ou-Yang 组成员表列 Mohammad F. Islam 和论文题目；2000 学位典礼名册列 Mohammad Ferdous Islam 与相同博士论文。记课题组负责人；正式论文导师待核。',sources:[group,degree,cmu]};
+audit.aspects.postdoc = {status:'confirmed_advisor',note:'Yodh 本人 CV 将 Mohammad Islam 列为博士后受指导者，并记 2005 年在纳米管会议代表其组；CMU 介绍确证 Penn 博后及碳纳米管研究。',sources:[cv,cmu]};
+audit.followup_required = true;
+audit.next_step = '追查 Lehigh 原论文的正式导师及共同指导者；核对 Penn 博后起止日期，注意同名者。';
+fs.writeFileSync(path.join(__dirname,'人工-20261108-islam.json'),JSON.stringify(audit,null,2)+'\n');
+const events = [{event_id:'20261108_islam_ouyang_phd_group',record_id:'8e19cff1',stage:'phd',mentor_filename:mentor,kind:'group_leader',source_audit_id:audit.audit_id,evidence:'Lehigh 课题组名录列 Islam 与论文题目，2000 学位名册列同题目及完整姓名；课题组成员不单独证明正式论文导师。',sources:[group,degree,cmu]},{event_id:'20261108_islam_yodh_postdoc',record_id:'8e19cff1',stage:'postdoc',mentor_filename:yodh,kind:'advisor',source_audit_id:audit.audit_id,evidence:'Yodh 本人 CV 将 Mohammad Islam 列在博士后受指导者项，并记 2005 年纳米管课题组报告；CMU 确认 Penn 胶体与碳纳米管博后。',sources:[cv,cmu]}];
+fs.writeFileSync(path.join(__dirname,'结构化-20261108-islam.json'),JSON.stringify(events,null,2)+'\n');
+console.log('prepared');

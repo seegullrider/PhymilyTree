@@ -1,0 +1,30 @@
+# NUS：材料科学与工程系
+
+[[院校 - NUS|返回学校]]
+
+仅收录已按人物资料核实的记录，不表示单位已查全。
+- [[人员 - A-STAR - Jing Wu - 75970cd9|Jing Wu]] — 本人履历记 2021–2024 兼职助理教授；后续续聘情况待核。[东南大学本人履历](https://electronic.seu.edu.cn/wj2/list.htm) · [2023 作者简介](https://pubs.rsc.org/en/content/articlepdf/2023/nr/d2nr06263a)
+- [[人员 - NUS - Slaven Garaj - 46c47f00|Slaven Garaj]] — 礼节性联合任职。[来源](https://cde.nus.edu.sg/mse/staff/slaven-garaj/)
+- [[人员 - NUS - Barbaros Özyilmaz - 0e0562af|Barbaros Özyilmaz]] — [来源](https://cde.nus.edu.sg/mse/staff/oezyilmaz-barbaros/)
+- [[人员 - NUS - Antonio H. Castro Neto - 86612eb1|Antonio H. Castro Neto]] — [来源](https://ifim.nus.edu.sg/people/antonio-helio-castro-neto/)
+- [[人员 - NUS - Shyue Ping Ong - 4da906da|Shyue Ping Ong]] — [来源](https://cde.nus.edu.sg/mse/staff/shyue-ping-ong/)
+- [[人员 - NUS - Denis Bandurin - 0162642b|Denis Bandurin]] — [来源](https://cde.nus.edu.sg/mse/staff/denis-bandurin/)
+- [[人员 - NUS - Ahmet Avsar - dff565f5|Ahmet Avsar]] — [来源](https://nusgs.nus.edu.sg/thesis-advisors/aavsar)
+- [[人员 - NUS - Alexey Berdyugin - ee82d97d|Alexey Berdyugin]] — [来源](https://cde.nus.edu.sg/mse/staff/alexey-berdyugin/)
+- [[人员 - NUS - Aleksandr Rodin（现任机构待核） - bbf42371|Aleksandr Rodin（现任机构待核）]] — [来源](https://nusgs.nus.edu.sg/thesis-advisors/yncalr)
+- [[人员 - NUS - Daria V. Andreeva-Baeumler - f725cce2|Daria V. Andreeva-Baeumler]] — [来源](https://ifim.nus.edu.sg/people/daria-v-andreeva/)
+- [[人员 - NUS - Di Zhu - 33dd0a20|Di Zhu]] — [来源](https://www.cqt.sg/highlight/2024-10-meet-zhu-di/)
+- [[人员 - NUS - Jingsheng Chen - d6a628af|Jingsheng Chen]] — [来源](https://cde.nus.edu.sg/mse/staff/chen-jingsheng/)
+- [[人员 - NUS - Konstantin Novoselov - 1f2aa706|Konstantin Novoselov]] — [来源](https://www.nus.edu.sg/research/researchers-profiles/konstantin-novoselov)
+- [[人员 - NUS - Lain-Jong (Lance) Li - fd176657|Lain-Jong (Lance) Li]] — [来源](https://www.lancelilab.com/people)
+- [[人员 - NUS - Maciej Koperski - c2a07916|Maciej Koperski]] — [来源](https://ifim.nus.edu.sg/people/maciejkoperski/)
+- [[人员 - NUS - Mario Lanza - 456bed61|Mario Lanza]] — [来源](https://ifim.nus.edu.sg/people/mario-lanza/)
+- [[人员 - NUS - Mengfei Wu - e33ef9f9|Mengfei Wu]] — [来源](https://cde.nus.edu.sg/mse/staff/mengfei-wu/)
+- [[人员 - NUS - Michel Bosman - 933d44de|Michel Bosman]] — [来源](https://cde.nus.edu.sg/mse/staff/michel-bosman/)
+- [[人员 - NUS - Shaffique Adam（访问教授） - 9ffecdaa|Shaffique Adam（访问教授）]] — [来源](https://sites.google.com/site/shaffiqueadam/curriculum-vitae)
+- [[人员 - NUS - Silvija Gradečak-Garaj - a9180632|Silvija Gradečak-Garaj]] — [来源](https://cde.nus.edu.sg/mse/staff/gradecak-silvija/)
+- [[人员 - NUS - Steven Touzard - b55c0807|Steven Touzard]] — [来源](https://www.cqt.sg/people/steven-touzard/)
+- [[人员 - NUS - Utkur Mirsaidov - e70b0b44|Utkur Mirsaidov]] — [来源](https://www.dbs.nus.edu.sg/staffs/utkur-mirsaidov-2/)
+- [[人员 - NUS - Wister Wei Huang - 48ba254a|Wister Wei Huang]] — [来源](https://www.cqt.sg/groups/wister-wei-huang/)
+- [[人员 - NUS - Yi Wan - 45a13a33|Yi Wan]] — [来源](https://cde.nus.edu.sg/mse/staff/yi-wan/)
+- [[人员 - NUS - Jing Cao - d603e1a7|Jing Cao]] — [现任院系原档](https://cde.nus.edu.sg/mse/staff/cao-jing/)

@@ -1,0 +1,11 @@
+const fs=require('fs'),path=require('path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'));
+const row=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('5fe5b4f3');
+if(!row) throw Error('缺少人工台账');
+const ev=JSON.parse(row.details_json);
+ev.audit_id='20261106_arguilla_ohiolink_advisor_5fe5b4f3';
+ev.aspects.phd={status:'confirmed_advisor',note:'OhioLINK 2017 Ohio State 博士论文档案的 Committee 栏明确列 Joshua Goldberger, PhD (Advisor)，身份与本人实验室主页吻合。',sources:['https://etd.ohiolink.edu/acprod/odb_etd/etd/r/1501/10?clear=10&p10_accession_num=osu1500481320103395','https://www.maxx-lab.com/about-maxx']};
+ev.aspects.postdoc={status:'group_or_candidate',note:'本人实验室主页明确 MIT 博士后在 Mircea Dincă 组；另有本人经历简介列 2017–2020。正式 advisor 职衔尚待核。',sources:['https://www.maxx-lab.com/about-maxx','https://www.hsru.org/ascendr/leadership-2026-27']};
+ev.followup_required=true;
+ev.next_step='博士导师已由学位档案明确；继续核查 MIT 博士后正式 advisor 称谓。';
+fs.writeFileSync(path.join(__dirname,'本轮核查-Maxx-Arguilla-20261106.json'),JSON.stringify(ev,null,2)+'\n','utf8');

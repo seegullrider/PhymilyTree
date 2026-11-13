@@ -1,0 +1,11 @@
+const {DatabaseSync}=require('node:sqlite');
+const d=new DatabaseSync('检索队列.sqlite');
+const id='a944b270',u='https://static1.squarespace.com/static/68714a1c468c7a5da451eba3/t/69cb542d6d97dc0d4b903473/1774933037025/Ashok_CV_2026_v2.pdf';
+const a=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id).details_json);
+a.audit_id='20261109_a944b270_cv';
+a.aspects.phd={status:'confirmed_advisor',note:'本人 CV 列 MIT 博士 2010-09—2016-09，advisor Paola Cappellaro。',sources:[u]};
+a.aspects.postdoc={status:'confirmed_advisor',note:'本人 CV 列 Berkeley 博后 2016-09—2020-06，advisor Alexander Pines。',sources:[u]};
+a.next_step='核跨校身份及正反链接，硕士研究导师与博士阶段分开。';
+a.followup_required=true;
+d.prepare('insert or ignore into manual_audit_events(audit_id,record_id,recorded_at,details_json) values(?,?,?,?)').run(a.audit_id,id,new Date().toISOString(),JSON.stringify(a));
+d.close();

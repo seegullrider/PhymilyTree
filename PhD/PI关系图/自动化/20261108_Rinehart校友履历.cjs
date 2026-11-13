@@ -1,0 +1,15 @@
+const fs=require('node:fs'),path=require('node:path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});
+const id='a78a1d8f';
+const row=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get(id);
+if(!row) throw Error('缺少人工事件');
+const a=JSON.parse(row.details_json), lab='https://rinehartgroup.ucsd.edu/people', alumni='https://depts.washington.edu/gmrg/people/alumni/jeffrey_rinehart.html', faculty='https://matsci.ucsd.edu/node/95';
+a.audit_id='20261108_a78a1d8f_alumni_bio';
+a.aspects.identity={status:'confirmed',note:'本人 UCSD 课题组履历及 Gamelin 组校友页均列 Berkeley 与 Washington 经历及 UCSD 任职。',sources:[lab,alumni]};
+a.aspects.affiliation={status:'confirmed',note:'本人组页列 UCSD 化学与生物化学系副教授及材料项目成员。',sources:[lab]};
+a.aspects.research={status:'confirmed',note:'学校材料项目介绍列无机、材料和磁化学，研究分子磁性与磁性材料。',sources:[faculty]};
+a.aspects.phd={status:'confirmed_advisor',note:'本人履历称 Berkeley 阶段 under Jeffrey Long、研究成为博士论文主题；Gamelin 组校友页列 2010 化学博士 with Long。按博士阶段研究师长，正式论文导师称谓待核。',sources:[lab,alumni]};
+a.aspects.postdoc={status:'group_or_candidate',note:'本人履历称 Washington 博士后在 Gamelin 实验室；该组校友页列 2010–2014 博士后 with Gamelin。按课题组负责人，正式 advisor 职衔待核。',sources:[lab,alumni]};
+a.next_step='查 Berkeley 博士论文原件和 Washington 博后正式导师称谓。';a.followup_required=true;
+const rel=[['phd','stage_mentor','人员 - UC Berkeley - Jeffrey R. Long - dcbb0150','本人履历称 Berkeley 博士阶段 under Long；华盛顿校友履历列 2010 博士 with Long，正式职衔待核。'],['postdoc','group_leader','人员 - University of Washington, Seattle - Daniel R. Gamelin - ac86f637','本人履历称 Washington 博后在 Gamelin 实验室；该组校友履历列 2010–2014，正式职衔待核。']].map(([stage,kind,mentor_filename,evidence])=>({event_id:`20261108_a78a1d8f_alumni_${stage}`,record_id:id,stage,mentor_filename,kind,source_audit_id:a.audit_id,evidence,sources:[lab,alumni]}));
+fs.writeFileSync(path.join(__dirname,'人工-20261108-Rinehart.json'),JSON.stringify(a,null,2)+'\n');fs.writeFileSync(path.join(__dirname,'结构化-20261108-Rinehart.json'),JSON.stringify(rel,null,2)+'\n');db.close();

@@ -1,0 +1,13 @@
+const fs=require('node:fs'),path=require('node:path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true}),id='5de3f391';
+const row=db.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id);if(!row)throw Error('缺少事件');
+const a=JSON.parse(row.details_json),cv='https://www.eurasc.eu/wp-content/uploads/2025/05/20240712_Curtarolo_CV.pdf',lab='https://materials.duke.edu/people.html',self='https://coreyoses.com/',faculty='https://engineering.jhu.edu/materials/faculty/corey-oses/';
+a.audit_id='20261108_5de3f391_advising_cv';
+a.aspects.identity={status:'confirmed',note:'本人主页、JHU 院系页和 Duke 校友页对应 Duke 博士、博后及 JHU 任职。',sources:[self,faculty,lab]};
+a.aspects.affiliation={status:'confirmed',note:'JHU 材料工程系助理教授，本人主页列物理与天文联聘。',sources:[self,faculty]};
+a.aspects.research={status:'confirmed',note:'JHU 材料系介绍高通量第一性原理、机器学习和能源材料。',sources:[faculty]};
+a.aspects.phd={status:'confirmed_advisor',note:'Curtarolo 本人 CV 在 Advising Experience 的毕业 PhD 与 MS 学生列表列 Oses；本人主页列 2013–2018 Duke 博士，论文签署页待核。',sources:[cv,self]};
+a.aspects.postdoc={status:'confirmed_advisor',note:'Curtarolo CV 在 Advising Experience 下博士后／研究教授列表列 2019–2022 Oses；Duke 校友页确认博士后，记阶段研究师长而非正式 advisor；本人主页记 2018–2022。',sources:[cv,lab,self]};
+a.next_step='查博士论文签署页、博后正式指导职衔；核对 2018 和 2019 开始年份差异。';a.followup_required=true;
+let rel=[['phd','advisor','Curtarolo CV 的指导经历列 Oses 为毕业博士生；本人主页确认 Duke 博士，论文签署页待查。',[cv,self]],['postdoc','stage_mentor','Curtarolo CV 指导经历列 Oses；Duke 组页列博士后，正式 advisor 职衔及博后开始年份待核。',[cv,lab,self]]].map(([stage,kind,evidence,sources])=>({event_id:`20261108_5de3f391_cv_${stage}`,record_id:id,stage,mentor_filename:'人员 - Duke - Stefano Curtarolo - edc6794c',kind,source_audit_id:a.audit_id,evidence,sources}));
+fs.writeFileSync(path.join(__dirname,'人工-20261108-Oses.json'),JSON.stringify(a,null,2)+'\n');fs.writeFileSync(path.join(__dirname,'结构化-20261108-Oses.json'),JSON.stringify(rel,null,2)+'\n');db.close();

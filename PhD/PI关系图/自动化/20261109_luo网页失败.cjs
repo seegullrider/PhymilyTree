@@ -1,0 +1,7 @@
+const path=require('node:path'),crypto=require('node:crypto'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'));
+const id='82bb7e00',url='https://web.physics.utah.edu/~starykh/research/talks/cv-Starykh.pdf',now=new Date().toISOString();
+const key=crypto.createHash('sha256').update(id+'\n'+url).digest('hex').slice(0,24);
+db.prepare('INSERT OR IGNORE INTO pages(id,record_id,job_id,url,state,attempts,error,retrieved) VALUES(?,?,?,?,?,2,?,?)').run(key,id,id+':training',url,'retry','open 与 find 同次调用均返回 502，未读取原文；至少退避30分钟',now);
+db.prepare('INSERT INTO events(job_id,level,detail,created) VALUES(?,?,?,?)').run(id+':training','page_failure',url+' open 与 find 均返回 502；未读取原文，至少退避30分钟',now);
+db.close();

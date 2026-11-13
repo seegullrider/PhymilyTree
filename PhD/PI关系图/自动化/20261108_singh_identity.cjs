@@ -1,0 +1,8 @@
+// 同名材料物理研究者消歧；保留已有师承结论。
+const fs=require('node:fs'),path=require('node:path'),{DatabaseSync}=require('node:sqlite');
+const root=path.resolve(__dirname,'..'),id='d3c34b0e',file=path.join(root,'人物','人员 - Arizona State - Arunima Singh - d3c34b0e.md');
+const d=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'));const row=d.prepare('select audit_id,details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id);if(row.audit_id!=='20261105_singh_d3c34b0e')throw Error('最新事件已变化');
+const asu='https://cmd.lab.asu.edu/team',uf='https://hennig.mse.ufl.edu/group/',iit='https://web.iitd.ac.in/~saswata/members.html';
+const note=`同名消歧：[ASU 本人组页](${asu})列 Arunima K. Singh 2014 Cornell 博士；[Hennig 组](${uf})将 2014 博士 Arunima Singh 的去向列 ASU。[IIT Delhi 另一课题组校友表](${iit})列 Arunima Singh 的博士阶段为 2018–2023，研究也涉及二维材料。时间和机构不同，不能将其论文或导师自动归给 ASU 研究者；需独立身份依据。`;
+const old=fs.readFileSync(file,'utf8'),mark='- 核查边界：';if(old.split(mark).length!==2)throw Error('人物页核查边界不唯一');fs.writeFileSync(file,old.replace(mark,`- ${note}\n${mark}`),'utf8');
+const a=JSON.parse(row.details_json);a.audit_id='20261108_singh_iit_collision';a.aspects.identity.note+=' ASU 本人页列 Cornell 2014；IIT Delhi 同名研究生 2018–2023 博士且方向相近，不能自动合并。';a.aspects.identity.sources=[...new Set([...a.aspects.identity.sources,iit])];a.followup_required=true;a.next_step='Cornell 主机退避结束后复核论文；继续确认 NIST 与 Berkeley 博士后正式导师，并避免混入 IIT Delhi 同名者。';fs.writeFileSync(path.join(__dirname,'人工-20261108-singh-collision.json'),JSON.stringify(a,null,2)+'\n');d.prepare('update records set name_collision=1,updated=? where id=?').run(new Date().toISOString(),id);d.close();console.log('prepared identity collision');

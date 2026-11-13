@@ -1,0 +1,12 @@
+const fs=require('fs'),path=require('path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});
+const ev=JSON.parse(db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('c6c0f68d').details_json);db.close();
+const uiuc='https://mrl.illinois.edu/directory/profile/jcovey',chicago='https://physicalsciences.uchicago.edu/news/article/introducing-new-faculty-PSD-26-27/';
+ev.audit_id='20261107_c6c0f68d_cross_school_advisors';
+ev.aspects.identity={status:'confirmed',note:'Chicago 官方入职公告和 UIUC 目录均列 Jacob P. Covey，原子阵列研究及跨校经历吻合；Chicago 人物页也明确链接至该 UIUC 记录。',sources:[uiuc,chicago]};
+ev.aspects.affiliation={status:'confirmed',note:'Chicago 2026 物理系与分子工程副教授；UIUC 目录标题列物理 Adjunct Associate Professor，旧职位列表仍称 assistant professor，具体聘期及招生权限待核。',sources:[uiuc,chicago]};
+ev.aspects.research={status:'confirmed',note:'Chicago 公告列中性原子光镊阵列、量子计算，UIUC 目录列原子物理、量子光学和量子信息。',sources:[uiuc,chicago]};
+ev.aspects.phd={status:'confirmed_advisor',note:'UIUC 本人目录教育条目明确写 Colorado Boulder 2017 PhD advisors Jun Ye and Deborah Jin，并列本人论文题名。',sources:[uiuc]};
+ev.aspects.postdoc={status:'confirmed_advisor',note:'UIUC 本人目录学术经历条目明确写 Caltech 2017–2020 postdoctoral advisor Manuel Endres。',sources:[uiuc]};
+ev.followup_required=true;ev.next_step='两阶段导师已明确；核实 UIUC 兼职聘期及实际招生权限，谨慎处理 Chicago 和 UIUC 同人校属记录。';
+fs.writeFileSync(path.join(__dirname,'本轮核查-Covey跨校-20261107.json'),JSON.stringify(ev,null,2),'utf8');console.log('已准备 Covey UIUC 人工事件，未覆盖历史事件');

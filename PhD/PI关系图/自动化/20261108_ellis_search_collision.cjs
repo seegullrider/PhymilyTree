@@ -1,0 +1,8 @@
+// 论文专项只有搜索响应，保留待查并提示同名冲突，不依据摘要确认师承。
+const fs=require('node:fs'),path=require('node:path'),{DatabaseSync}=require('node:sqlite'),root=path.resolve(__dirname,'..');
+const id='a98b4f1e',p='人员 - Northwestern - Donald Ellis（荣休） - a98b4f1e',dir=__dirname;
+for(const f of ['博士桥接-20261108-DonaldEllis.json','博士追查-20261108-DonaldEllis-同名辨析.json','博士追查-20261108-DonaldEllis-MIT同名.json'])if(!fs.existsSync(path.join(dir,f)))throw Error('missing '+f);
+const d=new DatabaseSync(path.join(dir,'检索队列.sqlite'),{readOnly:true}),r=d.prepare('select audit_id,details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id);if(r?.audit_id!=='20261108_ellis_added_a98b4f1e')throw Error('人工事件有变化');d.close();
+const a=JSON.parse(r.details_json);a.audit_id='20261108_ellis_thesis_name_collision';a.aspects.identity.note+=' 论文检索有 Donald Ellis 姓名冲突，须逐条核对姓名次序、学位及年代。';a.aspects.phd.note+=' 2026-11-08 论文专项与 MIT 定向搜索未找到可归属本人之学位论文；检索结果包括 1942 年 Caltech 的 Hudson, Donald Ellis 和 2017 年 MIT 生物硕士 Donald Christian Ellis，均不能凭姓名匹配归入本记录。';a.followup_required=true;a.next_step='继续查 Northwestern 人物的 MIT 1966 博士论文与博士后原始履历；检索结果含姓名次序、学科或年代冲突，禁止混用。';
+const person=path.join(root,'人物',p+'.md'),s=fs.readFileSync(person,'utf8'),old='- 核查边界：院系资料列 MIT 1966 博士；博士与博士后阶段个人导师均未确认，继续查学位论文和本人履历。';if(s.split(old).length!==2)throw Error('核查边界变化');fs.writeFileSync(person,s.replace(old,old+' 论文专项搜索存在姓名次序、学科及年代冲突的结果；1942 Caltech 的 Hudson, Donald Ellis 和 2017 MIT 生物硕士 Donald Christian Ellis 均不能仅凭姓名归入本记录。上述只是搜索索引线索，未据此确认关系。'),'utf8');
+fs.writeFileSync(path.join(dir,'人工-20261108-ellis-thesis-name-collision.json'),JSON.stringify(a,null,2)+'\n');console.log('prepared');

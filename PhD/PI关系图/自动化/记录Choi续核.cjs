@@ -1,0 +1,14 @@
+const {DatabaseSync}=require('node:sqlite');
+const crypto=require('node:crypto');
+const d=new DatabaseSync('检索队列.sqlite');
+const id='e90bba01',url='https://lukin.physics.harvard.edu/sites/g/files/omnuum6416/files/lukin/files/j._choi_thesis.pdf';
+const a=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id).details_json);
+a.audit_id='20261109_e90bba01_lukin_cv';
+a.aspects.phd={status:'confirmed_advisor',note:'Lukin 本人 Harvard 履历 PhD Advisor 名单列 Joonhee Choi（Stanford）；Harvard 2019 博士论文仍待原文复核。',sources:['https://www.physics.harvard.edu/file_url/1025']};
+a.followup_required=true;
+a.next_step='查 IQIM fellowship 的正式 sponsor；论文 PDF 因文件过大未能直接读取，寻找可读副本。';
+const now=new Date().toISOString();
+d.prepare('insert or ignore into manual_audit_events(audit_id,record_id,recorded_at,details_json) values(?,?,?,?)').run(a.audit_id,id,now,JSON.stringify(a));
+const p=d.prepare('select id from pages where record_id=? and url=?').get(id,url);
+if(!p) d.prepare('insert into pages(id,record_id,job_id,url,state,attempts,error,retrieved) values(?,?,?,?,?,?,?,?)').run(crypto.createHash('sha256').update(id+url).digest('hex').slice(0,24),id,id+':training',url,'retry',1,'(400) content length is too large，未取得原文',now);
+d.close();

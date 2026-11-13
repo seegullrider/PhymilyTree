@@ -1,0 +1,7 @@
+// 专项检索出现其他学科同名条目；仅标身份风险，不更改已确认导师。
+const fs=require('node:fs'),path=require('node:path'),{DatabaseSync}=require('node:sqlite'),root=path.resolve(__dirname,'..'),id='b3f015ee',person='人员 - A-STAR - Ding Huang（研究机构组长，高校任职待核） - b3f015ee';
+const result=JSON.parse(fs.readFileSync(path.join(__dirname,'博士桥接-20261108-DingHuang.json'),'utf8'));if(result.length!==1||result[0].record_id!==id||!result[0].raw.includes('Formulaic sequences in Early Modern English')||!result[0].raw.includes('Grassland Science'))throw Error('检索记录缺少同名线索');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true}),old=db.prepare('select audit_id,details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id);if(old?.audit_id!=='20261105_ding_b3f015ee')throw Error('最新人工事件变化');db.close();
+const e=JSON.parse(old.details_json);e.audit_id='20261108_ding_huang_thesis_collision';e.aspects.identity.note+=' 博士专项检索还有同名语言学、草业研究条目，须核对专业与学位时间，不能自动归属。';e.aspects.phd.note+=' 本轮重新读取 Princeton ECE 毕业名录，姓名、量子器件论文与 adviser 的对应清楚。';e.followup_required=true;e.next_step='继续核查博士后经历及指导者，并区分毕业日期、毕业典礼学年与其他同名研究者。';
+const f=path.join(root,'人物',person+'.md'),s=fs.readFileSync(f,'utf8'),oldText='未找到明确博士后经历或导师，仍需进一步核查。';if(s.split(oldText).length!==2)throw Error('边界文本变化');fs.writeFileSync(f,s.replace(oldText,'博士专项检索另出现同名语言学与草业研究者，需按单位、学位时间和方向区分；未找到明确博士后经历或导师，仍需进一步核查。'),'utf8');
+fs.writeFileSync(path.join(__dirname,'人工-20261108-ding-huang-thesis-collision.json'),JSON.stringify(e,null,2)+'\n');console.log('prepared');

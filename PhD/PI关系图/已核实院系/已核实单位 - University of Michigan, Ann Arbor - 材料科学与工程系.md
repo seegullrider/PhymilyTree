@@ -1,0 +1,30 @@
+# University of Michigan, Ann Arbor：材料科学与工程系
+
+[[院校 - University of Michigan, Ann Arbor|返回学校]]
+
+仅收录已按人物资料核实的记录，不表示单位已查全。
+- [[人员 - University of Michigan, Ann Arbor - Abdon Pena-Francesch - dc8b24e2|Abdon Pena-Francesch]] — [来源](https://che.engin.umich.edu/people/pena-francesch-abdon/)
+- [[人员 - University of Michigan, Ann Arbor - Anish Tuteja - e76f344b|Anish Tuteja]] — [来源](https://msewww.engin.umich.edu/people/atuteja/)
+- [[人员 - University of Michigan, Ann Arbor - Becky Peterson - 574f1762|Becky Peterson]] — [来源](https://ece.engin.umich.edu/people/directory/)
+- [[人员 - University of Michigan, Ann Arbor - Emmanouil (Manos) Kioupakis - e4e0cf24|Emmanouil (Manos) Kioupakis]] — [来源](https://lsa.umich.edu/appliedphysics/people/faculty/kioup.html)
+- [[人员 - University of Michigan, Ann Arbor - Grace A. Pan — 即将到岗 - c0b69667|Grace A. Pan — 即将到岗]] — [来源](https://lsa.umich.edu/appliedphysics/people/faculty/grace-a--pan.html)
+- [[人员 - University of Michigan, Ann Arbor - Jinsang Kim - 8a942f83|Jinsang Kim]] — [来源](https://mse.engin.umich.edu/people/jinsang/)
+- [[人员 - University of Michigan, Ann Arbor - John Heron - 3b451199|John Heron]] — [来源](https://mse.engin.umich.edu/people/jtheron/)
+- [[人员 - University of Michigan, Ann Arbor - John Kieffer - fb3a4353|John Kieffer]] — [来源](https://midas.umich.edu/directory/john-kieffer/)
+- [[人员 - University of Michigan, Ann Arbor - Katsuyo Thornton - 436196e8|Katsuyo Thornton]] — [来源](https://ners.engin.umich.edu/people/katsuyo-thornton/)
+- [[人员 - University of Michigan, Ann Arbor - Max Shtein - 6e492e5e|Max Shtein]] — [来源](https://lsa.umich.edu/appliedphysics/people/faculty/mshtein.html)
+- [[人员 - University of Michigan, Ann Arbor - Nicholas A. Kotov - 40c4051d|Nicholas A. Kotov]] — [来源](https://che.engin.umich.edu/people/kotov-nicholas/)
+- [[人员 - University of Michigan, Ann Arbor - Pierre Ferdinand P. Poudeu - 1f9cbe0d|Pierre Ferdinand P. Poudeu]] — [来源](https://www.mse.engin.umich.edu/people/ppoudeup/)
+- [[人员 - University of Michigan, Ann Arbor - Pramod Reddy - 3a6c8607|Pramod Reddy]] — [来源](https://me.engin.umich.edu/people/faculty/pramod-sangi-reddy/)
+- [[人员 - University of Michigan, Ann Arbor - Rachel Goldman - 70f85eca|Rachel Goldman]] — [来源](https://msewww.engin.umich.edu/people/rsgold/)
+- [[人员 - University of Michigan, Ann Arbor - Robert Hovden - 1be82b48|Robert Hovden]] — [来源](https://mse.engin.umich.edu/people/hovden/)
+- [[人员 - University of Michigan, Ann Arbor - Sharon Glotzer - 461ea491|Sharon Glotzer]] — [来源](https://www.mse.engin.umich.edu/people/sglotzer/)
+- [[人员 - University of Michigan, Ann Arbor - Stephen R. Forrest - 55b7c653|Stephen R. Forrest]] — [来源](https://cuos.engin.umich.edu/stories/stephen-forrest-named-peter-a-franken-distinguished-university-professor)
+- [[人员 - University of Michigan, Ann Arbor - Steven Yalisove - ef253dfe|Steven Yalisove]] — [来源](https://mse.engin.umich.edu/people/smy/)
+- [[人员 - University of Michigan, Ann Arbor - Wenhao Sun - c71c408d|Wenhao Sun]] — [来源](https://msewww.engin.umich.edu/people/whsun/)
+- [[人员 - University of Michigan, Ann Arbor - Yiyang Li - 73a5677d|Yiyang Li]] — [来源](https://sites.google.com/umich.edu/li-research-group/members)
+- [[人员 - University of Michigan, Ann Arbor - Zetian Mi - 3425ae66|Zetian Mi]] — 自 2025 年兼任；[校董会文件](https://regents.umich.edu/files/meetings/02-25/2025-02-IV-1.pdf)
+- [[人员 - University of Michigan, Ann Arbor - Zetian Mi — 招生信息 - 5869663a|Zetian Mi — 招生信息]] — 自 2025 年兼任；[校董会文件](https://regents.umich.edu/files/meetings/02-25/2025-02-IV-1.pdf)
+- [[人员 - University of Michigan, Ann Arbor - Liang Qi - 7d2e48ab|Liang Qi]] — [Michigan 计算研究所](https://micde.umich.edu/member/liang-qi/)
+- [[人员 - University of Michigan, Ann Arbor - Ashley Bucsek - a5d3ad3f|Ashley Bucsek]] — [原档 1](https://www.me.engin.umich.edu/people/faculty/ashley-bucsek/) · [原档 2](https://me.engin.umich.edu/wp-content/uploads/mev1/2020-01/ME201819AnnualReport.pdf) · [原档 3](https://regents.umich.edu/files/meetings/03-23/2023-03-V-2.pdf)
+- [[人员 - University of Michigan, Ann Arbor - Yang Zhang - 7fe32c4d|Yang Zhang]] — [现任院系原档](https://midas.umich.edu/directory/y-z-yang-zhang/)

@@ -1,0 +1,6 @@
+const {DatabaseSync}=require('node:sqlite');const fs=require('fs');
+const db=new DatabaseSync('C:/note/PhD/PI关系图/自动化/检索队列.sqlite');db.exec('PRAGMA busy_timeout=10000');
+const host='infoscience.epfl.ch',when=new Date(),old=db.prepare('SELECT * FROM host_limits WHERE host=?').get(host),streak=old&&when-Date.parse(old.last_limit)<86400000?old.streak+1:1,until=new Date(Math.max(old?Date.parse(old.until):0,when.getTime()+Math.min(86400000,1800000*2**Math.min(streak-1,5)))).toISOString();
+db.prepare('INSERT INTO host_limits(host,until,streak,last_limit) VALUES(?,?,?,?) ON CONFLICT(host) DO UPDATE SET until=excluded.until,streak=excluded.streak,last_limit=excluded.last_limit').run(host,until,streak,when.toISOString());
+db.prepare('INSERT INTO events(job_id,level,detail,created) VALUES(NULL,?,?,?)').run('site_rate_limit','Bingqing Cheng 原博士论文 https://infoscience.epfl.ch/bitstreams/47a41853-b3ac-41f7-a2b8-589f70bb3fc0/download 返回 429；暂停该主机至 '+until,when.toISOString());
+fs.appendFileSync('C:/note/PhD/PI关系图/自动化/使用说明.md',`\n${when.toISOString()}，Bingqing Cheng 的 EPFL 博士论文 https://infoscience.epfl.ch/bitstreams/47a41853-b3ac-41f7-a2b8-589f70bb3fc0/download 返回 429，infoscience.epfl.ch 已写主机退避至 ${until}，不重试或绕过。Sorbonne 的 Kanté 资料是两栏，导师行交错；网页截图返回缓存缺失，暂保留原博士候选，不能将未确认的栏位分配当确证。\n`);console.log(JSON.stringify({host,until,streak}));

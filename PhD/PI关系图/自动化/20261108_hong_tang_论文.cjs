@@ -1,0 +1,20 @@
+const fs=require('node:fs'),path=require('node:path'),{DatabaseSync}=require('node:sqlite');
+const root=path.resolve(__dirname,'..');
+const student='人员 - Yale - Hong Tang - 640c96c7',mentor='人员 - Caltech - Michael Roukes - 62ba1cc8';
+const thesis='https://thesis.caltech.edu/6808/1/Tang_h_2002.pdf', catalog='https://thesis.caltech.edu/6808/', yale='https://physics.yale.edu/profile/hong-tang';
+function replaceLine(file, match, build){const f=path.join(root,file),lines=fs.readFileSync(f,'utf8').split('\n'),idx=lines.map((x,i)=>x.includes(match)?i:-1).filter(i=>i>=0);if(idx.length!==1)throw Error(`行匹配异常 ${file} ${match} ${idx.length}`);lines[idx[0]]=build(lines[idx[0]]);fs.writeFileSync(f,lines.join('\n'),'utf8');}
+const evidence=`[2002 年 Caltech 博士论文](${thesis})封面写明“Advisor: Professor Michael L. Roukes”，致谢再次称其为 advisor；[Yale 履历](${yale})列同年 Caltech 博士并列同题研究，身份相符。`;
+replaceLine('人物/'+student+'.md','- 博士导师候选：',()=>`- 博士导师：[[${mentor}|Michael L. Roukes]]。${evidence}关系可信度：高。`);
+replaceLine('人物/'+student+'.md','- 核查边界：',()=>`- 核查边界：博士论文作者写作 Hongxing Tang；Yale 履历的 2002 Caltech 博士、研究及论文发表记录与之相符。[Caltech 论文目录](${catalog})还在 Advisors 字段列 Frank C. Porter，但论文封面只列 Roukes，Porter 的实际角色须另核，暂不画作确认导师。2003 年研究职位是否为博士后仍待核。`);
+replaceLine('人物/'+mentor+'.md','- 博士生候选：[[人员 - Yale - Hong Tang',()=>`- 博士生：[[${student}|Hong Tang（Hongxing Tang）]]。${evidence}关系可信度：高。`);
+replaceLine('Yale逐人复核记录.md','| [[人员 - Yale - Hong Tang',line=>line.replace('Michael Roukes（候选，待核）','Michael L. Roukes（论文封面及致谢明确 advisor）；Frank C. Porter（目录也列 advisor，论文封面未列，角色待核）').replace('[学校](https://physics.yale.edu/profile/hong-tang)',`[博士论文](${thesis})；[论文目录](${catalog})；[学校](${yale})`));
+replaceLine('师承关系索引.md','Hong Tang]] → 博士导师候选：',()=>`- [[${student}|Hong Tang]] → 博士导师：[[${mentor}|Michael L. Roukes]]。${evidence}论文目录另列 Frank C. Porter，论文封面未列，角色待核。`);
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});
+const a=JSON.parse(db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('640c96c7').details_json);db.close();
+a.audit_id='20261108_hong_tang_dissertation';
+a.aspects.identity={status:'confirmed',note:'论文作者 Hongxing Tang，2002 Caltech 博士；Yale Hong Tang 2002 同校博士、论文列研究方向及论文记录一致。',sources:[thesis,yale]};
+a.aspects.phd={status:'confirmed_advisor',note:'Hongxing Tang 2002 Caltech 博士论文封面及致谢明确 Michael L. Roukes 为 advisor。Caltech 目录同时列 Frank C. Porter，但封面未列，具体角色待核。',sources:[thesis,catalog,yale]};
+a.followup_required=true;a.next_step='核对 Caltech 目录另列 Frank C. Porter 与论文封面不一致的原因；确认 2003 年研究职位是否为博士后及其导师。';
+fs.writeFileSync(path.join(__dirname,'人工-20261108-hong-tang.json'),JSON.stringify(a,null,2)+'\n');
+fs.writeFileSync(path.join(__dirname,'结构化-20261108-hong-tang.json'),JSON.stringify([{event_id:'20261108_hong_tang_roukes_phd_advisor',record_id:'640c96c7',stage:'phd',mentor_filename:mentor,kind:'advisor',source_audit_id:a.audit_id,evidence:'2002 Caltech 博士论文封面及作者致谢明确 Michael L. Roukes 为 advisor；Yale 学历及研究与论文作者 Hongxing Tang 相符。目录还列 Porter，角色待核。',sources:[thesis,catalog,yale]}],null,2)+'\n');
+console.log('prepared');

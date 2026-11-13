@@ -1,0 +1,12 @@
+const fs=require('fs'),path=require('path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});
+const ev=JSON.parse(db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('e4d6ef17').details_json);db.close();
+const ill='https://grainger.illinois.edu/about/directory/faculty/vm1', physics='https://physics.illinois.edu/people/directory/profile/vm1',crommie='https://physics.berkeley.edu/research-faculty/crommie-group/members',lbl='https://www2.lbl.gov/Science-Articles/Archive/MSD-granular-superconductor.html',news='https://newsarchive.berkeley.edu/news/media/releases/2001/06/20_physc.html';
+ev.audit_id='20261107_e4d6ef17_bu_davis_primary';
+ev.aspects.identity={status:'confirmed',note:'Illinois 个人页与 Crommie 组校友名单均指 UIUC 的 Vidya Madhavan，研究方向和身份相符。',sources:[ill,crommie]};
+ev.aspects.affiliation={status:'confirmed',note:'UIUC 物理系教授与系主任；学校本人页列凝聚态物理。',sources:[physics]};
+ev.aspects.research={status:'confirmed',note:'本人院系页列量子材料、STM/STS、非常规超导与 MBE。',sources:[physics]};
+ev.aspects.phd={status:'group_or_candidate',note:'Illinois 履历列 2000 年 Boston University 博士，Crommie 组名录将其列为前研究生；具体学位导师及博士阶段地点待原论文，不把 Berkeley 组名等同 Berkeley 学位。',sources:[ill,crommie]};
+ev.aspects.postdoc={status:'group_or_candidate',note:'Berkeley Lab 2002 年明确她是 Davis 组成员，Berkeley 2001 年报道列其为博士后；仅确认阶段组属，正式 advisor 未明。Illinois 履历列博后 1999–2002，与博士 2000 时间重叠待核。',sources:[lbl,news,ill]};
+ev.followup_required=true;ev.next_step='查 Boston University 2000 博士论文正式导师；核实 Berkeley 博后起始时间及 Davis 正式指导角色。';
+fs.writeFileSync(path.join(__dirname,'本轮核查-VidyaMadhavan-20261107.json'),JSON.stringify(ev,null,2),'utf8');console.log('已准备 Vidya Madhavan 阶段核查事件');

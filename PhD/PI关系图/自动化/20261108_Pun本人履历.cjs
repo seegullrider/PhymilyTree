@@ -1,0 +1,11 @@
+const fs=require('node:fs'),path=require('node:path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true}),id='4450bd82';
+const row=db.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id);if(!row)throw Error('缺少 Pun 人工事件');
+const a=JSON.parse(row.details_json),bio='https://onlinelibrary.wiley.com/doi/full/10.1002/anie.202414791',talk='https://www.acssaatucsd.com/symposium2024';
+a.audit_id='20261108_4450bd82_personal_profile';a.aspects.phd={status:'confirmed_advisor',note:'本人期刊简介列 2019 Columbia 化学博士 with Luis M. Campos 和 Daniel N. Congreve；记录两位博士阶段研究师长，正式论文导师职衔待核。',sources:[bio,talk]};
+a.aspects.postdoc={status:'group_or_candidate',note:'本人期刊简介列 2019–2022 ETH Zürich postdoctoral fellow with David J. Norris；UCSD 讲座说明为 Norris 组，正式 advisor 称谓待核。',sources:[bio,talk]};
+a.next_step='查 Columbia 论文正式导师栏与 ETH 博后正式 advisor 职衔。';a.followup_required=true;
+fs.writeFileSync(path.join(__dirname,'人工-20261108-Pun.json'),JSON.stringify(a,null,2)+'\n');
+const specs=[['phd','人员 - Columbia - Luis M. Campos - 57eb37d8','stage_mentor'],['phd','人员 - Stanford - Daniel Congreve - 0e53859a','stage_mentor'],['postdoc','师承人物 - David J. Norris','group_leader']];
+const rel=specs.map(([stage,mentor_filename,kind],i)=>({event_id:`20261108_4450bd82_personal_profile_${i}`,record_id:id,stage,mentor_filename,kind,source_audit_id:a.audit_id,evidence:stage==='phd'?'本人简介列 Columbia 2019 博士 with Campos 与 Congreve；正式导师栏待核。':'本人简介列 2019–2022 ETH 博后 with Norris，UCSD 讲座明确 Norris 组。',sources:[bio,talk]}));
+fs.writeFileSync(path.join(__dirname,'结构化-20261108-Pun.json'),JSON.stringify(rel,null,2)+'\n');db.close();

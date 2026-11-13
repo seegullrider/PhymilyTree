@@ -1,0 +1,10 @@
+const {DatabaseSync}=require('node:sqlite');
+const d=new DatabaseSync('检索队列.sqlite');
+const id='79a2a19b',u='https://honglab.ucdavis.edu/sites/g/files/dgvnsk8476/files/inline-files/CV_Hong_2020.pdf';
+const a=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id).details_json);
+a.audit_id='20261109_79a2a19b_cv';
+a.aspects.postdoc={status:'confirmed_advisor',note:'本人 2020 CV 列 Stanford 2014–2019 博后 Advisor Harold Hwang。',sources:[u]};
+a.next_step='查 Stanford 学位档案解决博士年份来源冲突。';
+a.followup_required=true;
+d.prepare('insert or ignore into manual_audit_events(audit_id,record_id,recorded_at,details_json) values(?,?,?,?)').run(a.audit_id,id,new Date().toISOString(),JSON.stringify(a));
+d.close();

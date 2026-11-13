@@ -1,0 +1,11 @@
+const {DatabaseSync}=require('node:sqlite');
+const d=new DatabaseSync('检索队列.sqlite');
+const id='b95b0056',u='https://chemistry.berkeley.edu/people/kranthi-mandadapu';
+const a=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id).details_json);
+a.audit_id='20261109_b95b0056_college';
+a.aspects.postdoc.note+=' Berkeley 化学院简介列 Sandia 2011–2013 与 Berkeley 2013–2016 两段博士后，未在该页命名指导者。';
+a.aspects.postdoc.sources.push(u);
+a.next_step='追查 Sandia 博后指导者及 Berkeley 两位组负责人的正式职称。';
+a.followup_required=true;
+d.prepare('insert or ignore into manual_audit_events(audit_id,record_id,recorded_at,details_json) values(?,?,?,?)').run(a.audit_id,id,new Date().toISOString(),JSON.stringify(a));
+d.close();

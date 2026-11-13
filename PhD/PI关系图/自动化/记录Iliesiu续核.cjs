@@ -1,0 +1,10 @@
+const {DatabaseSync}=require('node:sqlite');
+const d=new DatabaseSync('检索队列.sqlite');
+const id='1b0d084d',u='https://inspirehep.net/files/1dcdee80b4bab4287d56af16fce2d0c1';
+const a=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id).details_json);
+a.audit_id='20261109_1b0d084d_thesis';
+a.aspects.phd={status:'confirmed_advisor',note:'Princeton 2020 年 9 月博士论文首页明确 Adviser Silviu Pufu；致谢说其自本科起指导。',sources:[u]};
+a.next_step='核 Stanford Simons Ultra Quantum Matter 博士后阶段 host 或导师。';
+a.followup_required=true;
+d.prepare('insert or ignore into manual_audit_events(audit_id,record_id,recorded_at,details_json) values(?,?,?,?)').run(a.audit_id,id,new Date().toISOString(),JSON.stringify(a));
+d.close();

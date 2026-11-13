@@ -1,0 +1,27 @@
+const fs=require('node:fs'),path=require('node:path');
+const root=path.resolve(__dirname,'..');
+const read=p=>fs.readFileSync(path.join(root,p),'utf8');
+const write=(p,s)=>fs.writeFileSync(path.join(root,p),s,'utf8');
+const add=(p,line)=>{let s=read(p);if(!s.includes(line))write(p,s.replace(/\s*$/,'')+'\n'+line+'\n');};
+const id='cb1ae655',unit='Washington University in St. Louis',who=`人员 - ${unit} - Feng Jiao - ${id}`;
+const bruce='师承人物 - Peter G. Bruce',frei='师承人物 - Heinz Frei';
+const cv='https://www.jiaogroup.org/_files/ugd/32209b_be6873725f834fdbbee34af3687c30a7.pdf';
+const bio='https://publichealth.washu.edu/faculty/feng-jiao/',people='https://www.jiaogroup.org/people',research='https://www.jiaogroup.org/research';
+const manifest=JSON.parse(read('graph-manifest.json'));
+const conflict=manifest.nodes.filter(n=>n.id===id || (n.unit===unit && /feng\s+jiao/i.test(n.name)));
+if(conflict.length && !(conflict.length===1&&conflict[0].id===id&&conflict[0].filename===who))throw Error('人物标识冲突，停止');
+for(const p of ['院校与机构/院校 - Washington University in St. Louis.md','已核实院系/已核实单位 - Washington University in St. Louis - Energy Environmental and Chemical Engineering.md','已核实方向/已核实方向 - 电化学界面.md','已核实方向/已核实方向 - 纳米材料合成.md','Washington University in St. Louis逐人复核记录.md','师承关系索引.md',`人物/${frei}.md`])if(!fs.existsSync(path.join(root,p)))throw Error('缺少目标 '+p);
+const person=`人物/${who}.md`;
+if(!fs.existsSync(path.join(root,person)))write(person,`# Feng Jiao\n\n> [!info] 补录：纳米材料、电化学界面及能源材料相邻方向\n> 研究涵盖材料合成、催化与电化学工程；不将其笼统归为量子材料物理。招生情况待核。\n\n## 所在学校或机构\n\n- [[院校 - Washington University in St. Louis|Washington University in St. Louis]]\n\n## 院系与研究方向核验（2026-11-06）\n\n- 院系：[[已核实单位 - Washington University in St. Louis - Energy Environmental and Chemical Engineering|Energy, Environmental & Chemical Engineering]]；[学校简介](${bio})列该系 Distinguished Professor。\n- 方向：[[已核实方向 - 电化学界面|电化学界面]] · [[已核实方向 - 纳米材料合成|纳米材料合成]]；研究电催化材料、固液气界面和储能材料。[本人 CV](${cv})；[实验室研究页](${research})。\n\n## 师承\n\n- 博士导师：[[${bruce}|Peter G. Bruce]]。[本人 CV](${cv})在 St Andrews 2004–2008 化学博士条目下明确写 Advisor: Prof. Peter G. Bruce。关系类型可信度：高。\n- 博士后导师：[[${frei}|Heinz Frei]]。[本人 CV](${cv})明列 Lawrence Berkeley National Laboratory 2008 年 1 月至 2010 年 8 月 Postdoctoral Researcher，Supervisor: Dr. Heinz Frei。关系类型可信度：高。\n- 核查边界：学校及实验室页面均证实现任 WashU；本人 CV 的本科导师 Heyong He 不属于博士或博士后阶段，未计入上述师承。\n`);
+if(!fs.existsSync(path.join(root,`人物/${bruce}.md`)))write(`人物/${bruce}.md`,`# Peter G. Bruce\n\n> [!info] 师承扩展人物；其他经历及当前任职待单独核实。\n\n## 师承\n\n- 博士生：[[${who}|Feng Jiao]]。[Jiao 本人 CV](${cv})在 St Andrews 博士条目明确列 Advisor: Prof. Peter G. Bruce。关系类型可信度：高。\n`);
+else add(`人物/${bruce}.md`,`- 博士生：[[${who}|Feng Jiao]]。[Jiao 本人 CV](${cv})在 St Andrews 博士条目明确列 Advisor: Prof. Peter G. Bruce。关系类型可信度：高。`);
+add(`人物/${frei}.md`,`- 博士后受指导者：[[${who}|Feng Jiao]]。[Jiao 本人 CV](${cv})明列 Lawrence Berkeley National Laboratory 2008–2010 博后 Supervisor: Dr. Heinz Frei。关系类型可信度：高。`);
+if(!conflict.length){manifest.nodes.push({id,filename:who,name:'Feng Jiao',unit,kind:'美国'});write('graph-manifest.json',JSON.stringify(manifest,null,2)+'\n');}
+add('院校与机构/院校 - Washington University in St. Louis.md',`- [[${who}|Feng Jiao]]`);
+add('已核实院系/已核实单位 - Washington University in St. Louis - Energy Environmental and Chemical Engineering.md',`- [[${who}|Feng Jiao]] — [学校简介](${bio})`);
+for(const d of ['电化学界面','纳米材料合成'])add(`已核实方向/已核实方向 - ${d}.md`,`- [[${who}|Feng Jiao · Washington University in St. Louis]] — [本人 CV](${cv})`);
+add('Washington University in St. Louis逐人复核记录.md',`| [[${who}|Feng Jiao]] | Energy, Environmental & Chemical Engineering；电化学界面、纳米材料合成、能源材料（相邻方向） | Peter G. Bruce（博士导师） | Heinz Frei（博士后导师） | [学校简介](${bio})；[本人 CV](${cv}) |`);
+add('师承关系索引.md',`- [[${who}|Feng Jiao]] → 博士导师：[[${bruce}|Peter G. Bruce]]；博士后导师：[[${frei}|Heinz Frei]]。[本人 CV](${cv})分别明列博士 Advisor 和 LBNL 博后 Supervisor。关系类型可信度：高。`);
+const event={audit_id:'20261106_feng_jiao_cb1ae655',record_id:id,aspects:{identity:{status:'confirmed',note:'本人 CV、实验室和 WashU 学校简介匹配姓名、院系和所在机构。',sources:[cv,people,bio]},affiliation:{status:'confirmed',note:'WashU 学校简介列能源、环境与化学工程系 Distinguished Professor；本人 CV 列 2023 年起任该系教授。',sources:[bio,cv]},research:{status:'confirmed',note:'本人 CV 和实验室页列纳米材料合成、电催化、固液气界面、能源储存。属于材料相邻方向。',sources:[cv,research]},phd:{status:'confirmed_advisor',note:'本人 CV 的 St Andrews 2004–2008 化学博士条目写 Advisor: Prof. Peter G. Bruce。',sources:[cv]},postdoc:{status:'confirmed_advisor',note:'本人 CV 的 LBNL 2008–2010 博后条目写 Supervisor: Dr. Heinz Frei。',sources:[cv]}},followup_required:false,next_step:'后续增量更新学校任职与研究方向；若发现共同导师等新信息另行核实。'};
+write('自动化/本轮核查-Feng-Jiao-20261106.json',JSON.stringify(event,null,2)+'\n');
+console.log('已补录 Feng Jiao，等待 sync 和人工事件入账。');

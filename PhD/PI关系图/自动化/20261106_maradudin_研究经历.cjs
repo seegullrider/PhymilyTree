@@ -1,0 +1,11 @@
+const fs=require('fs'),path=require('path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'));
+const row=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('921d9b34');
+if(!row) throw Error('缺少人工台账');
+const ev=JSON.parse(row.details_json);
+ev.audit_id='20261106_maradudin_bristol_cv_921d9b34';
+ev.aspects.phd={status:'unresolved',note:'Bristol Wills 物理实验室历史名录列 1954–1957 在校和 1957 PhD；本人 UCI 简历相符，但均未列导师。',sources:['https://www.bristol.ac.uk/physics/media/histories/14-portraits.pdf','https://www.physics.uci.edu/Maradudin-Biosketch2016.pdf']};
+ev.aspects.postdoc={status:'unresolved',note:'UCI 本人简介称 Maryland 博后及助理研究教授；2016 简历列 1956–1957 research associate、1957–1960 research assistant professor 等经历，未指明导师或将具体某个职位逐一标博后。',sources:['https://www.faculty.uci.edu/profile/?facultyId=2716','https://www.physics.uci.edu/Maradudin-Biosketch2016.pdf']};
+ev.followup_required=true;
+ev.next_step='查 Bristol 原始论文和 Maryland 档案，确定博士导师及博士后师长；校友 Baumeier 与其博士后研究关联已单独建立反向链接。';
+fs.writeFileSync(path.join(__dirname,'本轮核查-Maradudin-20261106.json'),JSON.stringify(ev,null,2)+'\n','utf8');

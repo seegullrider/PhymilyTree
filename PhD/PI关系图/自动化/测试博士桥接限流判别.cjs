@@ -1,0 +1,13 @@
+const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),assert=require('node:assert/strict');
+const source=fs.readFileSync(path.join(__dirname,'博士专项Codex桥接模板.js'),'utf8');
+const part=source.split('// CLASSIFIER_START')[1]?.split('// CLASSIFIER_END')[0];assert(part);
+const classify=vm.runInNewContext(part+'\nclassifyThesisResponse');
+assert.equal(classify('Scholar CV (https://example.edu/cv)\nPaper pages 429–432; rate-limited reactions').kind,'ok');
+assert.equal(classify('Scholar CV (https://example.edu/cv)\nA paper mentions HTTP 429 in a software example.').kind,'ok');
+assert.equal(classify('Internal Error: HTTP 429 Too Many Requests').kind,'limited');
+assert.equal(classify('Failed to fetch https://example.edu/a: (429) Too Many Requests').kind,'limited');
+assert.equal(classify('Fatal error: rate limit exceeded').kind,'limited');
+assert.equal(classify('Internal Error: service unavailable').kind,'error');
+assert.equal(classify('').kind,'error');
+assert(!classify('Failed to fetch https://example.edu/a: (429) Too Many Requests').reason.includes('example.edu'));
+console.log('通过：正常搜索正文不触发限流，响应级 429 和限流错误停止，错误摘要脱敏。');

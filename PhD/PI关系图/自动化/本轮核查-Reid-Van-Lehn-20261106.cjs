@@ -1,0 +1,15 @@
+const fs = require('node:fs');
+const path = require('node:path');
+const { DatabaseSync } = require('node:sqlite');
+const db = new DatabaseSync(path.join(__dirname, '检索队列.sqlite'));
+const row = db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('b4fdd2e2');
+if (!row) throw new Error('缺少已有人工事件');
+const event = JSON.parse(row.details_json);
+const cv = 'https://vanlehngroup.che.wisc.edu/wp-content/uploads/sites/728/2021/01/van_lehn_cv_may_2025_short.pdf';
+event.audit_id = '20261106_b4fdd2e2_personal_cv_two_postdocs';
+event.aspects.phd = { status: 'confirmed_advisor', note: '本人 CV 在 MIT 2009–2014 博士教育条目明确列 Advisor Alfredo Alexander-Katz。', sources: [cv] };
+event.aspects.postdoc = { status: 'confirmed_advisor', note: '本人 CV 分别在 MIT 2014–2015 博后职位列 Advisor Alfredo Alexander-Katz，在 Caltech 2015–2016 博后职位列 Advisor Thomas F. Miller III。', sources: [cv] };
+event.followup_required = false;
+event.next_step = '增量关注本人任职、研究方向及其他可能的共同指导者变化。';
+fs.writeFileSync(path.join(__dirname, '本轮核查-Reid-Van-Lehn-20261106.json'), JSON.stringify(event, null, 2) + '\n', 'utf8');
+db.close();

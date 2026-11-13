@@ -1,0 +1,105 @@
+// 使用独立临时 SQLite，验证人工优先级不会绕过全局、主机与租约保护。
+const fs=require('node:fs'),os=require('node:os'),path=require('node:path'),assert=require('node:assert/strict'),{spawnSync}=require('node:child_process'),{DatabaseSync}=require('node:sqlite');
+const file=path.join(os.tmpdir(),`pi-page-priority-${process.pid}.sqlite`),script=path.join(__dirname,'检索流程.cjs'),env={...process.env,PI_AUTOMATION_DB:file};
+function run(...args){const p=spawnSync(process.execPath,['--no-warnings',script,...args],{encoding:'utf8',env});assert.equal(p.status,0,p.stderr);return JSON.parse(p.stdout)}
+let db;try{
+ run('status');db=new DatabaseSync(file);const now=new Date().toISOString(),past=new Date(Date.now()-3600000).toISOString(),future=new Date(Date.now()+3600000).toISOString();
+ for(const id of ['a','b','c','d','e','f','g','h']){db.prepare('INSERT INTO records(id,name,unit,filename,reviewed,updated) VALUES(?,?,?,?,0,?)').run(id,id,'test',id,now);db.prepare("INSERT INTO jobs(id,record_id,kind,query,updated) VALUES(?,?,'training','q',?)").run(id+':training',id,now)}
+ const put=db.prepare('INSERT INTO pages(id,record_id,job_id,url,state,attempts,retrieved) VALUES(?,?,?,?,?,?,?)');
+ put.run('retry','a','a:training','https://retry.example/a','retry',1,past);
+ put.run('selected','b','b:training','https://picked.example/b','pending',0,null);
+ put.run('blocked','c','c:training','https://blocked.example/c','pending',0,null);
+ put.run('sameurl','d','d:training','https://picked.example/b','pending',0,null);
+ put.run('fresh1','e','e:training','https://fresh1.example/e','pending',0,null);
+ put.run('fresh2','f','f:training','https://fresh2.example/f','pending',0,null);
+ put.run('retry2','g','g:training','https://retry2.example/g','retry',1,past);
+ for(const id of ['selected','blocked'])db.prepare('INSERT INTO page_priorities VALUES(?,1,?,?)').run(id,'test',now);
+ db.prepare('INSERT INTO host_limits VALUES(?,?,1,?)').run('blocked.example',future,now);
+ db.prepare('INSERT INTO settings VALUES(?,?)').run('thesis_search_retry_after',future);db.close();db=null;
+ assert.deepEqual(run('next-page','4'),[],'全局退避不得被优先级覆盖');
+ db=new DatabaseSync(file);db.prepare('DELETE FROM settings WHERE key=?').run('thesis_search_retry_after');db.close();db=null;
+ const peek=run('next-page','4');assert.equal(peek[0].id,'selected','人工选择的待读原文应先于旧重试');assert(!peek.some(x=>x.id==='blocked'),'主机退避不得被优先级覆盖');
+ assert.deepEqual(peek.map(x=>x.id),['selected','fresh1','fresh2','retry'],'批次应让未读网页与到期重试一起推进');
+ const lease=run('lease-pages','1');assert.equal(lease[0].id,'selected');assert(lease[0].lease_token);
+ const rest=run('next-page','4');assert(!rest.some(x=>x.id==='sameurl'||x.id==='selected'),'已有租约时同网址不得重复提交');assert(rest.some(x=>x.id==='retry'),'旧重试任务仍可继续');
+ db=new DatabaseSync(file);
+ db.exec("DELETE FROM page_leases; UPDATE pages SET state='done'");
+ const add=db.prepare('INSERT INTO pages(id,record_id,job_id,url,state,error,retrieved) VALUES(?,?,?,?,?,?,?)');
+ add.run('gone','a','a:training','https://archive.example/missing','retry','(404) Not Found',past);
+ add.run('same-gone','b','b:training','https://archive.example/missing','pending',null,null);
+ add.run('challenge','c','c:training','https://archive.example/challenge','retry','Checking your browser - reCAPTCHA',past);
+ add.run('same-challenge','d','d:training','https://archive.example/challenge','pending',null,null);
+ add.run('teapot','e','e:training','https://journal.example/old','retry',"(418) I'm a Teapot",past);
+ add.run('other-path','f','f:training','https://archive.example/valid','pending',null,null);
+ add.run('wrong-person','a','a:training','https://names.example/person','excluded','已人工核实属于数据库外其他同名者：同名记录',past);
+ add.run('right-person','b','b:training','https://names.example/person','pending',null,null);
+ db.close();db=null;
+ assert.deepEqual(run('next-page','4').map(x=>x.id),['right-person','other-path'],'失效网址跨记录跳过，同站其他网页及身份不同的正确记录仍可领取');
+ db=new DatabaseSync(file);
+ db.exec("UPDATE pages SET state='done'");
+ const pending=db.prepare("INSERT INTO pages(id,record_id,job_id,url,state) VALUES(?,?,?,?,'pending')");
+ pending.run('reverse-index','a','a:training','https://thesis.example/view/advisor/Name.html');
+ pending.run('ordinary-training','b','b:training','https://people.example/name');
+ pending.run('thesis-record','c','c:training','https://thesis.example/10356/');
+ db.close();db=null;
+ assert.deepEqual(run('next-page','4').map(x=>x.id),['thesis-record','ordinary-training'],'同等需求时论文原记录优先于同主机反向索引');
+ db=new DatabaseSync(file);
+ db.prepare("UPDATE pages SET state='done' WHERE id='thesis-record'").run();
+ db.close();db=null;
+ assert.deepEqual(run('next-page','4').map(x=>x.id),['ordinary-training','reverse-index'],'反向索引降序后仍可领取');
+ db=new DatabaseSync(file);
+ db.exec("UPDATE pages SET state='done'");
+ const extra=db.prepare('INSERT INTO pages(id,record_id,job_id,url,state,attempts,retrieved) VALUES(?,?,?,?,?,?,?)');
+ extra.run('covered-thesis','a','a:training','https://theses.one.example/dissertation/a','pending',0,null);
+ extra.run('first-read','h','h:training','https://first-read.example/bio','pending',0,null);
+ extra.run('another-thesis','b','b:training','https://theses.two.example/dissertation/b','pending',0,null);
+ extra.run('retry-slot','c','c:training','https://old-retry.example/c','retry',1,past);
+ db.close();db=null;
+ assert.deepEqual(run('next-page','3').map(x=>x.id),['first-read','covered-thesis','retry-slot'],'给从未成功读取的校属记录留一席，并保留论文与到期重试');
+ db=new DatabaseSync(file);
+ for(const id of ['i','j']){
+  db.prepare('INSERT INTO records(id,name,unit,filename,reviewed,updated) VALUES(?,?,?,?,0,?)').run(id,id,'test',id,now);
+  db.prepare("INSERT INTO jobs(id,record_id,kind,query,updated) VALUES(?,?,'training','q',?)").run(id+':training',id,now);
+ }
+ const school='https://school.example/physics/i', blocked='https://blocked.example/new-i';
+ const sources=['https://archive.example/missing','https://picked.example/b?access_token=temporary','https://please.untaint.us/test',school,school,blocked,'https://school.example/other'];
+ db.prepare("INSERT INTO pages(id,record_id,job_id,url,state,error,retrieved) VALUES('seed-bad','j','j:training','https://archive.example/missing','retry','(404) Not Found',?)").run(past);
+ for(const id of ['a','h','i','j']){
+  const aspects={affiliation:{status:id==='j'?'unresolved':'confirmed',sources}};
+  db.prepare('INSERT INTO manual_audit_events VALUES(?,?,?,?)').run('audit-'+id,id,now,JSON.stringify({aspects}));
+ }
+ db.close();db=null;
+ const seed=run('seed-first-read-pages');
+ assert.deepEqual(seed.items,[{id:'i',name:'i',unit:'test',urls:[school,blocked]}],'只为尚未有可读来源的条目补入已核身份相关来源');
+ assert.deepEqual(run('seed-first-read-pages').items,seed.items,'预览不写入队列');
+ assert.equal(run('seed-first-read-pages','apply').pages,2);
+ assert.equal(run('seed-first-read-pages','apply').pages,0,'重复运行不重新入队');
+ assert(!run('next-page','4').some(x=>x.url===blocked),'补种页面仍遵守原站退避');
+ db=new DatabaseSync(file);
+ db.exec("UPDATE pages SET state='done'; DELETE FROM page_priorities");
+ const check=db.prepare('INSERT INTO pages(id,record_id,job_id,url,state,error,retrieved) VALUES(?,?,?,?,?,?,?)');
+ check.run('browse1','a','a:training','https://theses.verify.example/old-one','retry','返回机器人验证页；未读取正文',past);
+ check.run('browse2','b','b:training','https://theses.verify.example/old-two','retry','Checking your browser - reCAPTCHA',past);
+ check.run('verified-host','c','c:training','https://theses.verify.example/new','pending',null,null);
+ check.run('clean-host','d','d:training','https://physics.example/bio','pending',null,null);
+ db.close();db=null;
+ assert.deepEqual(run('next-page','4').map(x=>x.id),['clean-host','verified-host'],'反复返回验证的站点自动后排，有空位时仍可领取其他网址');
+ db=new DatabaseSync(file);
+ db.prepare('INSERT INTO page_priorities VALUES(?,1,?,?)').run('verified-host','人工复核可访问的学位新档',now);
+ db.close();db=null;
+ assert.equal(run('next-page','4')[0].id,'verified-host','排序不覆盖人工选择');
+ db=new DatabaseSync(file);
+ db.exec('DELETE FROM page_priorities');
+ db.prepare('UPDATE pages SET retrieved=? WHERE id=?').run(new Date(Date.now()-13*3600000).toISOString(),'browse2');
+ db.close();db=null;
+ assert.equal(run('next-page','4')[0].id,'verified-host','仅有一次近期验证时恢复论文优先级');
+ db=new DatabaseSync(file);
+ db.exec("UPDATE pages SET state='done'");
+ const more=db.prepare("INSERT INTO pages(id,record_id,job_id,url,state) VALUES(?,?,?,?,'pending')");
+ more.run('orcid-profile','a','a:training','https://orcid.org/0000-0002-5987-682X');
+ more.run('bio','b','b:training','https://physics.example/people/professor');
+ more.run('institutional-thesis','c','c:training','https://repository.example/items/123');
+ db.close();db=null;
+ assert.deepEqual(run('next-page','4').map(x=>x.id),['institutional-thesis','bio','orcid-profile'],'机构馆藏条目优先，ORCID 个人页后排但仍可领取');
+ console.log('通过：优先级、共享退避、主机退避、租约去重、失效网址跨记录跳过及旧重试保留。');
+}finally{if(db)db.close();for(const f of [file,file+'-wal',file+'-shm'])if(fs.existsSync(f))fs.unlinkSync(f)}

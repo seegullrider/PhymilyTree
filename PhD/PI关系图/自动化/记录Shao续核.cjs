@@ -1,0 +1,13 @@
+const {DatabaseSync}=require('node:sqlite');
+const d=new DatabaseSync('检索队列.sqlite');
+const id='ee9d30dd',u='https://shaolab.stanford.edu/people/yanjie-shao';
+const a=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id).details_json);
+a.audit_id='20261109_ee9d30dd_lab';
+a.aspects.phd.note='本人 Stanford 组页明确博士研究由 Jesús del Alamo 指导，MIT 论文活动同列导师。';
+a.aspects.phd.sources.push(u);
+a.aspects.affiliation.note='本人 Stanford 组页称 2026 年 8 月加入 Stanford 电气工程系任助理教授。';
+a.aspects.affiliation.sources.push(u);
+a.followup_required=true;
+a.next_step='继续查 Antoniadis 博士后正式角色，保持与 del Alamo 正式监督关系分开。';
+d.prepare('insert or ignore into manual_audit_events(audit_id,record_id,recorded_at,details_json) values(?,?,?,?)').run(a.audit_id,id,new Date().toISOString(),JSON.stringify(a));
+d.close();

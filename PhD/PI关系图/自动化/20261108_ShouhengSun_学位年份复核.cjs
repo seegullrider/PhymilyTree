@@ -1,0 +1,24 @@
+// Preserve both primary records; the Brown thesis index does not define what its year means.
+const fs=require('node:fs'),path=require('node:path'),{DatabaseSync}=require('node:sqlite');
+const root=path.resolve(__dirname,'..'),id='6e908eee';
+const cv='https://vivo.brown.edu/docs/s/ssun_cv.pdf',index='https://library.brown.edu/theses/browse.php?type=author';
+const note=path.join(root,'人物','人员 - Brown - Shouheng Sun - 6e908eee.md');
+const table=path.join(root,'Brown逐人复核记录.md');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});
+const row=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get(id);db.close();
+if(!row)throw Error('Missing prior audit');
+const audit=JSON.parse(row.details_json);audit.audit_id='20261108_ShouhengSun_degree_year_review';
+audit.aspects.identity.note='本人 CV 和 Brown 人物简介写 1996 Brown 化学博士；Brown 图书馆论文作者目录列 Sun, Shouheng 1997，目录年份含义及与学位授予年份的关系待核。';
+audit.aspects.identity.sources=[...new Set([...audit.aspects.identity.sources,cv,index])];
+audit.followup_required=true;audit.next_step='读取 Brown 论文目录详细记录及论文原文，核对目录 1997 与本人 CV 1996 的年份含义、Sweigart 正式论文导师字段。';
+let p=fs.readFileSync(note,'utf8');const marker='- 核查边界：会议简介明确 1996 Brown 博士';
+if(!p.includes(marker))throw Error('Person note has changed; review manually');
+const add=`- 学位年份待核：[本人 CV](${cv})列 1996 年 Brown 化学博士；[Brown 图书馆论文作者目录](${index})列 “Sun, Shouheng 1997”。目录年份的具体含义和是否对应同一学位的不同日期尚未核实，不据此改写博士年份。\n`;
+if(!p.includes('学位年份待核：'))p=p.replace(marker,add+marker);
+let t=fs.readFileSync(table,'utf8');const old='| Dwight A. Sweigart（博士课题组负责人） | Christopher B. Murray |';
+const neu='| Dwight A. Sweigart（博士课题组负责人；本人 CV 1996、Brown 论文目录 1997，年份含义待核） | Christopher B. Murray |';
+if(!t.includes(old)&&!t.includes(neu))throw Error('Brown table row has changed');
+t=t.replace(old,neu);
+fs.writeFileSync(note,p,'utf8');fs.writeFileSync(table,t,'utf8');
+fs.writeFileSync(path.join(__dirname,'人工-20261108-Sun年份.json'),JSON.stringify(audit,null,2)+'\n','utf8');
+console.log(JSON.stringify({id,audit:audit.audit_id,year_unchanged:true}));

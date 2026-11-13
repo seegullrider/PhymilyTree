@@ -1,0 +1,10 @@
+const fs=require('node:fs'),path=require('node:path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});
+const row=db.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get('722ae036');
+if(!row)throw Error('缺少 Campbell 台账');db.close();
+const a=JSON.parse(row.details_json),source='https://www.bu.edu/eng/academics/departments-and-divisions/materials-science-engineering/news-2/125608-2/materials-day-2024/';
+a.audit_id='20261108_722ae036_dashen_collaboration';
+a.aspects.postdoc={status:'group_or_candidate',note:'BU 人物史记 1972–1974 IAS 博后期间 worked with Roger Dashen，证明共同工作，不足以证明导师或研究指导；另有 1974–1977 Los Alamos Oppenheimer 博后。',sources:[source]};
+a.followup_required=true;a.next_step='追 Cambridge 博士论文，核实 IAS Dashen 是否有指导职责及 Los Alamos 博后经历。';
+fs.writeFileSync(path.join(__dirname,'人工-20261108-Campbell合作消歧.json'),JSON.stringify(a,null,2)+'\n');
+fs.writeFileSync(path.join(__dirname,'结构化-20261108-Campbell合作消歧.json'),JSON.stringify([{event_id:'20261108_722ae036_dashen_candidate',record_id:'722ae036',stage:'postdoc',mentor_filename:'师承人物 - Roger Dashen',kind:'candidate',source_audit_id:a.audit_id,evidence:a.aspects.postdoc.note,sources:[source]}],null,2)+'\n');

@@ -1,0 +1,14 @@
+const fs=require('node:fs'),path=require('node:path');
+const {DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});
+const old=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('12daaa82');
+if(!old)throw Error('缺少旧人工事件');
+const a=JSON.parse(old.details_json),person='https://physics.osu.edu/people/pelz.2',directory='https://physics.osu.edu/research/condensed-matter/condensed-matter-experiment';
+a.audit_id='20261108_pelz_graduation_year_conflict';
+a.aspects.identity={status:'confirmed',note:'Ohio State 本人页列 Berkeley 物理博士、物理系荣休教授；同系研究目录身份及研究相符。',sources:[person,directory]};
+a.aspects.affiliation={status:'confirmed',note:'Ohio State 物理系本人页列 Jonathan Pelz 为荣休教授。',sources:[person]};
+a.aspects.research={status:'confirmed',note:'物理系凝聚态实验目录列其扫描探针、界面和纳米尺度电子研究方向。',sources:[directory]};
+a.aspects.phd={status:'unresolved',note:'Ohio State 本人页列 Berkeley 1987 博士，同系凝聚态目录列 1988；两页均未列博士导师，学位年份和导师须核。',sources:[person,directory]};
+a.aspects.postdoc={status:'unresolved',note:'本轮未读取到可核实导师的原始博士后资料；旧 IBM Watson 经历仍须原文复核。',sources:[person]};
+a.followup_required=true;a.next_step='查 Berkeley 原始博士论文与学位名册，排查 1987／1988 年份冲突，再查 IBM 具体任职及导师。';
+fs.writeFileSync(path.join(__dirname,'人工核查-20261108-Pelz年份.json'),JSON.stringify(a,null,2)+'\n',{encoding:'utf8',flag:'wx'});db.close();

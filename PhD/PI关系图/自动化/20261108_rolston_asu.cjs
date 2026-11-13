@@ -1,0 +1,26 @@
+// 补录 ASU 校属记录；关系严格保留原始证据所支持的层级。
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
+const root=path.resolve(__dirname,'..'), changes=new Map();
+const id=crypto.createHash('sha256').update('20261108 Arizona State Nicholas Rolston').digest('hex').slice(0,8);
+const name='Nicholas Rolston',p=`人员 - Arizona State - ${name} - ${id}`,mc='人员 - Colorado Boulder - Michael D. McGehee - fb379487',da='师承人物 - Reinhold H. Dauskardt';
+const profile='https://search.asu.edu/profile/4008596',lab='https://rolston.lab.asu.edu/people/',asu='https://engineering.asu.edu/news/teamup-advances-solar-capabilities/',stanford='https://dauskardt.stanford.edu/people/nick-rolston',blocked='https://www.mdpi.com/news/18061';
+const manifestPath=path.join(root,'graph-manifest.json'),manifest=JSON.parse(fs.readFileSync(manifestPath,'utf8'));
+if(manifest.nodes.some(n=>n.id===id||/rolston/i.test(n.name)&&/nicholas|nick/i.test(n.name))) throw Error('可能已存在，先人工检查');
+function edit(rel,fn){const f=path.join(root,rel),old=changes.has(f)?changes.get(f):fs.readFileSync(f,'utf8');changes.set(f,fn(old))}
+function append(rel,line){edit(rel,s=>{if(s.includes(p))throw Error('已存在链接 '+rel);return s.trimEnd()+'\n'+line+'\n'})}
+const phd=`[ASU 2023 采访](${asu})中 Rolston 说 McGehee 博士期间“almost like a co-advisor”，并称经常和其学生合作；这支持非正式阶段研究师长，不等同已登记的正式共同导师。`;
+const candidate=`[Stanford Dauskardt 组人物页](${stanford})列 Nick Rolston 和相符的钙钛矿光伏研究；[ASU 本人页](${profile})列 Stanford 2020 应用物理博士及此领域研究。组页未标注具体阶段或正式导师；Reinhold H. Dauskardt 暂列博士导师候选，需核论文或本人完整原文。`;
+const file=path.join(root,'人物',p+'.md');if(fs.existsSync(file))throw Error('人物页已经存在');
+changes.set(file,`# ${name}\n\n> [!info] 校属与研究方向已核\n> ASU 电气、计算机与能源工程学院助理教授，研究薄膜钙钛矿光伏及固态材料。博士导师正式称谓和博士后师长待核。\n\n## 所在学校或机构\n\n- [[院校 - Arizona State|Arizona State]]。\n\n## 院系与研究方向核验（2026-11-08）\n\n- [[已核实单位 - Arizona State - 电气计算机与能源工程学院|电气、计算机与能源工程学院]]；材料科学、化学工程与物理是研究生指导教师资格，并非据此断言在这些院系有正式教职。[ASU 本人页](${profile})；[本人组页](${lab})还列化学研究生指导资格。\n- [[已核实方向 - 钙钛矿材料|钙钛矿材料]] · [[已核实方向 - 光伏材料|光伏材料]] · [[已核实方向 - 半导体薄膜|半导体薄膜]]；研究薄膜能源材料、光伏器件的机械及材料性质和固态物理。[ASU 本人页](${profile})\n\n## 师承\n\n- 博士阶段非正式研究师长：[[${mc}|Michael D. McGehee]]。${phd}\n- 博士导师候选：[[${da}|Reinhold H. Dauskardt]]。${candidate}\n- 博士后导师：待核。[ASU 本人页](${profile})记博士后研究一年，未给出导师或博士后单位。\n- 核查边界：ASU 记 Stanford 2020 应用物理博士。MDPI 本人采访的搜索索引提示 Dauskardt 为博士导师，但[原文](${blocked})本轮访问返回 HTTP 429，未读到原文；该搜索索引不作为确证。待限流结束后核对原采访和学位论文；不得仅凭课题组或搜索摘要升级。\n`);
+append('院校与机构/院校 - Arizona State.md',`- [[${p}|${name}]]`);
+append('已核实院系/已核实单位 - Arizona State - 电气计算机与能源工程学院.md',`- [[${p}|${name}]] — [ASU 本人页](${profile})。`);
+for(const t of ['钙钛矿材料','光伏材料','半导体薄膜'])append(`已核实方向/已核实方向 - ${t}.md`,`- [[${p}|${name} · Arizona State]] — [ASU 本人页](${profile})。`);
+edit('人物/'+mc+'.md',s=>{if(s.includes(p)||s.split('## 师承\n').length!==2)throw Error('McGehee 反链冲突');return s.replace('## 师承\n',`## 师承\n\n- 博士阶段非正式研究师长对应人物：[[${p}|${name}]]。${phd}\n`)});
+append('人物/'+da+'.md',`\n## 博士导师候选对应人物\n\n- [[${p}|${name}]]。${candidate}`);
+append('师承关系索引.md',`- [[${p}|${name}]] → 博士阶段非正式研究师长：[[${mc}|Michael D. McGehee]]。${phd}\n- [[${p}|${name}]] → 博士导师候选：[[${da}|Reinhold H. Dauskardt]]。${candidate}`);
+append('Arizona State逐人复核记录.md',`| [[${p}|${name}]] | 电气计算机与能源工程；薄膜钙钛矿、光伏及固态材料；材料、化工和物理为研究生指导资格 | Michael D. McGehee（非正式阶段研究师长）；Reinhold H. Dauskardt（候选；正式导师待原文） | 有一年博士后经历，单位和导师待核 | [ASU 本人页](${profile})；[ASU 采访](${asu})；[Stanford 组页](${stanford}) |`);
+manifest.nodes.push({id,filename:p,name,unit:'Arizona State',kind:'美国'});manifest.notes=manifest.nodes.length;manifest.units=new Set(manifest.nodes.map(n=>n.unit)).size;changes.set(manifestPath,JSON.stringify(manifest,null,2)+'\n');
+const audit={audit_id:`20261108_rolston_asu_${id}`,record_id:id,aspects:{identity:{status:'confirmed',note:'ASU 本人页和组页的姓名、研究、2020 Stanford 应用物理博士一致；Stanford Dauskardt 组的 Nick Rolston 页主题一致。',sources:[profile,lab,stanford]},affiliation:{status:'confirmed',note:'ASU 电气计算机与能源工程学院助理教授；其他所列单位为研究生指导教师资格。',sources:[profile,lab]},research:{status:'confirmed',note:'薄膜钙钛矿光伏、器件力学、半导体及固态材料物理。',sources:[profile]},phd:{status:'confirmed_advisor',note:'ASU 采访本人称 McGehee 博士时像共同导师，明确仅作非正式阶段研究师长；Dauskardt 为课题组线索及候选，正式导师需核；MDPI 搜索索引提示 Dauskardt，但原文 429 未读，不能确证。',sources:[asu,stanford,profile]},postdoc:{status:'unresolved',note:'ASU 本人页列一年博士后但未给单位和导师，继续核查。',sources:[profile]}},followup_required:true,next_step:'在主机退避结束后查 MDPI 本人采访原文和 Stanford 博士论文的正式导师字段；查博士后单位及导师。'};
+const events=[{event_id:`20261108_rolston_mcgehee_${id}`,record_id:id,stage:'phd',mentor_filename:mc,kind:'stage_mentor',source_audit_id:audit.audit_id,evidence:'本人在 ASU 采访称 McGehee 博士期间像共同导师，并与其组员频繁合作；不声称正式登记共同导师。',sources:[asu]},{event_id:`20261108_rolston_dauskardt_${id}`,record_id:id,stage:'phd',mentor_filename:da,kind:'candidate',source_audit_id:audit.audit_id,evidence:'Stanford Dauskardt 组列 Nick Rolston 和钙钛矿研究；ASU 同领域本人页列 Stanford 博士，组页未标具体阶段或正式指导。',sources:[stanford,profile]}];
+changes.set(path.join(__dirname,'人工-20261108-rolston.json'),JSON.stringify(audit,null,2)+'\n');changes.set(path.join(__dirname,'结构化-20261108-rolston.json'),JSON.stringify(events,null,2)+'\n');
+for(const [f,s] of changes)fs.writeFileSync(f,s,'utf8');console.log(JSON.stringify({id,filename:p,files:changes.size}));

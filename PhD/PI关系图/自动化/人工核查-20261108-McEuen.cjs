@@ -1,0 +1,16 @@
+const fs=require('node:fs');
+const path=require('node:path');
+const {DatabaseSync}=require('node:sqlite');
+const d=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});
+const old=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get('e235f5d3').details_json);
+d.close();
+const source='https://www.pnas.org/doi/10.1073/pnas.2005143117';
+old.audit_id='20261108_e235f5d3_pnas';
+old.aspects.phd={status:'group_or_candidate',note:'PNAS 人物采访称其 1985 年到 Yale 加入 Robert Wheeler，在 Wheeler 实验室完成研究生阶段研究；未明示论文正式 advisor。',sources:[source,'https://www.lassp.cornell.edu/people/paul-mceuen']};
+old.aspects.postdoc.note+=' PNAS 同样记 1990 年 MIT 博士后，但未命名指导者。';
+if(!old.aspects.postdoc.sources.includes(source))old.aspects.postdoc.sources.push(source);
+old.next_step='追查 Yale 博士学位论文正式 advisor 字段及 MIT 博士后研究指导者；Wheeler 目前仅确认博士阶段组负责人。';
+old.followup_required=true;
+fs.writeFileSync(path.join(__dirname,'人工核查-20261108-McEuen.json'),JSON.stringify(old,null,2));
+const relation=[{event_id:'20261108_e235f5d3_wheeler_group',record_id:'e235f5d3',stage:'phd',mentor_filename:'师承人物 - Robert G. Wheeler',kind:'group_leader',source_audit_id:old.audit_id,evidence:'PNAS 本人采访记其 1985 年在 Yale 加入 Wheeler，并称其研究生阶段在 Wheeler 实验室工作；正式论文 advisor 待核。',sources:[source]}];
+fs.writeFileSync(path.join(__dirname,'人工类型化-20261108-McEuen.json'),JSON.stringify(relation,null,2));

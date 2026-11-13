@@ -1,0 +1,13 @@
+const fs = require('node:fs');
+const path = require('node:path');
+const { DatabaseSync } = require('node:sqlite');
+const db = new DatabaseSync(path.join(__dirname,'检索队列.sqlite'));
+const row = db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('de10aa78');
+if (!row) throw Error('missing previous event');
+const event = JSON.parse(row.details_json);
+event.audit_id = '20261106_de10aa78_mit_thesis';
+event.aspects.phd = {status:'confirmed_advisor',note:'MIT 学位论文档案作者 Frank Yi Gao，Advisor(s) 明列 Keith A. Nelson；MIT 化学系年报亦列 Yi “Frank” Gao 于 Nelson Group 博士毕业生。',sources:['https://dspace.mit.edu/entities/publication/8f436674-5eb1-465b-aff0-2266a5c7191d','https://web.mit.edu/annualreports/pres21/2021.06.03.pdf']};
+event.followup_required = true;
+event.next_step = '查 UT Austin 博后 Baldini 等正式 advisor 或 sponsor 任命；此前 UT 项目报道仅确认 Baldini、Rubio 对具体项目的研究指导。';
+fs.writeFileSync(path.join(__dirname,'本轮核查-Frank-Gao-20261106.json'),JSON.stringify(event,null,2)+'\n');
+db.close();

@@ -1,0 +1,10 @@
+const fs=require('node:fs'),path=require('node:path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true}),id='6e38562a';
+const row=db.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id);if(!row)throw Error('缺少 Renkun Chen 人工事件');
+const a=JSON.parse(row.details_json),bio='https://par.nsf.gov/servlets/purl/10089723',lab='https://web.eng.ucsd.edu/mae/groups/chengrp/Chen_Group/people.html';
+a.audit_id='20261108_6e38562a_author_bio';a.aspects.phd={status:'confirmed_advisor',note:'本人合著综述的作者简介列 Berkeley 2008 博士，并称博士与博后研究 advised by Arun Majumdar；本人组页核对 2004–2008 博士。原论文签名可进一步核查。',sources:[bio,lab]};
+a.aspects.postdoc={status:'confirmed_advisor',note:'本人合著综述称在 Majumdar 指导下开展博士及博后研究；本人组页列 LBNL 博后与其工作。博士后正式 advisor 职衔未单列，按阶段研究师长标注。',sources:[bio,lab]};
+a.next_step='核查博士论文签名和博士后正式职衔；Peidong Yang 仅记合作不推定指导。';a.followup_required=true;
+fs.writeFileSync(path.join(__dirname,'人工-20261108-RenkunChen.json'),JSON.stringify(a,null,2)+'\n');
+const rel=[['phd','advisor','本人作者简介写研究 advised by Majumdar，含 2004–2008 Berkeley 博士。'],['postdoc','stage_mentor','本人作者简介写博士及博士后研究 advised by Majumdar，本人组页证 LBNL 博后；博士后正式职衔未单列。']].map(([stage,kind,evidence])=>({event_id:`20261108_6e38562a_author_bio_${stage}`,record_id:id,stage,mentor_filename:'师承人物 - Arun Majumdar',kind,source_audit_id:a.audit_id,evidence,sources:[bio,lab]}));
+fs.writeFileSync(path.join(__dirname,'结构化-20261108-RenkunChen.json'),JSON.stringify(rel,null,2)+'\n');db.close();

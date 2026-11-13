@@ -1,0 +1,10 @@
+const {DatabaseSync}=require('node:sqlite');
+const d=new DatabaseSync('检索队列.sqlite');
+const id='5e02f271',u='https://www.chem.tamu.edu/rgroup/sheldon/Sheldon_full_CV_05132022.pdf';
+const a=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id).details_json);
+a.audit_id='20261109_5e02f271_cv';
+a.aspects.phd={status:'confirmed_advisor',note:'本人 2022 CV 列 Berkeley 化学 PhD 2010-05-15、Ph.D. Adviser Paul Alivisatos。',sources:[u]};
+a.next_step='核 Caltech 博后正式 advisor 和 CV 与组页年份冲突；与 UCI 同名记录核对是否同人。';
+a.followup_required=true;
+d.prepare('insert or ignore into manual_audit_events(audit_id,record_id,recorded_at,details_json) values(?,?,?,?)').run(a.audit_id,id,new Date().toISOString(),JSON.stringify(a));
+d.close();

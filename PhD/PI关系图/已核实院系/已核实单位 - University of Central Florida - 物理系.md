@@ -1,0 +1,22 @@
+# University of Central Florida：物理系
+
+[[院校 - University of Central Florida|返回学校]]
+- [[人员 - University of Central Florida - Han Zhao - 96a07f96|Han Zhao]] — [现任院系原档](https://sciences.ucf.edu/physics/person/han-zhao/)
+- [[人员 - University of Central Florida - Daniel Kaplan - 16553715|Daniel Kaplan]] — [现任院系原档](https://sciences.ucf.edu/physics/person/daniel-kaplan/)
+- [[人员 - University of Central Florida - Madhab Neupane - 266ef622|Madhab Neupane]] — [现任院系原档](https://sciences.ucf.edu/physics/person/madhab-neupane/)
+- [[人员 - University of Central Florida - Masahiro Ishigami - 17bee7fb|Masahiro Ishigami]] — [现任院系原档](https://nanoscience.ucf.edu/person/masahiro-ishigami/)
+- [[人员 - University of Central Florida - Paulo Eduardo de Faria Junior - cc287106|Paulo Eduardo de Faria Junior]] — [现任院系原档](https://www.cecs.ucf.edu/faculty/paulo-eduardo-de-faria-jr/)
+- [[人员 - University of Central Florida - Enrique del Barco - a55a74d0|Enrique del Barco]] — [现任院系原档](https://stem.ucf.edu/people/del-barco-enrique/)
+- [[人员 - University of Central Florida - Yasuyuki Nakajima - e8038533|Yasuyuki Nakajima]] — [现任院系原档](https://sciences.ucf.edu/physics/person/yasuyuki-nakajima/)
+- [[人员 - University of Central Florida - Christian Heide - 529e2eba|Christian Heide]] — [现任院系原档](https://creol.ucf.edu/person/Christian-Heide/)
+- [[人员 - University of Central Florida - Saiful I. Khondaker - 1960c714|Saiful I. Khondaker]] — [现任院系原档](https://nanoscience.ucf.edu/khondaker/)
+- [[人员 - University of Central Florida - Wayesh Qarony - 1c316e09|Wayesh Qarony]] — [现任院系原档](https://www.ece.ucf.edu/person/wayesh-qarony/)
+- [[人员 - University of Central Florida - Mihai Vaida - d7717e59|Mihai Vaida]] — [现任院系原档](https://sciences.ucf.edu/physics/person/mihai-vaida/)
+- [[人员 - University of Central Florida - Laurene Tetard - 284bf020|Laurene Tetard]] — [现任院系原档](https://sciences.ucf.edu/physics/person/laurene-tetard/)
+- [[人员 - University of Central Florida - Richard A. Klemm - 8c985786|Richard A. Klemm]] — [现任院系原档](https://sciences.ucf.edu/physics/person/richard-klemm/)
+- [[人员 - University of Central Florida - William Kaden - 45466ea0|William Kaden]] — [现任院系原档](https://sciences.ucf.edu/physics/person/william-kaden/)
+- [[人员 - University of Central Florida - Jing Xu - 0e911c9f|Jing Xu]] — [现任院系原档](https://sciences.ucf.edu/physics/person/jing-xu/)
+- [[人员 - University of Central Florida - Xiaofeng Feng - 5de6a638|Xiaofeng Feng]] — [现任院系原档](https://sciences.ucf.edu/physics/fenglab/people/)
+- [[人员 - University of Central Florida - Eduardo Mucciolo - 9df49851|Eduardo Mucciolo]] — [现任院系原档](https://sciences.ucf.edu/physics/person/eduardo-mucciolo/)
+- [[人员 - University of Central Florida - Michael N. Leuenberger - e945babb|Michael N. Leuenberger]] — [现任院系原档](https://nanoscience.ucf.edu/person/michael-n-leuenberger/)
+- [[人员 - University of Central Florida - Leonid Chernyak - c0047fcf|Leonid Chernyak]] — [现任院系原档](https://sciences.ucf.edu/physics/person/leonid-chernyak/)

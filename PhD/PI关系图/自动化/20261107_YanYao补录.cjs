@@ -1,0 +1,23 @@
+const fs=require('fs'),path=require('path');
+const root=path.resolve(__dirname,'..'),id='7d58c9d8',p='人员 - University of Houston - Yan Yao - '+id;
+const unit='已核实单位 - University of Houston - 电气与计算机工程系',yang='师承人物 - Yang Yang',cui='师承人物 - Yi Cui',dir='已核实方向 - 电化学储能';
+const uh='https://www.ee.uh.edu/faculty/yao-yan',center='https://pemsec.ece.uh.edu/yan-yao/',paper='https://nuengr.unl.edu/academicunits/mechanical-materials/research/labs-facilities/OrganicElectronics-Nanoelectronics/Articles/Previous%20Articles/P18%20Manipulating%20regioregular%20poly.pdf';
+const read=f=>fs.readFileSync(path.join(root,f),'utf8'),write=(f,v)=>fs.writeFileSync(path.join(root,f),v,'utf8');
+const m=JSON.parse(read('graph-manifest.json'));
+if(m.nodes.some(n=>n.id===id||(n.unit==='University of Houston'&&n.name==='Yan Yao')))throw Error('人物或 id 已存在');
+const target='人物/'+p+'.md';if(fs.existsSync(path.join(root,target)))throw Error('目标已存在');
+const expected=['人物/'+yang+'.md','人物/'+cui+'.md','已核实院系/'+unit+'.md','已核实方向/'+dir+'.md','院校与机构/院校 - University of Houston.md','University of Houston逐人复核记录.md','师承关系索引.md'];
+for(const f of expected)if(!fs.existsSync(path.join(root,f)))throw Error('缺少 '+f);
+const table=read('University of Houston逐人复核记录.md'),mark='\n## 待逐院系调查';if(!table.includes(mark))throw Error('学校表锚点缺失');
+function add(f,line){const s=read(f),marker='<!-- PI-AUTO-SEARCH:START -->';if(s.includes(line))return;write(f,s.includes(marker)?s.replace(marker,line+'\n\n'+marker):s.trimEnd()+'\n'+line+'\n')}
+write(target,`# Yan Yao\n\n> [!info] 物理相邻方向补录\n> University of Houston 电气与计算机工程教授，主要研究能源储存材料及电池，属材料物理相邻方向；招生与具体项目须另核。\n\n## 学校、院系与方向\n\n- [[院校 - University of Houston|University of Houston]] · [[${unit}|电气与计算机工程系]]。[学校本人页](${uh})列 2020 年起教授，2012 年起任教。\n- [[${dir}|电化学储能]]。[院系介绍](${uh})列先进能源材料及器件、镁钠电池、有机电池和固态电解质；[学校研究中心](${center})列固态及多价离子电池。\n\n## 师承\n\n- 博士阶段研究导师：[[${yang}|Yang Yang]]。[2007 年合著论文作者简介](${paper})明确 Yan Yao 为 UCLA 材料科学与工程博士研究生并在 Yang Yang 指导下研究；[Houston 履历](${uh})列 2008 年 UCLA 博士。研究指导明确，学位论文正式签署角色仍待原论文。\n- 博士后阶段研究师长：[[${cui}|Yi Cui]]。[Houston 学校中心本人简介](${center})称 Stanford 博士后 with Yi Cui，[院系页](${uh})列博士后时间为 2010–2012；暂记阶段研究师长，未推断正式 advisor 职衔。2008–2010 工业任职不混为博士后。\n\n## 后续核查\n\n- 获取 UCLA 学位论文验证正式签字导师；查 Stanford 博后正式导师及现阶段招生信息。\n`);
+add('人物/'+yang+'.md',`- 博士阶段研究生：[[${p}|Yan Yao]]。[2007 年论文作者简介](${paper})直接称其 UCLA 博士研究 under the supervision of Yang Yang；[Houston 本人页](${uh})列 2008 年 UCLA 博士。`);
+add('人物/'+cui+'.md',`- 博士后阶段研究者：[[${p}|Yan Yao]]。[Houston 学校中心本人简介](${center})称 Stanford 博士后 with Yi Cui；正式 advisor 职衔待核。`);
+add('已核实院系/'+unit+'.md',`- [[${p}|Yan Yao]] — [Houston ECE 院系页](${uh})。`);
+add('已核实方向/'+dir+'.md',`- [[${p}|Yan Yao · University of Houston]] — [Houston ECE 院系页](${uh})。`);
+add('院校与机构/院校 - University of Houston.md',`- [[${p}|Yan Yao]]`);
+write('University of Houston逐人复核记录.md',table.replace(mark,`\n| [[${p}|Yan Yao]] | ECE；电化学储能、功能材料、固态及多价离子电池（相邻方向） | Yang Yang（博士研究指导；学位签字待核） | Yi Cui（博士后阶段研究师长；正式称谓待核） | [院系](${uh}) · [2007 作者简介](${paper}) · [学校中心](${center}) |\n`+mark));
+add('师承关系索引.md',`- [[${p}|Yan Yao]] → 博士阶段研究导师 [[${yang}|Yang Yang]]（[2007 本人论文作者简介](${paper})明确博士研究指导）；博士后阶段研究师长 [[${cui}|Yi Cui]]（[学校中心](${center})列 Stanford 博后 with Cui，正式职衔待核）。`);
+m.nodes.push({id,filename:p,name:'Yan Yao',unit:'University of Houston',kind:'美国'});m.notes=m.nodes.length;m.units=new Set(m.nodes.map(x=>x.unit)).size;write('graph-manifest.json',JSON.stringify(m,null,2)+'\n');
+const ev={audit_id:'20261107_7d58c9d8_houston',record_id:id,aspects:{identity:{status:'confirmed',note:'Houston ECE 本人页的 UCLA 2008 博士、复旦本科及硕士与 2007 UCLA Yan Yao 作者简介相符，方向和时间一致。',sources:[uh,paper]},affiliation:{status:'confirmed',note:'Houston 电气与计算机工程系教授。',sources:[uh]},research:{status:'confirmed',note:'先进能源材料及器件、镁钠电池、固态电解质与电化学储能，为物理相邻材料方向。',sources:[uh,center]},phd:{status:'confirmed_advisor',note:'2007 合著论文作者简介称 UCLA 博士研究 under the supervision of Professor Yang Yang；2008 UCLA 博士由 Houston 院系确认。记明确博士研究指导，论文正式签字角色仍待核。',sources:[paper,uh]},postdoc:{status:'group_or_candidate',note:'Houston 学校中心称 Stanford 博士后 with Yi Cui，院系列 2010–2012；记阶段研究师长，原文未标正式 advisor。',sources:[center,uh]}},followup_required:true,next_step:'查 UCLA 博士论文正式签字角色、Stanford 博后正式指导及当前招生；区分同名。'};
+write('自动化/本轮核查-YanYao-20261107.json',JSON.stringify(ev,null,2)+'\n');console.log('Houston Yan Yao 补录及核查事件已准备');

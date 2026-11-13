@@ -1,0 +1,10 @@
+const fs=require('fs'),path=require('path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'));
+const row=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('2e1c4bad');
+if(!row) throw Error('缺少人工台账');
+const ev=JSON.parse(row.details_json);
+ev.audit_id='20261106_rana_mit_group_2e1c4bad';
+ev.aspects.phd={status:'group_or_candidate',note:'MIT Rajeev Ram 课题组人员页列 Farhan Rana，组新闻称其 alumnus；Cornell 本人资料确认 2003 年 MIT 博士。组合证据支持博士阶段组属，正式导师仍待学位论文。',sources:['https://sclaser.mit.edu/team/farhan-rana/','https://sclaser.mit.edu/news/','https://www.duffield.cornell.edu/people/farhan-rana/']};
+ev.followup_required=true;
+ev.next_step='查 Rana 的 MIT 博士论文签署页以核定 Ram 正式导师职衔；核实 2003 年就职前是否存在独立博士后经历，IBM 是博士前工作。';
+fs.writeFileSync(path.join(__dirname,'本轮核查-Farhan-Rana-20261106.json'),JSON.stringify(ev,null,2)+'\n','utf8');

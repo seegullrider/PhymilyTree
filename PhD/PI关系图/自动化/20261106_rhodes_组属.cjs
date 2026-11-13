@@ -1,0 +1,13 @@
+const fs = require('node:fs');
+const path = require('node:path');
+const { DatabaseSync } = require('node:sqlite');
+const db = new DatabaseSync(path.join(__dirname,'检索队列.sqlite'));
+const row = db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('b58e0021');
+if (!row) throw Error('missing prior event');
+const event = JSON.parse(row.details_json);
+event.audit_id = '20261106_b58e0021_hone_alumni';
+event.aspects.postdoc = {status:'group_or_candidate',note:'Hone 组校友名单列 Daniel Rhodes 2017–2019 年博士后并链接至 Wisconsin 材料系；Columbia 新闻称 2016 年起 MRSEC 博士后，起始时间不同可能反映机构与组属阶段；Hone 组属可信，正式博士后导师待核；Cory Dean 保留候选。',sources:['https://hone.me.columbia.edu/people/alumni','https://fileserver-az.core.ac.uk/download/161515343.pdf','https://quantum.columbia.edu/news/superconductivity-and-ferroelectricity-found-same-2d-material']};
+event.followup_required = true;
+event.next_step = '寻找可直接读取的本人 CV 或 FSU 博士论文核实 Balicas；查 Columbia 任命或本人资料核实 Hone、Dean 的正式博士后导师称谓。';
+fs.writeFileSync(path.join(__dirname,'本轮核查-Daniel-Rhodes-20261106.json'),JSON.stringify(event,null,2)+'\n');
+db.close();

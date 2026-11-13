@@ -1,0 +1,32 @@
+# UT Austin：物理系
+
+[[院校 - UT Austin|返回学校]]
+
+仅收录已按人物资料核实的记录，不表示单位已查全。
+- [[人员 - UT Austin - Alejandro De Lozanne - 76616dbe|Alejandro De Lozanne]] — [来源](https://physics.utexas.edu/directory/alejandro-de-lozanne)
+- [[人员 - UT Austin - Alexander Demkov - a6108103|Alexander Demkov]] — [来源](https://www.ices.utexas.edu/people/117/)
+- [[人员 - UT Austin - Alexander Demkov — 实验室机会补充 - 95236df3|Alexander Demkov — 实验室机会补充]] — [来源](https://sites.utexas.edu/aadg/people/)
+- [[人员 - UT Austin - Allan MacDonald - 74846826|Allan MacDonald]] — [来源](https://physics.utexas.edu/directory/allan-macdonald)
+- [[人员 - UT Austin - Andreas Karch - 0255cdef|Andreas Karch]] — [来源](https://physics.utexas.edu/directory/andreas-karch)
+- [[人员 - UT Austin - Antonios Alvertis - eea56a11|Antonios Alvertis]] — [来源](https://physics.utexas.edu/directory/antonios-alvertis)
+- [[人员 - UT Austin - Chih-Kang (Ken) Shih - c015ff74|Chih-Kang (Ken) Shih]] — [来源](https://web2.ph.utexas.edu/~ritchie/dept/extrev/Physics-Self-study-Appendices-Oct-17.pdf)
+- [[人员 - UT Austin - Edoardo Baldini - 983b2982|Edoardo Baldini]] — [来源](https://physics.utexas.edu/directory/edoardo-baldini)
+- [[人员 - UT Austin - Feliciano Giustino - e84e72be|Feliciano Giustino]] — [来源](https://physics.utexas.edu/directory/feliciano-giustino)
+- [[人员 - UT Austin - Gregory Fiete — 旧校网页可能过时 - 64a71646|Gregory Fiete — 旧校网页可能过时]] — [来源](https://cos.northeastern.edu/people/gregory-fiete/)
+- [[人员 - UT Austin - Harry L. Swinney — 已故 - dd2c3e65|Harry L. Swinney — 已故]] — [来源](https://www.utphysicshistory.net/HarrySwinney.html)
+- [[人员 - UT Austin - James Chelikowsky - ef622c13|James Chelikowsky]] — [来源](https://oden.utexas.edu/news-and-events/news/james-chelikowsky-retirement/)
+- [[人员 - UT Austin - Jia (Leo) Li - 9a73b54f|Jia (Leo) Li]] — [来源](https://physics.utexas.edu/directory/jia-li)
+- [[人员 - UT Austin - John Markert - 7a25163d|John Markert]] — [来源](https://physics.utexas.edu/directory/john-markert)
+- [[人员 - UT Austin - José Alvarado - 9522000b|José Alvarado]] — [来源](https://mrsec.utexas.edu/profiles/jose-alvarado)
+- [[人员 - UT Austin - Junyeong Ahn - 11b84b60|Junyeong Ahn]] — [来源](https://physics.utexas.edu/directory/junyeong-ahn)
+- [[人员 - UT Austin - Keji Lai - ac3ccc7b|Keji Lai]] — [来源](https://web2.ph.utexas.edu/~lailab/group.html)
+- [[人员 - UT Austin - Linda Reichl - b144b06e|Linda Reichl]] — [来源](https://physics.utexas.edu/directory/linda-reichl)
+- [[人员 - UT Austin - Matteo Ippoliti - 18cfecbf|Matteo Ippoliti]] — [来源](https://matteoippoliti.com/index.php/cv/)
+- [[人员 - UT Austin - Maxim Tsoi - d1151109|Maxim Tsoi]] — [来源](https://web2.ph.utexas.edu/~ritchie/05_CV.pdf)
+- [[人员 - UT Austin - Michael Downer - 526a7173|Michael Downer]] — [来源](https://web2.ph.utexas.edu/~ritchie/dept/extrev/Physics-Self-study-Appendices-Oct-17.pdf)
+- [[人员 - UT Austin - Michael Marder - 27692593|Michael Marder]] — [来源](https://oden.utexas.edu/people/directory/Michael-Marder/)
+- [[人员 - UT Austin - Mit Naik - b2a1e4d4|Mit Naik]] — [来源](https://physics.berkeley.edu/node/2498)
+- [[人员 - UT Austin - Nick Hunter-Jones - b70698ca|Nick Hunter-Jones]] — [来源](https://physics.utexas.edu/directory/nick-hunter-jones)
+- [[人员 - UT Austin - Qian Niu — 旧名单现职需更新 - 59f852de|Qian Niu — 旧名单现职需更新]] — [来源](https://faculty.ustc.edu.cn/niuqian/en/index.htm)
+- [[人员 - UT Austin - Xiaoqin (Elaine) Li - c94ec62f|Xiaoqin (Elaine) Li]] — [来源](https://physics.utexas.edu/directory/xiaoqin-elaine-li)
+- [[人员 - UT Austin - Zhen Yao - 6b008803|Zhen Yao]] — [来源](https://physics.utexas.edu/directory/zhen-yao)

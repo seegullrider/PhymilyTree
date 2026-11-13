@@ -1,0 +1,13 @@
+const {DatabaseSync}=require('node:sqlite');
+const crypto=require('node:crypto');
+const d=new DatabaseSync('检索队列.sqlite');
+const id='7b871494',u='https://cpb-us-e2.wpmucdn.com/sites.uci.edu/dist/e/1492/files/2021/01/Academic-Senate-2020-21-Distinguished-Faculty-Awards-Event-Program.pdf';
+const a=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id).details_json);
+a.audit_id='20261109_7b871494_uci';
+a.aspects.phd={status:'confirmed_advisor',note:'UCI 颁奖资料的本人叙述明确称 Cornell 博士导师 David Muller。',sources:[u]};
+a.next_step='核 LBNL 博后 Haimei Zheng 的正式 advisor 职衔。';
+a.followup_required=true;
+d.prepare('insert or ignore into manual_audit_events(audit_id,record_id,recorded_at,details_json) values(?,?,?,?)').run(a.audit_id,id,new Date().toISOString(),JSON.stringify(a));
+const id2='04b39af4',url='https://www.physics.uci.edu/~xia/X-lab/PI_files/CV_Xia_2023%20web.pdf';
+if(!d.prepare('select id from pages where record_id=? and url=?').get(id2,url))d.prepare('insert into pages(id,record_id,job_id,url,state,attempts,error,retrieved) values(?,?,?,?,?,?,?,?)').run(crypto.createHash('sha256').update(id2+url).digest('hex').slice(0,24),id2,id2+':training',url,'retry',1,'(404) Not Found，未取得原文',new Date().toISOString());
+d.close();

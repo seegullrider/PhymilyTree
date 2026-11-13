@@ -1,0 +1,11 @@
+const fs=require('fs'),path=require('path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'));
+const row=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('04b39af4');
+if(!row) throw Error('缺少人工台账');
+const ev=JSON.parse(row.details_json);
+ev.audit_id='20261106_xia_direct_both_advisors_04b39af4';
+ev.aspects.phd={status:'confirmed_advisor',note:'本人实验室新主页 Academic Background 明确列 2003–2008 Stanford Ph.D. Physics, Advisor: Aharon Kapitulnik；Stanford 组校友页亦列其 2008 博士生。',sources:['https://www.physics.uci.edu/~xia/','https://kapitulnik.stanford.edu/people']};
+ev.aspects.postdoc={status:'confirmed_advisor',note:'本人实验室新主页明确列 2008–2011 Caltech Postdoc, Advisor: James P. Eisenstein；Eisenstein 的 CV 亦列其博士后经历。',sources:['https://www.physics.uci.edu/~xia/','https://www.its.caltech.edu/~je/cv_jan19.pdf']};
+ev.followup_required=false;
+ev.next_step='两阶段导师、研究方向与院系已有直接来源；新信息出现时增量复核。';
+fs.writeFileSync(path.join(__dirname,'本轮核查-Jing-Xia-20261106.json'),JSON.stringify(ev,null,2)+'\n','utf8');

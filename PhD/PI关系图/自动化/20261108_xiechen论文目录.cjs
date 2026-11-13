@@ -1,0 +1,17 @@
+const fs=require('node:fs'),path=require('node:path'),{DatabaseSync}=require('node:sqlite');
+const root=path.resolve(__dirname,'..');
+const p='人员 - Caltech - Xie Chen - 86f39155', w='人员 - MIT - Xiao-Gang Wen - 6130f1b4', c='人员 - MIT - Isaac Chuang - 8a80431d', a='人员 - Harvard - Ashvin Vishwanath - 49dc4464';
+const thesis='https://dspace.mit.edu/entities/publication/ac9c06a9-56e1-46ca-abc4-cbe926440ec9', self='https://breakthroughprize.org/Laureates/1/L3852', cv='https://xiechen.caltech.edu/infocv';
+const ev=`[MIT 2012 博士论文目录](${thesis})的 Advisor(s) 明列 Isaac L. Chuang 和 Xiao-Gang Wen；[本人获奖感言](${self})称两人为 MIT 博士阶段 mentors。论文 PDF 下载本轮遇到验证页，未读取签字页。`;
+const files=new Map();
+function edit(rel,fn){const q=path.join(root,rel),x=files.has(q)?files.get(q):fs.readFileSync(q,'utf8');files.set(q,fn(x));}
+function line(x,needle,replacement){let lines=x.split('\n');const ix=lines.map((v,i)=>v.includes(needle)?i:-1).filter(i=>i>=0);if(ix.length!==1)throw Error(`${needle}: ${ix.length}`);lines[ix[0]]=replacement;return lines.join('\n');}
+edit('人物/'+p+'.md',x=>{x=line(x,'- 博士研究师长：[['+w,`- 博士导师：[[${w}|Xiao-Gang Wen]]。${ev}`);x=line(x,'- 博士研究师长：[['+c,`- 博士导师：[[${c}|Isaac Chuang]]。${ev}`);return line(x,'- 核查边界：','- 核查边界：MIT 学位目录将 Wen 与 Chuang 同列 Advisor(s)，本人亦称二人为博士阶段 mentors；PDF 签字页待核。Vishwanath 为本人明确的 Berkeley 博士后阶段研究师长，正式 advisor 称谓待核。');});
+for(const [f,n] of [[w,'Wen'],[c,'Chuang']])edit('人物/'+f+'.md',x=>line(x,'- 博士阶段研究者：[['+p,`- 博士生：[[${p}|Xie Chen]]。${ev}`));
+edit('师承关系索引.md',x=>{for(const [f,n] of [[w,'Xiao-Gang Wen'],[c,'Isaac Chuang']])x=line(x,`[[${p}|Xie Chen]] → 博士研究师长：[[${f}`,`- [[${p}|Xie Chen]] → 博士导师：[[${f}|${n}]]。${ev}`);return x;});
+edit('Caltech逐人复核记录.md',x=>line(x,`| [[${p}|Xie Chen]]`, `| [[${p}|Xie Chen]] | 物理系；理论凝聚态、拓扑序、量子信息 | Xiao-Gang Wen、Isaac Chuang（博士导师；MIT 目录列 Advisor(s)） | Ashvin Vishwanath（博士后阶段研究师长；正式称谓待核） | [MIT 论文目录](${thesis})；[本人感言](${self})；[Caltech 简历](${cv}) |`));
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});const row=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('86f39155');db.close();if(!row)throw Error('missing event');
+const audit=JSON.parse(row.details_json);audit.audit_id='20261108_xiechen_mit_thesis_catalog';audit.aspects.phd={status:'confirmed_advisor',note:'MIT 2012 博士论文目录 Advisor(s) 明列 Isaac L. Chuang 和 Xiao-Gang Wen；本人获奖感言称二人为博士阶段 mentors。论文下载被验证页拦截，未读取签字页。',sources:[thesis,self]};audit.followup_required=true;audit.next_step='继续查 MIT 论文签字页及 Berkeley 博士后正式指导称谓；已确认博士师承不重复登记为新发现的人物。';
+const entries=[[w,'wen'],[c,'chuang']].map(([mentor_filename,n])=>({event_id:`20261108_xiechen_phd_${n}`,record_id:'86f39155',stage:'phd',mentor_filename,kind:'advisor',source_audit_id:audit.audit_id,evidence:'MIT 博士论文目录 Advisor(s) 明列两位；本人获奖感言亦称博士阶段 mentors。论文签字页本轮未读。',sources:[thesis,self]}));
+entries.push({event_id:'20261108_xiechen_postdoc_vishwanath',record_id:'86f39155',stage:'postdoc',mentor_filename:a,kind:'stage_mentor',source_audit_id:audit.audit_id,evidence:'本人获奖感言将 Vishwanath 称为 Berkeley 博士后阶段 mentor；未明正式 advisor 称谓。',sources:[self,cv]});
+files.set(path.join(__dirname,'人工-20261108-xiechen.json'),JSON.stringify(audit,null,2)+'\n');files.set(path.join(__dirname,'结构化-20261108-xiechen.json'),JSON.stringify(entries,null,2)+'\n');for(const [f,x] of files)fs.writeFileSync(f,x,'utf8');console.log('prepared',files.size);

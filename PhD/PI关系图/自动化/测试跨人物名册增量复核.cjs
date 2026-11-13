@@ -1,0 +1,21 @@
+// 临时 SQLite 验证幂等、无新观察时拒绝刷新、新观察复核保留历史。
+const assert=require('node:assert/strict'),fs=require('node:fs'),os=require('node:os'),path=require('node:path');
+const {DatabaseSync}=require('node:sqlite'),{spawnSync}=require('node:child_process');
+const dir=fs.mkdtempSync(path.join(os.tmpdir(),'pi-cross-list-'));
+const file=path.join(dir,'test.sqlite'),input=path.join(dir,'input.json');
+const db=new DatabaseSync(file);
+db.exec(`CREATE TABLE records(id TEXT PRIMARY KEY); INSERT INTO records VALUES('test0001');
+ CREATE TABLE pages(id TEXT PRIMARY KEY,url TEXT NOT NULL); INSERT INTO pages VALUES('page1','https://example.org/list');
+ CREATE TABLE page_observations(page_id TEXT,retrieved TEXT); INSERT INTO page_observations VALUES('page1','2001-01-01T00:00:00.000Z');`);
+const base={record_id:'test0001',url:'https://example.org/list',stage:'postdoc',reason:'原始名册仅写博士后组属，未证明正式导师身份，后续需继续核实。'};
+const run=x=>{fs.writeFileSync(input,JSON.stringify([x]));return spawnSync(process.execPath,[path.join(__dirname,'跨人物名单线索复核.cjs'),input],{encoding:'utf8',env:{...process.env,PI_AUTOMATION_DB:file}})};
+let r=run(base);assert.equal(r.status,0,r.stderr);assert.equal(JSON.parse(r.stdout).inserted,1);
+r=run(base);assert.equal(r.status,0,r.stderr);assert.equal(JSON.parse(r.stdout).reused,1);
+r=run({...base,refresh:true});assert.notEqual(r.status,0);
+const old=db.prepare('SELECT reviewed_at FROM cross_list_reviews').get().reviewed_at;
+while(new Date().toISOString()<=old){};
+db.prepare('INSERT INTO page_observations VALUES(?,?)').run('page1',new Date().toISOString());
+r=run({...base,refresh:true,reason:'重新核读后名册仍仅支持课题组归属；个人指导职衔和实际任期继续核实。'});
+assert.equal(r.status,0,r.stderr);assert.equal(JSON.parse(r.stdout).refreshed,1);
+assert.equal(db.prepare('SELECT count(*) n FROM cross_list_review_history').get().n,1);
+db.close();console.log(JSON.stringify({passed:true,checks:['首次登记','重复幂等','无新观察拒绝刷新','新观察刷新并保留历史']}));

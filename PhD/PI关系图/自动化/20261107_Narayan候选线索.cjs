@@ -1,0 +1,22 @@
+const fs = require('fs');
+const path = require('path');
+const {DatabaseSync} = require('node:sqlite');
+const root = path.resolve(__dirname, '..');
+const p = '人员 - UC Santa Cruz - Onuttom Narayan - ebfe7a89';
+const m = '师承人物 - Daniel S. Fisher';
+const cv = 'https://cap.stanford.edu/profiles/viewCV?facultyId=8594&name=Daniel_Fisher';
+const aps = 'https://link.aps.org/pdf/10.1103/PhysRevB.49.244';
+const harvard = 'https://socfell.fas.harvard.edu/past-junior-fellows-physics-applied-physics-engineering';
+function change(f, fn) { const q=path.join(root,f), a=fs.readFileSync(q,'utf8'), b=fn(a); if(a===b)throw Error('未发生预期替换：'+f);fs.writeFileSync(q,b,'utf8'); }
+const detail = `- 低可信博士及博士后师承追查候选：[[${m}|Daniel S. Fisher]]。[Fisher 本人 Stanford CV](${cv})列其 1987–1990 Princeton 教授、1990–2007 Harvard 教授，以及双方从 1990 年起的多篇合著；[Harvard 名录](${harvard})列 Narayan 1992–1995 Junior Fellow。同期任职和合著只能说明潜在联系，不能证明任何阶段的指导或组属，需 Princeton 学位论文及 Harvard 博后资料确认。`;
+change('人物/'+p+'.md',t=>t.replace('## 师承\n','## 师承\n\n'+detail+'\n').replace('- 核查边界：本人主页检索线索称 Princeton 1992 博士，1992—1995 在 Harvard 与 Bell Labs；原主页本次返回 502，具体年份、各阶段性质及导师仍需核实。Daniel S. Fisher 的同期合著是追查线索，不能单独确认为导师。https://narayan.sites.ucsc.edu/','- 阶段履历补核：[1993 年作者论文]('+aps+')将 Narayan 同时署名于 Harvard 和 AT&T Bell Laboratories，致谢注明 Harvard Junior Fellowship；只能确认当时论文署名机构，不能确定 Bell Labs 职称、任职起止或导师。本人主页仍处访问退避，博士年份和各阶段正式身份继续核对。'));
+change('人物/'+m+'.md',t=>t.replace('## 师承\n','## 师承\n\n- 待核候选线索：[['+p+'|Onuttom Narayan]]。两人在 Princeton／Harvard 时期合著，[Fisher 本人 CV]('+cv+')列合作论文及任职；合著不证明博士或博士后指导。\n'));
+change('UC Santa Cruz逐人复核记录.md',t=>t.replace('| 待核（Princeton 博士） | 待核（1995 Harvard Junior Fellow，阶段性质待核） |','| Daniel S. Fisher（同期合著追查候选，未证指导） | Daniel S. Fisher（同期合著追查候选，未证指导）；1992–1995 Harvard Junior Fellow；1993 署名 Bell Labs |'));
+change('师承关系索引.md',t=>t.replace('# 师承关系与候选线索索引\n','# 师承关系与候选线索索引\n\n- [['+p+'|Onuttom Narayan]] → 博士及博士后追查候选：[['+m+'|Daniel S. Fisher]]。[Fisher 本人 CV]('+cv+')列两人在 1990 年起合著及 Fisher 的 Princeton、Harvard 任职；仅候选，合著不证明指导。'));
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});
+const ev=JSON.parse(db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('ebfe7a89').details_json);db.close();
+ev.audit_id='20261107_ebfe7a89_fisher_candidate';
+ev.aspects.phd={status:'group_or_candidate',note:'Fisher Stanford CV 列其 1987–1990 Princeton 教授并列 1990 年与 Narayan 合著；同期合作仅为低可信导师候选，未见具体指导证据。',sources:[cv,'https://news.ucsc.edu/1995/04/sloan-foundation-recognizes-uc-santa-cruz-physicist/']};
+ev.aspects.postdoc={status:'group_or_candidate',note:'Harvard 名录列 1992–1995 Junior Fellow；1993 论文署名 Harvard 和 Bell Labs，Fisher CV 列 Harvard 同期任教与合作论文。Fisher 仅为低可信追查候选，合作及署名不证明指导或 Bell 职位。',sources:[harvard,aps,cv]};
+ev.next_step='查 Princeton 本人博士论文和 Harvard fellowship／Bell Labs 任职档案，核 Fisher 在两个阶段是否有指导关系；不能由合著推定。';ev.followup_required=true;
+fs.writeFileSync(path.join(__dirname,'本轮核查-Narayan-20261107.json'),JSON.stringify(ev,null,2),'utf8');console.log('人物、候选反链、学校表、索引已更新；事件已准备');

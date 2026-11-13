@@ -1,0 +1,12 @@
+const fs=require('fs'),path=require('path'),{DatabaseSync}=require('node:sqlite');
+const root=path.resolve(__dirname,'..');
+const c='人员 - UC Santa Barbara - Jean Carlson - 745db657', s='人员 - Cornell - James Sethna（荣休） - d77716a7', l='师承人物 - James S. Langer';
+const aps='https://engage.aps.org/dsnp/resources/klogw-series', cornell='https://sethna.lassp.cornell.edu/pub.html';
+function update(file,fn){const p=path.join(root,file);const old=fs.readFileSync(p,'utf8');const out=fn(old);if(old===out)throw Error('Expected change missing: '+file);fs.writeFileSync(p,out,'utf8');}
+update('人物/'+c+'.md',t=>t.replace('## 师承\n\n',`## 师承\n\n- 博士导师：[[${s}|James Sethna]]。[APS 本人简介](${aps})明确其 Cornell 博士在 Sethna 指导下完成；[Sethna 博士生目录](${cornell})列 1988 年论文题目与本人。可信度：高。\n- 博士后阶段研究师长：[[${l}|James S. Langer]]。[APS 本人简介](${aps})记其在 UCSB 理论物理研究所作为博士后与 Langer 共事；来源未明称正式 postdoc advisor。可信度：高（阶段关系）。\n\n`).replace('核查边界：UCSB 新闻证实 Cornell 博士及 UCSB 理论物理研究所博士后，但未明确博士后导师；网上提及 James Langer 的线索尚无原始证据。','核查边界：APS 简介支持博士后与 James S. Langer 共事；具体正式个人导师职衔仍待核。'));
+update('人物/'+s+'.md',t=>t.replace('## 师承\n',`## 师承\n\n- 博士生：[[${c}|Jean Carlson]]。[APS 本人简介](${aps})明确博士由 Sethna 指导；[博士生目录](${cornell})记 1988 年论文。\n`));
+update('人物/'+l+'.md',t=>t.replace('## 师承\n',`## 师承\n\n- 博士后阶段研究者：[[${c}|Jean Carlson]]。[APS 本人简介](${aps})记其博士后与 Langer 共事，未明确正式导师职衔。\n`));
+update('UC Santa Barbara逐人复核记录.md',t=>t.replace('James Sethna（荣休）（博士阶段课题组负责人） | 待核','James Sethna（博士导师） | James S. Langer（博士后阶段研究师长，正式职衔待核）'));
+fs.appendFileSync(path.join(root,'师承关系索引.md'),`\n## 博士及博士后阶段核实补充（2026-11-07）\n\n- [[${c}|Jean Carlson]] → 博士导师：[[${s}|James Sethna]]；博士后阶段研究师长：[[${l}|James S. Langer]]。[APS 本人简介](${aps})。\n`,'utf8');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'));const ev=JSON.parse(db.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get('745db657').details_json);db.close();
+ev.audit_id='20261107_745db657_aps_primary';ev.aspects.phd={status:'confirmed_advisor',note:'APS 本人简介明确 Cornell 博士 under supervision of James Sethna；其本人目录给出 1988 论文题目。',sources:[aps,cornell]};ev.aspects.postdoc={status:'group_or_candidate',note:'APS 简介记 UCSB KITP 博后 with James S. Langer，记阶段研究师长，不假定正式个人导师头衔。',sources:[aps]};ev.followup_required=true;ev.next_step='继续查 Cornell 博士论文正式签署页、KITP 博后导师的正式个人职衔及其他阶段。';fs.writeFileSync(path.join(__dirname,'本轮核查-Carlson-20261107.json'),JSON.stringify(ev,null,2),'utf8');console.log('notes updated, audit prepared');

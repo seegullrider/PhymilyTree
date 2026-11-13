@@ -1,0 +1,10 @@
+const fs=require('fs'),path=require('path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'));
+const row=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('709db6a1');
+if(!row) throw Error('缺少原人工事件');
+const ev=JSON.parse(row.details_json);
+ev.audit_id='20261106_benderskii_postdoc_candidates_709db6a1';
+ev.aspects.postdoc={status:'group_or_candidate',note:'学术树搜索索引列 Vartkess Ara Apkarian 和 Kenneth B. Eisenthal 两条 post-doc 上游关系，原页 cache miss；USC 本人履历只确认 UCI 1996–1999、Columbia 1999–2002 博后，故两条均为低可信导师候选，阶段归属待直接来源。',sources:['https://academictree-staging.thetransmitter.org/mis/peopleinfo.php?pid=58319','https://dornsife.usc.edu/profile/alexander-benderskii/','https://sfgsfg.weebly.com/people.html']};
+ev.followup_required=true;
+ev.next_step='查 Utah 博士学位论文、Apkarian 与 Eisenthal 原始组名单、Benderskii 本人 CV，核导师职衔及两段博后分别对应哪位师长。';
+fs.writeFileSync(path.join(__dirname,'本轮核查-Benderskii-20261106.json'),JSON.stringify(ev,null,2)+'\n','utf8');

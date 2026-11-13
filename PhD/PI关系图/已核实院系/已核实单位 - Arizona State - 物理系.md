@@ -1,0 +1,30 @@
+# Arizona State：物理系
+
+[[院校 - Arizona State|返回学校]]
+
+仅收录已按人物资料核实的记录，不表示单位已查全。
+- [[新增待核 - Arizona State - Sami Tantawi|Sami Tantawi]] — [来源](https://search.asu.edu/profile/5081646)
+- [[人员 - Arizona State - Ralph Chamberlin - 9e54984b|Ralph Chamberlin]] — [来源](https://search.asu.edu/profile/22577)
+- [[人员 - Arizona State - José Menéndez - 2bf43d5e|José Menéndez]] — [来源](https://search.asu.edu/profile/25775)
+- [[人员 - Arizona State - Onur Erten - 8de8d75e|Onur Erten]] — [来源](https://search.asu.edu/profile/3224425)
+- [[人员 - Arizona State - Jeffery Yarger - 9fb09532|Jeffery Yarger]] — [来源](https://search.asu.edu/profile/109741)
+- [[人员 - Arizona State - Arunima Singh - d3c34b0e|Arunima Singh]] — [来源](https://search.asu.edu/profile/3323915)
+- [[人员 - Arizona State - Antia S. Botana - 4bedd153|Antia S. Botana]] — [来源](https://search.asu.edu/profile/3316902)
+- [[人员 - Arizona State - Arvinder Sandhu - c122d0a5|Arvinder Sandhu]] — [来源](https://news.asu.edu/b/20250818-asu-welcomes-new-leader-groundbreaking-compact-xray-laser-project)
+- [[人员 - Arizona State - Dmitry Matyushov - c85d5694|Dmitry Matyushov]] — [来源](https://search.asu.edu/profile/283305)
+- [[人员 - Arizona State - David J. Smith - f02f1c99|David J. Smith]] — [来源](https://www.jos.ac.cn/en/article/id/d434b49e-d87b-4265-8250-432224e50471?viewType=HTML)
+- [[人员 - Arizona State - Fernando Ponce - 99719779|Fernando Ponce]] — [来源](https://search.asu.edu/profile/215963)
+- [[人员 - Arizona State - Jeffery (Jeff) Drucker — 荣休 - eb5d441a|Jeffery (Jeff) Drucker — 荣休]] — [来源](https://search.asu.edu/profile/300298)
+- [[人员 - Arizona State - Jingyue (Jimmy) Liu - 3dcb99b6|Jingyue (Jimmy) Liu]] — [来源](https://search.asu.edu/profile/1816322)
+- [[人员 - Arizona State - Kevin Schmidt - 98cca044|Kevin Schmidt]] — [来源](https://search.asu.edu/profile/10540)
+- [[人员 - Arizona State - Philip Mauskopf - 14be77ad|Philip Mauskopf]] — [来源](https://search.asu.edu/profile/1863516)
+- [[人员 - Arizona State - Nicholas Matlis - ffb517c7|Nicholas Matlis]] — [来源](https://search.asu.edu/profile/5316937)
+- [[人员 - Arizona State - Michael Treacy - 807e2742|Michael Treacy]] — [来源](https://experts.azregents.edu/en/persons/michael-treacy/)
+- [[人员 - Arizona State - Quan Qing - cd12c287|Quan Qing]] — [来源](https://search.asu.edu/profile/2066572)
+- [[人员 - Arizona State - Peter Bennett - 6fb96cb8|Peter Bennett]] — [来源](https://search.asu.edu/profile/16282)
+- [[人员 - Arizona State - Samuel Teitelbaum - 7cc1e1df|Samuel Teitelbaum]] — [来源](https://search.asu.edu/profile/3529377)
+- [[人员 - Arizona State - Siddharth Karkare - d980558a|Siddharth Karkare]] — [来源](https://search.asu.edu/profile/3323914)
+- [[人员 - Arizona State - Robert Kaindl - 53e627d8|Robert Kaindl]] — [来源](https://search.asu.edu/profile/3636506)
+- [[人员 - Arizona State - Robert Nemanich - 3e4d951e|Robert Nemanich]] — [来源](https://search.asu.edu/profile/979361)
+- [[人员 - Arizona State - Robert Culbertson - e264961e|Robert Culbertson]] — [来源](https://search.asu.edu/profile/84471)
+- [[人员 - Arizona State - Stuart Lindsay - 8f83b13a|Stuart Lindsay]] — [来源](https://search.asu.edu/profile/95538)

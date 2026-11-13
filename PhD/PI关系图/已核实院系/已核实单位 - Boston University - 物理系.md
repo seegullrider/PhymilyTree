@@ -1,0 +1,35 @@
+# Boston University：物理系
+
+[[院校 - Boston University|返回学校]]
+
+仅收录已按人物资料核实的记录，不表示单位已查全。
+- [[人员 - Johns Hopkins - Alexander O. Sushkov - a344b625|Alexander O. Sushkov]] · 兼职教授。 [BU 院系原档](https://www.bu.edu/physics/profile/alex-sushkov/)
+- [[人员 - Boston University - Maria (Masha) Kamenetska - bd6eddcd|Maria (Masha) Kamenetska]] — [来源](https://www.bu.edu/eng/profile/maria-kamenetska/)
+- [[人员 - Boston University - Anushya Chandran - 2cf4abb7|Anushya Chandran]] — [来源](https://www.bu.edu/physics/profile/anushya-chandran/)
+- [[人员 - Boston University - Wanzheng Hu - d47a5660|Wanzheng Hu]] — [来源](https://www.bu.edu/physics/profile/wanzheng-hu/)
+- [[人员 - Boston University - Anatoli Polkovnikov - 8469ec6f|Anatoli Polkovnikov]] — [来源](https://www.bu.edu/physics/files/2021/05/Polkovnikov_CV.pdf)
+- [[人员 - Boston University - Alice White - c024e394|Alice White]] — [来源](https://www.bu.edu/photonics-programs/past-mentors/)
+- [[人员 - Boston University - Alexander V. Sergienko - d667207f|Alexander V. Sergienko]] — [来源](https://people.bu.edu/alexserg/SergienkoWebCV.pdf)
+- [[人员 - Boston University - Anders Sandvik - 002b5385|Anders Sandvik]] — [来源](https://icqm.pku.edu.cn/docs/20180201143359708934.pdf)
+- [[人员 - Boston University - Anna Swan - dc2a58b9|Anna Swan]] — [来源](https://www.bu.edu/eng/profile/anna-swan/)
+- [[人员 - Boston University - Andrei Ruckenstein - 9e73395e|Andrei Ruckenstein]] — [来源](https://www.bu.edu/physics/files/2021/05/Ruckenstein_CV.pdf)
+- [[人员 - Boston University - Claudio Chamon — 已转 Purdue - 569161e8|Claudio Chamon — 已转 Purdue]] — [来源](https://www.bu.edu/physics/profiles/page/5/)
+- [[人员 - Boston University - Christopher Laumann - 30f4f9ac|Christopher Laumann]] — [来源](https://www.bu.edu/physics/profile/christopher-laumann/)
+- [[人员 - Boston University - David Bishop - d29ce0f1|David Bishop]] — [来源](https://www.bu.edu/eng/2025/11/05/david-bishop-wins-prestigious-award-for-his-contributions-to-understanding-superfluids/)
+- [[人员 - Boston University - David Campbell - 722ae036|David Campbell]] — [来源](https://www.bu.edu/eng/academics/departments-and-divisions/materials-science-engineering/news-2/125608-2/materials-day-2024/)
+- [[人员 - Boston University - David Coker - 350c58c8|David Coker]] — 关联教师；[物理系教师页](https://www.bu.edu/physics/profile/david-coker/)。
+- [[人员 - Boston University - Dries Sels - 96c6c9ff|Dries Sels]] — [来源](https://www.bu.edu/physics/2026/02/09/4502/)
+- [[人员 - Boston University - Karl Ludwig - e16190e8|Karl Ludwig]] — [来源](https://www.bu.edu/cas/2026-cas-retiring-faculty-staff/)
+- [[人员 - Boston University - Keith Brown - 55510c46|Keith Brown]] — [来源](https://www.bu.edu/hic/profile/keith-brown/)
+- [[人员 - Boston University - Luca Dal Negro - e0fc6317|Luca Dal Negro]] — [来源](https://www.bu.edu/nano/people/)
+- [[人员 - Boston University - Kevin Smith - c580a20d|Kevin Smith]] — [来源](https://www.bu.edu/eng/profile/kevin-smith/)
+- [[人员 - Boston University - M. Selim Ünlü - 7385a133|M. Selim Ünlü]] — [来源](https://www.bu.edu/eng/research-impact/catalyst-summit/speakers-2/)
+- [[人员 - Boston University - Michael El-Batanouny — 2026 年退休人员 - 08aa1e42|Michael El-Batanouny — 2026 年退休人员]] — [来源](https://www.bu.edu/cas/2026-cas-retiring-faculty-staff/)
+- [[人员 - Boston University - Minjung Son - ecf49197|Minjung Son]] — [来源](https://www.msonlab.com/people)
+- [[人员 - Boston University - Nikola Maksimovic - e4f2f507|Nikola Maksimovic]] — [来源](https://www.bu.edu/physics/profile/nikola-maksimovic/)
+- [[人员 - Boston University - Raj Mohanty - 4b3d7e75|Raj Mohanty]] — [来源](https://www.bu.edu/nano-bu/profile/raj-mohanty/)
+- [[人员 - Boston University - Scott Bunch - 0d4f9aed|Scott Bunch]] — [来源](https://www.bu.edu/eng/profile/scott-bunch/)
+- [[人员 - Boston University - Siddharth Ramachandran - 60f28cf8|Siddharth Ramachandran]] — [来源](https://www.bu.edu/physics/profile/siddharth-ramachandran/)
+- [[人员 - Boston University - Theodore Moustakas - f64e6466|Theodore Moustakas]] — [来源](https://people.bu.edu/tdm/Moustakas%20CV.pdf)
+- [[人员 - Boston University - William Klein - a7e99ec5|William Klein]] — [来源](https://www.bu.edu/eng/profile/william-klein/)
+- [[人员 - Boston University - Bennett Goldberg — 荣休 - 371d7c6e|Bennett Goldberg（荣休）]] — [来源](https://www.bu.edu/physics/profile/bennett-goldberg/)

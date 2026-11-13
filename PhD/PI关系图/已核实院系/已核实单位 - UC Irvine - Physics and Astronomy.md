@@ -1,0 +1,30 @@
+# UC Irvine：Physics and Astronomy
+
+[[院校 - UC Irvine|返回学校]]
+
+仅收录已按人物资料核实的记录，不表示单位已查全。
+- [[人员 - UC Irvine - Alexander (Sasha) Chernyshev - ff988990|Alexander (Sasha) Chernyshev]] — [来源](https://www.faculty.uci.edu/profile/?facultyId=4972)
+- [[人员 - UC Irvine - Alexei A. Maradudin - 921d9b34|Alexei A. Maradudin]] — [来源](https://www.faculty.uci.edu/profile/?facultyId=2716)
+- [[人员 - UC Irvine - Clare Yu - b610216f|Clare Yu]] — [来源](https://webapps.ps.uci.edu/~cyu/intro.html)
+- [[人员 - UC Irvine - Herbert Hopster - 1434e6f0|Herbert Hopster]] — [来源](https://www.faculty.uci.edu/profile/?facultyId=2013)
+- [[人员 - UC Irvine - Howard (Ho Wai) Lee - 4e9fe350|Howard (Ho Wai) Lee]] — [来源](https://www.physics.uci.edu/node/13976)
+- [[人员 - UC Irvine - Huolin Xin - 7b871494|Huolin Xin]] — [来源](https://www.physics.uci.edu/node/13284)
+- [[人员 - UC Irvine - Igor Dzyaloshinskii - 18b45b4f|Igor Dzyaloshinskii]] — [来源](https://www.physics.uci.edu/node/14134)
+- [[人员 - UC Irvine - Ilya Krivorotov - 05294b39|Ilya Krivorotov]] — [来源](https://www.faculty.uci.edu/profile/?facultyId=5305)
+- [[人员 - UC Irvine - Javier Sanchez-Yamagishi - 2e53c358|Javier Sanchez-Yamagishi]] — [来源](https://www.physics.uci.edu/node/13285)
+- [[人员 - UC Irvine - Jing Xia - 04b39af4|Jing Xia]] — [来源](https://www.faculty.uci.edu/profile/?facultyId=5867)
+- [[人员 - UC Irvine - Judit Romhányi - 83240ea5|Judit Romhányi]] — [来源](https://www.physics.uci.edu/node/13794)
+- [[人员 - UC Irvine - Kieron Burke - 4d83240e|Kieron Burke]] — [来源](https://ps.uci.edu/kieron-burke/)
+- [[人员 - UC Irvine - Luis A. Jauregui - a65e481a|Luis A. Jauregui]] — [来源](https://eqi.uci.edu/luis-jauregui/)
+- [[人员 - UC Irvine - Michael Dennin - b93bce66|Michael Dennin]] — [来源](https://experts.communications.uci.edu/profile.php?e=michael.dennin)
+- [[人员 - UC Irvine - Peter Taborek - 097a7b59|Peter Taborek]] — [来源](https://www.faculty.uci.edu/profile/?facultyId=2166)
+- [[人员 - UC Irvine - Philip Collins - 321232ac|Philip Collins]] — [来源](https://pmc.ncbi.nlm.nih.gov/articles/PMC3750062/)
+- [[人员 - UC Irvine - Ruqian Wu - 0ad277fa|Ruqian Wu]] — [来源](https://www.faculty.uci.edu/profile/?facultyId=4848)
+- [[人员 - UC Irvine - Shaul Mukamel - e491e468|Shaul Mukamel]] — [来源](https://mukamel.ps.uci.edu/bio.html)
+- [[人员 - UC Irvine - Stacy Copp - 459f4cdc|Stacy Copp]] — [来源](https://engineering.uci.edu/directory/copp_stacy.php)
+- [[人员 - UC Irvine - Steven R. White - 4b16000c|Steven R. White]] — [来源](https://www.physics.uci.edu/research/condmatter)
+- [[人员 - UC Irvine - Thomas Scaffidi - 5d424887|Thomas Scaffidi]] — [来源](https://www.physics.uci.edu/node/14282)
+- [[人员 - UC Irvine - Wilson Ho - 4ae6722b|Wilson Ho]] — [来源](https://www.faculty.uci.edu/profile/?facultyId=4583)
+- [[人员 - UC Irvine - Xiaoqing Pan - ba89032c|Xiaoqing Pan]] — [来源](https://www.physics.uci.edu/node/9170)
+- [[人员 - UC Irvine - Zachary Fisk - bfaeecd3|Zachary Fisk]] — [来源](https://history.aip.org/catalog/icos/44382.html)
+- [[人员 - UC Irvine - Zuzanna S. Siwy - 1f16c500|Zuzanna S. Siwy]] — [来源](https://www.physics.uci.edu/~zsiwy/documents/siwy_cv.pdf)

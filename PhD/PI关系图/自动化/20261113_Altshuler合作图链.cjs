@@ -1,0 +1,10 @@
+const fs=require('fs'),path=require('path'),{DatabaseSync}=require('node:sqlite');
+const root=path.resolve(__dirname,'..'),db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true}),url='https://cmt.rutgers.edu/people/boris-altshuler/';
+const p=db.prepare("select tool_output from page_observations o join pages p on p.id=o.page_id where p.record_id=? and p.url=?").all('8da135b8',url);
+if(!p.some(x=>x.tool_output.includes('In collaboration with Boris Shklovskii')&&x.tool_output.includes('with Igor Aleiner')))throw Error('缺少同源原文，停止');
+const people=[['人员 - Columbia - Boris Altshuler - 8da135b8','Boris Altshuler'],['人员 - Columbia - Igor Aleiner - 598ad105','Igor Aleiner'],['人员 - University of Minnesota - Boris Shklovskii（荣休） - ca14156b','Boris Shklovskii']];
+const add=(f,t)=>{const q=path.join(root,'人物',f+'.md'),s=fs.readFileSync(q,'utf8');if(s.includes(t))return;const sep=s.includes('\r\n')?'\r\n':'\n',marker='## 师承';if(!s.includes(marker))throw Error('缺章节 '+f);fs.writeFileSync(q,s.replace(marker,t+sep+sep+marker),'utf8')};
+add(people[0][0],'## 研究合作\n\n- 与 [['+people[1][0]+'|Igor Aleiner]] 合作研究多体局域化；与 [['+people[2][0]+'|Boris Shklovskii]] 合作研究无序金属中的能级排斥。Rutgers 本人学术简介明确写出合作；这些联系不证明师承。[Rutgers 原档]('+url+')');
+add(people[1][0],'## 研究合作\n\n- 与 [['+people[0][0]+'|Boris Altshuler]] 合作研究多体局域化；此联系不证明师承。[Rutgers 原档]('+url+')');
+add(people[2][0],'## 研究合作\n\n- 与 [['+people[0][0]+'|Boris Altshuler]] 合作研究无序金属中的能级排斥；此联系不证明师承。[Rutgers 原档]('+url+')');
+db.close();console.log('已添加三个人物页的双向研究合作链接。');

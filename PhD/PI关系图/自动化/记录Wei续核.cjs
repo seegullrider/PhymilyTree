@@ -1,0 +1,10 @@
+const {DatabaseSync}=require('node:sqlite');
+const d=new DatabaseSync('检索队列.sqlite');
+const id='f461e32a',u='https://research.physics.illinois.edu/Publications/theses/copies/Wei_Tzu-Chieh.pdf';
+const a=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id).details_json);
+a.audit_id='20261109_f461e32a_thesis';
+a.aspects.phd={status:'confirmed_advisor',note:'Illinois 2004 博士论文摘要页列 Paul M. Goldbart, Advisor；致谢另称 Paul Kwiat 为 mentor。',sources:[u]};
+a.next_step='查 Illinois、Waterloo、British Columbia 博士后阶段的具体指导者，Kwiat 博后关系保留候选。';
+a.followup_required=true;
+d.prepare('insert or ignore into manual_audit_events(audit_id,record_id,recorded_at,details_json) values(?,?,?,?)').run(a.audit_id,id,new Date().toISOString(),JSON.stringify(a));
+d.close();

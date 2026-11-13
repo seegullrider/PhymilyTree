@@ -1,0 +1,2 @@
+const fs=require('fs'),path=require('path'),root='C:/note/PhD/PI关系图';
+for(const f of ['人物/人员 - Purdue - Ruichao（Alex）Ma - ae9cd920.md','人物/人员 - Stanford - Jonathan Simon - 867b6d4b.md','人物/人员 - Stanford - David Schuster - 71dab6c8.md','师承关系索引.md','自动化/20261105_purdue_续查五.cjs']){const q=path.join(root,f);let s=fs.readFileSync(q,'utf8'),t=s.replaceAll('博士后共同导师：','博士后导师：').replaceAll('博士后共同指导者：','博士后受指导者：');if(s!==t)fs.writeFileSync(q,t,'utf8');}

@@ -1,0 +1,11 @@
+const fs=require('node:fs'); const {createHash}=require('node:crypto');
+const name='Bart M. Bartlett',unit='University of Michigan, Ann Arbor';
+const id=createHash('sha256').update(unit+'|'+name).digest('hex').slice(0,8);
+const faculty='https://lsa.umich.edu/chem/people/faculty/bartmb.html';
+const fellowship='https://ppfp.ucop.edu/info/fellowship-recipients/fellows-pages/bartlett-bart-m.html';
+const longcv='https://www.chemistry.harvard.edu/sites/g/files/omnuum7776/files/2026-07/Jeffrey%20R.%20Long%20CV%202026.pdf#page=9';
+const um='https://ii.umich.edu/asc/news-events/events/flagship-events/asc15/speakers.html';
+const rows=[{id,name,unit,aliases:'Bart Bartlett、Bart M Bartlett',departments:['化学系'],topics:['磁性材料','氧化物半导体'],affiliation:'Michigan 化学系教授，学校目录另列系主任；目录更新日期与现任系主任任期待核。',research:'固态无机材料的电学和离子输运、氧化物半导体及铜氧化物；博士研究包括低维受挫磁性。',identity:'Michigan 教师页面、UC 研究员档、Michigan 讲者履历及 Long 本人 CV 对姓名、职位、学位和 Berkeley 阶段一致。',current:[faculty,um],phd:{mentor:'Daniel G. Nocera',target:'师承人物 - Daniel G. Nocera',evidence:'UC 博士后项目档明确将 MIT 无机化学博士论文的 Thesis Advisor 列为 Daniel G. Nocera，Michigan 本人讲者履历独立核 2005 年博士。',urls:[fellowship,um]},postdoc:{mentor:'Jeffrey R. Long',target:'人员 - UC Berkeley - Jeffrey R. Long - dcbb0150',evidence:'UC 项目档在 Mentor 栏列 Berkeley 的 Jeffrey Long；Michigan 履历核 2005–2007 fellowship，Long 本人 CV 的 Postdoctoral Scholars Supervised 列 Bartlett 2005–2008。UC 页面误将 Long 中间名首字母写为 G，Long 本人 CV 和 Michigan 履历用于消歧。两份来源所列年份范围不同，保留原载。',urls:[fellowship,um,longcv]},next:'核 Berkeley 博后完整任用结束月份，并复核系主任当前任期。'}];
+const batch='20261113_Bartlett'; fs.writeFileSync(batch+'.json',JSON.stringify(rows,null,2)+'\n');
+let script=fs.readFileSync('20261113_0520_跨院系输运与电化学PI补录.cjs','utf8').replace("const batch = '20261113_0520_跨院系输运与电化学PI补录';",`const batch = '${batch}';`);
+fs.writeFileSync(batch+'_apply.cjs',script); console.log(JSON.stringify({id,name}));

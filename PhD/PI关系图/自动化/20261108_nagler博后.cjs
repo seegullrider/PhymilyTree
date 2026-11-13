@@ -1,0 +1,26 @@
+const fs=require('node:fs'),path=require('node:path'),{DatabaseSync}=require('node:sqlite');
+const root=path.resolve(__dirname,'..'),mentor='师承人物 - Stephen E. Nagler',cv='https://www.ornl.gov/sites/default/files/2021-05/SN_profile_CV_May_2021.pdf',shull='https://www.ornl.gov/news/ornl-establishes-shull-fellowship-neutron-research/',fultz='https://www.its.caltech.edu/~matsci/btf/BrentFultzCV.pdf';
+const people=[
+ {id:'bfe9f70a',unit:'UIUC',name:'Gregory MacDougall',verify:'https://physics.illinois.edu/people/directory/profile/gmacdoug',time:'2008–2012',evidence:'Nagler 履历的被指导博士后名单列 G. MacDougall、McMaster 2008 博士、现 Illinois 任教；Illinois 本人页核实 McMaster 2008 博士与 ORNL 经历。',next:'查 McMaster 博士论文 advisor；Nagler 对 ORNL 2008–2012 博士后有指导，是否有其他共同导师待核。'},
+ {id:'a6c119be',unit:'Purdue',name:'Arnab Banerjee',verify:'https://www.ornl.gov/news/physics-nobel-prize-winners-work-laid-foundation-researchers-ornl',time:'2013–2017',evidence:'Nagler 履历的被指导博士后名单列 A. Banerjee、Chicago 2012 博士、现 Purdue 任教；ORNL 同期报道确认为博士后。',next:'查 Chicago 博士论文正式 advisor；ORNL 博后是否另有共同指导人待核。'},
+ {id:'bf0735f9',unit:'Michigan State',name:'Xianglin Ke',verify:'https://directory.natsci.msu.edu/directory/Profiles/Person/102145',time:'2009–2011',evidence:'Nagler 履历的 supervised Shull fellows 名单列 X. Ke、Wisconsin 2006 博士及 Michigan State 任职；MSU 本人页列 ORNL Shull fellowship 2009–2012，ORNL 项目说明称该 fellowship 是博士后职位。',next:'查 Wisconsin 论文批准页及 2006–2009 Penn State 博后指导；ORNL fellowship 2009–2012 中 Nagler CV 明列其指导 2009–2011。'},
+ {id:'238f61bf',unit:'Duke',name:'Olivier Delaire',verify:fultz,time:'2008–2011',evidence:'Nagler 履历的 supervised Shull fellows 名单列 O. Delaire、Caltech 2006 博士及 Duke 任职；Fultz 履历写 Olivier Delaire 曾为 ORNL Shull postdoctoral fellow。',next:'查 2006–2007 Caltech 博后阶段是否由 Fultz 正式指导；ORNL Shull fellows 另有共同指导者及 Duke 物理系当前兼任待核。'}
+];
+const cache=new Map();function read(rel){const f=path.join(root,rel);return cache.has(f)?cache.get(f):fs.readFileSync(f,'utf8');}function set(rel,s){cache.set(path.join(root,rel),s)}function replaceOne(rel,old,rep){let s=read(rel);if(s.split(old).length!==2)throw Error('Expected one match '+rel+' '+old.slice(0,80));set(rel,s.replace(old,rep));}
+if(fs.existsSync(path.join(root,'人物',mentor+'.md')))throw Error('Mentor page already exists; inspect identity');
+let mentorPage='# Stephen E. Nagler\n\n> [!info] 师承扩展人物\n> Oak Ridge National Laboratory 中子散射研究者；其他任职及招生情况需另核。\n\n## 师承\n\n';
+let index=read('师承关系索引.md');const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true}),audits=[],edges=[];
+for(const p of people){
+ const file=`人员 - ${p.unit} - ${p.name} - ${p.id}`,rel='人物/'+file+'.md',src=p.id==='bf0735f9'?`[Nagler 履历](${cv})；[MSU 本人页](${p.verify})；[ORNL fellowship 说明](${shull})`:`[Nagler 履历](${cv})；[身份和阶段核对](${p.verify})`;
+ const bullet=`- 博士后阶段研究师长：[[${mentor}|Stephen E. Nagler]]（ORNL，${p.time}）。${src} ${p.evidence} 履历证明研究指导关系，未明确其正式岗位导师头衔。`;
+ replaceOne(rel,'## 师承\n','## 师承\n\n'+bullet+'\n');
+ if(p.id==='bfe9f70a')replaceOne(rel,'校方和 Luke 组称其毕业后赴 Oak Ridge 担任 research scientist，不能直接等同博士后。','校方称其毕业后赴 Oak Ridge；Nagler 履历进一步明确其 2008–2012 年为受其指导的博士后。');
+ if(p.id==='bf0735f9')replaceOne(rel,'MSU 履历证实 2006 至 2009 年 Penn State 博后，但尚未确认博后导师；','MSU 履历证实 2006 至 2009 年 Penn State 博后，该阶段指导人仍待查；');
+ if(p.id==='238f61bf')replaceOne(rel,'后续 Oak Ridge Shull fellow 负责人待查。','后续 Oak Ridge Shull 博士后阶段受 Nagler 指导；Caltech 博后候选关系仍需独立核实。');
+ mentorPage+=`- 博士后阶段研究者：[[${file}|${p.name}]]（${p.time}）。[本人履历](${cv})；${p.evidence}\n`;
+ index+=`\n- [[${file}|${p.name}]] → 博士后阶段研究师长：[[${mentor}|Stephen E. Nagler]]（ORNL，${p.time}）。[Nagler 履历](${cv})；${p.evidence}\n`;
+ const report=p.unit+'逐人复核记录.md',txt=read(report),lines=txt.split('\n'),matches=lines.map((s,i)=>s.includes(`[[${file}|${p.name}]]`)?i:-1).filter(i=>i>=0);if(matches.length!==1)throw Error('Expected one school row '+p.name);const i=matches[0],parts=lines[i].split(' | ');if(parts.length!==5)throw Error('Unexpected school table '+p.name+' '+parts.length);parts[3]=p.id==='238f61bf'?'Brent Fultz（Caltech 博后候选）；Stephen E. Nagler（ORNL 博后阶段研究师长）':'Stephen E. Nagler（ORNL 博后阶段研究师长）';parts[4]=parts[4].replace(/\s*\|\r?$/,`；[Nagler 履历](${cv}) |`);lines[i]=parts.join(' | ');set(report,lines.join('\n'));
+ const old=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get(p.id);if(!old)throw Error('missing audit '+p.id);const a=JSON.parse(old.details_json);a.audit_id='20261108_'+p.id+'_nagler';a.aspects.postdoc={status:'confirmed_advisor',note:p.evidence+' 确认为博士后阶段研究师长；正式 advisor 岗位头衔及其他师长待核。'+(p.id==='238f61bf'?' 保留此前 Fultz 的 Caltech 博后候选。':''),sources:[cv,p.verify,...(p.id==='bf0735f9'?[shull]:[])]};a.followup_required=true;a.next_step=p.next;audits.push(a);
+ edges.push({event_id:'20261108_'+p.id+'_nagler_postdoc',record_id:p.id,stage:'postdoc',mentor_filename:mentor,kind:'stage_mentor',source_audit_id:a.audit_id,evidence:p.evidence+' 其正式 advisor 岗位头衔未明。',sources:a.aspects.postdoc.sources});
+}
+db.close();set('人物/'+mentor+'.md',mentorPage);set('师承关系索引.md',index);set('自动化/人工-20261108-nagler.json',JSON.stringify(audits,null,2)+'\n');set('自动化/结构化-20261108-nagler.json',JSON.stringify(edges,null,2)+'\n');for(const [f,t] of cache)fs.writeFileSync(f,t,'utf8');console.log(JSON.stringify({files:cache.size,people:people.length}));

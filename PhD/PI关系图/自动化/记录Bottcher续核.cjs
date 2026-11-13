@@ -1,0 +1,14 @@
+const {DatabaseSync}=require('node:sqlite');
+const crypto=require('node:crypto');
+const d=new DatabaseSync('检索队列.sqlite');
+const id='e7833424', url='https://qulab.eng.yale.edu/members/';
+const previous=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id).details_json);
+previous.audit_id='20261109_e7833424_qulab';
+previous.aspects.postdoc.note='Stanford 本人简介明确博士后在 Yale Qulab；未列导师姓名或具体任期，Devoret 仍为待核候选。';
+previous.aspects.postdoc.sources.push('https://exploreintrosems.stanford.edu/people/charlotte-boettcher');
+previous.next_step='Qulab 成员页本次 502，退避后核组负责人及正式指导关系；另查本人 CV。';
+previous.followup_required=true;
+const now=new Date().toISOString();
+d.prepare('insert or ignore into manual_audit_events(audit_id,record_id,recorded_at,details_json) values(?,?,?,?)').run(previous.audit_id,id,now,JSON.stringify(previous));
+if(!d.prepare('select id from pages where record_id=? and url=?').get(id,url)) d.prepare('insert into pages(id,record_id,job_id,url,state,attempts,error,retrieved) values(?,?,?,?,?,?,?,?)').run(crypto.createHash('sha256').update(id+url).digest('hex').slice(0,24),id,'e7833424:training',url,'retry',1,'网页人工打开返回 (502) Bad Gateway，未取得原文',now);
+d.close();

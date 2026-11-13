@@ -1,0 +1,13 @@
+const {DatabaseSync}=require('node:sqlite');
+const crypto=require('node:crypto');
+const d=new DatabaseSync('检索队列.sqlite');
+const id='aacc07fb',u='https://asset.library.wisc.edu/1711.dl/7NDRR2GY2MEAC9C/R/file-68c5c.pdf';
+const a=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id).details_json);
+a.audit_id='20261109_aacc07fb_thesis';
+a.aspects.phd={status:'confirmed_advisor',note:'Wisconsin 2022 博士论文封面将 Zhenqiang Ma、Mark Rzchowski 均列 Advisor；致谢称 Ma 为 research advisor。',sources:[u]};
+a.next_step='查博士后经历及指导者；2022-10-18 为最终口试日期而非授位日期。';
+a.followup_required=true;
+d.prepare('insert or ignore into manual_audit_events(audit_id,record_id,recorded_at,details_json) values(?,?,?,?)').run(a.audit_id,id,new Date().toISOString(),JSON.stringify(a));
+const id2='ebdac480',url='https://www.ideals.illinois.edu/items/107429';
+if(!d.prepare('select id from pages where record_id=? and url=?').get(id2,url))d.prepare('insert into pages(id,record_id,job_id,url,state,attempts,error,retrieved) values(?,?,?,?,?,?,?,?)').run(crypto.createHash('sha256').update(id2+url).digest('hex').slice(0,24),id2,id2+':training',url,'retry',1,'(403) Forbidden，未取得原文',new Date().toISOString());
+d.close();

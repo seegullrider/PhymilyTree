@@ -1,0 +1,6 @@
+# DNA纳米材料
+
+[[PI关系图总入口|返回图谱]]
+
+研究方向按人物资料核实；分类仍未查全。
+- [[人员 - NYU - James Canary - a68aff0f|James Canary · NYU]] — [来源](https://prem-dmr.org/people/14456636)

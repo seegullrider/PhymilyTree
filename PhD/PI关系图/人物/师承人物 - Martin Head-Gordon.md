@@ -1,0 +1,21 @@
+# Martin Head-Gordon
+
+> [!info] 师承扩展人物
+> 本节点依据可核查的师承关系建立；其他经历及现职需另核。
+
+## 师承
+
+- 博士后候选研究者：[[人员 - Caltech - Garnet K.-L. Chan - 9a4a4057|Garnet K.-L. Chan]]。Martin Head-Gordon 组原校友表具名 Garnet Chan 并链接其 Caltech 本人实验室，原名录明确其 Berkeley 2000–2002 Miller。C&EN 2009 获奖报道的搜索索引具名 former postdoctoral adviser，但直接网页及匿名原 HTML 只取得预览、未取得该段原正文；因此先保留博士后导师候选，不把搜索索引升级为正式导师确证。Cambridge 的独立 fellowship 另查。 [Head-Gordon 原校友表](https://mhggroupberkeley.com/alumni/) · [Miller 原名录](https://millermembers.berkeley.edu/all.php?nav=46) · [C&EN 待取得完整原文](https://cen.acs.org/articles/87/i8/ACS-Award-Pure-Chemistry.html)
+
+- 博士后阶段研究者：[[人员 - USC - Anna I. Krylov - 5914c99f|Anna I. Krylov]]。[来源](https://www.ae-info.org/ae/User/Krylov_Anna/CV?skin=raw) 证据：履历明确称 UC Berkeley 博士后训练 with Martin Head-Gordon；来源未使用正式 advisor 称谓。；关系类型可信度：高。 [原始资料](https://www.ae-info.org/ae/User/Krylov_Anna/CV?skin=raw) 证据：履历称 Berkeley 博后 with Martin Head-Gordon，组校友名单亦列 Anna Krylov；按阶段师长。关系类型可信度：高。
+- 博士后研究者：[[人员 - Ohio State - John Herbert - fb235fe6|John Herbert]]。[来源](https://www.asc.ohio-state.edu/herbert.44/jmh_cv.pdf)
+- 博士后阶段研究者：[[人员 - Michigan State - Jose L. Mendoza-Cortes - 87f2254b|Jose L. Mendoza-Cortes]]。[来源](https://sites.google.com/view/mendozalab/bio)
+- 博士后研究者：[[人员 - Rice - James Shee - 0eebcf83|James Shee]]。[来源](https://jsheelab.rice.edu/about-james) Rice 化学系履历分列 2019–2021 Berkeley 博后和 2021–2023 NIH F32，James Shee 本人课题组主页明确 NIH 博后 Advisor: Martin Head-Gordon。Rice 履历记此前 Berkeley 研究与 Head-Gordon 合作，两段聘任分列。 [原档 1](https://jsheelab.rice.edu/about-james) · [原档 2](https://profiles.rice.edu/faculty/james-shee)
+- 博士阶段研究者：[[人员 - UPenn - Joseph E. Subotnik — 转 Princeton - a4da4d8a|Joseph E. Subotnik — 转 Princeton]]。[来源](https://chemistry.princeton.edu/news/theoretical-chemist-joseph-subotnik-to-join-princeton-chemistry/) [Princeton 聘任报道](https://chemistry.princeton.edu/news/theoretical-chemist-joseph-subotnik-to-join-princeton-chemistry/)称 Berkeley 博士 under Martin Head-Gordon；[Berkeley 校友名录](https://qb3.berkeley.edu/biophysics/alumni/)列其 2006 年 Berkeley mentor，尚未明列正式 thesis advisor。
+- 博士阶段研究者：[[人员 - Princeton - Joseph E. Subotnik - d578d271|Joseph E. Subotnik]]。[来源](https://chemistry.princeton.edu/news/theoretical-chemist-joseph-subotnik-to-join-princeton-chemistry/)
+- 博士生：[[人员 - Cornell - Robert A. DiStasio Jr - c55a07e9|Robert A. DiStasio Jr.]]。[来源](https://distasio.chem.cornell.edu/documents/DiStasio_CV_08182020.pdf)
+- 博士生：[[人员 - Harvard - Joonho Lee - 379c14bf|Joonho Lee]]。[来源](https://blavatnikawards.org/honorees/profile/joonho-lee/)
+- 博士生：[[人员 - MIT - Troy Van Voorhis - 0486fe42|Troy Van Voorhis]]。[来源](https://chemistry.stanford.edu/events/student-hosted-colloquia-professor-troy-van-voorhis-mit) Stanford 化学系讲者档履历明列 Berkeley 2001 化学博士 Advisor Martin Head-Gordon。 [原档 1](https://chemistry.stanford.edu/events/student-hosted-colloquia-professor-troy-van-voorhis-mit)
+[建立节点的来源](https://chemistry.stanford.edu/events/student-hosted-colloquia-professor-troy-van-voorhis-mit)。
+- 博士后阶段研究者：[[人员 - UC Berkeley - Eric Neuscamman - 83f4aeb0|Eric Neuscamman]]。本人 CV 首页明确 Berkeley 2011–2014 Miller Research Fellow 的 Host 为 Martin Head-Gordon。Miller 现行官方制度明确 Faculty Host 承担研究指导；补为博士后阶段研究师长，保留原 Host 用语，未据现行制度反推历史 primary supervisor 登记。LLNL 2014–2015 的 Eric Schwegler Host 是另一段，仍按原角色保留候选。 [本人 CV](https://neuscammanlab.com/wp-content/uploads/2020/03/eric_neuscamman_cv.pdf) · [Miller 指导角色](https://miller.berkeley.edu/nominate-apply/miller-research-fellowship/reference-faculty-host-information)
+- 博士生：[[人员 - Columbia - Diptarka Hait - c0ec90e8|Diptarka Hait]]。Stanford 托管本人 CV 的 Berkeley 2016–2022 物理化学博士条目具名 Research Advisor Martin Head-Gordon，论文《A Density Functional Odyssey Beyond Ground State Energies》。可信度高。 [学术经历核对](https://mtzweb.stanford.edu/sites/g/files/sbiybj26421/files/media/file/cv_dip_hait.pdf#page=1) · [现任院系原档](https://www.chem.columbia.edu/news/welcoming-professor-diptarka-hait-columbia-chemistry)

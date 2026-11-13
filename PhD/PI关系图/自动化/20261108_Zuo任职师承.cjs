@@ -1,0 +1,13 @@
+const fs=require('node:fs'),path=require('node:path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});
+const row=db.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get('1d720073');
+if(!row)throw Error('缺少 Zuo 台账'); db.close();
+const a=JSON.parse(row.details_json),monash='https://research.monash.edu/en/persons/jian-min-zuo/',dge='https://www.dge-homepage.de/zeitschrift/elektronenmikroskopie_040.pdf',asu='https://phy.asu.edu/sites/g/files/litvpz476/files/2022-01/Colloquium%20Flyer%202022%20Zuo-8.5x11.pdf';
+a.audit_id='20261108_1d720073_monash_dge';
+a.aspects.affiliation={status:'confirmed',note:'Monash 本人机构页列材料科学与工程及物理教授、电子显微中心主任；UIUC 外部职位列 2025-07 起荣休教授。',sources:[monash,'https://matse.illinois.edu/people/profile/jianzuo']};
+a.aspects.research={status:'confirmed',note:'电子显微与衍射、材料原子结构、量子材料和半导体等；以 Monash 本人页为准。',sources:[monash]};
+a.aspects.phd={status:'confirmed_advisor',note:'德国电子显微学会颁奖介绍称 Zuo 1989 年 ASU 博士论文研究 under supervision of John Spence；Monash 页面列相符博士年份及题目。为研究师长关系，正式论文 advisor 字段待核；此旧台账状态混合正式导师与阶段师长。',sources:[dge,monash,asu]};
+a.aspects.postdoc={status:'group_or_candidate',note:'ASU 博后期间与 Spence 合著书，不能仅凭合著认定指导；另有日本九州大学 JSPS 博后，导师待核。',sources:[monash,dge]};
+a.followup_required=true;a.next_step='追博士论文正式 advisor 字段以及 ASU、九州大学两个博士后阶段的指导者。';
+fs.writeFileSync(path.join(__dirname,'人工-20261108-Zuo任职师承.json'),JSON.stringify(a,null,2)+'\n');
+fs.writeFileSync(path.join(__dirname,'结构化-20261108-Zuo师承.json'),JSON.stringify([{event_id:'20261108_1d720073_dge_phd_mentor',record_id:'1d720073',stage:'phd',mentor_filename:'师承人物 - John C. H. Spence',kind:'stage_mentor',source_audit_id:a.audit_id,evidence:a.aspects.phd.note,sources:a.aspects.phd.sources}],null,2)+'\n');

@@ -1,0 +1,11 @@
+const {DatabaseSync}=require('node:sqlite');
+const d=new DatabaseSync('检索队列.sqlite');
+const id='7e6c00a9',u='https://ptc.tamu.edu/wp-content/uploads/2023/08/Sarabjit-Banerjee.pdf';
+const a=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id).details_json);
+a.audit_id='20261109_7e6c00a9_cv';
+a.aspects.phd={status:'confirmed_advisor',note:'TAMU 保存本人旧 CV 明列 Stony Brook 2004-08 博士 advisor Stanislaus S. Wong。',sources:[u]};
+a.aspects.postdoc={status:'confirmed_advisor',note:'同一 CV 分别列 Columbia 博后 2004-08 至 2007-08、advisor Irving P. Herman。',sources:[u]};
+a.next_step='核 ETH/PSI 现任与 TAMU adjunct 资格；旧 CV 任职为历史信息。';
+a.followup_required=true;
+d.prepare('insert or ignore into manual_audit_events(audit_id,record_id,recorded_at,details_json) values(?,?,?,?)').run(a.audit_id,id,new Date().toISOString(),JSON.stringify(a));
+d.close();

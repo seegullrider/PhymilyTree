@@ -1,0 +1,13 @@
+const {DatabaseSync}=require('node:sqlite');
+const crypto=require('node:crypto');
+const d=new DatabaseSync('检索队列.sqlite');
+const id='b58a15e0';
+const a=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id).details_json);
+a.audit_id='20261109_b58a15e0_robb';
+a.aspects.phd.note+=' Robb 组公告称其 2023-04-12 通过博士论文答辩；公告不代表授位日期。';
+a.aspects.phd.sources.push('https://www.robbgroup.caltech.edu/');
+a.followup_required=true;
+d.prepare('insert or ignore into manual_audit_events(audit_id,record_id,recorded_at,details_json) values(?,?,?,?)').run(a.audit_id,id,new Date().toISOString(),JSON.stringify(a));
+const id2='a2d8d806',url='https://edoc.ub.uni-muenchen.de/18148/1/Aidelsburger_Monika.pdf';
+if(!d.prepare('select id from pages where record_id=? and url=?').get(id2,url))d.prepare('insert into pages(id,record_id,job_id,url,state,attempts,error,retrieved) values(?,?,?,?,?,?,?,?)').run(crypto.createHash('sha256').update(id2+url).digest('hex').slice(0,24),id2,id2+':training',url,'retry',1,'(400) content length is too large，未取得原文',new Date().toISOString());
+d.close();

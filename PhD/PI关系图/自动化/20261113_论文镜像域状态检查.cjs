@@ -1,0 +1,1 @@
+const {DatabaseSync}=require('node:sqlite'),path=require('path'),db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});let a=db.prepare("select record_id,url,state,attempts from pages where url like ? and (attempts>=3 or state='excluded')").all('%bpb-us-e1.wpmucdn.com%');console.log(JSON.stringify(a));db.close();

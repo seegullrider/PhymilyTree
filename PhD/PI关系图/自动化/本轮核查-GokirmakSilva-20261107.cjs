@@ -1,0 +1,21 @@
+const fs=require('fs'),path=require('path'),{DatabaseSync}=require('node:sqlite'),{spawnSync}=require('child_process');const root=path.resolve(__dirname,'..');
+const mentor='[[师承人物 - Sandip Tiwari|Sandip Tiwari]]',schoolFile='University of Connecticut逐人复核记录.md';
+const records=[
+ {id:'f3036bd0',name:'Ali Gokirmak',file:'人员 - University of Connecticut - Ali Gokirmak - f3036bd0',source:'https://ecommons.cornell.edu/entities/publication/963b78b1-4065-462a-8559-38e54c4163bc',faculty:'https://engineering.uconn.edu/faculty/ece/ali-gokirmak/',date:'2006 年 1 月',note:'本人 Cornell 博士论文致谢明确称 Sandip Tiwari 为 my advisor；2026-11-07 直接核读论文 PDF；Cornell 馆藏页面记录年份为 2005，论文封面为 2006 年 1 月。',next:'Cornell 2006 年报道确认博后身份并与 Tiwari 合作，继续查明其正式博后指导者；保留 2005 馆藏时间与 2006 封面差异。'},
+ {id:'bedce8f0',name:'Helena Silva',file:'人员 - University of Connecticut - Helena Silva - bedce8f0',source:'https://ecommons.cornell.edu/server/api/core/bitstreams/ee1145e4-758b-491f-baa6-5453fea05ca7/content',faculty:'https://engineering.uconn.edu/faculty/ece/helena-silva/',date:'2005 年 8 月',note:'本人 Cornell 博士论文致谢明确称 Sandip Tiwari 为 my advisor，并感谢其整个博士期间的指导；学校本人页核对 Cornell 2005 博士。',next:'追查 2005–2006 Xerox research staff 职务是否包括博士后及其指导者；不可仅由工作时间认定博后。'}
+];
+const personLinks=records.map(x=>`[[${x.file}|${x.name}]]`),notes=new Map();
+function load(rel){const f=path.join(root,rel);if(!notes.has(f))notes.set(f,fs.readFileSync(f,'utf8').replace(/\r\n/g,'\n'));return notes.get(f)}
+function save(rel,s){notes.set(path.join(root,rel),s)}
+function replaceLine(s,test,newLine,label){const lines=s.split('\n');let n=0;for(let i=0;i<lines.length;i++)if(test(lines[i])){lines[i]=newLine;n++}if(n!==1)throw Error(label+' 匹配数 '+n);return lines.join('\n')}
+let index=load('师承关系索引.md'),reverse=load('人物/师承人物 - Sandip Tiwari.md'),school=load(schoolFile);
+for(let i=0;i<records.length;i++){let x=records[i],p=personLinks[i],rel='人物/'+x.file+'.md';let line=`- 博士导师：${mentor}。[本人 Cornell 博士论文](${x.source})致谢明确称 Tiwari 为其 advisor（论文封面 ${x.date}）；关系类型可信度：高。`;let own=load(rel);own=replaceLine(own,l=>l.includes('- 博士阶段课题组负责人：'+mentor),line,x.name+' 本人');
+ if(x.id==='f3036bd0')own=own.replace('Cornell 学位论文库站点当前限流退避，正式博士导师待学位论文确认；2006 年博士后候选不可升级为正式关系。','本人博士论文已明确 Tiwari 为博士导师；2006 年博士后候选不可升级为正式关系。');
+ else own=own.replace('学校简介列 2005 年 Cornell 博士后至 2006 年 Xerox 研究人员，未称该岗位为博士后；Cornell 学位论文库当前退避限流，待恢复后核正式论文导师。','本人博士论文已明确 Tiwari 为博士导师；学校简介列 2005 年取得 Cornell 博士学位后至 2006 年为 Xerox 研究人员，未称该岗位为博士后。');save(rel,own);
+ reverse=replaceLine(reverse,l=>l.includes('- 博士阶段课题组成员：'+p),`- 博士生：${p}。[本人 Cornell 博士论文](${x.source})致谢明确称 Tiwari 为其博士 advisor；关系类型可信度：高。`,x.name+' 反链');
+ index=replaceLine(index,l=>l.includes(p+' → 博士阶段课题组负责人：'+mentor),`- ${p} → 博士导师：${mentor}。[本人 Cornell 博士论文](${x.source})致谢明确称 Tiwari 为其 advisor；关系类型可信度：高。`,x.name+' 索引');
+ {const lines=school.split('\n');let n=0;for(let j=0;j<lines.length;j++)if(lines[j].includes(p)){const old='Sandip Tiwari（博士阶段课题组负责人）';if(!lines[j].includes(old))throw Error(x.name+' 校表旧值缺失');lines[j]=lines[j].replace(old,`[Sandip Tiwari（博士导师）](${x.source})`);if(x.id==='f3036bd0')lines[j]=lines[j].replace('分别支持博士项目负责人及博后候选，正式导师待核','分别支持原博士项目及博后候选，博士后正式导师待核');n++}if(n!==1)throw Error(x.name+' 校表行数 '+n);school=lines.join('\n')}
+}
+save('师承关系索引.md',index);save('人物/师承人物 - Sandip Tiwari.md',reverse);save(schoolFile,school);
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});const events=[];for(const x of records){const row=db.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(x.id);if(!row)throw Error('台账缺失 '+x.id);const e=JSON.parse(row.details_json);e.audit_id='20261107_cornell_thesis_tiwari_'+x.id;e.aspects.phd={status:'confirmed_advisor',note:x.note,sources:[x.source,x.faculty,...e.aspects.phd.sources]};e.followup_required=true;e.next_step=x.next;const out=path.join(__dirname,'本轮核查-CornellTiwari-'+x.id+'-20261107.json');if(fs.existsSync(out))throw Error('事件文件已存在 '+out);events.push({e,out})}db.close();
+for(const {e,out} of events)fs.writeFileSync(out,JSON.stringify(e,null,2)+'\n');for(const [f,s] of notes)fs.writeFileSync(f,s,'utf8');for(const {out} of events){const r=spawnSync(process.execPath,[path.join(__dirname,'人工核查台账.cjs'),'record',out],{encoding:'utf8'});if(r.status!==0)throw Error(r.stderr);console.log(r.stdout.trim())}

@@ -1,0 +1,11 @@
+const fs=require('fs'),path=require('path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});
+const row=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('db608834');
+if(!row) throw Error('原事件不存在');
+const ev=JSON.parse(row.details_json); db.close();
+ev.audit_id='20261107_db608834_interview_graduate_advisor';
+ev.aspects.phd={status:'confirmed_advisor',note:'采访报道称 Jelena Vučković 是 Geun Ho Ahn 的 graduate advisor，并采访其为博士生；Stanford 毕业名录确认 2024 年 EE 博士及论文题目。报道将另一共同作者称 Anthony White，与论文中的 Alexander D. White 不一致；Ahn 身份和主题匹配，正式论文签字仍待原文。',sources:['https://www.laserfocusworld.com/lasers-sources/article/14293154/nanoscale-laser-isolator-could-revolutionize-photonics-devices','https://commencement.stanford.edu/sites/g/files/sbiybj17666/files/media/file/commencement2025.pdf']};
+ev.followup_required=true;
+ev.next_step='查 Stanford 博士论文正式 advisor 签字和博士后 faculty sponsor 实际指导角色；确认 Penn 实际入职日期。';
+fs.writeFileSync(path.join(__dirname,'本轮核查-GeunHoAhn-20261107.json'),JSON.stringify(ev,null,2),'utf8');
+console.log('已准备 Geun Ho Ahn 阶段导师核查事件');

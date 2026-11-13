@@ -1,0 +1,15 @@
+// 仅生成需人工审核的线索；不合并人物、不复制导师、不更改事件或队列。
+const fs=require('fs'),path=require('path'),{DatabaseSync}=require('node:sqlite');
+const root=process.env.PI_GRAPH_ROOT||path.resolve(__dirname,'..'),db=new DatabaseSync(process.env.PI_AUTOMATION_DB||path.join(__dirname,'检索队列.sqlite'),{readOnly:true});
+const rows=db.prepare(`SELECT r.id,r.name,r.unit,r.filename,a.details_json FROM records r JOIN manual_audit_events a ON a.audit_id=(SELECT x.audit_id FROM manual_audit_events x WHERE x.record_id=r.id ORDER BY x.recorded_at DESC,x.rowid DESC LIMIT 1) ORDER BY r.unit,r.name`).all().map(r=>({...r,ev:JSON.parse(r.details_json)}));
+const hasIdentity=db.prepare("SELECT 1 FROM sqlite_master WHERE type='table' AND name='identity_assertion_events'").get();const identities=hasIdentity?db.prepare(`SELECT i.left_id,i.right_id,i.kind FROM identity_assertion_events i WHERE i.rowid=(SELECT x.rowid FROM identity_assertion_events x WHERE x.left_id=i.left_id AND x.right_id=i.right_id ORDER BY x.recorded_at DESC,x.rowid DESC LIMIT 1)`).all():[];db.close();
+const identityMap=new Map(identities.map(x=>[[x.left_id,x.right_id].sort().join('\0'),x.kind]));
+function key(n){return n.normalize('NFKC').toLowerCase().replace(/\s*[—–－-]\s*(?:转校|已离开|已故|荣休|身份|高校|现职|兼职).*$/u,'').replace(/\s*[（(](?=[^）)]*(?:已离开|已故|荣休|身份|高校|现职|兼职|研究机构|转校|主聘|访问))[^）)]*[）)]/gu,'').replace(/[.,]/g,'').replace(/\s+/g,' ').trim()}
+const groups=new Map();for(const r of rows){const k=key(r.name);if(!groups.has(k))groups.set(k,[]);groups.get(k).push(r)}
+const discrepancies=[];let excludedDifferent=0;for(const [name,g] of groups){if(g.length<2||new Set(g.map(r=>r.unit)).size<2)continue;const pair=g.length===2?identityMap.get(g.map(r=>r.id).sort().join('\0')):null;if(pair==='different'){excludedDifferent++;continue}const diffs=['phd','postdoc'].filter(k=>new Set(g.map(r=>r.ev.aspects[k].status)).size>1);if(diffs.length)discrepancies.push({name,g,diffs,pair})}
+discrepancies.sort((a,b)=>a.name.localeCompare(b.name));
+// 旧 confirmed_advisor 状态混有研究师长，不能当作正式 advisor 的精确统计。
+const labels={confirmed_advisor:'已登记指导关系（类型可能混合）',group_or_candidate:'阶段关系或候选',unresolved:'未查明',no_postdoc_documented:'未发现博士后经历'};
+let out=`# 跨校人工事件状态差异（仅线索）\n\n生成时间：${new Date().toISOString()}。${discrepancies.length} 组名称近似、跨校且阶段状态不同；排除 ${excludedDifferent} 组经人工确认不同的两人组合，身份判断详见 [[跨校人物身份判定（人工核查）|身份判定]]。未有人工判定的姓名匹配不代表同一人；即使已核同一人，也不可自动同步导师。请核对本人履历、单位、研究方向和时间后再登记新的人工事件；原记录及不同学校任职信息均保留。\n\n`;
+for(const x of discrepancies){out+=`## ${x.name.replace(/[\[\]|]/g,' ')}\n\n`;if(x.pair==='same')out+='身份状态：已有人工证据判为同一人；以下阶段差异仍需分别核查。\n\n';for(const r of x.g){const a=r.ev.aspects;out+=`- [[${r.filename}|${r.name.replace(/[\[\]|]/g,' ')}]]（${r.unit}）：博士 ${labels[a.phd.status]||a.phd.status}；博士后 ${labels[a.postdoc.status]||a.postdoc.status}。博士证据：${a.phd.note.replace(/\s+/g,' ')} 博后证据：${a.postdoc.note.replace(/\s+/g,' ')}\n`;}out+='\n';}
+const dest=path.join(root,'跨校人工事件状态差异（待核）.md');fs.writeFileSync(dest,out,'utf8');console.log(JSON.stringify({groups:discrepancies.length,records:discrepancies.reduce((n,x)=>n+x.g.length,0),excludedDifferent,target:dest,note:'人工身份判定只应用于精确记录对；不可自动同步导师'}));

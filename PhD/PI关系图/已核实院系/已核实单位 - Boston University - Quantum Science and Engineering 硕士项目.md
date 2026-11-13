@@ -1,0 +1,27 @@
+# Boston University Quantum Science and Engineering 硕士项目
+
+[[院校 - Boston University|返回学校]]
+
+项目师资按 BU 官方名录记录。每人的主聘院系和研究方向见人物页。[项目](https://www.bu.edu/physics/graduate-program/ms-quantum/) · [师资名录](https://www.bu.edu/physics/graduate-program/ms-quantum/meet-the-faculty/)
+- [[人员 - Boston University - David Coker - 350c58c8|David Coker]] — 化学 · Computational Quantum Chemistry。[师资名录](https://www.bu.edu/physics/graduate-program/ms-quantum/meet-the-faculty/)
+- [[人员 - Boston University - Ksenia Bravaya - dc561c79|Ksenia Bravaya]] — 化学 · Computational Quantum Chemistry。[师资名录](https://www.bu.edu/physics/graduate-program/ms-quantum/meet-the-faculty/)
+- [[人员 - Boston University - Wanzheng Hu - d47a5660|Wanzheng Hu]] — 物理 · Lasers and Photonics。[师资名录](https://www.bu.edu/physics/graduate-program/ms-quantum/meet-the-faculty/)
+- [[人员 - Boston University - Siddharth Ramachandran - 60f28cf8|Siddharth Ramachandran]] — 工程 · Lasers and Photonics。[师资名录](https://www.bu.edu/physics/graduate-program/ms-quantum/meet-the-faculty/)
+- [[人员 - Boston University - Michelle Sander - fc55449e|Michelle Sander]] — 工程 · Lasers and Photonics。[师资名录](https://www.bu.edu/physics/graduate-program/ms-quantum/meet-the-faculty/)
+- [[人员 - Boston University - Alexander V. Sergienko - d667207f|Alexander V. Sergienko]] — 物理 · Lasers and Photonics。[师资名录](https://www.bu.edu/physics/graduate-program/ms-quantum/meet-the-faculty/)
+- [[人员 - Boston University - David Lake - 10dee2bd|David Lake]] — 工程 · Lasers and Photonics。[师资名录](https://www.bu.edu/physics/graduate-program/ms-quantum/meet-the-faculty/)
+- [[人员 - Boston University - Minjung Son - ecf49197|Minjung Son]] — 化学 · Lasers and Photonics。[师资名录](https://www.bu.edu/physics/graduate-program/ms-quantum/meet-the-faculty/)
+- [[人员 - Boston University - Luca Dal Negro - e0fc6317|Luca Dal Negro]] — 工程 · Lasers and Photonics。[师资名录](https://www.bu.edu/physics/graduate-program/ms-quantum/meet-the-faculty/)
+- [[人员 - Boston University - Nikola Maksimovic - e4f2f507|Nikola Maksimovic]] — 物理 · Quantum Materials and Sensors。[师资名录](https://www.bu.edu/physics/graduate-program/ms-quantum/meet-the-faculty/)
+- [[人员 - Boston University - Kevin Smith - c580a20d|Kevin Smith]] — 物理 · Quantum Materials and Sensors。[师资名录](https://www.bu.edu/physics/graduate-program/ms-quantum/meet-the-faculty/)
+- [[人员 - Boston University - Maria (Masha) Kamenetska - bd6eddcd|Maria (Masha) Kamenetska]] — 物理 · Quantum Materials and Sensors。[师资名录](https://www.bu.edu/physics/graduate-program/ms-quantum/meet-the-faculty/)
+- [[人员 - Boston University - Björn Reinhard - 0fdba66c|Björn Reinhard]] — 化学 · Quantum Materials and Sensors。[师资名录](https://www.bu.edu/physics/graduate-program/ms-quantum/meet-the-faculty/)
+- [[人员 - Boston University - Xi Ling - ff6644b0|Xi Ling]] — 化学 · Quantum Materials and Sensors。[师资名录](https://www.bu.edu/physics/graduate-program/ms-quantum/meet-the-faculty/)
+- [[人员 - Boston University - David Bishop - d29ce0f1|David Bishop]] — 物理 · Quantum Materials and Sensors。[师资名录](https://www.bu.edu/physics/graduate-program/ms-quantum/meet-the-faculty/)
+- [[人员 - Boston University - Sahar Sharifzadeh - 24b03b11|Sahar Sharifzadeh]] — 工程 · Quantum Materials and Sensors。[师资名录](https://www.bu.edu/physics/graduate-program/ms-quantum/meet-the-faculty/)
+- [[人员 - Boston University - Andrei Ruckenstein - 9e73395e|Andrei Ruckenstein]] — 物理 · Quantum Information and Cryptography。[师资名录](https://www.bu.edu/physics/graduate-program/ms-quantum/meet-the-faculty/)
+- [[人员 - Boston University - Anushya Chandran - 2cf4abb7|Anushya Chandran]] — 项目主任、物理 · Quantum Physics Theory。[师资名录](https://www.bu.edu/physics/graduate-program/ms-quantum/meet-the-faculty/)
+- [[人员 - Boston University - Anders Sandvik - 002b5385|Anders Sandvik]] — 物理 · Quantum Physics Theory。[师资名录](https://www.bu.edu/physics/graduate-program/ms-quantum/meet-the-faculty/)
+- [[人员 - Boston University - Christopher Laumann - 30f4f9ac|Christopher Laumann]] — 物理 · Quantum Physics Theory。[师资名录](https://www.bu.edu/physics/graduate-program/ms-quantum/meet-the-faculty/)
+- [[人员 - Boston University - Anatoli Polkovnikov - 8469ec6f|Anatoli Polkovnikov]] — 物理 · Quantum Physics Theory。[师资名录](https://www.bu.edu/physics/graduate-program/ms-quantum/meet-the-faculty/)
+- [[人员 - Boston University - Dries Sels - 96c6c9ff|Dries Sels]] — 物理 · Quantum Physics Theory。[师资名录](https://www.bu.edu/physics/graduate-program/ms-quantum/meet-the-faculty/)

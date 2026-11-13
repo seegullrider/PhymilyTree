@@ -1,0 +1,13 @@
+const fs = require('node:fs');
+const path = require('node:path');
+const { DatabaseSync } = require('node:sqlite');
+const db = new DatabaseSync(path.join(__dirname, '检索队列.sqlite'));
+const row = db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('0532ecdd');
+if (!row) throw new Error('缺少已有人工事件');
+const e = JSON.parse(row.details_json);
+e.audit_id = '20261106_0532ecdd_munich_group_candidate';
+e.aspects.postdoc = {status:'group_or_candidate', note:'Naji 和 Schlagberger 的同期博士论文分别称 Alexander-Katz 为组员，并感谢其各自博士导师 Roland Netz；Stanford 简介证其 2004–2006 Munich 博后。对应 Netz 组为推断，正式 advisor 未证明；巴黎阶段待核。', sources:['https://edoc.ub.uni-muenchen.de/4477/01/Naji_Ali.pdf','https://edoc.ub.uni-muenchen.de/5708/1/Schlagberger_Xaver.pdf','https://chemistry.stanford.edu/events/professor-alfredo-alexander-katz-massachusetts-institute-technology']};
+e.followup_required = true;
+e.next_step = '查 UCSB 博士论文及 Munich、Paris 本人 CV 或正式指导来源；TUM 新闻原页本次无法读，退避后重核。';
+fs.writeFileSync(path.join(__dirname,'本轮核查-AlexanderKatz-Munich-20261106.json'),JSON.stringify(e,null,2)+'\n','utf8');
+db.close();

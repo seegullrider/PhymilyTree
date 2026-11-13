@@ -1,0 +1,1 @@
+const {DatabaseSync}=require('node:sqlite'),path=require('path'),db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});console.log(JSON.stringify(db.prepare("select sql from sqlite_master where name='observation_provenance_alternates'").get()));db.close();

@@ -1,0 +1,20 @@
+const fs=require('fs'),path=require('path');
+const root=path.join(__dirname,'..');
+const pickel='https://labsites.rochester.edu/pickel/wp-content/uploads/2025/06/pickel_andrea_CV_June_2025.pdf';
+const rao='https://kavli.berkeley.edu/antonios-alvertis';
+function replace(rel,old,neu){const file=path.join(root,rel),s=fs.readFileSync(file,'utf8');if(s.split(old).length!==2)throw Error(rel+' 匹配数量不为一');fs.writeFileSync(file,s.replace(old,neu));}
+let old='[Dames 组人员页](https://dameslab.berkeley.edu/people.html)列 Andrea Pickel 为 2019 博士毕业组员；正式导师的既有 Berkeley 学位库记录本轮处主机退避，未重读，保留原关系。';
+let neu=`[本人 CV](${pickel})明确列 2019 年 Berkeley 博士 Advisor 为 Chris Dames；[Dames 组人员页](https://dameslab.berkeley.edu/people.html)列其为 2019 博士毕业组员。`;
+for(const f of ['人物/人员 - UT Austin - Andrea Pickel - 803f55a3.md','人物/师承人物 - Chris Dames.md','师承关系索引.md'])replace(f,old,neu);
+old='- 博士导师：[[师承人物 - Akshay Rao|Akshay Rao]]。[来源](https://www.winton.phy.cam.ac.uk/people/antonios-alvertis)';
+replace('人物/人员 - UT Austin - Antonios Alvertis - eea56a11.md',old,old+` [Berkeley Kavli 交流项目](${rao})将博士生 Alvertis 的 Cambridge Home Faculty Advisor 列为 Akshay Rao；该页亦列 Jeffrey Neaton 为访学 Host Faculty Advisor，属于博士阶段访学。`);
+old='- 博士生：[[人员 - UT Austin - Antonios Alvertis - eea56a11|Antonios Alvertis]]。[来源](https://www.winton.phy.cam.ac.uk/people/antonios-alvertis)';
+replace('人物/师承人物 - Akshay Rao.md',old,old+` [Berkeley Kavli 交流项目](${rao})明列 Rao 为博士阶段 Home Faculty Advisor。`);
+old='- [[人员 - UT Austin - Antonios Alvertis - eea56a11|Antonios Alvertis]] → 博士导师：[[师承人物 - Akshay Rao|Akshay Rao]]。[来源](https://www.winton.phy.cam.ac.uk/people/antonios-alvertis)';
+replace('师承关系索引.md',old,old+` [Berkeley Kavli 交流项目](${rao})列为 Home Faculty Advisor。`);
+old='- 博士后课题组成员：[[人员 - UT Austin - Antonios Alvertis - eea56a11|Antonios Alvertis]]。';
+replace('人物/人员 - UC Berkeley - Jeffrey Neaton - b768db8c.md',old,`- 博士阶段访学接待导师：[[人员 - UT Austin - Antonios Alvertis - eea56a11|Antonios Alvertis]]。[Berkeley Kavli 交流项目](${rao})列 Neaton 为 Host Faculty Advisor；与其后博士后经历分开。\n`+old);
+old='[Dames 组博士校友](https://dameslab.berkeley.edu/people.html)';replace('UT Austin逐人复核记录.md',old,old+`；[本人 CV 博士导师](${pickel})`);
+old='| Alex Chin、Akshay Rao | Jeffrey Neaton（博士后课题组） | [来源](https://physics.utexas.edu/directory/antonios-alvertis) |';
+replace('UT Austin逐人复核记录.md',old,`| Alex Chin、Akshay Rao（Rao 有 Berkeley 交流项目直接佐证） | Jeffrey Neaton（博士后课题组） | [UT](https://physics.utexas.edu/directory/antonios-alvertis)；[博士阶段交流项目](${rao}) |`);
+console.log('人物页、反链、索引、学校表已更新');

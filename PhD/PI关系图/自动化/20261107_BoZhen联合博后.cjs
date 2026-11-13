@@ -1,0 +1,12 @@
+const fs=require('fs'),path=require('path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});
+const row=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('b91f4744');
+if(!row) throw Error('原事件不存在');
+const ev=JSON.parse(row.details_json); db.close();
+ev.audit_id='20261107_b91f4744_rochester_postdoc';
+ev.aspects.phd={status:'group_or_candidate',note:'本人旧 CV 的 MIT Soljačić 博士阶段组属记录保留；直接核读 MIT 实验室名单列 Bo Zhen 为博士生或博后校友，不能单独确证博士导师；Rochester 讲座确认 2014 MIT 博士。',sources:['https://www.mit.edu/~soljacic/people.html','https://www.hajim.rochester.edu/optics/news-events/colloquia/2017-01-04_bo-zhen.html']};
+ev.aspects.postdoc={status:'group_or_candidate',note:'Rochester 2017 讲座简介称与 MIT Marin Soljačić 和 Technion Mordechai Segev 为联合博士后；这是阶段共事关系，未明 advisor 头衔。',sources:['https://www.hajim.rochester.edu/optics/news-events/colloquia/2017-01-04_bo-zhen.html']};
+ev.followup_required=true;
+ev.next_step='查 MIT 2014 博士论文 Advisor 字段，核联合博后正式导师头衔；MIT 论文旧 handle 本轮 405，需等待退避并查馆藏新记录。';
+fs.writeFileSync(path.join(__dirname,'本轮核查-BoZhen-20261107.json'),JSON.stringify(ev,null,2),'utf8');
+console.log('已准备 Bo Zhen 联合博士后核查事件');

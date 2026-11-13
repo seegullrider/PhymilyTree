@@ -1,0 +1,10 @@
+const {DatabaseSync}=require('node:sqlite');
+const d=new DatabaseSync('检索队列.sqlite');
+const id='da7c8513',u='https://thesis.caltech.edu/5261/';
+const a=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id).details_json);
+a.audit_id='20261109_da7c8513_thesis';
+a.aspects.phd={status:'confirmed_advisor',note:'Caltech 学位目录列 2009 博士论文 Research Advisor Jacqueline K. Barton，答辩日期为 2008-12-01。',sources:[u]};
+a.next_step='查 Columbia 博后 Nuckolls 的正式指导职称，答辩日期不当作授位日期。';
+a.followup_required=true;
+d.prepare('insert or ignore into manual_audit_events(audit_id,record_id,recorded_at,details_json) values(?,?,?,?)').run(a.audit_id,id,new Date().toISOString(),JSON.stringify(a));
+d.close();

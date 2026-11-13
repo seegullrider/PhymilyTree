@@ -1,0 +1,8 @@
+const fs=require('fs'),path=require('path'),{DatabaseSync}=require('node:sqlite'),{spawnSync}=require('child_process');
+const id='4b57e796',db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});
+const row=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get(id);if(!row)throw Error('缺少台账');const e=JSON.parse(row.details_json);db.close();
+e.audit_id='20261107_manikantan_phases_'+id;
+e.aspects.phd={status:'group_or_candidate',note:'本人主页称在 Saintillan 组完成 2015 UCSD 博士，Saintillan 组名录列其博士及论文题目；Illinois 2012 报道明确 adviser 时其身份为硕士生，不单独用作博士导师确证。既有人物页论文 chair 证据待原文重读。',sources:['https://sites.google.com/site/hmanikantan/home','https://web.eng.ucsd.edu/mae/groups/stokeslet/pastmembers.html','https://mechse.illinois.edu/news/graduate-student-earns-fmc-technologies-inc-fellowship']};
+e.aspects.postdoc={status:'group_or_candidate',note:'本人主页称 UCSB 博后 working with Todd Squires，Saintillan 组 2015 新闻确认答辩后加入 Squires 组做博后；正式 advisor 头衔待核。',sources:['https://sites.google.com/site/hmanikantan/home','https://web.eng.ucsd.edu/mae/groups/stokeslet/news.html','https://appliedmath.ucmerced.edu/events/fluids-seminar-harishankar-manikantan']};
+e.next_step='遵守 eScholarship 主机退避，之后重读 2015 博士论文；独立追查 Squires 正式博士后 advisor 资料。';e.followup_required=true;
+const out=path.join(__dirname,'本轮核查-Manikantan分阶段-20261107.json');fs.writeFileSync(out,JSON.stringify(e,null,2)+'\n');const p=spawnSync(process.execPath,[path.join(__dirname,'人工核查台账.cjs'),'record',out],{encoding:'utf8'});if(p.status!==0)throw Error(p.stderr);process.stdout.write(p.stdout);

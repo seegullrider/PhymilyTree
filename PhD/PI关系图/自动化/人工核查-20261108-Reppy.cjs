@@ -1,0 +1,10 @@
+const fs=require('node:fs'),path=require('node:path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});
+const e=JSON.parse(db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('86d6ff76').details_json);
+db.close();
+e.audit_id='20261108_86d6ff76_kurti_candidate';
+e.aspects.postdoc={status:'group_or_candidate',note:'Cornell 履历列 1961–1962 NSF 博后 fellowship；维基百科二手人物条目称 1961 年在 Oxford 与 Nicholas Kurti 工作，条目引其回忆录但此次未读到回忆录正文。具体关系仅作候选。',sources:['https://www.lassp.cornell.edu/people/john-reppy','https://en.wikipedia.org/wiki/John_Reppy']};
+e.next_step='查 Reppy 本人回忆录原文、Oxford 博士后资料和 Yale 博士论文，确认 Kurti 及 Lane 的具体职衔；处理学位年份差异。';
+e.followup_required=true;
+fs.writeFileSync(path.join(__dirname,'人工核查-20261108-Reppy.json'),JSON.stringify(e,null,2));
+fs.writeFileSync(path.join(__dirname,'人工类型化-20261108-Reppy.json'),JSON.stringify([{event_id:'20261108_86d6ff76_kurti_candidate',record_id:'86d6ff76',stage:'postdoc',mentor_filename:'师承人物 - Nicholas Kurti',kind:'candidate',source_audit_id:e.audit_id,evidence:'Cornell 确认 1961–1962 博后 fellowship；维基百科二手条目称 1961 Oxford 与 Kurti 工作，本人回忆录原文及正式指导职衔待核。',sources:e.aspects.postdoc.sources}],null,2));

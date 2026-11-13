@@ -1,0 +1,10 @@
+const {DatabaseSync}=require('node:sqlite');
+const d=new DatabaseSync('检索队列.sqlite');
+const id='62b53034';
+const a=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id).details_json);
+a.audit_id='20261109_62b53034_thesis';
+a.aspects.phd={status:'confirmed_advisor',note:'Caltech 2017 化学工程博士论文馆藏 Advisor 字段明确列 John F. Brady。',sources:['https://thesis.caltech.edu/10172/']};
+a.next_step='继续核其他经历及图谱关系；现有博士后 advisor 由本人访谈支持。';
+a.followup_required=true;
+d.prepare('insert or ignore into manual_audit_events(audit_id,record_id,recorded_at,details_json) values(?,?,?,?)').run(a.audit_id,id,new Date().toISOString(),JSON.stringify(a));
+d.close();

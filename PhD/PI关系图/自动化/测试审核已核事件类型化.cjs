@@ -1,0 +1,4 @@
+const assert=require('node:assert/strict'),{prepare}=require('./审核已核事件类型化.cjs');
+const c={record_id:'11111111',stage:'phd',mentor_filename:'师承人物 - Test',audit_id:'audit123',source:'https://school.edu/cv',warnings:[]},entry={record_id:c.record_id,stage:c.stage,mentor_filename:c.mentor_filename,audit_id:c.audit_id,source:c.source,review_note:'本人履历明确博士论文 advisor，阶段及反链已核对。'},batch={batch_id:'20261108_test',items:[entry]};
+assert.equal(prepare(batch,[c]).length,1);assert.throws(()=>prepare(batch,[]));assert.throws(()=>prepare({...batch,items:[entry,entry]},[c]));assert.throws(()=>prepare({...batch,items:[{...entry,audit_id:'stale'}]},[c]));assert.throws(()=>prepare(batch,[{...c,warnings:['身份待核']}]));assert.equal(prepare({...batch,items:[{...entry,acknowledge_warnings:true}]},[{...c,warnings:['身份待核']}]).length,1);assert.throws(()=>prepare({...batch,items:[{...entry,review_note:'不明'}]},[c]));
+console.log('通过：人工选择、事件及来源一致、风险提示、重复与过期候选检查。');

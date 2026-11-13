@@ -1,0 +1,33 @@
+# University of Michigan, Ann Arbor：物理系
+
+[[院校 - University of Michigan, Ann Arbor|返回学校]]
+
+仅收录已按人物资料核实的记录，不表示单位已查全。
+- [[人员 - University of Michigan, Ann Arbor - Bradford Orr - 37ba13e3|Bradford Orr]] — [来源](https://lsa.umich.edu/physics/people/faculty/orr.html)
+- [[人员 - University of Michigan, Ann Arbor - Cagliyan Kurdak - ec648d7a|Cagliyan Kurdak]] — [来源](https://lsa.umich.edu/physics/people/faculty/kurdak.html)
+- [[人员 - University of Michigan, Ann Arbor - Chris Giebink - 39dc4c4e|Chris Giebink]] — [来源](https://cse.engin.umich.edu/stories/chris-giebink-named-ieee-fellow-for-contributions-to-organic-semiconductors)
+- [[人员 - University of Michigan, Ann Arbor - Ctirad Uher - daaa0cb4|Ctirad Uher]] — [来源](https://lsa.umich.edu/physics/people/faculty/cuher.html)
+- [[人员 - University of Michigan, Ann Arbor - David K. Lubensky - a734fbae|David K. Lubensky]] — [来源](https://lsa.umich.edu/appliedphysics/people/faculty/dkluben.html)
+- [[人员 - University of Michigan, Ann Arbor - Dominika Zgid - b3ef77a3|Dominika Zgid]] — [来源](https://midas.umich.edu/directory/dominika-zgid/)
+- [[人员 - University of Michigan, Ann Arbor - Duncan Steel - 9462a2bb|Duncan Steel]] — [来源](https://regents.umich.edu/files/meetings/09-09/2009-09-IV-1-11.pdf)
+- [[人员 - University of Michigan, Ann Arbor - Emanuel Gull - d8f642f0|Emanuel Gull]] — [来源](https://gull-group.org/people/)
+- [[人员 - University of Michigan, Ann Arbor - Hui Deng - 4dc66b9f|Hui Deng]] — [来源](https://regents.umich.edu/files/meetings/12-22/2022-12-IV-1.pdf)
+- [[人员 - University of Michigan, Ann Arbor - Jordan Horowitz - 9ab641e0|Jordan Horowitz]] — [来源](https://lsa.umich.edu/cscs/people.directory.html?tag=cscs&tagns=michigan-lsa&tagtext=Complex+Systems)
+- [[人员 - University of Michigan, Ann Arbor - Kai Sun - 8bc2598a|Kai Sun]] — [来源](https://sites.lsa.umich.edu/kai-sun/)
+- [[人员 - University of Michigan, Ann Arbor - Liuyan Zhao - a45008b6|Liuyan Zhao]] — [来源](https://journals.aps.org/prx/staff)
+- [[人员 - University of Michigan, Ann Arbor - Lu Li - 18e9c257|Lu Li]] — [来源](https://lsa.umich.edu/physics/people/faculty/luli.html)
+- [[人员 - University of Michigan, Ann Arbor - Mackillo (Mack) Kira - e973fa54|Mackillo (Mack) Kira]] — [来源](https://lsa.umich.edu/appliedphysics/people/faculty/mackkira.html)
+- [[人员 - University of Michigan, Ann Arbor - Na Hyun Jo - c9a479ce|Na Hyun Jo]] — [来源](https://lsa.umich.edu/appliedphysics/people/faculty/nhjo.html)
+- [[人员 - University of Michigan, Ann Arbor - Parag Deotare - 3d8ae18a|Parag Deotare]] — [来源](https://lsa.umich.edu/physics/people/affiliated-faculty/parag-deotare.html)
+- [[人员 - University of Michigan, Ann Arbor - Rachel Goldman - 70f85eca|Rachel Goldman]] — [来源](https://msewww.engin.umich.edu/people/rsgold/)
+- [[人员 - University of Michigan, Ann Arbor - Robert Deegan - c0b1bdda|Robert Deegan]] — [来源](https://lsa.umich.edu/physics/people/faculty/rddeegan.html)
+- [[人员 - University of Michigan, Ann Arbor - Robert Hovden - 1be82b48|Robert Hovden]] — [来源](https://mse.engin.umich.edu/people/hovden/)
+- [[人员 - University of Michigan, Ann Arbor - Roberto Merlin - f84c5ba6|Roberto Merlin]] — [来源](https://lsa.umich.edu/physics/people/faculty/merlin.html)
+- [[人员 - University of Michigan, Ann Arbor - Roy Clarke - 88a6c6df|Roy Clarke]] — [来源](https://lsa.umich.edu/physics/people/faculty/royc.html)
+- [[人员 - University of Michigan, Ann Arbor - Sharon Glotzer - 461ea491|Sharon Glotzer]] — [来源](https://www.mse.engin.umich.edu/people/sglotzer/)
+- [[人员 - University of Michigan, Ann Arbor - Stephen R. Forrest - 55b7c653|Stephen R. Forrest]] — [来源](https://cuos.engin.umich.edu/stories/stephen-forrest-named-peter-a-franken-distinguished-university-professor)
+- [[人员 - University of Michigan, Ann Arbor - Stephen Rand - da6662bb|Stephen Rand]] — [来源](https://lsa.umich.edu/physics/people/emeritus/scr.html)
+- [[人员 - University of Michigan, Ann Arbor - Steven Cundiff - 2c7f42f4|Steven Cundiff]] — [来源](https://lsa.umich.edu/physics/people/faculty/cundiff.html)
+- [[人员 - University of Michigan, Ann Arbor - Suraj Shankar - 4770406d|Suraj Shankar]] — [来源](https://sites.lsa.umich.edu/shankar-lab/people/)
+- [[人员 - University of Michigan, Ann Arbor - Vanessa Sih - c093e9de|Vanessa Sih]] — [来源](https://lsa.umich.edu/physics/people/faculty/vsih.html)
+- [[人员 - University of Michigan, Ann Arbor - Xiaoming Mao - 87e20260|Xiaoming Mao]] — [来源](https://regents.umich.edu/files/meetings/12-24/2024-12-IV-1.pdf)

@@ -1,0 +1,2 @@
+const {DatabaseSync}=require('node:sqlite'),path=require('path'),db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});
+const rows=db.prepare('select p.url,o.tool_output from pages p join page_observations o on p.id=o.page_id where p.record_id=?').all('5b8f7ed8');for(const r of rows)if(/ece.utexas.edu\/people\/faculty\/xiuling-li|Xiuling-Li-CV_2024/.test(r.url)){console.log('\n'+r.url);console.log(r.tool_output.split('\n').filter(x=>/Xiuling|Michigan|UCLA|1993|2000|2001|Ph.D.|Coleman|Lewis|Whetten/i.test(x)).slice(0,30).join('\n'));}db.close();

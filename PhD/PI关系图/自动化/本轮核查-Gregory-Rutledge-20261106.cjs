@@ -1,0 +1,10 @@
+const fs=require('node:fs'),path=require('node:path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'));
+const row=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('85d281c8');
+if(!row)throw Error('缺少已有人工事件');
+const e=JSON.parse(row.details_json);
+e.audit_id='20261106_85d281c8_thesis_read';
+e.aspects.phd={status:'confirmed_advisor',note:'直接读取 1990 年 MIT 博士论文，封面和摘要列 Ulrich W. Suter 为 Thesis Supervisor，作者致谢亦明确其论文导师身份。',sources:['https://citeseerx.ist.psu.edu/document?doi=6199f1c1fd094a6b9b01446ba2c07380bc1a5cb1&repid=rep1&type=pdf']};
+e.aspects.postdoc={status:'unresolved',note:'MIT 化工系页面列 1990 博士和研究领域，但未明确博士后经历或导师；不能据缺项认定不存在。',sources:['https://cheme.mit.edu/profile/gregory-rutledge/']};
+e.followup_required=true;e.next_step='查本人履历及博士后经历、导师；及时更新任职和研究方向。';
+fs.writeFileSync(path.join(__dirname,'本轮核查-Gregory-Rutledge-20261106.json'),JSON.stringify(e,null,2)+'\n','utf8');db.close();

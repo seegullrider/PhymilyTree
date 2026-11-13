@@ -1,0 +1,32 @@
+// 对既有名录和校方记录作身份消歧；不从缩写相同推断导师。
+const fs=require('node:fs'),path=require('node:path'),{DatabaseSync}=require('node:sqlite');
+const root=path.resolve(__dirname,'..');
+const id='3725f446', filename='人员 - NTU - Zexiang Shen（现职与招生待核） - 3725f446';
+const ssrl='https://digital.library.unt.edu/ark%3A/67531/metadc624243/m2/1/high_res_d/167184.pdf';
+const ntu='https://www.ntu.edu.sg/docs/librariesprovider121/news-events-folder/mse-faculty-seminars/seminar_by_prof_shen_zexiang_17mar2021.pdf?sfvrsn=25d475b9_2';
+const stanford='https://profiles.stanford.edu/zhi-xun-shen?tab=bio';
+const book='https://books.google.com/books?id=BdFEAQAAIAAJ';
+const note='1989 SSRL 名录只写 Z.-X. Shen；此前已读 Stanford 个人档案与论文书目，将该标题对应 Zhi-Xun Shen。NTU 校方材料的姓名为 Zexiang Shen；缩写相近不足以将这篇论文或 I. Lindau 归给 NTU 人物，NTU 本人学位原始材料仍待核。';
+const reviewFile=path.join(__dirname,'SSRL1989人工判别.json');
+const reviews=JSON.parse(fs.readFileSync(reviewFile,'utf8'));
+const review={record_id:id,source_line:3796,decision:'identity_unresolved',evidence:note,sources:[ssrl,stanford,book,ntu]};
+const prior=reviews.find(x=>x.record_id===id&&x.source_line===3796);
+if(prior&&JSON.stringify(prior)!==JSON.stringify(review))throw Error('已有不同判断，须人工合并');
+if(!prior)reviews.push(review);
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});
+const row=db.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id);db.close();
+const audit=JSON.parse(row.details_json);audit.audit_id='20261108_ntu_shen_ssrl_identity_unresolved';
+if(!audit.aspects.phd.note.includes('1989 SSRL 名录'))audit.aspects.phd.note+='；'+note;
+audit.aspects.phd.sources=[...new Set([...audit.aspects.phd.sources,ssrl,stanford,book])];
+audit.next_step='查 NTU Zexiang Shen 本人 King’s College 学位原始材料及最新任职；SSRL 缩写不能用于归并 Stanford 人物或确认导师。';audit.followup_required=true;
+const file=path.join(root,'人物',filename+'.md');let person=fs.readFileSync(file,'utf8');
+const add=`- 同名消歧：${note} [SSRL 原始名录](${ssrl})；[Stanford 本人档案](${stanford})；[论文书目](${book})；[NTU 学校材料](${ntu})。`;
+if(!person.includes(add)){const anchor='## 师承\n';if(!person.includes(anchor))throw Error('缺少师承标题');person=person.replace(anchor,anchor+'\n'+add+'\n');}
+const schoolFile=path.join(root,'NTU逐人复核记录.md');let school=fs.readFileSync(schoolFile,'utf8');
+const old='| [['+filename+'|Zexiang Shen（现职与招生待核）]] | 物理与数学科学学院、材料科学与工程学院；二维材料、光谱学、钙钛矿 | 待核 | 待核 | [来源]('+ntu+') |';
+const revised='| [['+filename+'|Zexiang Shen（现职与招生待核）]] | 物理与数学科学学院、材料科学与工程学院；二维材料、光谱学、钙钛矿 | 待核；SSRL 名录的 Z.-X. Shen 已与 Stanford Zhi-Xun Shen 同题论文对应，不能按缩写归入 NTU 人物 | 待核 | [NTU 学校材料]('+ntu+')；[SSRL 目录]('+ssrl+')；[Stanford 档案]('+stanford+') |';
+if(school.includes(old))school=school.replace(old,revised);else if(!school.includes(revised))throw Error('学校行未找到或发生变化');
+fs.writeFileSync(reviewFile,JSON.stringify(reviews,null,2)+'\n');
+fs.writeFileSync(file,person);fs.writeFileSync(schoolFile,school);
+fs.writeFileSync(path.join(__dirname,'人工-20261108-ntu-shen-ssrl-身份未决.json'),JSON.stringify(audit,null,2)+'\n');
+console.log('保存身份未决说明；待以人工台账 record 登记。');

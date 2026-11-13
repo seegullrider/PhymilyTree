@@ -1,0 +1,1 @@
+const {DatabaseSync}=require('node:sqlite');const d=new DatabaseSync('检索队列.sqlite',{readOnly:true});const q=d.prepare('select record_id,url,state,attempts,retrieved,error from pages where url=?');const h=d.prepare('select * from host_limits where host=?');for(const url of process.argv.slice(2)) console.log(JSON.stringify({url,host:h.get(new URL(url).hostname),rows:q.all(url)}));

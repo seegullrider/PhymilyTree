@@ -1,0 +1,10 @@
+const fs=require('fs'),path=require('path'),{DatabaseSync}=require('node:sqlite'),{spawnSync}=require('child_process');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});
+const row=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('fe5068e6');
+if(!row)throw Error('缺少既有台账');
+const e=JSON.parse(row.details_json);db.close();
+e.audit_id='20261107_williams_research_advisor_fe5068e6';
+e.aspects.phd={status:'confirmed_advisor',note:'本人 Caltech 博士论文致谢明确称 Henry Weinberg 为 my research advisor；同一馆藏元数据列 Harry B. Gray 为 research advisor 和委员会主席。两人各自正式分工待进一步核查，不推断联合导师名分。',sources:['https://thesis.caltech.edu/3840/','https://www.umdphysics.umd.edu/directory/faculty/emeritus/edw.html']};
+e.next_step='查 Caltech 当年导师及委员会原始档案厘清 Weinberg 与 Gray 分工；追查 Williams 本人的博士后经历及指导者。';e.followup_required=true;
+const out=path.join(__dirname,'本轮核查-Williams研究导师-20261107.json');fs.writeFileSync(out,JSON.stringify(e,null,2)+'\n');
+const p=spawnSync(process.execPath,[path.join(__dirname,'人工核查台账.cjs'),'record',out],{encoding:'utf8'});if(p.status!==0)throw Error(p.stderr);process.stdout.write(p.stdout);

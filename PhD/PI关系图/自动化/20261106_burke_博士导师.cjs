@@ -1,0 +1,11 @@
+const fs=require('fs'),path=require('path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'));
+const row=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('4d83240e');
+if(!row) throw Error('缺少人工台账');
+const ev=JSON.parse(row.details_json);
+ev.audit_id='20261106_burke_ucla_doctoral_adviser_4d83240e';
+ev.aspects.phd={status:'confirmed_advisor',note:'UCLA IPAM 2023 年人物报道明确写 Walter Kohn 是 Burke 的 doctoral adviser，并确认其 UC Santa Barbara 博士经历。',sources:['https://www.ipam.ucla.edu/wp-content/uploads/2023/10/IPAM-Newsletter-2023-v9.pdf']};
+ev.aspects.postdoc={status:'group_or_candidate',note:'APS 报道确认 Burke 在 Perdew 实验室做博士后；正式 advisor 职衔及 Rutgers、Indiana 等其他阶段师长待核。',sources:['https://www.aps.org/apsnews/2025/08/science-only-shareholder-research-publishing']};
+ev.followup_required=true;
+ev.next_step='保留 Kohn 博士导师确证；核实 Perdew 博后 advisor 职衔及其他研究阶段师长。';
+fs.writeFileSync(path.join(__dirname,'本轮核查-Kieron-Burke-20261106.json'),JSON.stringify(ev,null,2)+'\n','utf8');

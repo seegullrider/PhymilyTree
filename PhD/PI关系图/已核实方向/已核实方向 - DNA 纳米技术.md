@@ -1,0 +1,6 @@
+# DNA 纳米技术
+
+[[PI关系图总入口|返回图谱]]
+
+研究方向按人物资料核实；分类仍未查全。
+- [[人员 - Columbia - Oleg Gang - 09de1be5|Oleg Gang · Columbia]] — [来源](https://www.apam.columbia.edu/faculty-staff/directory/oleg-gang)

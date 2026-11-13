@@ -1,0 +1,11 @@
+const {DatabaseSync}=require('node:sqlite');
+const d=new DatabaseSync('检索队列.sqlite');
+const id='84e2b85a',u='https://cpb-us-e1.wpmucdn.com/you.stonybrook.edu/dist/a/4368/files/2020/04/Dudley-CV-April-27-2020.pdf';
+const a=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id).details_json);
+a.audit_id='20261109_84e2b85a_cv';
+a.aspects.phd={status:'confirmed_advisor',note:'本人 CV 明列 Warwick 工程科学博士 1982 年及 Thesis Advisor D. K. Bowen。',sources:[u]};
+a.aspects.postdoc={status:'group_or_candidate',note:'本人 CV 列 1981–1984 Strathclyde 博士后 working with J. N. Sherwood，正式 advisor 职称待核。',sources:[u]};
+a.next_step='核导师完整姓名及博士后正式职衔；博士后起始年份与 1982 授位年份重叠。';
+a.followup_required=true;
+d.prepare('insert or ignore into manual_audit_events(audit_id,record_id,recorded_at,details_json) values(?,?,?,?)').run(a.audit_id,id,new Date().toISOString(),JSON.stringify(a));
+d.close();

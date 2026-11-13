@@ -1,0 +1,7 @@
+const fs=require('fs'),path=require('path'),{DatabaseSync}=require('node:sqlite'),root=path.resolve(__dirname,'..'),db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});
+const url='https://web.physics.wustl.edu/henriksen/Images/Henriksen_CV.pdf',o=db.prepare('select o.tool_output from page_observations o join pages p on p.id=o.page_id where p.record_id=? and p.url=?').all('c36385fc',url);
+if(!o.some(x=>x.tool_output.includes('Ph.D. in Physics with advisor Prof. Horst Stormer, Columbia University')))throw Error('缺本人 CV 原始观察');
+const student='人员 - Washington University in St. Louis - Erik Henriksen - c36385fc',ext='师承人物 - Horst Stormer',col='人员 - Columbia - Horst Störmer - 96a130f1';
+const additions=[[student,'- 导师校属节点：[['+col+'|Horst Störmer]]；本人 CV 明列 Columbia 物理博士导师 Horst Stormer，与既有扩展节点为同人。[本人 CV]('+url+')'],[ext,'- 同人校属记录：[['+col+'|Horst Störmer（Columbia）]]；Henriksen 本人 CV 列其 Columbia 博士导师 Horst Stormer。[本人 CV]('+url+')'],[col,'- 同人师承扩展节点：[['+ext+'|Horst Stormer]]。\n- 博士生：[['+student+'|Erik Henriksen]]。其本人 CV 明列 2004–2008 Columbia 博士导师 Horst Stormer。[本人 CV]('+url+')']];
+for(const [f,line] of additions){const q=path.join(root,'人物',f+'.md'),s=fs.readFileSync(q,'utf8'),marker='## 师承';if(!s.includes(marker))throw Error('缺章节 '+f);if(!s.includes(line))fs.writeFileSync(q,s.replace(marker,marker+'\n\n'+line),'utf8');}
+db.close();console.log('已连接同人及学生反向链接，未新增导师事实。');

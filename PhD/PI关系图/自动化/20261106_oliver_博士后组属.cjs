@@ -1,0 +1,13 @@
+const fs = require('fs');
+const path = require('path');
+const { DatabaseSync } = require('node:sqlite');
+const db = new DatabaseSync(path.join(__dirname, '检索队列.sqlite'));
+const old = db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('4a519ebb');
+if (!old) throw Error('未找到 Oliver 原有台账');
+const ev = JSON.parse(old.details_json);
+ev.audit_id = '20261106_oliver_whitesides_group_4a519ebb';
+ev.aspects.postdoc = {status:'group_or_candidate', note:'Whitesides 课题组校友名录列 Scott Oliver 为 1997-07-15 至 2000-07-14 博后，UCSC 化学系及邮箱与学校目录一致；组属高可信，未列正式 advisor 或 supervisor。', sources:['https://www.gmwgroup.harvard.edu/resources','https://campusdirectory.ucsc.edu/cd_detail?uid=soliver']};
+ev.followup_required = true;
+ev.next_step = '读取 Toronto 博士论文或原始作者简介核对 Ozin；继续查 Whitesides 正式指导职衔。';
+fs.writeFileSync(path.join(__dirname,'本轮核查-Scott-Oliver-20261106.json'),JSON.stringify(ev,null,2)+'\n','utf8');
+console.log('已生成 Oliver 人工核查事件。');

@@ -1,0 +1,33 @@
+# Ohio State：物理系
+
+[[院校 - Ohio State|返回学校]]
+
+仅收录已按人物资料核实的记录，不表示单位已查全。
+- [[人员 - Ohio State - Masaki Oshikawa - abc151a2|Masaki Oshikawa]] — [来源](https://physics.osu.edu/people/oshikawa.1)
+- [[人员 - Ohio State - Maryam Ghazisaeidi - ab526122|Maryam Ghazisaeidi]] — [来源](https://mse.osu.edu/people/ghazisaeidi.1)
+- [[人员 - Ohio State - Mohit Randeria - 667eeaa4|Mohit Randeria]] — [来源](https://physics.osu.edu/people/randeria.1)
+- [[人员 - Ohio State - Robert Baker - bc884af5|Robert Baker]] — [来源](https://research.cbc.osu.edu/baker.2364/wp-content/uploads/2026/02/Curriculum-Vitae_Baker.pdf)
+- [[人员 - Ohio State - Ezekiel Johnston-Halperin - a8a2be4e|Ezekiel Johnston-Halperin]] — [来源](https://quantum.osu.edu/people/ezekiel-johnston-halperin)
+- [[人员 - Ohio State - Jay Gupta - 9b97a4be|Jay Gupta]] — [来源](https://physics.osu.edu/people/gupta.208)
+- [[人员 - Ohio State - Roberto Myers - 2b13792e|Roberto Myers]] — [来源](https://u.osu.edu/myersgroup/people/)
+- [[人员 - Ohio State - Roland Kawakami - 0d7aa224|Roland Kawakami]] — [来源](https://u.osu.edu/kawakamigroup/people/roland-kawakami/)
+- [[人员 - Ohio State - Alex von Hoegen - 6004ee1d|Alex von Hoegen]] — [来源](https://physics.osu.edu/people/vonhoegen.1)
+- [[人员 - Ohio State - Brian Skinner - 5ae51567|Brian Skinner]] — [来源](https://physics.osu.edu/people/skinner.352)
+- [[人员 - Ohio State - Chun Ning “Jeanie” Lau - 34c8ba54|Chun Ning “Jeanie” Lau]] — [来源](https://opticalscience.osu.edu/sites/default/files/2024-01/Lau%20Biosketch2.pdf)
+- [[人员 - Ohio State - Enam Chowdhury - d389e5ef|Enam Chowdhury]] — [来源](https://engineering.osu.edu/people/chowdhury.24)
+- [[人员 - Ohio State - Fengyuan Yang - 8e46bc7f|Fengyuan Yang]] — [来源](https://physics.osu.edu/sites/default/files/2020-02/CV_Yang_2020.pdf)
+- [[人员 - Ohio State - Ilya Gruzberg - 1d1e873d|Ilya Gruzberg]] — [来源](https://physics.osu.edu/people/gruzberg.1)
+- [[人员 - Ohio State - Jonathan Pelz — 荣休 - 12daaa82|Jonathan Pelz — 荣休]] — [来源](https://physics.osu.edu/people/pelz.2)
+- [[人员 - Ohio State - Leonard J. Brillson - 820bf670|Leonard J. Brillson]] — [来源](https://physics.osu.edu/people/brillson.1)
+- [[人员 - Ohio State - Marc Bockrath - 9e0cef27|Marc Bockrath]] — [来源](https://physics.osu.edu/people/bockrath.31)
+- [[人员 - Ohio State - Nandini Trivedi - 22f94a5f|Nandini Trivedi]] — [来源](https://physics.osu.edu/people/trivedi.15)
+- [[人员 - Ohio State - P. Chris Hammel - 4b0f1ee7|P. Chris Hammel]] — [来源](https://physics.osu.edu/people/hammel.7)
+- [[人员 - Ohio State - Patrick Woodward - 1845d91a|Patrick Woodward]] — [来源](https://research.cbc.osu.edu/woodward.55/patrick-woodward/)
+- [[人员 - Ohio State - Paul Berger - 0b85dddc|Paul Berger]] — [来源](https://engineering.osu.edu/people/berger.143)
+- [[人员 - Ohio State - R. Sooryakumar — 荣休 - 6c941b9f|R. Sooryakumar — 荣休]] — [来源](https://physics.osu.edu/people/sooryakumar.1)
+- [[人员 - Ohio State - Thomas R. Lemberger — 荣休 - 111c25f2|Thomas R. Lemberger — 荣休]] — [来源](https://physics.osu.edu/people/lemberger.1)
+- [[人员 - Ohio State - Wolfgang Windl - f32a81db|Wolfgang Windl]] — [来源](https://mse.osu.edu/people/windl.1)
+- [[人员 - Ohio State - Youngseok Kim - 386f97e0|Youngseok Kim]] — [来源](https://engineering.osu.edu/people/kim.10017)
+- [[人员 - Ohio State - Yuan-Ming Lu - f3d5c4d8|Yuan-Ming Lu]] — [来源](https://sites.google.com/view/yuan-ming-lu-physics/home)
+- [[人员 - Ohio State - Kevin Singh - b110d7ad|Kevin Singh]] — [现任院系原档](https://physics.osu.edu/people/singh.0)
+- [[人员 - Ohio State - Zeyang Li - d114714b|Zeyang Li]] — [现任院系原档](https://qugip.osu.edu/people/li.17472)

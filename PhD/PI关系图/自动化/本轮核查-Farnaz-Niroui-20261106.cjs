@@ -1,0 +1,14 @@
+const fs = require('node:fs');
+const path = require('node:path');
+const { DatabaseSync } = require('node:sqlite');
+const db = new DatabaseSync(path.join(__dirname, '检索队列.sqlite'));
+const row = db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('b9df5547');
+if (!row) throw new Error('缺少已有人工事件');
+const event = JSON.parse(row.details_json);
+event.audit_id = '20261106_b9df5547_mit_thesis_miller_host';
+event.aspects.phd = {status: 'confirmed_advisor', note: 'MIT 2017 博士论文档案的 Advisor(s) 明确列 Vladimir Bulović 和 Jeffrey H. Lang。', sources: ['https://dspace.mit.edu/entities/publication/6957ed55-99ea-47ef-a6f0-ae362d226c24']};
+event.aspects.postdoc = {status: 'group_or_candidate', note: 'Berkeley Miller Institute 的 2017 年项目名单将 Paul Alivisatos 列为其 Faculty Host；项目接收教师已证，正式 advisor 称谓未明确。', sources: ['https://miller.berkeley.edu/images/newsletters/Spring2017_MillerNewsletter4.6.17Final.pdf', 'https://www.eecs.mit.edu/department-of-eecs-announces-2024-promotions/']};
+event.followup_required = true;
+event.next_step = '查本人 CV 或项目原始档案，确认 Alivisatos 的正式博士后指导职衔及是否有其他导师。';
+fs.writeFileSync(path.join(__dirname, '本轮核查-Farnaz-Niroui-20261106.json'), JSON.stringify(event, null, 2) + '\n', 'utf8');
+db.close();

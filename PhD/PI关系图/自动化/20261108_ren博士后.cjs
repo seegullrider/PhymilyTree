@@ -1,0 +1,17 @@
+const fs=require('node:fs'),path=require('node:path'),{DatabaseSync}=require('node:sqlite');
+const root=path.resolve(__dirname,'..'), person='人员 - University of Houston - Zhifeng Ren - 7a058deb', mentor='师承人物 - Jui H. Wang';
+const book='https://api.pageplace.de/preview/DT0400.9781498765732_A31718375/preview-9781498765732_A31718375.pdf';
+const cv='https://uh.edu/uh-energy/research/faculty-cv/ren-zhifeng-cv.pdf';
+const node=path.join(root,'人物',mentor+'.md');
+if(!fs.existsSync(node))fs.writeFileSync(node,`# Jui H. Wang\n\n- SUNY Buffalo Einstein Chair Professor；[Zhifeng Ren 书中献辞](${book})叙述其科研经历。\n\n## 师承关系\n\n- 博士后阶段受指导者：[[${person}|Zhifeng Ren]]。[Ren 本人书中献辞](${book})说 Wang 于 1990 年接收他为博士后研究人员并共同研究超导材料；[Ren 本人 CV](${cv})列 1990–1992 Buffalo 博后。原文未直接使用 advisor 职称。\n`,'utf8');
+function replace(file,old,revised){let p=path.join(root,file),s=fs.readFileSync(p,'utf8');if(s.includes(revised))return;if(s.split(old).length!==2)throw Error('匹配不唯一 '+file);fs.writeFileSync(p,s.replace(old,revised),'utf8');}
+replace('人物/'+person+'.md','- 博士后导师：未查明。[本人履历]('+cv+')列 1990–1992 年 SUNY Buffalo 化学系博士后，导师待核。',`- 博士后阶段研究师长：[[${mentor}|Jui H. Wang]]。[本人书中献辞](${book})称 1990 年 Wang 接收其为博士后研究人员，共同研究超导材料，并描述其长期鼓励与指导；[本人履历](${cv})列 1990–1992 年 SUNY Buffalo 化学系博士后。原文未明确使用正式 advisor 职称。`);
+replace('人物/'+person+'.md','- 查中科院物理所 1990 年学位论文与 Buffalo 1990–1992 博士后课题组和指导者。','- 查中科院物理所 1990 年博士论文正式导师；继续核实 Buffalo 博士后正式职称及有无其他指导者。');
+replace('University of Houston逐人复核记录.md','| [['+person+'|Zhifeng Ren]] | 物理系；热电材料、超导材料、碳纳米管及热管理 | 未查明 | 未查明 | [学校资料](https://www.uh.edu/nsm/physics/people/profiles/zhifeng-ren/index.php) · [经历资料]('+cv+') |','| [['+person+'|Zhifeng Ren]] | 物理系；热电材料、超导材料、碳纳米管及热管理 | 未查明；管惟炎为待核线索 | Jui H. Wang（博士后阶段研究师长；正式职称待核） | [学校资料](https://www.uh.edu/nsm/physics/people/profiles/zhifeng-ren/index.php) · [本人书中献辞]('+book+') · [本人 CV]('+cv+') |');
+const index=path.join(root,'师承关系索引.md'),link=`- [[${person}|Zhifeng Ren]] → 博士后阶段研究师长：[[${mentor}|Jui H. Wang]]。[本人书中献辞](${book})明确 Wang 于 1990 年接收其为博士后并共同从事超导材料研究；[本人履历](${cv})列 1990–1992 Buffalo 博后；正式 advisor 职称待核。`;
+let ix=fs.readFileSync(index,'utf8');if(!ix.includes(link)){let anchor='- [[人员 - University of Houston - Shuo Chen - 63cfd334|Shuo Chen]] → 博士导师：';if(ix.split(anchor).length!==2)throw Error('索引锚点不唯一');ix=ix.replace(anchor,link+'\n'+anchor);fs.writeFileSync(index,ix,'utf8');}
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});const a=JSON.parse(db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('7a058deb').details_json);db.close();
+a.audit_id='20261108_ren_wang_postdoc';a.aspects.postdoc={status:'confirmed_advisor',note:'Ren 本人书中献辞称 Wang 于 1990 年接收其为博士后共同研究超导，并描述鼓励指导；本人 CV 列 1990–1992 Buffalo 博后。按阶段研究师长记，原文未写 advisor 职称。',sources:[book,cv]};a.followup_required=true;a.next_step='查中科院物理所 1990 年博士论文正式导师；核实 Wang 正式 advisor 称谓及有无其他博士后师长。';
+fs.writeFileSync(path.join(__dirname,'人工-20261108-ren.json'),JSON.stringify(a,null,2)+'\n');
+const ev=[{event_id:'20261108_ren_wang_postdoc_stage',record_id:'7a058deb',stage:'postdoc',mentor_filename:mentor,kind:'stage_mentor',source_audit_id:a.audit_id,evidence:'本人书中献辞说 Wang 于 1990 年接收他为博士后并共同研究超导，描述其鼓励和指导；本人 CV 列 1990–1992 Buffalo 博后，正式 advisor 职称待核。',sources:[book,cv]}];
+fs.writeFileSync(path.join(__dirname,'结构化-20261108-ren.json'),JSON.stringify(ev,null,2)+'\n');console.log('prepared');

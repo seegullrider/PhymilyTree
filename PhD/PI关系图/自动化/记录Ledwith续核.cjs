@@ -1,0 +1,13 @@
+const {DatabaseSync}=require('node:sqlite');
+const crypto=require('node:crypto');
+const d=new DatabaseSync('检索队列.sqlite');
+const id='dfc4f320',u='https://www.physics.harvard.edu/sites/g/files/omnuum6476/files/2026-10/Newsletter2025-compressed_1.pdf';
+const a=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id).details_json);
+a.audit_id='20261109_dfc4f320_harvard';
+a.aspects.phd={status:'confirmed_advisor',note:'Harvard 物理系 2025 系刊博士毕业名录列论文 Strong Coupling Topological Phases in Moiré Bands，advisor Ashvin Vishwanath。',sources:[u]};
+a.next_step='核 MIT Pappalardo fellowship 的正式博士后 advisor 或 host。';
+a.followup_required=true;
+d.prepare('insert or ignore into manual_audit_events(audit_id,record_id,recorded_at,details_json) values(?,?,?,?)').run(a.audit_id,id,new Date().toISOString(),JSON.stringify(a));
+const id2='1ab143b7',url='https://balsaralab.berkeley.edu/Balsara/CV%20June%202023.pdf';
+if(!d.prepare('select id from pages where record_id=? and url=?').get(id2,url))d.prepare('insert into pages(id,record_id,job_id,url,state,attempts,error,retrieved) values(?,?,?,?,?,?,?,?)').run(crypto.createHash('sha256').update(id2+url).digest('hex').slice(0,24),id2,id2+':training',url,'retry',1,'网页工具无法访问，未取得原文',new Date().toISOString());
+d.close();

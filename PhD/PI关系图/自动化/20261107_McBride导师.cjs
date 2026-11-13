@@ -1,0 +1,10 @@
+const fs=require('fs'),path=require('path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});
+const row=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('7a330761');
+if(!row)throw Error('原事件不存在');
+const ev=JSON.parse(row.details_json);db.close();
+ev.audit_id='20261107_7a330761_cu_advisor';
+ev.aspects.phd={status:'confirmed_advisor',note:'Colorado 大学太空生物膜项目原始页面直接称 MIT 博士候选人 Samantha McBride 由 Kripa Varanasi advised；论文正式 thesis supervisor 字段待原文。',sources:['https://www.colorado.edu/faculty/zea-luis/space-biofilms','https://martin-fellows.mit.edu/fellows/current-fellows/0027_8693/']};
+ev.followup_required=true;ev.next_step='查 MIT 学位论文正式导师字段及 Princeton 博士后正式导师，保留 Stone 课题组与项目指导关系。';
+fs.writeFileSync(path.join(__dirname,'本轮核查-McBride-20261107.json'),JSON.stringify(ev,null,2),'utf8');
+console.log('已准备 McBride 博士阶段导师核查事件');

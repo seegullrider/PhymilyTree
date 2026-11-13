@@ -1,0 +1,14 @@
+const fs = require('node:fs');
+const path = require('node:path');
+const { DatabaseSync } = require('node:sqlite');
+const db = new DatabaseSync(path.join(__dirname, '检索队列.sqlite'));
+const row = db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('8ab4f6c1');
+if (!row) throw new Error('缺少已有人工事件');
+const event = JSON.parse(row.details_json);
+event.audit_id = '20261106_8ab4f6c1_mit_bio_phd';
+event.aspects.phd = { status: 'confirmed_advisor', note: 'MIT 教师简介明确其在 David Chandler 指导下获得 Berkeley 博士；Stanford 讲座简介独立证实其博士期间在 Chandler 组。', sources: ['https://ilpstex.mit.edu/en/content/faculty-profiles/adam-p-willard', 'https://chemistry.stanford.edu/events/physical-chemistry-seminar-professor-adam-willard-mit'] };
+event.aspects.postdoc = { status: 'group_or_candidate', note: '本人旧 CV 在 Berkeley 和 Austin 博后职位后分别括号列 Chandler 和 Rossky；Stanford 讲座称其 Austin 博后与 Rossky 共事，第三方简介称 Rossky 为 supervisor 但含明显机构错误，正式职衔待可靠原始资料确认。', sources: ['https://utexas.academia.edu/AdamWillard/CurriculumVitae', 'https://chemistry.stanford.edu/events/physical-chemistry-seminar-professor-adam-willard-mit', 'https://biography.omicsonline.org/united-kingdom/organic-chemistry-research-center/adam-p-willard-437857'] };
+event.followup_required = true;
+event.next_step = '继续查 Berkeley 学位档案，以及两段博士后正式指导来源；核对第三方年份与本人履历的差异。';
+fs.writeFileSync(path.join(__dirname, '本轮核查-Adam-Willard-20261106.json'), JSON.stringify(event, null, 2) + '\n', 'utf8');
+db.close();

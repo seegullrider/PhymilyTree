@@ -1,0 +1,15 @@
+const fs=require('node:fs'),path=require('node:path');
+const {DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});
+const old=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('60607f36');if(!old)throw Error('缺少原台账');
+const a=JSON.parse(old.details_json),thesis='https://escholarship.org/content/qt28f1n9gq/qt28f1n9gq_noSplash_bfd03f564d9d081ab5615ea8ff3f15d6.pdf',group='https://stemmer.materials.ucsb.edu/people/professor-kaveh-ahadi',defense='https://stemmer.materials.ucsb.edu/news/2019/kaveh-ahadi-has-successfully-defended-his-phd-thesis',osu='https://mse.osu.edu/people/ahadi.4';
+a.audit_id='20261108_ahadi_thesis_prior_and_group';
+a.aspects.identity={status:'confirmed',note:'UCSB Stemmer 组个人页连到 Ohio State 本人页，双方姓名相同；Ohio State 列 2019 UCSB 博士，与组答辩通知吻合。',sources:[group,defense,osu]};
+a.aspects.affiliation={status:'confirmed',note:'Ohio State 材料科学与电气计算机工程两系本人页列助理教授。',sources:[osu]};
+a.aspects.research={status:'confirmed',note:'Ohio State 本人简介列量子材料外延薄膜生长、表征及电子输运。',sources:[osu]};
+a.aspects.phd={status:'confirmed_advisor',note:'既有人物页记录 2019 UCSB 博士论文致谢直接称 Susanne Stemmer 为 advisor、封面列其为主席；因网站退避本轮未重读。UCSB 组本人页与答辩通知独立证实博士阶段组属。',sources:[thesis,group,defense]};
+a.aspects.postdoc={status:'unresolved',note:'未找到可靠的博士后阶段或师长资料；Ohio State 介绍其此前 NC State 助理教授，不推断是否博士后。',sources:['https://www.mse.osu.edu/news/2023/10/department-welcomes-three-new-faculty-members-semester']};
+a.followup_required=true;a.next_step='依主机退避重读 UCSB 论文原文，追查博士后经历及博士后导师；不可将其他学生论文的导师移植给本人。';
+const rel=[{event_id:'20261108_ahadi_stemmer_prior_thesis',record_id:'60607f36',stage:'phd',mentor_filename:'人员 - UC Santa Barbara - Susanne Stemmer - 8c19735f',kind:'advisor',source_audit_id:a.audit_id,evidence:'既有人物页记录本人 2019 UCSB 论文致谢称 Stemmer 为 advisor；本轮论文站退避未重读，组本人页及答辩通知独立证博士阶段组属。',sources:[thesis,group,defense]}];
+for(const [name,obj] of [['人工核查-20261108-Ahadi.json',a],['结构化-20261108-Ahadi.json',rel]])fs.writeFileSync(path.join(__dirname,name),JSON.stringify(obj,null,2)+'\n',{encoding:'utf8',flag:'wx'});
+db.close();

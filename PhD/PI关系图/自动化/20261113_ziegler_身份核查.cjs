@@ -1,0 +1,17 @@
+const fs = require('node:fs');
+const path = require('node:path');
+const {DatabaseSync} = require('node:sqlite');
+const db = new DatabaseSync(path.join(__dirname, '检索队列.sqlite'), {readOnly:true});
+const row = db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('df61c3aa');
+if (!row) throw Error('Missing prior review');
+const event = JSON.parse(row.details_json);
+event.audit_id = 'pi_20261113_ziegler_initial_identity';
+const url = 'https://open.bu.edu/bitstreams/c49e913e-e8e2-4559-8146-c5a961f2bf3b/download';
+event.aspects.identity.note += ' BU 光子中心原报告在同一 SERS 项目分别称 Lawrence Ziegler 为负责人及 L. D. Ziegler 为化学系 PI，支持此人的中间首字母 D。';
+if (!event.aspects.identity.sources.includes(url)) event.aspects.identity.sources.push(url);
+event.aspects.phd.note += ' BU 原报告支持本人姓名缩写 L. D. 的身份核对，但未列博士导师，Albrecht 仍为候选。';
+if (!event.aspects.phd.sources.includes(url)) event.aspects.phd.sources.push(url);
+event.followup_required = true;
+event.next_step += ' 继续以 Lawrence D. Ziegler 检索 Cornell 论文原卷和任用履历。';
+fs.writeFileSync(path.join(__dirname, '20261113_ziegler_身份核查.json'), JSON.stringify(event,null,2));
+db.close();

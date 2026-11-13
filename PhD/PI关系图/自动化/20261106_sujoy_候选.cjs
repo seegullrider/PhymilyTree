@@ -1,0 +1,13 @@
+const fs = require('fs');
+const path = require('path');
+const { DatabaseSync } = require('node:sqlite');
+const db = new DatabaseSync(path.join(__dirname, '检索队列.sqlite'));
+const row = db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('a18577c1');
+if (!row) throw new Error('缺少原人工台账');
+const ev = JSON.parse(row.details_json);
+ev.audit_id = '20261106_sujoy_ali_candidate_a18577c1';
+ev.aspects.phd = {status:'group_or_candidate', note:'学术树搜索索引列 Southern Illinois 凝聚态 Sujoy Roy 2002 和 Advisor Naushad Ali；原页 cache miss，IEEE 简介仅确认 Southern Illinois 工程物理博士，身份及正式指导尚需学位档案核实。', sources:['https://academictree-staging.thetransmitter.org/physics/inst.php?locid=21268','https://ieeemagnetics.org/contact/sujoy-roy']};
+ev.aspects.postdoc = {status:'unresolved', note:'IEEE 简介列 UC San Diego 博士后但未命名指导者。', sources:['https://ieeemagnetics.org/contact/sujoy-roy']};
+ev.followup_required = true;
+ev.next_step = '核查 Southern Illinois 博士论文与 Naushad Ali 身份、UC San Diego 博后原始履历；学术树候选页 cache miss 至少延迟 31 分钟重试。';
+fs.writeFileSync(path.join(__dirname, '本轮核查-Sujoy-Roy-20261106.json'), JSON.stringify(ev, null, 2) + '\n', 'utf8');

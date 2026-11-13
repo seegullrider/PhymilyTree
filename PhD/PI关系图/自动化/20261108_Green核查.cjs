@@ -1,0 +1,10 @@
+const fs=require('node:fs'),path=require('node:path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'));
+db.exec('PRAGMA busy_timeout=10000');
+const id='6027f27a',url='https://search.asu.edu/profile/3701991/cv',thesis='https://vtechworks.lib.vt.edu/items/53996a85-423a-4750-8b01-10c40863c907/full';
+const old=db.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id);
+if(!old)throw Error('missing audit');
+const a=JSON.parse(old.details_json);a.audit_id='20261108_6027f27a_long_cv';a.aspects.phd.note='Long 本人 CV former group members 列 Matthew Green、Ph.D. Chemical Engineering 及 ASU 职位；Virginia Tech 博士论文元数据列 Long 为委员会主席、Davis 为联合主席。正式论文 advisor 称谓仍待核，论文文件需申请副本。';a.aspects.phd.sources=[...new Set([...a.aspects.phd.sources,url])];a.next_step='论文文件为申请副本页面；另查正式 advisor 证据，并查 Delaware 两名博士后师长的正式角色。';a.followup_required=true;
+const e=[{event_id:'20261108_6027f27a_long_cv_stage',record_id:id,stage:'phd',mentor_filename:'师承人物 - Timothy E. Long',kind:'stage_mentor',source_audit_id:a.audit_id,evidence:'Long 本人 CV 在 former group members 列 Matthew Green、化工博士及 ASU 任职；Virginia Tech 论文元数据列 Long 为 committee chair。正式 advisor 字段待核。',sources:[url,thesis]}];
+fs.writeFileSync(path.join(__dirname,'人工-20261108-Green-CV.json'),JSON.stringify(a,null,2)+'\n');fs.writeFileSync(path.join(__dirname,'结构化-20261108-Green-CV.json'),JSON.stringify(e,null,2)+'\n');
+const job=db.prepare("SELECT id FROM jobs WHERE record_id=? AND kind='training'").get(id);if(job)db.prepare('INSERT INTO events(job_id,level,detail,created) VALUES(?,?,?,?)').run(job.id,'query','博士专项 2026-11-08 实际查询为 "Matthew Green" Arizona State polymer chemistry PhD dissertation advisor；区别于队列原始检索式。',new Date().toISOString());db.close();

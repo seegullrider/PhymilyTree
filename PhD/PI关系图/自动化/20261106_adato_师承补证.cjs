@@ -1,0 +1,8 @@
+const fs=require('fs'),path=require('path'),root=path.resolve(__dirname,'..');const fp=p=>path.join(root,p),rd=p=>fs.readFileSync(fp(p),'utf8'),wr=(p,s)=>fs.writeFileSync(fp(p),s,'utf8');
+function add(p,l){let s=rd(p);if(s.includes(l))return;const m='\n<!-- PI-AUTO-SEARCH:START -->';wr(p,s.includes(m)?s.replace(m,'\n'+l+'\n'+m):s.replace(/\s*$/,'')+'\n'+l+'\n')}
+const ad='师承人物 - Ronen Adato',alt='师承人物 - Hatice Altug',un='人员 - Boston University - M. Selim Ünlü - 7385a133',gb='人员 - Boston University - Bennett Goldberg — 荣休 - 371d7c6e',gn='人员 - Northwestern - Bennett Goldberg - a9f24c18',cv='https://www.epfl.ch/labs/bios/wp-content/uploads/2018/10/2014_CV_Altug_Short.pdf',bio='https://www.bu.edu/hic/profile/ronen-adato/';
+if(!fs.existsSync(fp(`人物/${ad}.md`)))wr(`人物/${ad}.md`,`# Ronen Adato\n\n> [!info] 师承扩展人物；不推断现任学术职务。\n\n## 师承\n\n- 博士导师：[[${alt}|Hatice Altug]]。[Altug 本人 CV](${cv})将 Adato 列于 PhD thesis advisor 学生名单；[BU 简介](${bio})列其 2013 年博士，CV 写 2012 年，年份冲突待核。关系类型可信度：高。\n- 博士后课题组负责人：[[${gb}|Bennett Goldberg]]（[[${gn}|Northwestern 校属记录]]）与 [[${un}|Selim Ünlü]]。[BU 简介](${bio})称 Adato 为二人光学表征与纳米光子实验室博士后，未明确其正式 advisor 称谓；关系类型可信度：高（组属）。\n`);
+add(`人物/${alt}.md`,`- 博士生：[[${ad}|Ronen Adato]]。[本人 CV](${cv})将其列于 PhD thesis advisor 学生名单；CV 的 2012 年与 [BU 简介](${bio})的 2013 年博士日期冲突待核。关系类型可信度：高。`);
+for(const x of [un,gb,gn])add(`人物/${x}.md`,`- 博士后课题组成员：[[${ad}|Ronen Adato]]。[BU 简介](${bio})明确其在 Goldberg 与 Ünlü 实验室从事博士后工作；正式 advisor 称谓待核。关系类型可信度：高（组属）。`);
+add('师承关系索引.md',`- [[${ad}|Ronen Adato]] → 博士导师：[[${alt}|Hatice Altug]]；博士后课题组负责人：[[${gb}|Bennett Goldberg]]、[[${un}|Selim Ünlü]]。[Altug CV](${cv})明列 PhD thesis advisor；[BU 简介](${bio})确认博后实验室。2012/2013 学位年份冲突、博后正式职衔待核。`);
+console.log('Ronen Adato 博士与博士后组属关系已建立。');

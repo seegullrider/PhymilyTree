@@ -1,0 +1,31 @@
+// UF 漏项：从本人博士论文及 CV 建立记录。执行前确认所有目标和来源。
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
+const root=path.resolve(__dirname,'..'),school='University of Florida',name='Dominique Laroche';
+const id=crypto.createHash('sha256').update('20261108 University of Florida Dominique Laroche').digest('hex').slice(0,8);
+const person=`人员 - ${school} - ${name} - ${id}`, mentor='师承人物 - Guillaume Gervais', mentor2='师承人物 - Mike Lilly';
+const phd='https://www.collectionscanada.gc.ca/obj/thesescanada/vol2/QMM/TC-QMM-121182.pdf',cv='https://people.clas.ufl.edu/dlaroc10/files/CV-Dominique-Laroche-2019.pdf',faculty='https://phys.ufl.edu/people/faculty/dominique-laroche/',lab='https://people.clas.ufl.edu/dlaroc10/members/';
+const dept=`已核实单位 - ${school} - 物理系`,topics=['凝聚态实验','低温物理','介观量子器件'];
+const rd=p=>fs.readFileSync(path.join(root,p),'utf8'),wr=(p,s)=>fs.writeFileSync(path.join(root,p),s,'utf8');
+const manifest=JSON.parse(rd('graph-manifest.json'));
+if(manifest.nodes.some(n=>n.id===id||n.unit===school&&n.name===name)||fs.existsSync(path.join(root,'人物',person+'.md'))||fs.existsSync(path.join(root,'人物',mentor2+'.md')))throw Error('重复或同名节点需人工检查');
+for(const f of [`人物/${mentor}.md`,`院校与机构/院校 - ${school}.md`,`已核实院系/${dept}.md`,`${school}逐人复核记录.md`,`${school}院系待核候选.md`,'师承关系索引.md',...topics.map(t=>`已核实方向/已核实方向 - ${t}.md`)])if(!fs.existsSync(path.join(root,f)))throw Error('缺少 '+f);
+if(rd(`人物/${mentor}.md`).split('## 师承\n').length!==2)throw Error('师承标题异常');
+if(!rd(`${school}逐人复核记录.md`).includes('\n## 待逐院系调查')||!rd(`${school}院系待核候选.md`).includes('- Dominique Laroche\n'))throw Error('学校表或候选表边界异常');
+const evid1='McGill 博士论文致谢明确称 Guillaume Gervais 为 thesis advisor；本人 CV 的论文题目及 UF 身份一致。';
+const evid2='同一博士论文致谢明确称 Mike Lilly 为 Sandia 的 co-supervisor；保留博士研究联合指导，正式学位登记职衔待核。';
+const source=`[博士论文原文](${phd})`;
+function append(f,line){const s=rd(f);if(!s.includes(line))wr(f,s.trimEnd()+'\n'+line+'\n');}
+wr(`人物/${person}.md`,`# ${name}\n\n> [!info] 漏校新增记录\n> 佛罗里达大学其他相关院系仍需逐人核查。\n\n## 所在的学校或机构记录\n\n- [[院校 - ${school}|${school}]] · [[${dept}|物理系]]。[UF 本人实验室](${lab})列其为 PI。\n\n## 院系与研究方向核验（2026-11-08）\n\n- [[已核实方向 - 凝聚态实验|凝聚态实验]] · [[已核实方向 - 低温物理|低温物理]] · [[已核实方向 - 介观量子器件|介观量子器件]]；一维 Luttinger liquid、电子相互作用与 Majorana 纳米器件。[UF 物理系](${faculty})。\n\n## 师承\n\n- 博士导师：[[${mentor}|Guillaume Gervais]]。${evid1} ${source}\n- 博士研究联合指导者：[[${mentor2}|Mike Lilly]]。${evid2} ${source}\n- 博士后导师：待查。[本人 CV](${cv})列 2016–2018 TU Delft QuTech 博士后但未列指导者；2014–2016 Sandia 职位写 Condensed Matter Physics Researcher，不自动标为博士后。博士论文提交 2013 年，CV 列学位 2014 年。\n`);
+wr(`人物/${mentor2}.md`,`# Mike Lilly\n\n> [!info] 师承扩展人物\n> 依据论文致谢建立；全名、现职及其他履历仍待核，不与同名人物自动合并。\n\n## 师承\n\n- 博士研究联合指导：[[${person}|${name}]]。${evid2} ${source}\n`);
+wr(`人物/${mentor}.md`,rd(`人物/${mentor}.md`).replace('## 师承\n',`## 师承\n\n- 博士生：[[${person}|${name}]]。${evid1} ${source}\n`));
+append(`院校与机构/院校 - ${school}.md`,`- [[${person}|${name}]]`);
+append(`已核实院系/${dept}.md`,`- [[${person}|${name}]] — [UF 物理系](${faculty})`);
+for(const t of topics)append(`已核实方向/已核实方向 - ${t}.md`,`- [[${person}|${name} · ${school}]] — [UF 物理系](${faculty})`);
+append('师承关系索引.md',`- [[${person}|${name}]] → 博士导师：[[${mentor}|Guillaume Gervais]]。${evid1} ${source}`);
+append('师承关系索引.md',`- [[${person}|${name}]] → 博士研究联合指导者：[[${mentor2}|Mike Lilly]]。${evid2} ${source}`);
+let table=rd(`${school}逐人复核记录.md`);table=table.replace('\n## 待逐院系调查',`\n| [[${person}|${name}]] | 物理；凝聚态实验、一维量子器件、Majorana | Guillaume Gervais（论文 advisor）；Mike Lilly（论文 co-supervisor，学位登记职衔待核） | TU Delft 2016–2018，导师待核 | ${source}；[本人 CV](${cv})；[UF](${faculty}) |\n\n## 待逐院系调查`);wr(`${school}逐人复核记录.md`,table);
+let candidates=rd(`${school}院系待核候选.md`);candidates=candidates.replace('- Dominique Laroche\n','- Dominique Laroche（已纳入逐人表；博士后导师继续追查）\n');wr(`${school}院系待核候选.md`,candidates);
+manifest.nodes.push({id,filename:person,name,unit:school,kind:'美国'});manifest.notes=manifest.nodes.length;manifest.units=new Set(manifest.nodes.map(n=>n.unit)).size;wr('graph-manifest.json',JSON.stringify(manifest,null,2)+'\n');
+const aid=`20261108_uf_laroche_${id}`,a={audit_id:aid,record_id:id,aspects:{identity:{status:'confirmed',note:'本人 CV 论文题目与 McGill 学位论文、UF 院系及本人实验室吻合。',sources:[cv,phd,faculty]},affiliation:{status:'confirmed',note:'UF 物理系任教，实验室名录列为 PI。',sources:[faculty,lab]},research:{status:'confirmed',note:'凝聚态实验、一维电子相互作用、低温器件及 Majorana。',sources:[faculty]},phd:{status:'confirmed_advisor',note:'论文致谢称 Guillaume Gervais 为 thesis advisor，Mike Lilly 为 Sandia co-supervisor；后者正式学位登记职衔待核。',sources:[phd,cv]},postdoc:{status:'unresolved',note:'本人 CV 列 2016–2018 QuTech TU Delft 博士后，未命名导师；Sandia 职位不自动视为博士后。',sources:[cv]}},followup_required:true,next_step:'查 TU Delft 博士后阶段指导者、Lilly 的正式学位登记角色，并继续补全 UF 相关院系。'};
+const typed=[{event_id:`20261108_laroche_gervais_${id}`,record_id:id,stage:'phd',mentor_filename:mentor,kind:'advisor',source_audit_id:aid,evidence:evid1,sources:[phd,cv]},{event_id:`20261108_laroche_lilly_${id}`,record_id:id,stage:'phd',mentor_filename:mentor2,kind:'stage_mentor',source_audit_id:aid,evidence:evid2,sources:[phd]}];
+wr(`自动化/人工-20261108-UF-Laroche-${id}.json`,JSON.stringify(a,null,2)+'\n');wr(`自动化/结构化-20261108-UF-Laroche-${id}.json`,JSON.stringify(typed,null,2)+'\n');console.log(JSON.stringify({id,person}));

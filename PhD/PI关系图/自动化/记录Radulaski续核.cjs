@@ -1,0 +1,10 @@
+const {DatabaseSync}=require('node:sqlite');
+const d=new DatabaseSync('检索队列.sqlite');
+const id='bfaae8d2',u='https://web.stanford.edu/group/nqp/jv_files/thesis/marina_thesis.pdf';
+const a=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id).details_json);
+a.audit_id='20261109_bfaae8d2_thesis';
+a.aspects.phd={status:'confirmed_advisor',note:'Stanford 2017 博士论文签字页明确 Jelena Vučković 为 Principal Adviser。',sources:[u]};
+a.next_step='核 Stanford 博后阶段正式 advisor 职称，目前仅有组属证据。';
+a.followup_required=true;
+d.prepare('insert or ignore into manual_audit_events(audit_id,record_id,recorded_at,details_json) values(?,?,?,?)').run(a.audit_id,id,new Date().toISOString(),JSON.stringify(a));
+d.close();

@@ -1,0 +1,13 @@
+const fs = require('node:fs');
+const {createHash} = require('node:crypto');
+const name = 'Phillip J. Milner', unit = 'Cornell';
+const id = createHash('sha256').update(unit+'|'+name).digest('hex').slice(0,8);
+const cv='https://bpb-us-e1.wpmucdn.com/blogs.cornell.edu/dist/2/8231/files/2023/12/CV-Milner-1.pdf';
+const current='https://as.cornell.edu/people/phillip-milner';
+const data=[{id,name,unit,aliases:'Phillip Milner',departments:['化学与化学生物学系'],topics:['多孔材料','金属有机框架'],affiliation:'Cornell 化学与化学生物学系副教授。',research:'框架材料、有机与材料化学交叉，研究金属有机框架及其电化学、光催化和分离应用；主要方向偏化学与材料相邻。',identity:'Cornell 教师档和本人 CV 的姓名、单位与研究领域一致。',current:[current,'https://chemistry.cornell.edu/news/ccb-welcomes-dr-phillip-milner-cornell'],phd:{mentor:'Stephen L. Buchwald',target:'师承人物 - Stephen L. Buchwald',evidence:'本人 CV 教育经历明确列 2015 MIT 化学博士 Advisor Stephen Buchwald。',urls:[cv]},postdoc:{mentor:'Jeffrey R. Long',target:'人员 - UC Berkeley - Jeffrey R. Long - dcbb0150',evidence:'本人 CV 教育经历明确列 2015–2018 Berkeley 博士后 Advisor Jeffrey Long，Long 本人 CV 的受指导博士后名单独立核对相同姓名与年份。',urls:[cv,'https://www.chemistry.harvard.edu/sites/g/files/omnuum7776/files/2026-07/Jeffrey%20R.%20Long%20CV%202026.pdf#page=10']},next:'博士论文原卷签署页可进一步复核；课题与凝聚态物理的匹配程度待用户筛选。'}];
+const batch='20261113_Milner';
+fs.writeFileSync(batch+'.json',JSON.stringify(data,null,2)+'\n');
+let script=fs.readFileSync('20261113_0520_跨院系输运与电化学PI补录.cjs','utf8');
+script=script.replace("const batch = '20261113_0520_跨院系输运与电化学PI补录';",`const batch = '${batch}';`);
+fs.writeFileSync(batch+'_apply.cjs',script);
+console.log(JSON.stringify({id,name}));

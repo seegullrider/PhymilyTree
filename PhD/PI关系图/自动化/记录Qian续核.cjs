@@ -1,0 +1,12 @@
+const {DatabaseSync}=require('node:sqlite');
+const d=new DatabaseSync('检索队列.sqlite');
+const id='e35f1666',u='https://people.tamu.edu/~feng/QIAN_Xiaofeng_CV.pdf';
+const a=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id).details_json);
+a.audit_id='20261109_e35f1666_cv';
+a.aspects.phd={status:'confirmed_advisor',note:'本人 CV 的 MIT 博士论文条目明确 Advisor Sidney Yip，并列论文题目。',sources:[u]};
+a.aspects.postdoc.note+=' 本人 CV 列材料系博后 2008-01—2011-07、核科学与工程系博后 2011-08—2014-06，职位条目未命名导师。';
+a.aspects.postdoc.sources.push(u);
+a.next_step='核 Ju Li 所列开始月份与本人 CV 差异，以及 Marzari 阶段正式 advisor 职衔。';
+a.followup_required=true;
+d.prepare('insert or ignore into manual_audit_events(audit_id,record_id,recorded_at,details_json) values(?,?,?,?)').run(a.audit_id,id,new Date().toISOString(),JSON.stringify(a));
+d.close();

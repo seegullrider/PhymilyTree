@@ -1,0 +1,15 @@
+# Nicola Marzari
+
+> [!info] 师承扩展人物
+> 本节点依据可核查的师承关系建立；其他经历及现职需另核。
+
+## 师承
+
+- 博士生：[[人员 - Penn State - Ismaila Dabo — 已转 Carnegie Mellon - efede036|Ismaila Dabo — 已转 Carnegie Mellon]]。[本人 CV](https://dabo.matse.psu.edu/dabo/resources/2019-09-01-cv.pdf) 证据：MIT 博士论文条目列 Supervisor: Nicola Marzari；关系类型可信度：高。 [本人 2023 CV 第 2 页](https://dabo.matse.psu.edu/dabo/resources/2023-12-23-cv-1.pdf)。[CERMICS 2009 年报](https://cermics-lab.enpc.fr/wp-content/uploads/2022/06/CERMICS-2009.pdf)。本人 2023 CV 第 2 页列 2008-02 MIT 材料博士及论文 Towards first-principles electrochemistry，明确 Supervisor 为 Nicola Marzari。CERMICS 2009 年报独立确认该导师并给出 2007-10 答辩时间。
+- 博士生：[[人员 - Carnegie Mellon - Ismaila Dabo - 4304b870|Ismaila Dabo]]。[本人 CV](https://dabo.matse.psu.edu/dabo/resources/2019-09-01-cv.pdf) 证据：与 Penn State 条目为同一人，MIT 博士论文条目列 Marzari 为 Supervisor；关系类型可信度：高。 [本人 2023 CV 第 2 页](https://dabo.matse.psu.edu/dabo/resources/2023-12-23-cv-1.pdf)。[CERMICS 2009 年报](https://cermics-lab.enpc.fr/wp-content/uploads/2022/06/CERMICS-2009.pdf)。本人 2023 CV 第 2 页列 2008-02 MIT 材料博士及论文 Towards first-principles electrochemistry，明确 Supervisor 为 Nicola Marzari。CERMICS 2009 年报独立确认该导师并给出 2007-10 答辩时间。
+- 博士生：[[人员 - Columbia - Michele Simoncelli — 招生信息 - ebe2ac32|Michele Simoncelli — 招生信息]]。[本人履历](https://www.engineering.columbia.edu/sites/default/files/2025-06/cv_michele_simoncelli_12-2024.pdf) 证据：EPFL 博士论文 supervised by Marzari；此条是同一人的招生记录；关系类型可信度：高。 [本人 Columbia 课题组页面](https://simoncelligroup.apam.columbia.edu/content/michele-simoncelli)明确记载 2021 年 EPFL 博士 under the supervision of Nicola Marzari；两条 Columbia 记录为同一人。 [EPFL 学位论文目录](https://www.epfl.ch/education/phd/edmx-materials-science-and-engineering/edmx-published-theses/)列 Marzari 为 Dir.。
+- 博士生：[[人员 - Columbia - Michele Simoncelli - d65082e2|Michele Simoncelli]]。[本人履历](https://www.engineering.columbia.edu/sites/default/files/2025-06/cv_michele_simoncelli_12-2024.pdf) 证据：EPFL 博士论文 supervised by Marzari；关系类型可信度：高。 [本人 Columbia 课题组页面](https://simoncelligroup.apam.columbia.edu/content/michele-simoncelli)明确记载 2021 年 EPFL 博士 under the supervision of Nicola Marzari；两条 Columbia 记录为同一人。 [EPFL 学位论文目录](https://www.epfl.ch/education/phd/edmx-materials-science-and-engineering/edmx-published-theses/)列 Marzari 为 Dir.。 Columbia Engineering 原档第 86 行直接称 2021 年 EPFL 博士 under the supervision of Nicola Marzari，并附论文研究方向。 [原档 1](https://www.engineering.columbia.edu/faculty-staff/directory/michele-simoncelli)
+- 博士生：[[人员 - Harvard - Boris Kozinsky - c0139d4a|Boris Kozinsky]]。[来源](https://citeseerx.ist.psu.edu/document?doi=64a8f51fa571b98dba18d3bc36864959dce5c3d9&repid=rep1&type=pdf)
+- 博士后课题组成员：[[人员 - Texas A&M - Xiaofeng Qian - e35f1666|Xiaofeng Qian]]。[本人组页](https://people.tamu.edu/~feng/qian.html) 列其在 Nicola Marzari 组博士后；正式 advisor 称谓待核。[原来源](https://sites.google.com/tamu.edu/qian-group/group)
+- 博士生：[[人员 - MIT - Heather J. Kulik - 5e27ba33|Heather J. Kulik]]。[MIT 本人访谈](https://news.mit.edu/2022/heather-kulik-chemical-materials-0206) 证据：文章明确称 Marzari 为其 PhD advisor。关系类型可信度：高。
+[建立节点的来源](https://news.mit.edu/2022/heather-kulik-chemical-materials-0206)。

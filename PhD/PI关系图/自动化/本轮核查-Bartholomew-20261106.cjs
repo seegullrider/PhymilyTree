@@ -1,0 +1,14 @@
+const fs = require('node:fs');
+const path = require('node:path');
+const { DatabaseSync } = require('node:sqlite');
+const db = new DatabaseSync(path.join(__dirname, '检索队列.sqlite'));
+const row = db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('5a0163fc');
+if (!row) throw new Error('没有找到既有人工核查记录');
+const event = JSON.parse(row.details_json);
+event.audit_id = '20261106_5a0163fc_beckman_mentor';
+event.aspects.phd = {status:'group_or_candidate', note:'Yale 化学系称其 2019 年 Harvard 博士研究在 Theodore Betley 实验室开展；正式论文导师职衔待核。', sources:['https://chem.yale.edu/posts/2022-05-24-amymarie-bartholomew-appointed-assistant-professor-of-chemistry']};
+event.aspects.postdoc = {status:'group_or_candidate', note:'Beckman 基金会明确将 Xavier Roy 列为 Columbia 2020 博士后奖学金 Faculty Mentor；Yale 化学系确认她 2019 年起与 Roy 博后共事。已确认项目导师身份，但不将其推成额外的行政职衔。', sources:['https://www.beckman-foundation.org/people/amymarie-bartholomew/','https://chem.yale.edu/posts/2022-05-24-amymarie-bartholomew-appointed-assistant-professor-of-chemistry']};
+event.followup_required = true;
+event.next_step = '查 Harvard 2019 年博士学位论文或本人 CV，核实 Betley 的正式 thesis advisor 身份；博士后奖学金项目导师 Roy 已由基金会确认。';
+fs.writeFileSync(path.join(__dirname, '本轮核查-Bartholomew-20261106.json'), JSON.stringify(event,null,2)+'\n','utf8');
+db.close();

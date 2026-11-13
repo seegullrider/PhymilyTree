@@ -1,0 +1,11 @@
+const {DatabaseSync}=require('node:sqlite');
+const d=new DatabaseSync('检索队列.sqlite');
+const id='a2a5d85a',u='https://www.michaudellab.org/_files/ugd/146c22_23aac99bd2494adcb17ad9cb587308dc.pdf';
+const a=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id).details_json);
+a.audit_id='20261109_a2a5d85a_cv';
+a.aspects.phd={status:'confirmed_advisor',note:'本人 CV 列 Scripps 2010–2015 博士研究 advisor Phil S. Baran；2009 与其硕士访问研究另属博士前阶段。',sources:[u]};
+a.aspects.postdoc={status:'confirmed_advisor',note:'本人 CV 明列 Cornell 2015–2018 博士后 advisor Brett P. Fors。',sources:[u]};
+a.next_step='核实跨校人物身份与图谱双向链接，保持阶段区分。';
+a.followup_required=true;
+d.prepare('insert or ignore into manual_audit_events(audit_id,record_id,recorded_at,details_json) values(?,?,?,?)').run(a.audit_id,id,new Date().toISOString(),JSON.stringify(a));
+d.close();

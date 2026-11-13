@@ -1,0 +1,14 @@
+const fs = require('node:fs');
+const path = require('node:path');
+const { DatabaseSync } = require('node:sqlite');
+const db = new DatabaseSync(path.join(__dirname, '检索队列.sqlite'));
+const row = db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('c102d5d6');
+if (!row) throw new Error('缺少已有人工事件');
+const event = JSON.parse(row.details_json);
+event.audit_id = '20261106_c102d5d6_thesis_transcript';
+event.aspects.phd = {status: 'confirmed_advisor', note: '1991 MIT 博士论文全文转录的首页与摘要均明确列 Thesis Supervisor Dimitri A. Antoniadis；姓名、学位及研究方向与学校简介相符。MIT 官方档案本次受限，待可读时重核。', sources: ['https://studylib.net/doc/11185118/semiconductor--process--design--representations--tools--d...', 'https://orgchart.mit.edu/leadership/vice-provost-international-activities/biography']};
+event.aspects.postdoc = {status: 'unresolved', note: 'MIT 简介将 1991–1992 Texas Instruments 列为工作，1998 年作者简介列 1991–1993 technical staff；均未标博士后，职位及年份差异待核。', sources: ['https://orgchart.mit.edu/leadership/vice-provost-international-activities/biography', 'https://ptacts.uspto.gov/ptacts/public-informations/petitions/1533478/download-documents?artifactId=wjfFaepK7sd9qFB-7tMLox3JpdpArTM6e6n_r1-Ra-8W9mHlT7P70tk']};
+event.followup_required = true;
+event.next_step = '允许访问后重核 MIT 官方博士论文档案；查 Texas Instruments 任职是否为博士后及是否另有该经历。';
+fs.writeFileSync(path.join(__dirname, '本轮核查-Duane-Boning-20261106.json'), JSON.stringify(event, null, 2) + '\n', 'utf8');
+db.close();

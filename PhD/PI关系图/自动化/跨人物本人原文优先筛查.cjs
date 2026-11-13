@@ -1,0 +1,13 @@
+// Prioritize previously saved cross-person source excerpts whose URL appears to name
+// the source record. This is a locator, not an identity or mentor determination.
+const fs=require('node:fs'),path=require('node:path'),{DatabaseSync}=require('node:sqlite');
+const dir=__dirname,input=JSON.parse(fs.readFileSync(path.join(dir,'跨人物完整原文候选.json'),'utf8'));
+const db=new DatabaseSync(path.join(dir,'检索队列.sqlite'),{readOnly:true});
+const people=new Map(db.prepare(`SELECT r.id,r.name,r.unit,r.filename,a.details_json FROM records r LEFT JOIN manual_audit_events a ON a.rowid=(SELECT x.rowid FROM manual_audit_events x WHERE x.record_id=r.id ORDER BY x.recorded_at DESC,x.rowid DESC LIMIT 1)`).all().map(x=>[x.id,x]));db.close();
+const norm=s=>s.normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z]+/g,'');
+let result=[];
+for(const x of input.hits){let p=people.get(x.source_record_id),a;if(!p||p.id===x.id)continue;try{a=JSON.parse(p.details_json).aspects}catch{continue}if(a.phd?.status==='confirmed_advisor'&&a.postdoc?.status==='confirmed_advisor')continue;
+ let names=p.name.replace(/（[^）]*）|\([^)]*\)|\s*[—–].*$/g,'').split(/\s+/).filter(Boolean);if(names.length<2||!/advisor|adviser|supervisor/i.test(x.evidence))continue;let url;try{url=norm(decodeURIComponent(x.url))}catch{url=norm(x.url)}let first=norm(names[0]),last=norm(names.at(-1));if(first.length<3||last.length<3||(!url.includes(first+last)&&!url.includes(last+first)))continue;
+ let graphDir=path.resolve(dir,'..','人物'),personPath=path.join(graphDir,p.filename+'.md'),personText=fs.existsSync(personPath)?fs.readFileSync(personPath,'utf8'):'';let direct=personText.includes('[['+x.filename+'|')||personText.includes('[['+x.filename+']]');let aliases=[...personText.matchAll(/\[\[([^\]|]+)(?:\|[^\]]*)?\]\]/g)].map(z=>z[1]);let viaAlias=false;for(const alias of aliases){let target=path.join(graphDir,alias+'.md');if(!fs.existsSync(target))continue;let lines=fs.readFileSync(target,'utf8').split(/\r?\n/);if(lines.some(line=>/同人|同一人/.test(line)&&(line.includes('[['+x.filename+'|')||line.includes('[['+x.filename+']]')))){viaAlias=true;break}}
+ result.push({...x,source_name:p.name,source_unit:p.unit,source_filename:p.filename,source_phd:a.phd?.status,source_postdoc:a.postdoc?.status,source_person_already_links_matched_node:direct,source_person_links_known_identity_alias:viaAlias});}
+const output={generated:new Date().toISOString(),warning:'URL 姓名只是定位线索，可能为不同人、另一个阶段或导师反向关系，必须人工核对原文、身份和角色；不自动写入图谱。',candidates:result};fs.writeFileSync(path.join(dir,'跨人物本人原文优先候选.json'),JSON.stringify(output,null,2),'utf8');console.log(JSON.stringify({candidates:result.length}));

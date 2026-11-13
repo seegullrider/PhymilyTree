@@ -1,0 +1,11 @@
+const {DatabaseSync}=require('node:sqlite');
+const d=new DatabaseSync('检索队列.sqlite');
+const id='599419ce',u='https://www.bnl.gov/staff/ycchen';
+const a=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id).details_json);
+a.audit_id='20261109_599419ce_bnl';
+a.aspects.postdoc.note='Brookhaven 履历正文称曾任 NSLS 博后，职位表列 2011–2014 Research Associate；精确博士后起止日期与指导者未列。';
+a.aspects.postdoc.sources.push(u);
+a.next_step='查 NSLS 博后指导者、精确任期及早期履历中本科单位不一致。';
+a.followup_required=true;
+d.prepare('insert or ignore into manual_audit_events(audit_id,record_id,recorded_at,details_json) values(?,?,?,?)').run(a.audit_id,id,new Date().toISOString(),JSON.stringify(a));
+d.close();

@@ -1,0 +1,2 @@
+const {DatabaseSync}=require('node:sqlite'),path=require('path'),db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true}),url='https://search.asu.edu/profile/45790/cv';
+const rows=db.prepare('select p.id,o.tool_output from pages p join page_observations o on p.id=o.page_id where p.record_id=? and p.url=?').all('e264961e',url);for(const x of rows){console.log('PAGE '+x.id);const a=x.tool_output.split('\n');console.log(a.slice(0,24).join('\n'));console.log(a.filter(l=>/Culbertson|Akbar Ahmadzadeh/i.test(l)).join('\n'));}db.close();

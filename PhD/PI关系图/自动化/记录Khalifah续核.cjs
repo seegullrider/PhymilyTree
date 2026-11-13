@@ -1,0 +1,12 @@
+const {DatabaseSync}=require('node:sqlite');
+const d=new DatabaseSync('检索队列.sqlite');
+const id='1e5738c8',u='https://www.stonybrook.edu/commcms/chemistry/people/faculty_profiles/khalifah-peter.php';
+const a=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id).details_json);
+a.audit_id='20261109_1e5738c8_department';
+a.aspects.phd.note+=' Stony Brook 化学系页另确认 Princeton 2001 博士，但未命名导师。';
+a.aspects.phd.sources.push(u);
+a.aspects.postdoc.note+=' 化学系页另确认 Oak Ridge 2001–2004 博后，但未命名导师。';
+a.aspects.postdoc.sources.push(u);
+a.followup_required=true;
+d.prepare('insert or ignore into manual_audit_events(audit_id,record_id,recorded_at,details_json) values(?,?,?,?)').run(a.audit_id,id,new Date().toISOString(),JSON.stringify(a));
+d.close();

@@ -1,0 +1,12 @@
+const assert=require('node:assert/strict'),{candidate}=require('./已核事件类型化候选.cjs');
+const r={id:'11111111',name:'First Scholar',unit:'U',filename:'person',audit_id:'audit'},a={aspects:{identity:{status:'confirmed'},phd:{status:'confirmed_advisor',note:'本人 CV 明确博士论文 advisor Jane Mentor',sources:['https://university.edu/cv']},postdoc:{status:'group_or_candidate',note:'候选',sources:['https://university.edu/cv']}}},rel={type:'博士导师',target:'师承人物 - Jane Mentor|Jane Mentor',url:'https://university.edu/cv',evidence:'本人 CV 明确博士 advisor',review_boundary:''},rev='- 博士生：[[person|First Scholar]] 11111111';
+assert(candidate(r,a,rel,new Set(),rev));assert.equal(candidate(r,a,{...rel,type:'博士后导师'},new Set(),rev),null);assert.equal(candidate(r,a,{...rel,url:'https://other.edu/cv'},new Set(),rev),null);assert.equal(candidate(r,a,rel,new Set(['11111111\nphd\n师承人物 - Jane Mentor']),rev),null);assert.equal(candidate(r,a,rel,new Set(),'无反链'),null);assert.equal(candidate(r,{aspects:{...a.aspects,identity:{status:'uncertain'}}},rel,new Set(),rev),null);
+assert.equal(candidate(r,a,rel,new Set(),'- 博士后：[[person|First Scholar]] 11111111'),null,'博士后的反链不能算博士阶段的反链');
+const flagged=candidate(r,{aspects:{...a.aspects,phd:{...a.aspects.phd,note:'本人 CV 称 Jane Mentor 为 advisor；同名身份仍待核'}}},rel,new Set(),rev);assert(flagged.warnings.length>0);
+const boundary=candidate(r,a,{...rel,review_boundary:'导师全名尚待确认'},new Set(),rev);assert(boundary.warnings.length>0);
+const spaced=candidate(r,a,{...rel,review_boundary:'导师全名待结合学校履历进一步确认'},new Set(),rev);assert(spaced.warnings.length>0);
+const shortRel={...rel,target:'师承人物 - Jian Zhu|Jian Zhu'},shortAudit={aspects:{...a.aspects,phd:{...a.aspects.phd,note:'论文明确 advisor Jian Zhu'}}};assert(candidate(r,shortAudit,shortRel,new Set(),rev).warnings.some(x=>x.includes('短姓')));
+const aliasRel={...rel,target:'师承人物 - Jian-Gang Zhu|Jian-Gang（Jimmy）Zhu'};assert(candidate(r,shortAudit,aliasRel,new Set(),rev).warnings.some(x=>x.includes('短姓')));
+const liRel={...rel,target:'师承人物 - Ju Li|Ju Li'},liAudit={aspects:{...a.aspects,phd:{...a.aspects.phd,note:'本人论文 advisor Li'}}};assert.equal(candidate(r,liAudit,liRel,new Set(),rev),null);
+const fullLi={aspects:{...a.aspects,phd:{...a.aspects.phd,note:'本人论文 advisor Ju Li'}}};assert(candidate(r,fullLi,liRel,new Set(),rev).warnings.some(x=>x.includes('短姓')));
+console.log('通过：阶段、身份、来源交集、去重、反链及风险提示；候选不自动入库。');

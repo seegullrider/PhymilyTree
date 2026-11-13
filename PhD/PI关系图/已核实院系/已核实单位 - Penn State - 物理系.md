@@ -1,0 +1,33 @@
+# Penn State：物理系
+
+[[院校 - Penn State|返回学校]]
+
+仅收录已按人物资料核实的记录，不表示单位已查全。
+- [[人员 - Penn State - Marcos Rigol - 2e3fb6eb|Marcos Rigol]] — [来源](https://web.aws.science.psu.edu/physics/people/mar56)
+- [[人员 - Penn State - Zhen Bi - f8128337|Zhen Bi]] — [来源](https://bizhen01.github.io/zhenbi-group/people/)
+- [[人员 - Penn State - Binghai Yan - bdc7d39d|Binghai Yan]] — [来源](https://science.psu.edu/physics/people/bxy5132)
+- [[人员 - Penn State - Chaoxing Liu - d697b86f|Chaoxing Liu]] — [来源](https://www.physics.hku.hk/Seminar/Col_20210421_cxl)
+- [[人员 - Penn State - Cui-Zu Chang - 1763ea99|Cui-Zu Chang]] — [来源](https://science.psu.edu/physics/people/cxc955)
+- [[人员 - Penn State - Heike Pfau - ec036f39|Heike Pfau]] — [来源](https://science.psu.edu/physics/people/hfp5113)
+- [[人员 - Penn State - Jainendra K. Jain - f8f12fa1|Jainendra K. Jain]] — [来源](https://science.psu.edu/physics/people/jkj2)
+- [[人员 - Penn State - Jorge Sofo - 1b28beaa|Jorge Sofo]] — [来源](https://www.mri.psu.edu/mri/personnel-directory/jos13)
+- [[人员 - Penn State - Jun Zhu - 6a832955|Jun Zhu]] — [来源](https://science.psu.edu/physics/people/jxz26)
+- [[人员 - Penn State - Kenneth Knappenberger Jr - 4808bea5|Kenneth Knappenberger Jr.]] — [来源](https://science.psu.edu/chem/people/klk260)
+- [[人员 - Penn State - Kristen Fichthorn - f69c595d|Kristen Fichthorn]] — [来源](https://cache.org/sites/default/files/Fichthorn_bio_2018.pdf)
+- [[人员 - Penn State - Long-Qing Chen - d4abe130|Long-Qing Chen]] — [来源](https://www.matse.psu.edu/directory/long-qing-chen)
+- [[人员 - Penn State - Lukas Muechler - e7b271bc|Lukas Muechler]] — [来源](https://science.psu.edu/chem/people/lfm5572)
+- [[人员 - Penn State - Mauricio Terrones - f647f6a6|Mauricio Terrones]] — [来源](https://science.psu.edu/physics/people/mut11)
+- [[人员 - Penn State - Mikael C. Rechtsman - 897c9611|Mikael C. Rechtsman]] — [来源](https://science.psu.edu/physics/people/mcr22)
+- [[人员 - Penn State - Moses H. W. Chan - c279744c|Moses H. W. Chan]] — [来源](https://science.psu.edu/physics/people/mhc2)
+- [[人员 - Penn State - Nathan Keim - 8a73fe40|Nathan Keim]] — [来源](https://science.psu.edu/physics/people/nxk913)
+- [[人员 - Penn State - Nitin Samarth - 023f0d76|Nitin Samarth]] — [来源](https://www.matse.psu.edu/directory/nitin-samarth)
+- [[人员 - Penn State - Paul Lammert - 0f0903bf|Paul Lammert]] — [来源](https://pure.psu.edu/en/persons/paul-edward-lammert/)
+- [[人员 - Penn State - Qi Li - de716208|Qi Li]] — [来源](https://science.psu.edu/physics/people/qil1)
+- [[人员 - Penn State - Ribhu K. Kaul - bb5b0777|Ribhu K. Kaul]] — [来源](https://science.psu.edu/physics/people/rpk5594)
+- [[人员 - Penn State - Thomas Iadecola - a0b7e1b5|Thomas Iadecola]] — [来源](https://science.psu.edu/physics/people/tki5058)
+- [[人员 - Penn State - Venkatraman Gopalan - 753206df|Venkatraman Gopalan]] — [来源](https://www.matse.psu.edu/directory/venkatraman-gopalan)
+- [[人员 - Penn State - Vincent H. Crespi - 3b45aa59|Vincent H. Crespi]] — [来源](https://science.psu.edu/physics/people/vhc2)
+- [[人员 - Penn State - Ying Liu - 10754714|Ying Liu]] — [来源](https://science.psu.edu/physics/people/yxl15)
+- [[人员 - Penn State - Yinming Shao - 708546c5|Yinming Shao]] — [来源](https://science.psu.edu/physics/people/yjs5413)
+- [[人员 - Penn State - Zhiqiang Mao - f0a78c04|Zhiqiang Mao]] — [来源](https://www.matse.psu.edu/directory/zhiqiang-mao)
+- [[人员 - Penn State - Eric Hudson — 旧研究方向需更新 - e4f60f64|Eric Hudson — 旧研究方向需更新]] — [来源](https://science.psu.edu/physics/people/ewh10)

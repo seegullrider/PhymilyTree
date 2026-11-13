@@ -1,0 +1,10 @@
+const fs=require('node:fs'),path=require('node:path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true}),id='11b951b9';
+const row=db.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id);if(!row)throw Error('缺少 Di Ventra 人工事件');
+const a=JSON.parse(row.details_json),memo='https://www.epflpress.org/open_access_download/2171/1087',bio='https://matsci.ucsd.edu/faculty/massimiliano-di-ventra';
+a.audit_id='20261108_11b951b9_epfl_memo';
+a.aspects.phd={status:'confirmed_advisor',note:'本人 EPFL 纪念文称 Alfonso Baldereschi 为 supervisor，并分述 1993–1997 EPFL 研究生阶段及 1997 博士答辩；UCSD 简介核对身份及时间。',sources:[memo,bio]};
+a.aspects.postdoc={status:'unresolved',note:'UCSD 简介列 IBM visiting scientist、Vanderbilt research assistant professor，均未明为博士后；博士后经历和师长待查。',sources:[bio]};a.next_step='查 IBM 和 Vanderbilt 阶段具体身份及是否有博士后导师。';a.followup_required=true;
+fs.writeFileSync(path.join(__dirname,'人工-20261108-DiVentra.json'),JSON.stringify(a,null,2)+'\n');
+const rel=[{event_id:'20261108_11b951b9_baldereschi_advisor',record_id:id,stage:'phd',mentor_filename:'师承人物 - Alfonso Baldereschi',kind:'advisor',source_audit_id:a.audit_id,evidence:'本人称 Baldereschi 为 supervisor，并叙述 EPFL 1993–1997 研究生与 1997 博士答辩。',sources:[memo,bio]}];
+fs.writeFileSync(path.join(__dirname,'结构化-20261108-DiVentra.json'),JSON.stringify(rel,null,2)+'\n');db.close();

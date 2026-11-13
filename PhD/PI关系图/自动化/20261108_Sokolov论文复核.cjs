@@ -1,0 +1,14 @@
+const fs=require('node:fs'),path=require('node:path'),{DatabaseSync}=require('node:sqlite');
+const root=__dirname,id='bd2dc3af',cv='https://research.cbc.osu.edu/sokolov.8/wp-content/uploads/2025/10/Sokolov_CV.pdf',thesis='https://openscholar.uga.edu/record/15779/files/sokolov_alexander_y_201405_phd.pdf',faculty='https://chemistry.osu.edu/people/sokolov.8';
+const db=new DatabaseSync(path.join(root,'检索队列.sqlite'),{readOnly:true});
+const row=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get(id);if(!row)throw Error('原人工事件缺失');const a=JSON.parse(row.details_json);db.close();
+a.audit_id='20261108_sokolov_dissertation_cv';
+a.aspects.identity={status:'confirmed',note:'Georgia 论文作者 Alexander Yuryevich Sokolov、论文题目及博士年份与 Ohio State 本人 CV、院系人物页相符。',sources:[thesis,cv,faculty]};
+a.aspects.affiliation={status:'confirmed',note:'Ohio State 化学与生物化学系副教授，本人 CV 和院系页对应。',sources:[faculty,cv]};
+a.aspects.research={status:'confirmed',note:'院系页列强关联电子结构、量子化学和激发态理论研究。',sources:[faculty]};
+a.aspects.phd={status:'confirmed_advisor',note:'Georgia 2014 博士论文列 Henry F. Schaefer III 为 Major Professor、致谢称 advisor；本人 CV 亦明确列博士 advisor。',sources:[thesis,cv]};
+a.aspects.postdoc={status:'confirmed_advisor',note:'本人 CV 在 Princeton 2014–2016 与 Caltech 2016–2017 博后职位下均列 Garnet K.-L. Chan 为 advisor。',sources:[cv,'https://phys-acs.org/postdocs/2016.html']};
+a.followup_required=false;a.next_step='定期增量核对任职和新增研究方向；保留历史事件及原始来源。';
+const e=[{event_id:'20261108_sokolov_phd_advisor',record_id:id,stage:'phd',mentor_filename:'师承人物 - Henry F. Schaefer III',kind:'advisor',source_audit_id:a.audit_id,evidence:a.aspects.phd.note,sources:[thesis,cv]},{event_id:'20261108_sokolov_postdoc_advisor',record_id:id,stage:'postdoc',mentor_filename:'人员 - Caltech - Garnet K.-L. Chan - 9a4a4057',kind:'advisor',source_audit_id:a.audit_id,evidence:a.aspects.postdoc.note,sources:[cv,'https://phys-acs.org/postdocs/2016.html']}];
+for(const [f,obj] of [['人工-20261108-Sokolov论文.json',a],['结构化-20261108-Sokolov论文.json',e]])fs.writeFileSync(path.join(root,f),JSON.stringify(obj,null,2)+'\n',{encoding:'utf8',flag:'wx'});
+console.log(JSON.stringify({id,events:e.length}));

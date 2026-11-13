@@ -1,0 +1,13 @@
+const fs=require('fs'),path=require('path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});
+const row=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('c910a070');
+if(!row) throw Error('原事件不存在');
+const ev=JSON.parse(row.details_json);db.close();
+const slac='https://www6.slac.stanford.edu/news/2015-05-27-spiraling-laser-pulses-could-change-nature-graphene';
+const roy='https://royalsociety.org/science-events-and-lectures/2025/06/topological-materials/';
+ev.audit_id='20261107_c910a070_slac_group';
+ev.aspects.phd={status:'group_or_candidate',note:'SLAC 2015 报道直接称 Claassen 是 Devereaux 组 Stanford 研究生；Royal Society 讲座简介确认 2017 年 Stanford 博士，课题组负责人不等同正式导师。',sources:[slac,roy]};
+ev.aspects.postdoc={status:'unresolved',note:'Royal Society 讲座简介明确其在 Flatiron Institute 担任 postdoctoral research fellow，但未列指导人。',sources:[roy]};
+ev.followup_required=true;ev.next_step='查 Stanford 博士论文 advisor 字段和 Flatiron 博后指导人。';
+fs.writeFileSync(path.join(__dirname,'本轮核查-Claassen-20261107.json'),JSON.stringify(ev,null,2),'utf8');
+console.log('已准备 Claassen 组属与博后经历核查事件');

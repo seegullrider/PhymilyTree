@@ -1,0 +1,11 @@
+const {DatabaseSync}=require('node:sqlite');
+const d=new DatabaseSync('检索队列.sqlite');
+const id='597b55ed';
+const a=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id).details_json);
+a.audit_id='20261109_597b55ed_thesis';
+a.aspects.phd.note='Stanford 院系履历和 MIT 清单列博士论文题目；MIT 清单列 f. ross 但未解释角色，结合本人陈述及在读时指导证据保留博士阶段师长，正式论文导师字段待核。';
+a.aspects.phd.sources.push('https://mse.stanford.edu/people/kate-reidy','https://www.mtl.mit.edu/sites/default/files/media/documents/2025/theses_2025.pdf');
+a.next_step='查 MIT 博士论文正式 advisor 字段，Miller hosts 不自动升级为正式导师。';
+a.followup_required=true;
+d.prepare('insert or ignore into manual_audit_events(audit_id,record_id,recorded_at,details_json) values(?,?,?,?)').run(a.audit_id,id,new Date().toISOString(),JSON.stringify(a));
+d.close();

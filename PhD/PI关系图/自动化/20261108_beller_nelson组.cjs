@@ -1,0 +1,5 @@
+const fs=require('node:fs'),path=require('node:path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true}),p=db.prepare('select audit_id,details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get('b7a61b1f');db.close();
+if(p?.audit_id!=='20261105_b7a61b1f_primary')throw Error('最新事件已变化');const a=JSON.parse(p.details_json);a.audit_id='20261108_beller_nelson_group';a.followup_required=true;
+a.aspects.postdoc.note+=' Harvard Nelson 组官网本人页将 Beller 列为 Former Group Members，Harvard 材料研究中心简介列其博士后 works with Nelson；确认组属，正式 advisor 职衔待核。Brown 组来源本轮仍返回 502，保留既有 Powers 和 Pelcovits 记录，不据失败否定。';a.aspects.postdoc.sources=[...new Set([...a.aspects.postdoc.sources,'https://nelson.hsites.harvard.edu/people/daniel-beller','https://www.mrsec.harvard.edu/pages/daniel_beller.php'])];a.next_step+='；待 Brown 组页面退避后重读 Powers 与 Pelcovits 的角色，并查 Harvard 博后正式 advisor 字段。';
+const f=path.join(__dirname,'人工-20261108-beller-nelson组.json');fs.writeFileSync(f,JSON.stringify(a,null,2)+'\n','utf8');console.log(f);

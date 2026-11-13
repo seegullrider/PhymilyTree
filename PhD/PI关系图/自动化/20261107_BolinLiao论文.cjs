@@ -1,0 +1,14 @@
+const fs = require('fs');
+const path = require('path');
+const { DatabaseSync } = require('node:sqlite');
+const db = new DatabaseSync(path.join(__dirname, '检索队列.sqlite'), { readOnly: true });
+const row = db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('d412a632');
+if (!row) throw new Error('Bolin Liao 原核查事件不存在');
+const ev = JSON.parse(row.details_json);
+db.close();
+ev.audit_id = '20261107_d412a632_mit_thesis';
+ev.aspects.phd = { status: 'confirmed_advisor', note: 'MIT 馆藏 2016 博士论文的 Advisor(s) 明列 Gang Chen，本人履历一致；MIT MTL 年报同论文括号列 M. Dresselhaus，但未说明其角色，不据此推定联合导师。', sources: ['https://dspace.mit.edu/entities/publication/b5f151fa-1cce-4138-929b-531f17149273', 'https://mtlsites.mit.edu/annual_reports/2016/theses.pdf', 'https://www.tealab-liao.com/team'] };
+ev.followup_required = true;
+ev.next_step = '核 MIT 年报括号中 Dresselhaus 的具体角色，查正式博后 mentor 及 Zewail 2016 年去世后项目指导安排。';
+fs.writeFileSync(path.join(__dirname, '本轮核查-BolinLiao-20261107.json'), JSON.stringify(ev, null, 2), 'utf8');
+console.log('已准备 Bolin Liao 论文馆藏核查事件');

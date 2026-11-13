@@ -1,0 +1,8 @@
+const {DatabaseSync}=require('node:sqlite');
+const path=require('path');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'));
+const host='researchgate.net',now=new Date(),old=db.prepare('SELECT * FROM host_limits WHERE host=?').get(host);
+const streak=old&&now-Date.parse(old.last_limit)<86400000?old.streak+1:1;
+const until=new Date(Math.max(old?Date.parse(old.until):0,+now+Math.min(86400000,1800000*2**Math.min(streak-1,5)))).toISOString();
+db.prepare('INSERT INTO host_limits(host,until,streak,last_limit) VALUES(?,?,?,?) ON CONFLICT(host) DO UPDATE SET until=excluded.until,streak=excluded.streak,last_limit=excluded.last_limit').run(host,until,streak,now.toISOString());
+console.log(JSON.stringify({host,until,streak,reason:'Nazockdast 原论文页面 HTTP 429'}));db.close();

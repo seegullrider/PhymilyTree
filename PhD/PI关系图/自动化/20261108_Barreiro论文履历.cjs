@@ -1,0 +1,11 @@
+const fs=require('node:fs'),path=require('node:path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true}),id='8d652467';
+const row=db.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id);if(!row)throw Error('缺少 Barreiro 人工事件');
+const a=JSON.parse(row.details_json),thesis='https://research.physics.illinois.edu/QI/Photonics/theses/barreiro-thesis.pdf',cv='https://barreirolab.com/wp-content/uploads/2014/03/6eaa3-barreiro.pdf';
+a.audit_id='20261108_8d652467_thesis_cv';a.aspects.phd={status:'confirmed_advisor',note:'2008 UIUC 物理论文标题页列作者 Julio Tomas Barreiro-Guerrero、Paul G. Kwiat 为 Adviser；本人 CV 亦列 Advisor: P. G. Kwiat。',sources:[thesis,cv]};
+a.aspects.postdoc={status:'group_or_candidate',note:'本人 CV 列 2009–2011 Innsbruck 博士后 PI: R. Blatt，2012–2014 MPQ／LMU 博士后 PI: I. Bloch；正式 advisor 称谓待核。',sources:[cv]};
+a.next_step='查两段博士后正式 advisor 称谓；人物页保留 CV 与论文题名差异。';a.followup_required=true;
+fs.writeFileSync(path.join(__dirname,'人工-20261108-Barreiro.json'),JSON.stringify(a,null,2)+'\n');
+const specs=[['phd','师承人物 - Paul G. Kwiat','advisor','博士论文标题页列 Paul G. Kwiat 为 Adviser；本人 CV 同列 Advisor。',[thesis,cv]],['postdoc','师承人物 - Rainer Blatt','group_leader','本人 CV 列 2009–2011 Innsbruck 博士后 PI: R. Blatt，正式 advisor 称谓待核。',[cv]],['postdoc','师承人物 - Immanuel Bloch','group_leader','本人 CV 列 2012–2014 MPQ／LMU 博士后 PI: I. Bloch，正式 advisor 称谓待核。',[cv]]];
+const rel=specs.map(([stage,mentor_filename,kind,evidence,sources],i)=>({event_id:`20261108_8d652467_thesis_cv_${i}`,record_id:id,stage,mentor_filename,kind,source_audit_id:a.audit_id,evidence,sources}));
+fs.writeFileSync(path.join(__dirname,'结构化-20261108-Barreiro.json'),JSON.stringify(rel,null,2)+'\n');db.close();

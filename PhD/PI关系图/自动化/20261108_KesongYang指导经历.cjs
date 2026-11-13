@@ -1,0 +1,14 @@
+const fs=require('node:fs'),path=require('node:path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true}),id='64891c2c';
+const row=db.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id);if(!row)throw Error('缺少事件');
+const a=JSON.parse(row.details_json),cv='https://www.eurasc.eu/wp-content/uploads/2025/05/20240712_Curtarolo_CV.pdf',lab='https://materials.duke.edu/people.html',faculty='https://jacobsschool.ucsd.edu/node/3539',matsci='https://matsci.ucsd.edu/node/121';
+a.audit_id='20261108_64891c2c_advising_cv';
+a.aspects.identity={status:'confirmed',note:'UCSD 本人简介与 Curtarolo 履历及 Duke 校友页所列姓名、博士后及 UCSD 任职吻合。',sources:[faculty,cv,lab]};
+a.aspects.affiliation={status:'confirmed',note:'UCSD 工程学院及材料项目列化学与纳米工程教授。',sources:[faculty,matsci]};
+a.aspects.research={status:'confirmed',note:'学校材料项目列第一性原理、高通量、拓扑材料与界面磁性设计。',sources:[matsci]};
+a.aspects.phd={status:'group_or_candidate',note:'UCSD 简介列 2010 年山东大学原子分子物理博士与同期 Dai、Huang 合著；两人仅作候选，导师须查学位论文。',sources:[faculty]};
+a.aspects.postdoc={status:'confirmed_advisor',note:'Curtarolo 本人 CV 在 Advising Experience 的博士后／研究教授名录列 Kesong Yang、2010–2013；Duke 组校友页确认博后，按阶段研究师长，正式 advisor 职衔待核。',sources:[cv,lab]};
+a.next_step='查山东大学博士学位论文、Dai 与 Huang 的正式职衔；查 Curtarolo 博后正式 advisor 称谓。';a.followup_required=true;
+const s=[['phd','candidate','师承人物 - Ying Dai（戴瑛，山东大学）','UCSD 简介列 2010 山东博士，并列同期与 Y. Dai 的研究论文；合著只为候选，论文中正式导师待核。',[faculty]],['phd','candidate','师承人物 - Baibiao Huang（黄柏标，山东大学）','UCSD 简介列 2010 山东博士，并列同期与 B. Huang 的研究论文；合著只为候选，论文中正式导师待核。',[faculty]],['postdoc','stage_mentor','人员 - Duke - Stefano Curtarolo - edc6794c','Curtarolo CV 的 Advising Experience 名录列 Kesong Yang、2010–2013；Duke 组页确认博后，正式职衔待核。',[cv,lab]]];
+let rel=s.map(([stage,kind,mentor_filename,evidence,sources],i)=>({event_id:`20261108_64891c2c_cv_${i}`,record_id:id,stage,mentor_filename,kind,source_audit_id:a.audit_id,evidence,sources}));
+fs.writeFileSync(path.join(__dirname,'人工-20261108-KesongYang.json'),JSON.stringify(a,null,2)+'\n');fs.writeFileSync(path.join(__dirname,'结构化-20261108-KesongYang.json'),JSON.stringify(rel,null,2)+'\n');db.close();

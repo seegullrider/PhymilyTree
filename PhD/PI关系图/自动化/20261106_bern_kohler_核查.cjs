@@ -1,0 +1,10 @@
+const fs=require('node:fs'),path=require('node:path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'));
+const prev=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('47d59011');
+if(!prev)throw Error('missing prior review');
+const e=JSON.parse(prev.details_json);
+e.audit_id='20261106_47d59011_cv_advisor';
+e.aspects.phd={status:'confirmed_advisor',note:'Ohio State 留存本人简历在 1990 年 MIT 物理化学博士条目明确列 advisor Keith A. Nelson；MIT Nelson 组博士名单列相同论文及博士年份。',sources:['https://opticalscience.osu.edu/sites/default/files/2021-01/cv_kohler.pdf','https://web.mit.edu/nelsongroup/thegroup/_formergroupmembers.shtml']};
+e.followup_required=true;
+e.next_step='查 ETH Zürich Wild、UC San Diego Wilson 两段博士后正式 advisor 或任命；现有来源仅称 with 两位研究。';
+fs.writeFileSync(path.join(__dirname,'本轮核查-Bern-Kohler-20261106.json'),JSON.stringify(e,null,2)+'\n');db.close();

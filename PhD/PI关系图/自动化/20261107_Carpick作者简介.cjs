@@ -1,0 +1,13 @@
+const fs=require('fs'),path=require('path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});
+const row=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('5640e54c');
+if(!row) throw Error('原事件不存在');
+const ev=JSON.parse(row.details_json); db.close();
+const bio='https://www.thieme.de/statics/dokumente/thieme/final/de/dokumente/tw_chemistry/CFZ-Synform-Acceleration-of-Diels%E2%80%93Alder-Reactions_LitCov.pdf';
+const thesis='https://alliance.seas.upenn.edu/~carpickg/dynamic/wordpress/wp-content/uploads/2012/03/Carpick_Thesis.pdf';
+ev.audit_id='20261107_5640e54c_author_bio';
+ev.aspects.phd={status:'confirmed_advisor',note:'Carpick 2023 作者简介明确 1997 Berkeley 博士 under supervision of Miquel Salmeron；本人论文列 Salmeron 为论文委员会共同主席、Chemla 为主席及 faculty sponsor。已确认研究指导，但正式论文 advisor 字段待核。',sources:[bio,thesis]};
+ev.aspects.postdoc={status:'confirmed_advisor',note:'Carpick 作者简介明确 Sandia 两年博士后工作 under supervision of Alan R. Burns，记博士后阶段研究师长。',sources:[bio]};
+ev.followup_required=true;ev.next_step='查 Berkeley 学位论文正式 advisor 字段，保留 Chemla 委员会主席及 faculty sponsor 角色。';
+fs.writeFileSync(path.join(__dirname,'本轮核查-Carpick-20261107.json'),JSON.stringify(ev,null,2),'utf8');
+console.log('已准备 Carpick 两阶段指导核查事件');

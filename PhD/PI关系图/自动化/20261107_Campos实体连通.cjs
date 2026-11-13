@@ -1,0 +1,7 @@
+const fs=require('fs'),path=require('path');const root=path.resolve(__dirname,'..'),ext='师承人物 - Miguel A. Garcia-Garibay',pi='人员 - UCLA - Miguel A. García-Garibay - ce7bc488',student='人员 - Columbia - Luis M. Campos - 57eb37d8',source='https://www.chem.ucla.edu/events/COMMENCEMNT2006/HOODINGS/Hoodings.html',bio='https://www.somoscampos.org/luis-m-campos.html';let list=[];
+function edit(f,fn){let p=path.join(root,f),t=fs.readFileSync(p,'utf8'),v=fn(t);if(v===t)throw Error('未修改 '+f);list.push({p,v})}
+edit('人物/'+student+'.md',t=>t.replace('[[师承人物 - Miguel A. Garcia-Garibay|Miguel A. Garcia-Garibay]]',`[[${pi}|Miguel A. Garcia-Garibay]]`));
+edit('人物/'+ext+'.md',t=>t.replace('## 师承',`此扩展人物与 [[${pi}|UCLA 的 Miguel A. García-Garibay]] 为同一研究者：[UCLA 2006 博士授位表](${source})及 [Campos 本人传记](${bio})均确认其指导 Campos；保留本节点及已有链接。\n\n## 师承`));
+edit('人物/'+pi+'.md',t=>t.replace('## 师承',`## 师承\n\n- 对应扩展节点：[[${ext}|Miguel A. Garcia-Garibay]]；[UCLA 博士授位表](${source})和 [Campos 本人传记](${bio})确认同一指导关系。\n- 博士生：[[${student}|Luis M. Campos]]。[UCLA 2006 博士授位表](${source})将 Garcia-Garibay 与 Kendall Houk 列为 Campos 的博士导师；本人传记独立确认。`));
+edit('师承关系索引.md',t=>{let a=t.replace(`[[${student}|Luis M. Campos]] → 博士导师：[[${ext}|Miguel A. Garcia-Garibay]]`,`[[${student}|Luis M. Campos]] → 博士导师：[[${pi}|Miguel A. Garcia-Garibay]]`);return a});
+for(const x of list)fs.writeFileSync(x.p,x.v,'utf8');console.log('已将 Campos 博士导师直接连至 UCLA 校属人物，并保留双向同人节点。');

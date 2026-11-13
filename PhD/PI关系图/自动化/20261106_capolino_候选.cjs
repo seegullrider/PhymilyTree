@@ -1,0 +1,12 @@
+const fs=require('fs'),path=require('path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'));
+const row=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('e61be6c6');
+if(!row) throw Error('缺少人工台账');
+const ev=JSON.parse(row.details_json);
+ev.audit_id='20261106_capolino_felsen_project_e61be6c6';
+ev.aspects.identity={status:'confirmed',note:'UCI 本人履历列 Filippo Capolino，Florence 1997 电气工程博士和 UCI EECS 教授。',sources:['https://capolino.eng.uci.edu/Bio-Capolino.htm']};
+ev.aspects.phd={status:'unresolved',note:'本人履历确认 Florence 1997 博士，未命名导师。',sources:['https://capolino.eng.uci.edu/Bio-Capolino.htm']};
+ev.aspects.postdoc={status:'group_or_candidate',note:'本人履历列 Siena 与 Boston 1997–1999 博后；参与的项目综述称 Siena 项目六年受 Felsen 指导，时间重叠，Felsen 是项目师长候选，尚不能确定其个人博后正式导师。IEEE 2026 搜索索引将 Houston 称博后，但原页不可读；本人履历称 visiting research assistant professor，Houston 博后线索待核。',sources:['https://capolino.eng.uci.edu/Bio-Capolino.htm','https://link.springer.com/chapter/10.1007/978-3-662-07221-9_8']};
+ev.followup_required=true;
+ev.next_step='查 Florence 博士论文与 Boston、Siena 博后组原始名录，确定正式导师并核 Houston 职位差异。';
+fs.writeFileSync(path.join(__dirname,'本轮核查-Capolino-20261106.json'),JSON.stringify(ev,null,2)+'\n','utf8');

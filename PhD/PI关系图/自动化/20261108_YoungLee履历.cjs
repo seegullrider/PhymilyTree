@@ -1,0 +1,18 @@
+const fs = require('node:fs');
+const path = require('node:path');
+const { DatabaseSync } = require('node:sqlite');
+const db = new DatabaseSync(path.join(__dirname, '检索队列.sqlite'), { readOnly: true });
+const row = db.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get('6e31fac4');
+if (!row) throw Error('缺少 Young S. Lee 台账');
+db.close();
+const a = JSON.parse(row.details_json);
+const source = 'https://www.bnl.gov/cmpmsd/neutrons/HYSPEC/files/pdfs/reports/HYSPEC_DOEproposal.pdf';
+const stanford = 'https://physics.stanford.edu/events/applied-physicsphysics-colloquium-young-lee-quantum-spin-liquids-are-we-there-yet';
+a.audit_id = '20261108_6e31fac4_bnl_cv';
+a.aspects.phd = {status:'confirmed_advisor', note:'本人履历在 MIT 2000 年物理博士论文标题下明确列 Advisor: Robert J. Birgeneau；Stanford 讲座简介和本人履历均列 Princeton 本科及 MIT 博士，排除 Illinois 同名者。', sources:[source,stanford]};
+a.aspects.postdoc = {status:'unresolved', note:'本人履历列 1999 年 11 月至 2001 年 8 月为 NIST Center for Neutron Research 的 NRC 博士后研究员，未列指导者。', sources:[source]};
+a.followup_required = true;
+a.next_step = '追查 NIST 1999–2001 博士后阶段指导者，勿仅凭合著推断。';
+const typed = [{event_id:'20261108_6e31fac4_bnl_phd_advisor',record_id:'6e31fac4',stage:'phd',mentor_filename:'人员 - UC Berkeley - Robert Birgeneau（荣休） - 3af2083d',kind:'advisor',source_audit_id:a.audit_id,evidence:a.aspects.phd.note,sources:a.aspects.phd.sources}];
+fs.writeFileSync(path.join(__dirname,'人工-20261108-YoungLee履历.json'),JSON.stringify(a,null,2)+'\n');
+fs.writeFileSync(path.join(__dirname,'结构化-20261108-YoungLee履历.json'),JSON.stringify(typed,null,2)+'\n');

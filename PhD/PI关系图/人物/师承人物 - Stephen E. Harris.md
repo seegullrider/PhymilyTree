@@ -1,0 +1,9 @@
+# Stephen E. Harris
+
+- 类型：师承扩展人物
+- Stanford 光学及激光物理。 [Stanford 人员档](https://profiles.stanford.edu/stephen-harris)
+
+## 师承
+- 博士阶段研究者候选（待核）：[[人员 - UC Berkeley - Roger W. Falcone - 1fff70c0|Roger W. Falcone]]。Berkeley 本人 CV 列 1979 Stanford EE 博士，学校所载 1976–1979 书目及 Harris 与 Young 的 Ginzton 报告证同期激光碰撞课题协作。按博士阶段候选，正式签署待查。 [Falcone 本人出版档](https://physics.berkeley.edu/research-faculty/roger-falcone-research-group/publications) · [Stanford Ginzton 同期报告](https://citeseerx.ist.psu.edu/document?doi=249dc331f272ceb2ea9aed2123d8d4474790e740&repid=rep1&type=pdf) · [Falcone 本人 CV](https://physics.berkeley.edu/research-faculty/roger-falcone-research-group/curriculum-vitae)
+- 博士后研究者候选（待核）：[[人员 - UC Berkeley - Roger W. Falcone - 1fff70c0|Roger W. Falcone]]。本人 CV 列 Stanford 1980–1983 Marvin Chodorow Fellow。Harris 与 Young 的 1982 Ginzton 报告在本组研究成果中具体列 Falcone 的工作，并与其 1980–1983 书目同期。按 fellowship 阶段候选，个人任用指导待查。 [Falcone 本人出版档](https://physics.berkeley.edu/research-faculty/roger-falcone-research-group/publications) · [Stanford Ginzton 同期报告](https://citeseerx.ist.psu.edu/document?doi=249dc331f272ceb2ea9aed2123d8d4474790e740&repid=rep1&type=pdf) · [Falcone 本人 CV](https://physics.berkeley.edu/research-faculty/roger-falcone-research-group/curriculum-vitae)
+- 博士阶段研究者候选（待核）：[[人员 - Wisconsin–Madison - Deniz Yavuz - 3d090851|Deniz Yavuz]]。Stanford 2002 非线性光学课程资料列 Harris 为授课者、Yavuz 为 Chief Grader。Stanford 托管同期光学原稿显示两人在同题实验合作。博士论文签署及组属待核。 [来源 1](https://web.stanford.edu/class/ee346/Course%20Information/Class%20Info.pdf) · [来源 2](https://web.stanford.edu/~seharris/PublicationsLinksPDFs/2000/209.pdf)

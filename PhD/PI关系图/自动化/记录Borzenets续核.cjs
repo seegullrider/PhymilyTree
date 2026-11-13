@@ -1,0 +1,10 @@
+const {DatabaseSync}=require('node:sqlite');
+const d=new DatabaseSync('检索队列.sqlite');
+const id='75dd3b62',u='https://artsci.tamu.edu/physics-astronomy/_files/_documents/ivan-v-borzenets.pdf';
+const a=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id).details_json);
+a.audit_id='20261109_75dd3b62_cv';
+a.aspects.phd={status:'confirmed_advisor',note:'本人 CV 列 Duke 物理博士 2012-05-13，advisor Gleb Finkelstein；Jungsang Kim 属硕士 advisor。',sources:[u]};
+a.next_step='查 Tokyo 2012–2017 混合职位具体分段与博士后正式导师。';
+a.followup_required=true;
+d.prepare('insert or ignore into manual_audit_events(audit_id,record_id,recorded_at,details_json) values(?,?,?,?)').run(a.audit_id,id,new Date().toISOString(),JSON.stringify(a));
+d.close();

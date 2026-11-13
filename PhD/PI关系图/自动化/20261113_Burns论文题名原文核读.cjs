@@ -1,0 +1,2 @@
+const {DatabaseSync}=require('node:sqlite'),path=require('path'),db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});
+const rows=db.prepare('select p.url,o.tool_output from pages p join page_observations o on o.page_id=p.id where p.record_id=? and p.url like ?').all('e4b3b349','%Burns_CV.pdf%');for(const r of rows){console.log(r.url);const a=r.tool_output.split('\n');for(let i=0;i<a.length;i++)if(/thesis title|dissertation title/i.test(a[i]))console.log(a.slice(Math.max(0,i-3),i+3).join('\n'));}db.close();

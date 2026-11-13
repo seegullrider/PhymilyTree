@@ -1,0 +1,13 @@
+const fs=require('node:fs'), path=require('node:path'), {DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});
+const r=db.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get('48e0d021');
+if(!r) throw Error('缺少 Fullerton 人工事件');
+const a=JSON.parse(r.details_json), id='20261108_48e0d021_group_postdoc';
+const group='https://ischuller.ucsd.edu/group-mobile/', report='https://www.osti.gov/servlets/purl/5430644', bio='https://can.ucsd.edu/people.php?selection=fullerton';
+a.audit_id=id;
+a.aspects.phd={status:'group_or_candidate',note:'Schuller 组旧成员名单列 Fullerton 及 IBM 去向；DOE 报告记其获 Schuller 项目资助、1991 年获博士并列论文。组属阶段及正式博士导师仍待论文或本人资料确认。',sources:[group,report,bio]};
+a.aspects.postdoc={status:'unresolved',note:'UCSD 简介明确其曾在 Argonne 材料科学部磁性薄膜组任博士后，1993 年转 staff scientist；未注明导师或入职年份。',sources:[bio]};
+a.next_step='获取博士论文正式导师字段及 Schuller 组属时间；追查 Argonne 博士后导师。';a.followup_required=true;
+fs.writeFileSync(path.join(__dirname,'人工-20261108-Fullerton.json'),JSON.stringify(a,null,2)+'\n');
+const rel=[{event_id:id+'_candidate',record_id:'48e0d021',stage:'phd',mentor_filename:'人员 - UC San Diego - Ivan K. Schuller - 20dc4163',kind:'candidate',source_audit_id:id,evidence:'组旧成员名单与 DOE 项目报告支持组成员身份及博士期项目资助，组属阶段及正式导师未明确。',sources:[group,report,bio]}];
+fs.writeFileSync(path.join(__dirname,'结构化-20261108-Fullerton.json'),JSON.stringify(rel,null,2)+'\n');db.close();

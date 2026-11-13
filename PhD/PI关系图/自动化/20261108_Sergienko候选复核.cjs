@@ -1,0 +1,16 @@
+const fs = require('node:fs');
+const path = require('node:path');
+const { DatabaseSync } = require('node:sqlite');
+const db = new DatabaseSync(path.join(__dirname, '检索队列.sqlite'), {readOnly:true});
+const row = db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('d667207f');
+if (!row) throw Error('原人工事件不存在');
+const audit = JSON.parse(row.details_json);
+audit.audit_id = '20261108_sergienko_klyshko_candidate';
+audit.aspects.identity = {status:'confirmed',note:'BU 本人 CV 列 Alexander Vladimir Sergienko、ECE 和 1987 Moscow State 博士。',sources:['https://people.bu.edu/alexserg/SergienkoWebCV.pdf']};
+audit.aspects.affiliation = {status:'confirmed',note:'BU 工程学院人物页列 ECE 教授；本人 CV 同列物理系教授。',sources:['https://www.bu.edu/eng/profile/alexander-sergienko/','https://people.bu.edu/alexserg/SergienkoWebCV.pdf']};
+audit.aspects.research = {status:'confirmed',note:'BU 工程学院列量子光学、量子信息和光学测量研究。',sources:['https://www.bu.edu/eng/profile/alexander-sergienko/']};
+audit.aspects.phd = {status:'group_or_candidate',note:'Physics World 搜索索引称 Sergienko 是 Klyshko 博士生，原网页本轮 403 未读取；本人论文只称其长期合作者，故仅为候选，不确证博士导师。',sources:['https://physicsworld.com/a/ghost-images-taken-using-pairs-of-atoms/','https://people.bu.edu/alexserg/FermiQuantumMetrology.pdf','https://people.bu.edu/alexserg/SergienkoWebCV.pdf']};
+audit.next_step = '追查 Moscow State 博士论文或当事人原始履历确认 Klyshko 是否正式导师；继续查是否有博士后及指导者，Physics World 403 后按退避重试。';
+audit.followup_required = true;
+fs.writeFileSync(path.join(__dirname,'人工-20261108-Sergienko-Klyshko候选.json'), JSON.stringify(audit,null,2)+'\n',{encoding:'utf8',flag:'wx'});
+db.close();

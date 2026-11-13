@@ -1,0 +1,7 @@
+const fs=require('node:fs'),path=require('node:path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true}),id='75970cd9';
+const row=db.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id);db.close();if(!row)throw Error('无既有事件');
+const paper='https://n04.iphy.ac.cn/allpdf/2013paper/NR6%20%282013%29200-N04.pdf',cv='https://electronic.seu.edu.cn/wj2/list.htm',lab='https://graphene.nus.edu.sg/barbaros/group/alumni/';
+const a=JSON.parse(row.details_json);a.audit_id='20261108_75970cd9_2013_candidate';a.aspects.phd={status:'group_or_candidate',note:'2013 论文列 Jing Wu 和 Özyilmaz 同属 NUS 物理系和石墨烯中心并合作，与本人 2010–2015 NUS 博士和二维材料方向相符；同期合著及单位仅作低可信导师候选，作者身份及指导关系均待核。',sources:[paper,cv]};a.followup_required=true;a.next_step='追查 NUS 博士论文正式导师、2015–2016 ECE 博后导师；Özyilmaz 校友页搜索索引提示 Wu Jing 博士组成员，但原站返回 502，至少至 2026-11-08 05:35 UTC 不重试，仅作待查线索，不据索引确证。';
+fs.writeFileSync(path.join(__dirname,'人工-20261108-JingWu候选.json'),JSON.stringify(a,null,2)+'\n');
+fs.writeFileSync(path.join(__dirname,'结构化-20261108-JingWu候选.json'),JSON.stringify([{event_id:'20261108_75970cd9_ozyilmaz_candidate',record_id:id,stage:'phd',mentor_filename:'人员 - NUS - Barbaros Özyilmaz - 0e0562af',kind:'candidate',source_audit_id:a.audit_id,evidence:a.aspects.phd.note,sources:a.aspects.phd.sources}],null,2)+'\n');console.log('已准备事件');

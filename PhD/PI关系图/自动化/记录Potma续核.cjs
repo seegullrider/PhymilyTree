@@ -1,0 +1,10 @@
+const {DatabaseSync}=require('node:sqlite');
+const d=new DatabaseSync('检索队列.sqlite');
+const id='af3eeb13',u='https://research.rug.nl/nl/publications/intracellular-molecular-diffusion-probed-with-nonlinear-optical-m/';
+const a=JSON.parse(d.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id).details_json);
+a.audit_id='20261109_af3eeb13_groningen';
+a.aspects.phd={status:'confirmed_advisor',note:'Groningen 学位目录列 2001-10-19 授位，de Boeij 与 Auke Wiersma 均为 supervisor。',sources:[u]};
+a.next_step='核对 Wiersma 名称变体与博士后信息，检查图谱双向关系。';
+a.followup_required=true;
+d.prepare('insert or ignore into manual_audit_events(audit_id,record_id,recorded_at,details_json) values(?,?,?,?)').run(a.audit_id,id,new Date().toISOString(),JSON.stringify(a));
+d.close();

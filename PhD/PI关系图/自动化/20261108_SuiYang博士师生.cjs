@@ -1,0 +1,7 @@
+const fs=require('node:fs'),path=require('node:path'),{DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true}),id='95952eef';
+const row=db.prepare('select details_json from manual_audit_events where record_id=? order by recorded_at desc,rowid desc limit 1').get(id);db.close();if(!row)throw Error('无既有事件');
+const berkeley='https://me.berkeley.edu/tag/grad-news/page/4/',asu='https://search.asu.edu/profile/3720582',alumni='https://xlab.hku.hk/alumni.html';
+const a=JSON.parse(row.details_json);a.audit_id='20261108_95952eef_berkeley_phd_student';a.aspects.phd={status:'confirmed_advisor',note:'Berkeley 机械工程系明确称 Sui Yang 是 Xiang Zhang 博士生，ASU 本人履历称博士阶段 working with Zhang；正式博士论文 advisor 字段仍待核。',sources:[berkeley,asu,alumni]};a.aspects.postdoc={status:'unresolved',note:'ASU 本人履历写 2016–2018 Berkeley 和 LBNL 博士后；同一履历未明确博士后指导者。',sources:[asu]};a.followup_required=true;a.next_step='核博士论文导师正式字段；查 2016–2018 Berkeley／LBNL 博后组属及指导者，不能以博士师生关系推断博后指导。';
+fs.writeFileSync(path.join(__dirname,'人工-20261108-SuiYang博士师生.json'),JSON.stringify(a,null,2)+'\n');
+fs.writeFileSync(path.join(__dirname,'结构化-20261108-SuiYang博士师生.json'),JSON.stringify([{event_id:'20261108_95952eef_zhang_stage_mentor',record_id:id,stage:'phd',mentor_filename:'师承人物 - Xiang Zhang',kind:'stage_mentor',source_audit_id:a.audit_id,evidence:a.aspects.phd.note,sources:a.aspects.phd.sources}],null,2)+'\n');console.log('事件已准备');

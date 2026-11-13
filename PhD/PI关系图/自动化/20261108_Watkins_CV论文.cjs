@@ -1,0 +1,16 @@
+const fs=require('node:fs'),path=require('node:path');
+const {DatabaseSync}=require('node:sqlite');
+const db=new DatabaseSync(path.join(__dirname,'检索队列.sqlite'),{readOnly:true});
+const old=db.prepare('SELECT details_json FROM manual_audit_events WHERE record_id=? ORDER BY recorded_at DESC,rowid DESC LIMIT 1').get('167adb46');
+if(!old)throw Error('缺少旧人工事件');
+const a=JSON.parse(old.details_json),cv='https://www.watkinsresearchgroup.org/wp-content/uploads/2025/08/Curriculum-Vitae-_Watkins_Summer-2025.pdf',thesis='https://digitalcommons.memphis.edu/etd/566/',osu='https://cbe.osu.edu/people/watkins.891';
+a.audit_id='20261108_watkins_2025cv_thesis';
+a.aspects.identity={status:'confirmed',note:'本人 CV 与 Memphis 论文档案的人名、论文题目、博士学校与年份一致，Ohio State 机构简介对应本人。',sources:[cv,thesis,osu]};
+a.aspects.affiliation={status:'confirmed',note:'Ohio State 化学工程系个人页列化学与生物化学、化学与生物分子工程双系教授。',sources:[osu]};
+a.aspects.research={status:'confirmed',note:'院系简介及本人 CV 列分子自组装、聚合物材料、光电与生物成像等方向。',sources:[osu,cv]};
+a.aspects.phd={status:'confirmed_advisor',note:'本人 2025 CV 将 2007–2012 Memphis 研究生阶段 Advisor 列 Tomoko Fujiwara；同题博士论文档案列 Fujiwara 为委员会主席。',sources:[cv,thesis]};
+a.aspects.postdoc={status:'confirmed_advisor',note:'本人 2025 CV 将 2012–2014 Florida 博士后职位的 Advisor 列 Ronald K. Castellano。',sources:[cv,osu]};
+a.followup_required=false;a.next_step='两阶段已由本人履历明确；如出现任职或来源变更可增量复核。';
+const rel=[{event_id:'20261108_watkins_fujiwara_cv',record_id:'167adb46',stage:'phd',mentor_filename:'师承人物 - Tomoko Fujiwara',kind:'advisor',source_audit_id:a.audit_id,evidence:'本人履历列 Memphis 2007–2012 研究生阶段 advisor Fujiwara；博士论文档案列其为委员会主席。',sources:[cv,thesis]},{event_id:'20261108_watkins_castellano_cv',record_id:'167adb46',stage:'postdoc',mentor_filename:'师承人物 - Ronald K. Castellano',kind:'advisor',source_audit_id:a.audit_id,evidence:'本人履历在 Florida 2012–2014 博士后职位下明确列 Castellano 为 advisor。',sources:[cv,osu]}];
+for(const [name,obj] of [['人工核查-20261108-Watkins-CV.json',a],['结构化-20261108-Watkins-CV.json',rel]])fs.writeFileSync(path.join(__dirname,name),JSON.stringify(obj,null,2)+'\n',{encoding:'utf8',flag:'wx'});
+db.close();
