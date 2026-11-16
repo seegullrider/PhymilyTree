@@ -22,7 +22,9 @@
 
 - 博士后阶段研究师长：[[师承人物 - William D. Ristenpart|William D. Ristenpart]]。[来源](https://research.engineering.ucdavis.edu/rrg/wp-content/uploads/sites/81/2015/09/ristenpart_CV_july_2013.pdf) 证据：Ristenpart 简历在其学生获奖列表中列出博士后 Cari Dutcher 及其 2011–2013 年 fellowship；未明示正式导师头衔；关系类型可信度：中。
 - 博士后阶段研究师长：[[师承人物 - Anthony S. Wexler|Anthony S. Wexler]]。[来源](https://research.engineering.ucdavis.edu/rrg/wp-content/uploads/sites/81/2015/09/ristenpart_CV_july_2013.pdf) 证据：Ristenpart 简历明确 Dutcher 的博士后 fellowship 为 with Prof. Anthony Wexler；未明示正式导师头衔；关系类型可信度：中。
-- 核查边界：博士导师 Susan J. Muller 是本人履历检索线索，但来源站点目前限流，尚未读到原网页，暂不作为确认关系；检索结果给出 Taylor–Couette 湍流博士论文题名，仅作定位线索，原卷待查。博士后正式导师需进一步确认。
+- 博士课题组负责人：[[师承人物 - Susan J. Muller|Susan J. Muller]]。Muller 课题组站点的 Dutcher 个人页列 Cari S. Dutcher 于 Muller Lab Alum，学历 Ph.D. Chemical Engineering, University of California, Berkeley；研究为 Taylor–Couette 流聚合物减阻，与 AFT 论文题名（Berkeley 2009）一致。页面不写角色栏，角色由博士学位推定，按博士课题组负责人记录，无 advisor 称谓。 [原档 1](https://www.cchem.berkeley.edu/~sjmgrp/people/cari/cari.htm)
+- 复核原档：Muller 课题组站点把 Dutcher 列为 Muller Lab Alum 并写 Berkeley 化工博士，据此新增 Muller 为博士课题组负责人（角色栏由博士学位推定）。 [原档 1](https://www.cchem.berkeley.edu/~sjmgrp/people/cari/cari.htm)
+- 核查边界：Berkeley 组档已确认 Susan J. Muller 的博士阶段组属。正式导师称谓待学位档；检索结果给出 Taylor–Couette 湍流博士论文题名，仅作定位线索，原卷待查。博士后正式导师需进一步确认。 Berkeley 2009 论文署名页或 Dutcher 本人 CV 的博士导师栏可升博士导师；博士后正式导师另核。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）

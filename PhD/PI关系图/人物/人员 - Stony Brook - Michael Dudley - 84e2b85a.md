@@ -27,6 +27,7 @@
 - 博士关系证据：本人 CV 的 Warwick PhD 条目直接写 “Thesis Advisor, Prof. D.K. Bowen”；可信度：高。
 - 博士后关系证据：同一 CV 的 Strathclyde 博士后条目写 “working with Prof. J.N. Sherwood”；阶段研究师长可信度：高。
 - 时间与论文：[本人 CV](https://cpb-us-e1.wpmucdn.com/you.stonybrook.edu/dist/a/4368/files/2020/04/Dudley-CV-April-27-2020.pdf)列 Warwick 工程科学博士 1982 年，论文 *Deformation Studies on Fe 3.5 wt % Si by X-ray Topography*；Strathclyde 博士后职位为 1981–1984 年。博士后起始与授位年份重叠，按来源原样保留。
+- 博士导师：[[师承人物 - Jacques Miltat|Jacques Miltat]]。Dudley 在 Warwick 1982 年博士论文致谢中把 D. K. Bowen 和 J. Miltat 同称为 my supervisors。本人 CV 单列 Bowen 为 Thesis Advisor，并记 1979–1980 年在 Paris VI 的 Authier 实验室访问时与 J. Miltat 研究。按论文具名记录共同指导，学籍所列导师称谓仍以 CV 中 Bowen 为准。LPS 组成员名录核对 Jacques Miltat 的姓名。 [原档 1](https://wrap.warwick.ac.uk/id/eprint/111555/1/WRAP_Theses_Dudley_1982.pdf) · [原档 2](https://cpb-us-e1.wpmucdn.com/you.stonybrook.edu/dist/a/4368/files/2020/04/Dudley-CV-April-27-2020.pdf) · [原档 3](https://equipes.lps.u-psud.fr/idmag/members-2/)
 - 核查边界：本人 CV 对博士后写 working with，故只记作阶段研究师长；姓名保留 CV 中缩写以避免身份误配。
 
 

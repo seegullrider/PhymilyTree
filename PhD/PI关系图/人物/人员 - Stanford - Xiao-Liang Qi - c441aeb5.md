@@ -31,7 +31,7 @@
 
 ## 师承候选线索
 
-- 博士阶段研究关联（反向线索，低可信候选）：[[人员 - Cornell - Chao-Ming Jian - 488c6abc|Chao-Ming Jian]]。既有 Physics Tree 线索列其为 Stanford 师长，原页面本轮未能重读，Cornell 列出了两人博士期间的共同论文；正式导师需原始档案确认。 [Physics Tree](https://academictree-staging.thetransmitter.org/physics/peopleinfo.php?pid=740261) · [Cornell 论文与履历](https://voltron.as.cornell.edu/chao-ming-jian)
+- 博士生：[[人员 - Cornell - Chao-Ming Jian - 488c6abc|Chao-Ming Jian]]。既有 Physics Tree 线索列其为 Stanford 师长，原页面本轮未能重读，Cornell 列出了两人博士期间的共同论文；正式导师需原始档案确认。 [Physics Tree](https://academictree-staging.thetransmitter.org/physics/peopleinfo.php?pid=740261) · [Cornell 论文与履历](https://voltron.as.cornell.edu/chao-ming-jian) Stanford 物理系 2016 年 5 月 13 日博士论文答辩公告在 Research Advisor 栏具名 Xiao-Liang Qi。公告列作者 Chaoming Jian 与论文 Topological phenomena in condensed matter physics，Cornell LASSP 本人档吻合。 [原档 1](https://physics.stanford.edu/events/physics-phd-dissertation-defense-chaoming-jian)
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）

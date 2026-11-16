@@ -21,7 +21,7 @@
 
 ## 师承
 
-- 博士生（姓名对应待核）：[[人员 - University of Florida - Peter Hirschfeld - a346e262|Peter Hirschfeld]]。本人 CV 明确 Princeton 博士论文 advisor 为 D.L. Stein；NYU Daniel Stein 的 Princeton 博士、研究方向与同期相符，姓名节点对应是推断，须独立核对。 [来源1](https://phys.ufl.edu/~pjh/cv/cv.pdf)；[来源2](https://cims.nyu.edu/people/profiles/STEIN_Daniel.html)
+- 博士生：[[人员 - University of Florida - Peter Hirschfeld - a346e262|Peter Hirschfeld]]。本人 CV 明确 Princeton 博士论文 advisor 为 D.L. Stein；Daniel L. Stein 的 Princeton 博士经历与研究方向提供了早期身份线索。 [来源1](https://phys.ufl.edu/~pjh/cv/cv.pdf)；[来源2](https://cims.nyu.edu/people/profiles/STEIN_Daniel.html) Hirschfeld 本人 UF CV 的 Princeton 博士条目写 thesis advisor D.L. Stein；Stein 本人 NYU CV 列 1980–1987 年 Princeton 物理系助理教授及凝聚态理论博士经历，核对姓名缩写、任职和方向。 [原档 1](https://people.clas.ufl.edu/pjh/files/2026/10/cv.pdf) · [原档 2](https://as.nyu.edu/content/dam/nyu-as/faculty/documents/Stein-Daniel-dlsbio.pdf)
 
 - 博士阶段研究师长：[[师承人物 - Philip W. Anderson|Philip W. Anderson]]。[来源](https://en.wikipedia.org/wiki/Daniel_L._Stein) [APS 本人受访档](https://www.aps.org/apsnews/2020/05/philip-anderson-19232020) · [NYU 数学系原档](https://math.nyu.edu/people/profiles/STEIN_Daniel.html)。APS 采访原文称 Daniel L. Stein 攻读博士时是 Anderson 的 protégé，NYU 原档确认其 1979 Princeton 物理博士。可明确博士阶段师长，学位论文登记的正式导师待核。
 - 核查边界：二手传记称 1979 Princeton 博士由 Anderson 指导，暂列候选；其称毕业后留 Princeton 任教，是否另有博士后经历待核。 [APS 本人受访档](https://www.aps.org/apsnews/2020/05/philip-anderson-19232020)。APS 采访原文称 Daniel L. Stein 攻读博士时是 Anderson 的 protégé，NYU 原档确认其 1979 Princeton 物理博士。可明确博士阶段师长，学位论文登记的正式导师待核。 [Harvard 同名学生原档](https://bmiphd.hms.harvard.edu/people/daniel-stein)。Harvard 原始学生档为 2022 年进入生物信息学项目的 Daniel Stein，导师 Ilya Korsunsky；NYU 数学系与 Alfred 讲座履历核本人物是 1979 年 Princeton 物理博士、NYU 物理与数学教授。学位时期、院系与研究方向均不同。

@@ -21,7 +21,9 @@
 ## 师承
 
 - 博士后课题组负责人：[[人员 - Stanford - Steven Kivelson - bc8048c4|Steven Kivelson]]。[Kivelson 本人 Stanford 履历](https://profiles.stanford.edu/steven-kivelson?tab=bio)在 Past Post Docs 中列 UC Davis 的 “Gergeley Zimanyi”；[Zimanyi 本人履历](https://zimanyi.ucdavis.edu/wp-content/uploads/2021/04/Zimanyi-CV.pdf)与 [UC Davis 物理系页面](https://physics.ucdavis.edu/people/faculty/gergely-zimanyi)的身份、物理研究和任职相符，前名有拼写差异。该证据支持博士后组关系，未明确正式 advisor 称谓或具体年份。
-- 核查边界：学校履历和本人 CV 确认 1985 年 Eötvös 博士，以及 1986–1988 年 Stony Brook 和 1988–1989 年 Rutgers 博士后；Kivelson 1986–1988 年任 Stony Brook 教职，时间可对应，但具体阶段尚需明文确认。博士导师及 Rutgers 阶段指导者仍待追查。
+- 博士后阶段研究师长：[[人员 - UCLA - Sudip Chakravarty - 970df88d|Sudip Chakravarty]]。Chakravarty 本人 CV（pa.ucla.edu 托管）末栏 Thesis Advisor and Postgraduate-Scholar Sponsor 的 Postgraduate 名录列 G. Zimanyi (Professor, U. C. Davis)；同一 CV 的 Employment 栏列 Chakravarty 1980–1988 年任 Stony Brook 教职，与页面核定的 Zimanyi 1986–1988 年 Stony Brook 博士后相合；名录没有年份，栏标题为 Postgraduate-Scholar Sponsor 而无 advisor 称谓，按博士后阶段研究师长记录，不升正式导师。该边不在队列内（AFT 没有 Chakravarty–Zimanyi 边）。 [原档 1](https://www.pa.ucla.edu/faculty-websites/sudip_cv.pdf)
+- 复核原档：Chakravarty 本人 CV 末栏 Thesis Advisor and Postgraduate-Scholar Sponsor 的 Postgraduate 名录列 G. Zimanyi (Professor, U. C. Davis)，Chakravarty 1980–1988 年任 Stony Brook 教职，与本页所记 1986–1988 年 Stony Brook 博士后相合；名录无年份与 advisor 称谓，与 Kivelson 同期同校，两者主次待核。 [原档 1](https://www.pa.ucla.edu/faculty-websites/sudip_cv.pdf)
+- 核查边界：学校履历和本人 CV 确认 1985 年 Eötvös 博士，以及 1986–1988 年 Stony Brook 和 1988–1989 年 Rutgers 博士后；Kivelson 1986–1988 年任 Stony Brook 教职，时间可对应，但具体阶段尚需明文确认。博士导师及 Rutgers 阶段指导者仍待追查。 Stony Brook 博后期间 Kivelson 与 Chakravarty 的主次及起止年份可由 Zimanyi 本人 CV 补。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）

@@ -24,7 +24,9 @@
 - 博士后阶段研究者：[[人员 - UC Santa Cruz - David Lederman - 90aa65a1|David Lederman]]。[来源](https://campusdirectory.ucsc.edu/cd_detail?uid=dlederma) 证据：学校目录称其 1992—1995 年在 UC San Diego 博士后及研究员期间 with Prof. Ivan K. Schuller；未明写正式博后导师。；关系类型可信度：高。
 - 博士候选研究者：[[人员 - UC San Diego - Eric Fullerton - 48e0d021|Eric Fullerton]]。[本组旧成员名单](https://ischuller.ucsd.edu/group-mobile/)列其及 IBM Almaden 去向；[DOE 项目报告](https://www.osti.gov/servlets/purl/5430644)称其获本项目资助并于 1991 年获博士，且列其博士论文。组员身份及博士期项目支持有据，但组属具体阶段和正式论文导师仍待核；保留候选。 DOE 项目报告在 Doctoral Theses 段列 1991 年 9 月 UCSD 论文《Quantitative Structural and Elastic Characterization of Superlattices》。报告未列正式导师。Computer History Museum 本人口述视频已定位，未取得逐字稿。Schuller 维持候选。 [DOE 项目报告](https://www.osti.gov/servlets/purl/5430644)。
 - 博士生：[[人员 - UIUC - Axel Hoffmann - 0b83a6d0|Axel Hoffmann]]。[来源](https://hoffmann.matse.illinois.edu/files/2025/04/Hoffmann-CV.pdf) [原始资料](https://hoffmann.matse.illinois.edu/files/2025/04/Hoffmann-CV.pdf) 证据：本人 CV 的 UC San Diego 1999 年物理 PhD 条目明确列 Advisor: Ivan K. Schuller。关系类型可信度：高。
-- 核查边界：巴塞罗那大学履历确认 Northwestern 博士；导师及是否从事博士后尚待进一步核实，不能仅据合著推断。https://www.ub.edu/portal/web/dp-materia-condensada/inici/-/detall/col-loquis-fmc-prof-ivan-k-schuller
+- 博士导师：[[人员 - Northwestern - John Ketterson - cfecbccd|John B. Ketterson]]。Ketterson 课题组（Northwestern 物理系）alumni 页在标题 Some Ph.D. Students of John B. Ketterson 下列 Ivan K. Schuller，1976，Photoexcitation in Superconductors；AFT 记 Northwestern 1976 及同一论文题名，与页面核定的 Northwestern 博士相符。栏标题明写 Ph.D. Students of Ketterson，按博士导师记录。 [原档 1](https://groups.physics.northwestern.edu/ketterson/alumni.html)
+- 复核原档：Ketterson 课题组 alumni 页在 Some Ph.D. Students of John B. Ketterson 下列 Ivan K. Schuller（1976，Photoexcitation in Superconductors），与本页所记 Northwestern 博士及 AFT 的 1976 年和论文题名一致；Northwestern 学位论文署名页仍可核对。 [原档 1](https://groups.physics.northwestern.edu/ketterson/alumni.html)
+- 核查边界：巴塞罗那大学履历确认 Northwestern 博士；导师及是否从事博士后尚待进一步核实，不能仅据合著推断。https://www.ub.edu/portal/web/dp-materia-condensada/inici/-/detall/col-loquis-fmc-prof-ivan-k-schuller Northwestern 1976 年学位论文署名页仍可核对；博士后经历与接待人另核。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）

@@ -12,10 +12,11 @@
 
 ## 师承
 
-- 博士导师候选：[[师承人物 - Scott L. Anderson|Scott L. Anderson]]。Utah 期间的尺寸选择模型催化工作与 Anderson 同署，个人 CV 确认该博士课题；导师角色待学位原档。 [学术经历核对](https://billkaden.wixsite.com/scientific-interests) · [现任院系原档](https://sciences.ucf.edu/physics/person/william-kaden/)
-- 博士后候选关系：[[师承人物 - Hans-Joachim Freund|Hans-Joachim Freund]]。Fritz Haber 院档将 Kaden 列为当时化学物理部门博士后；同期作者组说明明确 Freund 是部门主任，并另外列出下属组长。个人指导者待核。 [来源 1](https://pure.mpg.de/rest/items/item_2036988_10/component/file_2086733/content) · [来源 2](https://www.fhi.mpg.de/142701/2015_fachbeirat_report.pdf) · [现任院系原档](https://sciences.ucf.edu/physics/person/william-kaden/)
+- 博士课题组负责人：[[师承人物 - Scott L. Anderson|Scott L. Anderson]]。Utah 期间的尺寸选择模型催化工作与 Anderson 同署，个人 CV 确认该博士课题；导师角色待学位原档。 [学术经历核对](https://billkaden.wixsite.com/scientific-interests) · [现任院系原档](https://sciences.ucf.edu/physics/person/william-kaden/) Anderson 课题组成员页在 Past Graduate Students 栏逐字列 William Kaden Ph.D. Aug 2010，该页区分研究生与博士后；Kaden 本人 CV 列 Utah 博士 2010；AFT 记 Utah 2010 及同题论文。组页无 advisor 称谓，按博士课题组负责人记录。 [原档 1](https://www.chemistry.utah.edu/scott-l-anderson-research-group-2/group-members/) · [原档 2](https://sciences.ucf.edu/physics/wp-content/uploads/sites/2/2020/04/Kaden-William_CV.pdf)
+- 博士后阶段研究师长：[[师承人物 - Hans-Joachim Freund|Hans-Joachim Freund]]。Fritz Haber 院档将 Kaden 列为当时化学物理部门博士后；同期作者组说明明确 Freund 是部门主任，并另外列出下属组长。个人指导者待核。 [来源 1](https://pure.mpg.de/rest/items/item_2036988_10/component/file_2086733/content) · [来源 2](https://www.fhi.mpg.de/142701/2015_fachbeirat_report.pdf) · [现任院系原档](https://sciences.ucf.edu/physics/person/william-kaden/) Humboldt 基金会公开档案在 Kaden 的博士后奖项下具名 Fritz Haber Institute 的 Hans-Joachim Freund 为接待学者（Host during sponsorship）。记录博士后阶段关系及 fellowship host 的原称谓；正式指导职衔待核。 [原档 1](https://www.humboldt-foundation.de/en/connect/explore-the-humboldt-network/singleview/1140799/prof-dr-william-kaden) · [原档 2](https://sciences.ucf.edu/physics/wp-content/uploads/sites/2/2020/04/Kaden-William_CV.pdf)
 
-- 核查边界：继续查 Utah 论文题页及 Humboldt Fellowship 接待学者。
+- 复核原档：Anderson 组页把 Kaden 列为 Past Graduate Students（Ph.D. Aug 2010），升为博士课题组负责人；Humboldt 基金会档案具名 Freund 为 Kaden 的 fellowship host，升为博士后 sponsor。两者均无 advisor 称谓。 [原档 1](https://www.chemistry.utah.edu/scott-l-anderson-research-group-2/group-members/) · [原档 2](https://www.humboldt-foundation.de/en/connect/explore-the-humboldt-network/singleview/1140799/prof-dr-william-kaden) · [原档 3](https://sciences.ucf.edu/physics/wp-content/uploads/sites/2/2020/04/Kaden-William_CV.pdf)
+- 核查边界：Humboldt 基金会已具名 fellowship 接待学者。Utah 论文题页及正式指导称谓待核。 Utah 学位论文记录或署名页的 chair／advisor 栏可升博士导师；2010–2011 年早于 Humboldt 资助的 FHI 阶段接待人另核。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）

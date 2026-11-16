@@ -18,6 +18,7 @@
 - 博士后候选关系：[[师承人物 - Peter B. Littlewood|Peter B. Littlewood]]。本人访谈说在博后阶段得到 Littlewood 许多帮助，并在 Brookhaven 博后期间已到 Bell 与其合作；其 Bell 博后指导角色待查。 [学术经历核对](https://ethw.org/Oral-History:Susan_Coppersmith) · [来源 2](https://res.cloudinary.com/apsphysics/image/upload/2000-07_txk6pj.pdf)
 - 博士后经历：本人访谈称 1983 年后在 Brookhaven 做两年博后，后来赴 Bell Labs 做第二段博后。APS 任用简历列 Brookhaven 1983–1985 为 Research Associate，Bell Labs 1985–1986 为 Postdoc，1986–1987 Princeton Visiting Lecturer。本人另说明 Princeton 邀请人 Philip W. Anderson，并称其后短暂返回 Bell 博后，1987 年成为 Bell 正式研究人员。 [学术经历核对](https://ethw.org/Oral-History:Susan_Coppersmith) · [来源 2](https://res.cloudinary.com/apsphysics/image/upload/2000-07_txk6pj.pdf)
 
+- 博士阶段研究师长：[[师承人物 - William F. Brinkman|William F. Brinkman]]。Coppersmith 在工程与技术历史档案口述访谈中把 Bell Labs 的 Bill Brinkman 称为她的 mentor，并说明他协调了她在 Bell Labs 完成博士论文的安排。保留此前有原始口述支持的 Cornell 正式导师 N. David Mermin 与实际论文导师 Daniel S. Fisher。AIP 口述史目录确认 William F. Brinkman 在 Bell Labs 的身份。 [原档 1](https://ethw.org/Oral-History:Susan_Coppersmith) · [原档 2](https://history.aip.org/history/catalog/icos/29946.html)
 - 核查边界：查 Cornell 1983 年博士论文和签署页，并继续核实 Brookhaven 与 Bell Labs 两段博后有无正式具名导师。 UW 物理系同期招聘原刊列 1983 Cornell 博士、1995 年 Chicago 物理教授及 2001 年 8 月加入 UW。现由 UW 列为荣休。 [UW 2001 年任用原档](https://home.physics.wisc.edu/gilbert/wp-content/uploads/sites/3/2017/08/news01-2.pdf)
 
 <!-- PI-AUTO-SEARCH:START -->

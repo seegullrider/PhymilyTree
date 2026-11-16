@@ -22,7 +22,8 @@
 
 - 博士后课题组负责人：[[师承人物 - Rick Freeman|Rick Freeman]]。[来源](https://www.hajim.rochester.edu/optics/news-events/events/archives/2013/041813-chowdhury.html)
 - 博士后课题组负责人：[[师承人物 - Linn VanWoerkom|Linn VanWoerkom]]。[来源](https://www.hajim.rochester.edu/optics/news-events/events/archives/2013/041813-chowdhury.html)
-- 核查边界：Rochester 2013 报告履历列其在 Rick Freeman 和 Linn VanWoerkom 两组工作为博士后，仅标课题组负责人。[本人简历](https://opticalscience.osu.edu/sites/default/files/2021-03/cv_chowdhury.pdf)列博士后为 2004 年 5 月至 2006 年 11 月，2013 年时为高级研究人员；与 Rochester 2013 简介的博士后称谓存在时间冲突，暂保留并待核。2004 Delaware 博士导师未核，Walker 组校友页返回 502，仍须查原始资料，不能以搜索摘要或论文合著确证。
+- 博士课题组负责人：[[师承人物 - Barry C. Walker|Barry C. Walker]]。Delaware Walker Laser Science Group 校友页在 Enam Chowdhury 条目列明 2004 年 Delaware 物理学博士及论文 Atomic Response in Ultra-Intense Fields。课题组归属与 AFT 边相符，正式论文导师称谓待核。 [原档 1](https://sites.udel.edu/bcwalker/alumni/) · [原档 2](https://www.udel.edu/academics/colleges/cas/units/departments/physics-astronomy/our-people/barry-walker/)
+- 核查边界：Rochester 2013 报告履历列其在 Rick Freeman 和 Linn VanWoerkom 两组工作为博士后，仅标课题组负责人。[本人简历](https://opticalscience.osu.edu/sites/default/files/2021-03/cv_chowdhury.pdf)列博士后为 2004 年 5 月至 2006 年 11 月，2013 年时为高级研究人员；与 Rochester 2013 简介的博士后称谓存在时间冲突，暂保留并待核。2004 Delaware 博士导师未核，Walker 组校友原档已核博士阶段组属，正式论文导师仍待查。 Walker 组校友页已核，需继续查 Delaware 博士论文签署页的正式导师。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）

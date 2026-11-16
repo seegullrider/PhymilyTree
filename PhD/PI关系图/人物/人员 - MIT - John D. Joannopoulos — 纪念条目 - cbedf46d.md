@@ -40,7 +40,7 @@
 - 博士生：[[人员 - MIT - Yoel Fink - f7742f4b|Yoel Fink]]。[来源](https://tlo.mit.edu/industry-entrepreneurs/researchers/yoel-fink) [本人 fibers@mit 履历](https://pbg-rle.mit.edu/yoel-fink/)在 MIT 博士论文条目同列三位指导者。
 ### 研究关联线索：指导关系待核
 
-- 与 [[人员 - MIT - Marin Soljačić - 2141d845|Marin Soljačić]] 博士后阶段合作；是否存在导师关系尚待直接证据。[[师承候选线索索引|查看证据]]。
+- 此前与 Marin Soljačić 的同期合作线索保存在[[师承候选线索索引]]。
 
 - 博士导师：[[人员 - UC Berkeley - Marvin Cohen（荣休） - 67eb1f9c|Marvin Cohen（荣休）]]。[MIT Martin Bazant 学术族谱](https://web.mit.edu/bazant/www/info/index.html)证据：博士导师谱系列出 Cohen 后接 Joannopoulos，并注明后者 Berkeley 1974；[MIT 物理系](https://physics.mit.edu/faculty/john-joannopoulos/)确认其 1974 年 Berkeley 物理博士与身份；既有[伯克利口述史](https://digicoll.lib.berkeley.edu/record/222040/files/birgeneau_robert_2021_web.pdf)来源保留。关系可信度：高。 [MIT 纪念档](https://physics.mit.edu/news/professor-john-joannopoulos-photonics-pioneer-and-institute-for-soldier-nanotechnologies-director-dies-at-78/)确认 Berkeley 1974 博士及同年开始 MIT 教职。
 - 核查边界：本次能直接读取学者整理的博士导师谱系和 MIT 履历；该谱系列有 phdtree 标识，学位论文与伯克利口述史仍待重新读取。 [MIT 纪念档](https://physics.mit.edu/news/professor-john-joannopoulos-photonics-pioneer-and-institute-for-soldier-nanotechnologies-director-dies-at-78/)确认 Berkeley 1974 博士及同年开始 MIT 教职。 已读履历未单列博士后。
@@ -49,6 +49,7 @@
 
 - 博士后阶段研究者：[[人员 - University of Central Florida - Ayman F. Abouraddy - ebe7fec6|Ayman F. Abouraddy]]。CREOL 履历具名 2003 年进入 MIT 做博士后时与 Fink、Joannopoulos 共研，2005 年 RLE Research Scientist 另列。 [现任院系原档](https://creol.ucf.edu/person/ayman-abouraddy/)
 
+- 博士后阶段研究者：[[人员 - MIT - Marin Soljačić - 2141d845|Marin Soljačić]]。MIT 2025 年讣告写 Soljačić 是 a former postdoc under Joannopoulos，并引 Soljačić 本人称他为 mentor。Pappalardo 博士后阶段的研究指导有校方和本人证词。 [原档 1](https://news.mit.edu/2025/professor-john-joannopoulos-dies-0819)
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
 

@@ -31,6 +31,7 @@
 - 博士导师：[[师承人物 - Pol Duwez|Pol Duwez]]。[来源](https://www.mitstanfordberkeleynano.org/events_past/0403%20-%20Tools/Stanford-nano-Goddard.pdf) 证据：Goddard 本人 Stanford Nanotechnology Forum 演讲材料列其 1965 年 Caltech 博士 advisor: Pol Duwez；关系类型可信度：高。
 - 核查边界：Caltech 名录列 Noyes Research Fellow 职务，但未列导师；不自动推断博士后师承。
 
+- 博士阶段研究者：[[人员 - UCLA - Prineha Narang - d7f53f33|Prineha Narang]]。Narang 在 Caltech 校友专访中称 William A. Goddard III 与 Harry Atwater 共同指导其博士论文。Caltech 学位馆藏的 Research Advisor(s) 列 Atwater 为导师、Nathan S. Lewis 为共同导师，Goddard 列于 Thesis Committee。综合两处原档，Goddard 记博士阶段研究师长；正式共同导师身份待进一步核实。 [原档 1](https://engenuity.caltech.edu/stories/alumna-profile-prineha-narang-phd-15) · [原档 2](https://thesis.library.caltech.edu/9004/)
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
 

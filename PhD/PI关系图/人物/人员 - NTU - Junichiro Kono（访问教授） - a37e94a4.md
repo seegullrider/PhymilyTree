@@ -23,9 +23,10 @@
 ## 师承
 
 - 博士导师：[[师承人物 - Bruce D. McCombe|Bruce D. McCombe]]。[来源](https://arts-sciences.buffalo.edu/content/dam/arts-sciences/physics/interactions/fall-2008.pdf)
-- 博士后阶段研究师长：[[师承人物 - S. James Allen|S. James Allen]]。[来源](https://arts-sciences.buffalo.edu/content/dam/arts-sciences/physics/interactions/fall-2008.pdf)
-- 复核原档：Rice 现行人员履历分列 1995–1997 UCSB 博士后、1997–2000 Stanford 物理系 W. W. Hansen Experimental Physics Laboratory Fellow 与 2000 年 Rice 入职。Stanford 阶段导师待查，UCSB 的 S. James Allen 阶段研究指导保留。 [原档 1](https://profiles.rice.edu/faculty/junichiro-kono)
-- 核查边界：Buffalo 物理系校友通讯明确称 1995 博士 advisor McCombe，1995–1997 UCSB 博后 under Professor Jim Allen，后者暂标博士后阶段研究师长；UCSB 中心报告列 Jim Allen 为中心创办人并列 S. James Allen 为物理教师：https://www.itst.ucsb.edu/itst/reports/report07-08.pdf 。Rice 本人 CV 页面本轮返回 502，待可访问时复核其他博士后指导者；Rice 与 NTU 记录是同一人。 查 Stanford Hansen 实验室 fellowship 任用档的具名指导者，并维护 Rice、NTU 同人链接。
+- 博士后导师：[[师承人物 - S. James Allen|S. James Allen]]。[来源](https://arts-sciences.buffalo.edu/content/dam/arts-sciences/physics/interactions/fall-2008.pdf) Rice 托管的 Kono 本人履历在 1995–1997 年 UC Santa Barbara 太赫兹中心博士后条目下的 Advisors 栏同时列 S. James Allen 和 Hiroyuki Sakaki。2009 年 NIMS 访谈资料给出 Sakaki 的全名和 University of Tokyo 半导体纳米结构研究背景。 [原档 1](https://kono.rice.edu/kono-bio/cv/)
+- 复核原档：Rice 现行人员履历分列 1995–1997 UCSB 博士后、1997–2000 Stanford 物理系 W. W. Hansen Experimental Physics Laboratory Fellow 与 2000 年 Rice 入职。Stanford 阶段的具名导师待查。 [原档 1](https://profiles.rice.edu/faculty/junichiro-kono)
+- 博士后导师：[[师承人物 - Hiroyuki Sakaki|Hiroyuki Sakaki]]。Rice 托管的 Kono 本人履历在 1995–1997 年 UC Santa Barbara 太赫兹中心博士后条目下的 Advisors 栏同时列 S. James Allen 和 Hiroyuki Sakaki。2009 年 NIMS 访谈资料给出 Sakaki 的全名和 University of Tokyo 半导体纳米结构研究背景。 [原档 1](https://kono.rice.edu/kono-bio/cv/) · [原档 2](https://www.nims.go.jp/mana/pror/periodical/n28red0000003whw-att/MANA_CONVERGENCE_No2_2009Jun_en.pdf)
+- 核查边界：本人 Rice 履历具名博士导师 Bruce D. McCombe 和 UCSB 博士后导师 S. James Allen、Hiroyuki Sakaki。Rice 与 NTU 记录是同一人。 查 Stanford Hansen 实验室 fellowship 任用档的具名指导者，并维护 Rice、NTU 同人链接。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）

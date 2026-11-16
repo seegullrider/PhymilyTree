@@ -12,11 +12,12 @@
 
 ## 师承
 
-- 博士导师候选：[[师承人物 - Daniel Loss|Daniel Loss]]。Basel 理论组校友原档列 Leuenberger；博士阶段研究主题及署名相符。校友栏目未区分博士与 Basel 博士后，导师角色待原卷。 [现任院系原档](https://nanoscience.ucf.edu/person/michael-n-leuenberger/) · [学术经历核对](https://www.quantumtheory.unibas.ch/alumni.php) · [来源 3](https://arxiv.org/abs/cond-mat/0205457)
-- 博士后候选关系：[[师承人物 - Daniel Loss|Daniel Loss]]。Basel 理论组校友档和同期合作可作第一段 Basel 博后追查线索，个人指导和具体组属待任用文件。 [现任院系原档](https://nanoscience.ucf.edu/person/michael-n-leuenberger/) · [学术经历核对](https://www.quantumtheory.unibas.ch/alumni.php) · [来源 3](https://arxiv.org/abs/cond-mat/0205457)
+- 博士课题组负责人：[[师承人物 - Daniel Loss|Daniel Loss]]。Basel 理论组校友原档列 Leuenberger；博士阶段研究主题及署名相符。校友栏目未区分博士与 Basel 博士后，导师角色待原卷。 [现任院系原档](https://nanoscience.ucf.edu/person/michael-n-leuenberger/) · [学术经历核对](https://www.quantumtheory.unibas.ch/alumni.php) · [来源 3](https://arxiv.org/abs/cond-mat/0205457) Leuenberger 本人在 Basel 理论组的个人页写 Research and teaching assistant in the group of Prof. D. Loss（1998 年 3 月至 2002 年 4 月）与 diploma thesis done under the supervision of Prof. D. Loss；UCF 托管的本人 CV 列 Basel 理论凝聚态物理 PhD 2002。博士阶段在 Loss 组任助理，按博士课题组负责人记录，Referent 称谓未见。 [原档 1](https://quantumtheory.physik.unibas.ch/people/leuenberger/) · [原档 2](https://sciences.ucf.edu/physics/wp-content/uploads/sites/2/2020/04/Leuenberger-Michael_CV.pdf)
+- 博士后课题组负责人：[[师承人物 - Daniel Loss|Daniel Loss]]。Basel 理论组校友档和同期合作可作第一段 Basel 博后追查线索，个人指导和具体组属待任用文件。 [现任院系原档](https://nanoscience.ucf.edu/person/michael-n-leuenberger/) · [学术经历核对](https://www.quantumtheory.unibas.ch/alumni.php) · [来源 3](https://arxiv.org/abs/cond-mat/0205457) Leuenberger 本人 UCF CV 的 Appointments 栏列 University of Basel, May 2002 – October 2002, Postdoctoral researcher in the group of Prof. Dr. Daniel Loss。 [原档 1](https://sciences.ucf.edu/physics/wp-content/uploads/sites/2/2020/04/Leuenberger-Michael_CV.pdf)
 - 博士后经历：UCF 中心原档分列 Basel 2002.05–10、Iowa 2002.11–2004.07、UC San Diego 2004.08–2005.07 三段博士后。 [现任院系原档](https://nanoscience.ucf.edu/person/michael-n-leuenberger/)
 
-- 核查边界：查 Basel 博士论文卷及 Basel、Iowa、UCSD 三段独立任用指导；Loss 校友条目未分阶段。
+- 复核原档：本人 Basel 个人页写博士阶段（1998.3–2002.4）为 Loss 组 research and teaching assistant，本人 CV 写 2002.5–10 为 Basel 博士后 in the group of Prof. Dr. Daniel Loss；据此将博士与博后两条候选标签均升为课题组负责人。Iowa（Flatté）与 UCSD（Sham）两段博后另见同一 CV，本批不含。 [原档 1](https://quantumtheory.physik.unibas.ch/people/leuenberger/) · [原档 2](https://sciences.ucf.edu/physics/wp-content/uploads/sites/2/2020/04/Leuenberger-Michael_CV.pdf)
+- 核查边界：本人 Basel 履历分列 Daniel Loss 组的博士阶段和博士后任职；三段正式博士后指导称谓及 Basel 博士论文导师待学位或任用原档。 Basel 2002 年学位论文题名页或致谢核 Referent／导师称谓；Iowa 与 UCSD 博后条另核。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）

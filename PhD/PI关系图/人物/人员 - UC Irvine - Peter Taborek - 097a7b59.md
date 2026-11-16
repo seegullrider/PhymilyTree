@@ -26,6 +26,7 @@
 - 核查边界：Caltech 正式博士导师已核；Bell Labs 最初职位的正式名称及是否另有培训经历待原任职档。
 
 
+- 博士后研究者：[[人员 - Emory - Justin Burton - e002bcf0|Justin Burton]]。Burton 本人履历第 1 页将 2006–2008 年 UC Irvine 物理系博士后任用与 2006 年 UC Irvine 博士学位分列，两段均具名 Peter Taborek。 [原档 1](https://www.jcburtonlab.com/uploads/4/8/5/9/48592089/justin_burton_cv_short.pdf)
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
 

@@ -26,6 +26,7 @@
 - 博士导师：[[人员 - Harvard - David R. Nelson - 4c312119|David R. Nelson]]。[来源](https://en.wikipedia.org/wiki/Randall_Kamien) [Harvard 物理系博士论文名录](https://www.physics.harvard.edu/academics/phds1971-2000)在 1992 年列 Randall David Kamien 的 Directed Line Liquids，题后括号标注 Nelson（论文导师）。关系类型可信度：高。
 - 核查边界：Harvard 博士名录确认 Nelson 为论文导师；IAS 与 Penn 博士后师长待核。
 
+- 博士后研究者：[[人员 - Emory - Daniel Sussman - c16dca9f|Daniel Sussman]]。Sussman 本人 2024 年履历第 1 页列 University of Pennsylvania 物理系 Postdoctoral Fellow（2012 年 9 月至 2016 年 8 月），Mentors 栏同时列 Randall Kamien、Andrea Liu。 [原档 1](https://www.dmsussman.org/assets/Sussman_internalExternal_CV.pdf)
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
 

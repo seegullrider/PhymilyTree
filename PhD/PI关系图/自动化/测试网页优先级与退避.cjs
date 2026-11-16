@@ -62,7 +62,7 @@ let db;try{
   db.prepare("INSERT INTO jobs(id,record_id,kind,query,updated) VALUES(?,?,'training','q',?)").run(id+':training',id,now);
  }
  const school='https://school.example/physics/i', blocked='https://blocked.example/new-i';
- const sources=['https://archive.example/missing','https://picked.example/b?access_token=temporary','https://please.untaint.us/test',school,school,blocked,'https://school.example/other'];
+ const sources=['https://archive.example/missing','https://picked.example/b','https://please.untaint.us/test',school,school,blocked,'https://school.example/other'];
  db.prepare("INSERT INTO pages(id,record_id,job_id,url,state,error,retrieved) VALUES('seed-bad','j','j:training','https://archive.example/missing','retry','(404) Not Found',?)").run(past);
  for(const id of ['a','h','i','j']){
   const aspects={affiliation:{status:id==='j'?'unresolved':'confirmed',sources}};

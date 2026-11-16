@@ -21,11 +21,12 @@
 ## 师承
 
 - 博士导师：[[人员 - UIUC - Ken Schweizer - 35767883|Ken Schweizer]]。[来源](https://www.ideals.illinois.edu/items/42069)
-- 博士后阶段研究师长：[[人员 - UPenn - Andrea J. Liu - 32a7d0bd|Andrea J. Liu]]。[来源](https://www.osti.gov/servlets/purl/1915131)
+- 博士后导师：[[人员 - UPenn - Andrea J. Liu - 32a7d0bd|Andrea J. Liu]]。[来源](https://www.osti.gov/servlets/purl/1915131) Sussman 本人 2024 年履历第 1 页列 University of Pennsylvania 物理系 Postdoctoral Fellow（2012 年 9 月至 2016 年 8 月），Mentors 栏同时列 Randall Kamien、Andrea Liu。 [原档 1](https://www.dmsussman.org/assets/Sussman_internalExternal_CV.pdf)
 - 博士后导师：[[师承人物 - Jennifer M. Schwarz|Jennifer M. Schwarz]]。[来源](https://artsandsciences.syracuse.edu/media/documents/J_M_Schwarz_CV_August_2021.pdf) 证据：Schwarz 本人履历将其列为所指导博士后，明确列三人联合指导；关系类型可信度：高。
 - 博士后导师：[[人员 - UC Santa Barbara - M. Cristina Marchetti - f258daea|M. Cristina Marchetti]]。[来源](https://artsandsciences.syracuse.edu/media/documents/J_M_Schwarz_CV_August_2021.pdf) 证据：Schwarz 本人履历将其列为所指导博士后，明确列三人联合指导；关系类型可信度：高。
 - 博士后导师：[[师承人物 - M. Lisa Manning|M. Lisa Manning]]。[来源](https://artsandsciences.syracuse.edu/media/documents/J_M_Schwarz_CV_August_2021.pdf) 证据：Schwarz 本人履历将其列为所指导博士后，明确列三人联合指导；关系类型可信度：高。
-- 核查边界：Illinois 学位档案将 Kenneth S. Schweizer 列为 2012 博士 Director of Research；Liu 的 DOE 结题报告将 Sussman 列于其 postdocs，故暂标博士后阶段研究师长。Schwarz 本人履历明确 Syracuse 博士后由其与 Marchetti、Manning 联合指导：https://danielsussman.wordpress.com/ 。需与 Johns Hopkins 2014 数学博士、Boston University 的同名 Daniel L. Sussman 区分。
+- 博士后导师：[[人员 - UPenn - Randall D. Kamien - 8caba8a8|Randall D. Kamien]]。Sussman 本人 2024 年履历第 1 页列 University of Pennsylvania 物理系 Postdoctoral Fellow（2012 年 9 月至 2016 年 8 月），Mentors 栏同时列 Randall Kamien、Andrea Liu。 [原档 1](https://www.dmsussman.org/assets/Sussman_internalExternal_CV.pdf)
+- 核查边界：Illinois 学位档案将 Kenneth S. Schweizer 列为 2012 博士 Director of Research；Liu 的 DOE 结题报告列其博士后经历；Sussman 本人履历列 Penn 阶段由 Kamien 与 Liu 指导。Schwarz 本人履历明确 Syracuse 博士后由其与 Marchetti、Manning 联合指导：https://danielsussman.wordpress.com/ 。需与 Johns Hopkins 2014 数学博士、Boston University 的同名 Daniel L. Sussman 区分。 Tom Lubensky 的原始资料仅见研究合作，正式博士后导师关系待证。
 - 同名排除：[Boston University 统计学家 Daniel Lewis Sussman](https://www.bu.edu/hic/profile/daniel-lewis-sussman/)为 Johns Hopkins 2014 应用数学与统计博士，研究网络数据；[Emory 本人院系页](https://physics.emory.edu/people/bios/sussman-daniel.html)列 Illinois 2012 物理博士和软物质研究，两者不同人，不能复制其师承。
 
 

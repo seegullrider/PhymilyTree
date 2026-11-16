@@ -41,6 +41,7 @@
 
 - [[师承人物 - Conyers Herring|Conyers Herring]]：第三方传记列为 Bell Labs 博士后时期指导者，正式身份待本人或机构资料核实。[线索](https://en.wikipedia.org/wiki/Marvin_L._Cohen) · [[师承候选线索索引|候选索引]]。
 
+- 博士后研究者：[[人员 - UC Davis - Warren E. Pickett（荣休） - f6ef9106|Warren E. Pickett]]。Pickett 本人 CV Education 栏 1976-1977 IBM Postdoctoral Fellow UC Berkeley，末栏表逐字 Postdoctoral Advisor | Marvin L. Cohen | UC Berkeley；AFT 记 Berkeley 1977、博后码，与 CV 相符。以 Advisor 称谓具名。 [原档 1](https://ciqus.usc.gal/sites/default/files/eventos/conferencia_warren_e._picket.pdf)
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
 

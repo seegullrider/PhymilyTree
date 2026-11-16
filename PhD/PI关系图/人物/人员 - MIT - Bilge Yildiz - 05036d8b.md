@@ -22,9 +22,10 @@
 
 - 博士后研究关联者：[[师承人物 - Mujid S. Kazimi|Mujid S. Kazimi]]。[MIT 2003–2004 院系年报](https://web.mit.edu/annualreports/pres04/08.09.pdf) 证据：MIT 2003–2004 核工程系年报称 Kazimi 教授与博士后研究员 Bilge Yildiz 共同研究核能制氢，同一报告其他位置写其全名 Mujid Kazimi；原文未称其为正式导师；关系类型可信度：高。
 
-- 博士导师候选：[[师承人物 - Michael W. Golay|Michael W. Golay]]。[维基百科人物条目](https://en.wikipedia.org/wiki/Bilge_Y%C4%B1ld%C4%B1z)将其列为博士导师；[MIT 2003 博士论文目录](https://dspace.mit.edu/entities/publication/d3e81b44-36ca-4b2c-bff2-98337cc08535)的检索索引也显示其为 Advisor，但本轮原目录返回 405，未能直接读取。仅为候选，可信度待核。
+- 博士导师：[[师承人物 - Michael W. Golay|Michael W. Golay]]。[维基百科人物条目](https://en.wikipedia.org/wiki/Bilge_Y%C4%B1ld%C4%B1z)将其列为博士导师；[MIT 2003 博士论文目录](https://dspace.mit.edu/entities/publication/d3e81b44-36ca-4b2c-bff2-98337cc08535)的检索索引也显示其为 Advisor，但本轮原目录返回 405，未能直接读取。仅为候选，可信度待核。 （本条此前写“MIT 论文目录本轮 405，暂未确证”，现已核实。）MIT DSpace 学位论文记录（Ph.D. MIT Department of Nuclear Engineering, 2003，题名 Development of a hybrid intelligent system for on-line real-time monitoring of nuclear power plant operations，作者 Yildiz, Bilge）的 Advisor(s) 字段为 Michael W. Golay；题名、年份与 Academic Tree 一致。 [原档 1](https://dspace.mit.edu/entities/publication/d3e81b44-36ca-4b2c-bff2-98337cc08535)
 - 博士后研究者：[[人员 - UC Irvine - William Bowman - 1001aee2|William Bowman]]。[来源](https://mtlsites.mit.edu/marc/2018/proceedings.pdf) 证据：MIT MARC 2018 本人条目明确写 Postdoctoral associate advised by Bilge Yildiz。；关系类型可信度：高。 MIT MARC 2018 会刊第 44 页可读原文的作者条目具名 William Bowman 为受 Bilge Yildiz 指导的 postdoctoral associate。该作者条目与 UCI 工学院的 MIT 电化学界面实验室博后及氧化物、电子显微研究吻合。完整会刊此前因尺寸限制无法直取，保留访问限制及原页索引副本。 [原档 1](https://mtlsites.mit.edu/marc/2018/proceedings.pdf) · [原档 2](https://engineering.uci.edu/directory/bowman_william.php)
-- 核查边界：[MIT 材料系](https://dmse.mit.edu/people/faculty/bilge-yildiz/)确认 2003 年 MIT 博士及其后 MIT 电化学博士后经历，未命名博士后导师；博士候选需直接读取 MIT 论文目录或本人论文。
+- 复核原档：MIT DSpace 学位论文记录的 Advisor(s) 字段明列 Michael W. Golay（2003 年 MIT 核工程系博士论文）。 [原档 1](https://dspace.mit.edu/entities/publication/d3e81b44-36ca-4b2c-bff2-98337cc08535)
+- 核查边界：[MIT 材料系](https://dmse.mit.edu/people/faculty/bilge-yildiz/)确认 2003 年 MIT 博士及其后 MIT 电化学博士后经历，未命名博士后导师；博士候选需直接读取 MIT 论文目录或本人论文。 博士导师已由 MIT DSpace 记录具名；博后阶段 Kazimi 仍为共同研究，导师待核。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）

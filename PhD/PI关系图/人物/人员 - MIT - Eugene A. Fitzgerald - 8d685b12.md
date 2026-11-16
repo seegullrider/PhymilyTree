@@ -25,7 +25,7 @@
 - 博士生：[[人员 - UIUC - Minjoo Lawrence Lee - fbd85013|Minjoo Lawrence Lee]]。[来源](https://dspace.mit.edu/entities/publication/5b6a5b90-5e49-4b4f-b820-733cb81da72c) [原始资料](https://dspace.mit.edu/entities/publication/5b6a5b90-5e49-4b4f-b820-733cb81da72c) 证据：MIT 学位馆藏列论文作者 Minjoo Lawrence Lee，Advisor(s) 明确 Eugene A. Fitzgerald。关系类型可信度：高。
 - 核查边界：本人履历列 Cornell 博士及随后 Bell Labs 研究职位；学校网页年份存在 1988／1989 差异，博士导师及是否有博士后导师均待核。 同期 Cornell 合作线索指向 Dieter Ast，已列低可信博士候选。 [1988 年论文原件第 2 页](https://woodall.ece.ucdavis.edu/wp-content/uploads/sites/84/2016/02/fitzgerald1988a.pdf#page=2) · [1989 年论文原件](https://research.engineering.ucdavis.edu/woodall/wp-content/uploads/sites/84/2016/02/fitzgerald1989.pdf) · [Cornell 院系](https://www.duffield.cornell.edu/people/dieter-ast/) · [MIT 履历](https://mrl.mit.edu/node/346)
 
-- [[人员 - Stanford - Kunal Mukherjee - a9d1ffad|Kunal Mukherjee]]：博士阶段候选，MIT 同期博士论文致谢将 Mukherjee 列为 Fitzgerald 组成员，且两人署名相关论文；是否为其正式博士导师待核。 [[师承候选线索索引|查看来源]]。
+- 博士生：[[人员 - Stanford - Kunal Mukherjee - a9d1ffad|Kunal Mukherjee]]。MIT 材料科学与工程系博士，2014 年。 [[师承候选线索索引|查看来源]]。 MIT 学位论文馆藏列作者 Kunal Mukherjee、2014 年材料科学与工程系博士论文 Lattice-mismatched epitaxy of AlInP and characterization of its microstructure and luminescence，Advisor(s) 字段具名 Eugene A. Fitzgerald。 [原档 1](https://dspace.mit.edu/entities/publication/f5a5aaac-ae1e-44b1-9025-733b542901c4)
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）

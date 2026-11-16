@@ -23,10 +23,11 @@
 - 博士后受指导者：[[人员 - Rice - Kushal Bagchi - dbda448f|Kushal Bagchi]]。Rice 院系本人档明确称其在 Chicago Pritzker School of Molecular Engineering 的博士后由 Paul Nealey 指导，并与 Juan de Pablo 组合作。 [Rice 教师原档](https://profiles.rice.edu/faculty/kushal-bagchi)
 - 博士后研究者：[[人员 - Wisconsin–Madison - Whitney Loo - a0f9c464|Whitney Loo]]。[芝加哥大学博后资料](https://pme.uchicago.edu/directory/alumni/whitney-loo)称其博士后在 Nealey 指导下工作；关系类型可信度：高。 [UChicago PME 同期档](https://pme.uchicago.edu/directory/alumni/whitney-loo)明示 Nealey 监督；[UW 教师档](https://engineering.wisc.edu/directory/profile/whitney-loo/)将此岗位与 LBNL 联合研究分列。
 - 博士生：[[人员 - UPenn - Robert Riggleman - db919f78|Robert Riggleman]]。[来源](https://pubs.rsc.org/en/content/articlehtml/2015/cc/c5cc90119g) [Notre Dame 讲座简介](https://energy.nd.edu/about/events/2018/10/02/kinetic-and-molecular-design-of-polymer-nanocomposites-by-robert-riggleman/)明确 Wisconsin 博士 co-advised by Juan de Pablo 与 Paul Nealey。关系类型可信度：高。
-- 博士导师：[[师承人物 - Robert E. Cohen|Robert E. Cohen]]。[来源](https://www.ciac.cas.cn/xwdt/xshy/202011/W020201120546668494729.pdf) 旧讲座 PDF 本轮缓存缺失未复读，保留原正式关系待再次核实。
+- 博士导师：[[师承人物 - Robert E. Cohen|Robert E. Cohen]]。[来源](https://www.ciac.cas.cn/xwdt/xshy/202011/W020201120546668494729.pdf) 旧讲座 PDF 本轮缓存缺失未复读，保留原正式关系待再次核实。 （本条此前写“旧讲座 PDF 缓存缺失未复读，保留原正式关系待再次核实”，现已核实。）MIT DSpace 学位论文记录（Thesis Ph.D., MIT Dept. of Chemical Engineering, 1994，题名 Diffusion of diluents in glassy polymers，作者 Nealey, Paul Franklin）的 Advisor(s) 字段为 Robert E. Cohen；题名、年份与 Academic Tree 一致。 [原档 1](https://dspace.mit.edu/handle/1721.1/28069)
 - 博士后课题组：[[师承人物 - George M. Whitesides|George M. Whitesides]]。[来源](https://www.gmwgroup.harvard.edu/resources) [Whitesides 组校友名录](https://www.gmwgroup.harvard.edu/resources)明确列 1994–1995 postdoctoral fellow；正式 advisor 职衔待核；关系类型可信度：高。
 - 复核原档：UChicago Pritzker 分子工程学院原档核 Brady W. Dougan 讲席及高分子定向自组装研究，分列 MIT 化工博士、Harvard 博士后及早期工业任用。旧导师证据保留，继续查 MIT 论文和 Harvard 具名任用。 [原档 1](https://pme.uchicago.edu/directory/paul-nealey)
-- 核查边界：Whitesides 标博士后课题组。
+- 复核原档：MIT DSpace 学位论文记录的 Advisor(s) 字段只列 Robert E. Cohen（1994 年 MIT 化工系博士论文 Diffusion of diluents in glassy polymers），未列 Ali S. Argon。 [原档 1](https://dspace.mit.edu/handle/1721.1/28069)
+- 核查边界：Whitesides 标博士后课题组。 博士导师 Cohen 已由 MIT DSpace 记录核实；Argon 未列入 Advisor(s)，不据 AFT 记入。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）

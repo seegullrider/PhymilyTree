@@ -26,9 +26,10 @@
 - 原卷及校方档案访问：找到[博士论文公开链接](https://bpb-us-e1.wpmucdn.com/you.stonybrook.edu/dist/0/6755/files/2024/07/Thesis-Xiaoming-Mao.pdf)，本轮网页工具返回不可访问；[Michigan 2023 晋升档](https://regents.umich.edu/files/meetings/05-23/assets/reports/Mao,%20Xiaoming.pdf)返回 403。两者均未读到正文或导师字段，失败已写入队列，待按退避或其他原始来源追查。
 - 博士后课题组成员：[[人员 - Georgia Tech - D. Zeb Rocklin - 2813baec|D. Zeb Rocklin]]。Michigan Xiaoming Mao 实验室的校友名单明确列 D. Zeb Rocklin 为 2013–2016 博士后。可信度高（课题组）。 [Michigan Mao 实验室](https://sites.lsa.umich.edu/xiaoming-mao/members/) · [Georgia Tech 物理系](https://physics.gatech.edu/user/2100)
 
-- 博士阶段课题组负责人：[[人员 - Stony Brook - Paul Goldbart - 45436224|Paul Goldbart]]。[来源](https://www.osti.gov/servlets/purl/1234220)
+- 博士导师：[[人员 - Stony Brook - Paul Goldbart - 45436224|Paul Goldbart]]。[来源](https://www.osti.gov/servlets/purl/1234220) Mao 本人 2008 年 Illinois 博士论文致谢第一段逐字 This thesis would not have been possible without my advisor Professor Paul M. Goldbart；扉页终考委员会列 Phillips (Chair)、Goldbart、Wong、Leigh，致谢称 Phillips、Wong、Leigh 为 thesis committee。原有的“博士阶段课题组负责人”来自 Illinois 项目报告称 Mao 为 Goldbart 的研究生，本人致谢以 advisor 称谓具名，升为博士导师。 [原档 1](https://bpb-us-e1.wpmucdn.com/you.stonybrook.edu/dist/0/6755/files/2024/07/Thesis-Xiaoming-Mao.pdf)
 - 博士后导师候选：[[人员 - UPenn - Tom C. Lubensky - 8135c6c5|Tom C. Lubensky]]。[来源](https://arxiv.org/abs/1008.2037)
-- 核查边界：Illinois 项目报告直接称 Mao 为 Goldbart 的研究生，标课题组负责人；Penn 博士后期间与 T. C. Lubensky 同期共同研究，标候选。注意与 Michigan 的 David K. Lubensky 为不同人。 [本人主页](https://sites.lsa.umich.edu/xiaoming-mao/)列 Illinois 2008 博士及 Penn 2008–2012 博后；博士论文原 PDF 本轮缓存缺失，未重读。
+- 复核原档：Mao 本人 2008 年 Illinois 博士论文原卷致谢第一段写 my advisor Professor Paul M. Goldbart，终考委员会为 Phillips（Chair）、Goldbart、Wong、Leigh；本页原“博士阶段课题组负责人”据此升为博士导师，Phillips 只是委员会成员，不记师长。 [原档 1](https://bpb-us-e1.wpmucdn.com/you.stonybrook.edu/dist/0/6755/files/2024/07/Thesis-Xiaoming-Mao.pdf) · [原档 2](https://www.osti.gov/servlets/purl/1234220)
+- 核查边界：Illinois 项目报告直接称 Mao 为 Goldbart 的研究生，标课题组负责人；Penn 博士后期间与 T. C. Lubensky 同期共同研究，标候选。注意与 Michigan 的 David K. Lubensky 为不同人。 [本人主页](https://sites.lsa.umich.edu/xiaoming-mao/)列 Illinois 2008 博士及 Penn 2008–2012 博后；博士论文原 PDF 本轮缓存缺失，未重读。 博士论文署名页的 Director of Research 栏（Illinois 学位记录）可作独立复核。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）

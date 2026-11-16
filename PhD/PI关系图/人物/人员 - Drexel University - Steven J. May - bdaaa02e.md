@@ -12,12 +12,14 @@
 
 ## 师承
 
-- 博士导师候选：[[师承人物 - Bruce W. Wessels|Bruce W. Wessels]]。Northwestern 材料系 2015 校友报道记“Steven May (PhD ’07, Wessels)”并指明其 Drexel 任职，与本人履历吻合；报道未解释括号字段，暂作为具名候选，正式指导角色须查论文签署或本人履历。[Northwestern 材料系刊](https://www.mccormick.northwestern.edu/materials-science/documents/newsletters/fall-2015.pdf) · [Drexel 院系](https://drexel.edu/engineering/about/faculty-staff/M/may-steven/)
+- 博士导师：[[师承人物 - Bruce W. Wessels|Bruce W. Wessels]]。Northwestern 材料系 2015 校友报道记“Steven May (PhD ’07, Wessels)”并指明其 Drexel 任职，与本人履历吻合；报道未解释括号字段，正式导师称谓由下引本人 CV 确认。[Northwestern 材料系刊](https://www.mccormick.northwestern.edu/materials-science/documents/newsletters/fall-2015.pdf) · [Drexel 院系](https://drexel.edu/engineering/about/faculty-staff/M/may-steven/) Drexel 托管的本人 CV（2019 版）首页列 Ph.D.: Northwestern University, Materials Science and Engineering (2007)，末页“Graduate and Postdoctoral Advisors”栏具名 Bruce W. Wessels (Northwestern University)；第 14 页专利署名 B. W. Wessels and S. J. May（US 9024370）。 [原档 1](https://research.coe.drexel.edu/mse/films/wp-content/uploads/2019/11/SMay_CV.pdf)
 - 博士导师候选：[[人员 - Northwestern - Lincoln Lauhon - b713f38a|Lincoln Lauhon]]。2006 APS 会议原档显示 May 与 Lauhon 同署 Northwestern 半导体纳米线研究。May 的 CV 列同期为 Northwestern 博士；共同署名仅作追查线索。 [来源 1](https://meetings-archive.aps.org/mar/2006/u35/5/) · [学术经历核对](https://drexel.edu/~/media/Files/engineering/faculty-cv/may-steven.ashx)
 - 博士经历：本人校托 CV 明列 Northwestern 材料科学与工程博士，2007 年。 [学术经历核对](https://drexel.edu/~/media/Files/engineering/faculty-cv/may-steven.ashx)
 - 博士后经历：本人 CV 明列 2007–2009 Argonne National Laboratory Magnetic Thin Films group 博士后，现任院档核同段任用。 [学术经历核对](https://drexel.edu/~/media/Files/engineering/faculty-cv/may-steven.ashx) · [现任院系原档](https://drexel.edu/engineering/about/faculty-staff/M/may-steven/)
 
-- 核查边界：继续查 Northwestern 博士论文签署及 Argonne Magnetic Thin Films group 的 2007–2009 具名博后指导
+- 复核原档：本人 CV（Drexel 托管，2019 版）首页列 Northwestern 材料科学与工程博士 2007、Argonne Magnetic Thin Films group 博士后 2007–2009，末页“Graduate and Postdoctoral Advisors”栏具名 Bruce W. Wessels (Northwestern University) 与 Anand Bhattacharya (Argonne National Laboratory)。 [原档 1](https://research.coe.drexel.edu/mse/films/wp-content/uploads/2019/11/SMay_CV.pdf)
+- 博士后导师：[[师承人物 - Anand Bhattacharya|Anand Bhattacharya]]。Drexel 托管的本人 CV 第 1 页列 Argonne National Laboratory Magnetic Thin Films group 博士后任期 2007–2009，第 17 页在 Graduate and Postdoctoral Advisors 栏具名 Anand Bhattacharya（Argonne National Laboratory），与该博士后任用单位对应。 [原档 1](https://research.coe.drexel.edu/mse/films/wp-content/uploads/2019/11/SMay_CV.pdf)
+- 核查边界：本人 CV 已具名确认博士导师 Wessels 和博士后导师 Bhattacharya；Lauhon 仍为合著候选，可继续核对 Northwestern 博士论文签署。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）

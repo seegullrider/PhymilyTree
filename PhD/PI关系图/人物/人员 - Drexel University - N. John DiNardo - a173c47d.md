@@ -15,7 +15,9 @@
 - 博士经历：Drexel 院系原档列 1982 年 University of Pennsylvania 物理博士。 [现任院系原档](https://drexel.edu/coas/faculty-research/faculty-directory/physics/Dinardo%20N%20John/)
 - 博士后经历：Drexel 院档列 IBM Research Yorktown Heights 博士后 fellowship，1984 年入职 Drexel。 [现任院系原档](https://drexel.edu/coas/faculty-research/faculty-directory/physics/Dinardo%20N%20John/)
 
-- 核查边界：追 Penn 1982 学位原卷、IBM Yorktown Heights 同期博后接待人及任期
+- 博士导师：[[师承人物 - E. Ward Plummer|E. Ward Plummer]]。Plummer 本人 LSU 页面 Students: Graduated 表（Name, Department, and Co-Advisor / Thesis Title / Present Position）列 N.J. DiNardo (1982)，论文题名 Electron Energy Loss Spectroscopy Study of Hydrogen Chemisorption on Metal Surfaces: Surface Sites and Scattering Selection Rules，现职 Professor of Physics Drexel University，该行未列共同导师；与页面核定的 Penn 1982 物理博士及 Drexel 物理教授身份一致。表中没有 Ph.D. 字样，学位类别按题名与年份推定。 [原档 1](https://www.phys.lsu.edu/plummer/prevstudents_graduates.htm)
+- 复核原档：Plummer 本人 LSU 页面的 Students: Graduated 表列 N.J. DiNardo (1982) 及学位论文式题名（Electron Energy Loss Spectroscopy Study of Hydrogen Chemisorption on Metal Surfaces: Surface Sites and Scattering Selection Rules），现职 Professor of Physics Drexel University，未列共同导师；年份与本页所记 Penn 1982 物理博士一致。该表没有 Ph.D. 字样，Penn 学位原卷署名页仍可核对。 [原档 1](https://www.phys.lsu.edu/plummer/prevstudents_graduates.htm) · [原档 2](https://drexel.edu/coas/faculty-research/faculty-directory/physics/Dinardo%20N%20John/)
+- 核查边界：追 Penn 1982 学位原卷、IBM Yorktown Heights 同期博后接待人及任期 Penn 1982 学位原卷署名页仍可核对；IBM Yorktown Heights 博后接待人及任期仍待核。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）

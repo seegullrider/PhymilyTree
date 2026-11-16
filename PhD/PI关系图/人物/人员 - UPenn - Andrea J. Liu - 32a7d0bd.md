@@ -21,7 +21,7 @@
 ## 师承
 
 - 博士后受指导者：[[人员 - Yale - Corey O’Hern - bd74faf6|Corey O’Hern]]。[UCLA 同期博士后名录](https://www.chem.ucla.edu/dept/Postdocs.html)的 Supervisor 栏列 A. Liu；[Liu 组主页](https://www.chem.ucla.edu/dept/Faculty/liu/)列 O’Hern 为组员，[O’Hern 本人简介](https://jamming.research.yale.edu/files/people.html)给出 Andrea Liu 全名。关系类型可信度：高。
-- 博士后阶段受指导者：[[人员 - Emory - Daniel Sussman - c16dca9f|Daniel Sussman]]。[来源](https://www.osti.gov/servlets/purl/1915131)
+- 博士后研究者：[[人员 - Emory - Daniel Sussman - c16dca9f|Daniel Sussman]]。[来源](https://www.osti.gov/servlets/purl/1915131) Sussman 本人 2024 年履历第 1 页列 University of Pennsylvania 物理系 Postdoctoral Fellow（2012 年 9 月至 2016 年 8 月），Mentors 栏同时列 Randall Kamien、Andrea Liu。 [原档 1](https://www.dmsussman.org/assets/Sussman_internalExternal_CV.pdf)
 - 博士后研究者：[[人员 - University of Chicago - Vincenzo Vitelli - 6e24ab10|Vincenzo Vitelli]]。[来源](https://home.uchicago.edu/~vitelli/media/CV.pdf) [本人 CV](https://home.uchicago.edu/~vitelli/media/CV.pdf)在 2006–2009 Penn 博后项明确列 Advisors Andrea Liu、Randall Kamien 和 Tom Lubensky；关系类型可信度：高。
 - 博士导师：[[人员 - University of Maryland, College Park - Michael E. Fisher（历史记录，已故） - d48ebd21|Michael E. Fisher]]。[来源](https://live-sas-physics.pantheon.sas.upenn.edu/sites/default/files/2023-07/LiuCV2023.pdf)
 - 博士后导师：[[师承人物 - Samuel A. Safran|Samuel A. Safran]]。[来源](https://live-sas-physics.pantheon.sas.upenn.edu/sites/default/files/2023-07/LiuCV2023.pdf)

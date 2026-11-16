@@ -12,11 +12,12 @@
 
 ## 师承
 
-- 博士导师候选：[[师承人物 - Lallit Anand|Lallit Anand]]。MIT 机械系 Anand 发表档列 1990–1993 与 Zavaliangos 合作多孔材料本构和局域化，Drexel 现任院档核 MIT 机械博士，论文导师签署待查。 [来源 1](https://meche.mit.edu/people/faculty/anand%40mit.edu) · [现任院系原档](https://drexel.edu/engineering/about/faculty-staff/Z/zavaliangos-antonios/)
+- 博士导师：[[师承人物 - Lallit Anand|Lallit Anand]]。MIT 机械系 Anand 发表档列 1990–1993 与 Zavaliangos 合作多孔材料本构和局域化，Drexel 现任院档核 MIT 机械博士，论文导师签署待查。 [来源 1](https://meche.mit.edu/people/faculty/anand%40mit.edu) · [现任院系原档](https://drexel.edu/engineering/about/faculty-staff/Z/zavaliangos-antonios/) MIT DSpace 学位论文记录（Ph.D. MIT Dept. of Mechanical Engineering, 1992，题名 Elasto-viscoplasticity of isotropic porous metals，作者 Zavaliangos, Antonios I）的 Advisor(s) 字段为 Lallit Anand；题名、年份与 Academic Tree 一致。 [原档 1](https://dspace.mit.edu/handle/1721.1/12862)
 - 博士经历：Drexel 工程院档列 MIT 机械工程博士，1992 年。 [现任院系原档](https://drexel.edu/engineering/about/faculty-staff/Z/zavaliangos-antonios/)
 - 博士后经历：Drexel 工程院档把 1992–1994 任用列为 Research Assistant Professor；是否另有博士后未核。 [现任院系原档](https://drexel.edu/engineering/about/faculty-staff/Z/zavaliangos-antonios/)
 
-- 核查边界：MIT 学位库按主机退避，待原卷核学位题名、登记时间和导师。Drexel 1992–1994 研究助理教授单列
+- 复核原档：MIT DSpace 学位论文记录的 Advisor(s) 字段明列 Lallit Anand（1992 年 MIT 机械系博士论文 Elasto-viscoplasticity of isotropic porous metals）。 [原档 1](https://dspace.mit.edu/handle/1721.1/12862)
+- 核查边界：MIT 学位库按主机退避，待原卷核学位题名、登记时间和导师。Drexel 1992–1994 研究助理教授单列 博士导师已由 MIT DSpace 记录具名；Drexel 1992–1994 研究助理教授单列，独立博士后待查。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）

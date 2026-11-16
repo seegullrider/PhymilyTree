@@ -11,3 +11,4 @@
 - 博士生：[[人员 - Princeton - Athanassios Z. Panagiotopoulos - f14696a9|Athanassios Z. Panagiotopoulos]]。[来源](https://pubs.acs.org/doi/10.1021/acs.jpcb.5c06656)
 - 博士生：[[人员 - MIT - Gregory Rutledge - 85d281c8|Gregory Rutledge]]。[1990 年博士论文](https://citeseerx.ist.psu.edu/document?doi=6199f1c1fd094a6b9b01446ba2c07380bc1a5cb1&repid=rep1&type=pdf)封面、摘要和致谢明确 Suter 的论文导师身份；关系类型可信度：高。
 [建立节点的来源](https://citeseerx.ist.psu.edu/document?doi=6199f1c1fd094a6b9b01446ba2c07380bc1a5cb1&repid=rep1&type=pdf)。
+- 博士生：[[人员 - Princeton - Pablo G. Debenedetti - abc5d1b8|Pablo G. Debenedetti]]。MIT DSpace 学位论文记录（Thesis Ph.D., MIT Dept. of Chemical Engineering, 1985，题名 Diffusion and mass transfer in supercritical fluids，作者 Debenedetti, Pablo G）的 Advisor(s) 字段为 “Robert C. Reid and Ulrich W. Suter”；题名、年份与 Academic Tree 一致。 [原档 1](https://dspace.mit.edu/handle/1721.1/26787) · [原档 2](https://dspace.mit.edu/handle/1721.1/26787?show=full)

@@ -20,8 +20,9 @@
 
 ## 师承
 
-- 博士候选关系：[[师承人物 - Karl F. Ludwig Jr|Karl F. Ludwig Jr.]]。[来源](https://studylib.net/doc/7524655/oana-malis---purdue-university) 证据：公开转载的本人履历列出博士期间研究的 CuAu 工作及与 K. F. Ludwig Jr. 的同主题论文，须用学位论文确认，合著本身不能证明指导关系。；关系类型可信度：低。
-- 核查边界：Purdue 官方目录确认 1999 年 Boston University 物理博士；转载履历称 1999–2001 Cornell 博士后，但原始履历与博士后导师仍需核实。论文作者仅为追查线索。
+- 博士导师：[[师承人物 - Karl F. Ludwig Jr|Karl F. Ludwig Jr.]]。[来源](https://studylib.net/doc/7524655/oana-malis---purdue-university) 证据：公开转载的本人履历列出博士期间研究的 CuAu 工作及与 K. F. Ludwig Jr. 的同主题论文，须用学位论文确认，合著本身不能证明指导关系。；关系类型可信度：低。 Ludwig 本人 Boston University CV 第 2 页逐字列 Former Ph.D. Students: Y. Xie (Suzhou Inst., China), G. Morales, O. Malis (Purdue), X. Wang (Scotiabank), ……，与 Current Ph.D. Students、Former Postdoctoral Researchers 分栏；O. Malis (Purdue) 与页面核定的 Purdue 物理教授 Oana Malis 一致，Ludwig 自 1988 年起在 BU 物理系，与 Purdue 官方目录所记 Boston University 1999 物理博士相容；AFT 记 Boston University 1999、论文题名 Phase transitions in equiatomic copper-gold.，相符。该栏没有 advisor 字样，未区分主要或共同指导；学位论文署名页本次未读。 [原档 1](https://www.bu.edu/physics/files/2021/05/Ludwig_CVpdf.pdf)
+- 复核原档：Ludwig 本人 BU CV 第 2 页的 Former Ph.D. Students 栏列 O. Malis (Purdue)，与本页核定的 Purdue 物理教授及 Boston University 1999 物理博士一致；该栏没有 advisor 字样，Boston University 学位论文（题名 Phase transitions in equiatomic copper-gold.）署名页仍可核对。 [原档 1](https://www.bu.edu/physics/files/2021/05/Ludwig_CVpdf.pdf)
+- 核查边界：Purdue 官方目录确认 1999 年 Boston University 物理博士；转载履历称 1999–2001 Cornell 博士后，但原始履历与博士后导师仍需核实。论文作者仅为追查线索。 Boston University 1999 年学位论文题名页（OpenBU、ProQuest）仍可核对主导师及是否共同指导；Cornell 博后阶段师长另核。
 
 
 <!-- PI-AUTO-SEARCH:START -->

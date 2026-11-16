@@ -22,7 +22,9 @@
 
 ## 师承
 
-- 核查边界：Rutgers 物理研究生名录列宾夕法尼亚大学 1986 年博士；博士导师及博士后经历待核。[来源](https://www.physics.rutgers.edu/grad/redbook/Red-www-faculty.html)
+- 博士导师：[[师承人物 - E. Ward Plummer|E. Ward Plummer]]。Plummer 本人 LSU 毕业学生表在 Name, Department, and Co-Advisor 栏列 R. A. Bartynski (1986) (with Gustafsson)，对应其表面光电子谱论文；Rutgers 院系史核实 Bartynski 的 Penn 学位后赴 Rutgers，以及当时同出 Penn 的 Torgny Gustafsson 身份。 [原档 1](https://www.phys.lsu.edu/plummer/prevstudents_graduates.htm) · [原档 2](https://www.physics.rutgers.edu/dept/history/robbins/chapt13.pdf)
+- 博士导师：[[师承人物 - Torgny Gustafsson|Torgny Gustafsson]]。Plummer 本人 LSU 毕业学生表在 Name, Department, and Co-Advisor 栏列 R. A. Bartynski (1986) (with Gustafsson)，对应其表面光电子谱论文；Rutgers 院系史核实 Bartynski 的 Penn 学位后赴 Rutgers，以及当时同出 Penn 的 Torgny Gustafsson 身份。 1985 年 APS 原刊另确认同一 Penn 表面科学团队中的 T. Gustafsson。 [原档 1](https://www.phys.lsu.edu/plummer/prevstudents_graduates.htm) · [原档 2](https://www.physics.rutgers.edu/dept/history/robbins/chapt13.pdf) · [原档 3](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.32.1921)
+- 核查边界：Rutgers 物理研究生名录列宾夕法尼亚大学 1986 年博士；博士导师与共同导师见 LSU 具名资料。博士后经历待核。[来源](https://www.physics.rutgers.edu/grad/redbook/Red-www-faculty.html)
 
 
 <!-- PI-AUTO-SEARCH:START -->

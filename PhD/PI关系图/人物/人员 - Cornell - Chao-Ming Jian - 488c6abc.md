@@ -22,12 +22,14 @@
 
 ## 师承
 
-- 核查边界：博士阶段与 Xiao-Liang Qi 共同发表多篇论文；Physics Tree 将 Qi 列为师长，作为候选待原始论文或本人来源确认；KITP／Station Q 博士后导师待核。 Cornell LASSP 履历核 2016 Stanford 物理博士、2015 KITP Graduate Fellow，另列 KITP Moore Fellow 2016–2017 及 2018–2019 和 Microsoft Station Q 博后 2017–2018、2019–2020。KITP 主任当期通讯核入站与后续去向。 清华核中文姓名简超明。2017 作者原稿同列 KITP 和 Station Q 两个署名，区分署名和任用时段。 [Cornell LASSP 履历](https://www.lassp.cornell.edu/people/chao-ming-jian) · [KITP 2016 原档](https://www.kitp.ucsb.edu/news/directors-letter-fall-2016) · [KITP 2019 原档](https://www.kitp.ucsb.edu/news/directors-letter-fall-2019) · [清华校友档](https://www.tsinghua.edu.cn/info/1175/109734.htm) · [2017 作者原稿](https://arxiv.org/pdf/1710.04668)
+- 博士导师：[[人员 - Stanford - Xiao-Liang Qi - c441aeb5|Xiao-Liang Qi]]。Stanford 博士答辩公告具名。 Stanford 物理系 2016 年 5 月 13 日博士论文答辩公告在 Research Advisor 栏具名 Xiao-Liang Qi。公告列作者 Chaoming Jian 与论文 Topological phenomena in condensed matter physics，Cornell LASSP 本人档吻合。 [原档 1](https://physics.stanford.edu/events/physics-phd-dissertation-defense-chaoming-jian)
+- 复核原档：Stanford 物理系 2016 年博士论文答辩公告写 Research Advisor: Xiao-Liang Qi，据此将“博士候选”升为博士导师；KITP 与 Station Q 博后导师仍待核。 [原档 1](https://physics.stanford.edu/events/physics-phd-dissertation-defense-chaoming-jian) · [原档 2](https://www.lassp.cornell.edu/people/chao-ming-jian)
+- 核查边界：Stanford 博士答辩公告已具名博士导师。KITP／Station Q 博士后导师待核。 Cornell LASSP 履历核 2016 Stanford 物理博士、2015 KITP Graduate Fellow，另列 KITP Moore Fellow 2016–2017 及 2018–2019 和 Microsoft Station Q 博后 2017–2018、2019–2020。KITP 主任当期通讯核入站与后续去向。 清华核中文姓名简超明。2017 作者原稿同列 KITP 和 Station Q 两个署名，区分署名和任用时段。 [Cornell LASSP 履历](https://www.lassp.cornell.edu/people/chao-ming-jian) · [KITP 2016 原档](https://www.kitp.ucsb.edu/news/directors-letter-fall-2016) · [KITP 2019 原档](https://www.kitp.ucsb.edu/news/directors-letter-fall-2019) · [清华校友档](https://www.tsinghua.edu.cn/info/1175/109734.htm) · [2017 作者原稿](https://arxiv.org/pdf/1710.04668) Stanford 学位论文署名页或致谢可作独立复核；KITP 与 Station Q 博后导师另核。
 - 任期待核线索：ORCID 搜索索引似将 KITP 与 Station Q 列为 2016-10 至 2020-06 的联合任用，与 Cornell 页分段表述需要对照；直接访问仅返回 JavaScript 提示，未能读取本人 ORCID 正文，不据搜索摘要更改任期。[待核 ORCID](https://orcid.org/0000-0003-4876-8417)
 
 ## 师承候选线索
 
-- 博士候选：[[人员 - Stanford - Xiao-Liang Qi - c441aeb5|Xiao-Liang Qi]]。既有 Physics Tree 线索列其为 Stanford 师长，原页面本轮未能重读，Cornell 列出了两人博士期间的共同论文；正式导师需原始档案确认。 [Physics Tree](https://academictree-staging.thetransmitter.org/physics/peopleinfo.php?pid=740261) · [Cornell 论文与履历](https://voltron.as.cornell.edu/chao-ming-jian)
+- 博士阶段早期线索：Physics Tree 与 Cornell 的论文记录提供初期查找线索，后由 Stanford 答辩公告核实指导。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）

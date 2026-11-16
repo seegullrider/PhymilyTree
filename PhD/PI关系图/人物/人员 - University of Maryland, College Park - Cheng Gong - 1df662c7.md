@@ -22,7 +22,8 @@
 
 - 博士导师：[[师承人物 - Yves Chabal|Yves Chabal]]。[Maryland ECE 2019 年教师履历](https://ece.umd.edu/sites/ece.umd.edu/files/AdvisoryBoardChairUpdate_June2019.pdf)列 UT Dallas 2013 Ph.D. “Advisor: Yves Chabal”；关系类型可信度：高。
 - 博士后导师：[[师承人物 - Xiang Zhang（UC Berkeley 光子学）|Xiang Zhang]]。[Maryland ECE 2019 年教师履历](https://ece.umd.edu/sites/ece.umd.edu/files/AdvisoryBoardChairUpdate_June2019.pdf)在 Berkeley 博士后工作条目列“Faculty Advisor: Xiang Zhang”；[Zhang 组校友表](https://xlab.hku.hk/alumni.html)另列其博士后组属。关系类型可信度：高。
-- 核查边界：学位论文正式签字及其他可能指导者仍可继续核对；已列导师有学校原始履历支持。Kyeongjae Cho 是否另有论文指导角色仅是检索线索，其本人组网页本轮不可读，暂不新增关系。
+- 博士导师：[[师承人物 - Kyeongjae Cho|Kyeongjae Cho]]。UT Dallas 研究生院 2013–2014 博士授位名录 Fall 2013 行列 Cheng Gong、材料科学与工程博士、二维材料合成与电接触论文，导师栏同时列 Yves J. Chabal 与 Kyeongjae Cho。 [原档 1](https://graduate.utdallas.edu/fsa/doctoral-degrees-awarded/2013-2014-doctoral-degrees-awarded/)
+- 核查边界：UT Dallas 博士授位名录确认 Yves J. Chabal 与 Kyeongjae Cho 为共同博士导师。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）

@@ -5,7 +5,7 @@
 
 ## 师承
 
-- 博士导师候选研究者：[[人员 - Wisconsin–Madison - Chirag Gupta - 7f64979c|Chirag Gupta]]。[UCSB 项目页](https://sims.csep.ucsb.edu/research/characterization-gallium-nitride-power-diodes-efficient-power-conversion)列 Gupta 为 mentor、Mishra 为该项目 advisor；博士论文检索索引提示其为委员会主席，原文未核读。
+- 博士生：[[人员 - Wisconsin–Madison - Chirag Gupta - 7f64979c|Chirag Gupta]]。[UCSB 项目页](https://sims.csep.ucsb.edu/research/characterization-gallium-nitride-power-diodes-efficient-power-conversion)列 Gupta 为 mentor、Mishra 为该项目 advisor；博士论文检索索引提示其为委员会主席，原文未核读。 UCSB 博士论文原档（Chirag Gupta，《In-situ Oxide, GaN interlayer based vertical trench MOSFET (OG-FET)》，2018 年 6 月）封面与批准页列 Umesh Mishra 为 Committee Chair，致谢称其为 my advisor（accepting me as a graduate student in his research group）；论文年份、学科与 Wisconsin 工程学院档的 2018 UCSB 博士、GaN 器件方向相符。 [原档 1](https://escholarship.org/content/qt9dw8r0t3/qt9dw8r0t3.pdf)
 
 - 博士后课题组成员：[[人员 - UC Santa Barbara - Elaheh Ahmadi - 8a149b22|Elaheh Ahmadi]]。[来源](https://engineering.ucsb.edu/news/elaheh-ahmadi-brings-mid-career-experience-ece-faculty) 证据：UCSB 称其博士后在 Mishra 和 Speck 的实验室工作；未直接给出正式导师头衔。；关系类型可信度：高。
 - 博士阶段课题组成员：[[人员 - UC Santa Barbara - Elaheh Ahmadi - 8a149b22|Elaheh Ahmadi]]。[来源](https://engineering.ucsb.edu/news/elaheh-ahmadi-brings-mid-career-experience-ece-faculty) 证据：UCSB 称其博士研究在 Umesh Mishra 的实验室完成；未直接给出正式导师头衔。；关系类型可信度：高。

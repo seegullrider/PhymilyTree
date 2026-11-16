@@ -20,12 +20,13 @@
 
 ## 师承
 
-- 博士导师候选：[[师承人物 - Marvin L. Cohen|Marvin L. Cohen]]。[第三方 PDF](https://vowotefanofug.weebly.com/uploads/1/3/4/0/134012563/pifalukunuzumal.pdf)转载疑似 Allen 第一人称主页文字，称 1969 Berkeley PhD supervised by Marvin L. Cohen；[学校简介](https://www.stonybrook.edu/physics/people/_profiles/allenp.html)核对其 Berkeley 博士和任职时间。因该 PDF 非本人或学校托管且来源真实性未独立确定，暂为候选，待查本人学校原始 CV 或博士论文。关系类型可信度：低。
+- 博士导师：[[师承人物 - Marvin L. Cohen|Marvin L. Cohen]]。[第三方 PDF](https://vowotefanofug.weebly.com/uploads/1/3/4/0/134012563/pifalukunuzumal.pdf)转载疑似 Allen 第一人称主页文字，称 1969 Berkeley PhD supervised by Marvin L. Cohen；[学校简介](https://www.stonybrook.edu/physics/people/_profiles/allenp.html)核对其 Berkeley 博士和任职时间。第三方 PDF 是早期追查线索，现已核读学校托管的本人履历。 Allen 在 Stony Brook IACS 的第一人称履历明确写 Berkeley 1969 博士 supervised by Marvin L. Cohen；物理与天文学系履历佐证 Berkeley 1964–1969 学位时间。 [原档 1](https://iacs.stonybrook.edu/people/_affiliates/Philip%20B.%20Allen) · [原档 2](https://www.stonybrook.edu/physics/people/_profiles/allenp.html)
 
 - 博士后阶段研究者：[[人员 - Columbia - Renata M. Wentzcovitch - 77b8f139|Renata M. Wentzcovitch]]。[本人履历](https://www.engineering.columbia.edu/sites/default/files/2025-04/wentzcovitch-renata_cv.pdf) 证据：Wentzcovitch 列 1989–1992 年 Brookhaven–Stony Brook 博士后与 Philip B. Allen 共事；关系类型可信度：高。
 - 博士生：[[人员 - Penn State - Jainendra K. Jain - f8f12fa1|Jainendra K. Jain]]。[来源](https://science.psu.edu/physics/people/jkj2)
-- 核查边界：学校页面记 1964—1969 年 Berkeley 博士和其后两年 Bell Labs 研究；第三方疑似本人旧主页转载提出 Cohen 候选，来源真实性和 Bell Labs 职位是否为博士后仍待核。
+- 核查边界：学校页面记 1964—1969 年 Berkeley 博士和其后两年 Bell Labs 研究；Stony Brook IACS 本人履历已明确博士导师；Bell Labs 职位是否为博士后仍待核。 Berkeley 1969 论文署名页可作最终复核；Bell Labs 两年是否为博士后阶段另核。
 
+- 博士生：[[人员 - UC Davis - Warren E. Pickett（荣休） - f6ef9106|Warren E. Pickett]]。Pickett 本人 CV（约 2013 年版，CIQUS 托管副本）Education 栏 1975 Ph.D. Physics Stony Brook University，末栏 Graduate and Postdoctoral Advisors 表逐字 Ph.D. Advisor | Philip B. Allen | Stony Brook University；AFT 记 Stony Brook 1975、论文题名 Electronic excitations in niobium and molybdenum.，与页面核定的 1975 年 Stony Brook 博士相符。以 Advisor 称谓具名。 [原档 1](https://ciqus.usc.gal/sites/default/files/eventos/conferencia_warren_e._picket.pdf)
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
 
@@ -36,7 +37,7 @@
   - [Faculty (alphabetical) | Department of Physics and Astronomy](https://www.llrc.stonybrook.edu/commcms/physics/people/faculty/facultyabc)：Crawled: last month; Philip Allen, Professor Emeritus/Research Professor. ... Office: Physics B-146, Phone: (631)-632-8179. philip.allen@stonybrook.edu. ... Office: Brookhaven National Laboratory, C-AD, MS-911B. ilan.ben-zvi@stonybrook.edu.（姓名字符串出现，仍须核对单位时间；关系未判定，可信度未评估）
 - 检索类型：博士及博士后；检索时间：2026-11-03T04:14:54.893Z
   - [Phil Allen](https://www.stonybrook.edu/physics/people/_profiles/allenp.html)：Crawled: last month; Philip Allen joined the faculty at Stony Brook in 1971, after spending two years doing research at Bell Laboratories. He obtained a PhD from U. of Calif. # Phil Allen（姓名字符串出现，仍须核对单位时间；关系未判定，可信度未评估）
-- 页面读取失败 [网页](https://www.llrc.stonybrook.edu/commcms/physics/people/faculty/facultyabc)：Internal Error ()
-citeturn7983view0 [wordlim: 200] Source: open({"ref_id":"https://www.llrc.stonybrook.edu/commcms/physics/people/faculty/facultyabc","lineno；待重试。
+- 已读取来源页 [网页](https://iacs.stonybrook.edu/people/_affiliates/Philip%20B.%20Allen)（2026-11-16T03:42:20.848Z）：Allen 在 Stony Brook IACS 的第一人称履历写其 1969 年 Berkeley 博士由 Marvin L. Cohen 指导，博士毕业后在 Bell Labs 研究两年，未给职位称谓。（身份及关系仍待核）。
+- 页面读取失败 [网页](https://www.llrc.stonybrook.edu/commcms/physics/people/faculty/facultyabc)：(404) Not Found；需另找可访问的原始来源。
 - 已读取来源页 [网页](https://www.stonybrook.edu/physics/people/_profiles/allenp.html)（2026-11-03T04:15:26.771Z）：Philip Allen joined the faculty at Stony Brook in 1971, after spending two years doing research at Bell Laboratories. He obtained a PhD from U. of Calif. Berkeley (1964-1969) and a bachelor’s degree f（身份及关系仍待核）。
 <!-- PI-AUTO-SEARCH:END -->

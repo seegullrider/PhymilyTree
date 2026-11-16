@@ -21,6 +21,7 @@
 ## 师承
 
 - 博士阶段课题组负责人：[[师承人物 - Rob Phillips|Rob Phillips]]。[来源](https://heritageproject.caltech.edu/interviews-updates/rob-phillips)
+- 博士导师：[[师承人物 - Lambert B. Freund|Lambert B. Freund]]。Brown 大学图书馆 1999 年博士论文档明确列工程博士 Harley Thomas Johnson、题名 Mechanical and Electronic Coupling in Semiconductor Structures、Advisor 为 Lambert B. Freund。Brown 工程学院人事档确认 Lambert Ben Freund 的身份。另有 Rob Phillips 对研究组的直接口述，按既有组关系记录。 [原档 1](https://library.brown.edu/theses/theses.php?advisorid=430&task=search) · [原档 2](https://engineering.brown.edu/news/2024-10-15/benfreund-memoriam)
 - 核查边界：Phillips 口述在其 Brown 研究生组中与 Johnson 共事，暂记博士阶段课题组；Brown 毕业后至 UIUC 任教之间的具体经历待核。
 
 <!-- PI-AUTO-SEARCH:START -->

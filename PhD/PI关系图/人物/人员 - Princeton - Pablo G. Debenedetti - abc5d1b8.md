@@ -16,7 +16,9 @@
 - 博士后经历：本人 CV 列 1985 年 MIT 博士，同年任 Princeton 化工助理教授；本人自传记 1985 年 2 月开始 Princeton 教职，未见单列博士后任用。 [现任院系原档](https://cbe.princeton.edu/people/pablo-debenedetti) · [来源 2](https://cbe.princeton.edu/sites/g/files/toruqf1386/files/people-cv/debenedetti_cv.pdf) · [来源 3](https://pubs.acs.org/doi/10.1021/acs.jpcb.3c06021)
 - 同人节点：[[师承人物 - Pablo G. Debenedetti|原师承扩展节点]]。 另见 [[师承人物 - Pablo Debenedetti|原简称节点]]。[Princeton 院系原档](https://cbe.princeton.edu/people/pablo-debenedetti)
 
-- 核查边界：MIT 学位库主机退避到期后补论文原卷。校属表明确标注荣休。
+- 博士导师：[[师承人物 - Ulrich W. Suter|Ulrich W. Suter]]。MIT DSpace 学位论文记录（Thesis Ph.D., MIT Dept. of Chemical Engineering, 1985，题名 Diffusion and mass transfer in supercritical fluids，作者 Debenedetti, Pablo G）的 Advisor(s) 字段为 “Robert C. Reid and Ulrich W. Suter”；题名、年份与 Academic Tree 一致。 [原档 1](https://dspace.mit.edu/handle/1721.1/26787) · [原档 2](https://dspace.mit.edu/handle/1721.1/26787?show=full)
+- 复核原档：MIT DSpace 学位论文记录的 Advisor(s) 字段明列 Robert C. Reid 与 Ulrich W. Suter（1985 年 MIT 化工系博士论文 Diffusion and mass transfer in supercritical fluids）。 [原档 1](https://dspace.mit.edu/handle/1721.1/26787) · [原档 2](https://dspace.mit.edu/handle/1721.1/26787?show=full)
+- 核查边界：MIT 学位库主机退避到期后补论文原卷。校属表明确标注荣休。 博士导师 Reid 与 Suter 均由 MIT DSpace 记录具名；独立博士后未发现。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）

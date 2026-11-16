@@ -34,6 +34,7 @@
 - 博士导师：[[师承人物 - John Quinn|John J. Quinn]]。[Brown 论文目录](https://library.brown.edu/theses/theses.php?task=search&author=Das+Sarma&advisor=&keyword=)列 Sankar Das Sarma 1979 物理博士论文及 Advisor John J. Quinn；[Maryland JQI](https://jqi.umd.edu/news/jqi-fellow-sankar-das-sarma-elected-national-academy-sciences)独立确认 Brown 博士期间在 Quinn 指导下学习。可信度高。
 - 核查边界：本人 [CV](https://umdphysics.umd.edu/images/CV/2024/SDS_CV_2025.pdf)列 1980–1982 Maryland 博士后，未列博士后导师。 [本人 CV](https://umdphysics.umd.edu/images/CV/2024/SDS_CV_2025.pdf)将 1982 年起助理教授与 1980–1982 博后分列。
 
+- 博士后阶段研究者：[[人员 - Penn State - Jainendra K. Jain - f8f12fa1|Jainendra K. Jain]]。本次读到 PNAS 人物介绍（Profile of Jainendra K. Jain，Europe PMC 全文）写 “Through a postdoctoral fellowship with theoretical condensed matter physicist Sankar Das Sarma at the University of Maryland”；检索摘要显示 Penn State 校方简介列 1986–1988 Maryland postdoctoral research associate。介绍用 with，未写 advisor 称谓，记博士后阶段研究师长，不升正式导师；与页面原有的 Kivelson 博士后阶段非正式研究师长一条并存，不改动。同一介绍对 Yale 阶段只写 1988 年冬天任 postdoctoral fellow，未具名 host。 [原档 1](https://pmc.ncbi.nlm.nih.gov/articles/PMC9335342/) · [原档 2](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9335342/fullTextXML)
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
 

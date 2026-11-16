@@ -23,9 +23,10 @@
 
 - 博士生：[[人员 - NUS - Barbaros Özyilmaz - 0e0562af|Barbaros Özyilmaz]]。[来源](https://graphene.nus.edu.sg/nus2dmicrosite/wp-content/uploads/sites/2/2020/10/CV-Barbaros_Oezyilmaz.pdf)
 - 博士导师候选：[[人员 - Stanford - Aharon Kapitulnik - 614fbb10|Aharon Kapitulnik]]。[来源](https://kapitulnik.stanford.edu/publications/select-publications-disordered-superconductors)
-- 博士导师候选：[[师承人物 - Theodore H. Geballe|Theodore H. Geballe]]。[来源](https://physics.nyu.edu/kentlab/cvkent.html)
+- 博士导师：[[师承人物 - Theodore H. Geballe|Theodore H. Geballe]]。[来源](https://physics.nyu.edu/kentlab/cvkent.html) （原标“博士导师候选”，依据仅为合著与 CV 页。）本次直接打开 NYU Kent 实验室本人简介，写 “beginning with his dissertation research at Stanford University under the guidance of Prof. Ted Geballe”；本人 CV 页另核 1988 Ph.D., Applied Physics, Stanford，Academic Tree 题名 Superconductivity in Disordered Lanthanum-Sulfide Films（1988）与领域相符。简介使用 under the guidance of，未写论文签署字段；Kapitulnik 仍仅为候选。 [原档 1](https://physics.nyu.edu/kentlab/biokent.html)
 - 博士后导师候选：[[师承人物 - Øystein Fischer|Øystein Fischer]]。[来源](https://triscone.unige.ch/publications/)
-- 核查边界：博士期间与 Kapitulnik、Geballe 合著，均为待证实导师候选；Geneva 博士后期间与 Fischer 多次合著，为博士后导师候选。IBM 博士后导师待查，合著并不证明指导关系。
+- 复核原档：NYU Kent 实验室本人简介写其博士论文研究在 Stanford under the guidance of Prof. Ted Geballe；本人 CV 页只写 1988 Ph.D., Applied Physics, Stanford，未列导师；Kapitulnik 仍为候选。 [原档 1](https://physics.nyu.edu/kentlab/biokent.html) · [原档 2](https://physics.nyu.edu/kentlab/cvkent.html)
+- 核查边界：博士期间与 Kapitulnik、Geballe 合著，均为待证实导师候选；Geneva 博士后期间与 Fischer 多次合著，为博士后导师候选。IBM 博士后导师待查，合著并不证明指导关系。 Geballe 已由本人简介具名；Kapitulnik 仍缺原始证据；Geneva 与 IBM 博后导师待核。
 - 博士后任命补证（2026-11-09）：Colorado State 系讲座简介分列 University of Geneva 和 IBM T. J. Watson Research Center 两段博士后研究；两站正式导师待核。 [Colorado State 系讲座](https://www.physics.colostate.edu/wp-content/uploads/sites/14/2022/03/kent-andrew-colloquium-03212022-1.pdf)
 
 - 博士后研究者：[[人员 - University of Central Florida - Enrique del Barco - a55a74d0|Enrique del Barco]]。本人校托 CV 第 12–14 行在 2002–2004 NYU 磁性课题组博士后条目具名 Postdoctoral Advisor Andrew Kent。 [学术经历核对](https://sciences.ucf.edu/physics/wp-content/uploads/sites/2/2016/04/Del-Barco-CV-April-16.pdf)

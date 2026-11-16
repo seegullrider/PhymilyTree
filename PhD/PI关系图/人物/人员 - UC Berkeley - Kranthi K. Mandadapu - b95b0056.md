@@ -28,6 +28,7 @@
 - [Berkeley 化学院简介](https://chemistry.berkeley.edu/people/kranthi-mandadapu)列 Sandia 博后 2011–2013、Berkeley 博后 2013–2016；该简介未列两段的指导者姓名。
 - 核查边界：Chandler 与 Oster 为第二段 Berkeley 博士后课题组；第一段 Sandia 博士后具体导师待核。
 
+- 博士后课题组成员：[[人员 - Princeton - Dimitrios Fraggedakis - 02570b59|Dimitrios Fraggedakis]]。UC Berkeley Miller Institute 的 2021 年名录把 Bryan McCloskey 与 Kranthi K. Mandadapu 同列为 Fraggedakis 的 Faculty Hosts；Mandadapu 本人组名录具名 Miller Post-doc，McCloskey 组档独立确认 2021–2024 博士后。Mandadapu 记博士后课题组负责人和 Miller Faculty Host。原候选的研究生阶段码据原档更正为博士后。 [原档 1](https://miller.berkeley.edu/images/newsletters/Spring2021_FINAL_digital.pdf) · [原档 2](https://mandadapu-group.github.io/people.html) · [原档 3](https://www.mccloskeylab.com/alumni/)
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
 

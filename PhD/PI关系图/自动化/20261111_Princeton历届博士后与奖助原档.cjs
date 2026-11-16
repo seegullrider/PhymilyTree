@@ -140,7 +140,7 @@ for(const [id,url,note] of [
  ['67c0e0e0','https://press.uni-mainz.de/files/2023/01/MAINZ_brochure2014.pdf','MAINZ 研究生项目名录编号 60 列 Antonia Statt 的项目与 Main supervisor Prof. Virnau。'],
  ['67c0e0e0','https://mrl.illinois.edu/directory/profile/statt','UIUC 材料及化工联聘，Princeton 2016 年 4 月至 2019 年 11 月博后，研究高分子及胶体结晶。'],
  ['e922865e','https://cse.umn.edu/me/meera-ramaswamy','Minnesota 机械工程助理教授，Cornell 2022 物理博士，Princeton PCCM 2022 年 6 月至 2025 年 6 月博后。研究主动悬浮液和软材料力学。'],
- ['e922865e','https://cohengroup.ccmr.cornell.edu/file/289/download?token=hOC8DEq0','Itai Cohen CV 在 Graduate Students Supervised 中列 2014–2022 Meera Ramaswamy。'],
+ ['e922865e','https://cohengroup.ccmr.cornell.edu/file/289/download','Itai Cohen CV 在 Graduate Students Supervised 中列 2014–2022 Meera Ramaswamy。'],
  ['e922865e','https://cbe.princeton.edu/sites/g/files/toruqf1386/files/documents/Datta%20CV.pdf','Datta 本人 CV 在 Mentoring 下列 Meera Ramaswamy 为 2022 年 6 月起的博士后。'],
  ['62a8fc8c','https://experts.colorado.edu/vitas/172688.pdf','Bay CV 第 1 页列 Alfred J. Crosby 为 2020 年 UMass Amherst 博士论文导师，Sujit S. Datta 为 2020 年 7 月至 2022 年 6 月 Princeton 博后 Research Advisor。另列 Colorado 现任与材料项目联聘。'],
  ['62a8fc8c','https://www.colorado.edu/chbe/r-konane-bay','Colorado 化学与生物工程助理教授，获 Princeton Presidential Postdoctoral Fellowship，学位来自 UMass Amherst。']

@@ -41,6 +41,7 @@
 
 - 博士课题组成员：[[人员 - Case Western Reserve University - Jesse Berezovsky - 47a774fe|Jesse Berezovsky]]。Wiley 出版社作者简介明确称 Berezovsky 的 UCSB 博士在 David Awschalom 组；Case 院系核 2007 年。正式导师签署仍待核。 [来源 1](https://www.wiley-vch.de/en/areas-interest/natural-sciences/physics-11ph/theoretical-physics-11phg/quantum-physics-field-theory-11phg1/spins-in-optically-active-quantum-dots-978-3-527-40806-1) · [现任院系原档](https://artsci.case.edu/faculty/jesse-berezovsky/)
 
+- 博士后课题组成员：[[人员 - University of Minnesota - Paul Crowell - 43a1e104|Paul Crowell]]。芝加哥大学 Awschalom 组学术档案将 Minnesota 物理系 Paul Crowell 列为 Postdoctoral Alumni。Minnesota 的本人简介列其 UCSB 1995–1997 博士后及 CNRS Grenoble 1993–1995 博士后。前者据组档记 David Awschalom 为博士后课题组负责人，正式指导称谓仍待核。 [原档 1](https://pme.uchicago.edu/awschalom-group/people/paul-crowell) · [原档 2](https://cse.umn.edu/smart/paul-crowell)
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
 

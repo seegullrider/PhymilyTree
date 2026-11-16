@@ -24,7 +24,8 @@
 
 - 博士阶段课题组负责人：[[人员 - Columbia - Xiaoyang Zhu - a129f914|Xiaoyang Zhu]]。[来源](https://news.columbia.edu/news/columbia-chemists-find-key-manufacturing-more-efficient-solar-cells) 证据：Columbia 学校新闻明确称 Prakriti P. Joshi 是 Xiaoyang Zhu 实验室博士生；未明确正式论文导师职衔；关系类型可信度：高。
 - 博士后课题组负责人：[[人员 - University of Chicago - Sarah King - 339426d9|Sarah King]]。[来源](https://knowledge.uchicago.edu/record/16337/files/Joseph_Spellberg_Dissertation.pdf) 证据：芝加哥大学 King 组博士论文致谢将 Prakriti Joshi 列为该组博士后；学校组会日程亦将其列在 King 组；关系类型可信度：高。 [King 组校友名册](https://kinglab.uchicago.edu/alumni.html)明确列 2019–2024 Kadanoff Rice 博后 fellowship 与 Stony Brook 去向。
-- 核查边界：两阶段正式导师称谓和是否有共同指导者仍待核；Columbia 旧组页列其为研究生，Zhu 组 2026 新闻确认其赴 Stony Brook 任教。
+- 博士后课题组负责人：[[师承人物 - Sebastian Maehrlein|Sebastian Maehrlein]]。Fritz Haber Institute 的 THz Structural Dynamics 组成员页将 Sebastian Maehrlein 列为负责人，并把目前任职于 Stony Brook 的 Prakriti P. Joshi 列为博士后校友。该页未列 FHI 任期，Chicago King 组的 2019–2024 年记录另有校友资料。 [原档 1](https://pc.fhi-berlin.mpg.de/tsd/members/)
+- 核查边界：两阶段正式导师称谓和是否有共同指导者仍待核；Columbia 旧组页列其为研究生，Zhu 组 2026 新闻确认其赴 Stony Brook 任教。 Fritz Haber Institute 博后任期及其与 Chicago 任期的先后仍待具名履历。
 
 
 <!-- PI-AUTO-SEARCH:START -->

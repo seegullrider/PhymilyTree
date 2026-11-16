@@ -12,12 +12,13 @@
 
 ## 师承
 
-- 博士导师候选：[[师承人物 - David E. Pritchard|David E. Pritchard]]。Georgia Tech 系页核 MIT 1995 博士，MIT 同期原论文列 Chapman 与 David E. Pritchard 同署 Department of Physics and Research Laboratory of Electronics；MIT RLE 原报告核同项目。正式论文导师仍待签署页，保留候选。 [现任院系档](https://physics.gatech.edu/user/michael-chapman) · [学术经历核对](https://chapmanlabs.gatech.edu/papers/scattering_ifm_prl95.pdf) · [来源 3](https://www.rle.mit.edu/media/pr140/pr140-ii.1.2.pdf)
+- 博士导师：[[师承人物 - David E. Pritchard|David E. Pritchard]]。Georgia Tech 系页核 MIT 1995 博士，MIT 同期原论文列 Chapman 与 David E. Pritchard 同署 Department of Physics and Research Laboratory of Electronics；MIT RLE 原报告核同项目。正式论文导师仍待签署页，保留候选。 [现任院系档](https://physics.gatech.edu/user/michael-chapman) · [学术经历核对](https://chapmanlabs.gatech.edu/papers/scattering_ifm_prl95.pdf) · [来源 3](https://www.rle.mit.edu/media/pr140/pr140-ii.1.2.pdf) MIT DSpace 学位论文记录（Thesis Ph.D., MIT Dept. of Physics, 1995，题名 Photon induced coherence loss in atom interferometry，作者 Michael S. Chapman）的 Advisor(s) 字段为 David E. Pritchard；题名、年份与 Academic Tree 一致。 [原档 1](https://dspace.mit.edu/handle/1721.1/38052)
 - 博士后课题组负责人：[[师承人物 - H. Jeff Kimble|H. Jeff Kimble]]。Caltech 馆藏 Au 学位原卷第 2.1 节明确称 Michael Chapman 在 Kimble 组任博士后时制作腔镜支架，并在同节提及其 Georgia Tech 研究组。1996 同期原刊列 Chapman 与 Kimble 同署 Caltech 并记 Chapman 获 Millikan Fellowship。课题组归属可信度高，正式导师称谓待任用或本人履历。 [Caltech 学位原卷](https://thesis.caltech.edu/10694/1/Au_YS_2006.pdf) · [1996 同期原刊](https://chapmanlabs.gatech.edu/papers/Chapman%201996%20Kimble%20single%20atom%20cqed%20optlet96.pdf)
 - 博士后经历：Caltech Kimble 组。1996 论文记 Millikan Fellowship 支持，任用起止待查。 [Caltech 学位原卷](https://thesis.caltech.edu/10694/1/Au_YS_2006.pdf) · [1996 同期原刊](https://chapmanlabs.gatech.edu/papers/Chapman%201996%20Kimble%20single%20atom%20cqed%20optlet96.pdf)
 - 同人节点：[[师承人物 - Michael S. Chapman|原师承扩展节点]]。
 
-- 核查边界：MIT 学位库仍按退避窗口，正式博士导师待签署页。Caltech Kimble 博后组属由学位原卷核实，个人正式指导及任用起止待查。
+- 复核原档：MIT DSpace 学位论文记录的 Advisor(s) 字段明列 David E. Pritchard（1995 年 MIT 物理系博士论文 Photon induced coherence loss in atom interferometry）。 [原档 1](https://dspace.mit.edu/handle/1721.1/38052)
+- 核查边界：MIT 学位库仍按退避窗口，正式博士导师待签署页。Caltech Kimble 博后组属由学位原卷核实，个人正式指导及任用起止待查。 博士导师已由 MIT DSpace 记录具名；Caltech Kimble 博后组属另条，正式导师称谓待任用或本人履历。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）

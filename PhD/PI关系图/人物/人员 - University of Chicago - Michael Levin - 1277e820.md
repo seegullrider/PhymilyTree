@@ -19,6 +19,10 @@
 - 研究方向：[[已核实方向 - 强关联与凝聚态理论|强关联与凝聚态理论]] · [[已核实方向 - 拓扑量子材料|拓扑量子材料]]。
 - 物理教授；研究拓扑量子态、多体纠缠及量子信息与凝聚态理论交叉。 [来源](https://physics.uchicago.edu/people/profile/michael-levin/)
 
+## Academic Tree 候选复核（2026-11-13）
+
+- Academic Tree 2026-04 身份排歧：PID 93677 对应芝加哥物理学家 Michael A. Levin，研究生边 CID 206751 与已核博士导师文小刚一致；PID 27584 是 Tufts 发育生物学家，不能归入此人。MIT 学位馆藏明确列 Michael Aaron Levin 与 Advisor Xiao-Gang Wen；本人 CV 列 UCSB 博后及 Matthew P. A. Fisher，但未明确导师职衔。 [MIT 学位馆藏](https://dspace.mit.edu/entities/publication/021d59b3-d6d0-434a-8258-b8f6197005f3) · [本人 CV](https://umdphysics.umd.edu/images/CV/levin_cv.pdf) · [Tufts 同名者](https://allencenter.tufts.edu/our-team/michael-levin/)
+
 ## 师承
 
 - 博士后课题组负责人：[[人员 - Harvard - Subir Sachdev - a4367696|Subir Sachdev]]。[本人课题组 Postdocs 名单](https://sachdev.physics.harvard.edu/people-all)列 Michael Levin 并链接本人院校；[Sachdev 本人履历](https://www.college-de-france.fr/media/antoine-georges/UPL5274208937940456111_cv.pdf#page=8)的 Postdocs 栏也列 Michael Levin、University of Chicago。两处均未写明阶段日期及正式导师称谓，须与个人经历继续核对。

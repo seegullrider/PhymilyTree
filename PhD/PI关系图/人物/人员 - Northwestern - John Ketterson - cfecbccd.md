@@ -23,6 +23,7 @@
 - 博士阶段研究师长：[[师承人物 - Andrew Werner Lawson|Andrew Werner Lawson]]。[牛津大学出版社编者简介](https://images.abovethetreeline.com/ea/OU/pdfs/Academic%20pdf.pdf#page=1045)；[芝加哥大学档案](https://photoarchive.lib.uchicago.edu/db.xqy?one=apf1-03693.xml)。证据：出版社简介称其 1962 年在芝加哥大学获博士“under Prof. A. W. Lawson”；芝加哥大学档案将同校物理学家 A. W. Lawson 记为 Andrew Werner Lawson，完整姓名系依据姓名缩写、机构和时期对应；关系类型可信度：高。
 - 核查边界：出版社简介未明确其正式学位论文导师称谓，须查论文确认；简介列 1962–1974 年 Argonne 任职，未明确博士后性质或该阶段指导者。
 
+- 博士生：[[人员 - UC San Diego - Ivan K. Schuller - 20dc4163|Ivan K. Schuller]]。Ketterson 课题组（Northwestern 物理系）alumni 页在标题 Some Ph.D. Students of John B. Ketterson 下列 Ivan K. Schuller，1976，Photoexcitation in Superconductors；AFT 记 Northwestern 1976 及同一论文题名，与页面核定的 Northwestern 博士相符。栏标题明写 Ph.D. Students of Ketterson，按博士导师记录。 [原档 1](https://groups.physics.northwestern.edu/ketterson/alumni.html)
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
 

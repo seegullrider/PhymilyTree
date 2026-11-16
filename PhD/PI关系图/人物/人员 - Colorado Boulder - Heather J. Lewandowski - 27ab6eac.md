@@ -16,7 +16,9 @@
 - 博士后导师：[[师承人物 - William D. Phillips|William D. Phillips]]。NIST Appendix F 印刷第 105 页、PDF 第 11 页的 2002 NIST-NRC 栏，在 Heather Lewandowski 同一行列 NIST Advisor William Phillips 及 Atomic Physics Division。NIST 本人机构档核全名。 [来源 1](https://www.nist.gov/system/files/documents/nvl/SP955_Suppl_08_Appendix_F.pdf#page=11) · [来源 2](https://www.nist.gov/people/william-d-phillips)
 - 博士后经历：NIST 原档 2002 NIST-NRC 栏列原子物理部博士后与导师；CU Boulder 介绍核 2005 年开始任该校助理教授。 [来源 1](https://www.nist.gov/system/files/documents/nvl/SP955_Suppl_08_Appendix_F.pdf#page=11) · [来源 2](https://www.colorado.edu/initiative/cubit/2020/11/19/heather-lewandowski)
 
-- 核查边界：追 2002 年 NRC 博士后实际起止和是否另有共同指导。已核两个阶段的具名导师。
+- 博士后课题组负责人：[[师承人物 - Jun Ye|Jun Ye]]。Ye 组旧版校友页在 Past Group Members 下列 Dr. Heather Lewandowski（现为 CU Boulder 教员，无年份）；同组旧版奖项页写 “NRC Postdoctoral Fellow Heather Lewandowski receives Best Presentation Award, NIST 2005 postdoctoral poster session”，两页合证其为 Ye 组博士后；均未写 advisor、supervisor 称谓，不升正式导师。NIST Appendix F 的 William Phillips 条另存，与本条并存。 [原档 1](https://jila.colorado.edu/~junye/yelabsOLD/people/alumni.html) · [原档 2](https://jila.colorado.edu/~junye/yelabsOLD/news/awards.html)
+- 复核原档：Ye 组旧版校友页列其为 Past Group Members，同组奖项页称其为 NRC Postdoctoral Fellow（NIST 2005 博士后海报奖），只证课题组任用，未见 advisor 称谓；与 NIST 的 Phillips 条并存。 [原档 1](https://jila.colorado.edu/~junye/yelabsOLD/people/alumni.html) · [原档 2](https://jila.colorado.edu/~junye/yelabsOLD/news/awards.html)
+- 核查边界：追 2002 年 NRC 博士后实际起止和是否另有共同指导。已核两个阶段的具名导师。 Ye 条只证课题组任用；Ye 与 Phillips 在 NRC 博后期间的分工待核。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）

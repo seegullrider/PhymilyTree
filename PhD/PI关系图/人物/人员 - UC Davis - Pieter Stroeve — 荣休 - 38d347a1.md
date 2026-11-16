@@ -20,10 +20,11 @@
 
 ## 师承
 
-- 博士导师：[[师承人物 - Kenneth A. Smith|Kenneth A. Smith]]。[来源](https://dspace.mit.edu/entities/publication/f008ee98-660e-4789-a25d-73558c493c40)
-- 博士导师：[[师承人物 - Clark K. Colton|Clark K. Colton]]。[来源](https://dspace.mit.edu/entities/publication/f008ee98-660e-4789-a25d-73558c493c40)
+- 博士导师：[[师承人物 - Kenneth A. Smith|Kenneth A. Smith]]。[来源](https://dspace.mit.edu/entities/publication/f008ee98-660e-4789-a25d-73558c493c40) （本条此前台账记 unresolved，MIT 学位目录本轮不可读，现已核实。）MIT DSpace 学位论文记录（Sc.D. MIT Department of Chemical Engineering，1973，题名 Diffusion with reversible chemical reaction in heterogeneous media，作者 Pieter Stroeve）的 Advisor(s) 字段为 Kenneth A. Smith and Clark K. Colton。 [原档 1](https://dspace.mit.edu/entities/publication/f008ee98-660e-4789-a25d-73558c493c40)
+- 博士导师：[[师承人物 - Clark K. Colton|Clark K. Colton]]。[来源](https://dspace.mit.edu/entities/publication/f008ee98-660e-4789-a25d-73558c493c40) （本条此前台账记 unresolved，MIT 学位目录本轮不可读，现已核实。）MIT DSpace 学位论文记录（Sc.D. MIT Department of Chemical Engineering，1973，题名 Diffusion with reversible chemical reaction in heterogeneous media，作者 Pieter Stroeve）的 Advisor(s) 字段为 Kenneth A. Smith and Clark K. Colton。 [原档 1](https://dspace.mit.edu/entities/publication/f008ee98-660e-4789-a25d-73558c493c40)
 - 博士关系证据：MIT 学位目录的 Advisor(s) 栏明确列 Kenneth A. Smith 和 Clark K. Colton；可信度：高。
-- 核查边界：MIT 学位库将 1973 年 Sc.D. 论文的 Advisor(s) 列为 Kenneth A. Smith 和 Clark K. Colton；博士后经历及导师尚待核。
+- 复核原档：MIT DSpace 学位论文记录的 Advisor(s) 字段列 Kenneth A. Smith 与 Clark K. Colton（1973 年 MIT 化工系 Sc.D. 论文 Diffusion with reversible chemical reaction in heterogeneous media）。 [原档 1](https://dspace.mit.edu/entities/publication/f008ee98-660e-4789-a25d-73558c493c40)
+- 核查边界：MIT 学位库将 1973 年 Sc.D. 论文的 Advisor(s) 列为 Kenneth A. Smith 和 Clark K. Colton；博士后经历及导师尚待核。 博士导师 Smith 与 Colton 均已由 MIT DSpace 记录核实；博士后经历及导师尚待核。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）

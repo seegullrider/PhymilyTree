@@ -26,6 +26,8 @@
 - 博士后导师：[[师承人物 - Walter Kohn|Walter Kohn]]。[来源](https://www.pa.ucla.edu/faculty-websites/sudip_cv.pdf) [原始资料](https://www.pa.ucla.edu/faculty-websites/sudip_cv.pdf) 证据：本人 CV 明列 1978–1980 UC San Diego 博后 Supervisor: Walter Kohn。关系类型可信度：高。
 - 核查边界：本人履历明确博士论文 supervisor C.-W. Woo、UC San Diego 博士后 supervisor Walter Kohn；Cornell 1976–1978 年博士后导师未核实。
 
+- 博士生：[[人员 - UC Davis - Rajiv R. P. Singh - 5f75764a|Rajiv R. P. Singh]]。Chakravarty 本人 CV（pa.ucla.edu 托管）末栏 Thesis Advisor and Postgraduate-Scholar Sponsor 的 Graduate 名录列 R. R. P. Singh (Professor of Physics, UCD)；同一 CV 的 Employment 栏列 Chakravarty 1980–1988 年任 Stony Brook 教职，与页面核定的 Singh 1986 年 Stony Brook 博士相合；AFT 记 Stony Brook 1986 及论文题名 Critical behaviour of an Ising spin-glass.。名录写 Graduate，没有 Ph.D. 字样，学位类别按栏标题 Thesis Advisor 与页面核定的博士年份推定。 [原档 1](https://www.pa.ucla.edu/faculty-websites/sudip_cv.pdf)
+- 博士后阶段研究者：[[人员 - UC Davis - Gergely T. Zimanyi - 3c96190a|Gergely T. Zimanyi]]。Chakravarty 本人 CV（pa.ucla.edu 托管）末栏 Thesis Advisor and Postgraduate-Scholar Sponsor 的 Postgraduate 名录列 G. Zimanyi (Professor, U. C. Davis)；同一 CV 的 Employment 栏列 Chakravarty 1980–1988 年任 Stony Brook 教职，与页面核定的 Zimanyi 1986–1988 年 Stony Brook 博士后相合；名录没有年份，栏标题为 Postgraduate-Scholar Sponsor 而无 advisor 称谓，按博士后阶段研究师长记录，不升正式导师。该边不在队列内（AFT 没有 Chakravarty–Zimanyi 边）。 [原档 1](https://www.pa.ucla.edu/faculty-websites/sudip_cv.pdf)
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
 

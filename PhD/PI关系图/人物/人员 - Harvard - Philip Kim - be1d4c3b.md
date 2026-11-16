@@ -20,6 +20,10 @@
 - 物理与应用物理教授；实验研究石墨烯、范德华异质结构和低维关联电子输运。 [来源](https://www.physics.harvard.edu/people/facpages/kim)
 
 - Harvard Rowland Institute 本人档并列 Physics 与 Applied Physics 教授及 2026 起 Rowland 科学顾问委员会成员。该顾问任用与学术训练分开，既有导师来源保留。 [原档 1](https://www.rowland.harvard.edu/people/philip-kim-phd)
+## Academic Tree 候选复核（2026-11-13）
+
+- Academic Tree 2026-04：PID 183079 与 Harvard 物理学家本人履历相符；研究生边 CID 566505 指向 Charles M. Lieber，博士后边 CID 1304785 指向 Paul L. McEuen。本人 CV 列 1999 Harvard 应用物理博士、1999–2001 Berkeley 博后，第 42 页分别具名 graduate student advisor 和 postgraduate-scholar sponsor；后者仍按 sponsor／阶段关系保留，正式博士后指导职衔待核。其他同名 PID 679642 和 945625 身份未确认，不归入此人。 [本人 CV，第 1、42 页](https://philipkim.scholars.harvard.edu/sites/g/files/omnuum7026/files/philipkim/files/kim_cv_11_17_2024.pdf)
+
 ## 师承
 
 - Miller 名录核对：Harvard 原系页及本人 2024 CV 首页核 1999 Harvard 应用物理博士、Berkeley 1999–2001 Miller 博后，2023 visiting Miller 与早期博后分列。 本人 CV 第 42 页分别明列 Graduate Student Advisor Charles M. Lieber、Postgraduate-Scholar Sponsor Paul L. McEuen。后者保留原 sponsor 称谓，具体个人研究指导待原任用。 [原档](https://www.physics.harvard.edu/people/facpages/kim) · [原档](https://philipkim.scholars.harvard.edu/sites/g/files/omnuum7026/files/philipkim/files/kim_cv_11_17_2024.pdf) · [Miller 历届原名录](https://millermembers.berkeley.edu/all.php?nav=46)

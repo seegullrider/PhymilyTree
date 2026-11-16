@@ -38,12 +38,13 @@
 - 博士后课题组成员：[[人员 - UPenn - Bo Zhen - b91f4744|Bo Zhen]]。[本人 CV](https://live-sas-physics.pantheon.sas.upenn.edu/sites/default/files/Prof%20Zhen%20CV%202018.pdf)明列 2014-09 至 2017-12 分别在 MIT Soljačić 组、Technion Segev 组做联合博士后；正式 advisor 头衔待核。
 - 博士课题组成员：[[人员 - UPenn - Bo Zhen - b91f4744|Bo Zhen]]。[本人 CV](https://live-sas-physics.pantheon.sas.upenn.edu/sites/default/files/Prof%20Zhen%20CV%202018.pdf)明列 2010-01 至 2014-08 为 MIT Soljačić 组研究生；只确认组属，正式论文导师待核。
 - 博士生：[[人员 - Cornell - Nicholas Rivera - b3956409|Nicholas Rivera]]。[来源](https://riveralab.org/about/)
-### 博士后阶段关联线索：导师身份待核
+### 博士后阶段
 
-- [[人员 - MIT - John D. Joannopoulos — 纪念条目 - cbedf46d|John D. Joannopoulos（已故）]] 与本人在其博士后阶段有研究合作，但尚未确认指导关系。[[师承候选线索索引|查看证据]]。
+- 此前的同期合作线索与出处保存在[[师承候选线索索引]]。
 
 - 博士导师：[[师承人物 - Mordechai Segev|Mordechai Segev]]。[本人 Princeton 2000 博士论文](https://www.mit.edu/~soljacic/final_thesis.pdf)致谢直接称 Mordechai Segev 为 “my PhD advisor”；[本人 MIT 履历](https://www.mit.edu/~soljacic/marin.html)及[Segev 组校友页](https://phsites.technion.ac.il/msegev/students/)确认 1997–2000 Princeton 博士研究。
-- 核查边界：博士导师已由本人论文致谢直接明确；MIT Pappalardo 博士后阶段有公开经历，John Joannopoulos 为同阶段合作者，正式导师待核。
+- 博士后阶段研究师长：[[人员 - MIT - John D. Joannopoulos — 纪念条目 - cbedf46d|John D. Joannopoulos（已故）]]。MIT 2025 年讣告写 Soljačić 是 a former postdoc under Joannopoulos，并引 Soljačić 本人称他为 mentor。Pappalardo 博士后阶段的研究指导有校方和本人证词。 [原档 1](https://news.mit.edu/2025/professor-john-joannopoulos-dies-0819)
+- 核查边界：博士导师已由本人论文致谢直接明确；已核 MIT Pappalardo 博士后经历及 Joannopoulos 的阶段研究指导。 正式博士后指导称谓未见；Pappalardo 任命档或 Soljačić 本人履历可作旁证。
 
 - 博士后课题组成员：[[人员 - University of Central Florida - Yannick Salamin - 241516e6|Yannick Salamin]]。UCF CREOL 明确列 MIT Postdoctoral Fellow 及 Marin Soljačić’s group。 [现任院系原档](https://creol.ucf.edu/person/yannick-salamin/)
 
@@ -60,6 +61,7 @@
   - [A Machine Learning Approach for Understanding](https://dspace.mit.edu/server/api/core/bitstreams/2078c4e8-2898-4633-a9ec-4310ace50c62/content)：Published: 5.2 years ago; First and foremost, I would like to thank my advisor, Marin Soljačić, for his invaluable help and guidance throughout my PhD. ... Fellowship (Grant No. 1745302) and the MIT EECS Alan L. Acknowledgments First and fo（姓名字符串出现，仍须核对单位时间；关系未判定，可信度未评估）
   - [diplomski.dvi](https://www.mit.edu/~soljacic/diplomski.pdf)：Published: 19.3 years ago; Marin Soljačić ... The author hereby grants to MIT permission to reproduce ... copies of this thesis document in whole or in part. Supernatural Inflation: Inflation from Supersymmetry with No (Very) Small Paramete（姓名字符串出现，仍须核对单位时间；关系未判定，可信度未评估）
 - 页面读取失败 [网页](https://dspace.mit.edu/server/api/core/bitstreams/2078c4e8-2898-4633-a9ec-4310ace50c62/content)：(403) Forbidden；需另找可访问的原始来源。
+- 已读取来源页 [网页](https://news.mit.edu/2025/professor-john-joannopoulos-dies-0819)（2026-11-16T03:42:20.823Z）：MIT 校方讣告明确 Soljačić 曾在 Joannopoulos 指导下做博士后，并引 Soljačić 本人称对方为 mentor。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://physics.mit.edu/faculty/marin-soljacic/)（2026-11-03T08:27:09.545Z）：* Mentoring Programs Information show submenu for “Mentoring Programs Information” * “Tunable Efficient Unitary Neural Networks (EUNN) and their application to RNNs” Li Jing, Yichen Shen, Tena Dubcek,（身份及关系仍待核）。
 - 已读取来源页 [网页](https://www.mit.edu/~soljacic/diplomski.pdf)（2026-11-03T08:27:09.545Z）：able universe lead scientists to a conclusion that universe was created in a big freedom in which the energy can be stored Since all particles are relativistic（身份及关系仍待核）。
 - 已读取来源页 [网页](https://www.mit.edu/~soljacic/marin.html)（2026-11-11T19:06:59.347Z）：- Undergraduate thesis topic in Inflationary Cosmology with Prof. Lisa Randall, and Prof. Alan Guth: "Supernatural Inflation: Inflation from Supersymmetry with No (Very) Small Parameters" - MA thesis （身份及关系仍待核）。

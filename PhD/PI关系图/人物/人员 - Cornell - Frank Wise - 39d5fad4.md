@@ -27,7 +27,7 @@
 
 ## 师承候选线索
 
-- 博士阶段研究者候选（反向线索）：[[人员 - Cornell - Jeffrey Moses - 57a1e204|Jeffrey Moses]]。Cornell 机构原档列 2007 应用物理博士。Bache 本人 DTU 论文前言明确初识 Moses 时他是 Cornell 博士生，并描述与 Wise 的研究合作。Wise 组原名录地址本轮 502，保留既有博士候选，正式导师待论文或组原件。 [Cornell 2014 入职原档](https://news.cornell.edu/stories/2014/10/welcome-new-members-faculty-2014-15) · [Bache 本人 DTU 原论文](https://backend.orbit.dtu.dk/ws/portalfiles/portal/145256599/Bache_Dr_Technices_thesis_2017.pdf) · [APS 博士期间原刊](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.073903)
+- 博士课题组成员：[[人员 - Cornell - Jeffrey Moses - 57a1e204|Jeffrey Moses]]。Cornell 机构原档列 2007 应用物理博士。Bache 本人 DTU 论文前言明确初识 Moses 时他是 Cornell 博士生，并描述与 Wise 的研究合作。Wise 组毕业生名录确认博士阶段组属，正式导师待论文原卷。 [Cornell 2014 入职原档](https://news.cornell.edu/stories/2014/10/welcome-new-members-faculty-2014-15) · [Bache 本人 DTU 原论文](https://backend.orbit.dtu.dk/ws/portalfiles/portal/145256599/Bache_Dr_Technices_thesis_2017.pdf) · [APS 博士期间原刊](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.073903) Cornell Wise 课题组毕业生名录列 Jeff Moses，附同题博士论文的 ProQuest 链接。名录毕业栏写 2008 年，Cornell 院系履历列 2007 年应用物理博士。名录确认博士阶段组属，正式导师尚待论文原卷或具名履历核对。 [原档 1](https://wise.research.engineering.cornell.edu/people/) · [原档 2](https://www.engineering.cornell.edu/aep/faculty-directory/jeffrey-moses) · [原档 3](https://www.proquest.com/dissertations-theses/beyond-nonlinear-schroedinger-equation-generation/docview/304866512/se-2)
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）

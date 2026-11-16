@@ -12,11 +12,12 @@
 
 ## 师承
 
-- 博士导师候选：[[师承人物 - Markus I. Flik|Markus I. Flik]]。MIT 学位库检索索引将 Markus I. Flik 列在 1993 年学位导师字段；该主机退避中，未直接核学位条目。Stanford 组保存的 1993 年原刊同列 Goodson 和 Flik，研究与本人学位履历相符，暂记博士候选。 [来源 1](https://dspace.mit.edu/entities/publication/b72741fc-a15c-4ddf-96e8-ac9e9657ab82) · [学术经历核对](https://cap.stanford.edu/profiles/viewCV?facultyId=10031&name=Kenneth_Goodson) · [来源 3](https://nanoheat.stanford.edu/wp-content/uploads/1993/09/A7.pdf)
+- 博士导师：[[师承人物 - Markus I. Flik|Markus I. Flik]]。MIT 学位库检索索引将 Markus I. Flik 列在 1993 年学位导师字段；该主机退避中，未直接核学位条目。Stanford 组保存的 1993 年原刊同列 Goodson 和 Flik，研究与本人学位履历相符，暂记博士候选。 [来源 1](https://dspace.mit.edu/entities/publication/b72741fc-a15c-4ddf-96e8-ac9e9657ab82) · [学术经历核对](https://cap.stanford.edu/profiles/viewCV?facultyId=10031&name=Kenneth_Goodson) · [来源 3](https://nanoheat.stanford.edu/wp-content/uploads/1993/09/A7.pdf) MIT DSpace 学位论文记录（Thesis Ph.D., MIT Dept. of Mechanical Engineering, 1993，题名 Thermal conduction in microelectronic circuits，作者 Goodson, Kenneth E.）的 Advisor(s) 字段为 Markus I. Flik；题名、年份与 Academic Tree 一致。 [原档 1](https://dspace.mit.edu/entities/publication/b72741fc-a15c-4ddf-96e8-ac9e9657ab82)
 - 博士后经历：本人 CV 列 1993–1994 德国 Daimler-Benz 材料研究 Visiting Scientist，1994 年起 Stanford 教职。该访问研究职衔有原文，单列博士后任命与导师待查。 [学术经历核对](https://cap.stanford.edu/profiles/viewCV?facultyId=10031&name=Kenneth_Goodson) · [现任院系原档](https://profiles.stanford.edu/kenneth-goodson)
 - 同人节点：[[师承人物 - Kenneth E. Goodson|原师承扩展节点]]。
 
-- 核查边界：MIT DSpace 主机退避期满后直接核论文具名导师字段。1993–1994 Daimler-Benz Visiting Scientist 按原职衔保存，继续查该任用是否另有博士后性质或个人指导者。
+- 复核原档：MIT DSpace 学位论文记录的 Advisor(s) 字段明列 Markus I. Flik（1993 年 MIT 机械系博士论文 Thermal conduction in microelectronic circuits）。 [原档 1](https://dspace.mit.edu/entities/publication/b72741fc-a15c-4ddf-96e8-ac9e9657ab82)
+- 核查边界：MIT DSpace 主机退避期满后直接核论文具名导师字段。1993–1994 Daimler-Benz Visiting Scientist 按原职衔保存，继续查该任用是否另有博士后性质或个人指导者。 博士导师已由 MIT DSpace 记录具名；1993–1994 Daimler-Benz Visiting Scientist 是否另有博士后性质或个人指导者仍待查。
 
 - 同人节点：[[师承人物 - Kenneth Goodson|Kenneth Goodson 原师承扩展页]]。[Stanford 本人 CV](https://cap.stanford.edu/profiles/viewCV?facultyId=10031&name=Kenneth_Goodson) 与 [Eric Pop 本人 CV](https://cap.stanford.edu/profiles/viewCV?facultyId=41710&name=Eric_Pop) 核同人。
 

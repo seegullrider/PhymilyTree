@@ -20,8 +20,8 @@
 
 ## 师承
 
-- 博士导师候选（仅供追查）：[[师承人物 - Edward J. Kramer|Edward J. Kramer]]。[1990 年论文](https://www.nature.com/articles/345790a0)将二人均列为 Cornell 材料科学系作者；[Northwestern 院系页](https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/shull-kenneth.html)确认 Cornell 材料科学博士。证据：论文只证明两人署名及当时单位，未说明博士培养时间或指导关系；不能据此认定导师；关系类型可信度：低。
-- 核查边界：Northwestern 会议原档列 Cornell 1990 年材料科学博士，接下来任 IBM Almaden Research Staff Member 三年，并于 1993 年加入 Northwestern。已核履历未分列独立博士后。 [Northwestern 本人会议履历](https://www.mccormick.northwestern.edu/nu-tau-workshop/documents/abstracts/2018/shull.pdf)。博士导师仍待 Cornell 学位档。
+- 博士导师：[[师承人物 - Edward J. Kramer|Edward J. Kramer]]。[1990 年论文](https://www.nature.com/articles/345790a0)将二人均列为 Cornell 材料科学系作者；[Northwestern 院系页](https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/shull-kenneth.html)确认 Cornell 材料科学博士。证据：论文只证明两人署名及当时单位，未说明博士培养时间或指导关系；不能据此认定导师；关系类型可信度：低。 Northwestern 的 Shull 本人课题组履历明确写 1990 年 Cornell 材料科学博士由 Ed Kramer 指导；同页将此后 IBM Almaden Research Staff Member 任职分列。 [原档 1](https://shullgroup.northwestern.edu/about/)
+- 核查边界：Northwestern 会议原档列 Cornell 1990 年材料科学博士，接下来任 IBM Almaden Research Staff Member 三年，并于 1993 年加入 Northwestern。已核履历未分列独立博士后。 [Northwestern 本人会议履历](https://www.mccormick.northwestern.edu/nu-tau-workshop/documents/abstracts/2018/shull.pdf)。本人组履历已具名博士导师。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）

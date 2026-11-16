@@ -16,7 +16,9 @@
 - 博士后导师：[[师承人物 - Edwin J. Heilweil|Edwin J. Heilweil]]。NIST PDF 第 11 页的 2002 NIST-NRC 段列 Matthew Beard、Optical Technology Division 及 NIST Advisor Edwub Heilweil。CHOISE 证实 2002–2003 NIST 光学博士后。NIST 本人档及机构原刊的同领域合著具名 Edwin J. Heilweil 与 Matthew C. Beard，支持校正名册印刷拼写。NREL 段另待核。 [来源 1](https://www.nist.gov/system/files/documents/nvl/SP955_Suppl_08_Appendix_F.pdf#page=11) · [学术经历核对](https://www.choise-efrc.org/scientists/curricula-vitae) · [来源 3](https://www.nist.gov/people/edwin-j-heilweil) · [来源 4](https://www.nist.gov/publications/terahertz-spectroscopy-solid-serine-and-cysteine)
 - 博士后经历：CHOISE 履历分列 2002–2003 NIST NRC 博士后与 2003–2005 NREL 博士后。NIST 原页导师栏印作 Edwub Heilweil，机构本人档及同期方向的联名原刊明确 Edwin J. Heilweil。 [学术经历核对](https://www.choise-efrc.org/scientists/curricula-vitae) · [来源 2](https://www.nist.gov/system/files/documents/nvl/SP955_Suppl_08_Appendix_F.pdf#page=11) · [来源 3](https://www.nist.gov/people/edwin-j-heilweil) · [来源 4](https://www.nist.gov/publications/terahertz-spectroscopy-solid-serine-and-cysteine)
 
-- 核查边界：查 Yale 学位原卷正式导师，并追 2003–2005 NREL 阶段个人指导。保留 NIST 名册印刷姓名异文。
+- 博士后课题组负责人：[[师承人物 - Arthur Nozik|Arthur J. Nozik]]。CHOISE 本人 CV 页列 “Postdoctoral Fellow, NREL, 2003–2005”，未具名导师；CU RASEI 2024 年 Nozik Lecture 页写 “Beard has been at NREL since 2003 (working for Arthur Nozik)”，未写博士后或导师称谓；两页合证其 2003 年起在 NREL 为 Nozik 工作且 2003–2005 为博士后，记课题组负责人，不升导师。 [原档 1](https://www.choise-efrc.org/scientists/curricula-vitae) · [原档 2](https://www.colorado.edu/rasei/2024/12/20/2024-nozik-lecture-matt-beard)
+- 复核原档：CHOISE 本人 CV 列 2003–2005 NREL 博士后，CU RASEI 讲座页称其 2003 年起在 NREL 为 Arthur Nozik 工作，只证课题组任用，未见博士后或导师称谓。 [原档 1](https://www.choise-efrc.org/scientists/curricula-vitae) · [原档 2](https://www.colorado.edu/rasei/2024/12/20/2024-nozik-lecture-matt-beard)
+- 核查边界：查 Yale 学位原卷正式导师，并追 2003–2005 NREL 阶段个人指导。保留 NIST 名册印刷姓名异文。 Nozik 条只证课题组任用；NREL 2019 人物报道原文（旧域名本次无法解析）读到后可再核是否升为阶段研究师长。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）

@@ -24,9 +24,10 @@
 
 - 博士候选关系：[[师承人物 - Robert P. Parson|Robert P. Parson]]。[学术谱系页](https://academictree-staging.thetransmitter.org/mis/peopleinfo.php?pid=68649)搜索索引列 Colorado 博士阶段关系，本轮该页 cache miss；[相关博士论文](https://csbweb.csb.pitt.edu/Faculty/Faeder/Publications/Reprints/thesis.pdf)提及双方研究合作，不能证明 Papanikolas 的导师。保持候选。关系类型可信度：低。
 
-- 博士候选关系：[[师承人物 - W. Carl Lineberger|W. Carl Lineberger]]。[UCSB 讲座原地址](https://iee.ucsb.edu/news-events/events/seminar-series/visualizing-charge-carrier-motion-nanowires-using-femtosecond)搜索索引称博士期间 with Lineberger，但本轮原页 cache miss；[相关研究者论文](https://csbweb.csb.pitt.edu/Faculty/Faeder/Publications/Reprints/thesis.pdf)显示 Papanikolas 参与其研究背景，不证明导师。保持候选。关系类型可信度：低。
+- 博士阶段研究师长：[[师承人物 - W. Carl Lineberger|W. Carl Lineberger]]。[UCSB 讲座原地址](https://iee.ucsb.edu/news-events/events/seminar-series/visualizing-charge-carrier-motion-nanowires-using-femtosecond)记录 Colorado 1994 年博士经历，具名 Lineberger。 UCSB IEE 研讨会页的讲者简介逐字 There, he earned his PhD in Chemical Physics in 1994 with Carl Lineberger，未提 Parson；AFT 记 Colorado Boulder 1994 相符。按 with Carl Lineberger 记为博士阶段研究师长，正式导师称谓未见。 [原档 1](https://iee.ucsb.edu/news-events/events/seminar-series/visualizing-charge-carrier-motion-nanowires-using-femtosecond)
 
-- 核查边界：Colorado 博士学位签署与具名导师待查，Lineberger 与 Parson 保留候选。Leone 的 Boulder 博后课题组关系已登记，具名正式指导职衔待核。UCSB 原讲座网页本次仍未读到正文。[本人合著论文作者简介](https://papanikolas.chem.unc.edu/assets/light_harvesting_collection.pdf) · [Leone 组原校友档](https://sites.google.com/berkeley.edu/leonegrp/people/alumni/1990-1999) · [UCSB 讲座原地址](https://iee.ucsb.edu/news-events/events/seminar-series/visualizing-charge-carrier-motion-nanowires-using-femtosecond)
+- 复核原档：UCSB IEE 研讨会页讲者简介写 earned his PhD in Chemical Physics in 1994 with Carl Lineberger，据此将 Lineberger 由博士候选升为博士阶段研究师长；Parson 仍为候选。 [原档 1](https://iee.ucsb.edu/news-events/events/seminar-series/visualizing-charge-carrier-motion-nanowires-using-femtosecond)
+- 核查边界：UCSB 讲座简介确认 Lineberger 的博士阶段关系。Colorado 学位签署、正式导师称谓和 Parson 的角色仍待核。Leone 的 Boulder 博后组属已有组档。[本人合著论文作者简介](https://papanikolas.chem.unc.edu/assets/light_harvesting_collection.pdf) · [Leone 组原校友档](https://sites.google.com/berkeley.edu/leonegrp/people/alumni/1990-1999) · [UCSB 讲座原地址](https://iee.ucsb.edu/news-events/events/seminar-series/visualizing-charge-carrier-motion-nanowires-using-femtosecond) Papanikolas 组 People 页或 UNC CV 恢复后核 Lineberger 与 Parson 的称谓；Colorado 1994 论文署名页。
 
 
 <!-- PI-AUTO-SEARCH:START -->

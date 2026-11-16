@@ -22,7 +22,9 @@
 
 - 博士生：[[人员 - Purdue - Arun Kumar Mannodi Kanakkithodi - a77cc53f|Arun Kumar Mannodi Kanakkithodi]]。[来源](https://digitalcommons.lib.uconn.edu/dissertations/1470/) UConn 2017 年学位档第 34–36 行明确列 Gregory Sotzing 为 Associate Advisor；主导师另列。 [原档 1](https://digitalcommons.lib.uconn.edu/dissertations/1470/)
 - 博士后课题组负责人：[[师承人物 - Robert H. Grubbs|Robert H. Grubbs]]。[来源](https://grubbsgroup.caltech.edu/index.html%40p%3D42.html) 证据：Grubbs 研究组校友表明确列 Gregory Sotzing 为 1997 至 1999 年博士后，后任 UConn；组名单不足以单独确认正式导师头衔；关系类型可信度：高。
-- 核查边界：UConn 确认 Florida 化学博士，但未找到可直接读取的博士导师证据；现有反向学生链接予以保留。 [原始资料](https://materials-science.institute.uconn.edu/person/gregory-sotzing/)。UConn 材料所原档核化学、Florida 博士及 Caltech 1997–1999 博后。 保留 Grubbs 博后组属。Florida 博士导师继续按学位资料追查。
+- 博士导师：[[师承人物 - John R. Reynolds|John R. Reynolds]]。Sotzing 署名的 Chemical Reviews 论文作者简介写他于 1997 年在 University of Florida 取得博士、由 John Reynolds 指导。所核为原刊转载文本，出版商页面核对论文及作者，UConn 本人组履历同列 Florida 与 Reynolds。 [原档 1](https://paperzz.com/doc/8072047/cross-reactive-chemical-sensor-arrays) · [原档 2](https://pubs.acs.org/doi/10.1021/cr980102w) · [原档 3](https://sotzinggroup.research.uconn.edu/bio/)
+- 博士后阶段研究师长：[[师承人物 - Nathan S. Lewis|Nathan S. Lewis]]。Sotzing 署名的 2000 年论文作者简介具名其在 Caltech 博士后期间同时与 Nathan Lewis 和 Robert H. Grubbs 开展研究，UConn 本人组履历也具名两人。按阶段研究师长记录 Lewis。 [原档 1](https://paperzz.com/doc/8072047/cross-reactive-chemical-sensor-arrays) · [原档 2](https://pubs.acs.org/doi/10.1021/cr980102w) · [原档 3](https://sotzinggroup.research.uconn.edu/bio/)
+- 核查边界：UConn 核实 Florida 化学博士，同期论文作者简介具名博士导师 John Reynolds。 [UConn 材料所原档](https://materials-science.institute.uconn.edu/person/gregory-sotzing/)核实 Florida 学位及 Caltech 1997–1999 年博后经历。
 
 
 <!-- PI-AUTO-SEARCH:START -->

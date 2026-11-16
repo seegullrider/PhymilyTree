@@ -29,7 +29,9 @@
 - 博士导师：[[人员 - Caltech - Harry Atwater - e118c47d|Harry Atwater]]。[来源](https://resnick.caltech.edu/people/prineha-narang)；[Caltech 博士学位库](https://thesis.library.caltech.edu/9004/) 证据：Caltech 学位库对其 2015 年应用物理博士论文的 Research Advisor(s) 明列 Harry Albert Atwater (advisor)、Nathan Saul Lewis (co-advisor)。关系类型可信度：高。
 - 博士后导师候选：[[人员 - MIT - Marin Soljačić - 2141d845|Marin Soljačić]]。[来源](https://arxiv.org/abs/1806.02672)
 - 博士后导师候选：[[人员 - MIT - John D. Joannopoulos — 纪念条目 - cbedf46d|John D. Joannopoulos — 纪念条目]]。[来源](https://arxiv.org/abs/1806.02672)
-- 核查边界：Caltech 学位库列 Atwater 为博士 advisor、Lewis 为 co-advisor；MIT Research Scholar 阶段与 Soljačić 和 Joannopoulos 合著，二人先列博士后候选，仍需直接核实指导关系与任职阶段。 [Caltech 本人访谈](https://engenuity.caltech.edu/stories/alumna-profile-prineha-narang-phd-15)将 MIT 职位与 Harvard fellowship 分列。
+- 博士阶段研究师长：[[人员 - Caltech - William A. Goddard III - ea39607c|William A. Goddard III]]。Narang 在 Caltech 校友专访中称 William A. Goddard III 与 Harry Atwater 共同指导其博士论文。Caltech 学位馆藏的 Research Advisor(s) 列 Atwater 为导师、Nathan S. Lewis 为共同导师，Goddard 列于 Thesis Committee。综合两处原档，Goddard 记博士阶段研究师长；正式共同导师身份待进一步核实。 [原档 1](https://engenuity.caltech.edu/stories/alumna-profile-prineha-narang-phd-15) · [原档 2](https://thesis.library.caltech.edu/9004/)
+- 复核原档：Narang 在 Caltech 校友专访中称 William A. Goddard III 与 Harry Atwater 共同指导其博士论文。Caltech 学位馆藏的 Research Advisor(s) 列 Atwater 为导师、Nathan S. Lewis 为共同导师，Goddard 列于 Thesis Committee。综合两处原档，Goddard 记博士阶段研究师长；正式共同导师身份待进一步核实。 [原档 1](https://engenuity.caltech.edu/stories/alumna-profile-prineha-narang-phd-15) · [原档 2](https://thesis.library.caltech.edu/9004/)
+- 核查边界：Caltech 学位库列 Atwater 为博士 advisor、Lewis 为 co-advisor；MIT Research Scholar 阶段与 Soljačić 和 Joannopoulos 合著，二人先列博士后候选，仍需直接核实指导关系与任职阶段。 [Caltech 本人访谈](https://engenuity.caltech.edu/stories/alumna-profile-prineha-narang-phd-15)将 MIT 职位与 Harvard fellowship 分列。 Goddard 在本人访谈有共同指导自述，学位档列为委员会成员；正式共同导师称谓待校方原档进一步核实。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）

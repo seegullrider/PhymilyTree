@@ -18,6 +18,10 @@
 - 研究方向：[[已核实方向 - 二维与范德华材料|二维与范德华材料]] · [[已核实方向 - 拓扑量子材料|拓扑量子材料]]。
 - 物理教授；研究二维体系、石墨烯异质结构的量子输运、关联和拓扑态。 [来源](https://www.physics.ucsb.edu/people/andrea-young)
 
+## Academic Tree 候选复核（2026-11-13）
+
+- Academic Tree 2026-04：PID 190462 的研究生边 CID 1595923 指向 Philip Kim，本人 CV 明列 Columbia 2012 博士 thesis advisor 为 Philip Kim；博后边 CID 1632944 指向 Raymond Ashoori，MIT 同期报道只明确 Young 属 Ashoori 组，故维持博士后课题组负责人，不升级为正式导师。 [本人 CV](https://www.afylab.com/s/Full_CV_and_Publist.pdf) · [MIT 新闻](https://news.mit.edu/2015/probing-graphene-physics-javier-sanchez-yamagishi-0519)
+
 ## 师承
 
 - 博士后课题组负责人：[[人员 - MIT - Pablo Jarillo-Herrero - 0eae5986|Pablo Jarillo-Herrero]]。MIT Jarillo-Herrero 组原名单在 Group Alumni → Postdocs 下列 Andrea Young（UC Santa Barbara 物理教授），与 MIT 同期校方记载的 Ashoori 组属并存。组属可信度高，具体组属日期与正式指导职衔待核。 [MIT Jarillo-Herrero 组博后校友表](https://jarillo-herrero.mit.edu/team/) · [Andrea Young 本人 CV](https://www.afylab.com/s/Full_CV_and_Publist.pdf)

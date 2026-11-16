@@ -18,4 +18,6 @@ This snapshot excludes the original SQLite queue, raw web captures, downloaded P
 
 The scripts use Node.js (some require the built-in `node:sqlite`) and in some cases Python or PowerShell. They were developed against a larger local vault; inspect paths and dependencies before running.
 
-Snapshot: 2026-11-13.
+Candidate matching uses the April 2026 [Academic Family Tree / Physics Tree data snapshot](https://doi.org/10.5281/zenodo.19739198), distributed under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/). Matched identities and candidate rows are derived annotations. See the separately sourced relationship events for reviewed evidence.
+
+Snapshot: 2026-11-16.

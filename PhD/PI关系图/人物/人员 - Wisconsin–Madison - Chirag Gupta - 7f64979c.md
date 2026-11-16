@@ -20,9 +20,10 @@
 
 ## 师承
 
-- 博士导师候选：[[师承人物 - Umesh K. Mishra|Umesh K. Mishra]]。[UCSB 实习项目页](https://sims.csep.ucsb.edu/research/characterization-gallium-nitride-power-diodes-efficient-power-conversion)列 Gupta 为项目 mentor、Mishra 为项目 advisor；[博士论文搜索索引](https://escholarship.org/content/qt9dw8r0t3/qt9dw8r0t3.pdf)提示 Mishra 为论文委员会主席，但原文主机处于退避，未直接核读，正式博士导师待确认。
+- 博士导师：[[师承人物 - Umesh K. Mishra|Umesh K. Mishra]]。[UCSB 实习项目页](https://sims.csep.ucsb.edu/research/characterization-gallium-nitride-power-diodes-efficient-power-conversion)列 Gupta 为项目 mentor、Mishra 为项目 advisor；[博士论文搜索索引](https://escholarship.org/content/qt9dw8r0t3/qt9dw8r0t3.pdf)提示 Mishra 为论文委员会主席，但原文主机处于退避，未直接核读，正式博士导师待确认。 UCSB 博士论文原档（Chirag Gupta，《In-situ Oxide, GaN interlayer based vertical trench MOSFET (OG-FET)》，2018 年 6 月）封面与批准页列 Umesh Mishra 为 Committee Chair，致谢称其为 my advisor（accepting me as a graduate student in his research group）；论文年份、学科与 Wisconsin 工程学院档的 2018 UCSB 博士、GaN 器件方向相符。 [原档 1](https://escholarship.org/content/qt9dw8r0t3/qt9dw8r0t3.pdf)
 
-- 核查边界：学校确认 2018 年 UCSB 博士。UCSB 实习项目原始页列 Chirag Gupta 为 mentor、Umesh Mishra 为项目 advisor，不能据此单独认定博士导师；博士论文搜索线索列 Mishra 为委员会主席，但 eScholarship 正处于限流退避，待论文原文可访问时复核。https://sims.csep.ucsb.edu/research/characterization-gallium-nitride-power-diodes-efficient-power-conversion；注意排除同名生物计算和计算机研究者。博士后经历及导师未核。
+- 复核原档：UCSB 博士论文原档封面与批准页列 Umesh Mishra 为 Committee Chair，致谢称其为 my advisor（2018 年 6 月，ECE，OG-FET）。 [原档 1](https://escholarship.org/content/qt9dw8r0t3/qt9dw8r0t3.pdf)
+- 核查边界：学校确认 2018 年 UCSB 博士。UCSB 实习项目原始页列 Chirag Gupta 为 mentor、Umesh Mishra 为项目 advisor，不能据此单独认定博士导师；博士论文搜索线索列 Mishra 为委员会主席，但 eScholarship 正处于限流退避，待论文原文可访问时复核。https://sims.csep.ucsb.edu/research/characterization-gallium-nitride-power-diodes-efficient-power-conversion；注意排除同名生物计算和计算机研究者。博士后经历及导师未核。 博士导师已由本人博士论文具名；博后经历及导师仍未核。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）

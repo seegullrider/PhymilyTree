@@ -22,10 +22,11 @@
 
 - 学位与经历核对：UVA 2008 毕业名录列本人博士论文《Atomic Scale Modeling of Surface Processes on a Focused Ion Beam Patterned Silicon Substrate》，未列导师。UConn 工程学院将 NRC Research Associateship 与 NC State Senior Research Associate 并列描述为博士后研究；两岗位是否相继或重叠、各自时间及指导者待核。该简介写 2007 年 12 月博士，而 UConn 其他名录写 2008，保留来源差异。[UVA 毕业名录](https://majorevents.virginia.edu/sites/majorevents/files/Finals%20Program%202008.pdf) [UConn 工程学院](https://engineering.uconn.edu/faculty/mse/avinash-dongare/)
 
-- 博士导师候选：[[师承人物 - Leonid V. Zhigilei|Leonid V. Zhigilei]]。UVA 2008 [毕业名录](https://majorevents.virginia.edu/sites/majorevents/files/Finals%20Program%202008.pdf)确认本人材料博士论文；[UVA 材料新闻索引](https://uvamatsci.blogspot.com/search/label/computational%20materials)显示 advised by Leo Zhigilei，但原文本轮缓存缺失，无法复读；仅作为博士导师候选，非确证。关系类型可信度：低（候选）。
+- 博士导师：[[师承人物 - Leonid V. Zhigilei|Leonid V. Zhigilei]]。UVA 2008 [毕业名录](https://majorevents.virginia.edu/sites/majorevents/files/Finals%20Program%202008.pdf)确认本人材料博士论文；[UVA 材料新闻索引](https://uvamatsci.blogspot.com/search/label/computational%20materials)提供了早期导师线索。 Zhigilei 课题组的原始答辩新闻列 Dongare 于 2007 年 12 月 3 日答辩，照片说明明确写 with his advisor, Leonid Zhigilei。UVA 2008 毕业名录列 Dongare 的博士论文及题名。 [原档 1](https://compmat.org/News/Avinash-PhD.html) · [原档 2](https://majorevents.virginia.edu/sites/majorevents/files/Finals%20Program%202008.pdf)
 
 - 博士后阶段研究师长：[[师承人物 - Raj Rajendran|Raj Rajendran]]。[来源](https://materials-science.institute.uconn.edu/2024/11/20/avinash-dongare-named-asme-fellow/) 证据：UConn 材料研究所报道称 Dongare 曾为 Rajendran 的 NRC Fellow；工程学院简介独立将 NRC Research Associateship 称为博士后研究；关系类型可信度：高。
-- 核查边界：UVA 博士导师尚未找到可直接读取的原始证据；UConn 本人履历有 2007 年 12 月和 2008 年博士的年份差异，NRC fellowship 开始时间亦需核原始记录。 UVA 新闻索引提供 Leo Zhigilei 候选线索，原文缓存缺失、尚未确证。
+- 复核原档：原始答辩报道直接具名导师，毕业名录佐证身份与论文。 [原档 1](https://compmat.org/News/Avinash-PhD.html) · [原档 2](https://majorevents.virginia.edu/sites/majorevents/files/Finals%20Program%202008.pdf)
+- 核查边界：UVA 答辩原报道已复核并确认导师；UConn 本人履历有 2007 年 12 月和 2008 年博士的年份差异，NRC fellowship 开始时间亦需核原始记录。 课题组新闻记录 2007 年 12 月答辩，2008 年毕业名录记录学位。 可补充 UVA 学位档，并追查 NRC 博士后研究的开始时间和 NC State 经历的时间、指导者。
 
 
 <!-- PI-AUTO-SEARCH:START -->

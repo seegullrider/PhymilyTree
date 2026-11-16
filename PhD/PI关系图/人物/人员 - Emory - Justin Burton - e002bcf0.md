@@ -23,7 +23,9 @@
 - 博士导师：[[人员 - UC Irvine - Peter Taborek - 097a7b59|Peter Taborek]]。[UC Irvine 物理系博士毕业生表](https://www.physics.uci.edu/node/9929)在 Thesis Advisor 栏列 Burton, Justin C.、Taborek、2006；[Emory 教师页](https://physics.emory.edu/people/bios/burton-justin.html)确认其 2006 年 UC Irvine 博士及姓名中间字母 C，[Taborek 实验室](https://www.physics.uci.edu/~taborek/)确认其全名为 Peter Taborek。关系类型可信度：高。
 - 博士后导师：[[师承人物 - Douglas Reed MacAyeal|Douglas Reed MacAyeal]]。[MacAyeal 本人简历](https://d3qi0qp55mx5f5.cloudfront.net/geosci/i/basic_pages/MacAyeal_CV_December_2019.pdf?mtime=1598462181)的 Postdoctoral Scholars Mentored 列表列出 Justin Burton（2010–2013，现任 Emory 教授），称与 Sidney Nagel 共同指导；未注明正式导师职衔。关系类型可信度：高。 Chicago MacAyeal 本人 CV 第 3 页在 Postdoctoral Scholars Mentored 下列 Justin Burton 2010–2013、后赴 Emory，明确与物理系 Sidney Nagel 共同指导。两人分别记同阶段博后共同导师。 [原档 1](https://d3qi0qp55mx5f5.cloudfront.net/geosci/i/basic_pages/MacAyeal_CV_December_2019.pdf?mtime=1598462181)
 - 博士后导师：[[人员 - University of Chicago - Sidney R. Nagel - 334d75ce|Sidney R. Nagel]]。[MacAyeal 本人简历](https://d3qi0qp55mx5f5.cloudfront.net/geosci/i/basic_pages/MacAyeal_CV_December_2019.pdf?mtime=1598462181)明确称其与 Nagel 共同指导 Burton 的博士后研究；未注明正式导师职衔。关系类型可信度：高。 Chicago MacAyeal 本人 CV 第 3 页在 Postdoctoral Scholars Mentored 下列 Justin Burton 2010–2013、后赴 Emory，明确与物理系 Sidney Nagel 共同指导。两人分别记同阶段博后共同导师。 [原档 1](https://d3qi0qp55mx5f5.cloudfront.net/geosci/i/basic_pages/MacAyeal_CV_December_2019.pdf?mtime=1598462181)
-- 核查边界：上述 Chicago 博士后关系不排除其他阶段的经历；需区分 WPI 同名博士生 Justin Y. Burton。
+- 博士后导师：[[师承人物 - Wenying Shou|Wenying Shou]]。Burton 本人履历第 1 页将 Fred Hutchinson Cancer Research Center 基础科学部 2008–2009 年任用列为博士后，并在 Advisor 栏具名 Wenying Shou。 [原档 1](https://www.jcburtonlab.com/uploads/4/8/5/9/48592089/justin_burton_cv_short.pdf)
+- 博士后导师：[[人员 - UC Irvine - Peter Taborek - 097a7b59|Peter Taborek]]。Burton 本人履历第 1 页将 2006–2008 年 UC Irvine 物理系博士后任用与 2006 年 UC Irvine 博士学位分列，两段均具名 Peter Taborek。 [原档 1](https://www.jcburtonlab.com/uploads/4/8/5/9/48592089/justin_burton_cv_short.pdf)
+- 核查边界：本人履历分列 UC Irvine、Fred Hutch 与 Chicago 三段博士后任用。本人履历所列 Chicago 任期为 2009–2013，MacAyeal 履历所列共同指导任期为 2010–2013。需区分 WPI 同名博士生 Justin Y. Burton。
 
 
 ## 2026-11-05 再核查

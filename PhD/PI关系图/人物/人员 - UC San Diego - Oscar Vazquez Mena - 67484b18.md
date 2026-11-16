@@ -22,7 +22,7 @@
 
 - 博士导师：[[师承人物 - Jürgen Brugger|Jürgen Brugger]]。[EPFL 实验室博士论文目录](https://www.epfl.ch/labs/lmis1/publications/phd-thesis/)将论文 *Development of stencil lithography for nanopatterning and for electronic and biosensing applications* 的作者列为 O. Vazquez Mena、论文指导者列为 J. Brugger（Dir.）。[UCSD 资料](https://matsci.ucsd.edu/faculty/oscar-vazquez-mena)确认其 2010 EPFL 博士及纳米器件方向。可信度：高。
 - 博士后课题组负责人：[[人员 - UC Berkeley - Alex Zettl（荣休） - 63770bc9|Alex Zettl（荣休）]]。[来源](https://www-ne.ucsd.edu/seminars/seminar-oscar-vazquez-mena)
-- 博士后导师（ICFO，2015 阶段）：[[师承人物 - Gerasimos Konstantatos|Gerasimos Konstantatos]]。[Konstantatos 本人履历](https://api.icrea.cat/api/show-file/27820?token=e93QZVcbwi9MQxRz6wtTQzfAHr28aOEUdAPEPJfy2lA4d7E1KuZ61cSaXiLAPtqq)在 supervision and mentoring 中明确称指导过 Marie Curie Fellow O. Vazquez Mena，并以其 UC San Diego 任职确认身份；[ICFO 2015 名录](https://www.icfo.eu/wp-content/uploads/2022/06/icfonians_24_web.pdf)列其为博士后研究员。可信度：高。
+- 博士后导师（ICFO，2015 阶段）：[[师承人物 - Gerasimos Konstantatos|Gerasimos Konstantatos]]。[Konstantatos 本人履历](https://api.icrea.cat/api/show-file/27820)在 supervision and mentoring 中明确称指导过 Marie Curie Fellow O. Vazquez Mena，并以其 UC San Diego 任职确认身份；[ICFO 2015 名录](https://www.icfo.eu/wp-content/uploads/2022/06/icfonians_24_web.pdf)列其为博士后研究员。可信度：高。
 - 核查边界：EPFL 正式博士论文目录明确 Brugger 为论文指导者；瑞士国家图书馆[馆藏书目](https://ead.nb.admin.ch/web/sb-pdf/2010/sb201007.pdf)记同论文出版 2010、论文年 2009，EPFL 与 UCSD 均记 2010，具体授位日期待核。2013 年墨西哥同名生物医学博士为不同人物，不合并。Berkeley 博后属 Zettl 组、正式个人导师待核；ICFO 博后监督关系已由 Konstantatos 本人履历明确。履历链接带有发布方提供的访问参数，若失效应从 ICREA 官方页面重新取得。
 
 <!-- PI-AUTO-SEARCH:START -->

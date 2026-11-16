@@ -20,7 +20,8 @@
 
 ## 师承
 
-- 核查边界：学校列 Cornell 1994 博士；CMU 学术报告明确 CNRS Grenoble 与 UC Santa Barbara 博士后，但未说明导师：https://www.cmu.edu/engineering/materials/news_and_events/departmental_seminar_series/documents/2020/spring-2020/crowell-3apr20-mse-seminar.pdf 。Cornell 合作者不能仅凭合著推断为导师。
+- 博士后课题组负责人：[[人员 - University of Chicago - David Awschalom - d5d8b990|David Awschalom]]。芝加哥大学 Awschalom 组学术档案将 Minnesota 物理系 Paul Crowell 列为 Postdoctoral Alumni。Minnesota 的本人简介列其 UCSB 1995–1997 博士后及 CNRS Grenoble 1993–1995 博士后。前者据组档记 David Awschalom 为博士后课题组负责人，正式指导称谓仍待核。 [原档 1](https://pme.uchicago.edu/awschalom-group/people/paul-crowell) · [原档 2](https://cse.umn.edu/smart/paul-crowell)
+- 核查边界：学校列 Cornell 1994 博士；CMU 学术报告明确 CNRS Grenoble 与 UC Santa Barbara 博士后，但未说明导师：https://www.cmu.edu/engineering/materials/news_and_events/departmental_seminar_series/documents/2020/spring-2020/crowell-3apr20-mse-seminar.pdf 。Cornell 合作者不能仅凭合著推断为导师。 Cornell 博士导师、UCSB 正式博士后指导称谓和 CNRS Grenoble 博士后接待人仍待原档。Minnesota 简介所载 CNRS 任期起年与 1994 学位有交叠，保留原载日期。
 
 
 <!-- PI-AUTO-SEARCH:START -->
