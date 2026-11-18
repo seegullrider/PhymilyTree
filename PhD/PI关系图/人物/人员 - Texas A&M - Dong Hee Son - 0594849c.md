@@ -22,9 +22,9 @@
 ## 师承
 
 - 博士导师候选：[[师承人物 - Paul F. Barbara|Paul F. Barbara]]。[二手检索线索](https://academictree-staging.thetransmitter.org/mis/peopleinfo.php?pid=55482) 将 Son 列为 Barbara 在 UT Austin 的 2002 年研究生；该页面本次无法直接读取，且未确认正式导师身份。2002 年 UT Austin [合著论文](https://oww-files-public.s3.amazonaws.com/2/23/Jp014151f.pdf)仅支持继续追查，不能单独证明师承；可信度：待核。
-- 博士后候选关系：[[人员 - University of Chicago - Paul Alivisatos - 9209cf4f|Paul Alivisatos]]。[来源](https://academictree-staging.thetransmitter.org/mis/peopleinfo.php?pid=59126)
-- 博士后候选证据：AcademicTree 将 Dong Hee Son 列入 Paul Alivisatos 名下 2002—2005 Berkeley 博士后；与 Texas A&M 本人页面的机构及年份一致，但该二手关系未由本人或实验室资料确认；可信度：待核。
-- 核查边界：学校资料确认 UT Austin 博士及 Berkeley 2002—2005 博士后但未列导师；AcademicTree 将其列于 Alivisatos 博士后，属于二手线索，先记候选，待找本人或课题组一手资料确认。
+- 博士后课题组负责人：[[人员 - University of Chicago - Paul Alivisatos - 9209cf4f|Paul Alivisatos]]。[来源](https://academictree-staging.thetransmitter.org/mis/peopleinfo.php?pid=59126) Alivisatos 课题组 Berkeley 官方校友页在 Postdoctoral Scholars 栏列 Dong-Hee Son，并注明 Texas A&M University 任职。Texas A&M 化学系本人档列 2002–2005 年 Berkeley 与 LBNL 博士后。两页共同确认其博士后组属，个人指导待核。 [原档 1](https://www.cchem.berkeley.edu/~pagrp/alumni.html) · [原档 2](https://artsci.tamu.edu/chemistry/contact/profiles/dong-hee-son.html)
+- 博士后阶段证据：Alivisatos 课题组 Berkeley 官方校友页在 Postdoctoral Scholars 栏列 Dong-Hee Son，并注明 Texas A&M University 任职。Texas A&M 化学系本人档列 2002–2005 年 Berkeley 与 LBNL 博士后。两页共同确认其博士后组属，个人指导待核。 [课题组校友档](https://www.cchem.berkeley.edu/~pagrp/alumni.html) · [Texas A&M 化学系履历](https://artsci.tamu.edu/chemistry/contact/profiles/dong-hee-son.html)
+- 核查边界：学校资料确认 UT Austin 博士及 Berkeley 2002—2005 博士后但未列导师；Alivisatos 课题组官方校友档确认组属，个人指导待核。 另找 Son 本人 CV、机构任用档或导师自述确认博士后个人指导。Paul Barbara 的博士导师候选待 UT Austin 学位原档。
 
 
 <!-- PI-AUTO-SEARCH:START -->
@@ -42,4 +42,5 @@
 - 已读取来源页 [网页](https://artsci.tamu.edu/physics-astronomy/contact/profiles/dong-hee-son.html)（2026-11-03T04:21:20.182Z）：Prof. Dong Hee Son received his BS and MS from Seoul National University, Korea. He obtained his PhD from the University of Texas, Austin. After completing postdoctoral work at the University of Calif（身份及关系仍待核）。
 - 已读取来源页 [网页](https://chem.skku.edu/chem/News/noticeSeminar.do?article.offset=10&articleLimit=10&articleNo=174556&mode=view)（2026-11-11T17:54:57.095Z）：Imposing strong quantum confinement in lead halide perovskite nanocrystals enhances the electronic interactions of charge carriers within each nanocrystal and promotes the delocalization of the excito（身份及关系仍待核）。
 - 已读取来源页 [网页](https://nanobme.yonsei.ac.kr/people.asp?act=view&mid=m04_02&sOpt=A&uid=1011)（2026-11-03T04:21:20.185Z）：Image: 오류(Error). 요청하신 페이지를 처리 중에 오류가 발생했습니다. 서비스 이용에 불편을 드려 죄송합니다. 입력하신 주소가 정확한지 확인 후 다시 시도해 주시기 바랍니다. (We have encountered a system error while processing your request. We apologize for the inconven（身份及关系仍待核）。
+- 已读取来源页 [网页](https://www.cchem.berkeley.edu/~pagrp/alumni.html)（2026-11-17T12:27:28.097Z）：Berkeley 课题组官方校友档 Postdoctoral Scholars 栏列 Dong-Hee Son，与 Texas A&M 院系身份相符。（身份及关系仍待核）。
 <!-- PI-AUTO-SEARCH:END -->

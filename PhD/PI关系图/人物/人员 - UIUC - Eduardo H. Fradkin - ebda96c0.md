@@ -41,6 +41,8 @@
 
 - 博士后阶段研究者：[[人员 - Purdue - Rudro Rana Biswas - 972c2241|Rudro Rana Biswas]]。Fradkin 本人 CV 的博士后研究人员栏具名 Biswas 2011–2014，Illinois ICMT 独立确认同一任期。记阶段研究关联，正式个人指导职衔待查。 [来源 1](https://eduardo.physics.illinois.edu/homepage/ehf_bio.pdf#page=6) · [来源 2](https://icmt.illinois.edu/people/rrbiswas)
 
+- 博士后课题组成员：[[人员 - UT Austin - Qian Niu — 旧名单现职需更新 - 59f852de|Qian Niu]]。Fradkin 组官网 Former Postdocs 具名 Qian Niu，列其后续 UT Austin 与中国科大任职，与本人履历一致。组档列 1984–1985，本人履历列 Illinois Research Associate 为 1985–1987、Washington 博士为 1985。组档支持博士后组属，任期、任用性质及个人导师职衔待核。 [原档 1](http://eduardo.physics.illinois.edu/homepage/former-postdocs.html) · [原档 2](https://faculty.ustc.edu.cn/niuqian/en/index.htm)
+- 博士后课题组成员：[[人员 - University of Minnesota - Andrey Chubukov - 4db8e5ec|Andrey Chubukov]]。Fradkin 组官网 Former Postdocs 栏具名 Andrey V. Chubukov，博士学校、年份及后来 Minnesota 任职匹配。组档给出 1991–1993，与既有履历所列 Illinois 1990–1992、Yale 1992–1993 存在差异。记录博士后组属，确切任期和个人指导待核。 [原档 1](https://eduardo.physics.illinois.edu/homepage/former-postdocs.html)
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
 

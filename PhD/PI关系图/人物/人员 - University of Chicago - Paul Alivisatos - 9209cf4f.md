@@ -33,7 +33,7 @@
 - 博士后阶段受指导者：[[人员 - Colorado Boulder - Gordana Dukovic - 3b109c5e|Gordana Dukovic]]。[来源](https://onlinelibrary.wiley.com/doi/10.1002/ijch.201200073)
 - Dukovic 本人 2024 年校托简历将 Berkeley／Lawrence Berkeley National Laboratory 的博士后任期列为 2006–2009；未在该简历中具名个人导师，既有博士后阶段研究师长关系沿用期刊简介。[Colorado 本人简历](https://experts.colorado.edu/vitas/147414.pdf)
 - 博士课题组成员：[[人员 - UC Davis - Kristie J. Koski - 40cc58d0|Kristie J. Koski]]。[来源](https://escholarship.org/content/qt73b185r9/qt73b185r9.pdf?t=li57cx)
-- 博士后候选受指导者：[[人员 - Texas A&M - Dong Hee Son - 0594849c|Dong Hee Son]]。[来源](https://academictree-staging.thetransmitter.org/mis/peopleinfo.php?pid=59126)
+- 博士后课题组成员：[[人员 - Texas A&M - Dong Hee Son - 0594849c|Dong Hee Son]]。[来源](https://academictree-staging.thetransmitter.org/mis/peopleinfo.php?pid=59126) Alivisatos 课题组 Berkeley 官方校友页在 Postdoctoral Scholars 栏列 Dong-Hee Son，并注明 Texas A&M University 任职。Texas A&M 化学系本人档列 2002–2005 年 Berkeley 与 LBNL 博士后。两页共同确认其博士后组属，个人指导待核。 [原档 1](https://www.cchem.berkeley.edu/~pagrp/alumni.html) · [原档 2](https://artsci.tamu.edu/chemistry/contact/profiles/dong-hee-son.html)
 - 博士后研究者：[[人员 - Georgia Tech - Vida Jamali - b7e4acf1|Vida Jamali]]。[来源](https://vidajamali.github.io/cv.pdf)
 - 博士后课题组成员：[[人员 - Arizona State - Jeffery Yarger - 9fb09532|Jeffery Yarger]]。本人履历称 1996–1998 年博士后在 Pines 和 Alivisatos 实验室，正式个人导师职衔待核。[本人履历](https://yarger.blog/about/)
 - 博士生：[[人员 - UIUC - Yingjie Zhang - 6707f27e|Yingjie Zhang]]。[来源](https://zhang.matse.illinois.edu/files/2018/12/YZhang-CV-Dec-2018.pdf) [原始资料](https://zhang.matse.illinois.edu/files/2018/12/YZhang-CV-Dec-2018.pdf) 证据：本人 CV 的 Berkeley 2015 博士一项列 Salmeron 和 Alivisatos 为 advisors。关系类型可信度：高。

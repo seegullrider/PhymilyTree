@@ -20,7 +20,7 @@
 
 ## 师承
 
-- 博士生候选：[[人员 - Ohio State - Sanjay Krishna - 7290aded|Sanjay Krishna]]。学术树搜索索引提示关系，[原条目](https://academictree-staging.thetransmitter.org/physics/peopleinfo.php?pid=177522)本轮不可读；[Michigan 官方论文清单](https://lsa.umich.edu/appliedphysics/research/dissertations.html)证实其 2001 年博士论文及对应题目，但未列导师；仅为待查线索。
+- 博士生：[[人员 - Ohio State - Sanjay Krishna - 7290aded|Sanjay Krishna]]。学术树搜索索引提示关系，[原条目](https://academictree-staging.thetransmitter.org/physics/peopleinfo.php?pid=177522)本轮不可读；[Michigan 官方论文清单](https://lsa.umich.edu/appliedphysics/research/dissertations.html)证实其 2001 年博士论文及对应题目，但未列导师；仅为待查线索。 Michigan 机构库 Deep Blue 学位论文条目（handle 2027.42/125822）dc.contributor.advisor 逐字 Bhattacharya, Pallab，作者 Krishna, Sanjay，2001，PhD，题名为自组织 In(Ga,Al)As/GaAs 量子点量子限域能级及其在中红外光源与探测器中的应用。以条目 Advisor 栏记为博士导师。 [原档 1](https://hdl.handle.net/2027.42/125822) · [原档 2](https://backend.production.deepblue-documents.lib.umich.edu/server/api/core/items/690c0acc-7531-494d-af01-4349d59806c4)
 
 - 博士阶段共同指导：[[人员 - Wisconsin–Madison - Zhenqiang Ma - b2bb5605|Zhenqiang Ma]]。[Katehi 本人 CV](https://tamu.academia.edu/LindaKatehi/CurriculumVitae) 将 “Zenqian (Jack) Ma” 列为 2001 年博士，并称其与 Bhattacharya 共同指导；[Wisconsin 学校主页](https://engineering.wisc.edu/directory/profile/zhenqiang-ma/) 确认 Zhenqiang (Jack) Ma 为 2001 年 Michigan 电气工程博士及 Wisconsin 教授，昵称、年份及任职相符。CV 姓名拼写有差异；正式论文导师登记待原学位材料确认。
 

@@ -23,7 +23,8 @@
 ## 师承
 
 - 博士候选关系：[[师承人物 - James S. Langer|James S. Langer]]。[来源](https://en.wikipedia.org/wiki/Premala_Chandra) 证据：人物传记将 James S. Langer 列为 UCSB 博士导师，其依据为学术谱系条目；本人简历确认 1988 年 UCSB 博士但未指明导师，仍需论文或本人资料复核；关系类型可信度：中。
-- 核查边界：本人 CV 确认 1988—1990 年 Exxon 博士后，但未列导师。
+- 博士课题组负责人：[[师承人物 - Philip W. Anderson|Philip W. Anderson]]。Chandra 共同署名的 Anderson 传记稿 Author Profiles 栏写她在攻博期间以 visiting student 身份赴 Anderson 凝聚态组。本人 Rutgers CV 列 1987–1988 Princeton Research Visitor。按 Princeton 访问期间的博士课题组负责人记录。 [原档 1](https://arxiv.org/html/2510.20865v1) · [原档 2](https://www.physics.rutgers.edu/~pchandra/premi.pdf)
+- 核查边界：本人 CV 确认 1988—1990 年 Exxon 博士后，但未列导师。 查 UCSB 1988 年学位论文题页和致谢，核正式导师及 Langer 候选。
 
 ## 博士后课题组成员
 
@@ -42,8 +43,10 @@
   - [Chandra, Premala](https://talaga.rutgers.edu/people/faculty-list/faculty-profile/chandra-premala)：Crawled: last month; * Image: Portrait of Premala Chandra ... * Rutgers Physicists, Premala Chandra, Piers Coleman, with Rebecca Flint(now at MIT) have discovered a new form of hidden "hastatic" order in the heavy-fermion compound URu2Si2 #（姓名字符串出现，仍须核对单位时间；关系未判定，可信度未评估）
   - [Faculty](https://physics.rutgers.edu/people/faculty-list)：Crawled: yesterday; * Postdoctoral and Research Associates ... ## Premala Chandra ... pchandra@physics.rutgers.edu ## Girsh Blumberg Information（姓名字符串出现，仍须核对单位时间；关系未判定，可信度未评估）
 - 页面读取失败 [网页](https://access.sas.rutgers.edu/people/faculty-list)：(400) Timeout fetching；待重试。
+- 已读取来源页 [网页](https://arxiv.org/html/2510.20865v1)（2026-11-17T11:26:57.310Z）：Chandra 共同署名的 Anderson 传记在 Author Profiles 栏说明其博士期间访问 Anderson 的 Princeton 凝聚态组。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://physics.rutgers.edu/people/faculty-list)（2026-11-03T04:37:59.090Z）：Henry Rutgers Professor; Board of Governors Professor; Director, Center for Quantum Materials Synthesis We'd like to both keep track of you and keep you informed of what's happening in the Department.（身份及关系仍待核）。
 - 已读取来源页 [网页](https://sites.rutgers.edu/premala-chandra/people/premi-chandra/)（2026-11-11T04:16:49.334Z）：Premi has pursued her studies and her research at Yale, Exxon Research, UC Santa Barbara, Bell Labs, Princeton, NEC Research Institute, Cambridge (UK), CBPF (Rio) and ISSP (U. Tokyo). In 2003 she join（身份及关系仍待核）。
 - 已读取来源页 [网页](https://sites.rutgers.edu/premala-chandra/research/)（2026-11-11T04:30:58.215Z）：Premi’s research interests include frustrated magnetism unconventional superconductivity in dilute polar metals, novel metallic states near quantum phase transitions and more recently light-driven pha（身份及关系仍待核）。
 - 页面读取失败 [网页](https://talaga.rutgers.edu/people/faculty-list/faculty-profile/chandra-premala)：Cache miss；待重试。
+- 已读取来源页 [网页](https://www.physics.rutgers.edu/~pchandra/premi.pdf)（2026-11-17T11:26:57.311Z）：Chandra 本人 CV 确认 1987–1988 Princeton 研究访问。（身份及关系仍待核）。
 <!-- PI-AUTO-SEARCH:END -->

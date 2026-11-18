@@ -25,7 +25,8 @@
 - 博士阶段研究者：[[人员 - Penn State - Lukas Muechler - e7b271bc|Lukas Muechler]]。[来源](https://www.simonsfoundation.org/people/lukas-muechler/) [Princeton 同期报道](https://partnerships.princeton.edu/news/flatiron-institute-and-princeton-researchers-find-electronic-excitations-transform-semimetal)与[DOE 结项原报告](https://www.osti.gov/servlets/purl/1860622)交叉核实博士组属与论文研究；正式导师字段待核。
 - 博士后研究者：[[人员 - Cornell - Robert A. DiStasio Jr - c55a07e9|Robert A. DiStasio Jr.]]。[来源](https://distasio.chem.cornell.edu/documents/DiStasio_CV_08182020.pdf)
 - 博士导师候选：[[师承人物 - Orazio Svelto|Orazio Svelto]]。[来源](https://academictree-staging.thetransmitter.org/mis/peopleinfo.php?pid=71081)
-- 核查边界：学术树仅称 graduate student，是否相当于博士导师待核，暂列候选；[本人履历](https://www.iit.it/documents/20123/2251717/CAR_Roberto_CV.pdf/0edba131-ead9-afee-921d-13c8bc4cece1?t=1668071414658)列 Milan 1973–1974 与 Politecnico di Milano 1975–1976 两段博士后训练，未注明导师。
+- 博士后课题组负责人：[[师承人物 - Sokrates T. Pantelides|Sokrates T. Pantelides]]。Pantelides 的 Vanderbilt 课题组原档在 Post-docs while at IBM 栏列 Roberto Car。Pantelides 履历记 1975–1994 年在 IBM Watson，Car 本人 BioSketch 列 1981–1983 年 IBM Watson Visiting fellow。对应这一任期，按博士后课题组负责人记录。 [原档 1](https://my.vanderbilt.edu/sokratespantelides/groupmembers/) · [原档 2](https://my.vanderbilt.edu/sokratespantelides/cv/) · [原档 3](https://www.iit.it/documents/20123/2251717/CAR_Roberto_CV.pdf/0edba131-ead9-afee-921d-13c8bc4cece1?t=1668071414658)
+- 核查边界：学术树仅称 graduate student，是否相当于博士导师待核，暂列候选；[本人履历](https://www.iit.it/documents/20123/2251717/CAR_Roberto_CV.pdf/0edba131-ead9-afee-921d-13c8bc4cece1?t=1668071414658)列 Milan 1973–1974 与 Politecnico di Milano 1975–1976 两段博士后训练，各自指导者待查；IBM Watson 1981–1983 年 Visiting fellow 阶段已核 Pantelides 组属。 保留 IBM 任用称谓差异，追查该段正式指导及两段 Milan 博士后指导者。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
@@ -42,5 +43,8 @@
 - 已读取来源页 [网页](https://distasio.chem.cornell.edu/documents/DiStasio_CV_08182020.pdf)（2026-11-03T09:04:35.087Z）：(with Annabella Selloni), guest lecturer for graduate-level Advanced Quantum Mechanics (for Roberto Car), guest lecturer Thesis: Local and Canonical Approximations in Møller-Plesset Perturbation Theor（身份及关系仍待核）。
 - 已读取来源页 [网页](https://fi.edu/en/awards/laureates/roberto-car)（2026-11-11T01:18:52.087Z）：Comets are named for famous astronomers like Halley and diseases for famous physicians like Parkinson. In computational quantum mechanics, fame is bestowed on methods, and the famous “Car-Parrinello m（身份及关系仍待核）。
 - 已读取来源页 [网页](https://materials.princeton.edu/people/roberto-car)（2026-11-03T08:58:31.406Z）：Ralph W. *31 Dornte Professor in Chemistry. Professor of Chemistry and the Princeton Materials Institute. * Natural and Engineered Materials for Energy, Environment, and Sustainability（身份及关系仍待核）。
+- 已读取来源页 [网页](https://my.vanderbilt.edu/sokratespantelides/cv/)（2026-11-17T11:26:57.305Z）：Pantelides 履历列 1975–1994 在 IBM T. J. Watson Research Center 物理科学部。（身份及关系仍待核）。
+- 已读取来源页 [网页](https://my.vanderbilt.edu/sokratespantelides/groupmembers/)（2026-11-17T11:26:57.303Z）：Pantelides 课题组原页 Post-docs while at IBM 栏列 Roberto Car。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://s3.amazonaws.com/mirror.facultyinfo.unt.edu/hk0903%2Fpci%2FHYK_CV-2025-08-17-1.pdf)（2026-11-03T09:04:35.087Z）：G. W. Coates, Expeditious Synthesis of Aromatic-Free Piperidinium-Functionalized Polyethylene as Alkaline Anion Exchange Membranes, Chem. Sci. 12, 3898 (2021). Chem. Sci. HOT Article Thesis: First-Pr（身份及关系仍待核）。
+- 已读取来源页 [网页](https://www.iit.it/documents/20123/2251717/CAR_Roberto_CV.pdf/0edba131-ead9-afee-921d-13c8bc4cece1?t=1668071414658)（2026-11-17T11:26:57.306Z）：Car 本人 BioSketch 列 1981–1983 年 IBM Watson Visiting fellow。（身份及关系仍待核）。
 <!-- PI-AUTO-SEARCH:END -->

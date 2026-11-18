@@ -19,7 +19,7 @@
 - 物理和化学系教授，研究阿秒与超快光谱；学校介绍称他在 C. Bradley Moore 指导下完成 Berkeley 博士。 [来源](https://physics.berkeley.edu/people/faculty/stephen-leone) Berkeley 物理系原档列 2002 起 Berkeley 双系教授及 LBNL Chemical Sciences Division Faculty PI，核研究方向为阿秒、超快及软 X 射线光谱。[Berkeley 物理系](https://physics.berkeley.edu/people/faculty/stephen-leone) · [LBNL 个人档](https://ultrafast.lbl.gov/chemical-dynamics/prof-stephen-leone/)
 
 ## 师承
-- 博士后阶段受指导者：[[人员 - Arizona State - Scott G. Sayres - 26490f6a|Scott G. Sayres]]。ASU 院系讲座称其 Berkeley 博后与 Leone 工作，正式导师职衔待核。[来源](https://sms.asu.edu/sites/g/files/litvpz436/files/2023-09/Sayers%20Seminar%20Flyer.pdf)
+- 博士后研究者：[[人员 - Arizona State - Scott G. Sayres - 26490f6a|Scott G. Sayres]]。ASU 院系讲座称其 Berkeley 博后与 Leone 工作，具名指导见本人 CV。[来源](https://sms.asu.edu/sites/g/files/litvpz436/files/2023-09/Sayers%20Seminar%20Flyer.pdf) Sayres 本人 CV 第 1 页在 UC Berkeley 2011 年 5 月至 2014 年 8 月的博士后条目下列 Stephen R. Leone 为 Advisor。 [原档 1](https://search.asu.edu/profile/2492850/cv)
 
 - 博士后阶段研究者：[[人员 - Penn State - Kenneth Knappenberger Jr - 4808bea5|Kenneth Knappenberger Jr.]]。Knappenberger 共著的 2026 年论文作者简介直接写 Berkeley 博后与 Stephen R. Leone 工作，Leone 组 2000 年代校友档列 Ken Knappenberger，Penn State 院系档核身份、任用与研究。正式博后 advisor 职衔待查。 [本人共著论文作者简介](https://pmc.ncbi.nlm.nih.gov/articles/PMC13007029/) · [Leone 组原校友档](https://sites.google.com/berkeley.edu/leonegrp/people/alumni/2000-2009) · [Penn State 院系档](https://science.psu.edu/chem/people/klk260)
 
@@ -37,6 +37,7 @@
 
 - 博士后课题组成员：[[人员 - University of Central Florida - Mihai Vaida - d7717e59|Mihai Vaida]]。UCF 院系确认 Berkeley 博后及同期与 Leone 共同研究，另一组学生论文致谢把 Vaida 置于实验室同事语境。现有材料未见 Vaida 本人或任用档具名博后导师。 [现任院系原档](https://sciences.ucf.edu/physics/person/mihai-vaida/) · [来源 2](https://escholarship.org/content/qt20t4w3x3/qt20t4w3x3.pdf?t=qqtvu8) Leone 实验室 2010–2019 校友原册具名 Mihai Vaida，UCF 物理和实验室履历均列 Berkeley 化学系博士后。两份原档支持 Berkeley 博士后课题组负责人，具名个人监督仍待证据。 [原档 1](https://sites.google.com/berkeley.edu/leonegrp/people/alumni/2010-2019) · [原档 2](https://sciences.ucf.edu/physics/person/mihai-vaida/) · [原档 3](https://sciences.ucf.edu/physics/atto/person/mihai-vaida/)
 
+- 博士后课题组成员：[[人员 - University of Washington, Seattle - Munira Khalil - 46ffc6f0|Munira Khalil]]。Leone 组官网在 2007 年校友栏列 Munira Khalil。UW 化学系履历明确记载她在加入 UW 前，以 Miller Research Fellow 身份在 UC Berkeley 及 LBNL 做博士后。同期研究论文列 Berkeley 和 LBNL 单位，并脚注其后转入 UW 化学系。上述来源支持记录博士后组属，个人指导职衔及具体起止仍待核。Charles Shank 的 Miller 项目接收教师关系独立记录。 [原档 1](https://sites.google.com/berkeley.edu/leonegrp/people/alumni/2000-2009) · [原档 2](https://www.osti.gov/servlets/purl/929700) · [原档 3](https://chem.washington.edu/people/munira-khalil)
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
 

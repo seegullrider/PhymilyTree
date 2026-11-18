@@ -20,9 +20,9 @@
 
 ## 师承
 
-- 博士导师候选：[[师承人物 - Warren S. Warren|Warren S. Warren]]。[来源](https://www.chemistry.ucla.edu/directory/bouchard-louis-s/)
+- 博士导师：[[师承人物 - Warren S. Warren|Warren S. Warren]]。[来源](https://www.chemistry.ucla.edu/directory/bouchard-louis-s/) Princeton 学位目录记录 9943020673506421 对应 Louis-Serge Bouchard（2005 年 Princeton 化学博士），notes_display 明列 “Advisor(s): Warren S. Warren.”。 [原档 1](https://catalog.princeton.edu/catalog/9943020673506421.json)
 - 博士后课题组负责人：[[师承人物 - Alexander Pines|Alexander Pines]]。[来源](https://www.chemistry.ucla.edu/directory/bouchard-louis-s/)
-- 核查边界：UCLA 介绍 Princeton 博士方向及 2002–2005 年与 Warren 多篇论文，Warren 仅列博士导师候选；同页称在 Berkeley Pines 实验室工作，北大讲座资料 https://icqm.pku.edu.cn/docs/20180201150559173740.pdf 确认 Berkeley 博士后。
+- 核查边界：UCLA 介绍 Princeton 博士方向及 2002–2005 年与 Warren 多篇论文，Warren 按 Princeton 馆藏目录 Bouchard 2005 年博士论文记录的 Advisor(s) 栏记博士导师；同页称在 Berkeley Pines 实验室工作，北大讲座资料 https://icqm.pku.edu.cn/docs/20180201150559173740.pdf 确认 Berkeley 博士后。 Bouchard 的 Princeton 论文题名页或致谢可作独立复核（Mudd 馆藏）；Bouchard 本人 CV 的博士栏可作旁证。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
@@ -36,6 +36,7 @@
   - [Bouchard, Louis S. – UCLA](https://www.chemistry.ucla.edu/directory/bouchard-louis-s/)：Crawled: last month; # Bouchard, Louis S. ... Professor Louis Bouchard and his group conduct experimental research in physical & analytical chemistry, materials and bioengineering. ... * 2022 Undergraduate Research Week Faculty Mentor Award（摘要未见完整姓名，须核对；关系未判定，可信度未评估）
   - [Bouchard Lab | UCLA Chemistry & Biochemistry](https://bouchard.chem.ucla.edu/)：Crawled: 3 weeks ago; Louis‐Serge Bouchard, Rahim R. ... EPSS, UCLA ... Contact Louis (lsbouchard@ucla.edu) ... ### Graduate research ... ### Postdoctoral & collaborative work Our people（摘要未见完整姓名，须核对；关系未判定，可信度未评估）
 - 已读取来源页 [网页](https://bouchard.chem.ucla.edu/)（2026-11-03T09:40:15.841Z）：### Innovations in mechanochemical synthesis: Luminescent materials and their applications†doi.org 01 Molecular recognition & physiology Selective molecular recognition, gas exchange in the lung, and （身份及关系仍待核）。
+- 已读取来源页 [网页](https://catalog.princeton.edu/catalog/9943020673506421.json)（2026-11-18T08:14:45.298Z）：Princeton 学位目录记录 9943020673506421 对应 Louis-Serge Bouchard（2005 年 Princeton 化学博士），notes_display 明列 “Advisor(s): Warren S. Warren.”。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://www.chemistry.ucla.edu/directory/bouchard-louis-s/)（2026-11-03T09:39:51.231Z）：* Penczner, S. H.; Kumar, P.; Patel, M.; Bouchard,* L.-S.; Iacopino, D.; Patel, R., Innovations in mechanochemical synthesis: Luminescent materials and their applications – Mater. Today Chem. (2024) D（身份及关系仍待核）。
 - 已读取来源页 [网页](https://www.chemistry.ucla.edu/materials-and-nanoscience/)（2026-11-03T09:40:15.841Z）：The Sletten Group†sletten.chem.ucla.edu exploits the unique properties of fluorinated materials to develop diagnostic and therapeutic technologies. Research within the group encompasses an interdiscip（身份及关系仍待核）。
 <!-- PI-AUTO-SEARCH:END -->

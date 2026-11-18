@@ -19,7 +19,8 @@
 - 博士后经历：本人 CV 列 1985 年 6 月 MIT 博士、同年 9 月起任 Drexel 助理及副教授。后续国外访问与 sabbatical 单列。 [学术经历核对](https://drexel.edu/~/media/Files/engineering/faculty-cv/barsoum-michel.ashx)
 - 同人节点：[[师承人物 - Michel Barsoum|原师承扩展节点]]。
 
-- 核查边界：查 MIT 博士论文目录及导师；本人 CV 载同年直接任教，早期履历保留精确月份，独立博后暂未找到
+- 博士导师：[[师承人物 - Harry L. Tuller|Harry L. Tuller]]。Tuller 在 MS&T24 的 Michel Barsoum 纪念专场所写会议摘要自称 co-PhD thesis advisor；其提到的 MIT 博士经历、Drexel 教职及 MAX 相方向与 Barsoum 本人学术履历相符。 [原档 1](https://programmaster.org/PM/PM.nsf/ApprovedAbstracts/F7DAE9B39EC043EC85258B1B000158D7?OpenDocument=) · [原档 2](https://drexel.edu/~/media/Files/engineering/faculty-cv/barsoum-michel.ashx)
+- 核查边界：博士导师已由 Tuller 本人的 MS&T24 会议摘要确认（co-PhD thesis advisor），MIT 论文原卷另核；本人 CV 载同年直接任教，早期履历保留精确月份，独立博后暂未找到 追查 MIT 1985 年论文签署页，核其他共同导师。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
@@ -33,6 +34,7 @@
   - [Microsoft Word - Surojit Gupta - NSF Short Resume](https://www.sigmaxi.org/docs/default-source/about/bios/2020-elections/surojit-gupta---nsf-short-resume.pdf)：Published: 6.4 years ago; Barsoum and C.W. ... Ph.D Thesis Advisor: Prof. Michel W. Barsoum, Dept. of Materials Science and Engineering, Drexel University. ... Postdoctoral Advisors: Profs. 1. Dr. C. Tang, Department of Mechanical Engineeri（姓名字符串出现，仍须核对单位时间；关系未判定，可信度未评估）
 - 已读取来源页 [网页](https://drexel.edu/engineering/about/faculty-staff/B/barsoum-michel/)（2026-11-12T18:31:41.876Z）：Drexel 材料系杰出教授，Layered Solids 课题组，MAX 相及衍生材料。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://drexel.edu/~/media/Files/engineering/faculty-cv/barsoum-michel.ashx)（2026-11-12T18:31:41.876Z）：本人 CV 列 MIT 1985 年 6 月陶瓷博士，同年 9 月 Drexel 任用。（身份及关系仍待核）。
+- 已读取来源页 [网页](https://programmaster.org/PM/PM.nsf/ApprovedAbstracts/F7DAE9B39EC043EC85258B1B000158D7?OpenDocument=)（2026-11-17T02:08:58.994Z）：MS&T24 原始会议摘要的作者 Harry L. Tuller 自述是 Barsoum 在 MIT 的共同博士论文导师。（身份及关系仍待核）。
 - 页面读取失败 [网页](https://research.coe.drexel.edu/mse/layeredsolids/pub2/)：(400) Timeout fetching；待重试。
 - 页面读取失败 [网页](https://www.sigmaxi.org/docs/default-source/about/bios/2020-elections/surojit-gupta---nsf-short-resume.pdf)：Cache miss；待重试。
 - 已读取来源页 [网页](https://www.sigmaxi.org/docs/default-source/about/bios/2021-elections/gupta_CV)（2026-11-12T18:32:14.144Z）：1. Ph.D Thesis Advisor: Prof. Michel W. Barsoum, Dept. of Materials Science and Engineering, Drexel University. 2. Postdoctoral Advisors: Profs. Gary L. Messing, and David J. Green, Dept. of Materials（身份及关系仍待核）。

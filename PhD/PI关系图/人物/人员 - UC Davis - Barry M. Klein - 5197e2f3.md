@@ -20,8 +20,8 @@
 
 ## 师承
 
-- 博士导师候选（低可信度，待核）：[[师承人物 - Joseph L. Birman|Joseph L. Birman]]。[CCNY 系通讯](https://www.ccny.cuny.edu/physics/department-physics-newsletter-vol-10-2016-2017)记录 Klein 在 Birman 纪念会报告中提及与 Birman 的研究，也记录 Birman 1962–1974 在 NYU 任教；[APS 简介](https://higherlogicdownload.s3.amazonaws.com/APS/418e9042-a445-4ad2-bd2d-c8d7527018c8/UploadedImages/Documents/spring1994.pdf)列 Klein 1969 年 NYU 博士。两人研究关联及时间相符，但通讯将参会者笼统称作学生、博后和同事，未指出 Klein 属于哪一类，不能据此确认为博士导师。关系类型可信度：低。
-- 核查边界：APS 简介确认 1969 NYU 博士和 1969–1971 Naval Research Laboratory 博后，但未给师长姓名，需继续追查。 [APS 简介](https://higherlogicdownload.s3.amazonaws.com/APS/418e9042-a445-4ad2-bd2d-c8d7527018c8/UploadedImages/Documents/spring1994.pdf)
+- 博士阶段研究师长：[[师承人物 - Joseph L. Birman|Joseph L. Birman]]。[CCNY 系通讯](https://www.ccny.cuny.edu/physics/department-physics-newsletter-vol-10-2016-2017)记录 Klein 在 Birman 纪念会报告中提及与 Birman 的研究，也记录 Birman 1962–1974 在 NYU 任教；[APS 简介](https://higherlogicdownload.s3.amazonaws.com/APS/418e9042-a445-4ad2-bd2d-c8d7527018c8/UploadedImages/Documents/spring1994.pdf)列 Klein 1969 年 NYU 博士。Klein 的原始报告摘要明确其 NYU 博士研究阶段与 Birman 的师生关系，按博士阶段研究师长记录。 Klein 本人在 Birman 纪念研讨会报告摘要中称其 1969 年 NYU 的博士研究与 Joe Birman 一同开展，并自称 Birman 的学生；CCNY 校方节目报道核对演讲者与题名。据此记博士阶段研究师长。 [原档 1](https://concernedscientists.org/2017/10/memorial-service-planned-for-long-time-devoted-ccs-member-dr-joseph-birman/) · [原档 2](https://www.ccny.cuny.edu/physics/department-physics-newsletter-vol-10-2016-2017)
+- 核查边界：APS 简介确认 1969 NYU 博士和 1969–1971 Naval Research Laboratory 博后，任用记录未列指导者。Klein 本人报告摘要证实博士阶段与 Birman 的师生关系。继续查 NYU 的正式导师职衔与 NRL 博后指导者。 [APS 简介](https://higherlogicdownload.s3.amazonaws.com/APS/418e9042-a445-4ad2-bd2d-c8d7527018c8/UploadedImages/Documents/spring1994.pdf) 继续查 NYU 1969 学位论文署名页及 NRL 博士后指导者。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
@@ -32,5 +32,7 @@
   - [Women in Biomedical Research: Best Practices for Sustaining Career Success | Meeting Proceedings | 3/4/2008](https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3000-PURL-gpo23033/pdf/GOVPUB-HE20_3000-PURL-gpo23033.pdf)：Published: 17.8 years ago; Crawled: 4 months ago; **Barry M. ... Klein was appointed Vice Chancellor for Research at UC Davis, his current position. ... He has been a member of numerous NSF, DoD, and DoE and DoE Laboratory committees includ（姓名字符串出现，仍须核对单位时间；关系未判定，可信度未评估）
 - 检索类型：博士及博士后；检索时间：2026-11-03T04:33:45.446Z
   - [Women in Biomedical Research: Best Practices for Sustaining Career Success | Meeting Proceedings | 3/4/2008](https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3000-PURL-gpo23033/pdf/GOVPUB-HE20_3000-PURL-gpo23033.pdf)：Published: 17.8 years ago; Crawled: 4 months ago; **Barry M. ... Klein was appointed Vice Chancellor for Research at UC Davis, his current position. ... Lakoski is the Associate Vice Chancellor for Academic Career Development and the Foundi（姓名字符串出现，仍须核对单位时间；关系未判定，可信度未评估）
+- 已读取来源页 [网页](https://concernedscientists.org/2017/10/memorial-service-planned-for-long-time-devoted-ccs-member-dr-joseph-birman/)（2026-11-17T10:27:30.094Z）：Klein 报告明确谈及其 1969 年 NYU 博士研究与 Joe Birman 及本人学生身份。（身份及关系仍待核）。
+- 已读取来源页 [网页](https://www.ccny.cuny.edu/physics/department-physics-newsletter-vol-10-2016-2017)（2026-11-17T10:27:30.095Z）：CCNY 校方报道核实 Barry Klein 的 UC Davis 身份及纪念报告题名。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://www.govinfo.gov/content/pkg/GOVPUB-HE20_3000-PURL-gpo23033/pdf/GOVPUB-HE20_3000-PURL-gpo23033.pdf)（2026-11-03T04:33:51.300Z）：the u.s. military biomedical services have also instituted successful programs to promote women to officer positions. through training opportunities, mentorship programs, resources addressing team bu（身份及关系仍待核）。
 <!-- PI-AUTO-SEARCH:END -->

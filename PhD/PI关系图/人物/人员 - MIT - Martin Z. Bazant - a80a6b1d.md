@@ -24,7 +24,8 @@
 - 博士生：[[人员 - UCLA - Pedro de Souza - 9ac3852d|Pedro de Souza]]。[来源](https://www.desouza-lab.com/people) 证据：本人 UCLA 课题组简介明确 MIT 博士 under the supervision of Martin Bazant。关系类型可信度：高。 [UCLA 本人组原档](https://www.desouza-lab.com/people)明确区分 MIT 博士指导与后续 Princeton 博后。
 - 博士生：[[人员 - Princeton - Dimitrios Fraggedakis - 02570b59|Dimitrios Fraggedakis]]。[来源](https://cheme.mit.edu/wp-content/uploads/2021/04/Fraggedakis_Abstract_MIT_Thesis.pdf)
 - 博士导师：[[人员 - Harvard - Efthimios Kaxiras - 186f1527|Efthimios Kaxiras]]。[来源](https://ilpstex.mit.edu/content/faculty-profiles/martin-z-bazant) [Harvard 学位论文目录](https://www.physics.harvard.edu/academics/phds1971-2000)列 Kaxiras，[Bazant 本人 MIT 学术谱系](https://web.mit.edu/bazant/www/info/)明确列 Efthimios Kaxiras 与 Harvard 1997 博士。
-- 核查边界：Harvard 和 MIT 两段博士后经历有本人网页；导师姓名待核，不因同校和合著推断。
+- 博士后阶段研究师长：[[人员 - Princeton - Howard A. Stone - 419add8c|Howard A. Stone]]。MIT 技术许可办公室原档称 Bazant 在 Harvard 工程与应用科学博士后期间受 Howard A. Stone 指导，使用 under the guidance of；本人 MIT 履历确认 1997–1998 Harvard 博后。 [原档 1](https://tlo.mit.edu/industry-entrepreneurs/researchers/martin-bazant) · [原档 2](https://web.mit.edu/bazant/www/info/index.html)
+- 核查边界：Harvard 和 MIT 两段博士后经历有本人网页；Harvard 阶段的博士后指导者已由 MIT 技术许可办公室研究者页具名 Howard A. Stone（under the guidance of）；MIT 阶段导师姓名待核，不因同校和合著推断。 查 Harvard 博士后正式任命称谓，另查 1998–1999 年 MIT 博士后指导者。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
@@ -42,7 +43,9 @@
 - 已读取来源页 [网页](https://ilpstex.mit.edu/content/faculty-profiles/martin-z-bazant)（2026-11-03T09:20:52.988Z）：Martin Z. Bazant received both the B.S. degree in mathematics and physics (1992) and the M.S. degree in applied mathematics (1993) from the University of Arizona. He completed the Ph.D. in condensed m（身份及关系仍待核）。
 - 页面读取失败 [网页](https://math.mit.edu/directory/profile.html?pid=16)：网页无可提取正文或受访问限制；待重试。
 - 页面读取失败 [网页](https://math.mit.edu/~bazant/papers/papers/pdf/file_name.pdf)：Internal Error () URL [网址略] is not accessible via this tool.；待重试。
+- 已读取来源页 [网页](https://tlo.mit.edu/industry-entrepreneurs/researchers/martin-bazant)（2026-11-17T03:19:27.092Z）：MIT 技术许可办公室原档称 Bazant 于 Harvard 博后阶段受 Howard A. Stone 的 guidance。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://web.mit.edu/bazant/www/info/)（2026-11-10T01:54:56.877Z）：本人 MIT 页列博士谱系与 Harvard 1997 学位。（身份及关系仍待核）。
+- 已读取来源页 [网页](https://web.mit.edu/bazant/www/info/index.html)（2026-11-17T03:19:27.096Z）：Bazant 本人主页分列 Harvard 1997–1998 与 MIT 1998–1999 两段博士后经历。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://www.mit.edu/~bazant/group/)（2026-11-11T08:40:54.628Z）：* Thesis: Advection-Diffusion-Limited Aggregation and Dense Granular Flow * Thesis: Asymptotic Analysis of Extreme Electrochemical Transport. * Thesis: Experimental Investigation of Induced-Charge Ele（身份及关系仍待核）。
 - 已读取来源页 [网页](https://www.physics.harvard.edu/academics/phds1971-2000)（2026-11-10T01:54:56.877Z）：Harvard 学位论文目录列 Bazant 与 Kaxiras。（身份及关系仍待核）。
 <!-- PI-AUTO-SEARCH:END -->

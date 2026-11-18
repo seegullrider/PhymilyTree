@@ -7,7 +7,7 @@
 
 - 毕业后阶段课题组候选成员：[[人员 - UC Berkeley - Ali Javey - c65173eb|Ali Javey]]。[Lieber 组校友表](https://cmlresearch.org/team/)列 Javey、Berkeley EECS；[Javey 本人 CV](https://nano.eecs.berkeley.edu/Javey_CV.pdf)列其 Stanford 博士毕业并于 2005–2006 年任 Harvard Junior Fellow。校友表未区分阶段或职位，正式导师未确认。
 
-- 博士后阶段课题组候选成员：[[人员 - University of Minnesota - C. Daniel Frisbie - ab8c58db|C. Daniel Frisbie]]。[组校友名单](https://cmlresearch.org/team/)列原组员，[本人讲座简介](https://www.chem.pku.edu.cn/docs/2020-11/20201130172456501582.pdf)列 Harvard 博后；组属所属阶段尚需确认，正式指导关系待核。
+- 博士后课题组成员：[[人员 - University of Minnesota - C. Daniel Frisbie - ab8c58db|C. Daniel Frisbie]]。[组校友名单](https://cmlresearch.org/team/)列原组员，[本人讲座简介](https://www.chem.pku.edu.cn/docs/2020-11/20201130172456501582.pdf)列 Harvard 博后；组属阶段已按 Frisbie 的 Harvard 博后经历与 Lieber 组名单核定；无 advisor 称谓，记博士后课题组成员，正式指导关系待核。 Lieber 本人课题组校友名录具名 C. Daniel Frisbie，并列现任 Minnesota CEMS。Cambridge 现职简介给出 MIT 1993 博士和 Harvard 化学 NSF 博士后。MIT 1994 报道具名 Frisbie 为 Harvard 化学家，并记 Lieber 组参与同期合作。三份原档共同支持博士后组属，个人导师职衔仍待核。 [原档 1](https://cmlresearch.org/team/) · [原档 2](https://news.mit.edu/1994/molecular-1026) · [原档 3](https://sirringhaus.oe.phy.cam.ac.uk/staff/prof-daniel-frisbie)
 
 - 博士阶段研究者：[[人员 - University of Maryland, College Park - Min Ouyang - dbf572af|Min Ouyang]]。[来源](https://citeseerx.ist.psu.edu/document?doi=631dfdc92622d3fdf272ccd165ea55df453b5e98&repid=rep1&type=pdf) 证据：本人 2002 年论文作者简介写 Harvard 2001 年物理化学博士 under the supervision of Charles Lieber；[受访院校简介](https://www.bit.edu.cn/xww/xwtt/a72634.htm)亦称师从 Lieber，但正式论文导师措辞待原学位论文确认；关系类型可信度：高。
 - 博士生：[[人员 - UC Irvine - SungWoo Nam - f6689256|SungWoo Nam]]。[来源](https://mechse.illinois.edu/news/nam-finding-flexibility-academia-electronics) 证据：Illinois 工程学院报道明确称 Harvard 博士研究期间的 advisor 为 Charles Lieber。；关系类型可信度：高。

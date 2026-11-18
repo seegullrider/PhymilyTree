@@ -25,12 +25,13 @@
 
 - 博士后所在课题组：[[人员 - MIT - Senthil Todadri - 781c3259|Senthil Todadri]]。[来源](https://senthil.mit.edu/files/2025/07/senthilcv0725.pdf)
 - 博士后所在课题组：[[人员 - MIT - Liang Fu - 7f696124|Liang Fu]]。[来源](https://senthil.mit.edu/files/2025/07/senthilcv0725.pdf)
-- 核查边界：Senthil CV 将其列作与 Liang Fu 共同的博士后；具体正式导师称谓待核。Princeton 博士时与 Shivaji Sondhi 多次合作，属导师候选，待学位原始记录确认。
+- 博士导师：[[人员 - Princeton - David Huse - 2f101a39|David A. Huse]]。Princeton 图书馆博士论文目录条目 99126152041406421，作者 Trithep Devakul，题名 Subdimensional Topological Quantum Phases of Matter，其 Notes 字段明确为 Advisor: Huse, David A.。 [原档 1](https://catalog.princeton.edu/catalog/99126152041406421.json)
+- 核查边界：Senthil CV 将其列作与 Liang Fu 共同的博士后；具体正式导师称谓待核。Princeton 图书馆论文目录明确列 David A. Huse 为导师；Sondhi 的博士期间研究合作仍是候选线索。 补 Princeton 论文签署页及致谢，核实 Sondhi 的具体角色。
 
 ## 博士阶段候选线索
 
-- 待核 [[人员 - Princeton - Shivaji Sondhi（Princeton 荣休） - fa1e3f70|Shivaji Sondhi]]：博士期间在 Princeton 与 Sondhi 合作多篇论文；该线索不足以确定学位导师，待论文记录验证。 [来源](https://profiles.stanford.edu/trithep-devakul?tab=bio) · [[师承候选线索索引|候选索引]]。
-- [Princeton 2020 答辩图片目录](https://phy.princeton.edu/fpo-gallery-year)的图片文字列 Huse、Pufu 和 Wu 为 Devakul 的答辩委员会成员；目录未给出各成员导师身份，也不能据此排除其他指导者。其[答辩公告](https://phy.princeton.edu/events/fpo-trithep-devakul-subdimensional-topological-quantum-phases-matter)提供论文题目，但未列导师。继续查学位论文及指导记录。
+- 待核 [[人员 - Princeton - Shivaji Sondhi（Princeton 荣休） - fa1e3f70|Shivaji Sondhi]]：博士期间在 Princeton 与 Sondhi 合作多篇论文；Princeton 图书馆目录明确列 Huse 为导师；Sondhi 的角色仍待论文签署页或致谢核实。 [来源](https://profiles.stanford.edu/trithep-devakul?tab=bio) · [[师承候选线索索引|候选索引]]。
+- [Princeton 2020 答辩图片目录](https://phy.princeton.edu/fpo-gallery-year)的图片文字列 Huse、Pufu 和 Wu 为 Devakul 的答辩委员会成员；目录未给出各成员导师身份，也不能据此排除其他指导者。其[答辩公告](https://phy.princeton.edu/events/fpo-trithep-devakul-subdimensional-topological-quantum-phases-matter)提供论文题目，但未列导师。Princeton 图书馆目录的 ProQuest 学位论文条目已把 Huse 列为 Advisor（见师承段），其余委员会成员的角色不变。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
@@ -44,6 +45,7 @@
   - [Trithep Devakul's Profile | Stanford Profiles](https://profiles.stanford.edu/trithep-devakul)：Crawled: 6 days ago; * PhD, Princeton University, Physics (2021) ... * Senior Thesis Research ... ### Stanford Advisees ... * Postdoctoral Faculty Sponsor ... * Doctoral Dissertation Advisor (AC) ... Science advances Devakul, T., Ledwith, P（姓名字符串出现，仍须核对单位时间；关系未判定，可信度未评估）
   - [Trithep Devakul](https://cap.stanford.edu/profiles/frdActionServlet?choiceId=printerprofile&profileId=309728&profileversion=full)：Published: 4 months ago; http://cap.stanford.edu/profiles/Trithep_Devakul/ ... Postdoctoral Faculty Sponsor ... Doctoral Dissertation Advisor (AC) Trithep Devakul http://cap.stanford.edu/profiles/Trithep_Devakul/ 2023-24（姓名字符串出现，仍须核对单位时间；关系未判定，可信度未评估）
 - 已读取来源页 [网页](https://cap.stanford.edu/profiles/frdActionServlet?choiceId=printerprofile&profileId=309728&profileversion=full)（2026-11-11T19:49:57.087Z）：Extension of the eigenstate thermalization hypothesis to nonequilibrium steady states PHYSICAL REVIEW B Xia, L., de la Barrera, S. C., Uri, A., Sharpe, A., Kwan, Y. H., Zhu, Z., Watanabe, K., Taniguch（身份及关系仍待核）。
+- 已读取来源页 [网页](https://catalog.princeton.edu/catalog/99126152041406421.json)（2026-11-17T11:26:57.309Z）：Princeton 图书馆论文条目 99126152041406421 的 Notes 原字段写 Advisor: Huse, David A.。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://physics.stanford.edu/people/trithep-devakul)（2026-11-03T09:13:13.988Z）：I specialize in theoretical condensed matter physics. My research focuses on emergent quantum phases of matter, particularly those arising from the interplay of topology with electronic interactions a（身份及关系仍待核）。
 - 已读取来源页 [网页](https://profiles.stanford.edu/trithep-devakul)（2026-11-03T09:13:26.033Z）：We propose magic-angle helical trilayer graphene (HTG), a helical structure featuring identical rotation angles between three consecutive layers of graphene, as a unique and experimentally accessible （身份及关系仍待核）。
 - 已读取来源页 [网页](https://sitp.stanford.edu/people/trithep-devakul)（2026-11-03T09:13:13.986Z）：I specialize in theoretical condensed matter physics. My research focuses on emergent quantum phases of matter, particularly those arising from the interplay of topology with electronic interactions a（身份及关系仍待核）。

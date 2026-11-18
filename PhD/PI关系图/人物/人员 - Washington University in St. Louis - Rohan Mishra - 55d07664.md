@@ -21,10 +21,11 @@
 ## 师承
 
 - 博士导师：[[人员 - Ohio State - Wolfgang Windl - f32a81db|Wolfgang Windl]]。[来源](https://etd.ohiolink.edu/acprod/odb_etd/ws/send_file/send?accession=osu1345489862&disposition=inline) 证据：2012 年 Ohio State 博士论文封面明确列 Professor Wolfgang Windl, Adviser；论文致谢亦称其为 adviser。；关系类型可信度：高。
-- 博士后课题组负责人：[[师承人物 - Sokrates T. Pantelides|Sokrates T. Pantelides]]。[Vanderbilt 课题组成员名录](https://my.dev.vanderbilt.edu/sokratespantelides/groupmembers/)将 Rohan Mishra 列于 Vanderbilt/ORNL 原博士后及研究人员名单；[WashU 本人页](https://engineering.washu.edu/faculty/Rohan-Mishra.html)确认其为 Vanderbilt 派驻 ORNL 博士后。名录误写学校为 University of Washington in St. Louis；结合姓名、单位和博士后经历核对为此人。此证据确认课题组关系，未写正式 advisor。
-- 博士后候选关系：[[师承人物 - Albina Y. Borisevich|Albina Y. Borisevich]]。ORNL 履历搜索索引列其与 Pantelides 共同关联 Rohan Mishra，但[原始履历](https://www.ornl.gov/sites/default/files/2024-01/borisevich_CVshort_Jan2024.pdf)本轮返回 404，无法核读具体角色；仅保留待核候选，不能确认为正式导师。
+- 博士后阶段研究师长：[[师承人物 - Sokrates T. Pantelides|Sokrates T. Pantelides]]。[Vanderbilt 课题组成员名录](https://my.dev.vanderbilt.edu/sokratespantelides/groupmembers/)将 Rohan Mishra 列于 Vanderbilt/ORNL 原博士后及研究人员名单；[WashU 本人页](https://engineering.washu.edu/faculty/Rohan-Mishra.html)确认其为 Vanderbilt 派驻 ORNL 博士后。名录误写学校为 University of Washington in St. Louis；结合姓名、单位和博士后经历核对为此人。此证据确认课题组关系，未写正式 advisor。 Mishra 本人履历明确将 Pantelides 列入 2012–2015 博士后 Mentors 栏；已有 Vanderbilt 名录继续佐证课题组归属。 [原档 1](https://mcube.wustl.edu/people/rohan-mishra/) · [原档 2](https://my.dev.vanderbilt.edu/sokratespantelides/groupmembers/)
+- 博士后阶段研究师长：[[师承人物 - Albina Y. Borisevich|Albina Y. Borisevich]]。ORNL 履历搜索索引列其与 Pantelides 共同关联 Rohan Mishra，但[原始履历](https://www.ornl.gov/sites/default/files/2024-01/borisevich_CVshort_Jan2024.pdf)本轮返回 404，无法核读具体角色；该履历索引是早期线索。现以本人课题组履历的 Mentors 栏核实阶段指导。 Mishra 本人 WashU 课题组履历在 2012–2015 Vanderbilt 博士后／ORNL 客座研究条目下，Mentors 栏具名 Pantelides、Borisevich、Pennycook。Borisevich 按博士后阶段研究师长登记。 [原档 1](https://mcube.wustl.edu/people/rohan-mishra/)
 - 复核原档：WashU 工学院档复核副教授任用及计算材料与原子尺度电子显微研究，分列 Vanderbilt／ORNL 博后和 guest scientist。 [原档 1](https://engineering.washu.edu/faculty/Rohan-Mishra.html)
-- 核查边界：Windl 为博士论文明确 adviser；Pantelides 为博士后课题组负责人，正式 advisor 职衔及 Borisevich 角色须查原始证据。 查 ORNL 及 Vanderbilt 博后个人指导，保留 Pantelides 组属和 Borisevich 候选。
+- 博士后阶段研究师长：[[师承人物 - Stephen J. Pennycook|Stephen J. Pennycook]]。Mishra 本人履历将 Steve Pennycook 列入 2012–2015 博士后 Mentors 栏；Pantelides 原刊回顾具名 Stephen J. Pennycook 及其 ORNL 电子显微镜组，核对姓名与机构背景。 [原档 1](https://mcube.wustl.edu/people/rohan-mishra/) · [原档 2](https://www.cpsjournals.cn/en/article/doi/10.1088/1674-1056/ad8ece)
+- 核查边界：Windl 为博士论文明确 adviser；本人履历 Mentors 栏具名 Pantelides、Borisevich 和 Pennycook，记博士后阶段研究师长。Vanderbilt 名录同时佐证 Pantelides 的组属。 可补查 Vanderbilt 与 ORNL 任命档中的正式指导职衔。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
@@ -42,5 +43,7 @@
 - 页面读取失败 [网页](https://climate-curriculum-database.wustl.edu/people/rohan-mishra/)：(502) Bad Gateway；待重试。
 - 已读取来源页 [网页](https://engineering.washu.edu/faculty/Rohan-Mishra.html)（2026-11-12T00:21:57.563Z）：Rohan Mishra’s research interest is to develop quantitative structure-property correlations in materials starting from the atomic scale. To develop such correlations, his group synergistically combine（身份及关系仍待核）。
 - 页面读取失败 [网页](https://mcube.wustl.edu/members-2/)：(400) Timeout fetching；待重试。
+- 已读取来源页 [网页](https://mcube.wustl.edu/people/rohan-mishra/)（2026-11-16T17:59:29.861Z）：Mishra 本人课题组页把 Pantelides、Borisevich、Pennycook 并列于博士后经历的 Mentors 栏。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://wustl-preview.courseleaf.com/about/prior/Bulletin_2023-24_Grad_Arts_Sciences.pdf)（2026-11-03T06:57:15.012Z）：Index ..................................................................................................................................................................................................（身份及关系仍待核）。
+- 已读取来源页 [网页](https://www.cpsjournals.cn/en/article/doi/10.1088/1674-1056/ad8ece)（2026-11-16T17:59:29.862Z）：Pantelides 的本人原刊回顾核实 ORNL 电子显微镜组负责人的姓名和研究环境。（身份及关系仍待核）。
 <!-- PI-AUTO-SEARCH:END -->

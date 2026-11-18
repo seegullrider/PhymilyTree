@@ -20,7 +20,7 @@
 
 ## 师承
 
-- 博士候选学生：[[人员 - Stony Brook - Balaji Raghothamachar - 4f7d5801|Balaji Raghothamachar]]。Stony Brook 机构档列材料科学与工程 Senior Research Scientist 及 SiC 生长中心 CoPI。Maryland 托管 2014 年报告者履历列 Stony Brook 2001 年毕业，时任与 Michael Dudley 共事的 Senior Research Scientist 及 BNL 束线研究员。该履历与当前课题支持低可信博士导师候选，博士论文签署页待查；2014 年任职另列研究岗位，博士后经历待查。 [Stony Brook ResearchConnect](https://researchconnect.stonybrook.edu/en/persons/balaji-raghothamachar/) · [Maryland 托管 2014 报告者履历](https://www.nanocenter.umd.edu/events/wbg/program/WBG%202014%20Program.pdf)
+- 博士课题组成员：[[人员 - Stony Brook - Balaji Raghothamachar - 4f7d5801|Balaji Raghothamachar]]。Stony Brook 机构档列材料科学与工程 Senior Research Scientist 及 SiC 生长中心 CoPI。Maryland 托管 2014 年报告者履历列 Stony Brook 2001 年毕业，时任与 Michael Dudley 共事的 Senior Research Scientist 及 BNL 束线研究员。上述为早期线索；Dudley 组页实际列其博士研究，正式导师职衔待论文署名页；2014 年任职另列研究岗位，博士后经历待查。 [Stony Brook ResearchConnect](https://researchconnect.stonybrook.edu/en/persons/balaji-raghothamachar/) · [Maryland 托管 2014 报告者履历](https://www.nanocenter.umd.edu/events/wbg/program/WBG%202014%20Program.pdf) 已保存的 Stony Brook 实验室官方名单读取回执列 Michael Dudley 为 PI，Previous PhD Students 栏列 Balaji Raghothamachar、2001 年和同步辐射 X 射线形貌学位论文题名。据此核博士组属。 [原档 1](https://you.stonybrook.edu/xraycharacterization/people/)
 
 - 博士导师：[[师承人物 - D. K. Bowen|D. K. Bowen]]。[来源](https://cpb-us-e1.wpmucdn.com/you.stonybrook.edu/dist/a/4368/files/2020/04/Dudley-CV-April-27-2020.pdf)
 - 博士后阶段研究师长：[[师承人物 - J. N. Sherwood|J. N. Sherwood]]。[来源](https://cpb-us-e1.wpmucdn.com/you.stonybrook.edu/dist/a/4368/files/2020/04/Dudley-CV-April-27-2020.pdf)

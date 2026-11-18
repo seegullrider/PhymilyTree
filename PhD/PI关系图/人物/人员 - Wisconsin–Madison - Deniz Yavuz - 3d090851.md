@@ -12,12 +12,12 @@
 
 ## 师承
 
-- 博士导师候选：[[师承人物 - Stephen E. Harris|Stephen E. Harris]]。Stanford 2002 非线性光学课程资料列 Harris 为授课者、Yavuz 为 Chief Grader。Stanford 托管同期光学原稿显示两人在同题实验合作。博士论文签署及组属待核。 [来源 1](https://web.stanford.edu/class/ee346/Course%20Information/Class%20Info.pdf) · [来源 2](https://web.stanford.edu/~seharris/PublicationsLinksPDFs/2000/209.pdf)
+- 博士导师：[[师承人物 - Stephen E. Harris|Stephen E. Harris]]。Stanford 2002 非线性光学课程资料列 Harris 为授课者、Yavuz 为 Chief Grader。Stanford 托管同期光学原稿显示两人在同题实验合作。上述为早期线索；Stanford 编目已明确论文指导。 [来源 1](https://web.stanford.edu/class/ee346/Course%20Information/Class%20Info.pdf) · [来源 2](https://web.stanford.edu/~seharris/PublicationsLinksPDFs/2000/209.pdf) Stanford 图书馆 SearchWorks 编目先前读取回执保存条目 5684428，作者 Deniz D. Yavuz、Stanford 电气工程博士论文，明确列 Stephen Ernest Harris 为 primary advisor。编目的发表字段 2003、版权字段 2004 分列。 [原档 1](https://searchworks.stanford.edu/catalog.json?q=%22A+raman+approach+for+generating+ultrashort+pulses%22&search_field=search&per_page=3) · [原档 2](https://searchworks.stanford.edu/catalog.json?q=Yavuz+Deniz+dissertation&search_field=search&per_page=5)
 - 博士后导师：[[人员 - Wisconsin–Madison - Thad G. Walker - 489d21bd|Thad G. Walker]]。Walker 的本人 CV 在第 21 页 Post-doctoral Advisees 栏中具名 Deniz Yavuz，并载 Stanford 博士 2003 年。QPAL 原档核其 2004–2006 Wisconsin 博后阶段。 [来源 1](https://old-atoms.physics.wisc.edu/people/Thadstuff/cv05-12.pdf#page=21) · [来源 2](https://qpal.physics.wisc.edu/people.html)
 - 博士后课题组负责人：[[人员 - Wisconsin–Madison - Mark Saffman - aba82ddc|Mark Saffman]]。Saffman 的 QPAL 原名录在 Former PostDocs 栏具名 Yavuz 的 2004–2006 阶段。具名共同博后导师职衔待核。 [来源 1](https://qpal.physics.wisc.edu/people.html) · [来源 2](https://www.physics.wisc.edu/directory/saffman-mark/)
 - 博士后经历：Stanford 组同期作者说明其为 Wisconsin 博士后。QPAL 原名录列 2004–2006 博后，Walker 本人 CV 将其列在博士后指导名下。 [学术经历核对](https://old-atoms.physics.wisc.edu/people/Thadstuff/cv05-12.pdf) · [来源 2](https://qpal.physics.wisc.edu/people.html) · [来源 3](https://web.stanford.edu/~seharris/PublicationsLinksPDFs/2000/209.pdf)
 
-- 核查边界：追 Stanford 学位目录与原卷签署，核博士授位和书目年份。Saffman 的正式博后共同指导称谓待查。
+- 核查边界：Stanford 学位编目已核博士导师；授位年份和原卷签署页待补。Saffman 的正式博后共同指导称谓待查。 Stanford 论文 PDF 扉页的 Principal Adviser 签署栏可作最终复核（非必需）；Saffman 的正式博后共同指导称谓待查。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
@@ -34,6 +34,7 @@
 - 已读取来源页 [网页](https://jakeuribe.com/research)（2026-11-11T14:39:13.428Z）：University of Wisconsin–Madison · Advisor: Prof. Deniz Yavuz University of Wisconsin–Madison · Advisor: Prof. Mark Saffman（身份及关系仍待核）。
 - 已读取来源页 [网页](https://old-atoms.physics.wisc.edu/people/Thadstuff/cv05-12.pdf)（2026-11-11T14:42:18.583Z）：Walker 本人具名指导名录支持博士后导师。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://qpal.physics.wisc.edu/people.html)（2026-11-11T14:42:18.583Z）：Saffman QPAL 博后组属，与具名指导档交叉。（身份及关系仍待核）。
+- 已读取来源页 [网页](https://searchworks.stanford.edu/catalog.json?q=%22A+raman+approach+for+generating+ultrashort+pulses%22&search_field=search&per_page=3)（2026-11-16T17:59:29.858Z）：Stanford SearchWorks 论文编目 primary advisor 字段具名 Stephen E. Harris。（身份及关系仍待核）。
 - 页面读取失败 [网页](https://web.stanford.edu/group/nqp/jv_files/thesis/hatice-thesis.pdf)：(400) Content length is too large: 11311193；保留博士候选，待可读原页。；需另找可访问的原始来源。
 - 已读取来源页 [网页](https://web.stanford.edu/~seharris/PublicationsLinksPDFs/2000/209.pdf)（2026-11-11T14:42:18.583Z）：Stanford 托管同期原刊核 Wisconsin 博后阶段。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://wqi.wisc.edu/faculty/)（2026-11-12T17:15:56.313Z）：Dr. Ping is as associate professor in MSE and affiliated professor with Chemistry and Physics. The Ping Group develops first-principles many-body theory and open quantum dynamics methods to predict op（身份及关系仍待核）。

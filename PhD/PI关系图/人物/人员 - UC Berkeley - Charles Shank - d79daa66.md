@@ -23,11 +23,12 @@
 - 博士后阶段研究者：[[人员 - University of Washington, Seattle - Munira Khalil - 46ffc6f0|Munira Khalil]]。Berkeley Miller Institute 获奖原册具名 Charles Shank 为 Khalil 的接收教师。历年名册确认 2003–2006，Miller 项目说明接收教师承担指导职责，标具名项目接收导师（博士后阶段研究师长）。MIT 博士论文档列 2004，原档日期分别保留。关系类型可信度：高。 [Miller 获奖原册](https://miller.berkeley.edu/images/newsletters/2003_spring.pdf) · [Miller 历年名册](https://miller.berkeley.edu/images/events/60/MillerProgram60.pdf) · [Miller 项目职责](https://miller.berkeley.edu/fellowship) · [Minnesota 化学系](https://cse.umn.edu/chem/events/professor-munira-khalil-0)
 
 - 博士生：[[人员 - Brown - Daniel Mittleman - 7061f188|Daniel Mittleman]]。[来源](https://vivo.brown.edu/docs/d/dmittlem_cv.pdf?dt=502010191)
-- 核查边界：第三方传记称 1969 年 Berkeley 博士导师为 Steven E. Schwartz；博士学位原始来源及博士后经历待核。
+- 博士导师：[[师承人物 - Steven E. Schwarz|Steven E. Schwarz]]。Berkeley EECS 的 1969 年原始论文目录为 Charles V. Shank 的 Nonlinear Wave Interaction Spectroscopy，Advisors 栏明确写 Steven E. Schwarz。院系履历另核 Berkeley 1969 电气工程博士。 [原档 1](https://www2.eecs.berkeley.edu/Pubs/TechRpts/1969/7172.html) · [原档 2](https://www2.eecs.berkeley.edu/Pubs/Dissertations/Faculty/schwarz.html) · [原档 3](https://physics.berkeley.edu/people/faculty/charles-shank)
+- 核查边界：1969 Berkeley EECS 原始论文目录 Advisors 栏明确列 Steven E. Schwarz。后续任用和博士后经历待核。 可补核 1969 年论文签署页，继续核实之后的任用阶段。
 
 ## 博士阶段候选线索
 
-- 待核 [[师承人物 - Steven E. Schwartz|Steven E. Schwartz]]：第三方传记列为 1969 年 Berkeley 博士导师，尚待学校学位记录确认。 [线索](https://en.wikipedia.org/wiki/Charles_V._Shank) · [[师承候选线索索引|候选索引]]。
+- 历史误拼线索 [[师承人物 - Steven E. Schwartz|Steven E. Schwartz]]。Berkeley 原始论文目录的正确拼写见上方博士导师记录。 [线索](https://en.wikipedia.org/wiki/Charles_V._Shank) · [[师承候选线索索引|候选索引]]。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
@@ -46,5 +47,6 @@
 - 已读取来源页 [网页](https://history.lbl.gov/Publications/Currents/Archive/Jul-11-2003.html)（2026-11-05T18:01:26.934Z）：By Ron Kolb In five major areas of research — and maybe a sixth — Berkeley Lab expects to be a major player at the frontiers of discovery over the next 20 years, according to a vision outlined by Lab （身份及关系仍待核）。
 - 已读取来源页 [网页](https://physics.berkeley.edu/person-type/faculty?page=7&sort_by=field_openberkeley_person_sortnm_value&sort_order=ASC)（2026-11-05T18:18:02.042Z）：Ph.D., Harvard University, 1963; Berkeley faculty since 1964; Principal Investigator, Lawrence Berkeley National Laboratory since 1967; Member, American Academy of Arts and Sciences, National Academy （身份及关系仍待核）。
 - 已读取来源页 [网页](https://physics.berkeley.edu/topics/emeritus-experimentalist?page=1&sort_by=changed&sort_order=DESC)（2026-11-05T18:01:26.934Z）：Richard Marrus received his B.S. from New York University in 1954, and his Ph.D. from UC Berkeley in 1959. He served as a postdoc and then as a staff scientist at Lawrence Berkeley Lab until 1963. Aft（身份及关系仍待核）。
+- 已读取来源页 [网页](https://www2.eecs.berkeley.edu/Pubs/TechRpts/1969/7172.html)（2026-11-17T03:19:27.101Z）：Berkeley EECS 1969 年原始论文目录 Advisors 栏明确标 Steven E. Schwarz，确证姓名拼写。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://www2.lbl.gov/Publications/Currents/Archive/June-30-2000.html)（2026-11-05T18:01:26.934Z）：Buoyed by a glittering record of achievement and growth, and energized by the prospects of opportunities that lie ahead for the next decade, Berkeley Lab Director Charles Shank delivered an upbeat Sta（身份及关系仍待核）。
 <!-- PI-AUTO-SEARCH:END -->

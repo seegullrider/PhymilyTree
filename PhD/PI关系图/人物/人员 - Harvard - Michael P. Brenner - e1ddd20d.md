@@ -28,8 +28,8 @@
 - 博士后阶段受指导者：[[人员 - Brown - Alp Sunol - ce7307b1|Alp Sunol]]。[来源](https://engineering.brown.edu/news/2026-08-25/alp-sunol-hired-assistant-professor)
 - 博士生：[[人员 - Northwestern - Ella King - ce1deb75|Ella King]]。[本人 CV](https://kinggroup.northwestern.edu/assets/king-cv-2026.pdf)；[原来源](https://www.simonsfoundation.org/people/ella-king/) 证据：King 的 CV 将 Michael Brenner 列为 Harvard graduate research advisor；关系类型可信度：高。
 - 博士后课题组成员：[[人员 - University of Chicago - Arvind Murugan - 43ce907a|Arvind Murugan]]。[来源](https://muruganlab.uchicago.edu/data/cv/MuruganCV.pdf) [本人 2026 CV](https://muruganlab.uchicago.edu/data/cv/MuruganCV.pdf)明列 Harvard 2012–2015 postdoctoral fellow，Michael Brenner Group；保持课题组关系。
-- 博士阶段导师候选：[[师承人物 - Leo P. Kadanoff|Leo P. Kadanoff]]。[来源](https://brennergroup.seas.harvard.edu/group)
-- 核查边界：本人实验室网页称 Chicago 博士研究 with Kadanoff，Aspen 简介称博士 under Kadanoff；尚未读取明确正式论文 advisor 的原文，按候选保留，博士后阶段待核。
+- 博士导师：[[师承人物 - Leo P. Kadanoff|Leo P. Kadanoff]]。[来源](https://brennergroup.seas.harvard.edu/group) Aspen Center for Physics 的原始个人简介具名写 Brenner obtained a doctorate in physics under Leo Kadanoff at the University of Chicago。Harvard 本人课题组履历佐证该博士阶段；此前的 Ohio State 物理系讲座原页读取回执明确使用 advising。 [原档 1](https://physics.osu.edu/events/colloquium-michael-brenner-harvard-towards-living-synthetic-matter) · [原档 2](https://brennergroup.seas.harvard.edu/people) · [原档 3](https://aspenphys.org/people/michael-brenner/)
+- 核查边界：本人实验室网页称 Chicago 博士研究 with Kadanoff，Aspen 简介称博士 under Kadanoff；Aspen 本人简介及此前 Ohio State 讲座回执具名博士指导，Chicago 论文署名页及博士后阶段待查。 Chicago 1994 年博士论文署名页或致谢，或 Brenner 本人 CV 的 advisor 栏，可作最终复核；博士后阶段另核。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
@@ -41,7 +41,9 @@
 - 检索类型：博士及博士后；检索时间：2026-11-03T08:08:00.120Z
   - [Current Members | Brenner Group](https://brennergroup.seas.harvard.edu/group)：Crawled: 2 days ago; Michael P. Brenner brenner@seas.harvard.edu ... He has a PhD in Physics from the University of Chicago, where he worked with Professor Leo Kadanoff. ... ## Postdoctoral Fellows # Current Members（姓名字符串出现，仍须核对单位时间；关系未判定，可信度未评估）
   - [People | Brenner Group](https://brennergroup.seas.harvard.edu/people)：Crawled: today; Michael P. Brenner brenner@seas.harvard.edu ... He has a PhD in Physics from the University of Chicago, where he worked with Professor Leo Kadanoff. # People（姓名字符串出现，仍须核对单位时间；关系未判定，可信度未评估）
+- 已读取来源页 [网页](https://aspenphys.org/people/michael-brenner/)（2026-11-16T15:40:21.906Z）：Aspen Center for Physics 原始人员介绍明确写其在 Leo Kadanoff 指导下获得 Chicago 物理博士。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://brennergroup.seas.harvard.edu/group)（2026-11-10T01:49:06.061Z）：Brenner 组当前成员页，核对现任 PI。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://brennergroup.seas.harvard.edu/people)（2026-11-11T12:51:55.406Z）：Michael is a faculty member in SEAS and Physics at Harvard University. He has a PhD in Physics from the University of Chicago, where he worked with Professor Leo Kadanoff. His first faculty position w（身份及关系仍待核）。
+- 页面读取失败 [网页](https://physics.osu.edu/events/colloquium-michael-brenner-harvard-towards-living-synthetic-matter)：本次网页桥接复读失败 (500) Internal Server Error；保留 Claude 先前成功回执。；待重试。
 - 已读取来源页 [网页](https://www.mrsec.harvard.edu/pages/faculty.php)（2026-11-10T01:49:06.060Z）：Harvard MRSEC 教师名单，核对 Brenner 关联。（身份及关系仍待核）。
 <!-- PI-AUTO-SEARCH:END -->

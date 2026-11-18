@@ -26,7 +26,8 @@
 
 - 博士生：[[人员 - Northwestern - James D. Gaynor - 13e64a45|James D. Gaynor]]。[Gaynor 本人 CV](https://bpb-us-e1.wpmucdn.com/sites.northwestern.edu/dist/c/7690/files/2023/12/James-D-Gaynor-Curriculum-Vitae-14Dec2023-2.pdf)在 UW 2019 博士条目明确列 Khalil 为 Advisor；[ACS 奖项简介](https://phys-acs.org/2021-acs-phys-young-investigator-awardees-announced/)。
 - 博士导师：[[人员 - University of Chicago - Andrei Tokmakoff - be59d58f|Andrei Tokmakoff]]。[来源](https://dspace.mit.edu/entities/publication/7e1b4648-85aa-45bc-913a-db172bf229fd) 证据：MIT 2004 年博士论文目录明确列 Khalil 与 Advisor Andrei Tokmakoff。；关系类型可信度：高。
-- 核查边界：Andrei Tokmakoff 为博士导师。Miller 2003–2006 接收导师 Charles Shank 已核，LBNL 是否有单独任用及共同指导待档。 [Miller 获奖原册](https://miller.berkeley.edu/images/newsletters/2003_spring.pdf) · [Miller 历年名册](https://miller.berkeley.edu/images/events/60/MillerProgram60.pdf) · [Miller 项目职责](https://miller.berkeley.edu/fellowship) · [Minnesota 化学系](https://cse.umn.edu/chem/events/professor-munira-khalil-0)
+- 博士后课题组负责人：[[人员 - UC Berkeley - Stephen Leone - 9194ca79|Stephen Leone]]。Leone 组官网在 2007 年校友栏列 Munira Khalil。UW 化学系履历明确记载她在加入 UW 前，以 Miller Research Fellow 身份在 UC Berkeley 及 LBNL 做博士后。同期研究论文列 Berkeley 和 LBNL 单位，并脚注其后转入 UW 化学系。上述来源支持记录博士后组属，个人指导职衔及具体起止仍待核。Charles Shank 的 Miller 项目接收教师关系独立记录。 [原档 1](https://sites.google.com/berkeley.edu/leonegrp/people/alumni/2000-2009) · [原档 2](https://www.osti.gov/servlets/purl/929700) · [原档 3](https://chem.washington.edu/people/munira-khalil)
+- 核查边界：Andrei Tokmakoff 为博士导师。Miller 2003–2006 接收导师 Charles Shank 已核，LBNL 是否有单独任用及共同指导待档。 [Miller 获奖原册](https://miller.berkeley.edu/images/newsletters/2003_spring.pdf) · [Miller 历年名册](https://miller.berkeley.edu/images/events/60/MillerProgram60.pdf) · [Miller 项目职责](https://miller.berkeley.edu/fellowship) · [Minnesota 化学系](https://cse.umn.edu/chem/events/professor-munira-khalil-0) 继续核对 Leone 组起止时间、个人指导及 LBNL 任用性质。
 
 
 <!-- PI-AUTO-SEARCH:START -->
@@ -48,6 +49,8 @@
 - 已读取来源页 [网页](https://miller.berkeley.edu/images/events/60/MillerProgram60.pdf)（2026-11-10T22:22:47.359Z）：历年名册列 Khalil 为 2003–2006 Miller Fellow。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://miller.berkeley.edu/images/newsletters/2003_spring.pdf)（2026-11-10T22:22:47.358Z）：Miller 获奖原册具名 Khalil 的接收导师为 Charles Shank。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://physics.berkeley.edu/people/faculty/charles-shank)（2026-11-10T22:22:47.359Z）：Berkeley 物理系确认 Shank 身份及荣休。（身份及关系仍待核）。
+- 已读取来源页 [网页](https://sites.google.com/berkeley.edu/leonegrp/people/alumni/2000-2009)（2026-11-17T12:29:43.018Z）：Leone 组官网的 2007 年校友栏目列出 Munira Khalil，未附任用日期或个人指导。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://staging.moles.washington.edu/faculty/)（2026-11-03T06:47:58.530Z）：Research in the Baneyx laboratory lies at the confluence of synthetic biology, nanotechnology, molecular engineering and materials science. We are a lead lab in CSSAS, the Center for the Science of Sy（身份及关系仍待核）。
 - 已读取来源页 [网页](https://www.moles.washington.edu/faculty/)（2026-11-03T06:47:58.530Z）：Research in the Baneyx laboratory lies at the confluence of synthetic biology, nanotechnology, molecular engineering and materials science. We are a lead lab in CSSAS, the Center for the Science of Sy（身份及关系仍待核）。
+- 已读取来源页 [网页](https://www.osti.gov/servlets/purl/929700)（2026-11-17T12:29:43.018Z）：论文题页核 Berkeley／LBNL 单位及 Khalil 的 UW 化学系现址，作为身份和机构旁证。（身份及关系仍待核）。
 <!-- PI-AUTO-SEARCH:END -->

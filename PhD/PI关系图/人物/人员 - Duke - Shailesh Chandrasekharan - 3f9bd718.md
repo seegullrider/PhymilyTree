@@ -21,9 +21,9 @@
 
 ## 师承
 
-- 博士导师候选：[[师承人物 - Norman H. Christ|Norman H. Christ]]。[来源](https://arxiv.org/abs/hep-lat/9509095)
+- 博士导师：[[师承人物 - Norman H. Christ|Norman H. Christ]]。[来源](https://arxiv.org/abs/hep-lat/9509095) INSPIRE-HEP 学位论文书目记录 433698 载 Shailesh Chandrasekharan 的 Columbia 博士论文 Critical behavior at the QCD phase transition，supervisors 字段具名 Norman H. Christ。依据该正式书目字段记录，学位原卷与日期仍待核。 [原档 1](https://inspirehep.net/api/literature?q=a%20Chandrasekharan%2C%20Shailesh%20and%20document_type%3Athesis&size=3)
 - 博士后导师：[[师承人物 - Rajan Gupta|Rajan Gupta]]。Gupta 本人 LANL CV 将 Chandrasekharan 列在他指导的理论物理博士后清单第 4 项（1997–1998），且标注之后任职 Duke。关系可信度高。 [原档 1](https://cnls.lanl.gov/~rajan/rg.pdf) · [原档 2](https://physics.wfu.edu/2026/09/september-24-colloquium-building-our-universe-with-qubits/)
-- 核查边界：1995 年 Columbia 博士时期与 Christ 合著，且学术关系数据库列出两人关系；保留博士导师候选，尚需论文或个人履历核实。Gupta 本人 CV 确认 Los Alamos 1997–1998 博士后指导。1996 年同期论文署 MIT CTP，岗位性质和指导人待核。 继续查 Columbia 1996 学位原卷及 1996 MIT CTP 任用原档。
+- 核查边界：1995 年 Columbia 博士时期与 Christ 合著，且学术关系数据库列出两人关系；INSPIRE-HEP 学位论文记录的 supervisors 栏列 Christ, Norman H.，按博士导师记录；论文题名页与致谢未读。Gupta 本人 CV 确认 Los Alamos 1997–1998 博士后指导。1996 年同期论文署 MIT CTP，岗位性质和指导人待核。 继续查 Columbia 1996 学位原卷及 1996 MIT CTP 任用原档。 续查 Columbia 学位原卷及 MIT CTP 任用，核对博士年份。
 
 ## 2026-11-05 再核查
 
@@ -41,6 +41,7 @@
   - [Shailesh Chandrasekharan | Scholars@Duke profile: Professional Activities](https://scholars.duke.edu/person/sch/professional-activities)：Crawled: last month; Lattice Gauge Theory - Pedagogical Talk given to Students and Postdocs · October 1, 2025 Lecture Duke University, Duke, NC ... PhD Dissertation Reviewer of doctoral student · January 2023 Committee Service Indian Instit（姓名字符串出现，仍须核对单位时间；关系未判定，可信度未评估）
 - 已读取来源页 [网页](https://arxiv.org/pdf/hep-th/9610225)（2026-11-12T11:53:26.491Z）：作者在 1996 年 8 月论文署 MIT CTP，单独核署名单位。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://cnls.lanl.gov/~rajan/rg.pdf)（2026-11-12T11:53:26.490Z）：Gupta 本人 CV 的理论物理博士后指导名单第 4 项，1997–1998。（身份及关系仍待核）。
+- 已读取来源页 [网页](https://inspirehep.net/api/literature?q=a%20Chandrasekharan%2C%20Shailesh%20and%20document_type%3Athesis&size=3)（2026-11-18T08:14:45.299Z）：INSPIRE-HEP 学位论文书目记录 433698 载 Shailesh Chandrasekharan 的 Columbia 博士论文 Critical behavior at the QCD phase transition，supervisors 字段具名 Norman H. Christ。依据该正式书目字段记录，学位原卷与日期仍待核。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://physics.wfu.edu/2026/09/september-24-colloquium-building-our-universe-with-qubits/)（2026-11-12T11:53:26.490Z）：Wake Forest 2026 年报告简介核 Columbia 1996 博士、Duke 1998 入职。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://scholars.duke.edu/person/sch)（2026-11-12T11:53:26.490Z）：Duke 现行物理系教授和研究方向。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://scholars.duke.edu/person/sch/professional-activities)（2026-11-03T08:00:53.027Z）：teaching-mentoring {hide_children: true, active: false, enabled: true} Monte Carlo calculations of conformal dimensions of large charge operators - Invited Physics Seminar · July 5, 2019 Invited Talk （身份及关系仍待核）。

@@ -2,7 +2,7 @@
 
 ## 待核博士关系
 
-- 博士候选研究者：[[人员 - SUTD - Dawn Tan - 2a7f289d|Dawn Tan]]。UC San Diego Jacobs 2010 当期原报道确认 Dawn Tan 为 ECE 博士生，Fainman 以该项目团队教授接受采访。2011 论文馆藏的缓存索引列 Fainman 为委员会主席；学位原件主机退避中。两项共同支持候选，论文正式指导称谓待核。 [UC San Diego 工学院当期报道](https://jacobsschool.ucsd.edu/news/release/1025?id=1025) · [待重读学位原卷](https://escholarship.org/content/qt9mr317vv/qt9mr317vv.pdf) · [SUTD 本人档](https://www.sutd.edu.sg/profile/dawn-tan)
+- 博士生：[[人员 - SUTD - Dawn Tan - 2a7f289d|Dawn Tan]]。UC San Diego Jacobs 2010 当期原报道确认 Dawn Tan 为 ECE 博士生，Fainman 以该项目团队教授接受采访。2011 论文馆藏的缓存索引列 Fainman 为委员会主席；学位论文题页列 Fainman 为委员会主席，致谢明确称其为博士导师。 [UC San Diego 工学院当期报道](https://jacobsschool.ucsd.edu/news/release/1025?id=1025) · [学位论文原卷](https://escholarship.org/content/qt9mr317vv/qt9mr317vv.pdf) · [SUTD 本人档](https://www.sutd.edu.sg/profile/dawn-tan) Dawn Tse Hui Tan 的 UC San Diego 2011 年电气工程（光子学）博士论文题页列 Professor Yeshaiahu Fainman 为委员会主席，致谢称其为 “my advisor, Professor Yeshaiahu Fainman”。UCSD 工学院同期报道确认 Dawn Tan 为 ECE 博士生。 [原档 1](https://escholarship.org/content/qt9mr317vv/qt9mr317vv.pdf) · [原档 2](https://jacobsschool.ucsd.edu/news/release/1025?id=1025)
 
 > [!warning] 人物记录，身份与任职待逐条核实
 > 本节点由原工作稿按学校记录生成；学校关系只表示此人出现在该校的核对记录中，不能单独证明现职、独立 PI 或招生资格。同一人跨校、别名和同名者尚未全局去重。

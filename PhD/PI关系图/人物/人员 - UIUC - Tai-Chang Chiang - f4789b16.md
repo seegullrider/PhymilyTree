@@ -21,9 +21,9 @@
 - 中研院院士原档列中文姓名江台章、1978 年 Berkeley 物理博士、1978–1980 年 IBM Watson 博士后，及 2011 年起 Illinois 物理系荣休教授与研究教授。院士原档另列 2026 年起台湾中央大学玉山学者。 [原档 1](https://physics.illinois.edu/people/directory/profile/tcchiang) · [原档 2](https://academicians.sinica.edu.tw/index.php?_lang=en&id=692&r=academician-n/show) · [原档 3](https://mrl.illinois.edu/directory/profile/tcchiang)
 ## 师承
 
-- 博士导师候选：[[人员 - UC Berkeley - Yuen-Ron Shen - 81347a28|Yuen-Ron Shen]]。[来源](https://academictree-staging.thetransmitter.org/physics/peopleinfo.php?pid=459852)
+- 博士导师：[[人员 - UC Berkeley - Yuen-Ron Shen - 81347a28|Yuen-Ron Shen]]。[来源](https://academictree-staging.thetransmitter.org/physics/peopleinfo.php?pid=459852) Chiang 本人 1978 年 Berkeley 博士论文（LBL 报告，OSTI ID 6603478）Acknowledgements 逐字 Professor Y. R. Shen, my thesis adviser, for his guidance and help；题名 Light scattering studies of solids and atomic vapors 与 AFT（Berkeley 1978）一致。以致谢的 my thesis adviser 记为博士导师。 [原档 1](https://www.osti.gov/servlets/purl/6603478) · [原档 2](https://www.osti.gov/api/v1/records?title=Light%20scattering%20studies%20of%20solids%20and%20atomic%20vapors&rows=10)
 - 博士后导师候选：[[师承人物 - D. E. Eastman|D. E. Eastman]]。[来源](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.22.2940)
-- 核查边界：学术树列 Shen 为 Berkeley 博士导师，1978 LBL 年报在 Shen 研究条目列其博士论文，暂列博士候选；IBM 博士后同期与 Eastman 合著，列候选。 [Illinois MRL](https://mrl.illinois.edu/directory/profile/tcchiang) · [补充原档](https://groups.mrl.illinois.edu/chiang/chiang/vita_chiang.pdf)。MRL 档与本人 CV 核 MRL Research Professor、物理系荣休、1978 年 Berkeley 博士及 1978–1980 年 IBM Watson 博后。
+- 核查边界：学术树列 Shen 为 Berkeley 博士导师，1978 LBL 年报列其论文，OSTI 原始论文致谢已直接核实 Shen 博士导师；IBM 博士后同期与 Eastman 合著，列候选。 [Illinois MRL](https://mrl.illinois.edu/directory/profile/tcchiang) · [补充原档](https://groups.mrl.illinois.edu/chiang/chiang/vita_chiang.pdf)。MRL 档与本人 CV 核 MRL Research Professor、物理系荣休、1978 年 Berkeley 博士及 1978–1980 年 IBM Watson 博后。 Berkeley 1978 论文签署页可作最终复核（非必需）；博士后阶段 Eastman 条另核。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
@@ -43,4 +43,5 @@
 - 已读取来源页 [网页](https://physics.illinois.edu/people/directory/profile/tcchiang)（2026-11-12T14:08:07.323Z）：# Tai-Chang Chiang（身份及关系仍待核）。
 - 已读取来源页 [网页](https://www.aps.anl.gov/APS-Science-Highlight/2019-04-11/prof-tai-chang-chiang-of-uiuc-to-receive-the-2019-apsuo-compton)（2026-11-12T23:33:11.976Z）：# Prof. Tai-Chang Chiang of UIUC to Receive the 2019 APSUO Compton Award Beginning in the 1980s, Prof. Chiang was a pioneer in the use of synchrotron radiation in establishing the angle-resolved photo（身份及关系仍待核）。
 - 页面读取失败 [网页](https://www.ideals.illinois.edu/items/18399/bitstreams/66313/data.pdf)：Internal Error () URL [网址略] is not accessible via this tool.；待重试。
+- 已读取来源页 [网页](https://www.osti.gov/servlets/purl/6603478)（2026-11-16T19:03:18.784Z）：Tai-Chang Chiang 的 Berkeley 博士论文致谢具名 Y. R. Shen 为 my thesis adviser。（身份及关系仍待核）。
 <!-- PI-AUTO-SEARCH:END -->

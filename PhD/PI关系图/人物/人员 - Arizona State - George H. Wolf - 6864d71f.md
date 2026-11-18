@@ -9,19 +9,19 @@
 
 - [ASU 分子科学学院研究人员名录](https://sms.asu.edu/Research/Research-Faculty)具名 George Wolf，方向为高压化学、相变、光谱和材料化学；该名单未注明更新日期，具体现职仍须核实。
 
-- ASU 分子科学学院副教授，主持高压材料及化学研究。研究高压条件下材料结构、相变、光谱和无序态。[院系个人档（当前站点退避，待复读）](https://search.asu.edu/profile/10269) · [研究原档](https://sms.asu.edu/Research/Environmental-and-Biogeochemistry)
+- ASU 分子科学学院副教授，主持高压材料及化学研究。研究高压条件下材料结构、相变、光谱和无序态。[院系个人档（已复核）](https://search.asu.edu/profile/10269) · [研究原档](https://sms.asu.edu/Research/Environmental-and-Biogeochemistry)
 - [[已核实方向 - 无序材料|无序材料]] · [[已核实方向 - 固态化学|固态化学]]。
 
 ## 师承
 
-- 博士导师候选：[[师承人物 - Raymond Jeanloz|Raymond Jeanloz]]。ASU 本人页称其 Berkeley 博士研究与 Jeanloz 共同进行，个人正式导师角色尚待论文原卷核实。 [现任院系原档](https://search.asu.edu/profile/10269)
-- 博士导师候选：[[师承人物 - Mark S. T. Bukowinski|Mark S. T. Bukowinski]]。ASU 本人页称其 Berkeley 博士研究与 Bukowinski 共同进行，个人正式导师角色尚待论文原卷核实。 [现任院系原档](https://search.asu.edu/profile/10269)
+- 博士阶段研究师长：[[师承人物 - Raymond Jeanloz|Raymond Jeanloz]]。ASU 本人页称其 Berkeley 博士研究与 Jeanloz 共同进行，个人正式导师角色尚待论文原卷核实。 [现任院系原档](https://search.asu.edu/profile/10269) ASU 本人页记载 Wolf 在 Berkeley 攻读地球物理博士期间与 Raymond Jeanloz、Mark Bukowinski 一起研究地球深部化学，据此分别记录博士阶段研究师长。两人的正式指导职衔和分工待学位原卷确认。 [原档 1](https://search.asu.edu/profile/10269)
+- 博士阶段研究师长：[[师承人物 - Mark S. T. Bukowinski|Mark S. T. Bukowinski]]。ASU 本人页称其 Berkeley 博士研究与 Bukowinski 共同进行，个人正式导师角色尚待论文原卷核实。 [现任院系原档](https://search.asu.edu/profile/10269) ASU 本人页记载 Wolf 在 Berkeley 攻读地球物理博士期间与 Raymond Jeanloz、Mark Bukowinski 一起研究地球深部化学，据此分别记录博士阶段研究师长。两人的正式指导职衔和分工待学位原卷确认。 [原档 1](https://search.asu.edu/profile/10269)
 - 博士经历：ASU 本人页列 1986 年 Berkeley 地球物理博士，博士阶段与 Raymond Jeanloz 和 Mark Bukowinski 一起研究，未分别注明正式导师职衔。 [现任院系原档](https://search.asu.edu/profile/10269)
-- 学历来源冲突：ASU [2016–2017 教师表](https://catalog.asu.edu/sites/g/files/litvpz1446/files/2023-03/faculty_list_2016-2017_final.pdf)的 George Wolf、分子科学学院、1986 博士一行将授予学校列为 UC Davis；这与上述本人页的 UC Berkeley 不一致。两项并列，待学位馆藏核实；不据此更改导师候选。
+- 学历来源冲突：ASU [2016–2017 教师表](https://catalog.asu.edu/sites/g/files/litvpz1446/files/2023-03/faculty_list_2016-2017_final.pdf)的 George Wolf、分子科学学院、1986 博士一行将授予学校列为 UC Davis；这与上述本人页的 UC Berkeley 不一致。两项来源并列，授予学校待原卷核实。博士阶段研究师长据 ASU 本人履历记录。
 - 博士后经历：ASU 本人页称研究生阶段后加入 ASU 教职，未分列博士后任用；不能据此断言没有博士后经历。 [现任院系原档](https://search.asu.edu/profile/10269)
 - 同人节点：[[师承人物 - George H. Wolf|原师承扩展节点]]。
 
-- 核查边界：查 Berkeley 博士论文原卷与正式导师登记，核对 1986／1987 年份及完整姓名；继续核查是否存在独立博士后经历。
+- 核查边界：查 Berkeley 博士论文原卷与正式导师登记，核对 1986／1987 年份及完整姓名；继续核查是否存在独立博士后经历。 HathiTrust 馆藏页与 Google Books 原卷均已达重试上限。改查 Berkeley 馆藏或档案馆获取题页和致谢，核对 1986／1987 年份、授予学校及正式导师。
 - 论文追查线索：[Physics Tree](https://academictree-staging.thetransmitter.org/physics/peopleinfo.php?pid=101313)给出题名 *Ab Initio Theoretical Predictions of High-pressure and High-temperature Properties of Lower Mantle Mineral Phases*，并称 1987 年 Berkeley 论文致谢涉及两位研究者；原卷及其引向的馆藏链接本次未能直接读取。该第三方转写只作定位线索，不作为正式导师确证；ASU 本人页列博士年份为 1986。
 
 <!-- PI-AUTO-SEARCH:START -->
@@ -37,5 +37,6 @@
 - 已读取来源页 [网页](https://catalog.asu.edu/sites/g/files/litvpz1446/files/2023-03/faculty_list_2016-2017_final.pdf)（2026-11-13T21:34:47.940Z）：ASU 2016–2017 教师表的 George Wolf／Molecular Sciences／1986 PhD 一行写 University of California Davis；与 ASU 人物履历 Berkeley 存在冲突，须核学位原卷。（身份及关系仍待核）。
 - 页面读取失败 [网页](https://catalog.hathitrust.org/Record/100651920)：Internal Error () URL [网址略] is not accessible via this tool.；待重试。
 - 页面读取失败 [网页](https://experts.azregents.edu/en/persons/george-wolf/)：Cache miss；待重试。
+- 已读取来源页 [网页](https://search.asu.edu/profile/10269)（2026-11-17T13:24:47.917Z）：ASU 本人页记载 Wolf 在 Berkeley 攻读地球物理博士期间与 Raymond Jeanloz、Mark Bukowinski 一起研究地球深部化学，据此分别记录博士阶段研究师长。两人的正式指导职衔和分工待学位原卷确认。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://sms.asu.edu/Research/Research-Faculty)（2026-11-13T15:59:55.968Z）：ASU 分子科学学院研究名册具名 George Wolf，研究方向为高压化学、相变、光谱及材料化学；目录未明确任用更新日期。（身份及关系仍待核）。
 <!-- PI-AUTO-SEARCH:END -->

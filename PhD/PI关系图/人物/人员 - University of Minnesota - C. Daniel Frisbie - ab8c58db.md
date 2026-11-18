@@ -20,9 +20,9 @@
 
 ## 师承
 
-- 博士后阶段课题组候选：[[师承人物 - Charles M. Lieber|Charles M. Lieber]]。[Lieber 组校友名单](https://cmlresearch.org/team/)列 Frisbie 为原组员，[本人北大讲座简介](https://www.chem.pku.edu.cn/docs/2020-11/20201130172456501582.pdf)确认 MIT 1993 博士后曾在 Harvard 做博士后；[MIT 同期报道](https://news.mit.edu/1994/molecular-1026)将 Frisbie 称为 Harvard 化学研究者、提及 Lieber 组，阶段对应仍属综合判断，正式导师待核。
+- 博士后课题组负责人：[[师承人物 - Charles M. Lieber|Charles M. Lieber]]。[Lieber 组校友名单](https://cmlresearch.org/team/)列 Frisbie 为原组员，[本人北大讲座简介](https://www.chem.pku.edu.cn/docs/2020-11/20201130172456501582.pdf)确认 MIT 1993 博士后曾在 Harvard 做博士后；[MIT 同期报道](https://news.mit.edu/1994/molecular-1026)将 Frisbie 称为 Harvard 化学研究者、提及 Lieber 组，Lieber 组校友名单列本人，Frisbie 在 Harvard 只有 NSF 博士后一个阶段（博士在 MIT），MIT 1994 报道把他列为 Harvard 化学家并与 Lieber 组合作，阶段与组属已核；无 advisor 称谓，按博士后课题组负责人记录。 Lieber 本人课题组校友名录具名 C. Daniel Frisbie，并列现任 Minnesota CEMS。Cambridge 现职简介给出 MIT 1993 博士和 Harvard 化学 NSF 博士后。MIT 1994 报道具名 Frisbie 为 Harvard 化学家，并记 Lieber 组参与同期合作。三份原档共同支持博士后组属，个人导师职衔仍待核。 [原档 1](https://cmlresearch.org/team/) · [原档 2](https://news.mit.edu/1994/molecular-1026) · [原档 3](https://sirringhaus.oe.phy.cam.ac.uk/staff/prof-daniel-frisbie)
 - 复核原档：Minnesota 化学系公开档明确 CEMS 和 Chemical Physics 项目 Affiliate Graduate Faculty。CEMS 主聘档核 MIT 1993 物理化学博士及分子结、分子半导体研究。MIT 1994 年同期报道及 Lieber 组校友名录核 Harvard 阶段与 Lieber 组的关联，原候选保留，个人博后任用和博士导师待查。 [原档 1](https://cse.umn.edu/chem/c-daniel-frisbie) · [原档 2](https://cse.umn.edu/cems/c-daniel-frisbie) · [原档 3](https://cmlresearch.org/team/) · [原档 4](https://news.mit.edu/1994/molecular-1026)
-- 核查边界：博士论文导师和 Lieber 的正式博士后指导角色仍须查原始论文或明确履历；化学系关联资格见 https://cse.umn.edu/chem/c-daniel-frisbie 。 [原始资料](https://scale.cems.umn.edu/people)。学校 SCALE 项目核姓名和任职。Mark S. Wrighton 与 Charles M. Lieber 保留候选和合作线索，个人关系待学位与聘任证据。
+- 核查边界：博士论文导师和 Lieber 的正式博士后指导角色仍须查原始论文或明确履历；化学系关联资格见 https://cse.umn.edu/chem/c-daniel-frisbie 。 [原始资料](https://scale.cems.umn.edu/people)。学校 SCALE 项目核姓名和任职。Mark S. Wrighton 与 Charles M. Lieber 保留候选和合作线索，个人关系待学位与聘任证据。 追查 Harvard 博士后任用或本人 CV 的具名指导及任期。
 
 - 博士导师候选：[[师承人物 - Mark S. Wrighton|Mark S. Wrighton]]。[本人组出版目录](https://frisbie.cems.umn.edu/publications)列其与 Wrighton 在博士毕业前 1992–1993 年的论文；[Minnesota 简介](https://cse.umn.edu/cems/c-daniel-frisbie)确认 MIT 1993 博士。学术树搜索索引提示师生关系，但原页面返回访问验证未读到；同校同期合著不能单独证明导师，仍为低可信候选。
 
@@ -44,4 +44,5 @@
 - 已读取来源页 [网页](https://news.mit.edu/1994/molecular-1026)（2026-11-12T06:43:15.789Z）：MIT 1994 年报道分列 Harvard 的 Frisbie 与 MIT 人员，记录与 Lieber 的组间合作。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://scale.cems.umn.edu/people)（2026-11-10T12:25:46.177Z）：Minnesota 化学工程与材料科学。有机半导体、分子电子和薄膜器件。（身份及关系仍待核）。
 - 页面读取失败 [网页](https://sirringhaus.oe.phy.cam.ac.uk/people/prof-daniel-frisbie)：人工访问 Cambridge 实验室原档返回 (403) Forbidden，未取得正文。；需另找可访问的原始来源。
+- 已读取来源页 [网页](https://sirringhaus.oe.phy.cam.ac.uk/staff/prof-daniel-frisbie)（2026-11-18T17:04:41.884Z）：Cambridge 原档确认博士后阶段和 Minnesota CEMS 现任。（身份及关系仍待核）。
 <!-- PI-AUTO-SEARCH:END -->

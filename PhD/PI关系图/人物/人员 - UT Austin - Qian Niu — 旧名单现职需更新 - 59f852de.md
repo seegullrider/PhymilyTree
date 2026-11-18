@@ -24,7 +24,8 @@
 - 博士生：[[人员 - University of Washington, Seattle - Di Xiao - a3bd0a0e|Di Xiao]]。[本人博士论文](https://inspirehep.net/files/46772db217f856810d4fda5bbe113003)明确 Qian Niu 为 supervisor。
 - 博士生：[[人员 - Carnegie Mellon - Di Xiao - 5ea927aa|Di Xiao]]。[本人博士论文](https://inspirehep.net/files/46772db217f856810d4fda5bbe113003)明确 Qian Niu 为 supervisor。
 - 博士导师：[[师承人物 - David J. Thouless|David J. Thouless]]。[来源](https://faculty.ustc.edu.cn/niuqian/en/index.htm) [本人 USTC 履历](https://faculty.ustc.edu.cn/niuqian/en/index.htm) 证据：教育背景明列 1985 Washington 物理 Ph.D.、D. J. Thouless 为 Advisor；关系类型可信度：高。
-- 核查边界：本人科大主页明确博士导师 Thouless，列 2021 年起科大任职及此前 UT 任职；APS 旧页面曾称 UT 休假，不宜据此断言现职。Illinois 1985–1987 research associate、UCSB 1988–1990 visiting scientist 的岗位是否为博士后及其导师待核。
+- 博士后课题组负责人：[[人员 - UIUC - Eduardo H. Fradkin - ebda96c0|Eduardo H. Fradkin]]。Fradkin 组官网 Former Postdocs 具名 Qian Niu，列其后续 UT Austin 与中国科大任职，与本人履历一致。组档列 1984–1985，本人履历列 Illinois Research Associate 为 1985–1987、Washington 博士为 1985。组档支持博士后组属，任期、任用性质及个人导师职衔待核。 [原档 1](http://eduardo.physics.illinois.edu/homepage/former-postdocs.html) · [原档 2](https://faculty.ustc.edu.cn/niuqian/en/index.htm)
+- 核查边界：本人科大主页明确博士导师 Thouless，列 2021 年起科大任职及此前 UT 任职；APS 旧页面曾称 UT 休假，不宜据此断言现职。Fradkin 组档列 Illinois 博士后组属，任期与本人履历有差异，个人导师职衔待核。UCSB 任用性质及指导人仍待查。 核对 Illinois 任期与个人指导，并查 UCSB 任用性质及接待人。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
@@ -36,7 +37,9 @@
 - 检索类型：博士及博士后；检索时间：2026-11-03T10:12:39.483Z
   - [Hua Chen: UT Austin](https://web2.ph.utexas.edu/~huachen/page1.html)：Crawled: 9.4 years ago; 1 University Station C1600 RLM 13.329 Austin, TX 78712 | Gender: Male Phone: +1 (512) 471-2067 Email: huachen@physics.utexas.edu ... 01/2007 - 04/2012, Doctor of Philosophy (UTK-ORNL JIAM Fellow) ... Department of Ph（姓名字符串出现，仍须核对单位时间；关系未判定，可信度未评估）
   - [Physics - Qian Niu](https://physics.aps.org/authors/qian_niu)：Crawled: 3 weeks ago; Qian Niu is a Trull Centennial Professor of Physics at The University of Texas at Austin, from which he is currently on leave to serve as the director of the International Center for Quantum Materials at Peking Univers（姓名字符串出现，仍须核对单位时间；关系未判定，可信度未评估）
+- 已读取来源页 [网页](http://eduardo.physics.illinois.edu/homepage/former-postdocs.html)（2026-11-17T21:25:02.091Z）：Fradkin 组官网 Former Postdocs 具名 Qian Niu，列其后续 UT Austin 与中国科大任职，与本人履历一致。组档列 1984–1985，本人履历列 Illinois Research Associate 为 1985–1987、Washington 博士为 1985。组档支持博士后组属，任期、任用性质及个人导师职衔待核。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://chaos.utexas.edu/people/faculty-2/dr-qian-niu)（2026-11-03T10:13:56.668Z）：I have gone through the typical career stages as a graduate student, a postdoc, and as a professor, initially with guidance from my mentors, then becoming independent and starting guiding younger peop（身份及关系仍待核）。
+- 已读取来源页 [网页](https://faculty.ustc.edu.cn/niuqian/en/index.htm)（2026-11-17T21:25:02.093Z）：本人履历列明确博士导师及 Illinois 任期，组档日期差异已保留。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://physics.aps.org/authors/qian_niu)（2026-11-03T10:13:56.668Z）：Qian Niu is a Trull Centennial Professor of Physics at The University of Texas at Austin, from which he is currently on leave to serve as the director of the International Center for Quantum Materials（身份及关系仍待核）。
 - 已读取来源页 [网页](https://web2.ph.utexas.edu/~huachen/page1.html)（2026-11-03T10:13:34.068Z）：3.   Hua Chen, Wenguang Zhu, and Zhenyu Zhang, "Contrast Behavior of Carbon Adatom Diffusion and Nucleation in the Initial Stage of Graphene Epitaxial Growth on Stepped Metal Surfaces", 22nd Conferenc（身份及关系仍待核）。
 - 页面读取失败 [网页](https://www.uvm.edu/sites/default/files/DELETE-DELETE-group-Dont-Delete/Niu_Qian_Bio.pdf)：Internal Error () URL [网址略] is not accessible via this tool.；待重试。

@@ -5,5 +5,5 @@
 
 ## 师承
 
-- 博士生候选：[[人员 - Florida State - Lloyd W. Engel - d1279b78|Lloyd W. Engel]]。[来源](https://academictree-staging.thetransmitter.org/physics/peopleinfo.php?pid=443706)
+- 博士生：[[人员 - Florida State - Lloyd W. Engel - d1279b78|Lloyd W. Engel]]。[来源](https://academictree-staging.thetransmitter.org/physics/peopleinfo.php?pid=443706) Princeton 学位目录记录 993693223506421 对应 Lloyd W. Engel（1987），notes_display 明列 “Advisor(s): Keith DeConde.”。导师全名的中间名待独立原档。 [原档 1](https://catalog.princeton.edu/catalog/993693223506421.json)
 [建立节点的来源](https://academictree-staging.thetransmitter.org/physics/peopleinfo.php?pid=443706)。

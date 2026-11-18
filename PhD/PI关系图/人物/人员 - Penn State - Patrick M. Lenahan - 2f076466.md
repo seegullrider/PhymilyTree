@@ -20,8 +20,10 @@
 
 ## 师承
 
-- 博士导师候选：[[师承人物 - T. J. Rowland|T. J. Rowland]]。1979 年原论文列两人的 Illinois 材料研究实验室及冶金与采矿工程单位；1981 年同题论文的脚注另列 Lenahan 已转赴 Sandia。本人履历确认 1979 年 Illinois 博士，具体指导关系待学位论文核对。[1979 年论文](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.43.879) · [后续论文](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.23.752) · [NIST 馆藏作者简介](https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=925603)
+- 博士导师：[[师承人物 - T. J. Rowland|Theodore J. Rowland]]。1979 年原论文列两人的 Illinois 材料研究实验室及冶金与采矿工程单位；1981 年同题论文的脚注另列 Lenahan 已转赴 Sandia。本人履历确认 1979 年 Illinois 博士，博士导师现由学位论文批准页直接核实。[1979 年论文](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.43.879) · [后续论文](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.23.752) · [NIST 馆藏作者简介](https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=925603) Illinois Graduate College 1979 年博士论文批准页在 Director of Thesis Research 栏签 Theodore J. Rowland；同页亦签署为答辩委员会主席。已对照 Patrick Michael Lenahan 姓名和论文题名。 [原档 1](https://www.osti.gov/servlets/purl/5649329) · [原档 2](https://www.osti.gov/api/v1/records?author=Lenahan&product_type=Thesis%2FDissertation&rows=10)
 - 博士后经历：本人论文作者简介列 1979–1980 年 Princeton 博士后，1980 年转赴 Sandia。个人指导者待核。[IEEE 论文简历](https://citeseerx.ist.psu.edu/document?doi=7c4393d5a89de1cb4d72a1b60bab48c9df694e34&repid=rep1&type=pdf) · [NIST 馆藏作者简介](https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=925603)
+
+- 核查边界：已取得 Illinois 1979 年博士论文批准页；Princeton 博士后正式指导者待核。 继续追查 1979–1980 Princeton 博士后指导者；Physics Tree 中 Harvard 单位的外部人物 ID 待独立核对。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
@@ -36,11 +38,8 @@
 - 已读取来源页 [网页](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.23.752)（2026-11-09T23:00:10.407Z）：APS L73–80：1981 年同题论文列 Lenahan 与 Rowland，Lenahan 的现地址标为 Sandia。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.43.879)（2026-11-09T23:00:10.407Z）：APS L62–76：1979 年 Lenahan 与 T. J. Rowland 论文列共同 Illinois 单位。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://pure.psu.edu/en/persons/patrick-m-lenahan/)（2026-11-09T22:05:24.805Z）：L8: 【5†Image: Patrick M. Lenahan】 L12: # Patrick M. Lenahan L14:   * Distinguished Professor, 【7†Engineering Science and Mechanics】 L40: Dive into the research topics where Patrick M. Lenahan is activ（身份及关系仍待核）。
-- 页面读取失败 [网页](https://shc.vmhost.psu.edu/academics/advising/)：Internal Error ()
-citeturn6960view0 [wordlim: 200] Source: open({"ref_id":"https://shc.vmhost.psu.edu/academics/advising/","lineno":null}); 
-Failed to fetch ；待重试。
-- 页面读取失败 [网页](https://sites.psu.edu/lenahanlaboratory/about-dr-lenahan/)：Internal Error ()
-citeturn36315view0 [wordlim: 200] Source: open({"ref_id":"turn36309search0","lineno":null}); 
-Failed to fetch https://sites.psu.edu/lenahan；待重试。
+- 页面读取失败 [网页](https://shc.vmhost.psu.edu/academics/advising/)：(502) Bad Gateway；待重试。
+- 页面读取失败 [网页](https://sites.psu.edu/lenahanlaboratory/about-dr-lenahan/)：(502) Bad Gateway；待重试。
 - 已读取来源页 [网页](https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=925603)（2026-11-09T23:00:10.407Z）：NIST 馆藏作者简介 L445 起：Illinois 博士、Princeton 博后及 1980 年赴 Sandia。（身份及关系仍待核）。
+- 已读取来源页 [网页](https://www.osti.gov/servlets/purl/5649329)（2026-11-16T19:03:18.788Z）：批准页的 Director of Thesis Research 栏直接具名 Theodore J. Rowland。（身份及关系仍待核）。
 <!-- PI-AUTO-SEARCH:END -->

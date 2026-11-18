@@ -42,6 +42,7 @@
 - [[师承人物 - Conyers Herring|Conyers Herring]]：第三方传记列为 Bell Labs 博士后时期指导者，正式身份待本人或机构资料核实。[线索](https://en.wikipedia.org/wiki/Marvin_L._Cohen) · [[师承候选线索索引|候选索引]]。
 
 - 博士后研究者：[[人员 - UC Davis - Warren E. Pickett（荣休） - f6ef9106|Warren E. Pickett]]。Pickett 本人 CV Education 栏 1976-1977 IBM Postdoctoral Fellow UC Berkeley，末栏表逐字 Postdoctoral Advisor | Marvin L. Cohen | UC Berkeley；AFT 记 Berkeley 1977、博后码，与 CV 相符。以 Advisor 称谓具名。 [原档 1](https://ciqus.usc.gal/sites/default/files/eventos/conferencia_warren_e._picket.pdf)
+- 博士后课题组成员：[[人员 - Washington University in St. Louis - Li Yang - b13a4f69|Li Yang]]。WashU 文理学院的任命报道写明 Li Yang 在 Berkeley 博士后研究期间寻求 Steven Louie 与 Marvin Cohen 两组的指导。WashU 物理系履历列 2006–2009 年 Berkeley 博士后，研究为第一性原理与量子材料。两条组属分别记录，个人指导需要具名履历或自述。 [原档 1](https://artsci.washu.edu/ampersand/yang-installed-albert-gordon-hill-professor-physics) · [原档 2](https://physics.washu.edu/people/li-yang)
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
 

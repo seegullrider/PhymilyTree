@@ -21,8 +21,8 @@
 
 ## 师承
 
-- 博士生候选：[[人员 - UC Davis - Dong Yu - 47d737ac|Dong Yu]]。[来源](https://academictree-staging.thetransmitter.org/physics/inst.php?locid=3797)
-- 博士生候选：[[人员 - UIUC - Moonsub Shim - ed41f3be|Moonsub Shim]]。[来源](https://academictree-staging.thetransmitter.org/physics/inst.php?locid=3797)
+- 博士课题组成员：[[人员 - UC Davis - Dong Yu - 47d737ac|Dong Yu]]。[来源](https://academictree-staging.thetransmitter.org/physics/inst.php?locid=3797) 芝加哥大学 PGS Lab 校友原页的 Past Doctoral Students 栏列 Dong Yu、PhD (2001–2005) 及 UC Davis 职位，核实博士组属。 [原档 1](https://pgslab.uchicago.edu/people-alumni/)
+- 博士课题组成员：[[人员 - UIUC - Moonsub Shim - ed41f3be|Moonsub Shim]]。[来源](https://academictree-staging.thetransmitter.org/physics/inst.php?locid=3797) 芝加哥大学 PGS Lab 校友原页的 Past Doctoral Students 栏列 Moonsub Shim、PhD (1998–2001) 及 UIUC 材料科学与工程职位，核实博士组属。 [原档 1](https://pgslab.uchicago.edu/people-alumni/)
 - 博士导师：[[人员 - UC Berkeley - Yuen-Ron Shen - 81347a28|Yuen-Ron Shen]]。[来源](https://advanced.onlinelibrary.wiley.com/doi/abs/10.1002/adfm.202405307) [2026 Optica 讲者简介](https://www.frontiersinoptics.com/program/plenary-and-visionary-speakers-data)称 1987 Berkeley 博士 under the direction of Yuen Ron Shen；关系类型可信度：高。
 - 核查边界：博士后经历及导师待核；Orsay 的 research scientist 职位不自动认定为博士后。 Chicago 化学系原档核化学教授与物理联合任用、1987 Berkeley 博士，以及 1991 Paris-Sud Orsay Research Scientist。研究为胶体半导体量子点限域、载流子动力学和中红外探测与发光。Orsay 原称研究科学家，1987–1991 年任用和独立博后指导者待核。 [Chicago 化学系原档](https://chemistry.uchicago.edu/faculty/philippe-guyot-sionnest)
 

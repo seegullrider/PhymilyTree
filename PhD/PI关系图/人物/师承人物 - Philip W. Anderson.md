@@ -14,3 +14,4 @@
 - 博士后合作研究者：[[人员 - UC Berkeley - Marvin Cohen（荣休） - 67eb1f9c|Marvin Cohen（荣休）]]。[来源](https://history.aip.org/catalog/icos/44667.html)
 [建立节点的来源](https://history.aip.org/catalog/icos/44667.html)。
 - 博士后阶段研究者：[[人员 - Northwestern - James Sauls - 167ea611|James Sauls]]。本人 LSU 页列 1980–1983 Princeton 博士后研究，Duke 奖项原件在同一任期具名 Philip W. Anderson。记录博士后阶段研究师长。1983–1984 NORDITA 和 Helsinki 博后另列，个人指导待核。 [原档 1](https://physics.duke.edu/sites/physics.duke.edu/files/documents/2017LondonSauls.pdf) · [原档 2](https://sauls.lsu.edu/)
+- 博士课题组成员：[[人员 - Rutgers - Premala Chandra - 804d9528|Premala Chandra]]。Chandra 共同署名的 Anderson 传记稿 Author Profiles 栏写她在攻博期间以 visiting student 身份赴 Anderson 凝聚态组。本人 Rutgers CV 列 1987–1988 Princeton Research Visitor。按 Princeton 访问期间的博士课题组负责人记录。 [原档 1](https://arxiv.org/html/2510.20865v1) · [原档 2](https://www.physics.rutgers.edu/~pchandra/premi.pdf)

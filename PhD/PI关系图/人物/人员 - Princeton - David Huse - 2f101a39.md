@@ -26,6 +26,7 @@
 - 博士导师：[[人员 - University of Maryland, College Park - Michael E. Fisher（历史记录，已故） - d48ebd21|Michael E. Fisher]]。[来源](https://www.nasonline.org/directory-entry/david-a-huse-dewlxi/) 美国科学院简介称 Cornell 物理博士 thesis advisor Michael E. Fisher。
 - 核查边界：美国科学院简介和 [Institute for Advanced Study 人物档案](https://www.ias.edu/scholars/david-huse)写 Cornell 博士 1983 年，[Princeton 页面](https://phy.princeton.edu/people/david-huse)写 1982 年；两者仍存在冲突，待查 Cornell 学位原始记录。Bell Labs 任职是否为博士后及师长待核。
 
+- 博士生：[[人员 - Stanford - Trithep Devakul - 3409555e|Trithep Devakul]]。Princeton 图书馆博士论文目录条目 99126152041406421，作者 Trithep Devakul，题名 Subdimensional Topological Quantum Phases of Matter，其 Notes 字段明确为 Advisor: Huse, David A.。 [原档 1](https://catalog.princeton.edu/catalog/99126152041406421.json)
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
 

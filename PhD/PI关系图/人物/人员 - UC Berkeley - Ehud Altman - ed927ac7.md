@@ -27,11 +27,11 @@
 - 博士后导师：[[人员 - Harvard - Mikhail Lukin - 310298e3|Mikhail Lukin]]。[Lukin 本人 CV](https://www.physics.harvard.edu/sites/g/files/omnuum6476/files/2025-06/Lukin_CV.pdf) 证据：Postdoctoral advisor 名单列 Ehud Altman*，星号说明该博士后受共同指导；另一指导人身份仍待独立确认；关系类型可信度：高。
 
 - 博士后阶段研究者：[[人员 - UC Berkeley - Ethan Lake - da6ae25a|Ethan Lake]]。2023–2026 Miller 个人档具名 Ehud Altman 与 Mike Zaletel 为 Hosts。 Miller 现行正式项目说明明确 Faculty Host 承担指导、研究进展讨论及年度反馈，并规定 primary Host 是校内系统 supervisor。该制度说明作为指导角色的补充证据，保留原 Faculty Host 称谓；不据此判断历史任期的主次导师或人事登记。 指导关系可信度高，按博士后阶段研究师长记录。 [原始名录／个人档](https://miller.berkeley.edu/people/ethan-lake) · [Miller 角色制度](https://miller.berkeley.edu/nominate-apply/miller-research-fellowship/reference-faculty-host-information)
-- 核查边界：Technion 博士，第三方族谱与博士期间合著论文指向 Assa Auerbach；Harvard 博士后在 Eugene Demler 组，正式导师职衔待核；Lukin 的共同指导由本人 CV 确认。 [原始资料](https://physics.berkeley.edu/people/faculty/ehud-altman) · [补充原证](https://www.demlergroup.com/people.html)。Berkeley 物理系确认 2002 Technion 博士、三年 Harvard 博后及现任。 保留 Lukin 共同指导和 Demler 组属；Auerbach 仍是博士候选。
+- 核查边界：Technion 博士，第三方族谱与博士期间合著论文指向 Assa Auerbach；Harvard 博士后在 Eugene Demler 组，正式导师职衔待核；Lukin 的共同指导由本人 CV 确认。 [原始资料](https://physics.berkeley.edu/people/faculty/ehud-altman) · [补充原证](https://www.demlergroup.com/people.html)。Berkeley 物理系确认 2002 Technion 博士、三年 Harvard 博后及现任。 保留 Lukin 共同指导和 Demler 组属；Auerbach 组档核实其博士组属，正式导师称谓待 Technion 论文或本人 CV。 Technion 2002 学位论文署名页或 Altman 本人 CV 的博士导师栏可升博士导师；Auerbach 课题组页不写 advisor 称谓。
 
-## 博士阶段候选线索
+## 博士阶段证据
 
-- 待核 [[师承人物 - Assa Auerbach|Assa Auerbach]]：第三方族谱列为导师，Technion 博士期间的共同论文支持合作；学位原始记录待核。 [线索](https://academictree-staging.thetransmitter.org/physics/peopleinfo.php?pid=640260) · [论文](https://arxiv.org/abs/cond-mat/9806025) · [[师承候选线索索引|候选索引]]。
+- 博士课题组负责人：[[师承人物 - Assa Auerbach|Assa Auerbach]]：第三方族谱列为导师，Technion 博士期间的共同论文支持合作；学位原始记录待核。 [线索](https://academictree-staging.thetransmitter.org/physics/peopleinfo.php?pid=640260) · [论文](https://arxiv.org/abs/cond-mat/9806025) · [[师承候选线索索引|候选索引]]。 Auerbach 课题组官方站点 Students 页在 Past Graduate Students 栏逐字列 Ehud Altman, MSc, PhD（同栏 Erez Berg 仅 MSc），页面分栏列出研究生与博士后；与 Berkeley 简介的 2002 Technion 博士相符。页面不写 advisor 称谓，按导师本人课题组页列其 PhD 记为博士课题组负责人。 [原档 1](https://phsites.technion.ac.il/assa/students/)
 
 ## 博士后阶段候选线索
 
@@ -50,6 +50,7 @@
   - [Ehud Altman | Physics](https://physics.berkeley.edu/people/faculty/ehud-altman)：Crawled: last month; ehud.altman@berkeley.edu ... He was then a postdoctoral fellow at Harvard university for three years before joining the faculty of the Weizmann Institute of Science as a Yigal Alon fellow in 2005. ... During the academi（姓名字符串出现，仍须核对单位时间；关系未判定，可信度未评估）
   - [UC Berkeley](https://escholarship.org/content/qt2mx3g7j1/qt2mx3g7j1.pdf)：Published: 7 months ago; It is emotional at the end of this journey.I want to start by expressing my gratitude to my advisor Prof. Ehud Altman. ... patience in helping me improve my writing skills.My deep appreciation extends to Soonwon Cho（姓名字符串出现，仍须核对单位时间；关系未判定，可信度未评估）
   - [Vita](https://www.ocf.berkeley.edu/~dpotirni/vita.html)：Crawled: 6.2 years ago; * Adviser: Ehud Altman ... * Senior thesis: ‘‘Phase transitions and classical-quantum mixing in the satisfiability problem’’ ... Ehud Altman, UC Berkeley # Vita（姓名字符串出现，仍须核对单位时间；关系未判定，可信度未评估）
+- 已读取来源页 [网页](https://phsites.technion.ac.il/assa/students/)（2026-11-16T17:03:01.350Z）：Assa Auerbach 的 Technion 课题组页在 Past Graduate Students 栏列 Ehud Altman, MSc, PhD。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://physics.berkeley.edu/people/faculty/ehud-altman)（2026-11-10T13:08:18.226Z）：Berkeley 物理系确认 2002 Technion 博士、三年 Harvard 博后及现任。 保留 Lukin 共同指导和 Demler 组属；Auerbach 仍是博士候选。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://vcresearch.berkeley.edu/faculty/ehud-altman)（2026-11-13T13:54:10.223Z）：# Ehud Altman Professor Dept of Physics（身份及关系仍待核）。
 - 已读取来源页 [网页](https://www.demlergroup.com/people.html)（2026-11-10T13:08:18.226Z）：辅助原档复核。保留 Lukin 共同指导和 Demler 组属；Auerbach 仍是博士候选。（身份及关系仍待核）。

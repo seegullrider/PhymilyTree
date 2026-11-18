@@ -22,6 +22,7 @@
 
 - 博士导师：[[师承人物 - Kurt Kremer|Kurt Kremer]]。[本人 CV](https://www.cmu.edu/biolphys/smsl/data/MD%20CV.pdf) 证据：Mainz 2000 年博士论文后明确列 Advisor: K. Kremer；关系类型可信度：高。
 - 博士后导师：[[师承人物 - William M. Gelbart|William M. Gelbart]]。[本人 CV](https://www.cmu.edu/biolphys/smsl/data/MD%20CV.pdf) 证据：2000–2003 年 UCLA 博士后条目明确列 Advisor: W. M. Gelbart；关系类型可信度：高。
+- 博士阶段研究师长：[[师承人物 - Christian Holm|Christian Holm]]。Deserno 本人 Mainz 博士论文第 147 页致谢感谢 Christian Holm 的 supervision and judicious guidance；Stuttgart 原档证实 Holm 同期为 Mainz Kremer 组项目负责人。据致谢记录博士阶段研究师长。 [原档 1](https://physics.iisc.ac.in/~maiti/course_website/deserno_phd_thesis.pdf) · [原档 2](https://www.uni-stuttgart.de/en/press/experts/Prof.-Christian-Holm/)
 - 核查边界：本人履历分别明确 Kremer 为博士导师、Gelbart 为 UCLA 博士后导师。
 
 <!-- PI-AUTO-SEARCH:START -->
@@ -33,5 +34,7 @@
   - [Markus Deserno - Department of Physics - Mellon College of Science - Carnegie Mellon University](https://www.cmu.edu/physics/people/faculty/deserno.html)：Crawled: last month; ## Mellon College of Science ## Markus Deserno ... Ph.D.: Max-Planck-Institute for Polymer Research (2000) ... Professor of Physics, Carnegie Mellon University, 2016–（姓名字符串出现，仍须核对单位时间；关系未判定，可信度未评估）
 - 检索类型：博士及博士后；检索时间：2026-11-03T07:29:26.908Z
   - [Markus Deserno - Department of Physics - Mellon College of Science - Carnegie Mellon University](https://www.cmu.edu/physics/people/faculty/deserno.html)：Crawled: last month; ## Markus Deserno ... Professor of Physics, Carnegie Mellon University, 2016– ... Ergüder and Markus Deserno, Identifying Systematic Errors In A Power Spectral Analysis Of Simulated Lipid Membranes, J. Carnegie Mellon U（姓名字符串出现，仍须核对单位时间；关系未判定，可信度未评估）
+- 已读取来源页 [网页](https://physics.iisc.ac.in/~maiti/course_website/deserno_phd_thesis.pdf)（2026-11-17T01:06:21.670Z）：Deserno 博士论文致谢以 supervision 具名 Christian Holm。评审页另列 Kurt Kremer 等。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://www.cmu.edu/physics/people/faculty/deserno.html)（2026-11-06T06:13:06.989Z）：CMU 物理系列 Markus Deserno 为物理教授、2000 年 Max Planck 高分子研究所博士、2000–2003 UCLA 博后，研究生物物理与软物质；页面未列导师。（身份及关系仍待核）。
+- 已读取来源页 [网页](https://www.uni-stuttgart.de/en/press/experts/Prof.-Christian-Holm/)（2026-11-17T01:06:21.670Z）：Stuttgart 校方原档核 Christian Holm 曾任 Mainz 的 Kremer 聚合物理论组项目负责人。（身份及关系仍待核）。
 <!-- PI-AUTO-SEARCH:END -->

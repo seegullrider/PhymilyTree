@@ -20,4 +20,4 @@ The scripts use Node.js (some require the built-in `node:sqlite`) and in some ca
 
 Candidate matching uses the April 2026 [Academic Family Tree / Physics Tree data snapshot](https://doi.org/10.5281/zenodo.19739198), distributed under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/). Matched identities and candidate rows are derived annotations. See the separately sourced relationship events for reviewed evidence.
 
-Snapshot: 2026-11-16.
+Snapshot: 2026-11-18.

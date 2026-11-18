@@ -20,14 +20,14 @@
 
 ## 师承
 
-> [!warning] 博士导师来源待复核
-> 下方两位导师来自历史人物记录。本轮本地回执显示 MIT 学位目录访问未取得正文；Cornell 和 Dartmouth 的 1991 年博士年份与历史目录所记 1992 年不一致。保留两条历史关系，但在直接核读目录或签署页前不视为本次已独立确认。
+> [!note] 博士论文书目年份
+> MIT 论文目录的导师字段并列两位导师。MIT 目录分别记版权 1991、发表 1992，而 Cornell 与 Dartmouth 写博士 1991 年。保留各来源的年份。
 
 - 博士生：[[人员 - Ohio State - Xiaoguang (William) Wang - 6234dd87|Xiaoguang (William) Wang]]。[本人 2025 CV](https://people.engineering.osu.edu/media/document/2025-08-14/wang-cv-2025-08-06.pdf)将 Abbott 列为 Wisconsin–Madison 2016 博士论文 Advisor；[原来源](https://people.engineering.osu.edu/media/document/2024-04-09/cv_william_2024-03-14.pdf)保留。
-- 博士导师：[[师承人物 - T. Alan Hatton|T. Alan Hatton]]。[来源](https://dspace.mit.edu/entities/publication/a2898f30-950b-4a42-9697-52e62ceddfa1)
-- 博士导师：[[师承人物 - Daniel Blankschtein|Daniel Blankschtein]]。[来源](https://dspace.mit.edu/entities/publication/a2898f30-950b-4a42-9697-52e62ceddfa1)
+- 博士导师：[[师承人物 - T. Alan Hatton|T. Alan Hatton]]。[来源](https://dspace.mit.edu/entities/publication/a2898f30-950b-4a42-9697-52e62ceddfa1) MIT 学位馆藏先前实读回执保存 1721.1/82741 的 Advisor 字段，明确并列 Daniel Blankschtein 与 T. Alan Hatton，共同博士指导。 [原档 1](http://hdl.handle.net/1721.1/82741) · [原档 2](https://dspace.mit.edu/server/api/core/items/a2898f30-950b-4a42-9697-52e62ceddfa1)
+- 博士导师：[[师承人物 - Daniel Blankschtein|Daniel Blankschtein]]。[来源](https://dspace.mit.edu/entities/publication/a2898f30-950b-4a42-9697-52e62ceddfa1) MIT 学位馆藏先前实读回执保存 1721.1/82741 的 Advisor 字段：Daniel Blankschtein and T. Alan Hatton；作者 Nicholas Lawrence Abbott、MIT 化工博士及组页论文题名相符。 [原档 1](http://hdl.handle.net/1721.1/82741) · [原档 2](https://dspace.mit.edu/server/api/core/items/a2898f30-950b-4a42-9697-52e62ceddfa1)
 - 博士后阶段研究师长：[[师承人物 - George M. Whitesides|George M. Whitesides]]。Cornell 原档列 Harvard 化学系 1991–1993 博士后和具名 research with George M. Whitesides；Dartmouth 讲者原件独立核任期，Whitesides 组档列 1991-11-18 至 1993-06-02。阶段研究师长，正式导师称谓待查。 [Cornell 工程学院](https://www.duffield.cornell.edu/people/nicholas-l-abbott/) · [Dartmouth 原讲座](https://chemistry.dartmouth.edu/sites/chemistry/files/department_chemistry/wysiwyg/nick_abbott_oct_19.pdf#page=1) · [Harvard 组档](https://www.gmwgroup.harvard.edu/resources)
-- 核查边界：Cornell 教育履历和 Dartmouth 讲者原档均将 MIT 博士列 1991；MIT 目录既有记录是 1992 年并列 Daniel Blankschtein、T. Alan Hatton。检索显示同题名和字段，主机退避期间保留原人物页及博士复核状态，待读原目录和签署页。 [Cornell 工程学院](https://www.duffield.cornell.edu/people/nicholas-l-abbott/) · [Dartmouth 原讲座](https://chemistry.dartmouth.edu/sites/chemistry/files/department_chemistry/wysiwyg/nick_abbott_oct_19.pdf#page=1) · [待重核的 MIT 学位目录](https://dspace.mit.edu/entities/publication/a2898f30-950b-4a42-9697-52e62ceddfa1)
+- 核查边界：Cornell 教育履历和 Dartmouth 讲者原档均将 MIT 博士列 1991；MIT 目录既有记录是 1992 年并列 Daniel Blankschtein、T. Alan Hatton。核读了已保存的 MIT 学位目录 Advisor 字段，论文署名页可以进一步核对年份。 [Cornell 工程学院](https://www.duffield.cornell.edu/people/nicholas-l-abbott/) · [Dartmouth 原讲座](https://chemistry.dartmouth.edu/sites/chemistry/files/department_chemistry/wysiwyg/nick_abbott_oct_19.pdf#page=1) · [MIT 学位目录](https://dspace.mit.edu/entities/publication/a2898f30-950b-4a42-9697-52e62ceddfa1) MIT 论文 PDF 扉页 Thesis Supervisor 栏可作最终复核；博士后阶段（Whitesides）另核正式称谓。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
@@ -45,7 +45,7 @@
 - 已读取来源页 [网页](https://ctl.cornell.edu/programs_outreach/ctl-practicum/)（2026-11-03T07:56:50.443Z）：* Cindy Qiu, a Ph.D. Candidate in the Department of Chemical and Biomolecular Engineering†www.cheme.cornell.edu, working with Professor Nicholas L. Abbott†www.engineering.cornell.edu. * Eti Sinha, a P（身份及关系仍待核）。
 - 页面读取失败 [网页](https://dbgroup.mit.edu/alumni/nicholas-l-abbott/)：(502) Bad Gateway；待重试。
 - 页面读取失败 [网页](https://dspace.mit.edu/entities/publication/a2898f30-950b-4a42-9697-52e62ceddfa1)：Cache miss--------------------------------------------------------------------------------；待重试。
-- 页面读取失败 [网页](https://dspace.mit.edu/server/api/core/items/a2898f30-950b-4a42-9697-52e62ceddfa1)：Internal Error () URL [网址略] is not accessible via this tool.；待重试。
+- 已读取来源页 [网页](https://dspace.mit.edu/server/api/core/items/a2898f30-950b-4a42-9697-52e62ceddfa1)（2026-11-16T17:03:01.353Z）：MIT 学位论文 Advisor 并列 Daniel Blankschtein 与 T. Alan Hatton；版权字段 1991，目录发表字段 1992。（身份及关系仍待核）。
 - 页面读取失败 [网页](https://voltron.as.cornell.edu/nicholas-l-abbott-0)：Cache miss；待重试。
 - 已读取来源页 [网页](https://www.duffield.cornell.edu/people/nicholas-l-abbott/)（2026-11-10T03:01:39.389Z）：Cornell 工程学院档案列 1993 Harvard 化学系博士后研究 with George M. Whitesides。证实阶段指导，正式导师职衔待核。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://www.gmwgroup.harvard.edu/resources)（2026-11-10T19:47:12.256Z）：Harvard Whitesides 组原档列 Nick Abbott 博后起止 1991-11-18 至 1993-06-02 及去向 Cornell。（身份及关系仍待核）。

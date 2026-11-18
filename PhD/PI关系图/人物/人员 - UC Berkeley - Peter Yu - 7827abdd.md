@@ -23,7 +23,8 @@
 - 博士后阶段研究关联（反向线索，低可信候选）：[[人员 - NUS - Kie Leong Teo - 28f78d3f|Kie Leong Teo]]。 [Colton 博士论文致谢](https://www.osti.gov/servlets/purl/788068) · [NUS ECE 原档](https://cde.nus.edu.sg/ece/staff/teo-kie-leong/)。Colton 的 Berkeley 2000 博士论文致谢称在 Peter Yu 实验室开始研究时与 Teo 密切共事。NUS 原档分列 Teo 1995–1996 Berkeley 访学与 1997–1998 博后。由于共事日期与个人指导称谓未列，Peter Yu 暂为博士后候选，低可信。
 
 - 博士导师候选：[[师承人物 - Manuel Cardona|Manuel Cardona]]。[来源](https://www.nasonline.org/wp-content/uploads/2024/06/cardona-manuel.pdf) 证据：纪念文在研究生课程叙述中称 Peter Yu 为其学生，可能指课程师生，未确认论文指导；导师关系待核，可信度：低。
-- 核查边界：纪念文的学生表述处于研究生课程语境，不能单独证明论文导师；Berkeley 简介列 1971–1973 博后且 Brown 博士年份为 1972，具体月份及博士后导师待核。 [Berkeley 物理系](https://physics.berkeley.edu/people/faculty/peter-yu)
+- 复核原档：Peter Y. Yu 参与撰写的 NAS 纪念文在 Brown 研究生课程段落称 Yu 为 Cardona 的一位学生。Berkeley 本人档确认其 1972 年 Brown 物理博士和 1971–1973 年 Berkeley 博后。现有措辞确立师生联系，但课程段落没有描述 Cardona 对 Yu 的博士研究或论文的指导，保留博士导师候选。 [原档 1](https://www.nasonline.org/wp-content/uploads/2024/06/cardona-manuel.pdf) · [原档 2](https://physics.berkeley.edu/people/faculty/peter-yu)
+- 核查边界：纪念文的学生表述处于研究生课程语境，不能单独证明论文导师；Berkeley 简介列 1971–1973 博后且 Brown 博士年份为 1972，具体月份及博士后导师待核。 [Berkeley 物理系](https://physics.berkeley.edu/people/faculty/peter-yu) 续查 Brown 论文原卷或本人履历中 Cardona 的具体研究指导角色。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
@@ -37,8 +38,10 @@
   - [Two-page Curriculum Vitae of Dr. David John Erskine, highlighting recent astro & optics](https://spectralfringe.org/EDI/MyPubs2/CV-Erskine-TwoPage-Gen.pdf)：Published: 6 months ago; Thesis: Optically measured relaxation time of electron-hole carriers in semiconductors using femtosecond pulsed lasers; ... Peter Yu advisor. ... UC Berkeley Space Sciences ... Postdoctoral researcher (high pressure（姓名字符串出现，仍须核对单位时间；关系未判定，可信度未评估）
   - [Emeritus Experimentalist | Page 2 | Physics](https://physics.berkeley.edu/topics/emeritus-experimentalist?page=1&sort_by=changed&sort_order=DESC)：Crawled: last month; ## Peter Yu ... After doing postdoctoral work at Berkeley between 1971-73, he joined the IBM T. ... After an appointment as assistant professor of physics at New York University, he joined the UC Berkeley physics facult（姓名字符串出现，仍须核对单位时间；关系未判定，可信度未评估）
 - 已读取来源页 [网页](https://academicworks.cuny.edu/gc_etds/5488/)（2026-11-11T03:23:07.557Z）：* Peter Yu, CUNY Graduate CenterFollow†network.bepress.com The COVID-19 pandemic has shown how macro-level issues can influence how we manage work and family responsibilities. Yet, work-family (WF) re（身份及关系仍待核）。
+- 已读取来源页 [网页](https://physics.berkeley.edu/people/faculty/peter-yu)（2026-11-17T21:25:02.095Z）：院系确认物理博士及博后地点，研究为半导体实验物理。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://physics.berkeley.edu/topics/emeritus-experimentalist?page=1&sort_by=changed&sort_order=DESC)（2026-11-03T09:23:34.637Z）：Peter Yu received his B.Sc from the Univ. of Hong Kong in 1967 and the Ph.D. in Physics from Brown in 1972. After doing postdoctoral work at Berkeley between 1971-73, he joined the IBM T. J. Watson Re（身份及关系仍待核）。
 - 已读取来源页 [网页](https://spectralfringe.org/EDI/MyPubs2/CV-Erskine-TwoPage-Gen.pdf)（2026-11-03T09:23:04.612Z）：conductivity of silicon squeezed to 450 Megabars between diamond tips at liquid helium temperatures; Prof. Peter Yu advisor. Thesis: Optically measured relaxation time of electron-hole carriers in sem（身份及关系仍待核）。
 - 已读取来源页 [网页](https://www.csail.mit.edu/event/talk-peter-yu-phd-defense-realtime-state-estimation-contact-manipulation)（2026-11-11T03:23:14.338Z）：Add to Calendar ` `2018-06-15 14:00:00` `2018-06-15 16:00:00` `America/New_York` `TALK: Peter Yu PhD Defense: Realtime State Estimation for Contact Manipulation` `Thesis title: Realtime State Estimati（身份及关系仍待核）。
 - 页面读取失败 [网页](https://www.linkedin.com/in/peter-yu-a1757259)：(999) Unknown Status Code；需另找可访问的原始来源。
+- 已读取来源页 [网页](https://www.nasonline.org/wp-content/uploads/2024/06/cardona-manuel.pdf)（2026-11-17T21:25:02.094Z）：Peter Y. Yu 参与撰写的 NAS 纪念文在 Brown 研究生课程段落称 Yu 为 Cardona 的一位学生。Berkeley 本人档确认其 1972 年 Brown 物理博士和 1971–1973 年 Berkeley 博后。现有措辞确立师生联系，但课程段落没有描述 Cardona 对 Yu 的博士研究或论文的指导，保留博士导师候选。（身份及关系仍待核）。
 <!-- PI-AUTO-SEARCH:END -->

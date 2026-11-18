@@ -20,8 +20,8 @@
 
 ## 师承
 
-- 博士候选关系：[[人员 - UC San Diego - Y. Shaya Fainman - 6577ec4e|Yeshaiahu Fainman]]。UC San Diego Jacobs 2010 当期原报道确认 Dawn Tan 为 ECE 博士生，Fainman 以该项目团队教授接受采访。2011 论文馆藏的缓存索引列 Fainman 为委员会主席；学位原件主机退避中。两项共同支持候选，论文正式指导称谓待核。 [UC San Diego 工学院当期报道](https://jacobsschool.ucsd.edu/news/release/1025?id=1025) · [待重读学位原卷](https://escholarship.org/content/qt9mr317vv/qt9mr317vv.pdf) · [SUTD 本人档](https://www.sutd.edu.sg/profile/dawn-tan)
-- 核查边界：博士导师尚未查实；官方简介未明确列出博士后经历或导师，继续追查，不把访问教授等同博士后。 [SUTD 正式履历](https://www.sutd.edu.sg/profile/dawn-tan/)。SUTD 院系履历核 MIT 访问教授及 Luxtera 任职，未列独立博士后。原档核 UCSD 电气工程（光子学）博士。 本人现行 SUTD 履历及 UCSD 当期原报道相互核姓名、院系、光子学方向。 [UC San Diego 当期报道](https://jacobsschool.ucsd.edu/news/release/1025?id=1025) · [SUTD 现任](https://www.sutd.edu.sg/profile/dawn-tan)
+- 博士导师：[[人员 - UC San Diego - Y. Shaya Fainman - 6577ec4e|Yeshaiahu Fainman]]。UC San Diego Jacobs 2010 当期原报道确认 Dawn Tan 为 ECE 博士生，Fainman 以该项目团队教授接受采访。2011 论文馆藏的缓存索引列 Fainman 为委员会主席；学位论文题页列 Fainman 为委员会主席，致谢明确称其为博士导师。 [UC San Diego 工学院当期报道](https://jacobsschool.ucsd.edu/news/release/1025?id=1025) · [学位论文原卷](https://escholarship.org/content/qt9mr317vv/qt9mr317vv.pdf) · [SUTD 本人档](https://www.sutd.edu.sg/profile/dawn-tan) Dawn Tse Hui Tan 的 UC San Diego 2011 年电气工程（光子学）博士论文题页列 Professor Yeshaiahu Fainman 为委员会主席，致谢称其为 “my advisor, Professor Yeshaiahu Fainman”。UCSD 工学院同期报道确认 Dawn Tan 为 ECE 博士生。 [原档 1](https://escholarship.org/content/qt9mr317vv/qt9mr317vv.pdf) · [原档 2](https://jacobsschool.ucsd.edu/news/release/1025?id=1025)
+- 核查边界：博士导师已由 UCSD 学位论文确认（见师承段）；官方简介未明确列出博士后经历或导师，继续追查，不把访问教授等同博士后。 [SUTD 正式履历](https://www.sutd.edu.sg/profile/dawn-tan/)。SUTD 院系履历核 MIT 访问教授及 Luxtera 任职，未列独立博士后。原档核 UCSD 电气工程（光子学）博士。 本人现行 SUTD 履历及 UCSD 当期原报道相互核姓名、院系、光子学方向。 [UC San Diego 当期报道](https://jacobsschool.ucsd.edu/news/release/1025?id=1025) · [SUTD 现任](https://www.sutd.edu.sg/profile/dawn-tan) 继续核对毕业后的任用时间线及可能的博士后指导。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
@@ -33,7 +33,7 @@
   - [EPD Faculty Research](https://www.sutd.edu.sg/wp-content/uploads/sites/2/2024/12/EPD-Faculty-Research-A-Quick-Guide.pdf)：Published: 2.3 years ago; SUTD — Singapore University of Technology and Design | Engineering Product Development ... # EPD Faculty Research ... Her team handles design, numerical modeling, fabrication, and experimental characterization of t（摘要未见完整姓名，须核对；关系未判定，可信度未评估）
 - 检索类型：博士及博士后；检索时间：2026-11-03T04:01:36.109Z
   - [Dawn Tan - Singapore University of Technology and Design (SUTD)](https://www.sutd.edu.sg/profile/dawn-tan/)：Crawled: 5 days ago; Dawn Tan is an Associate Professor at the Singapore University of Technology and Design where she leads the Photonics Devices and Systems Group. ... Prior to joining SUTD, Dawn was involved in outreach programs in the U（姓名字符串出现，仍须核对单位时间；关系未判定，可信度未评估）
-- 页面读取失败 [网页](https://escholarship.org/content/qt9mr317vv/qt9mr317vv.pdf)：(429) Too Many Requests；待重试。
+- 已读取来源页 [网页](https://escholarship.org/content/qt9mr317vv/qt9mr317vv.pdf)（2026-11-17T12:27:28.096Z）：Dawn Tse Hui Tan 的 UC San Diego 2011 年电气工程（光子学）博士论文题页列 Professor Yeshaiahu Fainman 为委员会主席，致谢称其为 “my advisor, Professor Yeshaiahu Fainman”。UCSD 工学院同期报道确认 Dawn Tan 为 ECE 博士生。（身份及关系仍待核）。
 - 页面读取失败 [网页](https://graphene.nus.edu.sg/blog/peoples/dawn-tan/)：(502) Bad Gateway；待重试。
 - 已读取来源页 [网页](https://jacobsschool.ucsd.edu/news/release/1025?id=1025)（2026-11-11T08:12:17.367Z）：博士阶段关系补原证，仍为候选。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://www.sutd.edu.sg/profile/dawn-tan)（2026-11-10T19:37:08.791Z）：SUTD 原档核副教授、光子研究与 UCSD 博士，访问教授和 Luxtera 任职分列。（身份及关系仍待核）。

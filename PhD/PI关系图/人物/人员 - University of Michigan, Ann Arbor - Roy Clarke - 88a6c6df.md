@@ -23,7 +23,8 @@
 - 博士生：[[人员 - NYU - David G. Grier - bc1df89d|David G. Grier]]。[来源](https://physics.nyu.edu/grierlab/shortcv.pdf#page=1) 证据：Grier 本人履历将 Clarke 和 Leonard M. Sander 列为 1989 年 Michigan 博士导师；另有来源列出其他共同指导者，详见 Grier 人物页；关系类型可信度：高。
 - 博士生：[[人员 - Duke - Divine P. Kumah - a3d068af|Divine P. Kumah]]。[来源](https://kumahlab.wordpress.ncsu.edu/files/2015/09/Kumah_DP_Resume.pdf) Michigan 2009 应用物理论文《Direct X-ray Studies of Epitaxial Semiconductor Quantum Dots》封面具名 Roy Clarke 为委员会主席，作者致谢明确称其为自己的导师。 [Michigan 学位论文原卷](https://deepblue.lib.umich.edu/bitstream/handle/2027.42/63875/dkumah_1.pdf?isAllowed=y&sequence=1)
 - 博士后导师候选：[[师承人物 - Mildred S. Dresselhaus|Mildred S. Dresselhaus]]。[来源](https://ankitatakesnotes.substack.com/p/all-roads-lead-to-bell-labs)
-- 核查边界：Queen Mary 1973 博士导师待查；Michigan 页面列 Cavendish 与 Chicago James Franck Fellowship。个人访谈式报道提及曾在 MIT 与 Dresselhaus 博士后合作，保留博士后导师候选、继续核验。校内国际研究所目录列荣休，但物理系主页仍列教授，现职状态有冲突需复核：https://prod.lsa.umich.edu/content/ii-directory/ii/en/people/all/r/royc.html
+- 博士后课题组负责人：[[人员 - University of Chicago - Sidney R. Nagel - 334d75ce|Sidney R. Nagel]]。Nagel 组官方校友名录 Post Docs 栏列 Roy Clarke，任职单位注明 University of Michigan。Michigan 本人履历列 Queen Mary 物理博士，随后在 Cambridge Cavendish 和 Chicago James Franck Fellowship 任职。组档确认 Chicago 博士后组属，个人指导及任期起止待核。 [原档 1](https://nagelgroup.uchicago.edu/Nagel-Group/members.html) · [原档 2](https://prod.lsa.umich.edu/content/ii-directory/ii/en/people/all/r/royc.html)
+- 核查边界：Queen Mary 1973 博士导师待查；Michigan 页面列 Cavendish 与 Chicago James Franck Fellowship。个人访谈式报道提及曾在 MIT 与 Dresselhaus 博士后合作，保留博士后导师候选、继续核验。校内国际研究所目录列荣休，但物理系主页仍列教授，现职状态有冲突需复核：https://prod.lsa.umich.edu/content/ii-directory/ii/en/people/all/r/royc.html 续查 Queen Mary 学位论文、Chicago fellowship 任期及个人指导，另核 Dresselhaus 候选。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
@@ -38,5 +39,6 @@
 - 已读取来源页 [网页](https://css.umich.edu/people/university-affiliates/roy-clarke)（2026-11-11T05:44:57.046Z）：Professor Clarke is a Fellow of the American Physical Society, and received the Presidential Award for Excellence in Science, Mathematics and Engineering Mentoring in 2011. Experiments at the ultrafas（身份及关系仍待核）。
 - 已读取来源页 [网页](https://kumahlab.wordpress.ncsu.edu/files/2015/09/Kumah_DP_Resume.pdf)（2026-11-03T10:35:24.074Z）：Thesis: Direct X-Ray Studies of Epitaxial Semiconductor Quantum  (32) D. P. Kumah, M. Dogan, J. H. Ngai, D. Qiu, Z. Zhang, D. Su, E. D. Specht, S. IsmailBeigi, C. H. Ahn, and F. J. Walker. Engineere（身份及关系仍待核）。
 - 已读取来源页 [网页](https://lsa.umich.edu/physics/people/faculty/royc.html)（2026-11-11T05:57:55.987Z）：Surface X-ray Diffraction Results on the III-V Droplet Heteroepitaxy Growth Process for Quantum Dots: Recent Understanding and Open Questions, (Eyal Cohen, Naomi Elfassy, Guy Koplovitz, Shira Yochelis（身份及关系仍待核）。
+- 已读取来源页 [网页](https://nagelgroup.uchicago.edu/Nagel-Group/members.html)（2026-11-17T13:24:47.915Z）：Nagel 组官方 Post Docs 校友栏目具名 Roy Clarke，机构 Michigan 匹配。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://prod.lsa.umich.edu/content/ii-directory/ii/en/people/all/r/royc.html)（2026-11-03T10:35:24.074Z）：Roy Clarke is the Marcellus L. Wiedenbeck Collegiate Professor of Physics and Applied Physics at the University of Michigan, Ann Arbor.  He received his PhD in Physics from Queen Mary College, Univers（身份及关系仍待核）。
 <!-- PI-AUTO-SEARCH:END -->

@@ -20,11 +20,11 @@
 
 ## 师承
 
-- 博士导师候选：[[人员 - University of Chicago - Philippe Guyot-Sionnest - 3163a074|Philippe Guyot-Sionnest]]。[来源](https://academictree-staging.thetransmitter.org/physics/inst.php?locid=3797)
+- 博士课题组负责人：[[人员 - University of Chicago - Philippe Guyot-Sionnest - 3163a074|Philippe Guyot-Sionnest]]。[来源](https://academictree-staging.thetransmitter.org/physics/inst.php?locid=3797) 芝加哥大学 PGS Lab 校友原页的 Past Doctoral Students 栏列 Dong Yu、PhD (2001–2005) 及 UC Davis 职位，核实博士组属。 [原档 1](https://pgslab.uchicago.edu/people-alumni/)
 - 博士后课题组负责人：[[人员 - Harvard - Hongkun Park - abdc86e2|Hongkun Park]]。Park 实验室原校友名录明确链接 UC Davis 本人，校方履历列唯一 Harvard 岗位为 2005–2008 博士后。Park 组的同期发表原档列 2006 与 2008 年同一研究者在相变材料上连续共事。合并证据支持博士后课题组关系，正式导师职衔待任用档。 [Harvard Park 校友原档](https://hongkunparklab.com/alumni) · [UC Davis 物理系履历](https://physics.ucdavis.edu/people/faculty/dong-yu) · [Park 组同期发表原档](https://hongkunparklab.com/publications)
-- 博士候选证据：AcademicTree 将 Chicago 2005 年 Dong Yu 与 Philippe Guyot-Sionnest 关联；本人学校主页与论文年份、机构和方向相符。可信度：中，需学位论文核实。
+- 博士阶段线索：AcademicTree 将 Chicago 2005 年 Dong Yu 与 Philippe Guyot-Sionnest 关联；本人学校主页与论文年份、机构和方向相符。可信度：中，需学位论文核实。
 - 博士后关系证据：Park 实验室原校友名录明确链接 UC Davis 本人，校方履历列唯一 Harvard 岗位为 2005–2008 博士后。Park 组的同期发表原档列 2006 与 2008 年同一研究者在相变材料上连续共事。合并证据支持博士后课题组关系，正式导师职衔待任用档。 [Harvard Park 校友原档](https://hongkunparklab.com/alumni) · [UC Davis 物理系履历](https://physics.ucdavis.edu/people/faculty/dong-yu) · [Park 组同期发表原档](https://hongkunparklab.com/publications)
-- 核查边界：Chicago 2005 博士导师 Philippe Guyot-Sionnest 维持候选。Harvard 2005–2008 Park 组属由原档交叉核对，正式导师待核。Braun 名录中的 Dong-Guk Yu 另有同期 Illinois 博后与不同去向，已排除。 [Harvard Park 校友原档](https://hongkunparklab.com/alumni) · [UC Davis 物理系履历](https://physics.ucdavis.edu/people/faculty/dong-yu) · [Park 组同期发表原档](https://hongkunparklab.com/publications)
+- 核查边界：芝加哥大学 PGS Lab 校友表核实 2001–2005 博士组属，正式导师称谓待学位原档。Harvard 2005–2008 Park 组属由原档交叉核对，正式导师待核。Braun 名录中的 Dong-Guk Yu 另有同期 Illinois 博后与不同去向，已排除。 [Harvard Park 校友原档](https://hongkunparklab.com/alumni) · [UC Davis 物理系履历](https://physics.ucdavis.edu/people/faculty/dong-yu) · [Park 组同期发表原档](https://hongkunparklab.com/publications) Chicago 2005 论文署名页或 Yu 本人 CV 的博士导师栏可升博士导师；PGS 课题组页不写 advisor 称谓。
 
 
 <!-- PI-AUTO-SEARCH:START -->
@@ -41,6 +41,7 @@
 - 已读取来源页 [网页](https://hongkunparklab.com/alumni)（2026-11-11T06:34:57.426Z）：原校友表具名 Dong Yu，链接 UC Davis 物理系同一人，表未按过去职衔分组。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://hongkunparklab.com/publications)（2026-11-11T06:34:57.427Z）：Harvard Park 本人组发表原档列 2006 与 2008 Dong Yu 的同期合作，研究主题对应 UC Davis 履历。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://london.ucdavis.edu/REU/projects.html)（2026-11-03T04:35:31.853Z）：1. Superfluid vortices:  All rotation in superfluid helium is due to quantized vortex lines, and changes in the fluid flow occur as these vortex lines move. In particular, the vortices have normal mod（身份及关系仍待核）。
+- 已读取来源页 [网页](https://pgslab.uchicago.edu/people-alumni/)（2026-11-16T17:03:01.352Z）：芝加哥大学 PGS Lab 校友原页博士生栏核对 Dong Yu 的学位阶段和现任单位。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://physics.ucdavis.edu/people/faculty/dong-yu)（2026-11-03T06:16:39.044Z）：Condensed matter experiment. Synthesis and characterization of colloidal nanocrystals, including measurements of their optical, electrical, and low temperature transport properties. Vapor phase synthe（身份及关系仍待核）。
 - 页面读取失败 [网页](https://yu.physics.ucdavis.edu/?q=node%2F40)：(400) Timeout fetching；待重试。
 <!-- PI-AUTO-SEARCH:END -->

@@ -21,7 +21,8 @@
 ## 师承
 
 - 博士后阶段候选课题组负责人：[[人员 - UC San Diego - Lu J. Sham - 6c004af0|Lu J. Sham]]。[MSU 本人 CV 任职栏](https://web.pa.msu.edu/people/carlo/CV_Piermarocchi07fullnm.pdf) · [MSU 院系原档](https://directory.natsci.msu.edu/directory/Profiles/Person/102143?group=1124&org=34)。MSU 托管的本人 CV 首次读得正文，Work Experience 栏明确列 1999–2002 年在 UCSD 的 Prof. L. J. Sham group 任 Research Assistant，MSU 原档列 1998 EPFL 理论物理博士。组属属实，CV 使用 Research Assistant，尚未找到同期明确的 Postdoc 职位或个人指导称谓，故保留博后阶段候选标签。
-- 核查边界：EPFL 1998 年博士；论文导师待核。[MSU 本人 CV 任职栏](https://web.pa.msu.edu/people/carlo/CV_Piermarocchi07fullnm.pdf) · [MSU 院系原档](https://directory.natsci.msu.edu/directory/Profiles/Person/102143?group=1124&org=34)。MSU 托管的本人 CV 首次读得正文，Work Experience 栏明确列 1999–2002 年在 UCSD 的 Prof. L. J. Sham group 任 Research Assistant，MSU 原档列 1998 EPFL 理论物理博士。组属属实，CV 使用 Research Assistant，尚未找到同期明确的 Postdoc 职位或个人指导称谓，故保留博后阶段候选标签。
+- 博士导师：[[师承人物 - Antonio Quattropani|Antonio Quattropani]]。EPFL Infoscience 博士论文 1908 的作者为 Carlo Piermarocchi，题为 Exciton dynamics in semiconductor confined systems，1998 年，Advisor 字段为 Quattropani, Antonio；同期 EPFL 课程档确认其教授身份。 [原档 1](https://infoscience.epfl.ch/server/api/core/items/935b110b-9033-4dcf-8be9-69624742aab2) · [原档 2](https://www.epfl.ch/education/studies/wp-content/uploads/2022/12/1997-1998-8.pdf) · [原档 3](https://web.pa.msu.edu/people/carlo/CV_Piermarocchi07fullnm.pdf)
+- 核查边界：EPFL 1998 年博士。校方机构库学位论文的 Advisor 字段明确列 Antonio Quattropani。[MSU 本人 CV 任职栏](https://web.pa.msu.edu/people/carlo/CV_Piermarocchi07fullnm.pdf) · [MSU 院系原档](https://directory.natsci.msu.edu/directory/Profiles/Person/102143?group=1124&org=34)。MSU 托管的本人 CV 首次读得正文，Work Experience 栏明确列 1999–2002 年在 UCSD 的 Prof. L. J. Sham group 任 Research Assistant，MSU 原档列 1998 EPFL 理论物理博士。组属属实，CV 使用 Research Assistant，尚未找到同期明确的 Postdoc 职位或个人指导称谓，故保留博后阶段候选标签。 继续核 UCSD 1999–2002 任用阶段和个人指导者，补 EPFL 学位论文签署页。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
@@ -37,11 +38,13 @@
 - 已读取来源页 [网页](https://arxiv.org/pdf/cond-mat/0102482)（2026-11-10T01:17:19.402Z）：2001 年论文原稿显示 Piermarocchi 与 Sham 同列 UCSD 物理系并合著。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://directory.natsci.msu.edu/Directory/Profiles/Person_Embed/102143?group=1124&org=34)（2026-11-10T08:11:06.705Z）：Original MSU directory confirms doctoral institution and field. No named supervisor.（身份及关系仍待核）。
 - 已读取来源页 [网页](https://directory.natsci.msu.edu/directory/Profiles/Person/102143?group=1124&org=34)（2026-11-10T01:17:19.394Z）：原页核读，定位词：Theoretical Physics；仅供人工复核。（身份及关系仍待核）。
+- 已读取来源页 [网页](https://infoscience.epfl.ch/server/api/core/items/935b110b-9033-4dcf-8be9-69624742aab2)（2026-11-17T02:08:58.996Z）：EPFL Infoscience 博士论文 1908 的 advisor 字段为 Antonio Quattropani。（身份及关系仍待核）。
 - 页面读取失败 [网页](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.82.843)：Cache miss；待重试。
 - 已读取来源页 [网页](https://michiganstate.academia.edu/CPiermarocchi)（2026-11-10T00:19:52.684Z）：Academia 个人页标题为 Carlo Piermarocchi，Michigan State；需由学校原始页核对师承。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://michiganstate.academia.edu/CarloPiermarocchi)（2026-11-11T09:33:01.615Z）：L21: 【12†Michigan State University】, 【13†Physics and Astronomy】, Faculty Member（身份及关系仍待核）。
 - 页面读取失败 [网页](https://opg.optica.org/abstract.cfm?uri=QELS-1996-QThB5)：Cache miss；待重试。
 - 已读取来源页 [网页](https://web.pa.msu.edu/people/carlo/CV_Piermarocchi07fullnm.pdf)（2026-11-10T09:39:37.197Z）：MSU personal CV retrieved with readable work experience: 1999–2002 Research Assistant in Prof. L. J. Sham's group at UC San Diego. Exact postdoctoral title was not written; subsequent requests to the （身份及关系仍待核）。
 - 已读取来源页 [网页](https://www.epfl.ch/education/phd/edpo-photonics/edpo-published-theses/)（2026-11-10T01:17:19.398Z）：原页核读，定位词：Piermarocchi；仅供人工复核。（身份及关系仍待核）。
+- 已读取来源页 [网页](https://www.epfl.ch/education/studies/wp-content/uploads/2022/12/1997-1998-8.pdf)（2026-11-17T02:08:58.998Z）：EPFL 1997–1998 课程档列 A. Quattropani 为 EPFL 教授。（身份及关系仍待核）。
 - 页面读取失败 [网页](https://www.yumpu.com/en/document/view/12226129/curriculum-vitae-carlo-piermarocchi-phd-michigan-state-)：Mirror returned an access/interstitial page with no readable curriculum vitae. Primary MSU CV separately obtained.；待重试。
 <!-- PI-AUTO-SEARCH:END -->

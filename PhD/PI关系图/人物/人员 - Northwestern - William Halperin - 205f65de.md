@@ -28,8 +28,8 @@
 - 博士生：[[人员 - Brown - Vesna Mitrović - b44e1018|Vesna Mitrović]]。[来源](https://physics.northwestern.edu/documents/dimensions/dimensions-spring2005.pdf) 证据：校友简报直接列 Halperin 为 thesis advisor；关系类型可信度：高。
 - 博士生：[[人员 - Brown - Jia (Leo) Li — UT Austin 主聘，Brown 访问身份 - c659768e|Jia (Leo) Li — UT Austin 主聘，Brown 访问身份]]。[来源](https://vivo.brown.edu/docs/j/jli234_cv.pdf?dt=570812089)
 - 博士生：[[人员 - UT Austin - Jia (Leo) Li - 9a73b54f|Jia (Leo) Li]]。[来源](https://vivo.brown.edu/docs/j/jli234_cv.pdf?dt=074111010)
-- 博士阶段研究师长：[[师承人物 - Robert C. Richardson|Robert C. Richardson]]。[来源](https://studylib.net/doc/11436681/duke-physics-annual-newsletter-2013)
-- 核查边界：Duke 物理系纪念文称 Halperin 为 Richardson 的研究生；暂标博士阶段研究师长，博士后导师待查。 Fermilab SQMS 人物档核 Northwestern 任职与低温超流、超导谱学及磁共振方向。 [Fermilab SQMS 原档](https://sqmscenter.fnal.gov/profile/william-halperin/)
+- 博士导师：[[师承人物 - Robert C. Richardson|Robert C. Richardson]]。[来源](https://studylib.net/doc/11436681/duke-physics-annual-newsletter-2013) 2017 Fritz London 纪念奖得主传记写 Halperin Ph.D. from Cornell University in 1975，并在 graduate studies 阶段写 With his advisor Bob Richardson；Cornell 官方新闻 2013 年称他是 Richardson 的首批学生之一（1969）。以奖项传记的 his advisor 记为博士导师。 [原档 1](https://physics.duke.edu/sites/physics.duke.edu/files/documents/2017LondonHalperin.pdf) · [原档 2](https://news.cornell.edu/stories/2013/07/service-honors-statesman-science-robert-richardson)
+- 核查边界：Duke 物理系纪念文称 Halperin 为 Richardson 的研究生；Duke 托管的 Fritz London 奖传记以 his advisor 具名，已核博士关系。博士后导师待查。 Fermilab SQMS 人物档核 Northwestern 任职与低温超流、超导谱学及磁共振方向。 [Fermilab SQMS 原档](https://sqmscenter.fnal.gov/profile/william-halperin/) Cornell 1975 论文题页或致谢写明 advisor 可作最终复核（非必需）；Buhrman 条另核；博士后导师待查。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
@@ -40,6 +40,7 @@
   - [William Halperin: Department of Physics and Astronomy - Northwestern University](https://physics.northwestern.edu/people/faculty/core-faculty/william-halperin.html)：Crawled: last month; * w-halperin@northwestern.edu ... William Halperin's research is focused on low-temperature physics (mainly superfluid ^{3}He and topological superconductivity), NMR studies of high-temperature superconductors, and flui（姓名字符串出现，仍须核对单位时间；关系未判定，可信度未评估）
 - 检索类型：博士及博士后；检索时间：2026-11-03T08:50:11.380Z
   - [William Halperin: Department of Physics and Astronomy - Northwestern University](https://physics.northwestern.edu/people/faculty/core-faculty/william-halperin.html)：Crawled: last month; PhD, Cornell University, 1975 ... * w-halperin@northwestern.edu ... William Halperin's research is focused on low-temperature physics (mainly superfluid ^{3}He and topological superconductivity), NMR studies of high-tem（姓名字符串出现，仍须核对单位时间；关系未判定，可信度未评估）
+- 已读取来源页 [网页](https://physics.duke.edu/sites/physics.duke.edu/files/documents/2017LondonHalperin.pdf)（2026-11-16T17:59:29.865Z）：Duke 托管的 2017 Fritz London 奖传记第 2 页以 his advisor 指名 Bob Richardson。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://physics.northwestern.edu/people/faculty/core-faculty/william-halperin.html)（2026-11-03T08:50:17.588Z）：* Center for Interdisciplinary Research and Exploration in Astrophysics (CIERA)†ciera.northwestern.edu Low-Temperature Page†spindry.phys.northwestern.edu | NMR Page†spindry.phys.northwestern.edu（身份及关系仍待核）。
 - 已读取来源页 [网页](https://sqmscenter.fnal.gov/profile/william-halperin/)（2026-11-10T18:22:58.232Z）：Fermilab SQMS 原档核 Northwestern 任职及超导、超流、低温磁共振和热力学研究。（身份及关系仍待核）。
 <!-- PI-AUTO-SEARCH:END -->

@@ -17,14 +17,14 @@
 > [!warning] 同名线索
 > [UCLA Paul Weiss 组校友名单](https://nano.ucla.edu/about-archive/)另列一位 Jeffrey Schwartz，但未列学位和任职时间；不得仅凭姓名将该组经历或其指导关系归到本页 Princeton 教授。[相关讲座网页](https://www.cfel.de/sites/sites_cfelgroups/site_cfel/content/e4929/e20895/e17075/e25153/Talk_Jeffrey_Schwartz_eng.pdf)直接读取时缓存缺失，继续核对身份。
 
-- 博士阶段研究关联：[[师承人物 - Eugene E. van Tamelen|Eugene E. van Tamelen]]。[Princeton 化学系介绍](https://chemistry.princeton.edu/news/schwartz-an-emeritus-after-52-years-at-princeton-chemistry/)称他在 Stanford 于 1970 年获博士，期间 worked with van Tamelen 和 John Brauman；是否为正式论文导师待学位论文核实。
+- 博士导师：[[师承人物 - Eugene E. van Tamelen|Eugene E. van Tamelen]]。[Princeton 化学系介绍](https://chemistry.princeton.edu/news/schwartz-an-emeritus-after-52-years-at-princeton-chemistry/)称他在 Stanford 于 1970 年获博士，期间 worked with van Tamelen 和 John Brauman；Stanford 图书馆学位论文编目（SearchWorks id 2235384）的 contributors 栏以 primary advisor 角色具名 van Tamelen，据此记博士导师；Brauman 不在该编目条目中。 Stanford SearchWorks 公开编目的已保存读取结果明确列条目 2235384 的作者为 Jeffrey Schwartz、1970 年 Stanford 化学博士论文；contributors 的 Eugene E. van Tamelen 条著录为 primary advisor。Princeton 院档另述 Schwartz 在 Stanford 与 van Tamelen 和 Brauman 共事。 [原档 1](https://searchworks.stanford.edu/catalog.json?q=%22photochemistry+of+carbanions%2C+ketyls%2C+and+enolates%22&search_field=search&per_page=5) · [原档 2](https://chemistry.princeton.edu/news/schwartz-an-emeritus-after-52-years-at-princeton-chemistry/)
 - 博士阶段研究关联：[[师承人物 - John I. Brauman|John I. Brauman]]。[Princeton 化学系介绍](https://chemistry.princeton.edu/news/schwartz-an-emeritus-after-52-years-at-princeton-chemistry/)同述其博士期间 worked with Brauman；不能单独确证正式博士导师。
 - 博士后阶段：暂未发现实际博士后经历。[Princeton 教务长办公室](https://dof.princeton.edu/people/jeffrey-schwartz-0)称其原定 1970 年赴 Columbia 博士后计划中止，遂提前于 1970 年 5 月加入 Princeton 任助理教授；该计划不代表实际任职，是否有其他博士后经历仍待核。
 - 本科阶段研究师长：[[师承人物 - George M. Whitesides|George M. Whitesides]]。[Princeton 化学系介绍](https://chemistry.princeton.edu/news/schwartz-an-emeritus-after-52-years-at-princeton-chemistry/)称其 MIT 本科期间在 Whitesides 指导下研究 organocopper。
 - 本科论文指导学生：[[人员 - University of Michigan, Ann Arbor - Delia J. Milliron - 80ca0c07|Delia Milliron]]。[Michigan 本人资料](https://che.engin.umich.edu/people/delia-milliron/)的 Princeton 1999 本科论文列 Schwartz 与 Antoine Kahn 为 Advisors；本科阶段，不是博士生关系。其 [[人员 - UT Austin - Delia Milliron - 987f59bc|UT Austin 校属历史记录]]为同一人。
 - 本科研究指导学生：[[人员 - Princeton - Mircea Dincă - a3d05126|Mircea Dincă]]。[本人 MIT CV](https://web.mit.edu/dincalab/docs/CV_Dinca.pdf)的 Princeton 2003 B.A. 条目列 Schwartz 为 Advisor；本科阶段，不是博士生关系。
 - 复核原档：Princeton 材料所原档核化学荣休教授与 1970 Stanford 博士。HWS 存 Justin S. Miller 本人 CV，其中 Schwartz 是 1995 Princeton 本科毕业研究导师；Miller 的 MIT 博士和 Sloan-Kettering 博后导师属于 Miller，分开保留该阅览回执。 [原档 1](https://materials.princeton.edu/people/jeffrey-schwartz) · [原档 2](https://campus.hws.edu/Profiles/Public/Files/238/Docs/CV%20JSM%2014-09-04.pdf)
-- 核查边界：博士期间两人只记研究关联，尚需论文明确正式 advisor；Columbia 博士后计划中止，其他可能的博士后经历仍待核。 [原始资料](https://dof.princeton.edu/people/jeffrey-schwartz-0)。Princeton 教务长办公室核化学系，2022 年 7 月 1 日荣休。 教务档核 1970 年 Columbia 博后计划中止，5 月提前加入 Princeton；追 Stanford 论文正式导师。
+- 核查边界：博士导师 van Tamelen 已由 Stanford 学位论文编目 primary advisor 栏确认，Brauman 只记研究关联（编目未列，据 Princeton 化学系 worked with 一句）；Columbia 博士后计划中止，其他可能的博士后经历仍待核。 [原始资料](https://dof.princeton.edu/people/jeffrey-schwartz-0)。Princeton 教务长办公室核化学系，2022 年 7 月 1 日荣休。 教务档核 1970 年 Columbia 博后计划中止，5 月提前加入 Princeton；Stanford 学位编目现已补充。 可补核 1970 论文署名页和 Brauman 在博士阶段的具体角色。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
@@ -44,10 +44,12 @@
 - 已读取来源页 [网页](https://campus.hws.edu/Profiles/Public/Files/238/Docs/CV%20JSM%2014-09-04.pdf)（2026-11-12T06:33:34.527Z）：Justin S. Miller 的本人 CV 将 Jeffrey Schwartz 列为他 1995 年 Princeton 化学本科毕业研究的导师。Miller 的博士与博士后履历属于 Miller。（身份及关系仍待核）。
 - 页面读取失败 [网页](https://campus.hws.edu/Profiles/Public/Files/238/Docs/CV%20JSM.pdf)：Internal Error () URL [网址略] is not accessible via this tool.；待重试。
 - 已读取来源页 [网页](https://chemistry.princeton.edu/faculty-research/faculty/jeffrey-schwartz/)（2026-11-12T18:09:08.613Z）：Jeffrey Schwartz Professor of Chemistry [email protected] Frick Laboratory, 390（身份及关系仍待核）。
+- 已读取来源页 [网页](https://chemistry.princeton.edu/news/schwartz-an-emeritus-after-52-years-at-princeton-chemistry/)（2026-11-17T04:19:32.976Z）：Princeton 化学系原档核 1970 Stanford 博士及与 van Tamelen、Brauman 的研究关联。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://dof.princeton.edu/people/jeffrey-schwartz-0)（2026-11-10T12:46:50.243Z）：Princeton 教务长办公室核化学系，2022 年 7 月 1 日荣休。 教务档核 1970 年 Columbia 博后计划中止，5 月提前加入 Princeton；追 Stanford 论文正式导师。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://materials.princeton.edu/people/jeffrey-schwartz)（2026-11-12T06:33:41.834Z）：Princeton 材料所列 Jeffrey Schwartz 为化学荣休教授，1970 年 Stanford 博士。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://nano.ucla.edu/about-archive/)（2026-11-13T21:33:49.838Z）：UCLA Weiss 组校友名单另列 Jeffrey Schwartz、Intel；该名单无学位和任职日期，不能仅按姓名合并 Princeton 化学家。（身份及关系仍待核）。
 - 页面读取失败 [网页](https://orcid.org/0000-0001-9873-4499)：ORCID 工具仅返回一行站名，未取得履历。；待重试。
 - 已排除来源页 [网页](https://profiles.faculty.utah.edu/u0850378)：已人工核实属于数据库外其他同名者：Utah 法学院 Jeffrey Schwartz。Utah 法学院第 37 行列 UCLA 本科、UC Berkeley 法学学位、证券法研究。Princeton 材料所原档列 Stanford 1970 化学博士及 Princeton 化学荣休教授。。 **已核为库外同名者页面，不作为本人物的身份或师承证据。**
+- 已读取来源页 [网页](https://searchworks.stanford.edu/catalog.json?q=%22photochemistry+of+carbanions%2C+ketyls%2C+and+enolates%22&search_field=search&per_page=5)（2026-11-17T04:19:32.974Z）：Stanford SearchWorks 条目 2235384 明确以 primary advisor 具名 Eugene E. van Tamelen。（身份及关系仍待核）。
 - 页面读取失败 [网页](https://www.cfel.de/sites/sites_cfelgroups/site_cfel/content/e4929/e20895/e17075/e25153/Talk_Jeffrey_Schwartz_eng.pdf)：网页工具直接访问返回 Cache miss，未取得讲座正文，不将搜索摘要当作身份确认。；待重试。
 <!-- PI-AUTO-SEARCH:END -->

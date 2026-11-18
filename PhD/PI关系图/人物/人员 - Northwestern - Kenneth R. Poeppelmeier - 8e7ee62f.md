@@ -22,7 +22,7 @@
 ## 师承
 
 - 博士后研究者：[[人员 - UC San Diego - Kent Griffith - d7fb7243|Kent Griffith]]。[来源](https://www.aps.anl.gov/sites/www.aps.anl.gov/files/APS-Uploads/UO/APSUO_SC/APS%20Users%20EC%20Bio%20-%20KGriffith.pdf)
-- 博士阶段课题组成员：[[人员 - Carnegie Mellon - Paul A. Salvador - 3469cad3|Paul A. Salvador]]。[来源](https://chemgroups.northwestern.edu/poeppelmeier/people.html)
+- 博士生：[[人员 - Carnegie Mellon - Paul A. Salvador - 3469cad3|Paul A. Salvador]]。[来源](https://chemgroups.northwestern.edu/poeppelmeier/people.html) Salvador 本人 CMU 履历在 Northwestern 博士条目明确将 Poeppelmeier 与 Mason 并列为 Advisors。已有 Northwestern 组页佐证所属课题组。 [原档 1](https://www.andrew.cmu.edu/user/paul7/biography.html) · [原档 2](https://chemgroups.northwestern.edu/poeppelmeier/people.html)
 - 博士导师：[[师承人物 - John D. Corbett|John D. Corbett]]。[原论文](https://digital.library.unt.edu/ark%3A/67531/metadc1183855/m2/1/high_res_d/6896963.pdf)；[会议履历](https://flogen.org/sips2023/pdfs/Kenneth_Poeppelmeier_Bio.pdf) 证据：会议简介列 Iowa State PhD under John D. Corbett；已直接核对原卷第 12 页，明确博士监督人，可信度高。 UNT 托管 Iowa State 1978 年博士原卷题首具名 Kenneth Reinhard Poeppelmeier，第 12 页第 283–290 行直接列 John D. Corbett 为监督人。 [原档 1](https://digital.library.unt.edu/ark%3A/67531/metadc1183855/m2/1/high_res_d/6896963.pdf#page=12)
 - 复核原档：UNT 托管 Iowa State 1978 年博士原卷题首具名 Kenneth Reinhard Poeppelmeier，第 12 页第 283–290 行直接列 John D. Corbett 为监督人。 [原档 1](https://digital.library.unt.edu/ark%3A/67531/metadc1183855/m2/1/high_res_d/6896963.pdf#page=12)
 - 核查边界：Iowa State 博士论文原文明确 John Corbett 为导师；毕业后 Exxon 职位为研究员，尚未找到博士后任职证据。 继续查 1978 年 Exxon 入职、是否另有独立博士后经历及 Argonne 关联。

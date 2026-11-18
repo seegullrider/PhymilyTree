@@ -25,7 +25,8 @@
 
 - 博士导师：[[师承人物 - Janez Bonča|Janez Bonča]]。[本人 2002 年 Ljubljana 博士论文](https://www.physics.rutgers.edu/~haule/papers/thesis.pdf)致谢开篇明确感谢 Janez Bonča 的 supervision、持续指导与支持；关系类型可信度：高。
 - 博士后导师候选：[[人员 - Rutgers - Gabriel Kotliar - 1c24065f|Gabriel Kotliar]]。[Rutgers 任职原档](https://www.rutgers.edu/news/rutgers-physicist-earns-sloan-foundation-research-fellowship) · [2004 APS 原文](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.70.125112)。Rutgers 2008 年校方档案称 Haule 2002 和 2003 年在 Rutgers 做博士后，之后在 Ljubljana 的 Jožef Stefan Institute 任研究科学家，2005 年回 Rutgers 任教。2004 年 APS 论文把 Haule 和 Gabriel Kotliar 均列 Rutgers Center for Materials Theory。论文出刊晚于该档的博后年份，仅保留 Kotliar 为低可信候选。
-- 核查边界：本人论文明确感谢 Bonča 的 supervision；Peter Wölfle 为论文选题建议及重要帮助，尚无证据认定其为正式导师。博士后经历及指导者待核。 [Rutgers 2008 原公告](https://www.rutgers.edu/news/rutgers-physicist-earns-sloan-foundation-research-fellowship)确认 2002、2003 年 Rutgers 博后及随后赴 Ljubljana；个人指导者待核。
+- 博士阶段研究师长：[[师承人物 - Peter Wölfle|Peter Wölfle]]。Kristjan Haule 的 Ljubljana 2002 年博士论文在致谢中明确将 supervision 归于 Janez Bonča，另称 Peter Wölfle 推荐课题并给予重要帮助。论文分别在 Jožef Stefan Institute 与 Karlsruhe 凝聚态理论研究所完成，据此记录博士阶段研究师长。 [原档 1](https://www.physics.rutgers.edu/~haule/papers/thesis.pdf)
+- 核查边界：本人论文明确感谢 Bonča 的 supervision；Peter Wölfle 为论文选题建议及重要帮助，尚无证据认定其为正式导师。博士后经历及指导者待核。 [Rutgers 2008 原公告](https://www.rutgers.edu/news/rutgers-physicist-earns-sloan-foundation-research-fellowship)确认 2002、2003 年 Rutgers 博后及随后赴 Ljubljana；个人指导者待核。 另查 Ljubljana 学位目录是否列共同导师。
 
 
 <!-- PI-AUTO-SEARCH:START -->
@@ -45,6 +46,7 @@
 - 已读取来源页 [网页](https://www.physics.rutgers.edu/grad/redbook06/Red-www-CMT.html)（2026-11-10T08:50:05.564Z）：Rutgers graduate handbook describes Gabriel Kotliar’s theory work on disordered and strongly interacting systems. No supervision of Haule is stated.（身份及关系仍待核）。
 - 已读取来源页 [网页](https://www.physics.rutgers.edu/~haule/)（2026-11-11T18:22:12.355Z）：Kristjan Haule was born in Slovenia and obtained his undergraduate education in Slovenia (University of Ljubljana, BSC 1997) and he has done his PhD (2002) work in Slovenia and in Karlsruhe University（身份及关系仍待核）。
 - 已读取来源页 [网页](https://www.physics.rutgers.edu/~haule/cv.html)（2026-11-10T08:41:53.637Z）：Original CV identifies training locations and later Rutgers appointment; it gives neither doctoral advisor nor the 2002–2005 position.（身份及关系仍待核）。
+- 已读取来源页 [网页](https://www.physics.rutgers.edu/~haule/papers/thesis.pdf)（2026-11-18T15:01:29.041Z）：Kristjan Haule 的 Ljubljana 2002 年博士论文在致谢中明确将 supervision 归于 Janez Bonča，另称 Peter Wölfle 推荐课题并给予重要帮助。论文分别在 Jožef Stefan Institute 与 Karlsruhe 凝聚态理论研究所完成，据此记录博士阶段研究师长。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://www.physics.rutgers.edu/~haule/papers/thesis_hyowon.pdf)（2026-11-03T03:53:36.644Z）：Most of all, I would like to thank my advisor Prof. Kristjan Haule for giving me an opportunity In this thesis, we tackle various problems in strongly correlated electron systems, which can be（身份及关系仍待核）。
 - 已读取来源页 [网页](https://www.rutgers.edu/news/rutgers-physicist-earns-sloan-foundation-research-fellowship)（2026-11-10T08:50:05.564Z）：Rutgers 2008 report names Ljubljana doctorate in 2002, Rutgers postdoctoral research in 2002 and 2003, a later research scientist position at Jožef Stefan Institute, and a Rutgers academic appointment（身份及关系仍待核）。
 - 页面读取失败 [网页](https://www.simonsfoundation.org/people/kristjan-haule/)：Original profile returned (404) Not Found.；需另找可访问的原始来源。

@@ -21,9 +21,9 @@
 - Illinois 董事会 2026–27 材料科学与工程系记录列教授兼研究生项目副主任。校务 CV 列 2001 年 4 月至 2002 年 6 月 Stanford 博后；两阶段正式导师继续核实。 [原档 1](https://www.trustees.uillinois.edu/trustees/resources/26-27-Graybook/KP.html) · [原档 2](https://www.senate.illinois.edu/2024-2025/20240916senate/EP25009_FINAL_20240916.pdf)
 ## 师承
 
-- 博士导师候选：[[人员 - University of Chicago - Philippe Guyot-Sionnest - 3163a074|Philippe Guyot-Sionnest]]。[来源](https://academictree-staging.thetransmitter.org/physics/inst.php?locid=3797)
+- 博士课题组负责人：[[人员 - University of Chicago - Philippe Guyot-Sionnest - 3163a074|Philippe Guyot-Sionnest]]。[来源](https://academictree-staging.thetransmitter.org/physics/inst.php?locid=3797) 芝加哥大学 PGS Lab 校友原页的 Past Doctoral Students 栏列 Moonsub Shim、PhD (1998–2001) 及 UIUC 材料科学与工程职位，核实博士组属。 [原档 1](https://pgslab.uchicago.edu/people-alumni/)
 - 博士后导师候选：[[师承人物 - Hongjie Dai|Hongjie Dai]]。[来源](https://dailab.stanford.edu/Reprint/48.%20Spontaneous%20Reduction%20of%20Metal%20Ions%20on%20the%20Sidewalls%20of%20Carbon%20Nanotubes.pdf)
-- 核查边界：学术树列 Guyot-Sionnest 为芝加哥博士导师，属待原始论文交叉验证的候选；Dai 为 Stanford 博士后同期论文通讯作者，仅作候选。
+- 核查边界：PGS Lab 原始名录核实 Shim 的芝加哥博士组属，正式导师称谓待学位原档；Dai 为 Stanford 博士后同期论文通讯作者，仅作候选。 Chicago 2001 论文署名页或 Shim 本人 CV 的博士导师栏可升博士导师；PGS 课题组页不写 advisor 称谓。
 - 任期补证：[Illinois 校务 CV](https://www.senate.illinois.edu/2024-2025/20240916senate/EP25009_FINAL_20240916.pdf#page=131)CV 列 Stanford 2001-04 至 2002-06 博后。
 
 <!-- PI-AUTO-SEARCH:START -->
@@ -37,6 +37,7 @@
 - 检索类型：博士及博士后；检索时间：2026-11-03T09:50:13.633Z
   - [: Materials Science & Engineering + Data Science, BS](https://www.senate.illinois.edu/2024-2025/20240916senate/EP25009_FINAL_20240916.pdf)：Published: 2.1 years ago; MOONSUB SHIM ... Postdoctoral Fellow, Stanford University, Stanford, CA 4/2001 - 6/2002 ... “Photoresist contact patterning of quantum dot films,” Seok Kim, Moonsub Shim, Jun Kyu Park, Hohyun Keum, and Yiran Jiang,（姓名字符串出现，仍须核对单位时间；关系未判定，可信度未评估）
 - 已读取来源页 [网页](https://matse.illinois.edu/people/profile/mshim)（2026-11-12T11:35:35.700Z）：* Professor Moonsub Shim received his B.S. degree from the University of California at Berkeley in 1997 and his M.S. and Ph.D. degrees both from the University of Chicago in 1998 and 2001. After worki（身份及关系仍待核）。
+- 已读取来源页 [网页](https://pgslab.uchicago.edu/people-alumni/)（2026-11-16T17:03:01.351Z）：芝加哥大学 PGS Lab 校友原页博士生栏核对 Moonsub Shim 的学位阶段和现任单位。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://www.senate.illinois.edu/2024-2025/20240916senate/EP25009_FINAL_20240916.pdf)（2026-11-10T03:41:09.074Z）：Illinois 校务文件的 MOONSUB SHIM 本人简历。摘要保存本科学位、博士学位、任职和可识别的博士后及导师字段；个别陈述为校务文件编制时的状态。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://www.trustees.uillinois.edu/trustees/resources/26-27-Graybook/KP.html)（2026-11-12T22:46:37.870Z）：Illinois 董事会 2026–27 材料科学与工程系名录第 1606、1683–1684 行列 Moonsub Shim 为教授、研究生项目副主任。（身份及关系仍待核）。
 <!-- PI-AUTO-SEARCH:END -->

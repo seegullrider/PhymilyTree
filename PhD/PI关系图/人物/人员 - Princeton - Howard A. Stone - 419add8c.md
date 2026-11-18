@@ -35,6 +35,7 @@
 - 博士导师：[[人员 - UC Santa Barbara - L. Gary Leal - 55df2429|L. Gary Leal]]。[Caltech 博士论文目录](https://thesis.caltech.edu/499/)列 1988 PhD、Advisor L. Gary Leal；关系类型可信度：高。
 - 核查边界：Caltech 学位目录明确 Leal 为博士 advisor；Cambridge 博士后经历由 [Princeton 实验室简介](https://glennlabs.princeton.edu/people/howard-stone-phd)确认，导师待核。
 
+- 博士后阶段研究者：[[人员 - MIT - Martin Z. Bazant - a80a6b1d|Martin Z. Bazant]]。MIT 技术许可办公室原档称 Bazant 在 Harvard 工程与应用科学博士后期间受 Howard A. Stone 指导，使用 under the guidance of；本人 MIT 履历确认 1997–1998 Harvard 博后。 [原档 1](https://tlo.mit.edu/industry-entrepreneurs/researchers/martin-bazant) · [原档 2](https://web.mit.edu/bazant/www/info/index.html)
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
 

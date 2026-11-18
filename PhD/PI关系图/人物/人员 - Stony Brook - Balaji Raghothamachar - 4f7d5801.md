@@ -20,9 +20,9 @@
 
 ## 师承
 
-- 博士导师候选：[[人员 - Stony Brook - Michael Dudley - 84e2b85a|Michael Dudley]]。Stony Brook 机构档列材料科学与工程 Senior Research Scientist 及 SiC 生长中心 CoPI。Maryland 托管 2014 年报告者履历列 Stony Brook 2001 年毕业，时任与 Michael Dudley 共事的 Senior Research Scientist 及 BNL 束线研究员。该履历与当前课题支持低可信博士导师候选，博士论文签署页待查；2014 年任职另列研究岗位，博士后经历待查。 [Stony Brook ResearchConnect](https://researchconnect.stonybrook.edu/en/persons/balaji-raghothamachar/) · [Maryland 托管 2014 报告者履历](https://www.nanocenter.umd.edu/events/wbg/program/WBG%202014%20Program.pdf)
+- 博士课题组负责人：[[人员 - Stony Brook - Michael Dudley - 84e2b85a|Michael Dudley]]。Stony Brook 机构档列材料科学与工程 Senior Research Scientist 及 SiC 生长中心 CoPI。Maryland 托管 2014 年报告者履历列 Stony Brook 2001 年毕业，时任与 Michael Dudley 共事的 Senior Research Scientist 及 BNL 束线研究员。上述为早期线索；Dudley 组页实际列其博士研究，正式导师职衔待论文署名页；2014 年任职另列研究岗位，博士后经历待查。 [Stony Brook ResearchConnect](https://researchconnect.stonybrook.edu/en/persons/balaji-raghothamachar/) · [Maryland 托管 2014 报告者履历](https://www.nanocenter.umd.edu/events/wbg/program/WBG%202014%20Program.pdf) 已保存的 Stony Brook 实验室官方名单读取回执列 Michael Dudley 为 PI，Previous PhD Students 栏列 Balaji Raghothamachar、2001 年和同步辐射 X 射线形貌学位论文题名。据此核博士组属。 [原档 1](https://you.stonybrook.edu/xraycharacterization/people/)
 
-- 核查边界：学校 2023 年研究生目录列 2001 年 Stony Brook 材料科学与工程博士；本科及博士导师、博士后经历仍需原始材料核实。Dudley 的当前研究合作不能单独证明博士师承。 Stony Brook 机构档列材料科学与工程 Senior Research Scientist 及 SiC 生长中心 CoPI。Maryland 托管 2014 年报告者履历列 Stony Brook 2001 年毕业，时任与 Michael Dudley 共事的 Senior Research Scientist 及 BNL 束线研究员。该履历与当前课题支持低可信博士导师候选，博士论文签署页待查；2014 年任职另列研究岗位，博士后经历待查。 [Stony Brook ResearchConnect](https://researchconnect.stonybrook.edu/en/persons/balaji-raghothamachar/) · [Maryland 托管 2014 报告者履历](https://www.nanocenter.umd.edu/events/wbg/program/WBG%202014%20Program.pdf)
+- 核查边界：学校 2023 年研究生目录列 2001 年 Stony Brook 材料科学与工程博士；本科及博士导师、博士后经历仍需原始材料核实。Dudley 组页的 Previous PhD Students 栏已核博士组属。 Stony Brook 机构档列材料科学与工程 Senior Research Scientist 及 SiC 生长中心 CoPI。Maryland 托管 2014 年报告者履历列 Stony Brook 2001 年毕业，时任与 Michael Dudley 共事的 Senior Research Scientist 及 BNL 束线研究员。上述为早期线索；Dudley 组页实际列其博士研究，正式导师职衔待论文署名页；2014 年任职另列研究岗位，博士后经历待查。 [Stony Brook ResearchConnect](https://researchconnect.stonybrook.edu/en/persons/balaji-raghothamachar/) · [Maryland 托管 2014 报告者履历](https://www.nanocenter.umd.edu/events/wbg/program/WBG%202014%20Program.pdf) 查 2001 年博士论文署名页及后续研究任用。
 
 
 <!-- PI-AUTO-SEARCH:START -->
@@ -38,9 +38,8 @@
 - 检索类型：博士及博士后；检索时间：2026-11-03T04:04:05.029Z
   - ["Deformation Behavior of Honeycomb Foams in Compression" by Doo Hee Lee](https://commons.library.stonybrook.edu/stony-brook-theses-and-dissertations-collection/2239/)：Published: 11.9 years ago; Crawled: 5 months ago; Thesis ## Advisor（摘要未见完整姓名，须核对；关系未判定，可信度未评估）
 - 已读取来源页 [网页](https://commons.library.stonybrook.edu/stony-brook-theses-and-dissertations-collection/2239/)（2026-11-03T04:04:51.708Z）：In the present work, poly lactic acid (PLA) is used as a model system to investigate the deformation behavior of honeycomb foams under compression loads. Solid PLA tension specimens and foams made of （身份及关系仍待核）。
-- 页面读取失败 [网页](https://linguistics.stonybrook.edu/commcms/matscieng/people/ResearchersFaculty)：Internal Error ()
-citeturn7826view0 [wordlim: 200] Source: open({"ref_id":"https://linguistics.stonybrook.edu/commcms/matscieng/people/ResearchersFaculty","l；待重试。
+- 页面读取失败 [网页](https://linguistics.stonybrook.edu/commcms/matscieng/people/ResearchersFaculty)：Cache miss；待重试。
 - 已读取来源页 [网页](https://researchconnect.stonybrook.edu/en/persons/balaji-raghothamachar/)（2026-11-10T23:10:21.083Z）：Stony Brook 机构原页确认 MSE 高级研究员、SiC 生长中心 CoPI；Dudley 的项目 PI 职责与个人师承为不同角色。（身份及关系仍待核）。
 - 已读取来源页 [网页](https://www.nanocenter.umd.edu/events/wbg/program/WBG%202014%20Program.pdf)（2026-11-10T23:14:30.911Z）：Stony Brook 机构档列材料科学与工程 Senior Research Scientist 及 SiC 生长中心 CoPI。Maryland 托管 2014 年报告者履历列 Stony Brook 2001 年毕业，时任与 Michael Dudley 共事的 Senior Research Scientist 及 BNL 束线研究员。该履历与当前课题支持低可信博士导师候选，博士论文签署页（身份及关系仍待核）。
-- 页面读取失败 [网页](https://you.stonybrook.edu/xraycharacterization/people/)：HTTP 502 Bad Gateway；待重试。
+- 已读取来源页 [网页](https://you.stonybrook.edu/xraycharacterization/people/)（2026-11-17T11:26:57.307Z）：Dudley 为 PI；组页 Previous PhD Students 栏列 Raghothamachar 2001 年及论文题名。（身份及关系仍待核）。
 <!-- PI-AUTO-SEARCH:END -->

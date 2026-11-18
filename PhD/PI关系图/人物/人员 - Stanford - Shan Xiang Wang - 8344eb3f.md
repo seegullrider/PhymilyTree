@@ -24,6 +24,7 @@
 - 博士导师：[[师承人物 - Mark H. Kryder|Mark H. Kryder]]。[Stanford 材料系本人访谈](https://mse.stanford.edu/news/shan-wang-faculty-spotlight)证据：Wang 说其 Carnegie Mellon 磁记录头博士论文由 Mark H. Kryder 指导；关系类型可信度：高。
 - 核查边界：本人访谈说 1993 年毕业后加入 Stanford 教职，未列博士后职位；仍需核查是否另有博士后经历。IEEE 资料中的 Stanford 两位 White 的 mentors 文字截图本轮无法调取，相关阶段待核，不自动归类。
 
+- 博士生：[[人员 - Columbia - William E. Bailey - ebd77c5c|William E. Bailey]]。Stanford SearchWorks 条目 4523376 的保存回执列 William Evans Bailey、材料科学与工程博士论文 Surface scattering and giant magnetoresistance，以及 primary advisor Shan X. Wang。Columbia 工学院教师名录及任职研究方向核对本人。Columbia 名录列 1999 年博士，Stanford 编目发表字段为 2000 年。 [原档 1](https://searchworks.stanford.edu/catalog.json?q=Bailey%2C+William&search_field=search_author&f%5Bpub_year_tisim%5D%5B%5D=1999&per_page=10) · [原档 2](https://bulletin.engineering.columbia.edu/files/seasbulletin/bulletin-2014-2015-jan-22.pdf)
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
 

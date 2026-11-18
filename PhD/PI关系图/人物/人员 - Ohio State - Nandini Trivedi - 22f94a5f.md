@@ -25,7 +25,8 @@
 
 - 博士导师：[[师承人物 - Neil W. Ashcroft|Neil W. Ashcroft]]。[来源](https://www.asc.ohio-state.edu/trivedi.15/files/nt_cv2page_jan2010.pdf)
 - 博士后导师：[[人员 - UIUC - David Ceperley - 8c79e569|David M. Ceperley]]。[来源](https://www.asc.ohio-state.edu/trivedi.15/files/nt_cv2page_jan2010.pdf)
-- 核查边界：本人 CV 明列 Ph.D. Advisor: Neil W. Ashcroft；Post-doc Advisor: David M. Ceperley (1987–1989)。同 CV 另列 1989–1991 Stony Brook 博士后，但未说明该阶段导师。
+- 博士后导师：[[人员 - Stony Brook - Philip Allen - 3b83cb6c|Philip B. Allen]]。Trivedi 课题组保存的本人 CV 第 1 页列 1989–1991 年 Stony Brook 博士后，第 2 页 Postdoctoral Advisor 栏具名 Philip B. Allen，另明确列 Illinois 1987–1989 年的 David M. Ceperley。 [原档 1](https://trivediresearch.org.ohio-state.edu/wp-content/uploads/2014/09/Trivedi-CV.pdf)
+- 核查边界：本人 CV 明列 Ph.D. Advisor: Neil W. Ashcroft；Post-doc Advisor: David M. Ceperley (1987–1989)。另有 1989–1991 Stony Brook 博士后。本人课题组保存的 CV 第 2 页 Postdoctoral Advisor 栏具名 Philip B. Allen。 可补查 Stony Brook 1989–1991 任用档，核对博士后任期。
 
 
 <!-- PI-AUTO-SEARCH:START -->
@@ -45,6 +46,7 @@
 - 页面读取失败 [网页](https://oaa.osu.edu/sites/default/files/documents/INTERDISC%20-%20Proposal%20to%20establish%20a%20Master%20of%20Sustainable%20Energy%20program.pdf)：(400) Content length is too large: 16606387；需另找可访问的原始来源。
 - 已读取来源页 [网页](https://physics.osu.edu/people/trivedi.15)（2026-11-13T06:11:53.427Z）：The research in Professor Nandini Trivedi’s group focuses on the effects of strong interactions in condensed matter systems and ultracold atoms in optical lattices. The basic idea is to understand how（身份及关系仍待核）。
 - 页面读取失败 [网页](https://sites.brown.edu/cuwip/nandini-trivedi/)：(502) Bad Gateway；待重试。
+- 已读取来源页 [网页](https://trivediresearch.org.ohio-state.edu/wp-content/uploads/2014/09/Trivedi-CV.pdf)（2026-11-17T04:17:18.704Z）：Trivedi 本人 CV 第 2 页 Postdoctoral Advisor 栏分列 Illinois 的 David M. Ceperley 及 Stony Brook 的 Philip B. Allen。（身份及关系仍待核）。
 - 页面读取失败 [网页](https://trivediresearch.org.ohio-state.edu/wp-content/uploads/2022/01/franz_thesis.pdf)：(403) Forbidden；需另找可访问的原始来源。
 - 已读取来源页 [网页](https://www.asc.ohio-state.edu/trivedi.15/files/nt_cv2page_jan2010.pdf)（2026-11-03T02:52:01.746Z）：Member, Advisory Committee, Division of Condensed Matter Physics, American Physical Society; Post-doc Advisor: David M. Ceperley, Urbana-Champaign (1987-1989).（身份及关系仍待核）。
 <!-- PI-AUTO-SEARCH:END -->

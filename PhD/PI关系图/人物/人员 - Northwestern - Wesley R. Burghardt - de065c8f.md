@@ -20,8 +20,8 @@
 
 ## 师承
 
-- 博士导师候选：[[人员 - Stanford - Gerald Fuller - bcffe1c3|Gerald Fuller]]。[来源](https://pure.tue.nl/ws/files/53837624/9801457.pdf)
-- 核查边界：Stanford 博士期间与 Fuller 有 1989 年相关合著论文，暂列博士导师候选；博士后经历及导师待查。
+- 博士导师：[[人员 - Stanford - Gerald Fuller - bcffe1c3|Gerald Fuller]]。[来源](https://pure.tue.nl/ws/files/53837624/9801457.pdf) Stanford SearchWorks 的原始编目读取回执核对 676937，作者 Wesley R. Burghardt、Stanford 化工博士论文，发表字段 1990；author_struct 的 adviser 具名 Fuller, Gerald G.，角色为 primary advisor。 [原档 1](https://searchworks.stanford.edu/catalog.json?q=Burghardt+Wesley+Stanford+thesis+1990+Ph.D.&search_field=search)
+- 核查边界：Stanford 学位论文编目条目的 primary advisor 栏已具名 Fuller，据此记为博士导师；Stanford 博士期间与 Fuller 另有 1989 年相关合著论文；博士后经历及导师待查。 Stanford 论文 PDF 扉页的 Principal Adviser 签署栏可作最终复核（非必需）。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
@@ -32,9 +32,9 @@
   - [Burghardt, Wesley R. | Faculty | Northwestern Engineering](https://www.ce.northwestern.edu/research-faculty/directory/profiles/burghardt-wesley.html)：Crawled: last month; 847-467-1401 Email Wesley Burghardt (w-burghardt@northwestern.edu) ... MS, Chemical Engineering, University of Illinois ... We use powerful X-ray scattering techniques for realtime measurements of polymer structure in b（摘要未见完整姓名，须核对；关系未判定，可信度未评估）
 - 检索类型：博士及博士后；检索时间：2026-11-03T08:49:58.847Z
   - [Burghardt, Wesley R. | Faculty | Northwestern Engineering](https://www.graduate.mccormick.northwestern.edu/research-faculty/directory/profiles/burghardt-wesley.html)：Crawled: 2 weeks ago; 847-467-1401 Email Wesley Burghardt (w-burghardt@northwestern.edu) ... PhD, Chemical Engineering, Stanford University, Palo Alto, CA ... * Ding, Wenyue; Hanson, Josiah; Burghardt, Wesley R. #（摘要未见完整姓名，须核对；关系未判定，可信度未评估）
-- 页面读取失败 [网页](https://www.ce.northwestern.edu/research-faculty/directory/profiles/burghardt-wesley.html)：Failed to fetch https://www.ce.northwestern.edu/research-faculty/directory/profiles/burghardt-wesley.html: (502) Bad Gateway；待重试。
-- 页面读取失败 [网页](https://www.ee.northwestern.edu/about/leadership/profiles/burghardt-wesley.html)：Internal Error ()
-citeturn36799view0 [wordlim: 200] Source: open({"ref_id":"https://www.ee.northwestern.edu/about/leadership/profiles/burghardt-wesley.html",；待重试。
-- 页面读取失败 [网页](https://www.graduate.mccormick.northwestern.edu/research-faculty/directory/profiles/burghardt-wesley.html)：Failed to fetch https://www.graduate.mccormick.northwestern.edu/research-faculty/directory/profiles/burghardt-wesley.html: (502) Bad Gateway；待重试。
+- 已读取来源页 [网页](https://searchworks.stanford.edu/catalog.json?q=Burghardt+Wesley+Stanford+thesis+1990+Ph.D.&search_field=search)（2026-11-17T02:10:41.078Z）：Stanford 机构库编目明确标 Gerald G. Fuller 为 Burghardt 博士论文的 primary advisor。（身份及关系仍待核）。
+- 页面读取失败 [网页](https://www.ce.northwestern.edu/research-faculty/directory/profiles/burghardt-wesley.html)：(502) Bad Gateway；待重试。
+- 页面读取失败 [网页](https://www.ee.northwestern.edu/about/leadership/profiles/burghardt-wesley.html)：Cache miss；待重试。
+- 页面读取失败 [网页](https://www.graduate.mccormick.northwestern.edu/research-faculty/directory/profiles/burghardt-wesley.html)：(502) Bad Gateway；待重试。
 - 已读取来源页 [网页](https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/burghardt-wesley.html)（2026-11-10T11:52:36.404Z）：Northwestern 化工院档核 Stanford 博士和化学与生物分子工程教授，原页未列导师。（身份及关系仍待核）。
 <!-- PI-AUTO-SEARCH:END -->

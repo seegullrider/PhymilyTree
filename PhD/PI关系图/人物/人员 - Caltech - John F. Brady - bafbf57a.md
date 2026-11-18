@@ -34,6 +34,7 @@
 
 - 博士生：[[人员 - Cornell - Donald L. Koch - 9e17b383|Donald L. Koch]]。Koch 在 MIT 博士期间与 Brady 合著。 MIT 原学位目录第 35–53 行列作者 Donald Lyle Koch、Advisor(s) John F. Brady、化学工程博士及 1986 年。题名 Dispersion in heterogeneous media 与同一人学术轨迹相符。Cornell 履历标题区与正文的 1985／1986 年差异保留。 [原档 1](https://dspace.mit.edu/entities/publication/30776775-1f86-43ed-90ed-d7ee14b550ab) · [原档 2](https://www.duffield.cornell.edu/people/donald-l-koch/)
 
+- 博士阶段研究者：[[人员 - UC Berkeley - Ahmad Omar - 188fb422|Ahmad Omar]]。Omar 的 Caltech 博士论文致谢称 John Brady 为 “my ‘unofficial’ co-advisor”，并描述两人在读博期间的科研讨论。CaltechTHESIS 分列 Zhen-Gang Wang 为 Advisor、John Brady 为委员。Brady 记录为博士阶段研究师长，Wang 的正式博士导师关系保留。 [原档 1](https://thesis.caltech.edu/11695/01/omar_ahmad_2019.pdf) · [原档 2](https://thesis.caltech.edu/11695/)
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
 

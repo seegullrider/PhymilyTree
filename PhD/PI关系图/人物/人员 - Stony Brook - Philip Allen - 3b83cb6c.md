@@ -27,6 +27,7 @@
 - 核查边界：学校页面记 1964—1969 年 Berkeley 博士和其后两年 Bell Labs 研究；Stony Brook IACS 本人履历已明确博士导师；Bell Labs 职位是否为博士后仍待核。 Berkeley 1969 论文署名页可作最终复核；Bell Labs 两年是否为博士后阶段另核。
 
 - 博士生：[[人员 - UC Davis - Warren E. Pickett（荣休） - f6ef9106|Warren E. Pickett]]。Pickett 本人 CV（约 2013 年版，CIQUS 托管副本）Education 栏 1975 Ph.D. Physics Stony Brook University，末栏 Graduate and Postdoctoral Advisors 表逐字 Ph.D. Advisor | Philip B. Allen | Stony Brook University；AFT 记 Stony Brook 1975、论文题名 Electronic excitations in niobium and molybdenum.，与页面核定的 1975 年 Stony Brook 博士相符。以 Advisor 称谓具名。 [原档 1](https://ciqus.usc.gal/sites/default/files/eventos/conferencia_warren_e._picket.pdf)
+- 博士后研究者：[[人员 - Ohio State - Nandini Trivedi - 22f94a5f|Nandini Trivedi]]。Trivedi 课题组保存的本人 CV 第 1 页列 1989–1991 年 Stony Brook 博士后，第 2 页 Postdoctoral Advisor 栏具名 Philip B. Allen，另明确列 Illinois 1987–1989 年的 David M. Ceperley。 [原档 1](https://trivediresearch.org.ohio-state.edu/wp-content/uploads/2014/09/Trivedi-CV.pdf)
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
 
