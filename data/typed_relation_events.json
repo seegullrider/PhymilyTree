@@ -67373,5 +67373,38 @@
     "evidence": "Cambridge 化学系 Berry 纪念会议议程明确称 John Tully 为 Berry 最早的一批博士生之一，列其 Yale 化学与物理身份。NAS 纪念文记 Berry 1964 年开始在 Chicago 任职，符合 Tully 的 Chicago 博士阶段。据此记录博士阶段研究师长，正式论文导师职衔仍待学位原件。",
     "sources_json": "[\"https://www-wales.ch.cam.ac.uk/RSBsymposium.html\",\"https://www.nasonline.org/wp-content/uploads/2024/06/berry-r-stephen.pdf\"]",
     "recorded_at": "2026-11-18T17:04:44.711Z"
+  },
+  {
+    "event_id": "pi_original_bc255d9489dcad_9a4a4057_0",
+    "record_id": "9a4a4057",
+    "stage": "postdoc",
+    "mentor_filename": "师承人物 - Martin Head-Gordon",
+    "kind": "group_leader",
+    "source_audit_id": "pi_original_bc255d9489dcad_9a4a4057",
+    "evidence": "Head-Gordon 组校友页具名 Garnet Chan，并列 Caltech 任职。Cornell 化学系同期入职简报明确记载 Chan 是 Berkeley Miller Research Fellow，在 Martin Head-Gordon 组工作，随后赴 Cambridge 任 Junior Research Fellow。两份原档确认 Berkeley 博士后组属，个人正式导师与 Cambridge 阶段指导待核。",
+    "sources_json": "[\"https://mhggroupberkeley.com/alumni/\",\"https://ecommons.cornell.edu/bitstreams/46f39c94-c0d2-4d61-a423-8495b1d40604/download\"]",
+    "recorded_at": "2026-11-18T18:08:38.130Z"
+  },
+  {
+    "event_id": "pi_original_bc255d9489dcad_1a3b738f_0",
+    "record_id": "1a3b738f",
+    "stage": "postdoc",
+    "mentor_filename": "师承人物 - Xiang Zhang",
+    "kind": "group_leader",
+    "source_audit_id": "pi_original_bc255d9489dcad_1a3b738f",
+    "evidence": "HKU Zhang Lab 校友档将 Xiaobo Yin 列于 Postdoctoral Scholars 栏，记录 2013 年离组，离组前职位为 Senior Research Scientist。HKU 院系履历另明确 LBNL Postdoctoral Fellow 及 2013 年起赴 Colorado Boulder 任教。两源吻合，按博士后阶段组属记录，保留离组职位与博后未核起止两项。",
+    "sources_json": "[\"https://xlab.hku.hk/alumni.html\",\"https://mech.hku.hk/academic-staff/yin-xb/\"]",
+    "recorded_at": "2026-11-18T18:08:38.133Z"
+  },
+  {
+    "event_id": "pi_original_a0360360e34be3_9f39f275_0",
+    "record_id": "9f39f275",
+    "stage": "postdoc",
+    "mentor_filename": "人员 - Caltech - Zhen-Gang Wang - 8d3bba96",
+    "kind": "stage_mentor",
+    "source_audit_id": "pi_original_a0360360e34be3_9f39f275",
+    "evidence": "MIT 研究生教育办公室刊载的 Olsen 访谈把 Zhen-Gang Wang 列于其 mentors 的叙述中；MIT 研究所履历明确列其为 Caltech 博后共事的三位教授之一，本人 CV 的博士后任用项也列 Wang 实验室。三源支持博士后阶段研究师长，个人正式导师职衔待核。",
+    "sources_json": "[\"https://oge.mit.edu/profiles/bradley-olsen/\",\"https://olsenlab.mit.edu/wp-content/uploads/sites/45/2016/08/bdoCV_july16.pdf\",\"https://isn.mit.edu/people/prof-bradley-olsen\"]",
+    "recorded_at": "2026-11-18T19:11:30.718Z"
   }
 ]

@@ -15,7 +15,8 @@
 - 博士导师：[[师承人物 - Lambertus Hesselink|Lambertus Hesselink]]。本地读取 Stanford Nanofabrication Facility 工作人员公开归档的 2008-05-22 电气工程博士答辩原通知。Xiaobo Yin 条目直接列 Research Advisor 为 Lambertus Hesselink。同期本人原刊的 Stanford EE 单位与表面等离激元题目吻合。 [来源 1](https://p5000.blogspot.com/2008/05/) · [来源 2](https://xlab.hku.hk/pdf/10.1063_1.1775294.pdf) · [学术经历核对](https://mech.hku.hk/academic-staff/yin-xb/)
 - 博士后经历：HKU 本人院系档明确 LBNL Postdoctoral Fellow，另列 Stanford 与 Berkeley Research Assistant Professor。Zhang 组表明列 2013 Senior Research Scientist，暂按该职位保存。LBNL 博后个人指导仍待核。 [学术经历核对](https://mech.hku.hk/academic-staff/yin-xb/) · [来源 2](https://xlab.hku.hk/alumni.html)
 
-- 核查边界：查 Stanford 正式论文馆藏与 LBNL 博后起止日期及具名导师。Xiang Zhang 组档的 Senior Research Scientist 与 LBNL 博后分开核。
+- 博士后课题组负责人：[[师承人物 - Xiang Zhang|Xiang Zhang]]。HKU Zhang Lab 校友档将 Xiaobo Yin 列于 Postdoctoral Scholars 栏，记录 2013 年离组，离组前职位为 Senior Research Scientist。HKU 院系履历另明确 LBNL Postdoctoral Fellow 及 2013 年起赴 Colorado Boulder 任教。两源吻合，按博士后阶段组属记录，保留离组职位与博后未核起止两项。 [原档 1](https://xlab.hku.hk/alumni.html) · [原档 2](https://mech.hku.hk/academic-staff/yin-xb/)
+- 核查边界：查 Stanford 正式论文馆藏与 LBNL 博后起止日期及具名导师。Xiang Zhang 组档的 Senior Research Scientist 与 LBNL 博后分开核。 另核 LBNL 任用起止、个人指导职衔及 Senior Research Scientist 转任日期。
 
 <!-- PI-AUTO-SEARCH:START -->
 ## 自动检索线索（待人工核实）
@@ -32,4 +33,5 @@
 - 已读取来源页 [网页](https://p5000.blogspot.com/2008/05/)（2026-11-11T11:37:40.607Z）：本地读取 Stanford Nanofabrication Facility 工作人员公开归档的 2008-05-22 电气工程博士答辩原通知。Xiaobo Yin 条目直接列 Research Advisor 为 Lambertus Hesselink。同期本人原刊的 Stanford EE 单位与表面等离激元题目吻合。（身份及关系仍待核）。
 - 页面读取失败 [网页](https://searchworks.stanford.edu/?q=%22Xiaobo+Yin%22&search_field=search_author)：Internal Error () URL [网址略] is not accessible via this tool.；待重试。
 - 已读取来源页 [网页](https://www.colorado.edu/mse/2021/11/22/mcgehee-toney-and-yin-recognized-highly-cited-researchers)（2026-11-11T11:37:40.607Z）：Colorado Boulder 机械、材料与物理教职为 2013–2021 年历史任用。现为 HKU 工学院 Chair Professor of Sustainability Technology。Colorado 工学院原档与 HKU 现任履历确认同一物理光学研究者，2008 Stanford 博士。与华中师大计算数学方向同名者的学位、单位和方向不同。（身份及关系仍待核）。
+- 已读取来源页 [网页](https://xlab.hku.hk/alumni.html)（2026-11-18T18:08:34.689Z）：HKU Zhang Lab 校友档将 Xiaobo Yin 列于 Postdoctoral Scholars 栏，记录 2013 年离组，离组前职位为 Senior Research Scientist。HKU 院系履历另明确 LBNL Postdoctoral Fellow 及 2013 年起赴 Colorado Boulder 任教。两源吻合，按博士后阶段组属记录，保留离组职位与博后未核起止两（身份及关系仍待核）。
 <!-- PI-AUTO-SEARCH:END -->
